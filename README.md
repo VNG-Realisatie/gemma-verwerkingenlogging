@@ -25,10 +25,8 @@ Gemeenten en leveranciers worden aangemoedigd om bij te dragen aan het project. 
 * Hoe u kunt [bijdragen](https://github.com/VNG-Realisatie/Tutorial/blob/master/CONTRIBUTING.md)
 * [Omgangsvormen](https://github.com/VNG-Realisatie/Tutorial/blob/master/CODE_OF_CONDUCT.md)
 
-## Contactpersonen:
-* Product Owner: Arnoud Quanjer, arnoud.quanjer@vng.nl
-* Informatiearchitectuur: Paul Jansen, paul.jansen@vng.nl
-* Berichtontwerper: Henri Korver henri.korver@vng.nl
+## Beheer en ondersteuning
+Contact: standaarden.ondersteuning@vng.nl
 
 ## Licentie
 Copyright &copy; VNG Realisatie 2020
