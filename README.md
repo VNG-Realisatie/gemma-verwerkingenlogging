@@ -10,7 +10,7 @@ Het werkingsgebied voor de ontwikkelde standaarden is: gemeenten en gemeentelijk
 
 ## Project documentatie
 * [Productvisie](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/productvision.md)
-* [Definition of Done](https://github.com/VNG-Realisatie/gemma-vverwerkingenlogging/blob/master/docs/definition_of_done.md)
+* [Definition of Done](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/definition_of_done.md)
 * [Ontwerp keuzes](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/ontwerp_keuzes.md)
 
 ## Bronnen
