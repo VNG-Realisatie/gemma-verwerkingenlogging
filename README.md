@@ -17,6 +17,9 @@ Organisaties die persoonsgegevens verwerken zijn conform de [Algemene Verordenin
 * [API strategie en URI strategie](https://geonovum.github.io/KP-APIs/API-strategie-algemeen/)
 * [Positionering verwerkingsregister in de informatievoorziening van gemeenten](https://www.gemmaonline.nl/images/gemmaonline/b/b7/Gegevenslandschap_-_Logging_van_verwerking_van_gegevens.pdf)
 
+## Gerelateerde standaarden
+* [GEMMA Verwerkingsactiviteiten](https://github.com/VNG-Realisatie/gemma-verwerkingsactiviteiten)
+
 ## Bijdragen aan het project
 Gemeenten en leveranciers worden aangemoedigd om bij te dragen aan het project. Onderstaande links geven informatie over hoe u uw bijdrage kan leveren.
 * Hoe u kunt [bijdragen](https://github.com/VNG-Realisatie/Tutorial/blob/master/CONTRIBUTING.md)
