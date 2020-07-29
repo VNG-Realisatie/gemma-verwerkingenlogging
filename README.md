@@ -2,7 +2,7 @@
 
 GEMMA Verwerkingenlogging is een project waarin het gemeentelijk informatiemodel Verwerkingenlogging en bijbehorende API specificaties gestandaardiseerd worden.
 
-## Context 
+## Werkingsgebied 
 Het werkingsgebied voor de ontwikkelde standaarden is: gemeenten en gemeentelijke samenwerkingsverbanden.
 
 ## Context 
