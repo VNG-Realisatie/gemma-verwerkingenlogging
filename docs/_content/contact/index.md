@@ -6,7 +6,7 @@ weight: 10
 
 Gemeenten en VNG Realisatie werken samen aan de (door)ontwikkeling van de API's voor de logging van verwerkingsactiviteiten werken. Het beheer vindt plaats onder regie van VNG Realisatie.
 
-## Contact met het beheer- en ontwikkelteam van de Logging van Verwerkingen API
+## Contact met het beheer- en ontwikkelteam van de Logging van Verwerkingsactiviteiten API
 Github: [github.com/VNG-Realisatie/gemma-verwerkingenlogging](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging)  
 E-mail (ook voor toegang tot Github): [standaarden.ondersteuning@vng.nl](mailto:standaarden.ondersteuning@vng.nl)
 
