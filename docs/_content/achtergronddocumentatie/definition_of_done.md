@@ -1,4 +1,8 @@
-# **Definition of Done Verwerkingenlogging API-standaard**
+---
+title: "Definition of Done Verwerkingenlogging API-standaard"
+date: '10-10-2020'
+---
+
 In dit document wordt beschreven welke eisen aan de verschillende onderdelen van een opgeleverde versie van de Verwerkingenlogging API-standaard worden gesteld. De onderdelen die hierbij een rol spelen zijn: 
 
 - Stakeholder documentatie 
