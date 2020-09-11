@@ -1,12 +1,18 @@
 - name: Product visie
   link: /productvisie/
   weight: 10
+- name: Achtergronddocumentatie
+  link: /achtergronddocumentatie/
+  weight: 20
 - name: Architectuur
   link: /architectuur/
-  weight: 20
+  weight: 40
 - name: Informatiemodel
   link: /informatiemodel/
-  weight: 30
+  weight: 50
+- name: API's
+  link: /api/
+  weight: 60
 - name: Contact
   link: /contact/
   weight: 90
