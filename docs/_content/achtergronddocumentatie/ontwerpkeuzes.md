@@ -3,8 +3,7 @@ title: "Ontwerpkeuzes"
 date: '10-10-2020'
 ---
 
-# Ontwerp keuzes
-Dit document beschrijft ontwerpkeuzes die gemaakt zijn voor het ontwerpen en specificeren van de verwerkingslogging API-standaard.
+Dit document beschrijft de ontwerpkeuzes die gemaakt zijn voor het ontwerpen en specificeren van de verwerkingslogging API-standaard.
 
 ## Algemene ontwerp keuzes
 
