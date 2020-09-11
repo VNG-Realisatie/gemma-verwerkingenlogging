@@ -1,6 +1,9 @@
 - name: Architectuur
   link: /architectuur/
   weight: 10
+- name: Informatiemodel
+  link: /informatiemodel/
+  weight: 20
 - name: Contact
   link: /contact/
   weight: 90
