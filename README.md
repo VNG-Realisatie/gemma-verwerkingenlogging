@@ -10,7 +10,7 @@ Organisaties die persoonsgegevens verwerken zijn conform de [Algemene Verordenin
 
 ## Project documentatie
 * [Productvisie](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/productvision.md)
-* [Definition of Done](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/definition_of_done.md)
+* [Definition of Done](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/achtergronddocumentatie/definition_of_done.md)
 * [Ontwerp keuzes](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/ontwerp_keuzes.md)
 
 ## Bronnen
