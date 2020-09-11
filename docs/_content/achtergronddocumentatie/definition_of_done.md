@@ -1,5 +1,5 @@
 ---
-title: "Definition of Done Verwerkingenlogging API-standaard"
+title: "Definition of Done"
 date: '10-10-2020'
 ---
 
