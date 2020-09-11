@@ -13,6 +13,9 @@
 - name: API's
   link: /api/
   weight: 60
+- name: FAQ
+  link: /overige/faq
+  weight: 60
 - name: Contact
   link: /contact/
   weight: 90
