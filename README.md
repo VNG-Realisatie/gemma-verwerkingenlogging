@@ -13,6 +13,8 @@ Organisaties die persoonsgegevens verwerken zijn conform de [Algemene Verordenin
 * [Definition of Done](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/achtergronddocumentatie/definition_of_done.md)
 * [Ontwerp keuzes](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/achtergronddocumentatie/ontwerp_keuzes.md)
 
+De volledige documentatie zoals deze op github is beschreven is te vinden op de [github pages](https://vng-realisatie.github.io/gemma-verwerkingenlogging/).
+
 ## Bronnen
 * [API strategie en URI strategie](https://geonovum.github.io/KP-APIs/API-strategie-algemeen/)
 * [Positionering verwerkingsregister in de informatievoorziening van gemeenten](https://www.gemmaonline.nl/images/gemmaonline/b/b7/Gegevenslandschap_-_Logging_van_verwerking_van_gegevens.pdf)
