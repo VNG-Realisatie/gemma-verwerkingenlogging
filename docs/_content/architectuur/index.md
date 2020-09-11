@@ -7,6 +7,8 @@ De achtergronddocumentatie bij de API's voor Logging van Verwerkingsactiviteiten
 
 [Definition of Done (DoD)](../achtergronddocumentatie/definition_of_done)
 
+[Brondocumenten](../achtergronddocumentatie/brondocumenten)
+
 [Requirements](../achtergronddocumentatie/requirements)
 
 [Cases](../achtergronddocumentatie/cases)
