@@ -20,6 +20,10 @@ defaults:
 
 markdown: kramdown
 
+exclude:
+  - archief
+  - vendor
+
 plugins:
   - jekyll-redirect-from
   - jekyll-remote-theme
