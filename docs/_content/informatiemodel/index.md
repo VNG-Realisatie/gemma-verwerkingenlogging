@@ -1,1 +1,4 @@
-## Informatiemodel Verwerkingenlogging
+---
+title: "Informatiemodel"
+name: Informatiemodel
+---
