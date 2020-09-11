@@ -7,5 +7,5 @@ De achtergronddocumentatie bij de API's voor Logging van Verwerkingsactiviteiten
 
 [Ontwerpkeuzes](../achtergronddocumentatie/ontwerpkeuzes.md)
 
-[Definition of Done (DoD)](../achtergronddocumentatie/definition_of_done.md)
+[Definition of Done (DoD)](../achtergronddocumentatie/ontwerpkeuzes.md)
 
