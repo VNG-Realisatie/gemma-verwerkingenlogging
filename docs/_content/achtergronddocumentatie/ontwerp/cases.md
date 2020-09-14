@@ -14,7 +14,7 @@ De cases zijn gegroepeerd op basis van de verschillende soorten patronen die voo
 |**Indeling**|**Toelichting**|
 |---|---|
 | **Hoe komt informatie in het log**||
-| [Bijhouden van gegevens](./cases/Bijhouden van gegevens)|Gemeenten houden allerlei gegevens bij van personen en objecten.|
+| [Bijhouden van gegevens](./Bijhouden van gegevens.md)|Gemeenten houden allerlei gegevens bij van personen en objecten.|
 | Opvragen van gegevens|Opvragen van gegevens binnen de gemeente of door derden. Bij een opvraging ligt het initiatief bij de vragende partij.|
 | Opvragen van gegevens bij derden|Opvragen van gegevens binnen de gemeente bij derden. Het initiatief ligt bij de gemeente en in het log van de derden dient de doelbinding van de gemeente opgenomen te worden.|
 | Leveren van gegevens|Levering van gegevens binnen de gemeente of aan derden. Het initiatief ligt bij (het informatie verwerkende proces van) de gemeente.|
