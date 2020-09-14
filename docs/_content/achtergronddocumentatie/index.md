@@ -19,6 +19,7 @@ Het ontwerp van de API-standaard is gericht op het kunnen opstellen van een gege
 Het ontwerp bestaat feitelijk uit allerlei kleine onderdelen die we artefacten noemen. Al deze artefacten zijn voorzien van een uniek willekeurig nummer en een prefix. Zo verwijst A5042 naar aanbeveling 5042 en B4362 naar het besluit met nummer 4362. De nummers zijn uniek over alle artefacten heen. Als er dus een A5042 bestaat kan er geen B5042 bestaan.
 
 | Prefix | Soort artefact |
+|--|--|
 | A	| Aanbeveling |
 | B	| Besluit |
 | C	| Case |
