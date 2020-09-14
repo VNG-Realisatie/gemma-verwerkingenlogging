@@ -6,7 +6,7 @@ name: achtergronddocumentatie
 De achtergronddocumentatie bij de API's voor Logging van Verwerkingsactiviteiten is geen onderdeel van de standaard, maar vergroot het begrip en biedt achtergronden bij de gemaakte keuzen.
 
 ## Project checklist (DoD)
-Bij de uitvoering van het project wordt een [Definition of Done (DoD)](../achtergronddocumentatie/definition_of_done) gehanteerd. Deze DoD is in feite de checklist met activiteiten die bij de oplevering van iedere versie van de API-standaard moeten worden afgevinkt. 
+Bij de uitvoering van het project wordt een [Definition of Done (DoD)](../achtergronddocumentatie/definition_of_done) gehanteerd. Deze DoD is de checklist met activiteiten die bij de oplevering van iedere versie van de API-standaard moeten worden afgevinkt. 
 
 ## Gebruikte brondocumenten
 Bij het ontwerp van de API-standaard is gebruik gemaakt van een aantal [brondocumenten](../achtergronddocumentatie/brondocumenten). Deze brondocumenten zijn de basis van het ontwerp van de API-standaard.
