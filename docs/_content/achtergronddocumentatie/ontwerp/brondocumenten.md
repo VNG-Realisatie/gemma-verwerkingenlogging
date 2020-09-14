@@ -1,6 +1,7 @@
 ---
 title: "Brondocumenten"
-date: '10-10-2020'
+name: Brondocumenten
+date: '10-09-2020'
 ---
 
 Bij het uitwerken van de Verwerkingenlogging API-standaard is gebruik gemaakt van een aantal brondocumenten. Uit deze documenten zijn requirements gedestilleerd ten aanzien van functionele- en niet functionele eisen, architectuurpatronen, gegevensmodellen en API's. 
