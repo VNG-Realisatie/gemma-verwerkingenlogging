@@ -1,0 +1,33 @@
+---
+title: "C9172: Registratie Verhuizing – Eenvoudig, traditioneel systeem"
+name: case C9172
+---
+
+Deze case beschrijft de binnengemeentelijke verhuizing van een persoon. De beschrijjving is functioneel zo eenvoudig mogelijk. De burger komt aan de balie en er is  geen sprake van meeverhuizende gezinsleden.
+
+### Inloggen medewerker
+-	We loggen geen technische events over inloggen, autorisatie, foutmeldingen etc ([V0538](./V0538))
+###Scherm ‘Registratie verhuizing’
+-	Weten we in welke rol de medewerker dit scherm opent? Is het noodzakelijk om dit gegeven later op te nemen in het log? ([V3133](./V3133)).
+###	Medewerker voert BSN van de burger in
+-	Merk op dat de medewerker hier gegevens van de burger ziet (op het identiteitsbewijs/legitimatiebewijs). Logging hiervan is buiten scope ([V4421](./V4421)).
+###	Applicatie haalt ‘NAW gegevens’ van de burger op en toont deze
+-	Benaderen we het log twee keer of één keer.
+Als we het log twee keer benaderen doen we eerst een soort ‘vooraankondiging’. We weten dan dat het log benaderbaar is. De tweede keer loggen we het resultaat van de verwerking. Benaderen we het log één keer dan zijn er twee opties. Optie 1: We benaderen het log voor de verwerking en kunnen het resultaat dus niet loggen. Optie 2: We benaderen het log na de verwerking en kunnen het resultaat wel loggen. Zie V7952 voor een meer uitvoerige analyse van dit vraagstuk (inclusief foutsituaties).
+-	Aan welke verwerkingsactiviteit uit het Landelijk VAR koppelen we deze handeling?
+Enige relevante die we kunnen vinden lijkt ‘BRP Registratie’. Als de burger straks het log raadpleegt en ‘BRP Registratie’ ziet, is dit wel erg onduidelijk. Dit roept vragen op over de gewenste granulariteit van het Landelijk VAR (V6080). Als de granulariteit een gegeven is, gaan we dan in het log compenseren voor het gebrek aan detail? (V6080).
+N.B. In C4084 lijkt nadere detaillering onvermijdelijk.
+-	Hoe weet de applicatie met welke verwerkingsactiviteit deze bezig is (V5843). Vanuit deze case is het voldoende om het UUID te weten van de verwerkingsactiviteit. 
+N.B. In latere cases (C0031) vragen we gegevens op bij derden en dienen we aan die derden informatie uit het VAR door te geven ivm logging. Het UUID is dan niet langer voldoende.
+-	Hoe weet de applicatie of de verwerkingsactiviteit nog ‘geldig’ is en dus gebruikt mag worden voor verwerkingen – of – is het niet nodig om dit te controleren? (Zie ook hiervoor V5843).
+-	Hoe pseudonimiseren we het BSN? (V2042)
+-	Welke gegevens nemen we op in het log?
+Zie gegevensmodel voor logging en de bijbehorende vraagstukken.
+-	Bevat de API ook gedenomaliseerde gegevens? Normaal gesproken wil je informatie in systemen genormaliseerd opslaan. Het log is echter een bijzonder systeem. Het log bevat allerlei meta informatie die afkomstig is van de informatiesystemen die het log benaderd hebben. Deze informatie blijft vele jaren in het log staan. In die periode veranderen de informatiesystemen of worden vervangen door andere systemen. Daardoor kan het zijn dat informatie niet langer reconstrueerbaar is. Hierdoor kan de noodzaak ontstaan om toch gedenormaliseerde gegevens op te nemen in het log (en deze dus te communiceren via de API). Zie V3238 voor meer info.
+-	Welk moment gebruiken we voor de logging? (V2017) De start van het opvragen of het moment van loggen?
+-	Gebruiken applicatie en log wel dezelfde tijd? (V4250)
+
+###	Aanpassen persoonsgegevens
+-	Aanname: Er worden ter controle van de verhuizing geen bedrijfsregels uitgevoerd die nieuwe persoonsgegevens benaderen.
+-	Mogelijkheden tav logging: 1. Log nogmaals benaderen voor deze operatie, 2. Log nu voor de eerste keer benaderen, 3. Log nu niet meer benaderen. Zie V7952 voor uitwerking van de verschillende opties.
+
