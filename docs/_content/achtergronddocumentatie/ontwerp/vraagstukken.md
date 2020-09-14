@@ -1,9 +1,9 @@
 ---
 title: "Vraagstukken"
-date: '10-10-2020'
+date: '10-09-2020'
 ---
 
-Vanuit de [cases](./cases.md) zijn onderstaande vraagstukken benoemd.
+Vanuit de [cases](../cases.md) zijn onderstaande vraagstukken benoemd.
 
 ## Implementatie overwegingen
 De onderstaande vraagstukken hebben betrekking op de implementatie van de API-standaard in informatiesystemen.
