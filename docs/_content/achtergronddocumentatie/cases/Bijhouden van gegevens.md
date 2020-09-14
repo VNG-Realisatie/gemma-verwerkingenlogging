@@ -15,6 +15,6 @@ De onderstaande cases beschrijven verschillende bijhoudingspatronen waarmee pers
 | V	| Vraagstuk |
 
 ## Casebeschrijvingen 
-[C9172: Registratie Verhuizing – Eenvoudig, traditioneel systeem](./C9172.md)
+[C9172: Registratie Verhuizing – Eenvoudig, traditioneel systeem](./individueel/C9172.md)
 
 
