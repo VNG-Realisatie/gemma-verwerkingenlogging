@@ -1,6 +1,12 @@
 ---
-title: "Openstaande vraagstukken"
+title: "Vraagstukken"
 date: '10-10-2020'
 ---
 
-Vanuit de [cases](./cases.md) zijn de onderstaande vraagstukken benoemd waarvoor nog geen ontwerpbesluit is genomen. 
+Vanuit de [cases](./cases.md) zijn onderstaande vraagstukken benoemd.
+
+## Implementatie overwegingen
+De onderstaande vraagstukken hebben betrekking op de implementatie van de API-standaard in informatiesystemen.
+
+## Openstaande vraagstukken
+Voor de onderstaande vraagstukken is nog geen ontwerpbesluit genomen. 
