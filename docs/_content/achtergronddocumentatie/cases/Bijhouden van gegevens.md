@@ -8,10 +8,7 @@ De onderstaande cases beschrijven verschillende bijhoudingspatronen waarmee pers
 
 | Prefix	| Soort artefact |
 |--|--|
-| A	| Aanbeveling |
-| B	| Besluit |
 | C	| Case |
-| R	| Requirement |
 | V	| Vraagstuk |
 
 ## Casebeschrijvingen 
