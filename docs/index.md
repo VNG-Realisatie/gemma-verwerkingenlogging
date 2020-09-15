@@ -16,6 +16,7 @@ Het werkingsgebied voor deze standaard is: gemeenten en gemeentelijke samenwerki
 - [Beschrijving best-practices en architectuurmodellen](./archief/work_in_progress)
 
 ## Achtergronddocumentatie
+- [Productvisie](./productvisie/index)
 - [Ontwerp van de API-standaard](./achtergronddocumentatie/ontwerp)
 - [Kwaliteitseisen aan de API-standaard](./achtergronddocumentatie/definition_of_done)
 
