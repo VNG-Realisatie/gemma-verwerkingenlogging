@@ -23,14 +23,4 @@ Alle informatiesystemen die persoonsgegevens verwerken zijn vanuit de privacywet
 
 Voor informatiesystemen die geen persoonsgegevens maar wel gegevens van andere soorten objecten verwerken is implementatie optioneel. 
 
-## Wat wordt geleverd?
-Door VNG Realisatie worden de onderstaande producten geboden op het gebied van de logging van de verwerking van (persoons)gegevens.
 
-- Informatiemodel Verwerkingenlog
-- API-standaard voor Logging van verwerkingen
-- Referentieimplementatie van een verwerkingenlogregister
-- Referentieimplementatie van een informatiesysteem wat verwerkingen logt
-- Beschrijving best-practices en architectuurmodellen
-
-## Uitwerking
-Bij de uitwerking van de Verwerkingenlogging API zijn [requirements](../achtergronddocumentatie/ontwerp/requirements)  die voorkomen uit vigerende privacywet- en regelgeving en daaraan gerelateerde architectuuruitwerkingen geïnventariseerd. Daarnaast zijn [cases](../achtergronddocumentatie/ontwerp/ontwerpcases) opgesteld ten aanzien van het gebruik van logging. Vanuit de uitwerking van de cases zijn [vraagstukken](../achtergronddocumentatie/ontwerp/vraagstukken) geïnventariseerd en zijn daar waar nodig [ontwerpbesluiten](../achtergronddocumentatie/ontwerp/ontwerpbesluiten) genomen en [aanbevelingen](../achtergronddocumentatie/ontwerp/aanbevelingen) gedaan ten aanzien van implementatie en/of scope van de Logging API. 
