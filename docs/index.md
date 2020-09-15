@@ -16,8 +16,8 @@ Het werkingsgebied voor deze standaard is: gemeenten en gemeentelijke samenwerki
 - [Beschrijving best-practices en architectuurmodellen]()
 
 ## Achtergronddocumentatie
-[Ontwerp van de API-standaard](./achtergronddocumentatie/ontwerp)
-[Kwaliteitseisen](./achtergronddocumentatie/definition_of_done.md)
+- [Ontwerp van de API-standaard](./achtergronddocumentatie/ontwerp)
+- [Kwaliteitseisen aan de API-standaard](./achtergronddocumentatie/definition_of_done.md)
 
 ## Gerelateerde standaarden
 * [GEMMA Verwerkingsactiviteiten](https://github.com/VNG-Realisatie/gemma-verwerkingsactiviteiten)
