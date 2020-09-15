@@ -8,6 +8,17 @@ Organisaties die persoonsgegevens verwerken zijn conform de [Algemene Verordenin
 ## Werkingsgebied 
 Het werkingsgebied voor deze standaard is: gemeenten en gemeentelijke samenwerkingsverbanden.
 
+## Inhoud van de API-standaard
+- [Informatiemodel Verwerkingenlog]()
+- [API-standaard voor Logging van verwerkingen]()
+- [Referentieimplementatie van een verwerkingenlogregister]()
+- [Referentieimplementatie van een informatiesysteem wat verwerkingen logt]()
+- [Beschrijving best-practices en architectuurmodellen]()
+
+## Achtergronddocumentatie
+[Ontwerp van de API-standaard](./achtergronddocumentatie/ontwerp)
+[Kwaliteitseisen](./achtergronddocumentatie/definition_of_done.md)
+
 ## Gerelateerde standaarden
 * [GEMMA Verwerkingsactiviteiten](https://github.com/VNG-Realisatie/gemma-verwerkingsactiviteiten)
 
