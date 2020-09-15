@@ -27,6 +27,7 @@ exclude:
 plugins:
   - jekyll-redirect-from
   - jekyll-remote-theme
+  - jekyll-relative-links
 
 remote_theme: VNG-Realisatie/jekyll-theme-vng
 
