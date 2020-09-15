@@ -1,6 +1,6 @@
 ---
-title: "Under contruction"
+title: "Under construction"
 date: 15-09-2020
 ---
 
-![](/./workinprogress.png)
+![under construction](/./workinprogress.png)
