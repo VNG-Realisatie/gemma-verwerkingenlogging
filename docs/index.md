@@ -9,28 +9,28 @@ Organisaties die persoonsgegevens verwerken zijn conform de [Algemene Verordenin
 Het werkingsgebied voor deze standaard is: gemeenten en gemeentelijke samenwerkingsverbanden.
 
 ## Inhoud van de API-standaard
-- [Informatiemodel Verwerkingenlog](./archief/work_in_progress)
-- [API-standaard voor Logging van verwerkingen](./archief/work_in_progress)
-- [Referentieimplementatie van een verwerkingenlogregister](./archief/work_in_progress)
-- [Referentieimplementatie van een informatiesysteem wat verwerkingen logt](./archief/work_in_progress)
-- [Beschrijving best-practices en architectuurmodellen](./archief/work_in_progress)
+- [Informatiemodel Verwerkingenlog](./archief/work_in_progress.md)
+- [API-standaard voor Logging van verwerkingen](./archief/work_in_progress.md)
+- [Referentieimplementatie van een verwerkingenlogregister](./archief/work_in_progress.md)
+- [Referentieimplementatie van een informatiesysteem wat verwerkingen logt](./archief/work_in_progress.md)
+- [Beschrijving best-practices en architectuurmodellen](./archief/work_in_progress.md)
 
 ## Achtergronddocumentatie
-- [Productvisie](./productvisie/index)
-- [Ontwerp van de API-standaard](./achtergronddocumentatie/ontwerp)
-- [Kwaliteitseisen aan de API-standaard](./achtergronddocumentatie/definition_of_done)
+- [Productvisie](./productvisie/index.md)
+- [Ontwerp van de API-standaard](./achtergronddocumentatie/ontwerp.md)
+- [Kwaliteitseisen aan de API-standaard](./achtergronddocumentatie/definition_of_done.md)
 
 ## Gerelateerde standaarden
 * [GEMMA Verwerkingsactiviteiten](https://github.com/VNG-Realisatie/gemma-verwerkingsactiviteiten)
 
 ## Bijdragen aan het project
 Gemeenten en leveranciers worden aangemoedigd om bij te dragen aan het project. Onderstaande links geven informatie over hoe u uw bijdrage kan leveren.
-* Hoe u kunt [bijdragen](https://github.com/VNG-Realisatie/Tutorial/blob/master/CONTRIBUTING)
-* [Omgangsvormen](https://github.com/VNG-Realisatie/Tutorial/blob/master/CODE_OF_CONDUCT)
+* Hoe u kunt [bijdragen](https://github.com/VNG-Realisatie/Tutorial/blob/master/CONTRIBUTING.md)
+* [Omgangsvormen](https://github.com/VNG-Realisatie/Tutorial/blob/master/CODE_OF_CONDUCT.md)
 
 ## Beheer en ondersteuning
 Contact: standaarden.ondersteuning@vng.nl
 
 ## Licentie
 Copyright &copy; VNG Realisatie 2020
-Licensed under the [EUPL](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/LICENCE)
+Licensed under the [EUPL](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/LICENCE.md)
