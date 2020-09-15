@@ -9,7 +9,7 @@ weight: 40
 
 #### Wie is de opdrachtgever?
 
-VNG is beheerder en eigenaar van de Verwerkingenlogging standaard (nu in ontwikkeling).
+VNG Realisatie is beheerder en eigenaar van de Verwerkingenlogging standaard (nu in ontwikkeling).
 Formeel opdrachtgever is [Theo Peters](https://github.com/TheoVNGPeters), Unit
 Manager Veiligheid, Architectuur en Standaarden.
 
