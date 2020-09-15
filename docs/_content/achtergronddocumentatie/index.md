@@ -7,8 +7,8 @@ De documentatie bij de API-standaard voor Logging van Verwerkingsactiviteiten be
 ## Formele documentatie
 De onderstaande documentatie maakt deel uit van de API-standaard voor Logging van Verwerkingsactiviteiten.
 
-- [API-specificatie]((../archief/work_in_progress.md))
-- [Informatiemodel Logging van Verwerkingsactiviteiten]((../archief/work_in_progress.md))
+- [API-specificatie](../archief/work_in_progress.md)
+- [Informatiemodel Logging van Verwerkingsactiviteiten](../archief/work_in_progress.md)
 
 ## Achtergronddocumentatie
 
