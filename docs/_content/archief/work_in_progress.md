@@ -3,4 +3,4 @@ title: "Under construction"
 date: 15-09-2020
 ---
 
-![under construction](./_assets/under_construction.png =400x400)
+<img src="./_assets/under_construction.png" width="300">
