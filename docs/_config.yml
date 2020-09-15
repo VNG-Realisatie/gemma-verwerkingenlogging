@@ -20,6 +20,10 @@ defaults:
 
 markdown: kramdown
 
+relative_links:
+  enabled:     true
+  collections: false
+
 exclude:
   - archief
   - vendor
