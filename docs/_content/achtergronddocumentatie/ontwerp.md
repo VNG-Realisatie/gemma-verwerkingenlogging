@@ -20,4 +20,10 @@ De verschillende onderdelen van het ontwerp noemen we artefacten. Alle artefacte
 | R	| Requirement |
 | V	| Vraagstuk |
 
-De nummer van aterfacten is uniek over de artefacten heen. Als er dus een A5042 bestaat kan er geen B5042 bestaan. 
+De nummer van artefacten is uniek over de artefacten heen. Als er dus een A5042 bestaat kan er geen B5042 bestaan. 
+
+Vanuit de verschillende artefacten wordt verwezen naar andere artefacten. Zo kan in een casebeschrijving een verwijzing worden gemaakt naar een vraagstuk. Deze verwijzingen zijn in de documentatie via links naar de artefacten opgenomen. Ook is een aantal overzichten beschikbaar waarin de relatie tussen artefacten is weergegeven:
+
+- [Vraagstukken en cases](../archief/work_in_progress)
+- [Vraagstukken en ontwerpbesluiten](../archief/work_in_progress)
+- [Vraagstukken en aanbevelingen](../archief/work_in_progress)
