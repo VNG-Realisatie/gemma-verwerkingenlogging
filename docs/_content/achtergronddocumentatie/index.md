@@ -2,12 +2,13 @@
 title: "Documentatie"
 name: Documentatie
 ---
-De documentatie bij de API's voor Logging van Verwerkingsactiviteiten bestaat uit formele- en achtergronddocumentatie. De formele documentatie maakt onderdeel uit van de standaard. De achtergronddocumentatie maakt geen onderdeel uit van de standaard maar vergroot het begrip en biedt achtergronden bij de gemaakte keuzen.
+De documentatie bij de API-standaard voor Logging van Verwerkingsactiviteiten bestaat uit formele- en achtergronddocumentatie. De formele documentatie maakt onderdeel uit van de standaard. De achtergronddocumentatie maakt geen onderdeel uit van de standaard maar vergroot het begrip en biedt achtergronden bij de gemaakte keuzen.
 
 ## Formele documentatie
+De onderstaande documentatie maakt deel uit van de API-standaard voor Logging van Verwerkingsactiviteiten.
 
-
-
+- [API-specificatie]()
+- [Informatiemodel Logging van Verwerkingsactiviteiten]()
 
 ## Achtergronddocumentatie
 
