@@ -22,7 +22,7 @@ architectuurpatronen voor de toepassing van de standaard.
 
 #### Wat gaat er concreet gemaakt worden?
 
-_Volgens de [productvisie](/index)_
+Als onderdeel van de API-standaard worden de volgende zaken opgeleverd:
 
 * Opstellen en realiseren van Verwerkingenlogging API's volgens Open API Specificatie v3 (AOS 3)
 * Realiseren van een open source referentie-implementatie van een loggingregister
