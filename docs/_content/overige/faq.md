@@ -13,17 +13,19 @@ Formeel opdrachtgever is de Unit Manager Veiligheid, Architectuur en Standaarden
 
 #### Wat is de opdracht?
 
-Het ontwikkelen van een API-standaard voor de vastlegging van de verwerking van (persoons)gegevens en het beschrijven van 
-architectuurpatronen voor de toepassing van de standaard.
+Het ontwikkelen van een API-standaard inclusief referentie implementatie voor de vastlegging en ontsluiting van de verwerking van (persoons)gegevens. De API-standaard moet aan een aantal eisen voldoen:
 
+- implementeerbaar binnen de huidige gemeentelijke informatiesystemen en nieuwe op Common Ground gebaseerde informatiesystemen.
+- conformeren aan de [landelijke API-strategie](https://docs.geostandaarden.nl/api/API-Strategie/)
+- conformeren aan GEMMA Gegevenslandschap architectuur
 
 #### Wat gaat er concreet gemaakt worden?
 
 Als onderdeel van de API-standaard worden de volgende zaken opgeleverd:
 
-* Opstellen en realiseren van Verwerkingenlogging API's volgens Open API Specificatie v3 (AOS 3)
-* Realiseren van een open source referentie-implementatie van een loggingregister
-* Realiseren van een open source referentie-implementatie van applicatie die verwerkingen logt.
+* Verwerkingenlogging API's volgens Open API Specificatie v3 (AOS 3)
+* open source referentie-implementatie van een loggingregister
+* open source referentie-implementatie van applicatie die verwerkingen logt.
 * Functionele en architectuurdocumentatie voor het gebruik van de API.
 
 
@@ -31,19 +33,17 @@ Als onderdeel van de API-standaard worden de volgende zaken opgeleverd:
 
 Er komt een nieuwe API-standaard. Deze standaard dient door alle leveranciers die informatiesystemen aan gemeenten leveren waarin persoonsgegevens worden verwerkt moeten worden ingebouwd. De referentie implementaties bieden leveranciers een voorbeeld hoe deze standaard ingebouwd kan worden.
 
-
 #### Wat is de rol van VNG?
 
-* Beheerder van de standaarden en daarmee ook de standaard die wordt gerealiseerd.
-* Communicatie naar gemeenten
+* Ontwikkelaar en beheerder van de API-standaard
+* Communicatie naar, en afstemming met gemeenten en leveranciers
 * Toetsen aan en aanpassen van de GEMMA architectuur
+* Afstemming met Common Ground
 * Kwaliteitsbewaking
-
 
 #### Is de referentie-implementatie bruikbaar in productie?
 
-Nee. 
-
+De referentieimplementatie is bedoeld voor het aantonen van de werking van de API-standaard en geschikt voor gebruik in een testomgeving. De referentieimplementatie is **niet** geschikt voor gebruik in een productie omgeving. De referentieimplementatie is hiervoor niet geschikt aangezien geen invulling is gegeven aan niet-functionele requirements zoals beschikbaarheid, performance, robuustheid etc. Ook is de ondersteuning vanuit VNG Realisatie tenaanzien van de referentieimplementatie niet ingericht op prodcutioneel gebruik.
 
 #### Wanneer wordt een Release Candidate vastgesteld als Release?
 
