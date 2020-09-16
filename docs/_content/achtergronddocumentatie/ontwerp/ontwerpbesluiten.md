@@ -4,7 +4,7 @@ name: ontwerpbesluiten
 date: '16-09-2020'
 ---
 
-Vanuit de uitwerking van de [cases](./cases.md) en de [requirements](./requirements.md) zijn een aantal ontwerpbesluiten genomen. Per besluit is herleidbaar aan welk requirement of case het requirement gerelateerd is.
+Vanuit de uitwerking van de [cases](./cases.md) en de [requirements](./requirements.md) zijn een aantal ontwerpbesluiten genomen. Per besluit is herleidbaar gemaakt aan welk requirement of case het requirement gerelateerd is. Een overzicht van de relatie tussen besluiten, cases en requirements is [hier](../../archief/work_in_progress.md) te vinden.
 
 Deze ontwerpbesluiten zijn gegroepeerd naar specifieke aspect van de API-standaard. Onderkende aspecten zijn:
 - fundamentele besluiten, 
