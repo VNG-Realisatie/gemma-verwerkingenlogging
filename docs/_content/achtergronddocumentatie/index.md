@@ -10,12 +10,15 @@ De onderstaande documentatie maakt deel uit van de API-standaard voor Logging va
 - [OAS-specificatie](../archief/work_in_progress.md)
 
 ## Achtergrondinformatie
+
 De onderstaande documenten zijn beschikbaar als achtergrondinformatie bij de API-standaard
 
 **Gebruikte brondocumenten**
+
 Bij het ontwerp van de API-standaard is gebruik gemaakt van een aantal [brondocumenten](../achtergronddocumentatie/ontwerp/brondocumenten.md). Deze brondocumenten zijn de basis van het ontwerp van de API-standaard.
 
 **Ontwerp**
+
 Het [ontwerp](./ontwerp.md) van de API-standaard is gericht op het kunnen opstellen van een gegevensmodel en de benodigde API’s. Onderdeel van het ontwerp zijn: 
 - de gehanteerde [afkortingen en terminologie](../achtergronddocumentatie/ontwerp/terminologie.md)
 - de [requirements](../achtergronddocumentatie/ontwerp/requirements.md) die afkomstig zijn uit de [brondocumenten](../achtergronddocumentatie/ontwerp/brondocumenten.md),
