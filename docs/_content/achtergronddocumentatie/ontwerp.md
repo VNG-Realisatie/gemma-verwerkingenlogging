@@ -5,7 +5,7 @@ date: 10-10-2020
 
 ### Ontwerp
 Het ontwerp van de API-standaard is gericht op het kunnen opstellen van een gegevensmodel en de benodigde API’s. Onderdeel van het ontwerp zijn: 
-- de gehanteerde [terminologie](../achtergronddocumentatie/ontwerp/terminologie.md)
+- de gehanteerde [afkortingen en terminologie](../achtergronddocumentatie/ontwerp/terminologie.md)
 - de [requirements](../achtergronddocumentatie/ontwerp/requirements.md) die afkomstig zijn uit de [brondocumenten](../achtergronddocumentatie/ontwerp/brondocumenten.md),
 - [cases](../achtergronddocumentatie/ontwerp/ontwerpcases.md) die rond logging en verwerking zijn uitgeschreven 
 - [vraagstukken](../achtergronddocumentatie/ontwerp/vraagstukken.md) die uit de cases volgen, en 
