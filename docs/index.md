@@ -1,5 +1,6 @@
 ---
 title: "API's voor logging van verwerkingen"
+name: API
 date: 10-10-2020
 ---
 
