@@ -28,4 +28,4 @@ Contact: standaarden.ondersteuning@vng.nl
 
 ## Licentie
 Copyright &copy; VNG Realisatie 2020
-Licensed under the [EUPL](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/LICENCE.md)
+Licensed under the [EUPL](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/LICENSE.md)
