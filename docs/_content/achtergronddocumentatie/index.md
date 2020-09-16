@@ -13,7 +13,7 @@ De onderstaande documentatie maakt deel uit van de API-standaard voor Logging va
 
 De onderstaande documenten zijn beschikbaar als achtergrondinformatie bij de API-standaard
 
-**Gebruikte brondocumenten**
+**Brondocumenten**
 
 Bij het ontwerp van de API-standaard is gebruik gemaakt van een aantal [brondocumenten](../achtergronddocumentatie/ontwerp/brondocumenten.md). Deze brondocumenten zijn de basis van het ontwerp van de API-standaard.
 
