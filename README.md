@@ -9,7 +9,7 @@ Het werkingsgebied voor de ontwikkelde standaarden is: gemeenten en gemeentelijk
 Organisaties die persoonsgegevens verwerken zijn conform de [Algemene Verordening Gegevensbescherming (AVG)](https://autoriteitpersoonsgegevens.nl/nl/over-privacy/wetten/algemene-verordening-gegevensbescherming-avg) en de [Uitvoeringswet AVG](https://wetten.overheid.nl/BWBR0040940/2019-02-19) verplicht om aan te kunnen tonen dat een verwerking van persoonsgegevens aan de belangrijkste beginselen van verwerking voldoet, zoals rechtmatigheid, transparantie, doelbinding en juistheid. Om aan deze verantwoordingsplicht te kunnen voldoen is het van belang dat per verwerking de belangrijkste metagegevens van de verwerkingen worden vastgelegd. Standaardisatie van de vastlegging van verwerkingen is van belang om de eenduidigheid en toegankelijkheid van deze gegevens te borgen. Door VNG-Realisatie is de 'Verwerkingenlogging' API-standaard ontwikkeld als onderdeel van de GEMMA referentiearchitectuur. Deze API-standaard biedt leveranciers van informatiesystemen gestandaardiseerde API-specificaties voor het vastleggen en ontsluiten van de logging van verwerkingen.
 
 ## Project documentatie
-De volledige documentatie van de API-standaard is via de standaard Github navigatie beschikbaar maar kan ook via een [gebruiksvriendelijke interface](https://vng-realisatie.github.io/gemma-verwerkingenlogging/) worden benaderd.
+De volledige documentatie van de API-standaard is via de standaard Github navigatie beschikbaar via [./docs/index.md] maar kan ook via een [gebruiksvriendelijke interface](https://vng-realisatie.github.io/gemma-verwerkingenlogging/) worden benaderd.
 
 ## Bronnen
 * [API strategie en URI strategie](https://geonovum.github.io/KP-APIs/API-strategie-algemeen/)
