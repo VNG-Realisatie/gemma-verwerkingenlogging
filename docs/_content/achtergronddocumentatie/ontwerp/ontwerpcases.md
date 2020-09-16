@@ -13,16 +13,16 @@ De cases zijn gegroepeerd op basis van de verschillende soorten patronen die voo
 
 ## Hoe komt informatie in het log
 | Indeling | Toelichting |
-|--|--|
-| [Bijhouden van gegevens](./cases/Bijhouden_van_gegevens.md)|Gemeenten houden allerlei gegevens bij van personen en objecten.|
+|---|---|
+| [Bijhouden van gegevens](./cases/Bijhouden_van_gegevens.md)|Bijhouding van gegevens van personen en andere objecten door de gemeente.|
 | Opvragen van gegevens|Opvragen van gegevens binnen de gemeente of door derden. Bij een opvraging ligt het initiatief bij de vragende partij.|
-| Opvragen van gegevens bij derden|Opvragen van gegevens binnen de gemeente bij derden. Het initiatief ligt bij de gemeente en in het log van de derden dient de doelbinding van de gemeente opgenomen te worden.|
+| Opvragen van gegevens bij derden|Opvragen van gegevens door de gemeente bij derden. Het initiatief ligt bij de gemeente en in het log van de derden dient de doelbinding van de gemeente opgenomen te worden.|
 | Leveren van gegevens|Levering van gegevens binnen de gemeente of aan derden. Het initiatief ligt bij (het informatie verwerkende proces van) de gemeente.|
 
 
 ## Bijzondere gevallen
 | Indeling | Toelichting |
-|--|--|
+|---|---|
 | Vertrouwelijke verwerkingen – (tijdelijk) verborgen logregels|Onderzoeken van bijvoorbeeld inlichtingendiensten mogen niet zichtbaar zijn zolang deze lopen. Daarnaast is het in het kader van de privacy ongewenst dat allerlei mensen – ook na afronding van de onderzoeken – kunnen zien dat dit soort onderzoeken hebben plaatsgevonden. |
 | Privaatrechtelijke verwerking | Hoe loggen we dit. Hoe gaan we om met situaties waarin expliciete toestemming nodig is. |
 | Bewaartermijnen | Logs dienen geschoond te worden na afloop van de bewaartermijn. Welke termijnen zijn er en hoe gaan we daarmee om? |
@@ -30,5 +30,5 @@ De cases zijn gegroepeerd op basis van de verschillende soorten patronen die voo
 
 ## Inzage in het log
 | Indeling | Toelichting |
-|--|--|
+|---|---|
 | Inzage in het log | Op welke wijze kunnen burgers, medewerkers en derden inzage krijgen in het log. |
