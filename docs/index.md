@@ -10,16 +10,16 @@ Organisaties die persoonsgegevens verwerken zijn conform de [Algemene Verordenin
 Het werkingsgebied voor deze standaard is: gemeenten en gemeentelijke samenwerkingsverbanden.
 
 ## Inhoud van de API-standaard
-- [Informatiemodel Verwerkingenlog](./archief/work_in_progress.md)
-- [API-standaard voor Logging van verwerkingen](./archief/work_in_progress.md)
-- [Referentieimplementatie van een verwerkingenlogregister](./archief/work_in_progress.md)
-- [Referentieimplementatie van een informatiesysteem wat verwerkingen logt](./archief/work_in_progress.md)
-- [Beschrijving best-practices en architectuurmodellen](./archief/work_in_progress.md)
+- [Informatiemodel Verwerkingenlog](./_content/archief/work_in_progress.md)
+- [API-standaard voor Logging van verwerkingen](./_content/archief/work_in_progress.md)
+- [Referentieimplementatie van een verwerkingenlogregister](./_content/archief/work_in_progress.md)
+- [Referentieimplementatie van een informatiesysteem wat verwerkingen logt](./_content/archief/work_in_progress.md)
+- [Beschrijving best-practices en architectuurmodellen](./_content/archief/work_in_progress.md)
 
 ## Achtergronddocumentatie
-- [Productvisie](productvisie/index.md)
-- [Ontwerp van de API-standaard](./achtergronddocumentatie/ontwerp.md)
-- [Kwaliteitseisen aan de API-standaard](./achtergronddocumentatie/definition_of_done.md)
+- [Productvisie](./_content/productvisie/index.md)
+- [Ontwerp van de API-standaard](./_content/achtergronddocumentatie/ontwerp.md)
+- [Kwaliteitseisen aan de API-standaard](./_content/achtergronddocumentatie/definition_of_done.md)
 
 ## Gerelateerde standaarden
 * [GEMMA Verwerkingsactiviteiten](https://github.com/VNG-Realisatie/gemma-verwerkingsactiviteiten)
