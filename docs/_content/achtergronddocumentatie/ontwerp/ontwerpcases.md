@@ -16,13 +16,13 @@ De cases zijn gegroepeerd op basis van de verschillende soorten patronen die voo
 ## Hoe komt informatie in het log
 - [Bijhouden van gegevens](./cases/Bijhouden_van_gegevens.md) - Bijhouding van gegevens van personen en andere objecten door de gemeente
 - [Opvragen van gegevens](../../archief/work_in_progress.md) - Opvragen van gegevens binnen de gemeente of door derden. Bij een opvraging ligt het initiatief bij de vragende partij.
-- [Opvragen van gegevens bij derden]() - Opvragen van gegevens door de gemeente bij derden. Het initiatief ligt bij de gemeente en in het log van de derden dient de doelbinding van de gemeente opgenomen te worden.
-- [Leveren van gegevens]() - Levering van gegevens binnen de gemeente of aan derden. Het initiatief ligt bij (het informatie verwerkende proces van) de gemeente.
+- [Opvragen van gegevens bij derden](../../archief/work_in_progress.md) - Opvragen van gegevens door de gemeente bij derden. Het initiatief ligt bij de gemeente en in het log van de derden dient de doelbinding van de gemeente opgenomen te worden.
+- [Leveren van gegevens](../../archief/work_in_progress.md) - Levering van gegevens binnen de gemeente of aan derden. Het initiatief ligt bij (het informatie verwerkende proces van) de gemeente.
 
 ## Bijzondere gevallen
-- [Vertrouwelijke verwerkingen – (tijdelijk) verborgen logregels]() - Onderzoeken van bijvoorbeeld inlichtingendiensten mogen niet zichtbaar zijn zolang deze lopen. Daarnaast is het in het kader van de privacy ongewenst dat allerlei mensen – ook na afronding van de onderzoeken – kunnen zien dat dit soort onderzoeken hebben plaatsgevonden.
-- [Privaatrechtelijke verwerking]() - Hoe loggen we dit. Hoe gaan we om met situaties waarin expliciete toestemming nodig is.
-- [Bewaartermijnen]() - Logs dienen geschoond te worden na afloop van de bewaartermijn. Welke termijnen zijn er en hoe gaan we daarmee om?
+- [Vertrouwelijke verwerkingen – (tijdelijk) verborgen logregels](../../archief/work_in_progress.md) - Onderzoeken van bijvoorbeeld inlichtingendiensten mogen niet zichtbaar zijn zolang deze lopen. Daarnaast is het in het kader van de privacy ongewenst dat allerlei mensen – ook na afronding van de onderzoeken – kunnen zien dat dit soort onderzoeken hebben plaatsgevonden.
+- [Privaatrechtelijke verwerking](../../archief/work_in_progress.md) - Hoe loggen we dit. Hoe gaan we om met situaties waarin expliciete toestemming nodig is.
+- [Bewaartermijnen](../../archief/work_in_progress.md) - Logs dienen geschoond te worden na afloop van de bewaartermijn. Welke termijnen zijn er en hoe gaan we daarmee om?
 
 ## Inzage in het log
-- [Inzage in het log]() - Op welke wijze kunnen burgers, medewerkers en derden inzage krijgen in het log.
+- [Inzage in het log](../../archief/work_in_progress.md) - Op welke wijze kunnen burgers, medewerkers en derden inzage krijgen in het log.
