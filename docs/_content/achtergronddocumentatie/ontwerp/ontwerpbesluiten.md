@@ -6,7 +6,34 @@ date: '16-09-2020'
 
 Vanuit de uitwerking van de [cases](./cases.md) en de [requirements](./requirements.md) zijn een aantal ontwerpbesluiten genomen. Per besluit is herleidbaar aan welk requirement of case het requirement gerelateerd is.
 
-Deze ontwerpbesluiten zijn gegroepeerd naar specifieke aspect van de API-standaard. 
+Deze ontwerpbesluiten zijn gegroepeerd naar specifieke aspect van de API-standaard. Onderkende aspecten zijn:
+- fundamentele besluiten, 
+- besluiten ten aanzien van scope van de API-standaard, 
+- besluiten ten aanzien van de relatie met het register van verwerkingen, 
+- besluiten ten aanzien van het gegevensmodel, en
+- besluiten ten aanzien van tijd- en historie.
+
+Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbevelingen pagina](./aanbevelingen.md) na te lezen.
+
+## Fundamenteel
+
+- B5469: Doelstelling van logging: Duiden versus reconstrueren
+- B7952: Loggen vanuit applicatie: Welke momenten en hoe vaak
+- B7259: Loggen aan beide kanten van een API
+- B3238: Logging-API: Alleen identificatoren of ook achterliggende waarden?
+
+## Scope
+- B0538: Logging beperkt tot verwerkingen
+- B4421: Logging beperkt tot geautomatiseerde verwerkingen
+- B8970: Benadering log bij gefedereerde inrichting
+- B5214: Inzage log beperkt tot gemeentelijk log
+- B0403: Standaardisatie leesbaar logformaat
+- B0797: Standaardisatie rapportages
+
+## Relatie tot het VAR
+- B0869: Koppeling tussen applicaties en VAR
+- B8278: Beëindigen van de geldigheid van verwerkingsactiviteiten
+- B5214: Functie VAR: Doelbindingsinformatie over verwerkingsactiviteit	
 
 ## Gegevensmodel logging
 - B0516: Identificatie van organisaties
@@ -32,3 +59,10 @@ Deze ontwerpbesluiten zijn gegroepeerd naar specifieke aspect van de API-standaa
 - B2042: Pseudonimisering BSN
 - B9428: Terminologie: Gebruiker of Medewerker
 - B0601: Terminologie: Handeling of Gebeurtenis
+
+## Wijzigen, tijd en historie
+- B3891: Wijzigbaarheid en historie
+- B3707: Opname van Tijdstip Registratie
+- B8641: Opname van Vervallen
+- B8157: Opname van Referentie
+
