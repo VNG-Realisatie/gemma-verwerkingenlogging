@@ -1,6 +1,8 @@
 ---
 title: "Cases"
-date: '10-10-2020'
+name: Cases
+layout: default
+date: '16-09-2020'
 ---
 Bij het opstellen van het ontwerp van de API-standaard zijn diverse cases rond logging en verwerking uitgeschreven. Doel van deze cases is de werking van logging en de relatie met een gemeentelijk verwerkingsactiviteitenregister zodanig te doorgronden dat duidelijk wordt:
 - Welke ontwerpvraagstukken er spelen.
