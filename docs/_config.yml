@@ -41,7 +41,7 @@ markdown: kramdown
 
 exclude:
   - archief
-  - vendor
+  - 404*
 
 remote_theme: VNG-Realisatie/jekyll-theme-vng
 
