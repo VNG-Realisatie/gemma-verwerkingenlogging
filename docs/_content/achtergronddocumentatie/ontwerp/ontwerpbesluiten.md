@@ -46,7 +46,7 @@ Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbeve
 - B9207: Opname van Gebruiker
 - B8585: Opname van Gegevensbron
 - B6247: Opname van Gegevenscategorieën
-- [B6872: Opname van Handeling](./besluiten/B6872.md)
+- [B6872: Opname van Handeling](./artefacten/6872.md)
 - B9330: Opname van Ontvangende organisatie
 - B3809: Opname van Operatie
 - B7726: Opname van Resultaat verwerking
