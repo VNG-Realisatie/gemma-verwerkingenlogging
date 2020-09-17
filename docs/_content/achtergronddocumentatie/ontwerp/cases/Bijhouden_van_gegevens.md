@@ -1,6 +1,6 @@
 ---
 title: "Cases - Bijhouden van gegevens"
-date: '10-10-2020'
+date: '10-09-2020'
 ---
 
 ## Algemeen
@@ -12,6 +12,6 @@ De onderstaande cases beschrijven verschillende bijhoudingspatronen waarmee pers
 | V	| Vraagstuk |
 
 ## Casebeschrijvingen - Bijhouden van gegevens
-[C9172: Registratie Verhuizing – Eenvoudig, traditioneel systeem](./individueel/C9172.md)
+[C9172: Registratie Verhuizing – Eenvoudig, traditioneel systeem](./../artefacten/9172.md)
 
 
