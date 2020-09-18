@@ -7,7 +7,7 @@
 - name: Architectuur
   link: /architectuur/
   weight: 40
-- name: Informatiemodel
+- name: Gegevens- en informatiemodel
   link: /informatiemodel/
   weight: 50
 - name: API's
