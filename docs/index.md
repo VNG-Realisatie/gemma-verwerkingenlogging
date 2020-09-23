@@ -1,5 +1,5 @@
 ---
-title: "API's voor logging van verwerkingen"
+title: "API-standaard voor logging van verwerkingen"
 name: API
 date: 10-09-2020
 ---
