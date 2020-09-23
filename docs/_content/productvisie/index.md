@@ -9,6 +9,8 @@ Door VNG Realisatie wordt een API-standaard ontwikkeld waarmee de verwerkingen v
 
 Door een API-standaard te ontwikkelen vanuit VNG Realisatie wordt voorkomen dat leveranciers van gemeentelijke informatiesystemen zelf een werkwijze en structuur van logging moeten bedenken. Het voorkomt ook dat gemeenten met verschillende implementaties van logging van verwerkingen worden geconfronteerd met alle problemen ten aanzien van ontsluiting van deze gegevens naar de burger. De API-standaard is voorbereid op de mogelijkheid om de verwerking van gegevens van een breed scala van objecttypen te ondersteunen. In eerste instantie richt de API-standaard zich echter op de vastlegging van de verwerking van persoonsgegevens. Zowel de publiek- als privaatrechtelijke verwerking van persoonsgegevens door de gemeente zijn hierbij in scope van de API-standaard.
 
+Alle informatiesystemen die persoonsgegevens verwerken zijn vanuit de privacywetgeving verplicht om deze verwerkingen vast te leggen en te ontsluiten naar de burger. Dat houdt in dat implementatie van de API-standaard voor al deze informatiesystemen verplicht is. Deze verplichting geldt voor zowel bestaande als nieuwe informatiesystemen. Voor informatiesystemen die geen persoonsgegevens maar wel gegevens van andere soorten objecten verwerken is implementatie optioneel. 
+
 
 ## Voor wie wordt de API-standaard ontwikkeld?
 De API-standaard wordt ontwikkeld voor partijen die informatiesystemen ontwikkelen die door gemeenten en gemeentelijke samenwerkingen worden gebruikt. Deze partijen kunnen de API-standaard implementeren in hun informatiesystemen om zodoende op een compliant manier logging te kunnen vastleggen en ontsluiten.
@@ -18,12 +20,18 @@ De API-standaard wordt ontwikkeld voor partijen die informatiesystemen ontwikkel
 Bij de vastlegging van een verwerking van een object worden niet de daadwerkelijke gegevens die verwerkt zijn vastgelegd maar de metagegevens van de verwwerking. Daarnaast wordt een verwijzing naar het object dat verwerkt is opgenomen. Bij de verwerking van persoonsgegevens is deze verwijzing bijvoorbeeld het BSN van de persoon waarvan gegevens verwerkt zijn. Bij een verwerking wordt als onderdeel van de metagegevens vastgelegd wat het doel en de grondslag (bijvoorbeeld wetgeving of toestemming van een burger) van de verwerking was. Dit wordt de ‘doelbinding’ genoemd. Door het vastleggen van de doelbinding kan als het over de verwerking van persoonsgegevens gaat aan de betreffende burger duidelijk worden gemaakt waarvoor de gegevens verwerkt zijn.  
 
 
+## Toegevoegde waarde voor gemeenten
+- Gemeenten kunnen op een eenvoudige, en gestandaardiseerde wijze de logging ontsluiten van informatiesystemen die de API-standaard hebben geimplementeerd;
+- Gemeenten kunnen informatiesystemen die de API-standaard hebben geimplementeerd eenvoudig koppelen aan een gemeentelijk loggingregister;
+- Gemeenten kunnen op een gestandaardiseerde wijze burger faciliteren in hun recht op inzage van verwerkingen van hun gegevens;
+
+
+## Toegevoegde waarde voor leveranciers
+- Geen eigen ontwerp van een koppelvlak nodig en daardoor lagere kosten;
+- Naadloze integratie met loggingregisters van andere partijen.
 
 
 
-## Voor welke informatiesystemen is de standaard van toepassing?
-Alle informatiesystemen die persoonsgegevens verwerken zijn vanuit de privacywetgeving verplicht om deze verwerkingen vast te leggen en te ontsluiten naar de burger. Dat houdt in dat implementatie van de API-standaard voor al deze informatiesystemen verplicht is. Deze verplichting geldt voor zowel bestaande als nieuwe informatiesystemen. 
 
-Voor informatiesystemen die geen persoonsgegevens maar wel gegevens van andere soorten objecten verwerken is implementatie optioneel. 
 
 
