@@ -53,4 +53,5 @@ In het gevenswoordenboek spreken we in dergelijke gevallen over *‘Verplicht in
 - [Verwerkt object](./objecttypen/attributen/Verwerkt_object.md)
 
 ## Attribuuttypen
+- [Aantal jaar](./attribuuttypen/Aantal_jaar.md)
 
