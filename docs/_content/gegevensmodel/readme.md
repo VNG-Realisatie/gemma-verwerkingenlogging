@@ -20,7 +20,7 @@ Het wenselijk lijkt om het VAR op een zo concreet mogelijk niveau in te richten.
 
 Dit alles in overweging nemend komen tot de volgende definitie:
 
-	`Verwerkingsactiviteit: Een verwerkingsactiviteit is of een categorie van verwerkingen of een concreet soort verwerking.`
+`Verwerkingsactiviteit: Een verwerkingsactiviteit is of een categorie van verwerkingen of een concreet soort verwerking.`
 
 We voegen in de definitie dus eigenlijk twee begrippen samen. Dat is wat ongebruikelijk maar noodzakelijk om recht te doen aan de daadwerkelijke invulling van het VAR. 
 
