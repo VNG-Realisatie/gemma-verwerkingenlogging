@@ -1,6 +1,6 @@
 ---
-title: "Objecttype: Vertrouwelijkheid"
-name: Objecttype: Vertrouwelijkheid
+title: "Attribuut: Vertrouwelijkheid"
+name: Attribuut: Vertrouwelijkheid
 date: 28-09-2020
 ---
 
