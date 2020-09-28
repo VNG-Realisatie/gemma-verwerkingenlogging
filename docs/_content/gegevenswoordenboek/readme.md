@@ -25,7 +25,7 @@ In het gevenswoordenboek spreken we in dergelijke gevallen over *‘Verplicht in
 - [ID](./objecttypen/ID.md)
 - [Naam](./objecttypen/Naam.md)
 - [Handeling.Naam](./objecttypen/Handeling.Naam.md)
-- [Verwerking.Naam](../objecttypen/Verwerking.Naam.md)
+- [Verwerking.Naam](./objecttypen/Verwerking.Naam.md)
 - [Verwerking.ID](./objecttypen/Verwerking.ID.md)
 - [Verwerkingsactiviteit.ID](./objecttypen/Verwerkingsactiviteit.ID.md)
 - [Vertrouwelijkheid](./objecttypen/Vertrouwelijkheid.md)
