@@ -1,6 +1,6 @@
 ---
-title: "Objecttype: Systeem"
-name: Objecttype: Systeem
+title: "Attribuut: Systeem"
+name: Attribuut: Systeem
 date: 28-09-2020
 ---
 
