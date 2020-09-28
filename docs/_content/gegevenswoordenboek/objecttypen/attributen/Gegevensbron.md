@@ -1,6 +1,6 @@
 ---
-title: "Objecttype: Gegevensbron"
-name: Objecttype: Gegevensbron
+title: "Attribuut: Gegevensbron"
+name: Attribuut: Gegevensbron
 date: 28-09-2020
 ---
 
