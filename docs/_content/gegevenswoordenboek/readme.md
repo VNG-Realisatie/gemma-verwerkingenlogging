@@ -23,4 +23,7 @@ In het gevenswoordenboek spreken we in dergelijke gevallen over *‘Verplicht in
 
 ## Objecttypen
 - [Actie](./objecttypen/Actie.md)
+- [Verwerkt object](./objecttypen/Verwerkt_object.md)
+- [Verwerkt soort gegeven](./objecttypen/Verwerkt_soort_gegeven.md)
+
 
