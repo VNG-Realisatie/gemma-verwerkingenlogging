@@ -11,9 +11,8 @@ date: 28-09-2020
 -	In de VAR’s van gemeenten komen zowel hele generieke als hele specifieke verwerkingsactiviteiten voor. De granulariteit in het VAR wisselt dus sterk. Zo treffen we bijvoorbeeld ‘BRP Registratie’ aan, maar ook ‘Geslachtswijziging’.
 -	Het begrip verwerking wordt wel in de AVG gedefinieerd.
 
-### Terminologie
-**Verwerkingsactiviteit**
-
+## Terminologie
+### Verwerkingsactiviteit
 Op basis van de inhoud van de gemeentelijke VAR’s is het nog niet zo eenvoudig om een eenduidige definitie te geven van het begrip verwerkingsactiviteit.
 Nemen we ‘BRP Registratie’, ‘Gegevenslevering aan derden’ of ‘Fraudeonderzoek’ als uitgangspunt dan beschrijven deze begrippen eigenlijk een hele groep of categorie van verwerkingen. Nemen we ‘Geslachtswijziging’ als voorbeeld dan beschrijft dat een heel concrete taak van de gemeente.
 Het wenselijk lijkt om het VAR op een zo concreet mogelijk niveau in te richten. Daar zijn twee kanttekeningen bij te plaatsen. Ten eerste zal dit naar alle waarschijnlijkheid een geleidelijk verbeteringsproces zijn. Ten tweede valt te verwachten dat er altijd verwerkingsactiviteiten in het register zullen voorkomen die niet specifieker omschreven kunnen worden. 
@@ -24,8 +23,7 @@ Dit alles in overweging nemend komen tot de volgende definitie:
 
 We voegen in de definitie dus eigenlijk twee begrippen samen. Dat is wat ongebruikelijk maar noodzakelijk om recht te doen aan de daadwerkelijke invulling van het VAR. 
 
-**Verwerking**
-
+### Verwerking
 In de AVG staat in artikel 4 de volgende definitie:
 
 `„verwerking”: een bewerking of een geheel van bewerkingen met betrekking tot persoonsgegevens of een geheel van persoonsgegevens, al dan niet uitgevoerd via geautomatiseerde procedés, zoals het verzamelen, vastleggen, ordenen, structureren, opslaan, bijwerken of wijzigen, opvragen, raadplegen, gebruiken, verstrekken door middel van doorzending, verspreiden of op andere wijze ter beschikking stellen, aligneren of combineren, afschermen, wissen of vernietigen van gegevens;`
@@ -39,8 +37,7 @@ Binnen de bedrijfsvoering van de gemeente zal een verwerking dus vaak correspond
 
 Een bijzondere categorie van verwerkingen zijn de z.g.n. geautomatiseerde verwerkingen. Hierbij is de aanleiding niet een verzoek van een burger of het initiatief van een medewerker maar de planning van een geautomatiseerde taak. Voorbeelden zijn levering van gegevens aan de BRP of het uitvoeren van een selectie t.b.v. een rapportage.
 
-**Handeling**
-
+### Handeling
 Eenvoudige verwerkingen zoals de registratie van een verhuizing of het leveren van gegevens aan een derde kunnen vaak in één keer uitgevoerd worden. Bij complexere verwerkingen is er vaak sprake van een proces met meerdere stappen.
 Bij inzage in het log kan het voor de burger en de gemeentelijke medewerkers zeer verhelderend zijn om bij complexere verwerkingen niet alleen de naam van de verwerking te lezen (bijvoorbeeld ‘huwelijk’) maar ook de naam van de stap in het proces (‘ondertrouw’). Dit soort processtappen noemen we handelingen.
 
@@ -51,8 +48,7 @@ Toelichting:
 -	Bij een ‘happy flow’ zijn er geen uitzonderingen en gaat er niets fout.
 -	In spreektaal zouden we zeggen dat een handeling op ‘één moment’ in de tijd uitgevoerd wordt.
 
-**Actie**
-
+### Actie
 Een handeling kan bestaan uit meerdere interacties met een systeem. Het kan bijvoorbeeld zijn dat we eerst gegevens ophalen, wellicht nog extra details opvragen, een aanpassing maken en daarna de wijzigingen opslaan. In dat geval zijn er in het kader van een handeling vier acties uitgevoerd.
 
 `Actie: Een actie is een operatie die wordt uitgevoerd door een geautomatiseerd systeem waarbij er (persoons)gegevens verwerkt worden. Een actie wordt uitgevoerd als onderdeel van (een handeling van) een verwerking.`
@@ -64,6 +60,12 @@ Zouden we ook handmatige gegevensverwerkingen loggen dan zou ook het bekijken va
 ## Voorbeelden
 Onderstaande tabel toont voor vijf verschillende cases voorbeelden bij de begrippen:
 
+||Case 1|Case 2|Case 3|Case 4|Case 5|
+|--|--|--|--|--|--|
+|**Verwerkingsactiviteit**|BRP Registratie|Geslachtswijziging|Registratie verhuizingen|Fraudeonderzoek sociale zekerheid|Verstrekken van informatie aan derden|
+|**Verwerking**|Huwelijk|Geslachtswijziging|Registratie verhuizing|Onderzoek|Bevraging door derde|
+|**Handeling**|Intake, Ondertrouw, Opmaken akten, Voorbereiding ceremonie, Registratie huwelijk|Wijziging geslacht, Wijziging voornaam, Aanpassen historie|Registratie verhuizing|Verzamelen gegevens, Verificatie, ..|Bevraging door derde|
+|**Actie**|Zoeken personen, Ophalen pers. gegevens, Opslaan pers. gegevens|Ophalen pers. gegevens, Opslaan pers. gegevens|Ophalen pers. gegevens, Opslaan pers. gegevens|..|Ophalen pers. gegevens|
 
 Opmerkingen bij de cases:
 -	Bij cases 1 en 5 is de verwerkingsactiviteit duidelijk een categorie van bij elkaar horende verwerkingen. Anders gezegd: Een burger kan deze verwerkingen niet één op één terugvinden op de website van de gemeente.
