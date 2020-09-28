@@ -1,5 +1,5 @@
 ---
-title: "Objecttype: HGegevensbron"
+title: "Objecttype: Gegevensbron"
 name: Objecttype: Gegevensbron
 date: 28-09-2020
 ---
