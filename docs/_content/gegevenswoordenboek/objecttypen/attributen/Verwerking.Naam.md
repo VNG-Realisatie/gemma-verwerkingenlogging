@@ -13,7 +13,7 @@ Zie de toelichting bij het objecttype Actie.
 ## Voorbeeld
 `Huwelijk`
 
-## *Attribuuttype
+## Attribuuttype
 Universal Unique IDentifier (UUID)
 
 ## Aanwezigheid
