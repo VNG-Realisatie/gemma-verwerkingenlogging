@@ -1,6 +1,6 @@
 ---
-title: "Objecttype: Handeling.Naam"
-name: Objecttype: Handeling.Naam
+title: "Attribuut: Handeling.Naam"
+name: Attribuut: Handeling.Naam
 date: 28-09-2020
 ---
 
