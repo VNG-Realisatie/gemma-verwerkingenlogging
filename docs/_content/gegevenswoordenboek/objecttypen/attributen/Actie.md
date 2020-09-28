@@ -1,6 +1,6 @@
 ---
-title: "Objecttype: Actie"
-name: Objecttype: Actie
+title: "Attribuut: Actie"
+name: Attribuut: Actie
 date: 28-09-2020
 ---
 
