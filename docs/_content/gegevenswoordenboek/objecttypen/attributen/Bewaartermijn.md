@@ -1,6 +1,6 @@
 ---
-title: "Objecttype: Bewaartermijn"
-name: Objecttype: Bewaartermijn
+title: "Attribuut: Bewaartermijn"
+name: Attribuut: Bewaartermijn
 date: 28-09-2020
 ---
 
