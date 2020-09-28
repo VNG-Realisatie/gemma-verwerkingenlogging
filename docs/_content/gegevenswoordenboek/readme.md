@@ -26,4 +26,31 @@ In het gevenswoordenboek spreken we in dergelijke gevallen over *‘Verplicht in
 - [Verwerkt object](./objecttypen/Verwerkt_object.md)
 - [Verwerkt soort gegeven](./objecttypen/Verwerkt_soort_gegeven.md)
 
+## Attributen
+- [Actie](./objecttypen/attributen/Actie.md)
+- [Afnemer](./objecttypen/attributen/Afnemer.md)
+- [Betrokkenheid](./objecttypen/attributen/Betrokkenheid.md)
+- [Bewaartermijn](./objecttypen/attributen/Bewaartermijn.md)
+- [Gebruiker](./objecttypen/attributen/Gebruiker.md)
+- [Gegevensbron](./objecttypen/attributen/Gegevensbron.md)
+- [Handeling.Naam](./objecttypen/attributen/Handeling.Naam.md)
+- [ID](./objecttypen/attributen/ID.md)
+- [Naam](./objecttypen/attributen/Naam.md)
+- [Object ID](./objecttypen/attributen/Object_ID.md)
+- [Objecttype](./objecttypen/attributen/Objecttype.md)
+- [Soort gegeven](./objecttypen/attributen/Soort_gegeven.md)
+- [Soort object ID](./objecttypen/attributen/Soort_object_ID.md)
+- [Systeem](./objecttypen/attributen/Systeem.md)
+- [Tijdstip](./objecttypen/attributen/Tijdstip.md)
+- [Tijdstip registratie](./objecttypen/attributen/Tijdstip_registratie.md)
+- [Uitvoerder](./objecttypen/attributen/Uitvoerder.md)
+- [Vertrouwelijkheid](./objecttypen/attributen/Vertrouwelijkheid.md)
+- [Vervallen](./objecttypen/attributen/Vervallen.md)
+- [Verwerking.ID](./objecttypen/attributen/Verwerking.ID.md)
+- [Verwerking.Naam](./objecttypen/attributen/Verwerking.Naam.md)
+- [Verwerking afnemer](./objecttypen/attributen/Verwerking_afnemer.md)
+- [Verwerkingsactiviteit.ID](./objecttypen/attributen/Verwerkingsactiviteit.ID.md)
+- [Verwerkt object](./objecttypen/attributen/Verwerkt_object.md)
+
+## Attribuuttypen
 
