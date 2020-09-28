@@ -23,4 +23,4 @@ Een aanvullende bron voor de gebruikte terminologie is het [gegevenswoordenboek]
 -	Het verwerkingsactiviteitenregister wordt afgekort tot het `VAR`.
 -	Het door de IBD ter beschikking gestelde vooringevulde verwerkingsactiviteitenregister wordt het `Landelijk VAR` genoemd.
 -	Om een duidelijk onderscheid te maken tussen beide registers wordt in passages waar dat nodig is gesproken over het `Gemeentelijk VAR` versus het `Landelijk VAR`.
--	Het log van verwerkingen wordt afgekort tot het `log`. 
+-	Het log van verwerkingen wordt afgekort tot `het log`. 
