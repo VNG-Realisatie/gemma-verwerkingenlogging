@@ -7,15 +7,18 @@
 - name: Architectuur
   link: /architectuur/
   weight: 40
-- name: Gegevens- en informatiemodel
-  link: /informatiemodel/
+- name: Gegevensmodel
+  link: /gegevensmodel/
   weight: 50
+- name: Informatiemodel
+  link: /informatiemodel/
+  weight: 60
 - name: API's
   link: /api/
-  weight: 60
+  weight: 70
 - name: FAQ
   link: /overige/faq
-  weight: 70
+  weight: 80
 - name: Contact
   link: /contact/
   weight: 90
