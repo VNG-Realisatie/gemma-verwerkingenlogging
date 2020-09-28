@@ -11,3 +11,6 @@ Het gegevensmodel van de logging van verwerkingen bestaat uit de onderstaande on
 - [Uitwisselingsgegevensmodel (UGM)](./uitwisselingsgegevensmodel/readme.md)
 - [Logging Maturity Level (LML)](./logging_maturity_level/readme.md)
 
+Het gegevensmodel is vertaald naar een [Gegevenswoordenboek](../gegevenswoordenboek/readme.md). In dit gegevenswoordenboek zijn de definities van objecttypen, attributen en attribuuttypen opgenomen.
+
+
