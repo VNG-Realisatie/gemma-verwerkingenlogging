@@ -1,6 +1,6 @@
 ---
-title: "Informatiemodel"
-name: Informatiemodel
+title: "Gegevens- en Informatiemodel"
+name: Gegevens- en Informatiemodel
 ---
 
 ## Gegevensmodel
