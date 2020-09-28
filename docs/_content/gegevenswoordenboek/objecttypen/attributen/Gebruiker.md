@@ -1,6 +1,6 @@
 ---
-title: "Objecttype: Gebruiker"
-name: Objecttype: Gebruiker
+title: "Attribuut: Gebruiker"
+name: Attribuut: Gebruiker
 date: 28-09-2020
 ---
 
