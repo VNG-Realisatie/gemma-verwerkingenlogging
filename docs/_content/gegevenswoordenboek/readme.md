@@ -22,20 +22,5 @@ In het gevenswoordenboek spreken we in dergelijke gevallen over *‘Verplicht in
 -	Kan ook de gebruiker het niet altijd bepalen? Geef deze dan bijvoorbeeld wel een waarschuwing dat het attribuut/veld bij voorkeur ingevuld dient te worden.
 
 ## Objecttypen
-- [ID](./objecttypen/ID.md)
-- [Naam](./objecttypen/Naam.md)
-- [Handeling.Naam](./objecttypen/Handeling.Naam.md)
-- [Verwerking.Naam](./objecttypen/Verwerking.Naam.md)
-- [Verwerking.ID](./objecttypen/Verwerking.ID.md)
-- [Verwerkingsactiviteit.ID](./objecttypen/Verwerkingsactiviteit.ID.md)
-- [Vertrouwelijkheid](./objecttypen/Vertrouwelijkheid.md)
-- [Bewaartermijn](./objecttypen/Bewaartermijn.md)
-- [Uitvoerder](./objecttypen/Uitvoerder.md)
-- [Systeem](./objecttypen/Systeem.md)
-- [Gebruiker](./objecttypen/Gebruiker.md)
-- [Gegevensbron](./objecttypen/Gegevensbron.md)
-- [Afnemer](./objecttypen/Afnemer.md)
-- [Verwerking afnemer](./objecttypen/Verwerking_afnemer.md)
-- [Tijdstip](./objecttypen/Tijdstip.md)
-- [Tijdstip registratie](./objecttypen/Tijdstip_registratie.md)
-- [Vervallen](./objecttypen/Vervallen.md)
+- [Actie](./objecttypen/Actie.md)
+
