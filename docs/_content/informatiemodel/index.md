@@ -1,10 +1,4 @@
 ---
-title: "Gegevens- en Informatiemodel"
-name: Gegevens- en Informatiemodel
+title: "Informatiemodel"
+name: Informatiemodel
 ---
-
-## Gegevensmodel
-[Gegevensmodel](../gegevensmodel/readme.md)
-
-## Gegevenswoordenboek
-[Gegevenswoordenboek](../gegevenswoordenboek/readme.md)
