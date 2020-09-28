@@ -4,12 +4,7 @@ name: Gegevens- en Informatiemodel
 ---
 
 ## Gegevensmodel
-
-## Semantisch informatiemodel (SIM)
-
-## Uitwisselingsgegevensmodel (UGM)
-
-## Logging Maturity Level
+[Gegevensmodel](../gegevensmodel/readme.md)
 
 ## Gegevenswoordenboek
 [Gegevenswoordenboek](../gegevenswoordenboek/readme.md)
