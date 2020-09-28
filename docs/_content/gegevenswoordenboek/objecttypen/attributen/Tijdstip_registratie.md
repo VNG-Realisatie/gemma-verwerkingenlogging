@@ -1,6 +1,6 @@
 ---
-title: "Objecttype: Tijdstip registratie"
-name: Objecttype: Tijdstip registratie
+title: "Attribuut: Tijdstip registratie"
+name: Attribuut: Tijdstip registratie
 date: 28-09-2020
 ---
 
