@@ -8,7 +8,7 @@ date: 28-09-2020
 Gegevensbron waarin de bij actie betrokken gegevens zijn opgeslagen.
 
 ## Toelichting
-Zie [B8585](./achtergronddocumentatie/ontwerp/artefacten/8585.md).
+Zie [B8585](../../../achtergronddocumentatie/ontwerp/artefacten/8585.md).
 
 ## Voorbeeld
 `FooBar Database Publiekszaken BEL Combinatie`
