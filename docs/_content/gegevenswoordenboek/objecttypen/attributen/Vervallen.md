@@ -1,6 +1,6 @@
 ---
-title: "Objecttype: Vervallen"
-name: Objecttype: Vervallen
+title: "Attribuut: Vervallen"
+name: Attribuut: Vervallen
 date: 28-09-2020
 ---
 
