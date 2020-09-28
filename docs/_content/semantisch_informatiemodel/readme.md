@@ -5,7 +5,7 @@ date: 28-09-2020
 ---
 Op basis van de begrippen uit het [gegevensmodel](../gegevensmodel/readme.md) ontstaat het volgende semantische informatiemodel.
 
-![](./_assets/sim.png)
+<img src="./_assets/sim.png" alt="SIM" width="600"/>
 
 ## Toelichting
 -	Aan de linkerkant zien we de verschillende objecttypen die horen bij de geïntroduceerde begrippen. Bij de attributen van de objecttypen zien we drie kolommen. In de eerste kolom staat de naam van het attribuut. In de tweede het type en in de laatste of het attribuut verplicht is. Hierbij worden de volgende waarden gebruikt:
