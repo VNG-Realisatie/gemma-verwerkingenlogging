@@ -1,6 +1,6 @@
 ---
-title: "Objecttype: Afnemer"
-name: Objecttype: Afnemer
+title: "Attribuut: Afnemer"
+name: Attribuut: Afnemer
 date: 28-09-2020
 ---
 
