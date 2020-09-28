@@ -1,6 +1,6 @@
 ---
-title: "Objecttype: Verwerking.Naam"
-name: Objecttype: Verwerking.Naam
+title: "Attribuut: Verwerking.Naam"
+name: Attribuut: Verwerking.Naam
 date: 28-09-2020
 ---
 
