@@ -7,13 +7,14 @@ date: 28-09-2020
 ## Beschrijving
 Soort gegeven dat verwerkt is.
 
-## Toelichting.
+## Toelichting
+.
 
 ## Voorbeeld
 `BSN`
 
 ## Attribuuttype
-Naam
+[Naam](../attribuuttypen/Naam.md)
 
 ## Aanwezigheid
 Verplicht
