@@ -1,6 +1,6 @@
 ---
-title: "Attribuut: Objecttype"
-name: Attribuut: Objecttype
+title: "Attribuut - Objecttype"
+name: Attribuut - Objecttype
 date: 28-09-2020
 ---
 
