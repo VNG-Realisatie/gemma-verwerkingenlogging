@@ -14,7 +14,7 @@ Soort identificator waarmee het object geïdentificeerd wordt.
 `BSN`
 
 ## Attribuuttype
-Naam
+[Naam](../attribuuttypen/Naam.md)
 
 ## Aanwezigheid
 Verplicht
