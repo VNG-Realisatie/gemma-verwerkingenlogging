@@ -16,7 +16,7 @@ In principe wordt de terminologie van de AVG wordt gehanteerd. Deze is opgenomen
 - Doelbinding: `Het principe dat iemand (persoon of organisatie) alleen informatie mag vragen, opslaan, gebruiken, delen ten behoeve van welbepaalde, uitdrukkelijk omschreven en gerechtvaardigde doeleinden. De doelbinding koppelt het doel van een verwerking aan een bijbehorende (wettelijke) grondslag.`
 
 ### Gegevenswoordenboek
-Een aanvullende bron voor de gebruikte terminologie is het [gegevenswoordenboek](../../gegevenswoordenboek/readme.md).
+Een aanvullende bron voor de gebruikte terminologie is het [gegevenswoordenboek](../../gegevenswoordenboek/readme.md) wat behoord bij deze API-standaard.
 
 ## Afkortingen
 -	Het verwerkingsactiviteitenregister wordt afgekort tot het `VAR`.
