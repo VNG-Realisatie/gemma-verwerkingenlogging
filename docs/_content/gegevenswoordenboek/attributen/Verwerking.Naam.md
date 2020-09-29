@@ -8,7 +8,7 @@ date: 28-09-2020
 Naam van de verwerking waar de handeling een onderdeel van is.
 
 ## Toelichting
-Zie de toelichting bij het objecttype Actie.
+Zie de toelichting bij het objecttype [Actie](../objecttypen/Actie.md).
 
 ## Voorbeeld
 `Huwelijk`
