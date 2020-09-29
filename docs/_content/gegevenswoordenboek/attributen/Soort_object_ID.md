@@ -7,9 +7,6 @@ date: 28-09-2020
 ## Beschrijving
 Soort identificator waarmee het object geïdentificeerd wordt.
 
-## Toelichting
-.
-
 ## Voorbeeld
 `BSN`
 
@@ -17,7 +14,7 @@ Soort identificator waarmee het object geïdentificeerd wordt.
 [Naam](../attribuuttypen/Naam.md)
 
 ## Aanwezigheid
-Verplicht
+[`Verplicht`](../../gegevenswoordenboek/readme.md#bijzondere-meta-attributen)
 
 ## Toelichting
 Dit attribuut kent een beperkte hoeveelheid waarden en komt daardoor in aanmerking voor standaardisatie. Introductie van een lijst met toegestane waarden is echter alleen zinvol als een dergelijke lijst adequaat beheerd wordt. Denk hierbij aan snel kunnen opvoeren, valideren en distribueren van nieuwe waarden. Het inregelen of onderbrengen van dit beheer valt niet binnen de huidige scope.
