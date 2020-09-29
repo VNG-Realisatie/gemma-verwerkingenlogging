@@ -17,4 +17,4 @@ Zie [B2017](../../achtergronddocumentatie/ontwerp/artefacten/2017.md).
 [Moment](../attribuuttypen/Moment.md)
 
 ## Aanwezigheid
-Verplicht 
+[`Verplicht`](../../gegevenswoordenboek/readme.md#bijzondere-meta-attributen)
