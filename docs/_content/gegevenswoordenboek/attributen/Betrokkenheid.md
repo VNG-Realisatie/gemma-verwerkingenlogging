@@ -14,7 +14,7 @@ Geeft aan in welke hoedanigheid de persoon of het object betrokken was bij de ac
 `Getuige`
 
 ## Attribuuttype
-Naam
+[Naam](../attribuuttypen/Naam.md)
 
 ## Aanwezigheid
 Verplicht indien relevant
