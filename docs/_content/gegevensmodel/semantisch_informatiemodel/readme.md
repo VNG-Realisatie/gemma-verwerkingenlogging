@@ -3,7 +3,7 @@ title: "Semantisch informatiemodel"
 name: Semantisch informatiemodel
 date: 28-09-2020
 ---
-Op basis van de begrippen uit het [gegevensmodel](../gegevensmodel/index.md) ontstaat het volgende semantische informatiemodel.
+Op basis van de begrippen uit het [gegevensmodel](../index.md) ontstaat het volgende semantische informatiemodel.
 
 <img src="./_assets/sim.png" alt="SIM" width="600"/>
 
