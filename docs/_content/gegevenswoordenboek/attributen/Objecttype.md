@@ -8,13 +8,13 @@ date: 28-09-2020
 Soort object dat bij de actie betrokken is.
 
 ## Toelichting
-).
+.
 
 ## Voorbeeld
 `Persoon`
 
 ## Attribuuttype
-Objecttype
+[Objecttype](../attribuuttypen/Objecttype.md)
 
 ## Aanwezigheid
 Verplicht
