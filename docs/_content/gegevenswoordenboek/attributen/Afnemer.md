@@ -17,4 +17,5 @@ Zie [B0516](../../../achtergronddocumentatie/ontwerp/artefacten/0516.md) en [B93
 [Organisatie Identificatie Nummer (OIN)](../attribuuttypen/OIN.md)
 
 ## Aanwezigheid
-Verplicht indien relevant
+[`Verplicht indien relevant`](../../gegevenswoordenboek/readme.md#bijzondere-meta-attributen)
+
