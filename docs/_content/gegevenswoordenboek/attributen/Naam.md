@@ -16,7 +16,7 @@ Zie ook [B3809](../../achtergronddocumentatie/ontwerp/artefacten/3809.md) en [A7
 `Opslaan persoonsgegevens`
 
 ## Attribuuttype
-Naam
+[Naam](../attribuuttypen/Naam.md)
 
 ## Aanwezigheid
 Verplicht indien te bepalen
