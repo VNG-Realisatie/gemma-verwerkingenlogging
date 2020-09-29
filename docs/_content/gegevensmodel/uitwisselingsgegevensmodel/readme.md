@@ -32,7 +32,7 @@ In het volledige model treffen we twee nieuwe objecttypen aan:
 
 <img src="./_assets/volledig_model.png" alt="SIM" width="400"/>
   
-Details over deze objecttypen en hun attributen zijn te vinden in het gegevenswoordenboek. Voorbeelden worden gegeven bij de beschrijving van het [Logging Maturity Level](../logging_maturity_level.md)
+Details over deze objecttypen en hun attributen zijn te vinden in het gegevenswoordenboek. Voorbeelden worden gegeven bij de beschrijving van het [Logging Maturity Level](../../achtergronddocumenten/logging_maturity_level.md)
 
 ## Relatie tussen SIM en UGM
 Onderstaande afbeelding toont de relatie tussen het semantisch informatiemodel (SIM) en het uitwisselingsgegevensmodel (UGM).
