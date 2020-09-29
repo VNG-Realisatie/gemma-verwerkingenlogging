@@ -14,7 +14,7 @@ Identificator van de verwerkingsactiviteit die de verwerking rechtvaardigt.
 `5f0bef4c-f66f-4311-84a5-19e8bf359eaf`
 
 ## Attribuuttype
-Universal Unique IDentifier (UUID)
+[Universal Unique IDentifier (UUID)](../attribuuttypen/UUID.md)
 
 ## Aanwezigheid
 Verplicht indien te bepalen
