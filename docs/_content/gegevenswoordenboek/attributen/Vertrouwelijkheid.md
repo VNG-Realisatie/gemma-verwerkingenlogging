@@ -5,11 +5,9 @@ date: 28-09-2020
 ---
 
 ## Beschrijving
-
 Geeft de mate van vertrouwelijkheid van de verwerking aan.
 
 ## Toelichting
-
 Mogelijke waarden:
 
 -	Normaal
@@ -21,13 +19,10 @@ Merk op dat verwerkingen waarvan de vertrouwelijkheid is opgeheven nog wel gevoe
 Zie ook [B3909](../../achtergronddocumentatie/ontwerp/artefacten/3909.md).
 
 ## Voorbeeld
-
 `Vertrouwelijk`
 
 ## Attribuuttype
-
 [Mate van vertrouwelijkheid](../attribuuttypen/Mate_van_vertrouwelijkheid.md)
 
 ## Aanwezigheid
-
-Verplicht
+[`Verplicht`](../../gegevenswoordenboek/readme.md#bijzondere-meta-attributen)
