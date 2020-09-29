@@ -1,6 +1,6 @@
 ---
-title: "Attribuut: Object ID"
-name: Attribuut: Object ID
+title: "Attribuut - Object ID"
+name: Attribuut - Object ID
 date: 28-09-2020
 ---
 
