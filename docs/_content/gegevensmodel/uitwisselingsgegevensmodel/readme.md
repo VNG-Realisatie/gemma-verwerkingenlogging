@@ -10,7 +10,7 @@ Om tot een gegevensmodel voor de uitwisseling te komen kijken we vooral naar het
 Voor snelle en succesvolle eerste implementaties van de API willen we eenvoud. Tegelijkertijd willen we leveranciers niet tegenhouden om logging direct goed te implementeren. De standaard raakt alle gemeentelijke systemen. Ingrijpende wijzigingen van de standaard zijn daarom bijzonder ongewenst.
 We hopen dit te bereiken door de objecttypen Verwerking en Handeling ‘plat te slaan’ in het objecttype Actie. Daardoor ontstaat onderstaande eenvoudigere structuur.
 
-<img src="./_assets/actie_modellering.png" alt="SIM" width="600"/>
+<img src="./_assets/actie_modellering.png" alt="SIM" width="400"/>
 
 Bovenstaande structuur is gedenormaliseerd en zal dus leiden tot redundante opslag van informatie. Een voorbeeld: Als de waarde van de Uitvoerder op het niveau van de verwerking vastgelegd had kunnen worden, dan zien we deze waarde nu terug bij iedere actie.
 
@@ -29,7 +29,7 @@ In het volledige model treffen we twee nieuwe objecttypen aan:
 -	Verwerkt object: Persoon of object betrokken in de verwerking.
 -	Verwerkt soort gegeven: Soort gegeven dat verwerkt is.
 
-<img src="./_assets/volledig_model.png" alt="SIM" width="600"/>
+<img src="./_assets/volledig_model.png" alt="SIM" width="400"/>
   
 Details over deze objecttypen en hun attributen zijn te vinden in het gegevenswoordenboek. Voorbeelden worden gegeven bij de beschrijving van het [Logging Maturity Level](../logging_maturity_level.md)
 
