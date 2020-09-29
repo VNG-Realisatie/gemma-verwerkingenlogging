@@ -9,9 +9,7 @@ Naam van de handeling waar de actie onderdeel van is.
 
 
 ## Toelichting
-Zie de toelichting bij het objecttype Actie. 
-
-Zie [B6872](../../achtergronddocumentatie/ontwerp/artefacten/6872.md) en [B0601](../../achtergronddocumentatie/ontwerp/artefacten/0601.md).
+Zie [B6872](../../achtergronddocumentatie/ontwerp/artefacten/6872.md), [B0601](../../achtergronddocumentatie/ontwerp/artefacten/0601.md) en de toelichting bij het objecttype [Actie](../objecttypen/Actie.md).
 
 ## Voorbeeld
 `Ongedaan maken overlijden`
