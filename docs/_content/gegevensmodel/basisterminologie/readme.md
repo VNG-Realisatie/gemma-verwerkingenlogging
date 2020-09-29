@@ -8,13 +8,13 @@ date: 28-09-2020
 ### Context
 -	Gemeenten moeten volgens de AVG een Register van verwerkingsactiviteiten hebben (het VAR).
 -	Het begrip verwerkingsactiviteit wordt niet in de AVG gedefinieerd.
--	In de VAR’s van gemeenten komen zowel hele generieke als hele specifieke verwerkingsactiviteiten voor. De granulariteit in het VAR wisselt dus sterk. Zo treffen we bijvoorbeeld ‘BRP Registratie’ aan, maar ook ‘Geslachtswijziging’.
+-	In de VAR’s van gemeenten komen zowel hele generieke als hele specifieke verwerkingsactiviteiten voor. De granulariteit in het VAR wisselt dus sterk. Zo treffen we bijvoorbeeld `BRP Registratie` aan, maar ook `Geslachtswijziging`.
 -	Het begrip verwerking wordt wel in de AVG gedefinieerd.
 
 ## Terminologie
 ### Verwerkingsactiviteit
 Op basis van de inhoud van de gemeentelijke VAR’s is het nog niet zo eenvoudig om een eenduidige definitie te geven van het begrip verwerkingsactiviteit.
-Nemen we ‘BRP Registratie’, ‘Gegevenslevering aan derden’ of ‘Fraudeonderzoek’ als uitgangspunt dan beschrijven deze begrippen eigenlijk een hele groep of categorie van verwerkingen. Nemen we ‘Geslachtswijziging’ als voorbeeld dan beschrijft dat een heel concrete taak van de gemeente.
+Nemen we `BRP Registratie`, `Gegevenslevering aan derden` of `Fraudeonderzoek` als uitgangspunt dan beschrijven deze begrippen eigenlijk een hele groep of categorie van verwerkingen. Nemen we `Geslachtswijziging` als voorbeeld dan beschrijft dat een heel concrete taak van de gemeente.
 Het wenselijk lijkt om het VAR op een zo concreet mogelijk niveau in te richten. Daar zijn twee kanttekeningen bij te plaatsen. Ten eerste zal dit naar alle waarschijnlijkheid een geleidelijk verbeteringsproces zijn. Ten tweede valt te verwachten dat er altijd verwerkingsactiviteiten in het register zullen voorkomen die niet specifieker omschreven kunnen worden. 
 
 Dit alles in overweging nemend komen tot de volgende definitie:
@@ -55,7 +55,7 @@ Een handeling kan bestaan uit meerdere interacties met een systeem. Het kan bijv
 
 Aangezien we het loggen beperken tot geautomatiseerde gegevensverwerking is er bij een acties dus altijd sprake van interactie met een geautomatiseerd systeem zoals een app, service, applicatie, gegevensmagazijn et cetera.
 
-Zouden we ook handmatige gegevensverwerkingen loggen dan zou ook het bekijken van de gegevens op bijvoorbeeld het identiteitsbewijs van een burger een actie zijn.
+Zouden we ook handmatige gegevensverwerkingen loggen dan zou ook het bekijken van de gegevens op bijvoorbeeld het identiteitsbewijs van een burger door een baliemedewerker van de gemeente een actie zijn.
 
 ## Voorbeelden
 Onderstaande tabel toont voor vijf verschillende cases voorbeelden bij de begrippen:
