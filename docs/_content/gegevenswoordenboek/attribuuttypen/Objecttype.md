@@ -8,9 +8,10 @@ date: 29-09-2020
 Enumeratie
 
 ## Enumeratie
-|Waarde|Betekenis|
-|--|--|
-|Persoon|Natuurlijk persoon|
+
+| Waarde | Betekenis |
+|-|-|
+| Persoon | Natuurlijk persoon |
 
 ## Bijzonderheden
 In een later stadium kunnen andere soorten objecten waarvoor logging gewenst is, toegevoegd worden aan deze enumeratie.
