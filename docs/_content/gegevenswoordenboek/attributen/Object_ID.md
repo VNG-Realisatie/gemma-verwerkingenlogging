@@ -7,9 +7,6 @@ date: 28-09-2020
 ## Beschrijving
 Identificator van het object.
 
-## Toelichting
-.
-
 ## Voorbeeld
 `1234567`
 
@@ -17,4 +14,5 @@ Identificator van het object.
 [Identificator](../attribuuttypen/Identificator.md)
 
 ## Aanwezigheid
-Verplicht
+[`Verplicht`](../../gegevenswoordenboek/readme.md#bijzondere-meta-attributen)
+
