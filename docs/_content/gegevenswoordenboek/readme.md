@@ -52,6 +52,7 @@ In het gevenswoordenboek spreken we in dergelijke gevallen over *‘Verplicht in
 
 ## Attribuuttypen
 - [Aantal jaar](./attribuuttypen/Aantal_jaar.md)
+- [Identificator](./attribuuttypen/Identificator.md)
 - [Ja/Nee](./attribuuttypen/Ja_Nee.md)
 - [Mate van vertrouwelijkheid](./attribuuttypen/Mate_van_vertrouwelijkheid.md)
 - [Moment](./attribuuttypen/Moment.md)
