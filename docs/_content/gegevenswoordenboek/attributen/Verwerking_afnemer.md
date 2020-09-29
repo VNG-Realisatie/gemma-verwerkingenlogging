@@ -14,7 +14,7 @@ De verwerking kan bijvoorbeeld een uniek ID van een dossier, zaak of verzoek bij
 `4b698de3-ffba-45e7-8697-a283ec863db2`
 
 ## Attribuuttype
-Universal Unique IDentifier (UUID)
+[Universal Unique IDentifier (UUID)](../attribuuttypen/UUID.md)
 
 ## Aanwezigheid
 Optioneel
