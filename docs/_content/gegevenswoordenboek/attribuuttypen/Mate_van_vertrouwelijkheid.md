@@ -9,7 +9,7 @@ Enumeratie
 
 ## Enumeratie
 |Waarde|Betekenis|
-|--|--|
+|-|-|
 |Normaal|Niet vertrouwelijk|
 |Vertrouwelijk|Vertrouwelijk|
 |Opgeheven|Vertrouwelijkheid opgeheven|
