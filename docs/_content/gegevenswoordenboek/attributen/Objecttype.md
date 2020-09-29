@@ -17,4 +17,5 @@ Soort object dat bij de actie betrokken is.
 [Objecttype](../attribuuttypen/Objecttype.md)
 
 ## Aanwezigheid
-Verplicht
+[`Verplicht`](../../gegevenswoordenboek/readme.md#bijzondere-meta-attributen)
+
