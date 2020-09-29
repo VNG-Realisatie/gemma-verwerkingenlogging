@@ -14,7 +14,7 @@ Zie de toelichting bij het objecttype Actie.
 `Huwelijk`
 
 ## Attribuuttype
-Universal Unique IDentifier (UUID)
+[Naam]](../attribuuttypen/Naam.md)
 
 ## Aanwezigheid
 Automatisch bepaald door het log|
