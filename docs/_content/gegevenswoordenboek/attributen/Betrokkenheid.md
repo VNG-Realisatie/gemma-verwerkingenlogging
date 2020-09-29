@@ -1,6 +1,6 @@
 ---
-title: "Attribuut: Betrokkenheid"
-name: Attribuut: Betrokkenheid
+title: "Attribuut - Betrokkenheid"
+name: Attribuut - Betrokkenheid
 date: 28-09-2020
 ---
 
