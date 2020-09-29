@@ -31,7 +31,7 @@ Ter vergelijking laat onderstaande afbeelding een voorbeeld zien van het maximal
 <img src="./_assets/maximaal.png" alt="Maximale variant van logging" width="600"/>
 
 -	Het VAR is een informatiesysteem.
--	Van het UGM worden alle attributen gebruikt. Dit zal leiden tot een veel begrijpelijker log voor de burger.
+-	Van het [uitwisselingsgegevensmodel](../uitwisselingsgegevensmodel/readme.md) worden alle attributen gebruikt. Dit zal leiden tot een veel begrijpelijker log voor de burger.
 -	Bij volledige implementatie van de API is het nu mogelijk om:
     - Bewaartermijnen die later in een proces bekend worden te registreren.
     - De vertrouwelijkheid van verwerkingen op te heffen.
