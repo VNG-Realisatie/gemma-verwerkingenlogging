@@ -17,7 +17,7 @@ Zie [B7191](../../achtergronddocumentatie/ontwerp/artefacten/7191.md) en [B0516]
 [Organisatie Identificatie Nummer (OIN)](../attribuuttypen/OIN.md)
 
 ## Aanwezigheid
-Verplicht indien te bepalen
+[`Verplicht indien te bepalen`](../../gegevenswoordenboek/readme.md#bijzondere-meta-attributen)
 
 ## Bijzonderheden
 Niet invullen indien de verantwoordelijke organisatie ook de uitvoerende organisatie is.
