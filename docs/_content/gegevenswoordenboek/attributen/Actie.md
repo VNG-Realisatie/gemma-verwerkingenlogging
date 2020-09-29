@@ -1,8 +1,9 @@
 ---
-title: "Objecttype: Actie"
-name: Objecttype: Actie
+title: "Objecttype - Actie"
+name: Objecttype - Actie
 date: 28-09-2020
 ---
+
 ## Beschrijving
 Een actie is een operatie die wordt uitgevoerd door een geautomatiseerd systeem waarbij er (persoons)gegevens verwerkt worden.
 Een actie wordt uitgevoerd als onderdeel van (een handeling van) een verwerking.
