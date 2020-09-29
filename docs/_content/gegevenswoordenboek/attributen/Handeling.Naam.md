@@ -17,7 +17,7 @@ Zie [B6872](../../achtergronddocumentatie/ontwerp/artefacten/6872.md) en [B0601]
 `Ongedaan maken overlijden`
 
 ## Attribuuttype
-Naam
+[Naam](../attribuuttypen/Naam.md)
 
 ## Aanwezigheid
 Verplicht indien te bepalen
