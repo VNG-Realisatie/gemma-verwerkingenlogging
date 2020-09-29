@@ -1,6 +1,6 @@
 ---
-title: "Uitwisselingsgegevensmodel logging van verwerkingen"
-name: Uitwisselingsgegevensmodel logging van verwerkingen
+title: "Uitwisselingsgegevensmodel (UGM)"
+name: Uitwisselingsgegevensmodel (UGM)
 date: 28-09-2020
 ---
 ## Kern
