@@ -26,7 +26,7 @@ Zie ook [B3909](../../achtergronddocumentatie/ontwerp/artefacten/3909.md).
 
 ## Attribuuttype
 
-Mate van vertrouwelijkheid
+[Mate van vertrouwelijkheid](../attribuuttypen/Mate_van_vertrouwelijkheid.md)
 
 ## Aanwezigheid
 
