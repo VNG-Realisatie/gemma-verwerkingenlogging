@@ -10,7 +10,7 @@ De API-standaard kan doordat de meeste attributen in het uitwisselgegevensmodel 
 ## Minimale versus maximale logging
 Onderstaande afbeelding toont logging in zijn meest basale vorm.
 
-<img src="./_assets/minimaal.png" alt="Minimale variant van logging" width="600"/>
+<img src="./_assets/minimaal.png" alt="Minimale variant van logging" width="700"/>
 
 -	Het gemeentelijk VAR is geen informatiesysteem maar een document of spreadsheets. De verwerkingsactiviteiten in het VAR zijn al wel voorzien van een uniek ID ([UUID](../gegevenswoordenboek/attribuuttypen/UUID.md)) zodat er vanuit het log naar het VAR verwezen kan worden.
 -	Vanuit de gedachte ‘beter iets dan niets loggen’ worden van het [uitwisselingsgegevensmodel](../gegevensmodel/uitwisselingsgegevensmodel/readme.md) alleen de meest basale attributen gebruikt. Dit zal niet leiden tot een voor de burger begrijpelijk log maar het is een begin en beter dan niets.
