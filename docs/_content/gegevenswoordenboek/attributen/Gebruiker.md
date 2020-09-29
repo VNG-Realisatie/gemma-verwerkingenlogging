@@ -17,7 +17,7 @@ Zie ook [B9207](../../achtergronddocumentatie/ontwerp/artefacten/9207.md) en [B9
 `2ecf8e86-1a18-46ba-aa13-992c1dc231a5`
 
 ## Attribuuttype
-Identificator
+[Identificator](../attribuuttypen/Identificator.md)
 
 ## Aanwezigheid
 Aanwezigheid te bepalen door de gemeente (Zie [B9207](../../achtergronddocumentatie/ontwerp/artefacten/9207.md)).
