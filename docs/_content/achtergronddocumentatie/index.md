@@ -15,6 +15,8 @@ De onderstaande documenten zijn beschikbaar als achtergrondinformatie bij de API
 ## Logging Maturity Levels
 Gemeenten, systemen, leveranciers en derden zullen de komende jaren allemaal in een verschillend stadium verkeren t.a.v. het implementeren van de vastlegging van verwerkingen in logging. Het lijkt goed om in een dashboard bij te gaan houden hoe gemeenten en de gemeentelijke software ervoor staan. Hierbij zou gebruik gemaakt kunnen worden van volwassenheidniveaus ten aanzien van logging. Hiertoe zijn een aantal [Logging Maturity Levels](./logging_maturity_level.md) ontwikkeld die gebruikt kunnen worden door gemeenten.
 
+## Volledigheid van logging 
+[Volledigheid van logging](./volledigheid_van_logging.md)
 
 ## Brondocumenten
 Bij het ontwerp van de API-standaard is gebruik gemaakt van een aantal [brondocumenten](../achtergronddocumentatie/ontwerp/brondocumenten.md). Deze brondocumenten zijn de basis van het ontwerp van de API-standaard.
