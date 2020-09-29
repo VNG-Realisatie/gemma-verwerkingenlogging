@@ -14,7 +14,7 @@ Zie de toelichting bij het objecttype Actie.
 `Huwelijk`
 
 ## Attribuuttype
-[Naam]](../attribuuttypen/Naam.md)
+[Naam](../attribuuttypen/Naam.md)
 
 ## Aanwezigheid
 Verplicht indien te bepalen
