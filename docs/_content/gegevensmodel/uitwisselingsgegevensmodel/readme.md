@@ -17,6 +17,7 @@ Bovenstaande structuur is gedenormaliseerd en zal dus leiden tot redundante opsl
 De naamgeving laat nog te wensen over. Idealiter laten we in de naam van het attribuut de naam van het attribuuttype niet terugkomen. Door de denormalisatie is dit niet langer vol te houden. In de namen is nu bewust een ‘.’ gebruikt om te laten zien dat de toevoeging van het type een gevolg is van de denormalisatie.
 
 Voor- en nadelen van deze uitwerking:
+
 |Voordelen|Nadelen|
 |--|--|
 |Model en API zijn eenvoudiger te begrijpen en daardoor laagdrempeliger in gebruik.|Bij wijziging van een gegeven dat redundant is opgeslagen zullen alle voorkomens aangepast moeten worden.|
