@@ -14,7 +14,7 @@ Zie [B2017](../../achtergronddocumentatie/ontwerp/artefacten/2017.md).
 `2024-04-05T14:35:42+01:00 `
 
 ## Attribuuttype
-Moment
+[Moment](../attribuuttypen/Moment.md)
 
 ## Aanwezigheid
 Verplicht 
