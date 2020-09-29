@@ -4,7 +4,7 @@ name: Gegevenswoordenboek
 date: 28-09-2020
 ---
 ## Terminologie en volgorde
-Dit gegevenswoordenboek beschrijft het Uitwisselingsgegevensmodel. Daarbij wordt de volgende terminologie gehanteerd:
+Dit gegevenswoordenboek beschrijft het [uitwisselingsgegevensmodel (UGM)](../gegevensmodel/uitwisselingsgegevensmodel/readme.md). Daarbij wordt de volgende terminologie gehanteerd:
 
 |Term|Beschrijving|Voorbeeld|
 |--|--|--|
@@ -12,8 +12,9 @@ Dit gegevenswoordenboek beschrijft het Uitwisselingsgegevensmodel. Daarbij wordt
 |Attribuut|Eigenschap van een objecttype.|Tijdstip registratie van de verwerking.|
 |Attribuuttype|Soort eigenschap. Ook wel domein genoemd.|Datum/tijd, BSN, UUID|
 
-### Toelichting bijzondere meta-attributen
+## Bijzondere meta-attributen
 Bij alle attributen is het meta-attribuut ‘Aanwezigheid’ opgenomen. Dit meta-attribuut geeft aan of het attribuut ingevuld ofwel ’aanwezig’ dient te zijn of niet. Bij diverse attributen kunnen er omstandigheden zijn waardoor het attribuut niet altijd bepaald kan worden. Technisch gezien leidt dit tot een ‘optioneel’ attribuut.
+
 In het gevenswoordenboek spreken we in dergelijke gevallen over *‘Verplicht indien …’*. Bijvoorbeeld *‘Verplicht indien relevant’* of *‘Verplicht indien te bepalen’*. Ofwel:
 -	Als het attribuut in de programmatuur bepaald kan worden, dient het weldegelijk altijd ingevuld te worden.
 -	Kan het niet bepaald worden, maar bijvoorbeeld wel gevraagd worden aan de gebruiker, dan dient dat gedaan te worden.
