@@ -6,7 +6,7 @@ date: 28-09-2020
 
 ## Introductie
 Logging raakt vrijwel alle systemen van de gemeenten, de communicatie tussen die systemen en speelt ook nog eens een rol in de communicatie met andere partijen. Belangrijk uitgangspunt bij het ontwerp van deze standaard is daarom dat systemen en partijen in hun eigen tempo logging moeten kunnen realiseren.
-De standaard is zo opgezet dat systemen maximaal ontkoppeld zijn. Hierdoor kunnen alle partijen, onafhankelijk van elkaar, werken aan de realisatie en implementatie. Zie hiervoor ook de toelichting in [B7259](../../achtergronddocumentatie/ontwerp/artefacten/7259.md) (Loggen aan beide kanten van een API). 
+De standaard is zo opgezet dat systemen maximaal ontkoppeld zijn. Hierdoor kunnen alle partijen, onafhankelijk van elkaar, werken aan de realisatie en implementatie. Zie hiervoor ook de toelichting in [B7259](../../achtergronddocumentatie/ontwerp/artefacten/7259.md) (*Loggen aan beide kanten van een API*). 
 
 Gemeenten, systemen, leveranciers en derden zullen de komende jaren allemaal in een verschillend stadium verkeren t.a.v. het implementeren van logging. Het lijkt goed om in een dashboard bij te gaan houden hoe gemeenten en de gemeentelijke software ervoor staan. Hierbij zou gebruik gemaakt kunnen worden van een Logging Maturity Level.
 
