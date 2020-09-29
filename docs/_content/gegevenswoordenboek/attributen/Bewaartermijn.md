@@ -17,4 +17,4 @@ Zie ook [B9559](../../achtergronddocumentatie/ontwerp/artefacten/9559.md).
 [Aantal Jaar](../attribuuttypen/Aantal_jaar.md)
 
 ## Aanwezigheid
-Verplicht indien te bepalen
+[`Verplicht indien te bepalen`](../../gegevenswoordenboek/readme.md#bijzondere-meta-attributen)
