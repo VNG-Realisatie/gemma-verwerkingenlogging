@@ -17,7 +17,7 @@ Onderstaande afbeelding toont logging in zijn meest basale vorm.
 
 Ter vergelijking laat onderstaande afbeelding een voorbeeld zien van het maximale gebruik van logging.
 
-<img src="./_assets/maximaal.png" alt="Maximale variant van logging" width="600"/>
+<img src="./_assets/maximaal.png" alt="Maximale variant van logging" width="700"/>
 
 -	Het VAR is een informatiesysteem.
 -	Van het [uitwisselingsgegevensmodel](../gegevensmodel/uitwisselingsgegevensmodel/readme.md) worden alle attributen gebruikt. Dit zal leiden tot een veel begrijpelijker log voor de burger.
