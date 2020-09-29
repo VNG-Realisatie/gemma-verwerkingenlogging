@@ -14,7 +14,7 @@ Het ID is betekenisloos, kent geen volgorde en is uniek over alle systemen in de
 `48086bf2-11b7-4603-9526-67d7c3bb6587`
 
 ## Attribuuttype
-Universal Unique IDentifier (UUID)
+[Universal Unique IDentifier (UUID)](../attribuuttypen/UUID.md)
 
 ## Aanwezigheid
 Automatisch bepaald door het log
