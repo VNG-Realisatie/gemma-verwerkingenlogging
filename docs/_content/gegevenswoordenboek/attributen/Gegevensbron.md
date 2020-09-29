@@ -14,7 +14,7 @@ Zie [B8585](../../achtergronddocumentatie/ontwerp/artefacten/8585.md).
 `FooBar Database Publiekszaken BEL Combinatie`
 
 ## Attribuuttype
-Naam
+[Naam](../attribuuttypen/Naam.md)
 
 ## Aanwezigheid
 Verplicht indien te bepalen
