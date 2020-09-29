@@ -8,6 +8,7 @@ date: 29-09-2020
 Enumeratie
 
 ## Enumeratie
+
 | Waarde | Betekenis |
 |-|-|
 | Normaal | Niet vertrouwelijk |
