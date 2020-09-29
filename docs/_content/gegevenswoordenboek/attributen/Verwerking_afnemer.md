@@ -17,4 +17,4 @@ De verwerking kan bijvoorbeeld een uniek ID van een dossier, zaak of verzoek bij
 [Universal Unique IDentifier (UUID)](../attribuuttypen/UUID.md)
 
 ## Aanwezigheid
-Optioneel
+[`Optioneel`](../../gegevenswoordenboek/readme.md#bijzondere-meta-attributen)
