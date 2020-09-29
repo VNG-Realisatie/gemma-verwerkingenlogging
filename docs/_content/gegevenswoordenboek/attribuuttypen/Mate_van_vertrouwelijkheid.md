@@ -8,8 +8,8 @@ date: 29-09-2020
 Enumeratie
 
 ## Enumeratie
-|Waarde|Betekenis|
+| Waarde | Betekenis |
 |-|-|
-|Normaal|Niet vertrouwelijk|
-|Vertrouwelijk|Vertrouwelijk|
-|Opgeheven|Vertrouwelijkheid opgeheven|
+| Normaal | Niet vertrouwelijk |
+| Vertrouwelijk | Vertrouwelijk |
+| Opgeheven | Vertrouwelijkheid opgeheven |
