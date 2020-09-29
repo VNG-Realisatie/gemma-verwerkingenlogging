@@ -19,4 +19,4 @@ Zie ook [B3891](../../achtergronddocumentatie/ontwerp/artefacten/3891.md) en [B8
 [Ja/Nee](../attribuuttypen/Ja_Nee.md)
 
 ## Aanwezigheid
-Verplicht
+[`Verplicht`](../../gegevenswoordenboek/readme.md#bijzondere-meta-attributen)
