@@ -1,6 +1,6 @@
 ---
-title: "Attribuut: Soort object ID"
-name: Attribuut: Soort object ID
+title: "Attribuut - Soort object ID"
+name: Attribuut - Soort object ID
 date: 28-09-2020
 ---
 
