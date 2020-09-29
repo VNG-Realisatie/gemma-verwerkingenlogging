@@ -14,7 +14,7 @@ Zie [B0516](../../../achtergronddocumentatie/ontwerp/artefacten/0516.md) en [B93
 `00000099123456789000`
 
 ## Attribuuttype
-Organisatie Identificatie Nummer (OIN)
+[Organisatie Identificatie Nummer (OIN)](../attribuuttypen/OIN.md)
 
 ## Aanwezigheid
 Verplicht indien relevant
