@@ -8,7 +8,7 @@ date: 28-09-2020
 Enumeratie
 
 ## Enumeratie
-|Waarde|
-|--|
-|Ja|
-|Nee|
+| Waarde |
+|-------|
+| Ja |
+| Nee |
