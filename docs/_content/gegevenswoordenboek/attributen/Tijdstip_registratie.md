@@ -16,7 +16,7 @@ Zie [B3891](../../achtergronddocumentatie/ontwerp/artefacten/3891.md) en [B3707]
 `2024-04-05T14:35:43+01:00`
 
 ## Attribuuttype
-Moment
+[Moment](../attribuuttypen/Moment.md)
 
 ## Aanwezigheid
 Automatisch bepaald door het log
