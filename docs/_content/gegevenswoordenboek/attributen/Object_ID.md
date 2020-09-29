@@ -14,7 +14,7 @@ Identificator van het object.
 `1234567`
 
 ## Attribuuttype
-Identificator
+[Identificator](../attribuuttypen/Identificator.md)
 
 ## Aanwezigheid
 Verplicht
