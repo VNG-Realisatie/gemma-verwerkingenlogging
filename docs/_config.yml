@@ -42,8 +42,8 @@ markdown: kramdown
 exclude:
   - archief
 
-#remote_theme: VNG-Realisatie/jekyll-theme-vng
-remote_theme: maykinmedia/jekyll-theme-vng 
+remote_theme: VNG-Realisatie/jekyll-theme-vng
+#remote_theme: maykinmedia/jekyll-theme-vng 
 
 github: VNG-Realisatie/gemma-verwerkingenlogging
 
