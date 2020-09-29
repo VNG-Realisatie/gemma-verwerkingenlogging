@@ -1,6 +1,6 @@
 ---
-title: "Attribuut: Verwerkt object"
-name: Attribuut: Verwerkt object
+title: "Attribuut - Verwerkt object"
+name: Attribuut - Verwerkt object
 date: 28-09-2020
 ---
 
