@@ -5,6 +5,7 @@ date: 28-09-2020
 ---
 
 ## Introductie
+De API-standaard kan doordat de meeste attributen in het uitwisselgegevensmodel optioneel zijn eenvoudig worden geimplementeerd. Hoe meer veldden worden ingevuld hoe zinvoller de informatie die wordt vastgelegd is en hoe duidelijker de informatie voor de burger is. Het streven moet dus zijn zoveel mogelijk attributen vast te leggen. 
 
 ## Minimale versus maximale logging
 Onderstaande afbeelding toont logging in zijn meest basale vorm.
