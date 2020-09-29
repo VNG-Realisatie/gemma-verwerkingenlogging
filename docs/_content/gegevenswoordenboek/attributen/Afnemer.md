@@ -1,6 +1,6 @@
 ---
-title: "Attribuut: Afnemer"
-name: Attribuut: Afnemer
+title: "Attribuut - Afnemer"
+name: Attribuut - Afnemer
 date: 28-09-2020
 ---
 
