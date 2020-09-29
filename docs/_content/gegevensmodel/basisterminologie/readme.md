@@ -60,12 +60,7 @@ Zouden we ook handmatige gegevensverwerkingen loggen dan zou ook het bekijken va
 ## Voorbeelden
 Onderstaande tabel toont voor vijf verschillende cases voorbeelden bij de begrippen:
 
-||Case 1|Case 2|Case 3|Case 4|Case 5|
-|--|--|--|--|--|--|
-|**Verwerkingsactiviteit**|BRP Registratie|Geslachtswijziging|Registratie verhuizingen|Fraudeonderzoek sociale zekerheid|Verstrekken van informatie aan derden|
-|**Verwerking**|Huwelijk|Geslachtswijziging|Registratie verhuizing|Onderzoek|Bevraging door derde|
-|**Handeling**|Intake, Ondertrouw, Opmaken akten, Voorbereiding ceremonie, Registratie huwelijk|Wijziging geslacht, Wijziging voornaam, Aanpassen historie|Registratie verhuizing|Verzamelen gegevens, Verificatie, ..|Bevraging door derde|
-|**Actie**|Zoeken personen, Ophalen pers. gegevens, Opslaan pers. gegevens|Ophalen pers. gegevens, Opslaan pers. gegevens|Ophalen pers. gegevens, Opslaan pers. gegevens|..|Ophalen pers. gegevens|
+<img src="./_assets/cases.png" alt="SIM" width="600"/>
 
 Opmerkingen bij de cases:
 -	Bij cases 1 en 5 is de verwerkingsactiviteit duidelijk een categorie van bij elkaar horende verwerkingen. Anders gezegd: Een burger kan deze verwerkingen niet één op één terugvinden op de website van de gemeente.
