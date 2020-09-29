@@ -18,7 +18,7 @@ Zie [B0378](../../achtergronddocumentatie/ontwerp/artefacten/0378.md).
 `FooBarApp v2.1`
 
 ## Attribuuttype
-Naam
+[Naam](../attribuuttypen/Naam.md)
 
 ## Aanwezigheid
 Verplicht indien te bepalen
