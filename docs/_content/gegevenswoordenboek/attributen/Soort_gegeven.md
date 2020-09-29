@@ -1,6 +1,6 @@
 ---
-title: "Attribuut: Soort gegeven"
-name: Attribuut: Soort gegeven
+title: "Attribuut - Soort gegeven"
+name: Attribuut - Soort gegeven
 date: 28-09-2020
 ---
 
