@@ -24,8 +24,8 @@ Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbeve
 - [B8970: Benadering log bij gefedereerde inrichting](./artefacten/8970.md)
 
 ## Scope
-- B0538: Logging beperkt tot verwerkingen
-- B4421: Logging beperkt tot geautomatiseerde verwerkingen
+- [B0538: Logging beperkt tot verwerkingen](./artefacten/0538.md)
+- [B4421: Logging beperkt tot geautomatiseerde verwerkingen](./artefacten/4421.md)
 - B5214: Inzage log beperkt tot gemeentelijk log
 - B0403: Standaardisatie leesbaar logformaat
 - B3001: Vastlegging toestemming van een persoon
@@ -44,7 +44,6 @@ Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbeve
 - B0516: Identificatie van organisaties
 - B7972: Identificatie van personen bij privaatrechtelijke taken
 - B2042: Pseudonimisering BSN
-- A7838: Standaardwaarden voor Actie
 - B7571: Meerdere personen/objecten per verwerking
 - B8157: Modellering van Verwerkt soort gegeven
 - B9330: Opname van Afnemer
