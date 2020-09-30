@@ -7,11 +7,11 @@ date: '16-09-2020'
 Vanuit de uitwerking van de [cases](./ontwerpcases.md) en de [requirements](./requirements.md) zijn een aantal ontwerpbesluiten genomen. Per besluit is herleidbaar gemaakt aan welk requirement of case het requirement gerelateerd is. Een overzicht van de relatie tussen besluiten, cases en requirements is [hier](../../archief/work_in_progress.md) te vinden.
 
 Deze ontwerpbesluiten zijn gegroepeerd naar specifieke aspect van de API-standaard. Onderkende aspecten zijn:
-- [fundamentele besluiten](./ontwerpbesluiten.md#Fundamenteel), 
-- [besluiten ten aanzien van scope van de API-standaard](./ontwerpbesluiten.md#Scope), 
-- [besluiten ten aanzien van de relatie met het register van verwerkingen](./ontwerpbesluiten.md#Relatie-tot-het-VAR), 
-- [besluiten ten aanzien van het gegevensmodel](./ontwerpbesluiten.md#Gegevensmodel-logging), en
-- [besluiten ten aanzien van tijd- en historie](./ontwerpbesluiten.md#Wijzigen, tijd en historie).
+- [fundamentele besluiten](./ontwerpbesluiten.md#fundamenteel), 
+- [besluiten ten aanzien van scope van de API-standaard](./ontwerpbesluiten.md#scope), 
+- [besluiten ten aanzien van de relatie met het register van verwerkingen](./ontwerpbesluiten.md#relatie-tot-het-VAR), 
+- [besluiten ten aanzien van het gegevensmodel](./ontwerpbesluiten.md#gegevensmodel-logging), en
+- [besluiten ten aanzien van tijd- en historie](./ontwerpbesluiten.md#wijzigen-tijd-en-historie).
 
 Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbevelingen pagina](./aanbevelingen.md) na te lezen.
 
