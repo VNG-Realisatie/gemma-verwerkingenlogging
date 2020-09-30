@@ -19,7 +19,7 @@ Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbeve
 - [B5469: Doelstelling van logging: Duiden versus reconstrueren](./artefacten/5469.md)
 - [B7952: Loggen vanuit applicatie: Welke momenten en hoe vaak](./artefacten/7952.md)
 - [B7259: Loggen aan beide kanten van een API](./artefacten/7259.md)
-- B9177: Meegeven van informatie t.b.v. logging in API’s
+- [B9177: Meegeven van informatie t.b.v. logging in API’s](./artefacten/9177.md)
 - B3238: Logging-API: Alleen identificatoren of ook achterliggende waarden?
 - B8970: Benadering log bij gefedereerde inrichting
 
