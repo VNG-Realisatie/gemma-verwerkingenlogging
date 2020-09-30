@@ -8,10 +8,10 @@ Vanuit de uitwerking van de [cases](./ontwerpcases.md) en de [requirements](./re
 
 Deze ontwerpbesluiten zijn gegroepeerd naar specifieke aspect van de API-standaard. Onderkende aspecten zijn:
 - [fundamentele besluiten](./ontwerpbesluiten.md#Fundamenteel), 
-- [besluiten ten aanzien van scope van de API-standaard(./ontwerpbesluiten.md#Scope), 
-- [besluiten ten aanzien van de relatie met het register van verwerkingen(./ontwerpbesluiten.md#Relatie tot het VAR), 
-- [besluiten ten aanzien van het gegevensmodel(./ontwerpbesluiten.md#Gegevensmodel logging), en
-- [besluiten ten aanzien van tijd- en historie(./ontwerpbesluiten.md#Wijzigen, tijd en historie).
+- [besluiten ten aanzien van scope van de API-standaard](./ontwerpbesluiten.md#Scope), 
+- [besluiten ten aanzien van de relatie met het register van verwerkingen](./ontwerpbesluiten.md#Relatie tot het VAR), 
+- [besluiten ten aanzien van het gegevensmodel](./ontwerpbesluiten.md#Gegevensmodel logging), en
+- [besluiten ten aanzien van tijd- en historie](./ontwerpbesluiten.md#Wijzigen, tijd en historie).
 
 Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbevelingen pagina](./aanbevelingen.md) na te lezen.
 
