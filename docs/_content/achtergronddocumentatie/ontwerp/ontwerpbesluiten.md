@@ -21,7 +21,7 @@ Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbeve
 - [B7259: Loggen aan beide kanten van een API](./artefacten/7259.md)
 - [B9177: Meegeven van informatie t.b.v. logging in API’s](./artefacten/9177.md)
 - [B3238: Logging-API: Alleen identificatoren of ook achterliggende waarden?](./artefacten/3238.md)
-- B8970: Benadering log bij gefedereerde inrichting
+- [B8970: Benadering log bij gefedereerde inrichting](./artefacten/8970.md)
 
 ## Scope
 - B0538: Logging beperkt tot verwerkingen
