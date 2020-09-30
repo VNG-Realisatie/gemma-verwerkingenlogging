@@ -16,7 +16,7 @@ Deze ontwerpbesluiten zijn gegroepeerd naar specifieke aspect van de API-standaa
 Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbevelingen pagina](./aanbevelingen.md) na te lezen.
 
 ## Fundamenteel
-- B5469: Doelstelling van logging: Duiden versus reconstrueren
+- [B5469: Doelstelling van logging: Duiden versus reconstrueren](./artefacten/5469.md)
 - B7952: Loggen vanuit applicatie: Welke momenten en hoe vaak
 - B7259: Loggen aan beide kanten van een API
 - B9177: Meegeven van informatie t.b.v. logging in API’s
