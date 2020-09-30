@@ -26,10 +26,10 @@ Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbeve
 ## Scope
 - [B0538: Logging beperkt tot verwerkingen](./artefacten/0538.md)
 - [B4421: Logging beperkt tot geautomatiseerde verwerkingen](./artefacten/4421.md)
-- B5214: Inzage log beperkt tot gemeentelijk log
-- B0403: Standaardisatie leesbaar logformaat
-- B3001: Vastlegging toestemming van een persoon
-- B0797: Standaardisatie rapportages
+- [B5214: Inzage log beperkt tot gemeentelijk log](./artefacten/5214.md)
+- [B0403: Standaardisatie leesbaar logformaat](./artefacten/0403.md)
+- [B3001: Vastlegging toestemming van een persoon](./artefacten/3001.md)
+- [B0797: Standaardisatie rapportages](./artefacten/0797.md)
 
 ## Relatie tot het VAR
 - B0869: Koppeling tussen applicaties en VAR
@@ -51,7 +51,6 @@ Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbeve
 - B9559: Opname van Bewaartermijn
 - B9207: Opname van Gebruiker
 - B8585: Opname van Gegevensbron
-- [B6872: Opname van Handeling](./artefacten/6872.md)
 - B7726: Opname van Resultaat verwerking
 - B3133: Opname van Rol van de gebruiker
 - B0378: Opname van Systeem
