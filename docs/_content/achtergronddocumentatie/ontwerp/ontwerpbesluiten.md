@@ -56,7 +56,7 @@ Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbeve
 - B0378: Opname van Systeem
 - B2017: Opname van Tijdstip verwerking
 - B7191: Opname van Uitvoerder
-- B3908: Opname van Vertrouwelijkheid
+- [B3908: Opname van Vertrouwelijkheid](./artefacten/3908.md)
 - [B8157: Opname van Verwerking.ID en Verwerking Afnemer](./artefacten/8157.md)
 - B6247: Opname van Verwerkt soort gegeven
 - B0233: Opname zoekcriteria op in het log
