@@ -37,10 +37,10 @@ Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbeve
 
 ## Gegevensmodel logging
 - B9428: Terminologie: Gebruiker of Medewerker
-- B0601: Terminologie: Handeling of Gebeurtenis
-- B4047: Terminologie: Actie of Operatie
-- B6856: Hiërarchie: Verwerkingsactiviteit, Verwerking, Handeling en Actie
-- B2357: Kunstmatige identificatoren
+- [B0601: Terminologie: Handeling of Gebeurtenis](./artefacten/0601.md)
+- [B4047: Terminologie: Actie of Operatie](./artefacten/4047.md)
+- [B6856: Hiërarchie: Verwerkingsactiviteit, Verwerking, Handeling en Actie](./artefacten/6856.md)
+- [B2357: Kunstmatige identificatoren](./artefacten/2357.md)
 - B0516: Identificatie van organisaties
 - B7972: Identificatie van personen bij privaatrechtelijke taken
 - B2042: Pseudonimisering BSN
