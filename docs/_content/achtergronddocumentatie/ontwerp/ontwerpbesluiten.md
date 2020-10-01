@@ -48,7 +48,7 @@ Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbeve
 - B8157: Modellering van Verwerkt soort gegeven
 - B9330: Opname van Afnemer
 - B1598: Opname van Betrokkenheid
-- B9559: Opname van Bewaartermijn
+- [B9559: Opname van Bewaartermijn](./artefacten/9559.md)
 - B9207: Opname van Gebruiker
 - B8585: Opname van Gegevensbron
 - B7726: Opname van Resultaat verwerking
