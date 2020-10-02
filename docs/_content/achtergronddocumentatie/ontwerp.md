@@ -1,6 +1,6 @@
 ---
 title: "Ontwerp"
-date: 10-10-2020
+date: 01-10-2020
 ---
 
 ### Ontwerp
