@@ -42,8 +42,8 @@ Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbeve
 - [B6856: Hiërarchie: Verwerkingsactiviteit, Verwerking, Handeling en Actie](./artefacten/6856.md)
 - [B2357: Kunstmatige identificatoren](./artefacten/2357.md)
 - [B0516: Identificatie van organisaties](./artefacten/0516.md)
-- B7972: Identificatie van personen bij privaatrechtelijke taken
-- B2042: Pseudonimisering BSN
+- [B7972: Identificatie van personen bij privaatrechtelijke taken](./artefacten/7972.md)
+- [B2042: Pseudonimisering BSN](./artefacten/2042.md)
 - [B7571: Meerdere personen/objecten per verwerking](./artefacten/7571.md)
 - B8157: Modellering van Verwerkt soort gegeven
 - [B7726: Geen opname van Resultaat verwerking](./artefacten/7726.md)
