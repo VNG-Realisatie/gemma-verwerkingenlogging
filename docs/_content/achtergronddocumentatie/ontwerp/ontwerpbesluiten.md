@@ -45,11 +45,12 @@ Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbeve
 - [B7972: Identificatie van personen bij privaatrechtelijke taken](./artefacten/7972.md)
 - [B2042: Pseudonimisering BSN](./artefacten/2042.md)
 - [B7571: Meerdere personen/objecten per verwerking](./artefacten/7571.md)
-- B8157: Modellering van Verwerkt soort gegeven
+- [B4555: Modellering van Verwerkt soort gegeven](./artefacten/4555.md)
 - [B7726: Geen opname van Resultaat verwerking](./artefacten/7726.md)
 - [B3133: Geen opname van Rol van de gebruiker](./artefacten/9330.md)
+- [B0233: Opname zoekcriteria op in het log](./artefacten/0233.md)
 - [B9330: Opname van Afnemer](./artefacten/3133.md)
-- B1598: Opname van Betrokkenheid
+- [B1598: Opname van Betrokkenheid](./artefacten/1598.md)
 - [B9559: Opname van Bewaartermijn](./artefacten/9559.md)
 - [B9207: Opname van Gebruiker](./artefacten/9207.md)
 - [B8585: Opname van Gegevensbron](./artefacten/8585.md)
@@ -58,8 +59,7 @@ Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbeve
 - [B7191: Opname van Uitvoerder](./artefacten/7191.md)
 - [B3908: Opname van Vertrouwelijkheid](./artefacten/3908.md)
 - [B8157: Opname van Verwerking.ID en Verwerking Afnemer](./artefacten/8157.md)
-- B6247: Opname van Verwerkt soort gegeven
-- B0233: Opname zoekcriteria op in het log
+- [B6247: Opname van Verwerkt soort gegeven](./artefacten/6247.md)
 
 ## Wijzigen, tijd en historie
 - B3891: Wijzigbaarheid en historie
