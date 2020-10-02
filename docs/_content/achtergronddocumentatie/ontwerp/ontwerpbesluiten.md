@@ -46,15 +46,15 @@ Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbeve
 - B2042: Pseudonimisering BSN
 - B7571: Meerdere personen/objecten per verwerking
 - B8157: Modellering van Verwerkt soort gegeven
-- [B3133: Geen opname van Rol van de gebruiker](./artefacten/3133.md)
-- B9330: Opname van Afnemer
+- [B3133: Geen opname van Rol van de gebruiker](./artefacten/9330.md)
+- [B9330: Opname van Afnemer](./artefacten/3133.md)
 - B1598: Opname van Betrokkenheid
 - [B9559: Opname van Bewaartermijn](./artefacten/9559.md)
 - [B9207: Opname van Gebruiker](./artefacten/9207.md)
-- B8585: Opname van Gegevensbron
+- [B8585: Opname van Gegevensbron](./artefacten/8585.md)
 - B7726: Opname van Resultaat verwerking
 - [B0378: Opname van Systeem](./artefacten/0378.md)
-- B2017: Opname van Tijdstip verwerking
+- [B2017: Opname van Tijdstip verwerking](./artefacten/2017.md)
 - [B7191: Opname van Uitvoerder](./artefacten/7191.md)
 - [B3908: Opname van Vertrouwelijkheid](./artefacten/3908.md)
 - [B8157: Opname van Verwerking.ID en Verwerking Afnemer](./artefacten/8157.md)
