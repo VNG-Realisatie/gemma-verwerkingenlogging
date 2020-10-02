@@ -32,8 +32,8 @@ Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbeve
 - [B0797: Standaardisatie rapportages](./artefacten/0797.md)
 
 ## Relatie tot het VAR
-- B0869: Koppeling tussen applicaties en VAR
-- B8278: Beëindigen van de geldigheid van verwerkingsactiviteiten
+- [B0869: Koppeling tussen applicaties en VAR](./artefacten/0869.md)
+- [B8278: Beëindigen van de geldigheid van verwerkingsactiviteiten](./artefacten/8278.md)
 
 ## Gegevensmodel logging
 - [B9428: Terminologie: Gebruiker of Medewerker](./artefacten/9428.md)
