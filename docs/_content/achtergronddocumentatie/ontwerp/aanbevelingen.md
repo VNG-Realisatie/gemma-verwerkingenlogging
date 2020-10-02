@@ -8,15 +8,6 @@ Vanuit de uitwerking van de [cases](./ontwerpcases.md) en de [requirements](./re
 
 Deze aanbevelingen beschrijven best-practices ten aanzien van de implementatie van de API-standaard. Het volgen van deze aanbevelingen zorgt ervoor dat de logging op een duidelijke en voor de burger begrijpelijke wijze inzichtelijk kan worden gemaakt. Het implementeren van de aanbevelingen is dan ook van harte aangeraden. 
 
-De aanbevelingen zijn gegroepeerd naar specifieke aspect van de API-standaard. Onderkende aspecten zijn:
-
-De aanbevelingen zijn gegroepeerd naar specifieke aspect van de API-standaard. Onderkende aspecten zijn:
-- [fundamentele aanbevelingen](./aanbevelingen.md#fundamenteel), 
-- [aanbevelingen ten aanzien van het gegevensmodel](./aanbevelingen.md#gegevensmodel-logging), en
-- [aanbevelingen ten aanzien van APIs](./aanbevelingen.md#api).
-
-Per aspect gelden ook ontwerpbesluiten. Deze zijn op de [ontwerpbesluiten pagina](./ontwerpbesluiten.md) na te lezen.
-
 ## Fundamenteel
 - [A5924: Mogelijkheden om duidelijke logentries te maken](./artefacten/5924.md)
 
