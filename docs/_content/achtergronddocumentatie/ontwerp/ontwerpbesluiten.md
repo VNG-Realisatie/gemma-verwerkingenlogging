@@ -62,7 +62,7 @@ Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbeve
 - [B6247: Opname van Verwerkt soort gegeven](./artefacten/6247.md)
 
 ## Wijzigen, tijd en historie
-- B3891: Wijzigbaarheid en historie
+- [B3891: Wijzigbaarheid en historie](./artefacten/3891.md)
 - B3707: Opname van Tijdstip Registratie
 - B8641: Opname van Vervallen
 - B8157: Opname van Referentie
