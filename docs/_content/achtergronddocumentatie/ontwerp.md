@@ -7,9 +7,10 @@ date: 10-10-2020
 Het ontwerp van de API-standaard is gericht op het kunnen opstellen van een gegevensmodel en de benodigde API’s. Onderdeel van het ontwerp zijn: 
 - de gehanteerde [afkortingen en terminologie](../achtergronddocumentatie/ontwerp/terminologie.md)
 - de [requirements](../achtergronddocumentatie/ontwerp/requirements.md) die afkomstig zijn uit de [brondocumenten](../achtergronddocumentatie/ontwerp/brondocumenten.md),
-- [cases](../achtergronddocumentatie/ontwerp/ontwerpcases.md) die rond logging en verwerking zijn uitgeschreven 
-- [vraagstukken](../achtergronddocumentatie/ontwerp/vraagstukken.md) die uit de cases volgen, en 
+- [cases](../achtergronddocumentatie/ontwerp/ontwerpcases.md) die rond logging en verwerking zijn uitgeschreven, en
 - [ontwerpbesluiten](../achtergronddocumentatie/ontwerp/ontwerpbesluiten.md) en [aanbevelingen](../achtergronddocumentatie/ontwerp/aanbevelingen.md) ten aanzien van implementatie van de API-standaard.
+
+Daarnaast zijn er een aantal nog [openstaande vraagstukken](../achtergronddocumentatie/ontwerp/vraagstukken.md) waar nog een standpunt op moet worden ingenomen.
 
 ## Scope en diepgang van het ontwerp
 De diepgang van het ontwerp is gericht op het kunnen opstellen van een gegevensmodel en de benodigde API’s. Het ontwerp kan daarmee wel als startpunt dienen voor de realisatie van een log maar zal daarvoor niet voldoende zijn. Het grootste gedeelte van het ontwerp gaat over het conceptueel en logisch niveau van logging. Waar nodig worden korte uitstapjes naar de techniek gemaakt. Bijvoorbeeld om van een bepaald onderdeel te toetsen of het ook implementeerbaar is.
