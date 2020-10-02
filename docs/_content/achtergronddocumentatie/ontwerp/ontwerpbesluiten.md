@@ -44,7 +44,7 @@ Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbeve
 - [B0516: Identificatie van organisaties](./artefacten/0516.md)
 - B7972: Identificatie van personen bij privaatrechtelijke taken
 - B2042: Pseudonimisering BSN
-- B7571: Meerdere personen/objecten per verwerking
+- [B7571: Meerdere personen/objecten per verwerking](./artefacten/7571.md)
 - B8157: Modellering van Verwerkt soort gegeven
 - [B7726: Geen opname van Resultaat verwerking](./artefacten/7726.md)
 - [B3133: Geen opname van Rol van de gebruiker](./artefacten/9330.md)
