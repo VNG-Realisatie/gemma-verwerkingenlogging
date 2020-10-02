@@ -36,7 +36,7 @@ Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbeve
 - B8278: Beëindigen van de geldigheid van verwerkingsactiviteiten
 
 ## Gegevensmodel logging
-- B9428: Terminologie: Gebruiker of Medewerker
+- [B9428: Terminologie: Gebruiker of Medewerker](./artefacten/9428.md)
 - [B0601: Terminologie: Handeling of Gebeurtenis](./artefacten/0601.md)
 - [B4047: Terminologie: Actie of Operatie](./artefacten/4047.md)
 - [B6856: Hiërarchie: Verwerkingsactiviteit, Verwerking, Handeling en Actie](./artefacten/6856.md)
@@ -46,16 +46,16 @@ Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbeve
 - B2042: Pseudonimisering BSN
 - B7571: Meerdere personen/objecten per verwerking
 - B8157: Modellering van Verwerkt soort gegeven
+- [B3133: Geen opname van Rol van de gebruiker](./artefacten/3133.md)
 - B9330: Opname van Afnemer
 - B1598: Opname van Betrokkenheid
 - [B9559: Opname van Bewaartermijn](./artefacten/9559.md)
-- B9207: Opname van Gebruiker
+- [B9207: Opname van Gebruiker](./artefacten/9207.md)
 - B8585: Opname van Gegevensbron
 - B7726: Opname van Resultaat verwerking
-- B3133: Opname van Rol van de gebruiker
-- B0378: Opname van Systeem
+- [B0378: Opname van Systeem](./artefacten/0378.md)
 - B2017: Opname van Tijdstip verwerking
-- B7191: Opname van Uitvoerder
+- [B7191: Opname van Uitvoerder](./artefacten/7191.md)
 - [B3908: Opname van Vertrouwelijkheid](./artefacten/3908.md)
 - [B8157: Opname van Verwerking.ID en Verwerking Afnemer](./artefacten/8157.md)
 - B6247: Opname van Verwerkt soort gegeven
