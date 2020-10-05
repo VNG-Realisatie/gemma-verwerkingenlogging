@@ -1,6 +1,6 @@
 ---
-Name: Cases - Hoe komt informatie in het log
-title: "Cases - Hoe komt informatie in het log"
+Name: Cases - Bijhouden van gegevens
+title: "Cases - Bijhouden van gegevens"
 date: '05-10-2020'
 ---
 
