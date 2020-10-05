@@ -1,6 +1,7 @@
 ---
-title: "Cases - Bijhouden van gegevens"
-date: '10-09-2020'
+Name: Cases - Hoe komt informatie in het log
+title: "Cases - Hoe komt informatie in het log"
+date: '05-10-2020'
 ---
 
 ## Algemeen
@@ -11,7 +12,23 @@ De onderstaande cases beschrijven verschillende bijhoudingspatronen waarmee pers
 | C	| Case |
 | V	| Vraagstuk |
 
-## Casebeschrijvingen - Bijhouden van gegevens
+## Bijhouden van gegevens
 [C9172: Registratie Verhuizing – Eenvoudig, traditioneel systeem](./../artefacten/9172.md)
+C8631: Registratie Verhuizing – Zaaksysteem
+C3472: Registratie Verhuizing – (Web)services
+C4081: Registratie Verhuizing – Zoeken op geboortedatum en naam
+C1753: Registratie Verhuizing – Multifunctioneel scherm
+C1628: Registratie Verhuizing – Inclusief verhuizing medebewoners
+C4084: Registratie Huwelijk – Complexe bedrijfsregel / Afgeleide informatie
 
+## Opvragen van gegevens
 
+## Opvragen van gegevens bij derden
+
+## Leveren van gegevens 
+
+## Vertrouwelijke verwerkingen
+
+## Privaatrechtelijke verwerking
+
+## Bewaartermijnen
