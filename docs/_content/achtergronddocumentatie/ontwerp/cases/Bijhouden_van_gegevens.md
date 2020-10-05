@@ -5,7 +5,7 @@ date: '05-10-2020'
 ---
 
 ## Algemeen
-De onderstaande cases beschrijven verschillende bijhoudingspatronen waarmee persoonsgegevens worden bijgehouden binnen een gemeentelijk proces. In iedere case is vastgelegd wat de bijzonderheden van de case zijn en welke vraagstukken er uit volgen. 
+De onderstaande cases beschrijven verschillende bijhoudingspatronen waarmee persoonsgegevens worden bijgehouden binnen een gemeentelijk proces en wat de vereisten daarbij zijn ten aanzien van de logging van verwerkingen. In iedere case is vastgelegd wat de bijzonderheden van de case zijn en welke vraagstukken er uit volgen. 
 
 ## Bijhouden van gegevens
 - [C9172: Registratie Verhuizing – Eenvoudig, traditioneel systeem](./../artefacten/9172.md)
