@@ -12,6 +12,6 @@ De onderstaande cases beschrijven verschillende bijhoudingspatronen waarmee pers
 - [C8631: Registratie Verhuizing – Zaaksysteem](./../artefacten/8631.md)
 - [C3472: Registratie Verhuizing – (Web)services](./../artefacten/3472.md)
 - [C4081: Registratie Verhuizing – Zoeken op geboortedatum en naam](./../artefacten/4081.md)
-- C1753: Registratie Verhuizing – Multifunctioneel scherm
+- [C1753: Registratie Verhuizing – Multifunctioneel scherm](./../artefacten/1753.md)
 - C1628: Registratie Verhuizing – Inclusief verhuizing medebewoners
 - C4084: Registratie Huwelijk – Complexe bedrijfsregel / Afgeleide informatie
