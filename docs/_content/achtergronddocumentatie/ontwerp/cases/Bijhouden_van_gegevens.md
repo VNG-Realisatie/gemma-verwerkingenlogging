@@ -20,15 +20,3 @@ C4081: Registratie Verhuizing – Zoeken op geboortedatum en naam
 C1753: Registratie Verhuizing – Multifunctioneel scherm
 C1628: Registratie Verhuizing – Inclusief verhuizing medebewoners
 C4084: Registratie Huwelijk – Complexe bedrijfsregel / Afgeleide informatie
-
-## Opvragen van gegevens
-
-## Opvragen van gegevens bij derden
-
-## Leveren van gegevens 
-
-## Vertrouwelijke verwerkingen
-
-## Privaatrechtelijke verwerking
-
-## Bewaartermijnen
