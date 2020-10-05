@@ -5,7 +5,7 @@ date: '05-10-2020'
 ---
 
 ## Algemeen
-De onderstaande cases beschrijven verschillende patronen waarmee gegevens worden opgehaald uit het log. In iedere case is vastgelegd wat de bijzonderheden van de case zijn en welke vraagstukken er uit volgen. In de beschrijving van de cases zijn verwijzingen naar onderdelen van het ontwerp gemaakt. Deze verwijzingen noemen we *artefacten*. Al deze artefacten zijn voorzien van een uniek willekeurig nummer en een prefix. Zo verwijst C5042 naar case 5042 en V4362 naar het vraagstuk met nummer 4362. De nummers zijn uniek over alle artefacten heen. Als er dus een C5042 bestaat kan er geen V5042 bestaan.
+De onderstaande cases beschrijven verschillende patronen waarmee persoonsgegevens worden opgehaald door de gemeente of door derden. Bij een opvraging ligt het initiatief bij de vragende partij. In iedere case is vastgelegd wat de bijzonderheden van de case zijn en welke vraagstukken er uit volgen. In de beschrijving van de cases zijn verwijzingen naar onderdelen van het ontwerp gemaakt. Deze verwijzingen noemen we *artefacten*. Al deze artefacten zijn voorzien van een uniek willekeurig nummer en een prefix. Zo verwijst C5042 naar case 5042 en V4362 naar het vraagstuk met nummer 4362. De nummers zijn uniek over alle artefacten heen. Als er dus een C5042 bestaat kan er geen V5042 bestaan.
 
 | Prefix	| Soort artefact |
 |--|--|
