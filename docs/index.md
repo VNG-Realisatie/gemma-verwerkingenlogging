@@ -13,9 +13,9 @@ Het werkingsgebied voor deze standaard is: gemeenten en gemeentelijke samenwerki
 - [Gegevensmodel](./_content/gegevensmodel/index.md)
 - [Informatiemodel](./_content/informatiemodel/index.md)
 - [API-specificaties](./_content/archief/work_in_progress.md)
-- [Beschrijving best-practices en architectuurmodellen](./_content/archief/work_in_progress.md)
-- [Referentieimplementatie van een verwerkingenlogregister](./_content/archief/work_in_progress.md)
-- [Referentieimplementatie van een informatiesysteem wat verwerkingen logt](./_content/archief/work_in_progress.md)
+- Beschrijving best-practices en architectuurmodellen
+- Referentieimplementatie van een verwerkingenlogregister
+- Referentieimplementatie van een informatiesysteem wat verwerkingen logt
 
 ## Achtergronddocumentatie
 - [Productvisie](./_content/productvisie/index.md)
