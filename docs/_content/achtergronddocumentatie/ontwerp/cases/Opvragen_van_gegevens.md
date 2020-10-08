@@ -8,8 +8,8 @@ date: '05-10-2020'
 De onderstaande cases beschrijven verschillende patronen waarmee persoonsgegevens worden opgehaald door de gemeente of door derden. Bij een opvraging ligt het initiatief bij de vragende partij. In iedere case is vastgelegd wat de bijzonderheden van de case zijn en welke vraagstukken er uit volgen. 
 
 ## Opvragen van gegevens
-- C9522: Detailvraag op basis van BSN – Vanuit zaakdossier
-- C9950: Detailvraag op basis van BSN – Zonder zaakdossier
+- [C9522: Detailvraag op basis van BSN – Vanuit zaakdossier](./../artefacten/9522.md)
+- [C9950: Detailvraag op basis van BSN – Zonder zaakdossier](./../artefacten/9950.md)
 - C2866: Detailvraag op basis van BSN – Door een derde partij
 - C3209: Zoekvraag – Vooraf gedefinieerde zoekcriteria, vooraf gedefinieerde resultaatvelden
 - C5889: Zoekvraag – Onbekende zoekcriteria, vooraf gedefinieerde resultaatvelden
