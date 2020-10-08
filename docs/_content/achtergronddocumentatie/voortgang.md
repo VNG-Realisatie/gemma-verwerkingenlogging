@@ -11,7 +11,7 @@ date: 08-10-2020
 
 ## oktober 2020
 - Concept [Gegevensmodel](../gegevensmodel/index.md) gepubliceerd.
-- Concept [Gegevenswoordenboek](../gegevenswoordenboek/index.md) gepubliceerd.
+- Concept [Gegevenswoordenboek](../gegevenswoordenboek/readme.md) gepubliceerd.
 - [Ontwerpbesluiten](./ontwerp/ontwerpbesluiten.md) toegevoegd.
 - [Aanbevelingen](./ontwerp/aanbevelingen.md) toegevoegd.
 - Lijst van [brondocumenten](./ontwerp/brondocumenten.md) toegevoegd.
