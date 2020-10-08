@@ -15,7 +15,7 @@ De onderstaande cases beschrijven verschillende patronen waarmee persoonsgegeven
 - [C3209: Zoekvraag – Vooraf gedefinieerde zoekcriteria, vooraf gedefinieerde resultaatvelden](./../artefacten/3209.md)
 - [C5889: Zoekvraag – Onbekende zoekcriteria, vooraf gedefinieerde resultaatvelden](./../artefacten/5889.md)
 - [C7293: Zoekvraag – Onbekende zoekcriteria, onbekende resultaatvelden](./../artefacten/7293.md)
-- C2521: Inzage van gegevens aan de balie door een derde partij
-- C3538: HR-medewerker bekijkt gegevens van gemeentelijk medewerker
+- [C2521: Inzage van gegevens aan de balie door een derde partij](./../artefacten/2521.md)
+- [C3538: HR-medewerker bekijkt gegevens van gemeentelijk medewerker](./../artefacten/3538.md)
 - C5272: Selectie
 - C0086: Extractie ten behoeve van statistieken
