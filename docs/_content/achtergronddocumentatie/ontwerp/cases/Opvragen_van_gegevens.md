@@ -17,5 +17,5 @@ De onderstaande cases beschrijven verschillende patronen waarmee persoonsgegeven
 - [C7293: Zoekvraag – Onbekende zoekcriteria, onbekende resultaatvelden](./../artefacten/7293.md)
 - [C2521: Inzage van gegevens aan de balie door een derde partij](./../artefacten/2521.md)
 - [C3538: HR-medewerker bekijkt gegevens van gemeentelijk medewerker](./../artefacten/3538.md)
-- C5272: Selectie
-- C0086: Extractie ten behoeve van statistieken
+- [C5272: Selectie](./../artefacten/5272.md)
+- [C0086: Extractie ten behoeve van statistieken](./../artefacten/0086.md)
