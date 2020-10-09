@@ -28,6 +28,7 @@ De verschillende onderdelen van het ontwerp noemen we artefacten. Alle artefacte
 | A	| Aanbeveling |
 | B	| Besluit |
 | C	| Case |
+| F	| Functie in API |
 | R	| Requirement |
 | V	| Vraagstuk |
 
