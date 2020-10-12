@@ -13,12 +13,12 @@ Dit gegevenswoordenboek beschrijft het [uitwisselingsgegevensmodel (UGM)](../geg
 |Attribuuttype|Soort eigenschap. Ook wel domein genoemd.|Datum/tijd, BSN, UUID|
 
 ## Bijzondere meta-attributen
-Bij alle attributen is het meta-attribuut ‘Aanwezigheid’ opgenomen. Dit meta-attribuut geeft aan of het attribuut ingevuld ofwel ’aanwezig’ dient te zijn of niet. Bij diverse attributen kunnen er omstandigheden zijn waardoor het attribuut niet altijd bepaald kan worden. Technisch gezien leidt dit tot een ‘optioneel’ attribuut.
+Bij alle attributen is het meta-attribuut ‘Aanwezigheid’ opgenomen. Dit meta-attribuut geeft aan of het attribuut ingevuld ofwel ’aanwezig’ moet zijn of niet. Bij diverse attributen kunnen er omstandigheden zijn waardoor het attribuut niet altijd bepaald kan worden. Technisch gezien leidt dit tot een ‘optioneel’ attribuut.
 
-In het gevenswoordenboek spreken we in dergelijke gevallen over *‘Verplicht indien …’*. Bijvoorbeeld *‘Verplicht indien relevant’* of *‘Verplicht indien te bepalen’*. Ofwel:
--	Als het attribuut in de programmatuur bepaald kan worden, dient het weldegelijk altijd ingevuld te worden.
--	Kan het niet bepaald worden, maar bijvoorbeeld wel gevraagd worden aan de gebruiker, dan dient dat gedaan te worden.
--	Kan ook de gebruiker het niet altijd bepalen? Geef deze dan bijvoorbeeld wel een waarschuwing dat het attribuut/veld bij voorkeur ingevuld dient te worden.
+In het gegevenswoordenboek spreken we in dergelijke gevallen over *‘Verplicht indien …’*. Bijvoorbeeld *‘Verplicht indien relevant’* of *‘Verplicht indien te bepalen’*. Ofwel:
+-	Als het attribuut in de programmatuur bepaald kan worden, moet het wel degelijk altijd ingevuld te worden.
+-	Kan het niet bepaald worden, maar bijvoorbeeld wel gevraagd worden aan de gebruiker, dan moet dat gedaan worden.
+-	Kan ook de gebruiker het niet altijd bepalen? Geef deze dan bijvoorbeeld wel een waarschuwing dat het attribuut/veld bij voorkeur ingevuld moet worden.
 
 ## Objecttypen
 - [Actie](./objecttypen/Actie.md)
@@ -45,10 +45,10 @@ In het gevenswoordenboek spreken we in dergelijke gevallen over *‘Verplicht in
 - [Uitvoerder](./attributen/Uitvoerder.md)
 - [Vertrouwelijkheid](./attributen/Vertrouwelijkheid.md)
 - [Vervallen](./attributen/Vervallen.md)
-- [Verwerking.ID](./attributen/Verwerking.ID.md)
-- [Verwerking.Naam](./attributen/Verwerking.Naam.md)
+- [Verwerking ID](./attributen/Verwerking.ID.md)
+- [Verwerking Naam](./attributen/Verwerking.Naam.md)
 - [Verwerking afnemer](./attributen/Verwerking_afnemer.md)
-- [Verwerkingsactiviteit.ID](./attributen/Verwerkingsactiviteit.ID.md)
+- [Verwerkingsactiviteit ID](./attributen/Verwerkingsactiviteit.ID.md)
 - [Verwerkt object](./attributen/Verwerkt_object.md)
 
 ## Attribuuttypen
