@@ -11,7 +11,7 @@ Gegevensbron waarin de bij actie betrokken gegevens zijn opgeslagen.
 Zie [B8585](../../achtergronddocumentatie/ontwerp/artefacten/8585.md).
 
 ## Voorbeeld
-`FooBar Database Publiekszaken BEL Combinatie`
+`FooBar Database Publiekszaken `
 
 ## Attribuuttype
 [Naam](../attribuuttypen/Naam.md)
