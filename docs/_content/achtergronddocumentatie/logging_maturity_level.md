@@ -14,7 +14,7 @@ Gemeenten, systemen, leveranciers en derden zullen de komende jaren allemaal in 
 Hieronder is een eerste aanzet voor een Logging Maturity Level gegeven.
 Waarschijnlijk zijn er uiteindelijk twee aparte schema’s nodig. Eén voor de totale inrichting van de gemeente en één voor de capabilities van gemeentelijke software. Formuleringen zijn onvoldoende SMART en zo zijn er vast nog diverse verbeteringen denkbaar. De getoonde tabel is dus uitsluitend ter inspiratie.
 
-Verdere uitwerking en aanscherping, hiervan valt niet binnen de huidige scope.
+Verdere uitwerking en aanscherping hiervan valt niet binnen de huidige scope.
 
 <img src="./_assets/mlm.png" alt="Logging Maturity Levels" width="600"/>
 
