@@ -37,4 +37,4 @@ In de diverse ontwerpartefacten gebruiken we een compacte beschrijving. Hierin z
 
 Een voorbeeld van een compacte beschrijving:
 
-<img src="./_assets/ontwerpcases_1.png" alt="" width="700"/>
+<img src="./_assets/ontwerpcases_2.png" alt="" width="700"/>
