@@ -1,7 +1,7 @@
 ---
 Name: Cases - Bewaartermijnen
 title: "Cases - Bewaartermijnen"
-date: '11-10-2020'
+date: '12-10-2020'
 ---
 
 ## Algemeen
