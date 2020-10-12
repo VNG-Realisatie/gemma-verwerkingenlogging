@@ -35,7 +35,7 @@ De provider logt deze informatie als volgt:
 - [F2969: Wijzig vertrouwelijkheid van Verwerking](../achtergronddocumentatie/ontwerp//artefacten/2969.md)
 - [F2969: Wijzig bewaartermijn van Verwerking](../achtergronddocumentatie/ontwerp//artefacten/2969.md)
 - [F8316: Wijzig Actie](../achtergronddocumentatie/ontwerp//artefacten/8316.md)
-- [F3835: Wijzig Vertrouwelijke Actie](../achtergronddocumentatie/ontwerp//artefacten/3835.md)
+- [F3835: Wijzig Vertrouwelijke Actie](../achtergronddocumentatie/ontwerp//artefacten/3835.md) `*` 
 - [F9906: Verwijder Actie](../achtergronddocumentatie/ontwerp//artefacten/9906.md)
 - [F2265: Verwijder Vertrouwelijke Actie](../achtergronddocumentatie/ontwerp//artefacten/2265.md) `*` 
 - [F4086: Opvragen Acties – Beperkte set velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/4086.md)
