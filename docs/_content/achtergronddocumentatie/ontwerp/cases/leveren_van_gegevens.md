@@ -1,7 +1,7 @@
 ---
 Name: Cases - Leveren van gegevens
 title: "Cases - Leveren van gegevens"
-date: '11-10-2020'
+date: '12-10-2020'
 ---
 
 ## Algemeen
