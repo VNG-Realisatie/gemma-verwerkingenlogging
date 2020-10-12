@@ -32,7 +32,7 @@ De provider logt deze informatie als volgt:
 ## OAS specificaties
 De OAS-specificaties volgen naar verwachting eind oktober 2020.
 
-## Logging APIs
+## Logging functies
 - [F7446: Log Actie](../achtergronddocumentatie/ontwerp/artefacten/7446.md)
 - [F6624: Log Vertrouwelijke Actie](../achtergronddocumentatie/ontwerp//artefacten/6624.md) `*` 
 - [F2969: Wijzig vertrouwelijkheid van Verwerking](../achtergronddocumentatie/ontwerp//artefacten/2969.md)
