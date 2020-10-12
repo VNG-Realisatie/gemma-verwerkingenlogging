@@ -15,9 +15,9 @@ De cases zijn gegroepeerd op basis van de verschillende soorten patronen die voo
 
 - [Bijhouden van gegevens](./cases/Bijhouden_van_gegevens.md) 
 - [Opvragen van gegevens](./cases/Opvragen_van_gegevens.md) 
-- [Leveren van gegevens ](./cases/leveren_van_gegevens.md)
-- Delegatie en mandatering
-- Vertrouwelijke verwerkingen 
+- [Leveren van gegevens](./cases/leveren_van_gegevens.md)
+- [Delegatie en mandatering](./cases/delegatie_en_mandaterings.md)
+- [Vertrouwelijke verwerkingen](./cases/vertrouwelijke verwerkingen.md)
 - Privaatrechtelijke verwerking 
 - Bewaartermijnen
 - Inzage in het log
