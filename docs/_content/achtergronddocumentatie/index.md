@@ -9,7 +9,7 @@ De onderstaande documentatie maakt deel uit van de API-standaard voor Logging va
 
 - [Gegevensmodel](../gegevensmodel/index.md)
 - Informatiemodel
-- API-specificatie
+- [API-specificatie](../api/index.md)
 
 ## Achtergrondinformatie
 De onderstaande documenten zijn beschikbaar als achtergrondinformatie bij de API-standaard.
