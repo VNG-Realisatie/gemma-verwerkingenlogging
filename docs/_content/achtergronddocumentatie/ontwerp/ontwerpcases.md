@@ -24,3 +24,17 @@ De cases zijn gegroepeerd op basis van de verschillende soorten patronen die voo
 - [Bewaartermijnen](./cases/bewaartermijnen.md) - Logs dienen geschoond te worden na afloop van de bewaartermijn. Welke termijnen zijn er en hoe gaan we daarmee om?
 - [Inzage in het log](./cases/inzage_in_log.md) - Op welke wijze kunnen burgers, medewerkers en derden inzage krijgen in het log?
 - [Bijzondere rechten in de AVG](./cases/bijzondere_rechten.md)
+
+## Beschrijving van te loggen/gelogde acties in cases
+Onderstaande voorbeeld toont een actie zoals deze doorgegeven zou worden aan de logging API:
+
+<img src="./_assets/ontwerpcases_1.png" alt="" width="700"/>
+
+In de diverse ontwerpartefacten gebruiken we een compacte beschrijving. Hierin zijn omwille van de leesbaarheid de volgende veranderingen doorgevoerd:
+-	Alleen de voor het voorbeeld of besluit relevante attributen worden getoond.
+-	UUID’s worden waar mogelijk en zinvol vervangen door leesbare namen. Om duidelijk te maken dat het hier eigenlijk om een verwijzing gaat staan deze namen tussen accolades.
+-	Verwerkt object en Verwerkt soort object worden weergeven op één regel waarbij de waarden door komma’s worden gescheiden.
+
+Een voorbeeld van een compacte beschrijving:
+
+<img src="./_assets/ontwerpcases_1.png" alt="" width="700"/>
