@@ -8,20 +8,18 @@ De onderstaande APIs maken deel uit van de API-standaard voor de logging van ver
 ## Over de implementatie van de API-standaard
 Applicaties of services die de logging API-standaadr implementeren moeten op diverse punten worden aangepast. Uiteindelijk  moet voldaan worden aan alle onderstaande punten:
 
-1. Bij alle acties die persoonsgegevens verwerken wordt er gelogd (B7952). Hierbij gelden de volgende regels:
-    a.	Alle verwerkingen hebben een eigen ID (B8157).
-        i.	Als de verwerking overeenkomt met een proces uit de bedrijfsvoering (zoals een verzoek of zaak) en dit proces heeft een eigen UUID dan kan dit UUID gebruikt worden.
-        ii.	In alle andere gevallen moet een nieuw UUID toegewezen worden.
-    b.	Het ID van de verwerking wordt gelogd en kan later gebruikt worden om acties die over deze verwerking gelogd zijn terug te vinden in het log en deze aan te passen of logisch te verwijderen.
-    c.	Acties worden zodanig omschreven dat deze duidelijk zijn voor de burger. Hiertoe worden waar mogelijk en zinvol alle attributen van de actie ingezet (A5924).
+- Bij alle acties die persoonsgegevens verwerken wordt er gelogd (B7952). Hierbij gelden de volgende regels:
+    - Alle verwerkingen hebben een eigen ID (B8157).
+        - Als de verwerking overeenkomt met een proces uit de bedrijfsvoering (zoals een verzoek of zaak) en dit proces heeft een eigen UUID dan kan dit UUID gebruikt worden.
+        - In alle andere gevallen moet een nieuw UUID toegewezen worden.
+    - Het ID van de verwerking wordt gelogd en kan later gebruikt worden om acties die over deze verwerking gelogd zijn terug te vinden in het log en deze aan te passen of logisch te verwijderen.
+    - Acties worden zodanig omschreven dat deze duidelijk zijn voor de burger. Hiertoe worden waar mogelijk en zinvol alle attributen van de actie ingezet (A5924).
 
-2. Roept de applicatie/service een API aan waarbij die API persoonsgegevens verwerkt? Dan moet bij deze aanroep in de header de volgende informatie meegegeven worden (B7259, B9177): OIN, Verwerking ID, Vertrouwelijkheid en Bewaartermijn.
+- Roept de applicatie/service een API aan waarbij die API persoonsgegevens verwerkt? Dan moet bij deze aanroep in de header de volgende informatie meegegeven worden (B7259, B9177): OIN, Verwerking ID, Vertrouwelijkheid en Bewaartermijn.
 Zie ‘Toevoeging aan de header van alle persoonsgegevens-verwerkende API’s’ voor meer informatie.
 
-3. Wordt een service geboden waarbij persoonsgegevens verwerkt worden? Dan moet bij de uitvoering daarvan gekeken worden of in de header van de aanroep de volgende gegevens aanwezig zijn: OIN, Verwerking ID, Vertrouwelijkheid en Bewaartermijn. Deze gegevens dienen overgenomen te worden bij het loggen van de verwerking. Zie ‘*Toevoeging aan de header van alle persoonsgegevens-verwerkende API’s*’ voor meer informatie.
-
-4. De applicatie of service ondersteunt alle functies van de API.
-
+-  Wordt een service geboden waarbij persoonsgegevens verwerkt worden? Dan moet bij de uitvoering daarvan gekeken worden of in de header van de aanroep de volgende gegevens aanwezig zijn: OIN, Verwerking ID, Vertrouwelijkheid en Bewaartermijn. Deze gegevens dienen overgenomen te worden bij het loggen van de verwerking. Zie ‘*Toevoeging aan de header van alle persoonsgegevens-verwerkende API’s*’ voor meer informatie.
+- De applicatie of service ondersteunt alle functies van de API.
 
 
 ## Logging APIs
