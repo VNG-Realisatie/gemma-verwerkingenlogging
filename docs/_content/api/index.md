@@ -13,15 +13,21 @@ Applicaties of services die de logging API-standaadr implementeren moeten op div
         - Als de verwerking overeenkomt met een proces uit de bedrijfsvoering (zoals een verzoek of zaak) en dit proces heeft een eigen UUID dan kan dit UUID gebruikt worden.
         - In alle andere gevallen moet een nieuw UUID toegewezen worden.
     - Het ID van de verwerking wordt gelogd en kan later gebruikt worden om acties die over deze verwerking gelogd zijn terug te vinden in het log en deze aan te passen of logisch te verwijderen.
-    - Acties worden zodanig omschreven dat deze duidelijk zijn voor de burger. Hiertoe worden waar mogelijk en zinvol alle attributen van de actie ingezet ([A5924](../achtergronddocumentatie/ontwerp/artefacten/5924.md).
+    - Acties worden zodanig omschreven dat deze duidelijk zijn voor de burger. Hiertoe worden waar mogelijk en zinvol alle attributen van de actie ingezet ([A5924](../achtergronddocumentatie/ontwerp/artefacten/5924.md)).
 
-- Roept de applicatie/service een API aan waarbij die API persoonsgegevens verwerkt? Dan moet bij deze aanroep in de header de volgende informatie meegegeven worden ([B7259](../achtergronddocumentatie/ontwerp/artefacten/7259.md), [B9177](../achtergronddocumentatie/ontwerp/artefacten/9177.md)): OIN, Verwerking ID, Vertrouwelijkheid en Bewaartermijn.
-Zie ‘Toevoeging aan de header van alle persoonsgegevens-verwerkende API’s’ voor meer informatie.
+- Roept de applicatie/service een API aan waarbij die API persoonsgegevens verwerkt? Dan moet bij deze aanroep in de header de volgende informatie meegegeven worden ([B7259](../achtergronddocumentatie/ontwerp/artefacten/7259.md), [B9177](../achtergronddocumentatie/ontwerp/artefacten/9177.md)): `OIN`, `Verwerking ID`, `Vertrouwelijkheid` en `Bewaartermijn`. Zie [Toevoeging aan de header van alle persoonsgegevens-verwerkende API’s’]() voor meer informatie.
 
 -  Wordt een service geboden waarbij persoonsgegevens verwerkt worden? Dan moet bij de uitvoering daarvan gekeken worden of in de header van de aanroep de volgende gegevens aanwezig zijn: OIN, Verwerking ID, Vertrouwelijkheid en Bewaartermijn. Deze gegevens dienen overgenomen te worden bij het loggen van de verwerking. Zie ‘*Toevoeging aan de header van alle persoonsgegevens-verwerkende API’s*’ voor meer informatie.
 - De applicatie of service ondersteunt alle functies van de API.
 
+## Toevoeging aan de header van alle persoonsgegevens-verwerkende API’s
+Als een consumer een API aanroept van een provider die persoonsgegevens verwerkt, moet bij deze aanroep in de header de volgende informatie meegegeven worden ([B9177](../achtergronddocumentatie/ontwerp/artefacten/9177.md)).
 
+<img src="./_assets/api_1.png" alt="" width="700"/>
+
+De provider logt deze informatie als volgt:
+
+<img src="./_assets/api_2.png" alt="" width="700"/>
 
 ## Logging APIs
 - [F7446: Log Actie](../achtergronddocumentatie/ontwerp/artefacten/7446.md)
