@@ -4,6 +4,8 @@ name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 date: 08-10-2020
 ---
 ## 12 oktober 2020
+Beschrijvingen van de tot de standaard behorende [API functies](../api/index.md) toegevoegd.
+
 Case beschrijvingen toegevoegd voor:
 - [Leveren van gegevens](./ontwerp/cases/leveren_van_gegevens.md)
 - [Delegatie en mandatering](../ontwerp/cases/delegatie_en_mandatering.md)
