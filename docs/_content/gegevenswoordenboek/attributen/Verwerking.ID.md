@@ -1,6 +1,6 @@
 ---
-title: "Attribuut - Verwerking.ID"
-name: Attribuut - Verwerking.ID
+title: "Attribuut - Verwerking ID"
+name: Attribuut - Verwerking ID
 date: 28-09-2020
 ---
 
