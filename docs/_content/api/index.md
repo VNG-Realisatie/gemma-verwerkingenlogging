@@ -29,6 +29,9 @@ De provider logt deze informatie als volgt:
 
 <img src="./_assets/api_2.png" alt="" width="700"/>
 
+## OAS specificaties
+De OAS-specificaties volgen naar verwachting eind oktober 2020.
+
 ## Logging APIs
 - [F7446: Log Actie](../achtergronddocumentatie/ontwerp/artefacten/7446.md)
 - [F6624: Log Vertrouwelijke Actie](../achtergronddocumentatie/ontwerp//artefacten/6624.md) `*` 
