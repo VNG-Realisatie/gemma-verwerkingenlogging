@@ -9,3 +9,4 @@ Gemeenten voeren zowel publiek- als privaatrechtelijke taken uit. Voor de privaa
 
 ## Vertrouwelijke verwerkingen
 - [C2637: Verhuur van een sporthal aan een sportvereniging](./../artefacten/2637.md)
+- [C1689: Toestemming persoon](./../artefacten/1689.md)
