@@ -1,6 +1,6 @@
 ---
-title: "Attribuut - Verwerkingsactiviteit.ID"
-name: Attribuut - Verwerkingsactiviteit.ID
+title: "Attribuut - Verwerkingsactiviteit ID"
+name: Attribuut - Verwerkingsactiviteit ID
 date: 28-09-2020
 ---
 
