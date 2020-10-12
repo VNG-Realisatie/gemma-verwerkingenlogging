@@ -20,5 +20,5 @@ De cases zijn gegroepeerd op basis van de verschillende soorten patronen die voo
 - [Vertrouwelijke verwerkingen](./cases/vertrouwelijke_verwerkingen.md)
 - [Privaatrechtelijke verwerking](./cases/privaatrechtelijke_verwerkingen.md)
 - [Bewaartermijnen](./cases/bewaartermijnen.md)
-- Inzage in het log
-- Bijzondere rechten in de AVG
+- [Inzage in het log](./cases/inzage_in_log.md)
+- [Bijzondere rechten in de AVG](./cases/bijzondere_rechten.md)
