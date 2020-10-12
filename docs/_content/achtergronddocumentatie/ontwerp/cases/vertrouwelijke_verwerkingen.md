@@ -1,7 +1,7 @@
 ---
 Name: Cases - Vertrouwelijke verwerkingen 
 title: "Cases - Vertrouwelijke verwerkingen "
-date: '11-10-2020'
+date: '12-10-2020'
 ---
 
 ## Algemeen
