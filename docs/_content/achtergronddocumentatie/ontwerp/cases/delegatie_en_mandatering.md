@@ -1,7 +1,7 @@
 ---
 Name: Cases - Delegatie en mandatering
 title: "Cases - Delegatie en mandatering"
-date: '11-10-2020'
+date: '12-10-2020'
 ---
 
 ## Algemeen
