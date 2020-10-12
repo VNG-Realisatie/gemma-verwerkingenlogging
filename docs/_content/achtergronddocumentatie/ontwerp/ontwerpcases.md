@@ -14,11 +14,11 @@ Om dit te kunnen doen worden in de cases waar nodig ook niet functionele aspecte
 De cases zijn gegroepeerd op basis van de verschillende soorten patronen die voorkomen in de bedrijfsprocessen van gemeenten. Per groep wordt bekeken wat de impact is op een gemeentelijk verwerkingsactiviteitenregister en logregsiter. Iedere groep van cases is ondergebracht in een aparte categorie. In de tabel hieronder volgt een korte toelichting op de categorieën.
 
 - [Bijhouden van gegevens](./cases/Bijhouden_van_gegevens.md) 
-- [Opvragen van gegevens](./cases/Opvragen_van_gegevens.md) 
-- [Leveren van gegevens](./cases/leveren_van_gegevens.md)
-- [Delegatie en mandatering](./cases/delegatie_en_mandatering.md)
-- [Vertrouwelijke verwerkingen](./cases/vertrouwelijke_verwerkingen.md)
-- [Privaatrechtelijke verwerking](./cases/privaatrechtelijke_verwerkingen.md)
-- [Bewaartermijnen](./cases/bewaartermijnen.md)
-- [Inzage in het log](./cases/inzage_in_log.md)
+- [Opvragen van gegevens](./cases/Opvragen_van_gegevens.md) - Opvragen van gegevens in alle varianten. Binnen de gemeente, door een derde en bij een derde.
+- [Leveren van gegevens](./cases/leveren_van_gegevens.md) - Levering van gegevens binnen de gemeente of aan derden. Het initiatief ligt bij (het informatie verwerkende proces van) de gemeente.
+- [Delegatie en mandatering](./cases/delegatie_en_mandatering.md) - Welke invloed heeft het delegeren of mandateren van verwerkingen op het log.
+- [Vertrouwelijke verwerkingen](./cases/vertrouwelijke_verwerkingen.md) - Onderzoeken van bijvoorbeeld inlichtingendiensten mogen niet zichtbaar zijn zolang deze lopen. Daarnaast is het in het kader van de privacy ongewenst dat allerlei mensen – ook na afronding van de onderzoeken – kunnen zien dat dit soort onderzoeken hebben plaatsgevonden. 
+- [Privaatrechtelijke verwerking](./cases/privaatrechtelijke_verwerkingen.md) - Hoe loggen we dit? Hoe gaan we om met situaties waarin expliciete toestemming nodig is?
+- [Bewaartermijnen](./cases/bewaartermijnen.md) - Logs dienen geschoond te worden na afloop van de bewaartermijn. Welke termijnen zijn er en hoe gaan we daarmee om?
+- [Inzage in het log](./cases/inzage_in_log.md) - Op welke wijze kunnen burgers, medewerkers en derden inzage krijgen in het log?
 - [Bijzondere rechten in de AVG](./cases/bijzondere_rechten.md)
