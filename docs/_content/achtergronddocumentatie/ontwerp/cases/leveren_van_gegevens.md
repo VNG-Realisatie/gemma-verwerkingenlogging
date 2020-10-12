@@ -10,5 +10,5 @@ De onderstaande cases beschrijven verschillende patronen waarmee persoonsgegeven
 ## Leveren van gegevens
 - [C9041: Notificaties – Informatiearm](./../artefacten/9041.md)
 - [C2359: Synchronisatie – Informatierijk (oud/nieuw)](./../artefacten/2359.md)
-- C2434: Synchronisatie naar BRP of BAG
-- C9299: Synchronisatie naar BGL
+- [C2434: Synchronisatie naar BRP of BAG](./../artefacten/2434.md)
+- [C9299: Synchronisatie naar BGL](./../artefacten/9299.md)
