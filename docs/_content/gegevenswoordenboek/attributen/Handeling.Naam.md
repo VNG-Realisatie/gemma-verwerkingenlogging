@@ -12,7 +12,7 @@ Naam van de handeling waar de actie onderdeel van is.
 Zie [B6872](../../achtergronddocumentatie/ontwerp/artefacten/6872.md), [B0601](../../achtergronddocumentatie/ontwerp/artefacten/0601.md) en de toelichting bij het objecttype [Actie](../objecttypen/Actie.md).
 
 ## Voorbeeld
-`Ongedaan maken overlijden`
+`Ongedaan maken registratie overlijden`
 
 ## Attribuuttype
 [Naam](../attribuuttypen/Naam.md)
