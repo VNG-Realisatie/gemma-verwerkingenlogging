@@ -18,7 +18,7 @@ De cases zijn gegroepeerd op basis van de verschillende soorten patronen die voo
 - [Leveren van gegevens](./cases/leveren_van_gegevens.md)
 - [Delegatie en mandatering](./cases/delegatie_en_mandatering.md)
 - [Vertrouwelijke verwerkingen](./cases/vertrouwelijke_verwerkingen.md)
-- Privaatrechtelijke verwerking 
+- [Privaatrechtelijke verwerking](./cases/privaatrechtelijke_verwerkingen.md)
 - Bewaartermijnen
 - Inzage in het log
 - Bijzondere rechten in de AVG
