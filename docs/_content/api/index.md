@@ -1,6 +1,6 @@
 ---
-title: "API's"
-name: API's
+title: "APIs voor logging van verwerkingen"
+name: APIs voor logging van verwerkingen
 ---
 ## Algemeen
 De onderstaande APIs maken deel uit van de API-standaard voor de logging van verwerkingen. Ten aanzien van een aantal APIs geldt dat nog overwogen wordt of ze op deze wijze deel uit gaan maken van de API-standaard. Bij de APIs waar dit het geval is is dit aangegeven met een `*`.
