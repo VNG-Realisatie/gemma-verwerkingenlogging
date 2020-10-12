@@ -32,7 +32,7 @@ In het gegevenswoordenboek spreken we in dergelijke gevallen over *‘Verplicht 
 - [Bewaartermijn](./attributen/Bewaartermijn.md)
 - [Gebruiker](./attributen/Gebruiker.md)
 - [Gegevensbron](./attributen/Gegevensbron.md)
-- [Handeling.Naam](./attributen/Handeling.Naam.md)
+- [Handeling Naam](./attributen/Handeling.Naam.md)
 - [ID](./attributen/ID.md)
 - [Naam](./attributen/Naam.md)
 - [Object ID](./attributen/Object_ID.md)
