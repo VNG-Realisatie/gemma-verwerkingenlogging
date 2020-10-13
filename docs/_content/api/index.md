@@ -49,7 +49,8 @@ De OAS-specificaties volgen naar verwachting eind oktober 2020.
 
 ## Gehanteerde standaarden
 Op de API-standaard voor logging zijn de volgende standaarden van toepassing:
--	[De REST-API Design Rules (ADR)](https://forumstandaardisatie.nl/open-standaarden/rest-api-design-rules)
+- [De REST-API Design Rules (ADR)](https://forumstandaardisatie.nl/open-standaarden/rest-api-design-rules)
+- [MIM - Metamodel Informatie Modellering v1.1](https://docs.geostandaarden.nl/mim/mim/)
 
 Verder is gebruik gemaakt van onderdelen van de volgende standaarden:
--	[API Designrule extensions (Nederlandse API Strategie IIb)](https://docs.geostandaarden.nl/api/API-Strategie-ext/)
+- [API Designrule extensions (Nederlandse API Strategie IIb)](https://docs.geostandaarden.nl/api/API-Strategie-ext/)
