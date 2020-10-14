@@ -58,7 +58,7 @@ Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbeve
 - [B2017: Opname van Tijdstip verwerking](./artefacten/2017.md)
 - [B7191: Opname van Uitvoerder](./artefacten/7191.md)
 - [B3908: Opname van Vertrouwelijkheid](./artefacten/3908.md)
-- [B8157: Opname van Verwerking.ID en Verwerking Afnemer](./artefacten/8157.md)
+- [B8157: Opname van Verwerking ID en Verwerking afnemer](./artefacten/8157.md)
 - [B6247: Opname van Verwerkt soort gegeven](./artefacten/6247.md)
 
 ## Wijzigen, tijd en historie
