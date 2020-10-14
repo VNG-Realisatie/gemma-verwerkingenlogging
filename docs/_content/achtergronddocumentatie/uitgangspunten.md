@@ -49,7 +49,6 @@ In onderstaande cases is bijzondere aandacht besteed aan de bescherming van de p
 - [C5889: Zoekvraag – Onbekende zoekcriteria, vooraf gedefinieerde resultaatvelden](./ontwerp/artefacten/5889.md)
 - [C3677: Inzage door burger](./ontwerp/artefacten/3677.md)
 - [C9713: Inzage door burger – Gegevens die niet langer vertrouwelijk zijn](./ontwerp/artefacten/9713.md)
-- [C9713: Inzage door burger – Gegevens die niet langer vertrouwelijk zijn](./ontwerp/artefacten/9713.md)
 - [C5953: Inzage door gemeentelijk medewerker](./ontwerp/artefacten/5953.md)
 - [C9041: Notificaties – Informatiearm](./ontwerp/artefacten/9041.md)
 
