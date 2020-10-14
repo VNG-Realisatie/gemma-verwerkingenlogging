@@ -16,6 +16,9 @@ In onderstaande paragrafen worden deze uitgangspunten nader toegelicht en worden
 ## Het perspectief van de burger is leidend
 Onderstaande aanbevelingen en ontwerpbesluiten zijn direct gericht op de het perspectief van de burger of bevatten elementen die daaraan gerelateerd zijn.
 
+### Cases
+
+
 ### Aanbevelingen
 - [A5924: Mogelijkheden om duidelijke logentries te maken](./ontwerp/artefacten/5924.md)
 
@@ -36,9 +39,14 @@ Onderstaande aanbevelingen en ontwerpbesluiten zijn direct gericht op de het per
 Onderstaande cases, ontwerpbesluiten en functies zijn direct gericht op de bescherming van de privacy of bevatten elementen die daaraan gerelateerd zijn.
 
 ### Cases
+In onderstaande cases is bijzondere aandacht besteed aan de bescherming van de privacy.
 - [C4081: Registratie Verhuizing – Zoeken op geboortedatum en naam](./ontwerp/artefacten/4081.md)
 - [C5889: Zoekvraag – Onbekende zoekcriteria, vooraf gedefinieerde resultaatvelden](./ontwerp/artefacten/5889.md)
+- [C3677: Inzage door burger](./ontwerp/artefacten/3677.md)
 - [C9713: Inzage door burger – Gegevens die niet langer vertrouwelijk zijn](./ontwerp/artefacten/9713.md)
+- [C9713: Inzage door burger – Gegevens die niet langer vertrouwelijk zijn](./ontwerp/artefacten/9713.md)
+- [C5953: Inzage door gemeentelijk medewerker](./ontwerp/artefacten/5953.md)
+- [C9041: Notificaties – Informatiearm](./ontwerp/artefacten/9041.md)
 
 ### Ontwerpbesluiten
 - [B3238: Alleen identificatoren en geen achterliggende waarden](./ontwerp/artefacten/3238.md)
@@ -59,4 +67,12 @@ Onderstaande cases, ontwerpbesluiten en functies zijn direct gericht op de besch
 ## We faciliteren laagdrempelige inbouw
 - [B9177: Meegeven van informatie t.b.v. logging in API’s](./ontwerp/artefacten/9177.md)
 
+Bij het opstellen van het [Uitwisselingsgegevensmodel (UGM)](../../gegevensmodel/uitwisselingsgegevensmodel/readme.md) hebben overwegingen ten aanzien van de implementeerbaarheid van de API-standaard door leveranciers een grote rol gespeeld. Getracht is om de balans te vinden voor snelle en succesvolle eerste implementaties van de API door eenvoud en het tegelijkertijd faciliteren van leveranciers die logging in de meest volledige vorm willen implementeren. 
+
+functgioneel verplicht
+
 ## De implementatie laten we over aan de markt
+Ten aanzien van het gebruik van functies uit de API-standaard zijn verschillende spelregels opgesteld. Zo is het bijvoorbeeld verplicht om om bepaalde header informatie mee te geven als die te herleiden is. Daarnaast is beschreven op welke momenten verwerkingen gelogd moeten worden. Ten aanzien van de wijze waarop een leverancier de API-standaard inbouwd worden geen dwingende adviezen gegeven. Wel worden best-practices beschreven bijvoorbeeld ten aanzien van hoe in het kader van privacy by design kan worden omgegaan met de opslag van logging van vertrouwelijke en niet vertrouwelijke verwerkingen. Ook ten aanzien van de wijze waarop logging technisch in een logregister wordt opgenomen (via een persistent queueing mechanisme of direct) worden wel handreikingen gedaan maar geen verplichtingen opgelegd.
+
+Het is aan leveranciers om te bepalen hoe de aanbevelingen en ontwerpbesluiten worden vertaald naar technische oplossingen. Het kan uiteraard wel zo zijn dat gemeenten in hun rol van opdrachtgever eisen gaan stellen aan de technische inrichting.
+
