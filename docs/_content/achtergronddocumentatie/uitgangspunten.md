@@ -80,3 +80,8 @@ Ten aanzien van het gebruik van functies uit de API-standaard zijn verschillende
 
 Het is aan leveranciers om te bepalen hoe de aanbevelingen en ontwerpbesluiten worden vertaald naar technische oplossingen. Het kan uiteraard wel zo zijn dat gemeenten in hun rol van opdrachtgever eisen gaan stellen aan de technische inrichting.
 
+[B8970: Benadering log bij gefedereerde inrichting](./ontwerp/artefacten/8970.md)
+[B2042: Pseudonimisering BSN](./ontwerp/artefacten/2042.md)
+
+
+
