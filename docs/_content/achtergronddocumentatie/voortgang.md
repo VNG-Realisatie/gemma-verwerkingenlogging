@@ -3,6 +3,9 @@ title: "Voortgang ontwikkeling API-standaard voor logging van verwerkingen"
 name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 date: 08-10-2020
 ---
+## 15 oktober 2020
+- [Uitgangspunten](./uitgangspunten.md) die gehanteerd zijn bij de totstandkoming van de API-standaard beschreven en gerelateerd aan ontwerp artefacten.
+
 ## 12 oktober 2020
 - Beschrijvingen van de tot de standaard behorende [API functies](../api/index.md) toegevoegd.
 - Case beschrijvingen toegevoegd voor:
