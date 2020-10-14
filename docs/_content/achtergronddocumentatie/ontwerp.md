@@ -12,6 +12,9 @@ Het ontwerp van de API-standaard is gericht op het kunnen opstellen van een gege
 
 Daarnaast zijn er een aantal nog [openstaande vraagstukken](../achtergronddocumentatie/ontwerp/vraagstukken.md) waar nog een standpunt op moet worden ingenomen.
 
+## Overzicht 
+Een Excel overzicht van de verschillende ontwerpartefacten per case is [hier](./ontwerp/artefacten/20201011_Artefacten_en_cases.xlsx) te downloaden.
+
 ## Scope en diepgang van het ontwerp
 De diepgang van het ontwerp is gericht op het kunnen opstellen van een gegevensmodel en de benodigde API’s. Het ontwerp kan daarmee wel als startpunt dienen voor de realisatie van een log maar zal daarvoor niet voldoende zijn. Het grootste gedeelte van het ontwerp gaat over het conceptueel en logisch niveau van logging. Waar nodig worden korte uitstapjes naar de techniek gemaakt. Bijvoorbeeld om van een bepaald onderdeel te toetsen of het ook implementeerbaar is.
 
@@ -36,5 +39,5 @@ De nummer van artefacten is uniek over de artefacten heen. Als er dus een A5042 
 
 Vanuit de verschillende artefacten wordt verwezen naar andere artefacten. Zo kan in een casebeschrijving een verwijzing worden gemaakt naar een vraagstuk. Deze verwijzingen zijn in de documentatie via links naar de artefacten opgenomen.
 
-## Voorbeelden
+## Voorbeelden binnen de artefacten
 Alle gegevens in de voorbeelden zijn fictief en niet gebaseerd op personen of persoonsgegevens uit de werkelijkheid. Om te voorkomen dat de BSN’s in voorbeelden overeenkomen met BSN’s uit de praktijk zijn alle BSN’s in de voorbeelden 7 cijfers i.p.v. 9 cijfers lang.
