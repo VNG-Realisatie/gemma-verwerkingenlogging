@@ -23,7 +23,7 @@ Onderstaande aanbevelingen, ontwerpbesluiten en openstaande vraagstukken zijn ge
 ### Aanbevelingen
 - [A5924: Mogelijkheden om duidelijke logentries te maken](./ontwerp/artefacten/5924.md)
 
-### Ontwerpbesluite
+### Ontwerpbesluiten
 -	[B6856: Hiërarchie: Verwerkingsactiviteit, Verwerking, Handeling en Actie](./ontwerp/artefacten/6856.md)
 - [B1598: Opname van Betrokkenheid](./ontwerp/artefacten/1598.md)
 - [B6247 - Opname van Verwerkt soort gegeven](./ontwerp/artefacten/6247.md)
@@ -37,6 +37,8 @@ Onderstaande aanbevelingen, ontwerpbesluiten en openstaande vraagstukken zijn ge
 - [B5469: Doelstelling van logging - Duiden versus reconstrueren](./ontwerp/artefacten/5469.md)
 
 ## Privacy by design
+Bij de ontwikkeling van de standaard is vanaf het begin rekening gehouden met de bescherming van de privacy van personen (burgers en medewerkers van de gemeente). Het gaat daarbij om vraagstukken over noodzakelijkheid van het opslaan van gegevens; welke gegevens zijn echt nodig en welke niet? Ook is rekening  gehouden met de levenscyclus van gegevens in een logregister. Hoe worden deze aangemaakt, gewijzigd en verwijderd en hoe is het mogelijk om daar regie op te voeren. Ook ten aanzien van de de toegang tot gegevens zijn maatregelen genomen die de bescherming van de privacy verhogen. Voorbeelden daarvan zijn de aanbevelimng om BSNs in het log te pseudonimiseren en de aanbeveling om logging van vertrouwelijke en niet-vertrouwelijke verwerkingen apart van elkaar op te slaan. Implementatie hiervan wordt ondersteund door API-functies van de standaard.
+
 Onderstaande cases, ontwerpbesluiten en functies zijn direct gericht op de bescherming van de privacy of bevatten elementen die daaraan gerelateerd zijn.
 
 ### Cases
