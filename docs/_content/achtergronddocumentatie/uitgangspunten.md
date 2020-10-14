@@ -36,7 +36,7 @@ Onderstaande aanbevelingen, ontwerpbesluiten en openstaande vraagstukken zijn ge
 - [V7168 - Logging van selecties](./ontwerp/artefacten/7168.md)
 
 ## Het doel is duiden, niet reconstrueren
-Het log is primair bedoeld als ondersteunend middel voor het kunnen voldoen aan de verantwoordingsplicht uit de AVG. Het log is dus bedoeld voor het kunnen aantonen dat een verwerking aan de belangrijkste beginselen van verwerking heeft voldaan, zoals rechtmatigheid, transparantie, doelbinding en juistheid. Het log is niet bedoeld om reconstructies te maken van situaties en gegevens in systemen op een bepaald tijdstip in het verleden (audit-trail).
+Het log is primair bedoeld als ondersteunend middel voor het kunnen voldoen aan de verantwoordingsplicht uit de AVG. Het log is dus bedoeld voor het kunnen aantonen dat een verwerking aan de belangrijkste beginselen van verwerking heeft voldaan, zoals rechtmatigheid, transparantie, doelbinding en juistheid. Het log is niet bedoeld om reconstructies te maken van situaties en gegevens in systemen op een bepaald tijdstip in het verleden (audit-trail). Mocht de burger, of bijvoorbeeld gemeentelijke privacy officer, naar aanleiding van de gepresenteerde duiding van verwerkingen nadere vragen hebben dan kunnen eventuele 'forensische' onderzoeken worden uitgevoerd bij de applicaties die de gegevens daadwerkelijk hebben verwerkt.
 
 - [B5469: Doelstelling van logging - Duiden versus reconstrueren](./ontwerp/artefacten/5469.md)
 
