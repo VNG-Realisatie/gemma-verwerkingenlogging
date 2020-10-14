@@ -14,10 +14,11 @@ Bij het opstellen van de API-standaard zijn een aantal uitgangspunten, of leiden
 In onderstaande paragrafen worden deze uitgangspunten nader toegelicht en worden de ontwerpbesluiten en aanbevelingen die een directe relatie hebben met het uitgangspunt benoemd.
 
 ## Het perspectief van de burger is leidend
-Onderstaande aanbevelingen en ontwerpbesluiten zijn direct gericht op de het perspectief van de burger of bevatten elementen die daaraan gerelateerd zijn.
+Misschien wel het belangrijkste gehanteerde uitgangspunt is dat de burger bij de inzage in het log voor hem of haar begrijpelijke informatie ziet. Als we niet alleen naar de letter maar ook naar de geest van de AVG willen handelen, dan is het bijzonder belangrijk om burgers bij inzage een duidelijk log te kunnen presenteren. De burger moet de informatie uit het log kunnen herleiden naar processen of acties die voor hem of haar herkenbaar zijn. Hoe herkenbaarder de informatie in het log is hoe minder vragen de burger er over zal hebben en hoe minder vragen de gemeente dus krijgt. 
 
-### Cases
+Duidelijkheid over de logentries begint bij een goede inrichting van het gemeentelijk register van verwerkingsactiviteiten (het VAR). De verwerkingen die worden vastgelegd in het log worden immers gerelateerd aan een verwerkingsactiviteit uit het VAR. Het VAR moet dus zo min mogelijk generieke en dus zoveel mogelijk specifieke verwerkingsactiviteiten bevatten. De verwerkingsactiviteiten moeten vervolgens voorzien zijn van een duidelijk doel, grondslag en een toelichting op die grondslag. Daarnaast moeten de logentries zelf zo informatief mogelijk zijn. De standaard biedt mogelijkheden om [uitgebreide informatie over een verwerking]](./volledigheid_van_logging.md) vast te leggen. Het is wel zo dat hoe meer informatie vastgelegd wordt hoe ingewikkelder de implementatie van de standaard wordt.
 
+Onderstaande aanbevelingen, ontwerpbesluiten en openstaande vraagstukken zijn gerelateerd aan het perspectief van de burger.
 
 ### Aanbevelingen
 - [A5924: Mogelijkheden om duidelijke logentries te maken](./ontwerp/artefacten/5924.md)
@@ -65,11 +66,11 @@ In onderstaande cases is bijzondere aandacht besteed aan de bescherming van de p
 - [F2525: Opvragen Acties – Beperkte set velden, vertrouwelijkheid opgeheven](./ontwerp/artefacten/2525.md)
 
 ## We faciliteren laagdrempelige inbouw
-- [B9177: Meegeven van informatie t.b.v. logging in API’s](./ontwerp/artefacten/9177.md)
+Een belangrijk uitgangspunt bij de totstandkoming van de API-standaard is dat deze voor leveranciers op relatief eenvoudige wijze, en tegen acceptabele inspanning ingebouwd kan worden. Met de wetenschap dat de bestaande informatiesystemen niet zijn ontworpen op het kunnen loggen conform de eisen van de AVG is vanuit de gedachte ‘beter iets dan niets loggen’ besloten dat de informatie die vastgelegd wordt in logging moet kunnen varieeren van [basisinformatie tot zeer uitgebreide informatie](./volledigheid_van_logging.md). Een gevolg van deze keuze is dat zo min mogelijk attributen 'verplicht' moeten worden ingevuld. Er is in plaats daarvan gekozen voor een systeem waarbij gegevens technisch niet verplicht zijn in te vullen, maar functioneel verplicht kunnen zijn. Dit houdt in dat als een gegeven bekend is, of tegen beperkte inspanning bekend kan worden, het moet worden opgenomen in de logging. Zie [deze](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/tree/master/docs/_content/gegevenswoordenboek#bijzondere-meta-attributen) pagina voor een nadere uitleg.
 
 Bij het opstellen van het [Uitwisselingsgegevensmodel (UGM)](../../gegevensmodel/uitwisselingsgegevensmodel/readme.md) hebben overwegingen ten aanzien van de implementeerbaarheid van de API-standaard door leveranciers een grote rol gespeeld. Getracht is om de balans te vinden voor snelle en succesvolle eerste implementaties van de API door eenvoud en het tegelijkertijd faciliteren van leveranciers die logging in de meest volledige vorm willen implementeren. 
 
-functgioneel verplicht
+Er is verder gekozen om een systeem te hanteren waarbij bestaande APIs niet 'opengebroken' hoeven te worden om de voor logging benodigde attributen mee te geven. Besloten is om de payload van bestaande APIs niet te wijzigen en logging attributen via http header attributen mee te geven. Zie [B9177: Meegeven van informatie t.b.v. logging in API’s](./ontwerp/artefacten/9177.md) voor een nadere uitleg.
 
 ## De implementatie laten we over aan de markt
 Ten aanzien van het gebruik van functies uit de API-standaard zijn verschillende spelregels opgesteld. Zo is het bijvoorbeeld verplicht om om bepaalde header informatie mee te geven als die te herleiden is. Daarnaast is beschreven op welke momenten verwerkingen gelogd moeten worden. Ten aanzien van de wijze waarop een leverancier de API-standaard inbouwd worden geen dwingende adviezen gegeven. Wel worden best-practices beschreven bijvoorbeeld ten aanzien van hoe in het kader van privacy by design kan worden omgegaan met de opslag van logging van vertrouwelijke en niet vertrouwelijke verwerkingen. Ook ten aanzien van de wijze waarop logging technisch in een logregister wordt opgenomen (via een persistent queueing mechanisme of direct) worden wel handreikingen gedaan maar geen verplichtingen opgelegd.
