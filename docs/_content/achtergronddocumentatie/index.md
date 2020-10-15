@@ -7,8 +7,7 @@ De documentatie bij de API-standaard voor Logging van Verwerkingsactiviteiten be
 ## API-standaard documentatie
 De onderstaande documentatie maakt deel uit van de API-standaard voor Logging van Verwerkingsactiviteiten.
 
-- [Gegevensmodel](../gegevensmodel/index.md)
-- [Informatiemodel](../informatiemodel/index.md)
+- [Gegevens- en informatiemodel](../gegevensmodel/index.md)
 - [API-specificatie](../api/index.md)
 
 ## Achtergrondinformatie
