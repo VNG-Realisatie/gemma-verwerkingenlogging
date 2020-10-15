@@ -12,8 +12,7 @@ Organisaties die persoonsgegevens verwerken zijn conform de [Algemene Verordenin
 Het werkingsgebied voor deze standaard is: gemeenten en gemeentelijke samenwerkingsverbanden.
 
 ## Inhoud van de API-standaard
-- [Gegevensmodel](./_content/gegevensmodel/index.md)
-- [Informatiemodel](./_content/informatiemodel/index.md)
+- [Gegevens- en informatiemodel](./_content/gegevensmodel/index.md)
 - [API-specificaties](./_content/api/index.md)
 - Beschrijving best-practices en architectuurmodellen
 - Referentieimplementatie van een verwerkingenlogregister
