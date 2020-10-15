@@ -30,16 +30,19 @@ In het volledige model treffen we twee nieuwe objecttypen aan:
 -	Verwerkt object: Persoon of object betrokken in de verwerking.
 -	Verwerkt soort gegeven: Soort gegeven dat verwerkt is.
 
-<img src="./_assets/volledig_model.png" alt="SIM" width="400"/>
+<img src="./_assets/volledig_model.png" alt="SIM" width="700"/>
   
 Details over deze objecttypen en hun attributen zijn te vinden in het gegevenswoordenboek. Voorbeelden worden gegeven bij de beschrijving van het [Logging Maturity Level](../../achtergronddocumentatie/logging_maturity_level.md)
 
 ## Relatie tussen SIM en UGM
 Onderstaande afbeelding toont de relatie tussen het semantisch informatiemodel (SIM) en het uitwisselingsgegevensmodel (UGM).
 
-<img src="./_assets/sim_ugm.png" alt="SIM" width="600"/>
+<img src="./_assets/sim_ugm.png" alt="SIM" width="700"/>
 
 Aan de linkerzijde staat het volledige SIM, aan de rechter het UGM. De attributen uit het SIM zijn voorzien van een code, deze code is terug te vinden in het UGM. Naast de attributen voor het formele historiepatroon (V5, V6, H4 en H5) vervalt het ID van de Handeling (H1). Dit zou eenvoudig toegevoegd kunnen worden aan de actie zoals dat ook gedaan is voor de verwerking. Het attribuut had echter in geen van de uitgewerkte cases een toegevoegde waarde en dus is het weggelaten.
 
+## Modellering in Enterprise Architect
+Binnen VNG Realisatie wordt Enterprise Architect (EA) gebruikt voor de vastelling van uitwisselingsgegevensmodellen. Onderstaand figuur geeft de modellering van het SIM weer zoals deze in EA is gemodelleerd.
 
+<img src="./_assets/ugm_ea.png" alt="SIM" width="700"/>
 
