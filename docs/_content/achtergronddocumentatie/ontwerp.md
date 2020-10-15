@@ -12,7 +12,6 @@ Het ontwerp van de API-standaard is gericht op het kunnen opstellen van een gege
 
 Daarnaast zijn er een aantal nog [openstaande vraagstukken](../achtergronddocumentatie/ontwerp/vraagstukken.md) waar nog een standpunt op moet worden ingenomen.
 
-### Overzicht 
 Een Excel overzicht van de verschillende ontwerpartefacten per case is [hier](./ontwerp/artefacten/20201011_Artefacten_en_cases.xlsx) te downloaden.
 
 ### Scope en diepgang van het ontwerp
