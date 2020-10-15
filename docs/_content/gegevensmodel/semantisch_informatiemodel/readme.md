@@ -23,6 +23,6 @@ De plaatsing van de verschillende attributen in het model is lastig te bepalen. 
 De variatie in inrichting van gemeentelijke bedrijfsprocessen en systemen maakt dat de meeste attributen dus eigenlijk op ieder niveau in de hiërarchie zouden moeten kunnen voorkomen. Om de afbeelding overzichtelijk te houden hebben we dit niet gedaan.
 
 ## Modellering in Enterprise Architect
-Binnen VNG Realisatie wordt Enterprise Architect (EA) gebruikt voor de vastelling van semantische informatiemodellen (SIM). Onderstaand figuur geeft de modellering van het SIM weer zoals deze in EA is gemodelleerd.
+Binnen VNG Realisatie wordt Enterprise Architect (EA) gebruikt voor de vastlegging van semantische informatiemodellen (SIM). Onderstaand figuur geeft de modellering van het SIM weer zoals deze in EA is gemodelleerd.
 
 <img src="./_assets/sim_ea.png" alt="SIM in Enterprise Architect" width="700"/>
