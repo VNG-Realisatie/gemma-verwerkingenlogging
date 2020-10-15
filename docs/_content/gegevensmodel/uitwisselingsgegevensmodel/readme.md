@@ -4,7 +4,6 @@ name: Uitwisselingsgegevensmodel (UGM)
 date: 28-09-2020
 ---
 ## Kern
-
 Om tot een gegevensmodel voor de uitwisseling te komen kijken we vooral naar het praktische gebruik van het model. We hebben nog een lange weg te gaan voordat logging in alle systemen optimaal geïntegreerd is.
 
 Voor snelle en succesvolle eerste implementaties van de API willen we eenvoud. Tegelijkertijd willen we leveranciers niet tegenhouden om logging direct goed te implementeren. De standaard raakt alle gemeentelijke systemen. Ingrijpende wijzigingen van de standaard zijn daarom bijzonder ongewenst.
