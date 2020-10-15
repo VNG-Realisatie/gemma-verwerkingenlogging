@@ -30,7 +30,7 @@ In het volledige model treffen we twee nieuwe objecttypen aan:
 -	Verwerkt object: Persoon of object betrokken in de verwerking.
 -	Verwerkt soort gegeven: Soort gegeven dat verwerkt is.
 
-<img src="./_assets/volledig_model.png" alt="SIM" width="700"/>
+<img src="./_assets/volledig_model.png" alt="SIM" width="400"/>
   
 Details over deze objecttypen en hun attributen zijn te vinden in het gegevenswoordenboek. Voorbeelden worden gegeven bij de beschrijving van het [Logging Maturity Level](../../achtergronddocumentatie/logging_maturity_level.md)
 
