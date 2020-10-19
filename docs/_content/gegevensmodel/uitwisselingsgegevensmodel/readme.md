@@ -12,9 +12,9 @@ We hopen dit te bereiken door de objecttypen Verwerking en Handeling ‘plat te 
 <img src="./_assets/actie_modellering.png" alt="SIM" width="400"/>
 
 Bij de attributen zien we drie kolommen. In de eerste kolom staat de naam van het attribuut. In de tweede het type en in de laatste of het attribuut verplicht is. Hierbij worden de volgende waarden gebruikt:
-o	O = Optioneel
-o	V = Verplicht
-o	F = Functioneel verplicht (‘Should have’), maar technisch niet.
+- O = Optioneel
+- V = Verplicht
+- F = Functioneel verplicht (‘Should have’), maar technisch niet.
 
 Bovenstaande structuur is gedenormaliseerd en zal dus leiden tot redundante opslag van informatie. Een voorbeeld: Als de waarde van de Uitvoerder op het niveau van de verwerking vastgelegd had kunnen worden, dan zien we deze waarde nu terug bij iedere actie.
 
