@@ -23,13 +23,6 @@ paths:
       description: Door de juiste parameters mee te geven kun je zoeken naar de voor jouw relevante ACTIEs.
         By passing in the appropriate options, you can search for
       parameters:
-        - name: identificatie
-          in: query
-          description: De unieke identificatie van het VERZOEK binnen de organisatie
-            die verantwoordelijk is voor de behandeling van het VERZOEK.
-          schema:
-            type: string
-            maxLength: 40
         - name: objecttype
           in: query
           description: Soort object dat bij de actie betrokken is.
