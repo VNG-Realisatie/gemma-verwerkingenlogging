@@ -47,6 +47,12 @@ paths:
             format: identificator
             maxLength: 40
             example: "479580261"
+        - name: beperkteSet
+          in: query
+          description: In geval van 'true' worden niet alle attributen teruggegeven. Bijvoorbeeld attributen zoals 'uitvoerder' of 'systeem' zijn niet relevant voor de burger. In geval van 'false' worden alle velden teruggegeven in het resultaat.
+          schema:
+            type: boolean
+            example: true
       responses:
         '200':
           description: OK
@@ -303,6 +309,7 @@ components:
           description: Geeft aan of een actie als vervallen beschouwd dient te worden.
           type: boolean
           readOnly: true
+          example: false
         verwerkteObjecten:
           title: Verwerkte objecten
           type: array
