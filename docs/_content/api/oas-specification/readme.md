@@ -8,4 +8,4 @@ API specificatie (OAS3) in
 
 ![mapping functies naar api](https://github.com/HenriKorver/gemma-verwerkingenlogging/blob/master/docs/_content/api/oas-specification/mapping.png)
 
-N.B. Vanwege het platslaan van het objecttype Verwerking in het objecttype Actie passen de logging-functies F2969 en F2969 niet in het CRUD-model van REST en zijn deze functies als RPC-calls gespecificeerd.
+N.B. Vanwege het platslaan van het objecttype `Verwerking` in het objecttype `Actie` passen de logging-functies F2969 en F2969 niet in het CRUD-model van REST en zijn deze functies als RPC-calls gespecificeerd.
