@@ -20,7 +20,7 @@ API specificatie (OAS3) in
 | F2265 | Verwijder Vertrouwelijke Actie* |||
 | F4086 | Opvragen Acties – Beperkte set velden, niet vertrouwelijk | GET /acties?beperkteSet=true | REST |
 | F2525 | Opvragen Acties – Beperkte set velden, vertrouwelijkheid opgeheven* |||
-| F9787 | Opvragen Acties – Alle velden, niet vertrouwelijk	| GET /acties?beperkteSet=true | REST |
+| F9787 | Opvragen Acties – Alle velden, niet vertrouwelijk	| GET /acties?beperkteSet=false | REST |
 | F0143 | Opvragen Acties – Alle velden, vertrouwelijk* |||		
 
 Opmerkingen:
