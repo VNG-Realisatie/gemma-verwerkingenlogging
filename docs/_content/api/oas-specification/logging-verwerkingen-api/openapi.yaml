@@ -198,7 +198,7 @@ components:
       type: object
       required:
         - ID
-        - Tijdstip
+        - tijdstip
       properties:
         ID:
           title: ID
