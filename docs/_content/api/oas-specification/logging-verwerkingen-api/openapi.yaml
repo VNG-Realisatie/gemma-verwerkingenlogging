@@ -1,6 +1,7 @@
 openapi: 3.0.0
 info:
   title: API voor logging van verwerkingen
+  description: API-specificatie voor gemeenten ten behoeve van de registratie en ontsluiting van de metagegevens behorende bij de verwerkingen van (persoons)gegevens. 
   contact:
     url: https://vng-realisatie.github.io/gemma-verwerkingenlogging/api/index
     email: henri.korver@vng.nl
@@ -47,6 +48,20 @@ paths:
             format: identificator
             maxLength: 40
             example: "479580261"
+        - name: beginDatum
+          in: query
+          description: Tijdstip van de actie moet groter of gelijk zijn aan deze datum om teruggegeven te worden.
+          schema:
+            type: string
+            format: date
+            example: "2020-10-24"
+        - name: eindDatum
+          in: query
+          description: Tijdstip van de actie moet kleiner of gelijk zijn aan deze datum om teruggegeven te worden.
+          schema:
+            type: string
+            format: date-time
+            example: "2020-11-24"
         - name: beperkteSet
           in: query
           description: In geval van 'true' worden niet alle attributen teruggegeven. Bijvoorbeeld attributen zoals 'uitvoerder' of 'systeem' zijn niet relevant voor de burger. In geval van 'false' worden alle velden teruggegeven in het resultaat.
@@ -417,4 +432,3 @@ components:
             - Normaal
             - Vertrouwelijk
             - Opgeheven
-    
