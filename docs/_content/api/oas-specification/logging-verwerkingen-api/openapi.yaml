@@ -26,6 +26,7 @@ paths:
         - name: objecttype
           in: query
           description: Soort object dat bij de actie betrokken is.
+          required: true
           schema:
             type: string
             enum:
@@ -34,6 +35,7 @@ paths:
         - name: soortObjectID
           in: query
           description: Soort identificator waarmee het object geïdentificeerd wordt.
+          required: true
           schema:
             type: string
             format: naam
@@ -42,6 +44,7 @@ paths:
         - name: objectID
           in: query
           description: Identificator van het object.
+          required: true
           schema:
             type: string
             format: identificator
@@ -50,6 +53,7 @@ paths:
         - name: beginDatum
           in: query
           description: Tijdstip van de actie moet groter of gelijk zijn aan deze datum om teruggegeven te worden.
+          required: true
           schema:
             type: string
             format: date
@@ -57,6 +61,7 @@ paths:
         - name: eindDatum
           in: query
           description: Tijdstip van de actie moet kleiner of gelijk zijn aan deze datum om teruggegeven te worden.
+          required: true
           schema:
             type: string
             format: date-time
@@ -66,7 +71,7 @@ paths:
           description: In geval van 'true' worden niet alle attributen teruggegeven. Bijvoorbeeld attributen zoals 'uitvoerder' of 'systeem' zijn niet relevant voor de burger. In geval van 'false' worden alle velden teruggegeven in het resultaat.
           schema:
             type: boolean
-            example: true
+            default: true
       responses:
         '200':
           description: OK
