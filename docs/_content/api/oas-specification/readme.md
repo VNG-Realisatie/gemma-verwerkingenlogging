@@ -24,6 +24,5 @@ API specificatie (OAS3) in
 | F0143 | Opvragen Acties – Alle velden, vertrouwelijk* |||		
 
 Opmerkingen:
-
 - Vanwege het platslaan van het objecttype `Verwerking` in het objecttype `Actie` passen de logging-functies F2969 en F2969 niet in het CRUD-model van REST en zijn deze functies als RPC-calls gespecificeerd.
-- Logging functies met een sterretje zijn nog niet vertaald naar API-calls.
+- Logging functies met een sterretje zijn nog niet vertaald naar API-calls. Het gebruik van deze functies betreft een hoge mate van vertrouwelijkheid en ze zullen waarschijnlijk op een speciaal endpoint gedefinieerd worden.
