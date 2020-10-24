@@ -22,7 +22,6 @@ paths:
       summary: Alle ACTIEs opvragen.
       operationId: actie_list
       description: Door de juiste parameters mee te geven kun je zoeken naar de voor jouw relevante ACTIEs.
-        By passing in the appropriate options, you can search for
       parameters:
         - name: objecttype
           in: query
