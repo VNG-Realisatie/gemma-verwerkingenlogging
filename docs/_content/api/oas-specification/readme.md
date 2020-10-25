@@ -25,4 +25,4 @@ API specificatie (OAS3) in
 
 Opmerkingen:
 - Vanwege het platslaan van het objecttype `Verwerking` in het objecttype `Actie` passen de logging-functies F2969 en F2969 niet in het CRUD-model van REST en zijn deze functies als RPC-calls gespecificeerd.
-- Logging functies met een sterretje zijn nog niet vertaald naar API-calls. Deze functies hebben een hoge mate van vertrouwelijkheid en  zullen waarschijnlijk op een speciaal endpoint gedefinieerd worden.
+- Logging functies met een sterretje * zijn nog niet vertaald naar API-calls. Deze functies hebben een hoge mate van vertrouwelijkheid en  zullen waarschijnlijk op een speciaal endpoint gedefinieerd worden.
