@@ -8,7 +8,7 @@ API specificatie (OAS3) in
 
 <!-- ![mapping functies naar api](https://github.com/HenriKorver/gemma-verwerkingenlogging/blob/master/docs/_content/api/oas-specification/mapping.png) -->
 
-| Code         | Logging functie      | API Call      | Stijl          |
+| Code         | Logging functie      | API call      | Stijl          |
 | -----------  | :-----------         | :----------   | :-----------   |
 | F7446        |  Log Actie           | POST /acties  | REST           |
 | F6624 | Log Vertrouwelijke Actie *	|||
