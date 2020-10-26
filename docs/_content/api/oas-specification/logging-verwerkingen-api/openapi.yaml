@@ -210,7 +210,7 @@ components:
       properties:
         url:
           title: URL
-          description: URL-referentie naar deze resource. Dit is de unieke identificatie en locatie van deze resource.
+          description: URL-referentie naar deze resource. Deze link wordt automatisch aangemaakt door het log.
           type: string
           format: uri
           maxLength: 1000
@@ -219,7 +219,7 @@ components:
           example: "https://loggingapi.vng.cloud/api/v1/acties/7a22eb38-bca6-463f-9955-54ab040287cb"
         id:
           title: ID
-          description: Identificator van de actie waar de persoon of het object bij betrokken is. Het wordt automatisch aangemaakt door het log.
+          description: Identificator van de actie waar de persoon of het object bij betrokken is. Deze ID wordt automatisch aangemaakt door het log.
           type: string
           format: uuid
           readOnly: true
