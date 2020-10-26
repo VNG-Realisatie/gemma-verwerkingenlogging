@@ -3,7 +3,7 @@ title: "APIs voor logging van verwerkingen"
 name: APIs voor logging van verwerkingen
 ---
 ## Algemeen
-De onderstaande APIs maken deel uit van de API-standaard voor de logging van verwerkingen. Ten aanzien van een aantal APIs geldt dat nog overwogen wordt of ze op deze wijze deel uit gaan maken van de API-standaard. Bij de APIs waar dit het geval is is dit aangegeven met een `*`.
+De onderstaande APIs maken deel uit van de API-standaard voor de logging van verwerkingen. 
 
 ## Over de implementatie van de API-standaard
 Applicaties of services die de logging API-standaadr implementeren moeten op diverse punten worden aangepast. Uiteindelijk  moet voldaan worden aan alle onderstaande punten:
@@ -33,6 +33,8 @@ De provider logt deze informatie als volgt:
 De OAS-specificaties volgen naar verwachting eind oktober 2020.
 
 ## Logging functies
+Ten aanzien van een aantal APIs geldt dat nog overwogen wordt of ze op deze wijze deel uit gaan maken van de API-standaard. Bij de APIs waar dit het geval is is dit aangegeven met een `*`.
+
 - [F7446: Log Actie](../achtergronddocumentatie/ontwerp/artefacten/7446.md)
 - [F6624: Log Vertrouwelijke Actie](../achtergronddocumentatie/ontwerp//artefacten/6624.md) `*` 
 - [F2969: Wijzig vertrouwelijkheid van Verwerking](../achtergronddocumentatie/ontwerp//artefacten/2969.md)
@@ -44,7 +46,7 @@ De OAS-specificaties volgen naar verwachting eind oktober 2020.
 - [F4086: Opvragen Acties – Beperkte set velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/4086.md)
 - [F2525: Opvragen Acties – Beperkte set velden, vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp//artefacten/2525.md)
 - [F9787: Opvragen Acties – Alle velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/9787.md)
-- [F0143: Opvragen Acties – Alle velden, vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/0143.md)
+- [F0143: Opvragen Acties – Alle velden, vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/0143.md) `*` 
 
 
 ## Gehanteerde standaarden
