@@ -36,7 +36,7 @@ De OAS-specificaties volgen naar verwachting eind oktober 2020.
 - [F7446: Log Actie](../achtergronddocumentatie/ontwerp/artefacten/7446.md)
 - [F6624: Log Vertrouwelijke Actie](../achtergronddocumentatie/ontwerp//artefacten/6624.md) `*` 
 - [F2969: Wijzig vertrouwelijkheid van Verwerking](../achtergronddocumentatie/ontwerp//artefacten/2969.md)
-- [F2969: Wijzig bewaartermijn van Verwerking](../achtergronddocumentatie/ontwerp//artefacten/2969.md)
+- [F4415: Wijzig bewaartermijn van Verwerking](../achtergronddocumentatie/ontwerp//artefacten/4415.md)
 - [F8316: Wijzig Actie](../achtergronddocumentatie/ontwerp//artefacten/8316.md)
 - [F3835: Wijzig Vertrouwelijke Actie](../achtergronddocumentatie/ontwerp//artefacten/3835.md) `*` 
 - [F9906: Verwijder Actie](../achtergronddocumentatie/ontwerp//artefacten/9906.md)
