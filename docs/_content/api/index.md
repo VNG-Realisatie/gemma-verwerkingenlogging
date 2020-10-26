@@ -52,18 +52,18 @@ API specificatie (OAS3) in
 ## Mapping logging functies naar API-calls
 | Code         | Logging functie      | API call      | Stijl          |
 | -----------  | :-----------         | :----------   | :-----------   |
-| F7446        |  Log Actie           | POST /acties  | REST           |
-| F6624 | Log Vertrouwelijke Actie *	|||
-| F2969 | Wijzig vertrouwelijkheid van Verwerking | POST /wijzigVertrouwelijkheidVerwerking | RPC |
-| F4415 | Wijzig bewaartermijn van Verwerking | POST /wijzigBewaartermijnVerwerking | RPC |
-| F8316 | Wijzig Actie | PUT /acties/{uuid} | REST |
-| F3835 | Wijzig Vertrouwelijke Actie*	|||
-| F9906 | Verwijder Actie | DELETE /acties/{uuid} | REST |
-| F2265 | Verwijder Vertrouwelijke Actie* |||
-| F4086 | Opvragen Acties – Beperkte set velden, niet vertrouwelijk | GET /acties?beperkteSet=true | REST |
-| F2525 | Opvragen Acties – Beperkte set velden, vertrouwelijkheid opgeheven* |||
-| F9787 | Opvragen Acties – Alle velden, niet vertrouwelijk	| GET /acties?beperkteSet=false | REST |
-| F0143 | Opvragen Acties – Alle velden, vertrouwelijk* |||		
+| [F7446: Log Actie](../achtergronddocumentatie/ontwerp/artefacten/7446.md)    | POST /acties  | REST           |
+| [F6624: Log Vertrouwelijke Actie](../achtergronddocumentatie/ontwerp//artefacten/6624.md) `*` 	|||
+| [F2969: Wijzig vertrouwelijkheid van Verwerking](../achtergronddocumentatie/ontwerp//artefacten/2969.md) | POST /wijzigVertrouwelijkheidVerwerking | RPC |
+| [F4415 : Wijzig bewaartermijn van Verwerking](../achtergronddocumentatie/ontwerp//artefacten/4415.md) | POST /wijzigBewaartermijnVerwerking | RPC |
+| [F8316: Wijzig Actie](../achtergronddocumentatie/ontwerp//artefacten/8316.md) | PUT /acties/{uuid} | REST |
+| [F3835: Wijzig Vertrouwelijke Actie](../achtergronddocumentatie/ontwerp//artefacten/3835.md) `*` 	|||
+| [F9906: Verwijder Actie](../achtergronddocumentatie/ontwerp//artefacten/9906.md) | DELETE /acties/{uuid} | REST |
+| [F2265: Verwijder Vertrouwelijke Actie](../achtergronddocumentatie/ontwerp//artefacten/2265.md) `*` |||
+| [F4086: Opvragen Acties – Beperkte set velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/4086.md) | GET /acties?beperkteSet=true | REST |
+| [F2525: Opvragen Acties – Beperkte set velden, vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp//artefacten/2525.md) |||
+| [F9787: Opvragen Acties – Alle velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/9787.md)	| GET /acties?beperkteSet=false | REST |
+| [F0143: Opvragen Acties – Alle velden, vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/0143.md) |||		
 
 Opmerkingen:
 - Vanwege het platslaan van het objecttype `Verwerking` in het objecttype `Actie` passen de logging-functies F2969 en F4415 niet in het CRUD-model van REST en zijn deze functies als RPC-calls gespecificeerd.
