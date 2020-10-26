@@ -146,21 +146,6 @@ paths:
         type: string
         format: uuid
         example: "48086bf2-11b7-4603-9526-67d7c3bb6587"
-  /wijzigVertrouwelijkheidVerwerking:
-    post:
-      tags:
-        - RPC calls
-      summary: Wijzig vertrouwelijkheid van Verwerking.
-      operationId: wijzigVertrouwelijkheidVerwerking
-      description: Wijzigt de vertrouwelijkheid van alle acties die in het kader van de opgegeven verwerking gelogd zijn.
-      requestBody:
-        $ref: '#/components/requestBodies/WijzigVertrouwelijkheidVerwerking'
-      responses:
-        '201':
-          description: Created
-        '400':
-          description: 'invalid input, object invalid'
-        #[[post_overige_foutcodes]]
   /wijzigBewaartermijnVerwerking:
     post:
       tags:
@@ -170,6 +155,21 @@ paths:
       description: Wijzigt de bewaartermijn van alle acties die in het kader van de opgegeven verwerking gelogd zijn.
       requestBody:
         $ref: '#/components/requestBodies/WijzigBewaartermijnVerwerking'
+      responses:
+        '201':
+          description: Created
+        '400':
+          description: 'invalid input, object invalid'
+        #[[post_overige_foutcodes]]
+  /wijzigVertrouwelijkheidVerwerking:
+    post:
+      tags:
+        - RPC calls
+      summary: Wijzig vertrouwelijkheid van Verwerking.
+      operationId: wijzigVertrouwelijkheidVerwerking
+      description: Wijzigt de vertrouwelijkheid van alle acties die in het kader van de opgegeven verwerking gelogd zijn.
+      requestBody:
+        $ref: '#/components/requestBodies/WijzigVertrouwelijkheidVerwerking'
       responses:
         '201':
           description: Created
@@ -202,18 +202,28 @@ components:
       description: Een actie is een operatie die wordt uitgevoerd door een geautomatiseerd systeem waarbij er (persoons)gegevens verwerkt worden. Een actie wordt uitgevoerd als onderdeel van (een handeling van) een verwerking.
       type: object
       required:
-        - ID
+        - url
+        - id
+        - vertrouwelijkheid
         - tijdstip
+        - tijdstipRegistratie
       properties:
-        ID:
+        url:
+          title: URL
+          description: URL-referentie naar deze resource. Dit is de unieke identificatie en locatie van deze resource.
+          type: string
+          format: uri
+          maxLength: 1000
+          minLength: 1
+          readOnly: true
+          example: "https://loggingapi.vng.cloud/api/v1/acties/7a22eb38-bca6-463f-9955-54ab040287cb"
+        id:
           title: ID
           description: Identificator van de actie waar de persoon of het object bij betrokken is. Het wordt automatisch aangemaakt door het log.
           type: string
-          format: uri
+          format: uuid
           readOnly: true
-          maxLength: 1000
-          minLength: 1
-          example: 7a22eb38-bca6-463f-9955-54ab040287cb
+          example: "7a22eb38-bca6-463f-9955-54ab040287cb"
         naam:
           title: Naam
           description: Naam van de actie.
@@ -236,19 +246,21 @@ components:
           title: Verwerking ID
           description: Identificator van de verwerking waar de handeling een onderdeel van is.
           type: string
-          format: uri
-          maxLength: 1000
-          minLength: 1
-          nullable: true
-          example: "48086bf2-11b7-4603-9526-67d7c3bb6587"         
-        verwerkingsactiviteitID:
-          title: Verwerkingsactiviteit ID
-          description: Identificator van de verwerkingsactiviteit die de verwerking rechtvaardigt.
+          format: uuid
+          example: "48086bf2-11b7-4603-9526-67d7c3bb6587"    
+        verwerkingsactiviteitURL:
+          title: Verwerkingsactiviteit URL
+          description: URL-referentie naar de verwerkingsactiviteit.
           type: string
           format: uri
           maxLength: 1000
           minLength: 1
-          nullable: true
+          example: "https://loggingapi.vng.cloud/api/v1/verwerkingsactiviteiten/5f0bef4c-f66f-4311-84a5-19e8bf359eaf"
+        verwerkingsactiviteitID:
+          title: Verwerkingsactiviteit ID
+          description: Identificator van de verwerkingsactiviteit die de verwerking rechtvaardigt.
+          type: string
+          format: uuid
           example: "5f0bef4c-f66f-4311-84a5-19e8bf359eaf"
         vertrouwelijkheid:
           title: Vertrouwelijkheid
@@ -323,12 +335,12 @@ components:
           type: string
           format: date-time
           readOnly: true
-        vervallen:
-          title: Vervallen
-          description: Geeft aan of een actie als vervallen beschouwd dient te worden.
-          type: boolean
-          readOnly: true
-          example: false
+        # vervallen:
+        #   title: Vervallen
+        #   description: Geeft aan of een actie als vervallen beschouwd dient te worden.
+        #   type: boolean
+        #   readOnly: true
+        #   example: false
         verwerkteObjecten:
           title: Verwerkte objecten
           type: array
@@ -353,7 +365,6 @@ components:
           title: Soort object ID
           description: Soort identificator waarmee het object geïdentificeerd wordt.
           type: string
-          format: naam
           maxLength: 80
           example: BSN
         objectID:
@@ -367,7 +378,6 @@ components:
           title: Betrokkenheid
           description: Geeft aan in welke hoedanigheid de persoon of het object betrokken was bij de actie.
           type: string
-          format: naam
           maxLength: 80
           example: Getuige
         verwerkteSoortenGegevens:
@@ -386,9 +396,8 @@ components:
           title: Soort gegeven
           description: Soort gegeven dat verwerkt is.
           type: string
-          format: naam
           maxLength: 80
-          example: BSN
+          example: "BSN"
     WijzigBewaartermijnVerwerking:
       title: Wijzig bewaartermijn van Verwerking
       type: object
@@ -400,10 +409,7 @@ components:
           title: Verwerking ID
           description: Identificator van de verwerking waar de handeling een onderdeel van is.
           type: string
-          format: uri
-          maxLength: 1000
-          minLength: 1
-          nullable: true
+          format: uuid
           example: "48086bf2-11b7-4603-9526-67d7c3bb6587"
         bewaartermijn:
           title: Bewaartermijn
@@ -423,10 +429,7 @@ components:
           title: Verwerking ID
           description: Identificator van de verwerking waar de handeling een onderdeel van is.
           type: string
-          format: uri
-          maxLength: 1000
-          minLength: 1
-          nullable: true
+          format: uuid
           example: "48086bf2-11b7-4603-9526-67d7c3bb6587"
         vertrouwelijkheid:
           title: Vertrouwelijkheid
