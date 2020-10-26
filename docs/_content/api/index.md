@@ -29,6 +29,7 @@ De provider logt deze informatie als volgt:
 
 <img src="./_assets/api_2.png" alt="" width="700"/>
 
+<!--
 ## Logging functies
 - [F7446: Log Actie](../achtergronddocumentatie/ontwerp/artefacten/7446.md)
 - [F6624: Log Vertrouwelijke Actie](../achtergronddocumentatie/ontwerp//artefacten/6624.md) `*` 
@@ -42,6 +43,7 @@ De provider logt deze informatie als volgt:
 - [F2525: Opvragen Acties – Beperkte set velden, vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp//artefacten/2525.md)
 - [F9787: Opvragen Acties – Alle velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/9787.md)
 - [F0143: Opvragen Acties – Alle velden, vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/0143.md)
+-->
 
 ## OAS specificaties
 API specificatie (OAS3) in
@@ -49,7 +51,7 @@ API specificatie (OAS3) in
   [Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/HenriKorver/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml) of
   [YAML](https://raw.githubusercontent.com/HenriKorver/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml).
 
-In onderstaand tabel is de mapping van delogging functies naar de API-calls weergegeven.
+In onderstaand tabel is de mapping van de logging functies naar de API-calls weergegeven.
 
 | Logging functie   | API call      | Stijl          |
 | :-----------      | :-----------  | :----------    |
@@ -62,9 +64,9 @@ In onderstaand tabel is de mapping van delogging functies naar de API-calls weer
 | [F9906: Verwijder Actie](../achtergronddocumentatie/ontwerp//artefacten/9906.md) | DELETE /acties/{uuid} | REST |
 | [F2265: Verwijder Vertrouwelijke Actie](../achtergronddocumentatie/ontwerp//artefacten/2265.md) `*` |||
 | [F4086: Opvragen Acties – Beperkte set velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/4086.md) | GET /acties?beperkteSet=true | REST |
-| [F2525: Opvragen Acties – Beperkte set velden, vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp//artefacten/2525.md) |||
+| [F2525: Opvragen Acties – Beperkte set velden, vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp//artefacten/2525.md) `*` |||
 | [F9787: Opvragen Acties – Alle velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/9787.md)	| GET /acties?beperkteSet=false | REST |
-| [F0143: Opvragen Acties – Alle velden, vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/0143.md) |||		
+| [F0143: Opvragen Acties – Alle velden, vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/0143.md) `*` |||		
 
 Opmerkingen:
 - Vanwege het platslaan van het objecttype `Verwerking` in het objecttype `Actie` passen de logging-functies F2969 en F4415 niet in het CRUD-model van REST en zijn deze functies als RPC-calls gespecificeerd.
