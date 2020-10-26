@@ -49,9 +49,10 @@ API specificatie (OAS3) in
   [Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/HenriKorver/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml) of
   [YAML](https://raw.githubusercontent.com/HenriKorver/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml).
 
-## Mapping logging functies naar API-calls
-| Code         | Logging functie      | API call      | Stijl          |
-| -----------  | :-----------         | :----------   | :-----------   |
+In onderstaand tabel is de mapping van delogging functies naar de API-calls weergegeven.
+
+| Logging functie   | API call      | Stijl          |
+| :-----------      | :-----------  | :----------    |
 | [F7446: Log Actie](../achtergronddocumentatie/ontwerp/artefacten/7446.md)    | POST /acties  | REST           |
 | [F6624: Log Vertrouwelijke Actie](../achtergronddocumentatie/ontwerp//artefacten/6624.md) `*` 	|||
 | [F2969: Wijzig vertrouwelijkheid van Verwerking](../achtergronddocumentatie/ontwerp//artefacten/2969.md) | POST /wijzigVertrouwelijkheidVerwerking | RPC |
