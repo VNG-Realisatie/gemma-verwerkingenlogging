@@ -13,7 +13,7 @@ API specificatie (OAS3) in
 | F7446        |  Log Actie           | POST /acties  | REST           |
 | F6624 | Log Vertrouwelijke Actie *	|||
 | F2969 | Wijzig vertrouwelijkheid van Verwerking | POST /wijzigVertrouwelijkheidVerwerking | RPC |
-| F2969 | Wijzig bewaartermijn van Verwerking | POST /wijzigBewaartermijnVerwerking | RPC |
+| F4415 | Wijzig bewaartermijn van Verwerking | POST /wijzigBewaartermijnVerwerking | RPC |
 | F8316 | Wijzig Actie | PUT /acties/{uuid} | REST |
 | F3835 | Wijzig Vertrouwelijke Actie*	|||
 | F9906 | Verwijder Actie | DELETE /acties/{uuid} | REST |
@@ -24,5 +24,5 @@ API specificatie (OAS3) in
 | F0143 | Opvragen Acties – Alle velden, vertrouwelijk* |||		
 
 Opmerkingen:
-- Vanwege het platslaan van het objecttype `Verwerking` in het objecttype `Actie` passen de logging-functies F2969 en F2969 niet in het CRUD-model van REST en zijn deze functies als RPC-calls gespecificeerd.
+- Vanwege het platslaan van het objecttype `Verwerking` in het objecttype `Actie` passen de logging-functies F2969 en F4415 niet in het CRUD-model van REST en zijn deze functies als RPC-calls gespecificeerd.
 - Logging functies met een sterretje * zijn nog niet vertaald naar API-calls. Deze functies hebben een hoge mate van vertrouwelijkheid en  zullen waarschijnlijk op een speciaal endpoint gedefinieerd worden.
