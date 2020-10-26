@@ -2,9 +2,6 @@
 title: "APIs voor logging van verwerkingen"
 name: APIs voor logging van verwerkingen
 ---
-## Algemeen
-De onderstaande APIs maken deel uit van de API-standaard voor de logging van verwerkingen. Ten aanzien van een aantal APIs geldt dat nog overwogen wordt of ze op deze wijze deel uit gaan maken van de API-standaard. Bij de APIs waar dit het geval is is dit aangegeven met een `*`.
-
 ## Over de implementatie van de API-standaard
 Applicaties of services die de logging API-standaadr implementeren moeten op diverse punten worden aangepast. Uiteindelijk  moet voldaan worden aan alle onderstaande punten:
 
@@ -28,22 +25,6 @@ Als een consumer een API aanroept van een provider die persoonsgegevens verwerkt
 De provider logt deze informatie als volgt:
 
 <img src="./_assets/api_2.png" alt="" width="700"/>
-
-<!--
-## Logging functies
-- [F7446: Log Actie](../achtergronddocumentatie/ontwerp/artefacten/7446.md)
-- [F6624: Log Vertrouwelijke Actie](../achtergronddocumentatie/ontwerp//artefacten/6624.md) `*` 
-- [F2969: Wijzig vertrouwelijkheid van Verwerking](../achtergronddocumentatie/ontwerp//artefacten/2969.md)
-- [F2969: Wijzig bewaartermijn van Verwerking](../achtergronddocumentatie/ontwerp//artefacten/2969.md)
-- [F8316: Wijzig Actie](../achtergronddocumentatie/ontwerp//artefacten/8316.md)
-- [F3835: Wijzig Vertrouwelijke Actie](../achtergronddocumentatie/ontwerp//artefacten/3835.md) `*` 
-- [F9906: Verwijder Actie](../achtergronddocumentatie/ontwerp//artefacten/9906.md)
-- [F2265: Verwijder Vertrouwelijke Actie](../achtergronddocumentatie/ontwerp//artefacten/2265.md) `*` 
-- [F4086: Opvragen Acties – Beperkte set velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/4086.md)
-- [F2525: Opvragen Acties – Beperkte set velden, vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp//artefacten/2525.md)
-- [F9787: Opvragen Acties – Alle velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/9787.md)
-- [F0143: Opvragen Acties – Alle velden, vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/0143.md)
--->
 
 ## OAS specificaties
 API specificatie (OAS3) in

@@ -2,6 +2,9 @@
 title: "Voortgang ontwikkeling API-standaard voor logging van verwerkingen"
 name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ---
+## 26 oktober 2020
+- Enkele foutieve links in pagina's opgelost.
+
 ## 15 oktober 2020
 - [Uitgangspunten](./uitgangspunten.md) die gehanteerd zijn bij de totstandkoming van de API-standaard beschreven en gerelateerd aan ontwerp artefacten.
 -  Excel overzicht van de verschillende [ontwerpartefacten per case](./ontwerp/artefacten/20201011_Artefacten_en_cases.xlsx) toegevoegd.
