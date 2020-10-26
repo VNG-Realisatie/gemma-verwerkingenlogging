@@ -41,7 +41,7 @@ In het gegevenswoordenboek spreken we in dergelijke gevallen over *‘Verplicht 
 - [Soort object ID](./attributen/Soort_object_ID.md)
 - [Systeem](./attributen/Systeem.md)
 - [Tijdstip](./attributen/Tijdstip.md)
-- [Tijdstip registratie](./oattributen/Tijdstip_registratie.md)
+- [Tijdstip registratie](./attributen/Tijdstip_registratie.md)
 - [Uitvoerder](./attributen/Uitvoerder.md)
 - [Vertrouwelijkheid](./attributen/Vertrouwelijkheid.md)
 - [Vervallen](./attributen/Vervallen.md)
