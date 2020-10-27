@@ -873,21 +873,21 @@ components:
       description: Een actie is een operatie die wordt uitgevoerd door een geautomatiseerd systeem waarbij er (persoons)gegevens verwerkt worden. Een actie wordt uitgevoerd als onderdeel van (een handeling van) een verwerking.
       type: object
       required:
-        # - url
+        - url
         - id
         - vertrouwelijkheid
         - tijdstip
         - tijdstipRegistratie
       properties:
-        # url:
-        #   title: URL
-        #   description: URL-referentie naar deze resource. Deze link wordt automatisch aangemaakt door het log.
-        #   type: string
-        #   format: uri
-        #   maxLength: 1000
-        #   minLength: 1
-        #   readOnly: true
-        #   example: "https://loggingapi.vng.cloud/api/v1/acties/7a22eb38-bca6-463f-9955-54ab040287cb"
+        url:
+          title: URL
+          description: URL-referentie naar deze resource. Deze link wordt automatisch aangemaakt door het log.
+          type: string
+          format: uri
+          maxLength: 1000
+          minLength: 1
+          readOnly: true
+          example: "https://loggingapi.vng.cloud/api/v1/acties/7a22eb38-bca6-463f-9955-54ab040287cb"
         id:
           title: ID
           description: Identificator van de actie waar de persoon of het object bij betrokken is. Deze ID wordt automatisch aangemaakt door het log.
