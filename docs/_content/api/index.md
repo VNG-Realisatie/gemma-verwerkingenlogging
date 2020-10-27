@@ -33,7 +33,7 @@ API specificatie (OAS3) in
   [YAML](https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml).
 
 In onderstaand tabel is de mapping van de logging functies naar de API-calls weergegeven.
-{:class="table table-bordered"}
+
 | Logging functie   | API call      | Stijl          |
 | :-----------      | :-----------  | :----------    |
 | [F7446: Log Actie](../achtergronddocumentatie/ontwerp/artefacten/7446.md)    | POST /acties  | REST           |
