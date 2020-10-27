@@ -3,7 +3,7 @@ title: "APIs voor logging van verwerkingen"
 name: APIs voor logging van verwerkingen
 ---
 ## Over de implementatie van de API-standaard
-Applicaties of services die de logging API-standaadr implementeren moeten op diverse punten worden aangepast. Uiteindelijk  moet voldaan worden aan alle onderstaande punten:
+Applicaties of services die de logging API-standaard implementeren moeten op diverse punten worden aangepast. Uiteindelijk  moet voldaan worden aan alle onderstaande punten:
 
 - Bij alle acties die persoonsgegevens verwerken wordt er gelogd ([B7952](../achtergronddocumentatie/ontwerp/artefacten/7952.md)). Hierbij gelden de volgende regels:
     - Alle verwerkingen hebben een eigen ID ([B8157](../achtergronddocumentatie/ontwerp/artefacten/8157.md)).
