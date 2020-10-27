@@ -1,0 +1,441 @@
+openapi: 3.0.0
+info:
+  title: API voor logging van verwerkingen
+  description: API-specificatie voor gemeenten ten behoeve van de registratie en ontsluiting van de metagegevens behorende bij de verwerkingen van (persoons)gegevens. 
+  contact:
+    url: https://vng-realisatie.github.io/gemma-verwerkingenlogging/api/index
+    email: henri.korver@vng.nl
+  license:
+    name: EUPL 1.2
+    url: https://opensource.org/licenses/EUPL-1.2
+  version: 0.1.0
+servers:
+# Added by API Auto Mocking Plugin
+- description: SwaggerHub API Auto Mocking
+  url: https://virtserver.swaggerhub.com/VNGRealisatie/logging-api/0.1.0
+- url: /api/v1
+paths:
+  /acties:
+    get:
+      tags:
+        - REST calls
+      summary: Alle ACTIEs opvragen.
+      operationId: actie_list
+      description: Door de juiste parameters mee te geven kun je zoeken naar de voor jouw relevante ACTIEs.
+      parameters:
+        - name: objecttype
+          in: query
+          description: Soort object dat bij de actie betrokken is.
+          required: true
+          schema:
+            type: string
+            enum:
+              - Persoon
+          example: Persoon
+        - name: soortObjectID
+          in: query
+          description: Soort identificator waarmee het object geïdentificeerd wordt.
+          required: true
+          schema:
+            type: string
+            format: naam
+            maxLength: 80
+            example: BSN
+        - name: objectID
+          in: query
+          description: Identificator van het object.
+          required: true
+          schema:
+            type: string
+            format: identificator
+            maxLength: 40
+            example: "479580261"
+        - name: beginDatum
+          in: query
+          description: Tijdstip van de actie moet groter of gelijk zijn aan deze datum om teruggegeven te worden.
+          required: true
+          schema:
+            type: string
+            format: date
+            example: "2020-10-24"
+        - name: eindDatum
+          in: query
+          description: Tijdstip van de actie moet kleiner of gelijk zijn aan deze datum om teruggegeven te worden.
+          required: true
+          schema:
+            type: string
+            format: date-time
+            example: "2020-11-24"
+        - name: beperkteSet
+          in: query
+          description: In geval van 'true' worden niet alle attributen teruggegeven. Bijvoorbeeld attributen zoals 'uitvoerder' of 'systeem' zijn niet relevant voor de burger. In geval van 'false' worden alle velden teruggegeven in het resultaat.
+          schema:
+            type: boolean
+            default: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Actie'
+        '400':
+          description: verkeerde query parameter
+        #[[get_overige_foutcodes]]
+    post:
+      tags:
+        - REST calls
+      summary: Maak een ACTIE aan.
+      operationId: actie_create
+      description: Maak een ACTIE aan.
+      requestBody:
+        $ref: '#/components/requestBodies/Actie'
+      responses:
+        '201':
+          description: Created
+        '400':
+          description: 'invalid input, object invalid'
+        #[[post_overige_foutcodes]]
+  /acties/{uuid}:
+    put:
+      tags:
+        - REST calls
+      operationId: actie_update
+      summary: Wijzig ACTIE.
+      description: Wijzigt een bestaande Actie in het log. Alle informatie over de actie moet opnieuw meegegeven worden, ook de informatie die niet wijzigt.
+      requestBody:
+        $ref: '#/components/requestBodies/Actie'
+      responses:
+        '200':
+          description: OK
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Actie'
+        #[[put_overige_foutcodes]]
+    delete:
+      tags:
+        - REST calls
+      operationId: actie_delete
+      summary: Verwijder een ACTIE.
+      description: De opgegeven ACTIE wordt gemarkeerd als vervallen. Hierdoor zal deze niet meer geretourneerd worden door de inzage-functies van de logging API.
+      responses:
+        '204':
+          description: No content
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+        #[[delete_overige_foutcodes]]
+    parameters:
+    - name: uuid
+      in: path
+      description: Unieke resource identifier (UUID4)
+      required: true
+      schema:
+        type: string
+        format: uuid
+        example: "48086bf2-11b7-4603-9526-67d7c3bb6587"
+  /wijzigBewaartermijnVerwerking:
+    post:
+      tags:
+        - RPC calls
+      summary: Wijzig bewaartermijn van Verwerking.
+      operationId: wijzigBewaartermijnVerwerking
+      description: Wijzigt de bewaartermijn van alle acties die in het kader van de opgegeven verwerking gelogd zijn.
+      requestBody:
+        $ref: '#/components/requestBodies/WijzigBewaartermijnVerwerking'
+      responses:
+        '201':
+          description: Created
+        '400':
+          description: 'invalid input, object invalid'
+        #[[post_overige_foutcodes]]
+  /wijzigVertrouwelijkheidVerwerking:
+    post:
+      tags:
+        - RPC calls
+      summary: Wijzig vertrouwelijkheid van Verwerking.
+      operationId: wijzigVertrouwelijkheidVerwerking
+      description: Wijzigt de vertrouwelijkheid van alle acties die in het kader van de opgegeven verwerking gelogd zijn.
+      requestBody:
+        $ref: '#/components/requestBodies/WijzigVertrouwelijkheidVerwerking'
+      responses:
+        '201':
+          description: Created
+        '400':
+          description: 'invalid input, object invalid'
+        #[[post_overige_foutcodes]]
+components:
+  requestBodies:
+    Actie:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Actie'
+      required: true
+    WijzigBewaartermijnVerwerking:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/WijzigBewaartermijnVerwerking'
+      required: true
+    WijzigVertrouwelijkheidVerwerking:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/WijzigVertrouwelijkheidVerwerking'
+      required: true
+  schemas:
+    Actie:
+      title: Actie
+      description: Een actie is een operatie die wordt uitgevoerd door een geautomatiseerd systeem waarbij er (persoons)gegevens verwerkt worden. Een actie wordt uitgevoerd als onderdeel van (een handeling van) een verwerking.
+      type: object
+      required:
+        - url
+        - id
+        - vertrouwelijkheid
+        - tijdstip
+        - tijdstipRegistratie
+      properties:
+        url:
+          title: URL
+          description: URL-referentie naar deze resource. Deze link wordt automatisch aangemaakt door het log.
+          type: string
+          format: uri
+          maxLength: 1000
+          minLength: 1
+          readOnly: true
+          example: "https://loggingapi.vng.cloud/api/v1/acties/7a22eb38-bca6-463f-9955-54ab040287cb"
+        id:
+          title: ID
+          description: Identificator van de actie waar de persoon of het object bij betrokken is. Deze ID wordt automatisch aangemaakt door het log.
+          type: string
+          format: uuid
+          readOnly: true
+          example: "7a22eb38-bca6-463f-9955-54ab040287cb"
+        naam:
+          title: Naam
+          description: Naam van de actie.
+          type: string
+          maxLength: 80
+          example: Zoeken personen
+        handelingNaam:
+          title: Handeling naam
+          description:  Naam van de handeling waar de actie onderdeel van is.
+          type: string
+          maxLength: 80
+          example: Intake
+        verwerkingNaam:
+          title: Verwerking naam
+          description:  Naam van de verwerking waar de handeling een onderdeel van is.
+          type: string
+          maxLength: 80
+          example: Huwelijk
+        verwerkingID:
+          title: Verwerking ID
+          description: Identificator van de verwerking waar de handeling een onderdeel van is.
+          type: string
+          format: uuid
+          example: "48086bf2-11b7-4603-9526-67d7c3bb6587"    
+        verwerkingsactiviteitURL:
+          title: Verwerkingsactiviteit URL
+          description: URL-referentie naar de verwerkingsactiviteit.
+          type: string
+          format: uri
+          maxLength: 1000
+          minLength: 1
+          example: "https://loggingapi.vng.cloud/api/v1/verwerkingsactiviteiten/5f0bef4c-f66f-4311-84a5-19e8bf359eaf"
+        verwerkingsactiviteitID:
+          title: Verwerkingsactiviteit ID
+          description: Identificator van de verwerkingsactiviteit die de verwerking rechtvaardigt.
+          type: string
+          format: uuid
+          example: "5f0bef4c-f66f-4311-84a5-19e8bf359eaf"
+        vertrouwelijkheid:
+          title: Vertrouwelijkheid
+          description: Geeft de mate van vertrouwelijkheid van de verwerking aan.
+          type: string
+          enum:
+            - Normaal
+            - Vertrouwelijk
+            - Opgeheven
+          example: Normaal
+        bewaartermijn:
+          title: Bewaartermijn
+          description: Aantal jaar dat de verwerking bewaard moet blijven.
+          type: integer
+          minimum: 0
+          maximum: 999
+          example: 10
+        uitvoerder:
+          title: Uitvoerder
+          description: Organisatie in OIN-formaat die de verwerking uitgevoerd heeft. Voor een beschrijving van het OIN-formaat Zie https://www.logius.nl/diensten/digikoppeling/documentatie in bijlage A van het document ‘Digikoppeling Identificatie en Authenticatie’.
+          type: string
+          maxLength: 20
+          minLength: 20
+          example: "00000001821002193000"
+        systeem:
+          title: Systeem
+          description: Het systeem dat de actie heeft uitgevoerd.
+          type: string
+          maxLength: 80
+          example: "FooBarApp v2.1"
+        gebruiker:
+          title: Gebruiker
+          description: Identificator van de gebruiker die de actie heeft geïnitieerd.
+          type: string
+          format: uri
+          maxLength: 1000
+          minLength: 1
+          nullable: true
+          example: "2ecf8e86-1a18-46ba-aa13-992c1dc231a5"
+        gegevensbron:
+          title: Gegevensbron
+          description: Gegevensbron waarin de bij actie betrokken gegevens zijn opgeslagen.
+          type: string
+          maxLength: 80
+          minLength: 1
+          example: FooBar Database Publiekszaken
+        afnemer:
+          title: Afnemer
+          description: Bij levering van gegevens moet hier de identificator opgenomen worden van de organisatie die de gegevens ontvangt.
+          type: string
+          format: OIN
+          maxLength: 20
+          minLength: 20
+          example: "00000001821002193000"
+        verwerkingAfnemer:
+          title: Verwerking afnemer
+          description: Identificator van de verwerking aan de kant van de afnemer.
+          type: string
+          format: uri
+          maxLength: 1000
+          minLength: 1
+          nullable: true
+          example: "4b698de3-ffba-45e7-8697-a283ec863db2"
+        tijdstip:
+          title: Tijdstip
+          description: Tijdstip waarop de actie is uitgevoerd.
+          type: string
+          format: date-time
+        tijdstipRegistratie:
+          title: Tijdstip
+          description: Tijdstip waarop de actie in het log is geregistreerd. Wordt bepaald door het log. Niet door het loggende systeem.
+          type: string
+          format: date-time
+          readOnly: true
+        # vervallen:
+        #   title: Vervallen
+        #   description: Geeft aan of een actie als vervallen beschouwd dient te worden.
+        #   type: boolean
+        #   readOnly: true
+        #   example: false
+        verwerkteObjecten:
+          title: Verwerkte objecten
+          type: array
+          items: 
+            $ref: '#/components/schemas/VerwerktObject'
+    VerwerktObject:
+      title: Verwerkt object
+      description: Een persoon of object betrokken bij de actie.
+      type: object
+      required: 
+        - objecttype
+        - soortObjectID
+        - objectID
+      properties:
+        objecttype: 
+          title: Objecttype
+          description: Soort object dat bij de actie betrokken is.
+          type: string
+          enum:
+            - Persoon
+        soortObjectID:
+          title: Soort object ID
+          description: Soort identificator waarmee het object geïdentificeerd wordt.
+          type: string
+          maxLength: 80
+          example: BSN
+        objectID:
+          title: Object ID
+          description: Identificator van het object.
+          type: string
+          format: identificator
+          maxLength: 40
+          example: "479580261"
+        betrokkenheid:
+          title: Betrokkenheid
+          description: Geeft aan in welke hoedanigheid de persoon of het object betrokken was bij de actie.
+          type: string
+          maxLength: 80
+          example: Getuige
+        verwerkteSoortenGegevens:
+          title: Verwerkte soorten gegevens
+          type: array
+          items: 
+            $ref: '#/components/schemas/VerwerktSoortGegeven'
+    VerwerktSoortGegeven:
+      title: Verwerkt soort gegeven
+      description: Een soort gegeven dat over een persoon of object betrokken bij een actie verwerkt is.
+      type: object
+      required: 
+        - soortGegeven
+      properties:
+        soortGegeven:
+          title: Soort gegeven
+          description: Soort gegeven dat verwerkt is.
+          type: string
+          maxLength: 80
+          example: "BSN"
+    WijzigBewaartermijnVerwerking:
+      title: Wijzig bewaartermijn van Verwerking
+      type: object
+      required:
+        - verwerkingID
+        - bewaartermijn
+      properties:
+        verwerkingID:
+          title: Verwerking ID
+          description: Identificator van de verwerking waar de handeling een onderdeel van is.
+          type: string
+          format: uuid
+          example: "48086bf2-11b7-4603-9526-67d7c3bb6587"
+        bewaartermijn:
+          title: Bewaartermijn
+          description: Aantal jaar dat de verwerking bewaard moet blijven.
+          type: integer
+          minimum: 0
+          maximum: 999
+          example: 5
+    WijzigVertrouwelijkheidVerwerking:
+      title: Wijzig vertrouwelijkheid van Verwerking
+      type: object
+      required:
+        - verwerkingID
+        - vertrouwelijkheid
+      properties:
+        verwerkingID:
+          title: Verwerking ID
+          description: Identificator van de verwerking waar de handeling een onderdeel van is.
+          type: string
+          format: uuid
+          example: "48086bf2-11b7-4603-9526-67d7c3bb6587"
+        vertrouwelijkheid:
+          title: Vertrouwelijkheid
+          description: Geeft de mate van vertrouwelijkheid van de verwerking aan.
+          type: string
+          enum:
+            - Normaal
+            - Vertrouwelijk
+            - Opgeheven
