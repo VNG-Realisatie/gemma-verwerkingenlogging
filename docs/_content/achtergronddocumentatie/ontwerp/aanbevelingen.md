@@ -14,6 +14,4 @@ Deze aanbevelingen beschrijven best-practices ten aanzien van de implementatie v
 ## Gegevensmodel logging
 - [A7838: Standaardwaarden voor Actie](./artefacten/7838.md)
 
-## API
-- [A8529: Functie VAR: Verwerkingsactiviteit baseren op Landelijk gestandaardiseerde lijst](./artefacten/8529.md)
 

@@ -3,7 +3,7 @@ title: "APIs voor logging van verwerkingen"
 name: APIs voor logging van verwerkingen
 ---
 ## Over de implementatie van de API-standaard
-Applicaties of services die de logging API-standaadr implementeren moeten op diverse punten worden aangepast. Uiteindelijk  moet voldaan worden aan alle onderstaande punten:
+Applicaties of services die de logging API-standaard implementeren moeten op diverse punten worden aangepast. Uiteindelijk  moet voldaan worden aan alle onderstaande punten:
 
 - Bij alle acties die persoonsgegevens verwerken wordt er gelogd ([B7952](../achtergronddocumentatie/ontwerp/artefacten/7952.md)). Hierbij gelden de volgende regels:
     - Alle verwerkingen hebben een eigen ID ([B8157](../achtergronddocumentatie/ontwerp/artefacten/8157.md)).
@@ -28,9 +28,9 @@ De provider logt deze informatie als volgt:
 
 ## OAS specificaties
 API specificatie (OAS3) in
-  [ReDoc](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/HenriKorver/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml),
-  [Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/HenriKorver/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml) of
-  [YAML](https://raw.githubusercontent.com/HenriKorver/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml).
+  [ReDoc](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml),
+  [Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml) of
+  [YAML](https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml).
 
 In onderstaand tabel is de mapping van de logging functies naar de API-calls weergegeven.
 
