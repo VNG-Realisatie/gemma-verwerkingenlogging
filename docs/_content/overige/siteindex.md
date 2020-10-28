@@ -42,13 +42,13 @@ date: 28-10-2020
 * [Basisterminologie](../gegevensmodel/basisterminologie/readme.md)
 * [Uitwisselingsgegevensmodel](../gegevensmodel/semantisch_informatiemodel/readme.md)
 * [Semantisch informatiemodel](../gegevensmodel/uitwisselingsgegevensmodel/readme.md)
-* [Gegevenswoordenboek](../gegevensmodel/gegevenswoordenboek/readme.md)
+* [Gegevenswoordenboek](../gegevenswoordenboek/readme.md)
 
 ## [API-specificaties](../api/index.md)
 OAS Specificatie
 * [ReDoc](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml)
 * [Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml)
-* [YAML](https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml).
+* [YAML](https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml)
 
 ## [FAQ](../overige/faq.md)
 
