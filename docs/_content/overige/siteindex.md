@@ -8,6 +8,20 @@ date: 28-10-2020
 
 ## [Productvisie](../productvisie/index.md)
 
+## [Architectuur](../architectuur/index.md)
+
+## [Informatie- en gegevensmodel](../gegevensmodel/index.md)
+* [Basisterminologie](../gegevensmodel/basisterminologie/readme.md)
+* [Semantisch informatiemodel](../gegevensmodel/semantisch_informatiemodel/readme.md)
+* [Uitwisselingsgegevensmodel](../gegevensmodel/uitwisselingsgegevensmodel/readme.md)
+* [Gegevenswoordenboek](../gegevenswoordenboek/readme.md)
+
+## [API-specificaties](../api/index.md)
+OAS Specificatie
+* [ReDoc](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml)
+* [Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml)
+* [YAML](https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml)
+
 ## [Documentatie](../achtergronddocumentatie/index.md)
 
 #### [Ontwerp](../achtergronddocumentatie/ontwerp.md)
@@ -33,20 +47,6 @@ date: 28-10-2020
 * [Bewaartermijnen](../achtergronddocumentatie/ontwerp/cases/bewaartermijnen.md)
 * [Inzage in het log](../achtergronddocumentatie/ontwerp/cases/inzage_in_log.md)
 * [Bijzondere rechten in de AVG](../achtergronddocumentatie/ontwerp/cases/bijzondere_rechten.md)
-
-## [Architectuur](../architectuur/index.md)
-
-## [Informatie- en gegevensmodel](../gegevensmodel/index.md)
-* [Basisterminologie](../gegevensmodel/basisterminologie/readme.md)
-* [Semantisch informatiemodel](../gegevensmodel/semantisch_informatiemodel/readme.md)
-* [Uitwisselingsgegevensmodel](../gegevensmodel/uitwisselingsgegevensmodel/readme.md)
-* [Gegevenswoordenboek](../gegevenswoordenboek/readme.md)
-
-## [API-specificaties](../api/index.md)
-OAS Specificatie
-* [ReDoc](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml)
-* [Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml)
-* [YAML](https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml)
 
 ## [FAQ](../overige/faq.md)
 
