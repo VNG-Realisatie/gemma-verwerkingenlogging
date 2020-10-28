@@ -4,8 +4,6 @@ name: SiteIndex
 date: 28-10-2020
 ---
 
-# Site index API-standaard voor logging van verwerkingen
-
 [Overzicht voortgang/wijzigingen](../achtergronddocumentatie/voortgang.md)
 
 ## [Productvisie](../productvisie/index.md)
