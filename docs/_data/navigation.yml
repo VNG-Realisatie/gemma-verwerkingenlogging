@@ -1,9 +1,12 @@
+- name: Index
+  link: /overige/siteindex
+  weight: 10
 - name: Productvisie
   link: /productvisie/
-  weight: 10
+  weight: 20
 - name: Documentatie
   link: /achtergronddocumentatie/
-  weight: 20
+  weight: 30
 - name: Architectuur
   link: /architectuur/
   weight: 40
