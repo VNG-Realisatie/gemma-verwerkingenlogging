@@ -6,7 +6,7 @@ date: 28-10-2020
 
 # Site index API-standaard voor logging van verwerkingen
 
-[Overzicht voortgang/wijzigingen](../_content/achtergronddocumentatie/voortgang.md)
+[Overzicht voortgang/wijzigingen](../achtergronddocumentatie/voortgang.md)
 
 ## [Productvisie](../_content/productvisie/index.md)
 
