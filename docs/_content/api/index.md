@@ -39,7 +39,7 @@ In onderstaand tabel is de mapping van de logging functies naar de API-calls wee
 | [F7446: Log Actie](../achtergronddocumentatie/ontwerp/artefacten/7446.md)    | POST /acties  | REST           |
 | [F6624: Log Vertrouwelijke Actie](../achtergronddocumentatie/ontwerp//artefacten/6624.md) `*` 	|||
 | [F2969: Wijzig vertrouwelijkheid van Verwerking](../achtergronddocumentatie/ontwerp//artefacten/2969.md) | POST /wijzigVertrouwelijkheidVerwerking | RPC |
-| [F4415 : Wijzig bewaartermijn van Verwerking](../achtergronddocumentatie/ontwerp//artefacten/4415.md) | POST /wijzigBewaartermijnVerwerking | RPC |
+| [F4415: Wijzig bewaartermijn van Verwerking](../achtergronddocumentatie/ontwerp//artefacten/4415.md) | POST /wijzigBewaartermijnVerwerking | RPC |
 | [F8316: Wijzig Actie](../achtergronddocumentatie/ontwerp//artefacten/8316.md) | PUT /acties/{uuid} | REST |
 | [F3835: Wijzig Vertrouwelijke Actie](../achtergronddocumentatie/ontwerp//artefacten/3835.md) `*` 	|||
 | [F9906: Verwijder Actie](../achtergronddocumentatie/ontwerp//artefacten/9906.md) | DELETE /acties/{uuid} | REST |
