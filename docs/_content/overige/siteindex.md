@@ -25,7 +25,7 @@ date: 28-10-2020
 * [Logging Maturity Level](../achtergronddocumentatie/logging_maturity_level.md)
 * [Minimale versus maximale logging](../achtergronddocumentatie/volledigheid_van_logging.md)
 
-### [Cases](./achtergronddocumentatie/ontwerp/ontwerpcases.md)
+### [Cases](../achtergronddocumentatie/ontwerp/ontwerpcases.md)
 * [Bijhouden van gegevens](../achtergronddocumentatie/ontwerp/cases/Bijhouden_van_gegevens.md)
 * [Opvragen van gegevens](../achtergronddocumentatie/ontwerp/cases/Opvragen_van_gegevens.md)
 * [Leveren van gegevens](../achtergronddocumentatie/ontwerp/cases/leveren_van_gegevens.md)
