@@ -22,9 +22,4 @@
 - name: Contact
   link: /contact/
   weight: 80
- - title: "Test"
-  subcategories:
-    - subtitle: "Example1"
-      subhref: "/api/"
-    - subtitle: "Example2"
-      subhref: "#"
+
