@@ -5,6 +5,7 @@ name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ## 28 oktober 2020
 - Update van afbeeldingen van informatie- en gegevensmodel.
 - Update van API beschrijvingen.
+- Site index toegevoegd.
 
 ## 26 oktober 2020
 - Enkele foutieve links in pagina's opgelost.
