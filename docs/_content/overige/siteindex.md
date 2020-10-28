@@ -40,8 +40,8 @@ date: 28-10-2020
 
 ## [Informatie- en gegevensmodel](../gegevensmodel/index.md)
 * [Basisterminologie](../gegevensmodel/basisterminologie/readme.md)
-* [Uitwisselingsgegevensmodel](../gegevensmodel/semantisch_informatiemodel/readme.md)
-* [Semantisch informatiemodel](../gegevensmodel/uitwisselingsgegevensmodel/readme.md)
+* [Semantisch informatiemodel](../gegevensmodel/semantisch_informatiemodel/readme.md)
+* [Uitwisselingsgegevensmodel](../gegevensmodel/uitwisselingsgegevensmodel/readme.md)
 * [Gegevenswoordenboek](../gegevenswoordenboek/readme.md)
 
 ## [API-specificaties](../api/index.md)
