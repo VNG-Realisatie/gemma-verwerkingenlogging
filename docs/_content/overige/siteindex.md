@@ -10,7 +10,7 @@ date: 28-10-2020
 
 ## [Documentatie](../achtergronddocumentatie/index.md)
 
-### [Ontwerp](../achtergronddocumentatie/ontwerp.md)
+#### [Ontwerp](../achtergronddocumentatie/ontwerp.md)
 * [Uitgangspunten](../achtergronddocumentatie/uitgangspunten.md)
 * [Gehanteerde terminologie](../achtergronddocumentatie/ontwerp/terminologie.md)
 * [Brondocumenten](../achtergronddocumentatie/ontwerp/brondocumenten.md)
@@ -19,11 +19,11 @@ date: 28-10-2020
 * [Aanbevelingen](../achtergronddocumentatie/ontwerp/aanbevelingen.md)
 * [Openstaande vraagstukken](../achtergronddocumentatie/ontwerp/vraagstukken.md)
 
-### Toepassing van logging
+#### Toepassing van logging
 * [Logging Maturity Level](../achtergronddocumentatie/logging_maturity_level.md)
 * [Minimale versus maximale logging](../achtergronddocumentatie/volledigheid_van_logging.md)
 
-### [Cases](../achtergronddocumentatie/ontwerp/ontwerpcases.md)
+#### [Cases](../achtergronddocumentatie/ontwerp/ontwerpcases.md)
 * [Bijhouden van gegevens](../achtergronddocumentatie/ontwerp/cases/Bijhouden_van_gegevens.md)
 * [Opvragen van gegevens](../achtergronddocumentatie/ontwerp/cases/Opvragen_van_gegevens.md)
 * [Leveren van gegevens](../achtergronddocumentatie/ontwerp/cases/leveren_van_gegevens.md)
