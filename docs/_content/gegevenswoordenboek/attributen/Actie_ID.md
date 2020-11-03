@@ -1,11 +1,11 @@
 ---
-title: "Attribuut - Actie"
-name: Attribuut - Actie
+title: "Attribuut - Actie ID"
+name: Attribuut - Actie ID
 date: 28-09-2020
 ---
 
 ## Beschrijving
-Identificator van de actie waar de persoon of het object bij betrokken is.
+Identificator van de verwerkingsactie waar de persoon of het object bij betrokken is.
 
 
 ## Voorbeeld
