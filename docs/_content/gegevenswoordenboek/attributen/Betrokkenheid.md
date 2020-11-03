@@ -5,7 +5,7 @@ date: 28-09-2020
 ---
 
 ## Beschrijving
-Geeft aan in welke hoedanigheid de persoon of het object betrokken was bij de actie.
+Geeft aan in welke hoedanigheid de persoon of het object betrokken was bij de verwerkingsactie.
 
 ## Voorbeeld
 `Getuige`
