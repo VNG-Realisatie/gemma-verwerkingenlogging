@@ -5,7 +5,7 @@ date: 28-09-2020
 ---
 
 ## Beschrijving
-Het systeem dat de actie heeft uitgevoerd.
+Het systeem dat de verwerkingsactie heeft uitgevoerd.
 
 ## Toelichting
 In plaats van systeem kan ook applicatie of service gelezen worden. Uit dit veld moet bij voorkeur duidelijk worden:
