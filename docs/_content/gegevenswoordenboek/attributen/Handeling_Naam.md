@@ -5,7 +5,7 @@ date: 28-09-2020
 ---
 
 ## Beschrijving
-Naam van de handeling waar de actie onderdeel van is.
+Naam van de handeling waar de verwerkingsactie onderdeel van is.
 
 
 ## Toelichting
