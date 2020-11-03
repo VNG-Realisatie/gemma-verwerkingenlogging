@@ -9,7 +9,7 @@ Naam van de handeling waar de verwerkingsactie onderdeel van is.
 
 
 ## Toelichting
-Zie [B6872](../../achtergronddocumentatie/ontwerp/artefacten/6872.md), [B0601](../../achtergronddocumentatie/ontwerp/artefacten/0601.md) en de toelichting bij het objecttype [verwerkingsactie](../objecttypen/Verwerkingsactie.md).
+Zie [B6872](../../achtergronddocumentatie/ontwerp/artefacten/6872.md), [B0601](../../achtergronddocumentatie/ontwerp/artefacten/0601.md) en de toelichting bij het objecttype [Verwerkingsactie](../objecttypen/Verwerkingsactie.md).
 
 ## Voorbeeld
 `Ongedaan maken registratie overlijden`
