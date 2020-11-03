@@ -16,6 +16,8 @@ Op basis van de begrippen uit het [gegevensmodel](../index.md) ontstaat het volg
 
 De attributen worden op deze plaats niet in detail toegelicht. De belangrijke attributen zijn namelijk terug te vinden in het [uitwisselingsgegevensmodel (UGM)](../uitwisselingsgegevensmodel/readme.md) dat wordt toegelicht in het [gegevenswoordenboek](../../gegevenswoordenboek/readme.md).
 
+Aan het einde van deze pagina zijn, om de verschillende objecttype te duiden, vier aanvullende voorbeelden opgenomen.
+
 ## Plaats van attributen (functionele afhankelijkheid)
 De plaatsing van de verschillende attributen in het model is lastig te bepalen. Het kan best zijn dat de attributen *Systeem*, *Gebruiker* en *Gegevensbron* bij een bepaalde inrichting van de processen op het niveau van de handeling hadden kunnen zitten. En waarschijnlijk zullen we in de praktijk een casus tegenkomen waarbij bepaalde handelingen of acties een afwijkende bewaartermijn kennen en we deze attributen dus liever lager in de hiërarchie hadden gezien.
 De variatie in inrichting van gemeentelijke bedrijfsprocessen en systemen maakt dat de meeste attributen dus eigenlijk op ieder niveau in de hiërarchie zouden moeten kunnen voorkomen. Om de afbeelding overzichtelijk te houden hebben we dit niet gedaan.
@@ -24,3 +26,18 @@ De variatie in inrichting van gemeentelijke bedrijfsprocessen en systemen maakt 
 Binnen VNG Realisatie wordt Enterprise Architect (EA) gebruikt voor de vastlegging van semantische informatiemodellen (SIM). Onderstaand figuur geeft de modellering van het SIM weer zoals deze in EA is gemodelleerd.
 
 <img src="./_assets/sim_ea.png" alt="SIM in Enterprise Architect" width="700"/>
+
+## Aanvullende voorbeelden
+Voorbeeld 'Geslachtswijziging'
+<img src="./_assets/sim_vb2.png" alt="SIM" width="700"/>
+
+Voorbeeld 'Registratie verhuizing'
+<img src="./_assets/sim_vb3.png" alt="SIM" width="700"/>
+
+Voorbeeld 'Fraudeonderzoek'
+<img src="./_assets/sim_vb4.png" alt="SIM" width="700"/>
+
+Voorbeeld 'Informatieverstrekking aan derden'
+<img src="./_assets/sim_vb5.png" alt="SIM" width="700"/>
+
+
