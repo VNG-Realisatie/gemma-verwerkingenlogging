@@ -5,7 +5,7 @@ date: 28-09-2020
 ---
 
 ## Beschrijving
-Identificator van de gebruiker die de actie heeft geïnitieerd.
+Identificator van de gebruiker die de verwerkingsactie heeft geïnitieerd.
 
 ## Toelichting
 Het attribuut moet de gebruiker identificeren binnen de context van het systeem.
