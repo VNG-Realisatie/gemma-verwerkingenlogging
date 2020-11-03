@@ -28,16 +28,21 @@ Binnen VNG Realisatie wordt Enterprise Architect (EA) gebruikt voor de vastleggi
 <img src="./_assets/sim_ea.png" alt="SIM in Enterprise Architect" width="700"/>
 
 ## Aanvullende voorbeelden
-Voorbeeld 'Geslachtswijziging'
+
+Voorbeeld 'Geslachtswijziging':
+
 <img src="./_assets/sim_vb2.png" alt="SIM" width="700"/>
 
-Voorbeeld 'Registratie verhuizing'
+Voorbeeld 'Registratie verhuizing':
+
 <img src="./_assets/sim_vb3.png" alt="SIM" width="700"/>
 
-Voorbeeld 'Fraudeonderzoek'
+Voorbeeld 'Fraudeonderzoek':
+
 <img src="./_assets/sim_vb4.png" alt="SIM" width="700"/>
 
-Voorbeeld 'Informatieverstrekking aan derden'
+Voorbeeld 'Informatieverstrekking aan derden':
+
 <img src="./_assets/sim_vb5.png" alt="SIM" width="700"/>
 
 
