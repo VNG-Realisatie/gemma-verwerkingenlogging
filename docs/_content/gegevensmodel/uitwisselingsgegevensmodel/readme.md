@@ -9,7 +9,7 @@ Om tot een gegevensmodel voor de uitwisseling te komen kijken we vooral naar het
 Voor snelle en succesvolle eerste implementaties van de API willen we eenvoud. Tegelijkertijd willen we leveranciers niet tegenhouden om logging direct goed te implementeren. De standaard raakt alle gemeentelijke systemen. Ingrijpende wijzigingen van de standaard zijn daarom bijzonder ongewenst.
 We hopen dit te bereiken door de objecttypen Verwerking en Handeling ‘plat te slaan’ in het objecttype Actie. Daardoor ontstaat onderstaande eenvoudigere structuur.
 
-<img src="./_assets/actie_modellering.png" alt="SIM" width="400"/>
+<img src="./_assets/verwerkingsactie.png" alt="SIM" width="400"/>
 
 Bij de attributen zien we drie kolommen. In de eerste kolom staat de naam van het attribuut. In de tweede het type en in de laatste of het attribuut verplicht is. Hierbij worden de volgende waarden gebruikt:
 - O = Optioneel
