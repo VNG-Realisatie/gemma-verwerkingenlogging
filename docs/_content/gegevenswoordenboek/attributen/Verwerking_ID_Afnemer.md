@@ -1,6 +1,6 @@
 ---
-title: "Attribuut - Verwerking afnemer"
-name: Attribuut - Verwerking afnemer
+title: "Attribuut - Verwerking ID Afnemer"
+name: Attribuut - Verwerking ID Afnemer
 date: 28-09-2020
 ---
 
