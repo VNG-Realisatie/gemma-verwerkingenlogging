@@ -1,6 +1,6 @@
 ---
-title: "Attribuuttype - Mate van vertrouwelijkheid"
-name: Attribuuttype - Mate van vertrouwelijkheid
+title: "Attribuuttype - Vertrouwelijkheid"
+name: Attribuuttype - Vertrouwelijkheid
 date: 29-09-2020
 ---
 
