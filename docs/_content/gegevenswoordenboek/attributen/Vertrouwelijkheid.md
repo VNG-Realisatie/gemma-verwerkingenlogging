@@ -22,7 +22,7 @@ Zie ook [B3909](../../achtergronddocumentatie/ontwerp/artefacten/3909.md).
 `Vertrouwelijk`
 
 ## Attribuuttype
-[Mate van vertrouwelijkheid](../attribuuttypen/Mate_van_vertrouwelijkheid.md)
+[Vertrouwelijkheid](../attribuuttypen/Vertrouwelijkheid.md)
 
 ## Aanwezigheid
 [`Verplicht`](../../gegevenswoordenboek/readme.md#bijzondere-meta-attributen)
