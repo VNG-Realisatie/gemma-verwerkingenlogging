@@ -48,5 +48,5 @@ Aan de linkerzijde staat het volledige SIM, aan de rechter het UGM. De attribute
 ## Modellering in Enterprise Architect
 Binnen VNG Realisatie wordt Enterprise Architect (EA) gebruikt voor de vastlegging van uitwisselingsgegevensmodellen. Onderstaand figuur geeft de modellering van het SIM weer zoals deze in EA is gemodelleerd.
 
-<img src="./_assets/ugm_ea.png" alt="SIM" width="700"/>
+<img src="./_assets/ugm_ea_v3.png" alt="SIM" width="700"/>
 
