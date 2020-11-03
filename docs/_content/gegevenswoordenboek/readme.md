@@ -21,41 +21,15 @@ In het gegevenswoordenboek spreken we in dergelijke gevallen over *‘Verplicht 
 -	Kan ook de gebruiker het niet altijd bepalen? Geef deze dan bijvoorbeeld wel een waarschuwing dat het attribuut/veld bij voorkeur ingevuld moet worden.
 
 ## Objecttypen
-- [Actie](./objecttypen/Actie.md)
+- [Verwerkingsactie](./objecttypen/Verwerkingsactie.md)
 - [Verwerkt object](./objecttypen/Verwerkt_object.md)
 - [Verwerkt soort gegeven](./objecttypen/Verwerkt_soort_gegeven.md)
-
-## Attributen
-- [Actie](./attributen/Actie.md)
-- [Afnemer](./attributen/Afnemer.md)
-- [Betrokkenheid](./attributen/Betrokkenheid.md)
-- [Bewaartermijn](./attributen/Bewaartermijn.md)
-- [Gebruiker](./attributen/Gebruiker.md)
-- [Gegevensbron](./attributen/Gegevensbron.md)
-- [Handeling Naam](./attributen/Handeling.Naam.md)
-- [ID](./attributen/ID.md)
-- [Naam](./attributen/Naam.md)
-- [Object ID](./attributen/Object_ID.md)
-- [Objecttype](./attributen/Objecttype.md)
-- [Soort gegeven](./attributen/Soort_gegeven.md)
-- [Soort object ID](./attributen/Soort_object_ID.md)
-- [Systeem](./attributen/Systeem.md)
-- [Tijdstip](./attributen/Tijdstip.md)
-- [Tijdstip registratie](./attributen/Tijdstip_registratie.md)
-- [Uitvoerder](./attributen/Uitvoerder.md)
-- [Vertrouwelijkheid](./attributen/Vertrouwelijkheid.md)
-- [Vervallen](./attributen/Vervallen.md)
-- [Verwerking ID](./attributen/Verwerking.ID.md)
-- [Verwerking Naam](./attributen/Verwerking.Naam.md)
-- [Verwerking afnemer](./attributen/Verwerking_afnemer.md)
-- [Verwerkingsactiviteit ID](./attributen/Verwerkingsactiviteit.ID.md)
-- [Verwerkt object](./attributen/Verwerkt_object.md)
 
 ## Attribuuttypen
 - [Aantal jaar](./attribuuttypen/Aantal_jaar.md)
 - [Identificator](./attribuuttypen/Identificator.md)
 - [Ja/Nee](./attribuuttypen/Ja_Nee.md)
-- [Mate van vertrouwelijkheid](./attribuuttypen/Mate_van_vertrouwelijkheid.md)
+- [Vertrouwelijkheid](./attribuuttypen/Vertrouwelijkheid.md)
 - [Moment](./attribuuttypen/Moment.md)
 - [Naam](./attribuuttypen/Naam.md)
 - [Objecttype](./attribuuttypen/Objecttype.md)
