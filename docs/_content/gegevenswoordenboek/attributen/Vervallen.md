@@ -5,7 +5,7 @@ date: 28-09-2020
 ---
 
 ## Beschrijving
-Geeft aan of een actie als vervallen beschouwd dient te worden.
+Geeft aan of een verwerkingsactie als vervallen beschouwd dient te worden.
 
 ## Toelichting
 Vervallen items dienen voor normale gebruikers van het log niet zichtbaar te zijn. Ze zijn ‘logisch’ verwijderd.
