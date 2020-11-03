@@ -20,11 +20,11 @@ Applicaties of services die de logging API-standaard implementeren moeten op div
 ## Toevoeging aan de header van alle persoonsgegevens-verwerkende APIs
 Als een consumer een API aanroept van een provider die persoonsgegevens verwerkt, moet bij deze aanroep in de header de volgende informatie meegegeven worden ([B9177](../achtergronddocumentatie/ontwerp/artefacten/9177.md)).
 
-<img src="./_assets/api_1.png" alt="" width="700"/>
+<img src="./_assets/API_1.png" alt="" width="700"/>
 
 De provider logt deze informatie als volgt:
 
-<img src="./_assets/api_2.png" alt="" width="700"/>
+<img src="./_assets/API_2.png" alt="" width="700"/>
 
 ## OAS specificaties
 API specificatie (OAS3) in
