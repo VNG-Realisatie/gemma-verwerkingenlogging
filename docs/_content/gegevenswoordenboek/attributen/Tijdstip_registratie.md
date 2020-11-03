@@ -5,7 +5,7 @@ date: 28-09-2020
 ---
 
 ## Beschrijving
-Tijdstip waarop de actie in het log is geregistreerd.
+Tijdstip waarop de verwerkingsactie in het log is geregistreerd.
 
 ## Toelichting
 Wordt bepaald door het log. Niet door het loggende systeem. 
