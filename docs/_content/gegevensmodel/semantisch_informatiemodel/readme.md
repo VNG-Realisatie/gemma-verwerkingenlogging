@@ -29,7 +29,7 @@ Binnen VNG Realisatie wordt Enterprise Architect (EA) gebruikt voor de vastleggi
 
 ## Aanvullende voorbeelden
 
-Voorbeeld 'Geslachtswijziging':
+### Voorbeeld 'Geslachtswijziging'
 
 <img src="./_assets/sim_vb2.png" alt="SIM" width="700"/>
 
