@@ -1,14 +1,14 @@
 ---
-title: "Attribuut - Naam"
-name: Attribuut - Naam
+title: "Attribuut - Actie Naam"
+name: Attribuut - Actie Naam
 date: 28-09-2020
 ---
 
 ## Beschrijving
-Naam van de actie.
+Naam van de verwerkingsactie.
 
 ## Toelichting
-Aanbevolen wordt alle acties te beschrijven als een werkwoord ([werkwoordsvorm infinitief](https://onzetaal.nl/taaladvies/werkwoordsvormen/)) gevolgd door een zelfstandig naamwoord. 
+Aanbevolen wordt alle verwerkingsacties te beschrijven als een werkwoord ([werkwoordsvorm infinitief](https://onzetaal.nl/taaladvies/werkwoordsvormen/)) gevolgd door een zelfstandig naamwoord. 
 
 Zie ook [B3809](../../achtergronddocumentatie/ontwerp/artefacten/3809.md) en [A7838](../../achtergronddocumentatie/ontwerp/artefacten/7838.md).
 
