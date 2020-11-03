@@ -9,7 +9,7 @@ Om tot een gegevensmodel voor de uitwisseling te komen kijken we vooral naar het
 Voor snelle en succesvolle eerste implementaties van de API willen we eenvoud. Tegelijkertijd willen we leveranciers niet tegenhouden om logging direct goed te implementeren. De standaard raakt alle gemeentelijke systemen. Ingrijpende wijzigingen van de standaard zijn daarom bijzonder ongewenst.
 We hopen dit te bereiken door de objecttypen Verwerking en Handeling ‘plat te slaan’ in het objecttype Actie. Daardoor ontstaat onderstaande eenvoudigere structuur.
 
-<img src="./_assets/actie_modellering.png" alt="SIM" width="400"/>
+<img src="./_assets/actie_modellering_v3.png" alt="SIM" width="400"/>
 
 Bij de attributen zien we drie kolommen. In de eerste kolom staat de naam van het attribuut. In de tweede het type en in de laatste of het attribuut verplicht is. Hierbij worden de volgende waarden gebruikt:
 - O = Optioneel
@@ -34,14 +34,14 @@ In het volledige model treffen we twee nieuwe objecttypen aan:
 -	Verwerkt object: Persoon of object betrokken in de verwerking.
 -	Verwerkt soort gegeven: Soort gegeven dat verwerkt is.
 
-<img src="./_assets/volledig_model.png" alt="SIM" width="400"/>
+<img src="./_assets/volledig_model_v3.png" alt="SIM" width="400"/>
   
 Details over deze objecttypen en hun attributen zijn te vinden in het gegevenswoordenboek. Voorbeelden worden gegeven bij de beschrijving van het [Logging Maturity Level](../../achtergronddocumentatie/logging_maturity_level.md)
 
 ## Relatie tussen SIM en UGM
 Onderstaande afbeelding toont de relatie tussen het semantisch informatiemodel (SIM) en het uitwisselingsgegevensmodel (UGM).
 
-<img src="./_assets/sim_ugm.png" alt="SIM" width="700"/>
+<img src="./_assets/sim_ugm_v3.png" alt="SIM" width="700"/>
 
 Aan de linkerzijde staat het volledige SIM, aan de rechter het UGM. De attributen uit het SIM zijn voorzien van een code, deze code is terug te vinden in het UGM. Naast de attributen voor het formele historiepatroon (V5, V6, H4 en H5) vervalt het ID van de Handeling (H1). Dit zou eenvoudig toegevoegd kunnen worden aan de actie zoals dat ook gedaan is voor de verwerking. Het attribuut had echter in geen van de uitgewerkte cases een toegevoegde waarde en dus is het weggelaten.
 
