@@ -5,7 +5,7 @@ date: 28-09-2020
 ---
 Op basis van de begrippen uit het [gegevensmodel](../index.md) ontstaat het volgende semantische informatiemodel.
 
-<img src="./_assets/sim.png" alt="SIM" width="700"/>
+<img src="./_assets/sim_vb1.png" alt="SIM" width="700"/>
 
 -	Aan de linkerkant zien we de verschillende objecttypen die horen bij de geïntroduceerde begrippen. Bij de attributen van de objecttypen zien we drie kolommen. In de eerste kolom staat de naam van het attribuut. In de tweede het type en in de laatste of het attribuut verplicht is. Hierbij worden de volgende waarden gebruikt:
     - `O` = Optioneel
@@ -23,4 +23,4 @@ De variatie in inrichting van gemeentelijke bedrijfsprocessen en systemen maakt 
 ## Modellering in Enterprise Architect
 Binnen VNG Realisatie wordt Enterprise Architect (EA) gebruikt voor de vastlegging van semantische informatiemodellen (SIM). Onderstaand figuur geeft de modellering van het SIM weer zoals deze in EA is gemodelleerd.
 
-<img src="./_assets/sim_ea_v3.png" alt="SIM in Enterprise Architect" width="700"/>
+<img src="./_assets/sim_ea.png" alt="SIM in Enterprise Architect" width="700"/>
