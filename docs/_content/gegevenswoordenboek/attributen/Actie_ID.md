@@ -1,11 +1,11 @@
 ---
-title: "Attribuut - ID"
-name: Attribuut - ID
+title: "Attribuut - Actie ID"
+name: Attribuut - Actie ID
 date: 28-09-2020
 ---
 
 ## Beschrijving
-Identificator die de actie uniek identificeert.
+Identificator die de verwerkingsactie uniek identificeert.
 
 ## Toelichting
 Het ID is betekenisloos, kent geen volgorde en is uniek over alle systemen in de wereld.
