@@ -15,17 +15,17 @@ servers:
   url: https://virtserver.swaggerhub.com/VNGRealisatie/logging-api/0.1.0
 - url: /api/v1
 paths:
-  /acties:
+  /verwerkingsacties:
     get:
       tags:
         - REST calls
-      summary: Alle ACTIEs opvragen.
-      operationId: actie_list
-      description: Door de juiste parameters mee te geven kun je zoeken naar de voor jouw relevante ACTIEs.
+      summary: Alle VERWERKINGSACTIEs opvragen.
+      operationId: verwerkingsactie_list
+      description: Door de juiste parameters mee te geven kun je zoeken naar de voor jouw relevante VERWERKINGSACTIEs.
       parameters:
         - name: objecttype
           in: query
-          description: Soort object dat bij de actie betrokken is.
+          description: Soort object dat bij de verwerkingsactie betrokken is.
           required: true
           schema:
             type: string
@@ -52,7 +52,7 @@ paths:
             example: "479580261"
         - name: beginDatum
           in: query
-          description: Tijdstip van de actie moet groter of gelijk zijn aan deze datum om teruggegeven te worden.
+          description: Tijdstip van de verwerkingsactie moet groter of gelijk zijn aan deze datum om teruggegeven te worden.
           required: true
           schema:
             type: string
@@ -60,7 +60,7 @@ paths:
             example: "2020-10-24"
         - name: eindDatum
           in: query
-          description: Tijdstip van de actie moet kleiner of gelijk zijn aan deze datum om teruggegeven te worden.
+          description: Tijdstip van de verwerkingsactie moet kleiner of gelijk zijn aan deze datum om teruggegeven te worden.
           required: true
           schema:
             type: string
@@ -102,7 +102,7 @@ paths:
                   results:
                     type: array
                     items:
-                      $ref: '#/components/schemas/Actie'
+                      $ref: '#/components/schemas/Verwerkingsactie'
         '401':
           description: Unauthorized
           headers:
@@ -226,11 +226,11 @@ paths:
     post:
       tags:
         - REST calls
-      summary: Maak een ACTIE aan.
-      operationId: actie_create
-      description: Maak een ACTIE aan.
+      summary: Maak een VERWERKINGSACTIE aan.
+      operationId: verwerkingsactie_create
+      description: Maak een VERWERKINGSACTIE aan.
       requestBody:
-        $ref: '#/components/requestBodies/Actie'
+        $ref: '#/components/requestBodies/Verwerkingsactie'
       responses:
         '201':
           description: Created
@@ -248,7 +248,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Actie'
+                $ref: '#/components/schemas/Verwerkingsactie'
         '400':
           description: Bad request
           headers:
@@ -381,15 +381,15 @@ paths:
             application/problem+json:
               schema:
                 $ref: '#/components/schemas/Fout'
-  /acties/{uuid}:
+  /verwerkingsacties/{uuid}:
     put:
       tags:
         - REST calls
-      operationId: actie_update
-      summary: Wijzig ACTIE.
-      description: Wijzigt een bestaande Actie in het log. Alle informatie over de actie moet opnieuw meegegeven worden, ook de informatie die niet wijzigt.
+      operationId: verwerkingsactie_update
+      summary: Wijzig VERWERKINGSACTIE.
+      description: Wijzigt een bestaande verwerkingsactie in het log. Alle informatie over de verwerkingsactie moet opnieuw meegegeven worden, ook de informatie die niet wijzigt.
       requestBody:
-        $ref: '#/components/requestBodies/Actie'
+        $ref: '#/components/requestBodies/Verwerkingsactie'
       responses:
         '200':
           description: OK
@@ -402,7 +402,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Actie'
+                $ref: '#/components/schemas/Verwerkingsactie'
         '400':
           description: Bad request
           headers:
@@ -550,9 +550,9 @@ paths:
     delete:
       tags:
         - REST calls
-      operationId: actie_delete
-      summary: Verwijder een ACTIE.
-      description: De opgegeven ACTIE wordt gemarkeerd als vervallen. Hierdoor zal deze niet meer geretourneerd worden door de inzage-functies van de logging API.
+      operationId: verwerkingsactie_delete
+      summary: Verwijder een VERWERKINGSACTIE.
+      description: De opgegeven VERWERKINGSACTIE wordt gemarkeerd als vervallen. Hierdoor zal deze niet meer geretourneerd worden door de inzage-functies van de logging API.
       responses:
         '204':
           description: No content
@@ -709,7 +709,7 @@ paths:
         - RPC calls
       summary: Wijzig bewaartermijn van Verwerking.
       operationId: wijzigBewaartermijnVerwerking
-      description: Wijzigt de bewaartermijn van alle acties die in het kader van de opgegeven verwerking gelogd zijn.
+      description: Wijzigt de bewaartermijn van alle verwerkingsacties die in het kader van de opgegeven verwerking gelogd zijn.
       requestBody:
         $ref: '#/components/requestBodies/WijzigBewaartermijnVerwerking'
       responses:
@@ -853,7 +853,7 @@ paths:
         - RPC calls
       summary: Wijzig vertrouwelijkheid van Verwerking.
       operationId: wijzigVertrouwelijkheidVerwerking
-      description: Wijzigt de vertrouwelijkheid van alle acties die in het kader van de opgegeven verwerking gelogd zijn.
+      description: Wijzigt de vertrouwelijkheid van alle verwerkingsacties die in het kader van de opgegeven verwerking gelogd zijn.
       requestBody:
         $ref: '#/components/requestBodies/WijzigVertrouwelijkheidVerwerking'
       responses:
@@ -993,11 +993,11 @@ paths:
                 $ref: '#/components/schemas/Fout'
 components:
   requestBodies:
-    Actie:
+    Verwerkingsactie:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/Actie'
+            $ref: '#/components/schemas/Verwerkingsactie'
       required: true
     WijzigBewaartermijnVerwerking:
       content:
@@ -1012,9 +1012,9 @@ components:
             $ref: '#/components/schemas/WijzigVertrouwelijkheidVerwerking'
       required: true
   schemas:
-    Actie:
-      title: Actie
-      description: Een actie is een operatie die wordt uitgevoerd door een geautomatiseerd systeem waarbij er (persoons)gegevens verwerkt worden. Een actie wordt uitgevoerd als onderdeel van (een handeling van) een verwerking.
+    Verwerkingsactie:
+      title: Verwerkingsactie
+      description: Een verwerkingsactie is een operatie die wordt uitgevoerd door een geautomatiseerd systeem waarbij er (persoons)gegevens verwerkt worden. Een verwerkingsactie wordt uitgevoerd als onderdeel van (een handeling van) een verwerking.
       type: object
       required:
         - url
@@ -1031,23 +1031,23 @@ components:
           maxLength: 1000
           minLength: 1
           readOnly: true
-          example: "https://loggingapi.vng.cloud/api/v1/acties/7a22eb38-bca6-463f-9955-54ab040287cb"
+          example: "https://loggingapi.vng.cloud/api/v1/verwerkingsacties/7a22eb38-bca6-463f-9955-54ab040287cb"
         id:
           title: ID
-          description: Identificator van de actie waar de persoon of het object bij betrokken is. Deze ID wordt automatisch aangemaakt door het log.
+          description: Identificator van de verwerkingsactie waar de persoon of het object bij betrokken is. Deze ID wordt automatisch aangemaakt door het log.
           type: string
           format: uuid
           readOnly: true
           example: "7a22eb38-bca6-463f-9955-54ab040287cb"
         naam:
           title: Naam
-          description: Naam van de actie.
+          description: Naam van de verwerkingsactie.
           type: string
           maxLength: 80
           example: Zoeken personen
         handelingNaam:
           title: Handeling naam
-          description:  Naam van de handeling waar de actie onderdeel van is.
+          description:  Naam van de handeling waar de verwerkingsactie onderdeel van is.
           type: string
           maxLength: 80
           example: Intake
@@ -1102,19 +1102,19 @@ components:
           example: "00000001821002193000"
         systeem:
           title: Systeem
-          description: Het systeem dat de actie heeft uitgevoerd.
+          description: Het systeem dat de verwerkingsactie heeft uitgevoerd.
           type: string
           maxLength: 80
           example: "FooBarApp v2.1"
         gebruiker:
           title: Gebruiker
-          description: Identificator van de gebruiker die de actie heeft geïnitieerd.
+          description: Identificator van de gebruiker die de verwerkingsactie heeft geïnitieerd.
           type: string
           format: uuid
           example: "2ecf8e86-1a18-46ba-aa13-992c1dc231a5"
         gegevensbron:
           title: Gegevensbron
-          description: Gegevensbron waarin de bij actie betrokken gegevens zijn opgeslagen.
+          description: Gegevensbron waarin de bij verwerkingsactie betrokken gegevens zijn opgeslagen.
           type: string
           maxLength: 80
           minLength: 1
@@ -1135,21 +1135,15 @@ components:
           example: "4b698de3-ffba-45e7-8697-a283ec863db2"
         tijdstip:
           title: Tijdstip
-          description: Tijdstip waarop de actie is uitgevoerd.
+          description: Tijdstip waarop de verwerkingsactie is uitgevoerd.
           type: string
           format: date-time
         tijdstipRegistratie:
           title: Tijdstip
-          description: Tijdstip waarop de actie in het log is geregistreerd. Wordt bepaald door het log. Niet door het loggende systeem.
+          description: Tijdstip waarop de verwerkingsactie in het log is geregistreerd. Wordt bepaald door het log. Niet door het loggende systeem.
           type: string
           format: date-time
           readOnly: true
-        # vervallen:
-        #   title: Vervallen
-        #   description: Geeft aan of een actie als vervallen beschouwd dient te worden.
-        #   type: boolean
-        #   readOnly: true
-        #   example: false
         verwerkteObjecten:
           title: Verwerkte objecten
           type: array
@@ -1260,7 +1254,7 @@ components:
             $ref: '#/components/schemas/FieldValidationError'
     VerwerktObject:
       title: Verwerkt object
-      description: Een persoon of object betrokken bij de actie.
+      description: Een persoon of object betrokken bij de verwerkingsactie.
       type: object
       required: 
         - objecttype
@@ -1269,7 +1263,7 @@ components:
       properties:
         objecttype: 
           title: Objecttype
-          description: Soort object dat bij de actie betrokken is.
+          description: Soort object dat bij de verwerkingsactie betrokken is.
           type: string
           enum:
             - Persoon
@@ -1288,7 +1282,7 @@ components:
           example: "479580261"
         betrokkenheid:
           title: Betrokkenheid
-          description: Geeft aan in welke hoedanigheid de persoon of het object betrokken was bij de actie.
+          description: Geeft aan in welke hoedanigheid de persoon of het object betrokken was bij de verwerkingsactie.
           type: string
           maxLength: 80
           example: Getuige
@@ -1299,7 +1293,7 @@ components:
             $ref: '#/components/schemas/VerwerktSoortGegeven'
     VerwerktSoortGegeven:
       title: Verwerkt soort gegeven
-      description: Een soort gegeven dat over een persoon of object betrokken bij een actie verwerkt is.
+      description: Een soort gegeven dat over een persoon of object betrokken bij een verwerkingsactie verwerkt is.
       type: object
       required: 
         - soortGegeven
