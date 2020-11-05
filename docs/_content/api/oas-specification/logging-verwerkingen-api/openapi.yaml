@@ -1038,7 +1038,7 @@ components:
       type: object
       required:
         - url
-        - id
+        - actieID
         - vertrouwelijkheid
         - tijdstip
         - tijdstipRegistratie
@@ -1052,14 +1052,14 @@ components:
           minLength: 1
           readOnly: true
           example: "https://loggingapi.vng.cloud/api/v1/verwerkingsacties/7a22eb38-bca6-463f-9955-54ab040287cb"
-        id:
+        actieID:
           title: ID
           description: Identificator van de verwerkingsactie waar de persoon of het object bij betrokken is. Deze ID wordt automatisch aangemaakt door het log.
           type: string
           format: uuid
           readOnly: true
           example: "7a22eb38-bca6-463f-9955-54ab040287cb"
-        naam:
+        actieNaam:
           title: Naam
           description: Naam van de verwerkingsactie.
           type: string
