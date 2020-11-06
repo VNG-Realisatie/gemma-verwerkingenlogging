@@ -2,6 +2,12 @@
 title: "Voortgang ontwikkeling API-standaard voor logging van verwerkingen"
 name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ---
+## 6 november 2020
+- In de alle beschrijvingen 'het log' gewijzigd in 'het verwerkingenlog' om duidelijk te maken dat het enkel over de logging van verwerkingen gaat.
+
+## 1 november 2020
+- De resource `Actie` hernoemd naar `Verwerkingsactie`.
+
 ## 28 oktober 2020
 - Update van afbeeldingen van informatie- en gegevensmodel.
 - Update van API beschrijvingen.
