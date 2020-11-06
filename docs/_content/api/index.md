@@ -3,13 +3,13 @@ title: "APIs voor logging van verwerkingen"
 name: APIs voor logging van verwerkingen
 ---
 ## Over de implementatie van de API-standaard
-Applicaties of services die de logging API-standaard implementeren moeten op diverse punten worden aangepast. Uiteindelijk  moet voldaan worden aan alle onderstaande punten:
+Applicaties of services die de verwerkingenlogging API-standaard implementeren moeten op diverse punten worden aangepast. Uiteindelijk  moet voldaan worden aan alle onderstaande punten:
 
 - Bij alle acties die persoonsgegevens verwerken wordt er gelogd ([B7952](../achtergronddocumentatie/ontwerp/artefacten/7952.md)). Hierbij gelden de volgende regels:
     - Alle verwerkingen hebben een eigen ID ([B8157](../achtergronddocumentatie/ontwerp/artefacten/8157.md)).
         - Als de verwerking overeenkomt met een proces uit de bedrijfsvoering (zoals een verzoek of zaak) en dit proces heeft een eigen UUID dan kan dit UUID gebruikt worden.
         - In alle andere gevallen moet een nieuw UUID toegewezen worden.
-    - Het ID van de verwerking wordt gelogd en kan later gebruikt worden om acties die over deze verwerking gelogd zijn terug te vinden in het log en deze aan te passen of logisch te verwijderen.
+    - Het ID van de verwerking wordt gelogd en kan later gebruikt worden om acties die over deze verwerking gelogd zijn terug te vinden in het verwerkingenlog en deze aan te passen of logisch te verwijderen.
     - Acties worden zodanig omschreven dat deze duidelijk zijn voor de burger. Hiertoe worden waar mogelijk en zinvol alle attributen van de actie ingezet ([A5924](../achtergronddocumentatie/ontwerp/artefacten/5924.md)).
 
 - Roept de applicatie/service een API aan waarbij die API persoonsgegevens verwerkt? Dan moet bij deze aanroep in de header de volgende informatie meegegeven worden ([B7259](../achtergronddocumentatie/ontwerp/artefacten/7259.md), [B9177](../achtergronddocumentatie/ontwerp/artefacten/9177.md)): `OIN`, `Verwerking ID`, `Vertrouwelijkheid` en `Bewaartermijn`. Zie [Toevoeging aan de header van alle persoonsgegevens-verwerkende API’s’](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/api/index.md#toevoeging-aan-de-header-van-alle-persoonsgegevens-verwerkende-apis) voor meer informatie.
@@ -32,9 +32,9 @@ API specificatie (OAS3) in
   [Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml) of
   [YAML](https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml).
 
-In onderstaand tabel is de mapping van de logging functies naar de API-calls weergegeven.
+In onderstaand tabel is de mapping van de verwerkingenlogging functies naar de API-calls weergegeven.
 
-| Logging functie   | API call      | Stijl          |
+| Verwerkingenlogging functie | API call      | Stijl          |
 | :-----------      | :-----------  | :----------    |
 | [F7446: Log Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/7446.md)    | POST /acties  | REST           |
 | [F6624: Log Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/6624.md) `*` 	|||
@@ -50,11 +50,11 @@ In onderstaand tabel is de mapping van de logging functies naar de API-calls wee
 | [F0143: Opvragen Verwerkingsacties – Alle velden, vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/0143.md) `*` |||		
 
 Opmerkingen:
-- Vanwege het platslaan van het objecttype `Verwerking` in het objecttype `Verwerkingsactie` passen de logging-functies F2969 en F4415 niet in het CRUD-model van REST en zijn deze functies als RPC-calls gespecificeerd.
-- Logging functies met een sterretje * zijn nog niet vertaald naar API-calls. Deze functies hebben een hoge mate van vertrouwelijkheid en  zullen waarschijnlijk op een speciaal endpoint gedefinieerd worden.
+- Vanwege het platslaan van het objecttype `Verwerking` in het objecttype `Verwerkingsactie` passen de verwerkingenlogging-functies F2969 en F4415 niet in het CRUD-model van REST en zijn deze functies als RPC-calls gespecificeerd.
+- Verwerkingenlogging functies met een sterretje * zijn nog niet vertaald naar API-calls. Deze functies hebben een hoge mate van vertrouwelijkheid en  zullen waarschijnlijk op een speciaal endpoint gedefinieerd worden.
 
 ## Gehanteerde standaarden
-Op de API-standaard voor logging zijn de volgende standaarden van toepassing:
+Op de verwerkingenlogging API-standaard zijn de volgende standaarden van toepassing:
 - [De REST-API Design Rules (ADR)](https://forumstandaardisatie.nl/open-standaarden/rest-api-design-rules)
 - [MIM - Metamodel Informatie Modellering v1.1](https://docs.geostandaarden.nl/mim/mim/)
 
