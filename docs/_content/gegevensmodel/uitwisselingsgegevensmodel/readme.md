@@ -4,9 +4,9 @@ name: Uitwisselingsgegevensmodel (UGM)
 date: 28-09-2020
 ---
 ## Kern
-Om tot een gegevensmodel voor de uitwisseling te komen kijken we vooral naar het praktische gebruik van het model. We hebben nog een lange weg te gaan voordat logging in alle systemen optimaal geïntegreerd is.
+Om tot een gegevensmodel voor de uitwisseling te komen kijken we vooral naar het praktische gebruik van het model. We hebben nog een lange weg te gaan voordat verwerkingenlogging in alle systemen optimaal geïntegreerd is.
 
-Voor snelle en succesvolle eerste implementaties van de API willen we eenvoud. Tegelijkertijd willen we leveranciers niet tegenhouden om logging direct goed te implementeren. De standaard raakt alle gemeentelijke systemen. Ingrijpende wijzigingen van de standaard zijn daarom bijzonder ongewenst.
+Voor snelle en succesvolle eerste implementaties van de API willen we eenvoud. Tegelijkertijd willen we leveranciers niet tegenhouden om verwerkingenlogging direct goed te implementeren. De standaard raakt alle gemeentelijke systemen. Ingrijpende wijzigingen van de standaard zijn daarom bijzonder ongewenst.
 We hopen dit te bereiken door de objecttypen Verwerking en Handeling ‘plat te slaan’ in het objecttype Actie. Daardoor ontstaat onderstaande eenvoudigere structuur.
 
 <img src="./_assets/verwerkingsactie.png" alt="SIM" width="400"/>
@@ -36,7 +36,7 @@ In het volledige model treffen we twee nieuwe objecttypen aan:
 
 <img src="./_assets/volledig_model.png" alt="SIM" width="400"/>
   
-Details over deze objecttypen en hun attributen zijn te vinden in het gegevenswoordenboek. Voorbeelden worden gegeven bij de beschrijving van het [Logging Maturity Level](../../achtergronddocumentatie/logging_maturity_level.md)
+Details over deze objecttypen en hun attributen zijn te vinden in het gegevenswoordenboek. Voorbeelden worden gegeven bij de beschrijving van het [Verwerkingenlogging Maturity Level](../../achtergronddocumentatie/logging_maturity_level.md)
 
 ## Relatie tussen SIM en UGM
 Onderstaande afbeelding toont de relatie tussen het semantisch informatiemodel (SIM) en het uitwisselingsgegevensmodel (UGM).
