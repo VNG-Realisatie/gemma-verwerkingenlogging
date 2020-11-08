@@ -2,6 +2,9 @@
 title: "Voortgang ontwikkeling API-standaard voor logging van verwerkingen"
 name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ---
+## 8 november 2020
+- Case van html header attributen gecorrigeerd.
+
 ## 6 november 2020
 - In de alle beschrijvingen 'het log' gewijzigd in 'het verwerkingenlog' om duidelijk te maken dat het enkel over de logging van verwerkingen gaat.
 
