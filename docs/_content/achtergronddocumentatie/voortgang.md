@@ -5,7 +5,7 @@ name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 
 ## 11 november 2020
 Aanpassingen informatiemodel:
-- [Verwerkingsactie](../gegevenswoordenboek/objecttypen/Verwerkingsactie.md).Afnemer was een OIN. Dit hebben we moeten omzetten naar een [Soort ID](../gegevenswoordenboek/attributen/Soort_afnemer_ID.md)/[ID](../gegevenswoordenboek/attributen/Afnemer_ID.md) constructie omdat de afnemer ook een natuurlijk persoon kan zijn (zie [case 2521](./ontwerp/artefacten/2521.md)). Dit raakt alle afbeeldingen van het gegevensmodel en de API waarin het attribuut afnemer voorkomt.
+- [Verwerkingsactie](../gegevenswoordenboek/objecttypen/Verwerkingsactie.md).Afnemer was een OIN. Dit hebben we moeten omzetten naar een [Soort ID](../gegevenswoordenboek/attributen/Soort_afnemer_ID.md)/[ID](../gegevenswoordenboek/attributen/Afnemer_ID.md) constructie omdat de afnemer ook een natuurlijk persoon kan zijn (zie [case 2521](./ontwerp/artefacten/2521.md)). Dit raakt alle afbeeldingen van het gegevensmodel en de API waarin het attribuut afnemer voorkomt. Ook de tekst van besluit [B9930](./ontwerp/artefacten/9930.md) is aangepast n.a.v. deze wijziging.
 - [Attribuuttype Naam](../gegevenswoordenboek/attribuuttypen/Naam.md): Lengte van 80 naar 242.
 - [Attribuuttype OIN](../gegevenswoordenboek/attribuuttypen/OIN.md): Formeel patroon in de vorm van een regular expression toegevoegd.
 - [Attribuuttype UUID](../gegevenswoordenboek/attribuuttypen/UUID.md): Formeel patroon in de vorm van een regular expression toegevoegd.
