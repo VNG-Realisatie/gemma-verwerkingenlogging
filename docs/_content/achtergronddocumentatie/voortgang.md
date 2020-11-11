@@ -6,6 +6,8 @@ name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ## 11 november 2020
 Aanpassingen informatiemodel:
 - [Attribuuttype Naam](../gegevenswoordenboek/attribuuttypen/Naam.md): Lengte van 80 naar 242.
+- [Attribuuttype OIN](../gegevenswoordenboek/attribuuttypen/OIN.md): Formeel patroon in de vorm van een regular expression toegevoegd.
+- [Attribuuttype UUID](../gegevenswoordenboek/attribuuttypen/UUID.md): Formeel patroon in de vorm van een regular expression toegevoegd.
 N.B. Bovenstaande aanpassingen moeten nog doorgevoerd worden in de API.
 
 Tekstuele aanpassingen:
