@@ -16,5 +16,5 @@ Waarschijnlijk zijn er uiteindelijk twee aparte schema’s nodig. Eén voor de t
 
 Verdere uitwerking en aanscherping hiervan valt niet binnen de huidige scope.
 
-<img src="./_assets/mlm.png" alt="Verwerkingenlogging Maturity Levels" width="600"/>
+<img src="./_assets/lml.png" alt="Verwerkingenlogging Maturity Levels" width="600"/>
 
