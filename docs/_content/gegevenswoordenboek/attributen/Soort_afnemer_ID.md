@@ -8,7 +8,7 @@ date: 11-11-2020
 Soort identificator waarmee de afnemer geïdentificeerd wordt.
 
 ## Voorbeeld
-'OIN' of `BSN`
+`OIN` of `BSN`
 
 ## Attribuuttype
 [Naam](../attribuuttypen/Naam.md)
