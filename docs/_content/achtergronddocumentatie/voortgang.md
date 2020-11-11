@@ -8,7 +8,7 @@ name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 - [Case 9041](./ontwerp/artefacten/9041.md): 'Notificaties – Informatiearm'. Kleine tekstuele verduidelijkingen.
 - [Case 9299](./ontwerp/artefacten/9299.md): 'Synchronisatie naar BGL'. BGL = Binnengemeentelijke Levering.
 - [Case 9713](./ontwerp/artefacten/9713.md): 'Inzage door burger - Gegevens die niet langer vertrouwelijk zijn'. Kleine tekstuele correctie.
-- [Logging Maturity Level](./loggingmaturitylevel.md): Kleine verbetering aan leesbaarheid schema met de verschillende niveau's.
+- [Logging Maturity Level](./logging_maturity_level.md): Kleine verbetering aan leesbaarheid schema met de verschillende niveau's.
 
 ## 8 november 2020
 - Casing van html header attributen gecorrigeerd.
