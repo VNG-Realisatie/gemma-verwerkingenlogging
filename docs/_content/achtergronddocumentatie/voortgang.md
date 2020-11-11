@@ -14,6 +14,7 @@ N.B. Bovenstaande aanpassingen moeten nog doorgevoerd worden in de API.
 
 Correcties:
 - De nieuwe html header attributen (verwerkingsactiviteit id en url) zijn toegevoegd aan [besluit 9177](./ontwerp/artefacten/9177.md).
+- De resourcenaam wijziging was nog niet doorgevoerd op de [toelichtingspagina over de API](../api/index.md).
 
 Tekstuele aanpassingen:
 - [Case 2521](./ontwerp/artefacten/2521.md): 'Inzage van gegevens aan de balie' aangepast. Gaat niet langer alleen over derden, kan ook de burger zelf zijn. Gevolg is dat we het BSN van de burger als afnemer moeten kunnen vastleggen.
