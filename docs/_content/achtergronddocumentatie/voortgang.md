@@ -6,6 +6,7 @@ name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ## 11 november 2020
 - [Case 2521](./ontwerp/artefacten/2521.md): 'Inzage van gegevens aan de balie' aangepast. Gaat niet langer alleen over derden, kan ook de burger zelf zijn. Gevolg is dat we het BSN van de burger als afnemer moeten kunnen vastleggen.
 - [Case 9041](./ontwerp/artefacten/9041.md): 'Notificaties – Informatiearm'. Kleine tekstuele verduidelijkingen.
+- [Case 9299](./ontwerp/artefacten/9299.md): 'Synchronisatie naar BGL'. BGL = Binnengemeentelijke Levering.
 
 ## 8 november 2020
 - Casing van html header attributen gecorrigeerd.
