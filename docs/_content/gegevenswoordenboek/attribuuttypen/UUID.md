@@ -1,6 +1,6 @@
 ---
 title: "Attribuuttype - Universal Unique IDentifier (UUID)"
-name: Attribuuttype - AUniversal Unique IDentifier (UUID)
+name: Attribuuttype - Universal Unique IDentifier (UUID)
 date: 28-09-2020
 ---
 
