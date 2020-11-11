@@ -5,6 +5,7 @@ name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 
 ## 11 november 2020
 - Case 2521: 'Inzage van gegevens aan de balie' aangepast. Gaat niet langer alleen over derden, kan ook de burger zelf zijn. Gevolg is dat we het BSN van de burger als afnemer moeten kunnen vastleggen.
+- Case 9041: 'Notificaties – Informatiearm'. Kleine tekstuele verduidelijkingen.
 
 ## 8 november 2020
 - Casing van html header attributen gecorrigeerd.
