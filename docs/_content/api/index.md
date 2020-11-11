@@ -20,15 +20,15 @@ Applicaties of services die de verwerkingenlogging API-standaard implementeren m
 ## Toevoeging aan de header van alle persoonsgegevens-verwerkende APIs
 Als een consumer een API aanroept van een provider die persoonsgegevens verwerkt, moet bij deze aanroep in de header de volgende informatie meegegeven worden ([B9177](../achtergronddocumentatie/ontwerp/artefacten/9177.md)).
 
-<img src="./_assets/API_1.png" alt="" width="700"/>
+<img src="./_assets/api_1.png" alt="" width="700"/>
 
 Aanwezigheid van de header attributen is als volgt:
 
-<img src="./_assets/API_2.png" alt="" width="700"/>
+<img src="./_assets/api_2.png" alt="" width="700"/>
 
 De provider logt deze informatie als volgt:
 
-<img src="./_assets/API_3.png" alt="" width="700"/>
+<img src="./_assets/api_3.png" alt="" width="700"/>
 
 ## OAS specificaties
 API specificatie (OAS3) in
@@ -40,17 +40,17 @@ In onderstaand tabel is de mapping van de verwerkingenlogging functies naar de A
 
 | Verwerkingenlogging functie | API call      | Stijl          |
 | :-----------      | :-----------  | :----------    |
-| [F7446: Log Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/7446.md)    | POST /acties  | REST           |
+| [F7446: Log Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/7446.md)    | POST /verwerkingsacties  | REST           |
 | [F6624: Log Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/6624.md) `*` 	|||
 | [F2969: Wijzig vertrouwelijkheid van Verwerking](../achtergronddocumentatie/ontwerp//artefacten/2969.md) | POST /wijzigVertrouwelijkheidVerwerking | RPC |
 | [F4415: Wijzig bewaartermijn van Verwerking](../achtergronddocumentatie/ontwerp//artefacten/4415.md) | POST /wijzigBewaartermijnVerwerking | RPC |
-| [F8316: Wijzig Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/8316.md) | PUT /acties/{uuid} | REST |
+| [F8316: Wijzig Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/8316.md) | PUT /verwerkingsacties/{uuid} | REST |
 | [F3835: Wijzig Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/3835.md) `*` 	|||
-| [F9906: Verwijder Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/9906.md) | DELETE /acties/{uuid} | REST |
+| [F9906: Verwijder Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/9906.md) | DELETE /verwerkingsacties/{uuid} | REST |
 | [F2265: Verwijder Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/2265.md) `*` |||
-| [F4086: Opvragen Verwerkingsacties – Beperkte set velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/4086.md) | GET /acties?beperkteSet=true | REST |
+| [F4086: Opvragen Verwerkingsacties – Beperkte set velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/4086.md) | GET /verwerkingsacties?beperkteSet=true | REST |
 | [F2525: Opvragen Verwerkingsacties – Beperkte set velden, vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp//artefacten/2525.md) `*` |||
-| [F9787: Opvragen Verwerkingsacties – Alle velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/9787.md)	| GET /acties?beperkteSet=false | REST |
+| [F9787: Opvragen Verwerkingsacties – Alle velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/9787.md)	| GET /verwerkingsacties?beperkteSet=false | REST |
 | [F0143: Opvragen Verwerkingsacties – Alle velden, vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/0143.md) `*` |||		
 
 Opmerkingen:
