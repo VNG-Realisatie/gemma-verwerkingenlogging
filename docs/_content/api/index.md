@@ -22,9 +22,13 @@ Als een consumer een API aanroept van een provider die persoonsgegevens verwerkt
 
 <img src="./_assets/API_1.png" alt="" width="700"/>
 
-De provider logt deze informatie als volgt:
+Aanwezigheid van de header attributen is als volgt:
 
 <img src="./_assets/API_2.png" alt="" width="700"/>
+
+De provider logt deze informatie als volgt:
+
+<img src="./_assets/API_3.png" alt="" width="700"/>
 
 ## OAS specificaties
 API specificatie (OAS3) in
