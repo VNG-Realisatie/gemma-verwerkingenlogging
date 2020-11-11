@@ -2,8 +2,12 @@
 title: "Voortgang ontwikkeling API-standaard voor logging van verwerkingen"
 name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ---
+
+## 11 november 2020
+- Case 2521: 'Inzage van gegevens aan de balie' aangepast. Gaat niet langer alleen over derden, kan ook de burger zelf zijn. Gevolg is dat we het BSN van de burger als afnemer moeten kunnen vastleggen.
+
 ## 8 november 2020
-- Case van html header attributen gecorrigeerd.
+- Casing van html header attributen gecorrigeerd.
 
 ## 6 november 2020
 - In de alle beschrijvingen 'het log' gewijzigd in 'het verwerkingenlog' om duidelijk te maken dat het enkel over de logging van verwerkingen gaat.
