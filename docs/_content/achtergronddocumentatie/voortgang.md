@@ -4,12 +4,16 @@ name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ---
 
 ## 11 november 2020
-Aanpassingen informatiemodel:
+Inhoudelijke aanpassingen:
 - [Verwerkingsactie](../gegevenswoordenboek/objecttypen/Verwerkingsactie.md).Afnemer was een OIN. Dit hebben we moeten omzetten naar een [Soort ID](../gegevenswoordenboek/attributen/Soort_afnemer_ID.md)/[ID](../gegevenswoordenboek/attributen/Afnemer_ID.md) constructie omdat de afnemer ook een natuurlijk persoon kan zijn (zie [case 2521](./ontwerp/artefacten/2521.md)). Dit raakt alle afbeeldingen van het gegevensmodel en de API waarin het attribuut afnemer voorkomt. Ook de tekst van besluit [B9330](./ontwerp/artefacten/9330.md) 'Opname van afnemer' is aangepast zodat deze weer aansluit bij de wijziging.
 - [Attribuuttype Naam](../gegevenswoordenboek/attribuuttypen/Naam.md): Lengte van 80 naar 242.
 - [Attribuuttype OIN](../gegevenswoordenboek/attribuuttypen/OIN.md): Formeel patroon in de vorm van een regular expression toegevoegd.
 - [Attribuuttype UUID](../gegevenswoordenboek/attribuuttypen/UUID.md): Formeel patroon in de vorm van een regular expression toegevoegd.
+- Aanwezigheid van [html header attributen](../api/index.md) toegelicht.
 N.B. Bovenstaande aanpassingen moeten nog doorgevoerd worden in de API.
+
+Correcties:
+- De nieuwe html header attributen (verwerkingsactiviteit id en url) zijn toegevoegd aan [besluit 9177](./ontwerp/artefacten/9177.md).
 
 Tekstuele aanpassingen:
 - [Case 2521](./ontwerp/artefacten/2521.md): 'Inzage van gegevens aan de balie' aangepast. Gaat niet langer alleen over derden, kan ook de burger zelf zijn. Gevolg is dat we het BSN van de burger als afnemer moeten kunnen vastleggen.
