@@ -20,7 +20,7 @@ Het [ontwerp](./ontwerp.md) van de API-standaard is gericht op het kunnen opstel
 - [ontwerpbesluiten](../achtergronddocumentatie/ontwerp/ontwerpbesluiten.md) en [aanbevelingen](../achtergronddocumentatie/ontwerp/aanbevelingen.md) ten aanzien van implementatie
 - [openstaande vraagstukken](../achtergronddocumentatie/ontwerp/vraagstukken.md) waarover nog geen ontwerpbesluit is genomen 
 
-Een overzicht van de relatie tussen besluiten, cases en requirements is [hier](./ontwerp/artefacten/20201011_Artefacten_en_cases.xlsx) te vinden.
+Een overzicht van de relatie tussen besluiten en cases is [hier](./ontwerp/artefacten/20201011_Artefacten_en_cases.xlsx) te vinden.
 
 ### Verwerkingenlogging Maturity Levels
 Gemeenten, systemen, leveranciers en derden zullen de komende jaren allemaal in een verschillend stadium verkeren t.a.v. het implementeren van de vastlegging van verwerkingen in verwerkingenlogging. Het lijkt goed om in een dashboard bij te gaan houden hoe gemeenten en de gemeentelijke software ervoor staan. Hierbij zou gebruik gemaakt kunnen worden van volwassenheidniveaus ten aanzien van verwerkingenlogging. Hiertoe zijn een aantal [Verwerkingenlogging Maturity Levels](./logging_maturity_level.md) ontwikkeld die gebruikt kunnen worden door gemeenten.
