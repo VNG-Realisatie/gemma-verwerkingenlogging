@@ -28,7 +28,6 @@ OAS Specificatie
 * [Uitgangspunten](../achtergronddocumentatie/uitgangspunten.md)
 * [Gehanteerde terminologie](../achtergronddocumentatie/ontwerp/terminologie.md)
 * [Brondocumenten](../achtergronddocumentatie/ontwerp/brondocumenten.md)
-* [Requirements](../achtergronddocumentatie/ontwerp/requirements.md)
 * [Ontwerpbesluiten](../achtergronddocumentatie/ontwerp/ontwerpbesluiten.md)
 * [Aanbevelingen](../achtergronddocumentatie/ontwerp/aanbevelingen.md)
 * [Openstaande vraagstukken](../achtergronddocumentatie/ontwerp/vraagstukken.md)
