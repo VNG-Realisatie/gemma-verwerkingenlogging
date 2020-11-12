@@ -16,7 +16,6 @@ Bij het ontwerp van de API-standaard is gebruik gemaakt van een aantal [brondocu
 
 Het [ontwerp](./ontwerp.md) van de API-standaard is gericht op het kunnen opstellen van een gegevensmodel en de benodigde API’s. Onderdeel van het ontwerp zijn: 
 - de gehanteerde [afkortingen en terminologie](../achtergronddocumentatie/ontwerp/terminologie.md)
-- de [requirements](../achtergronddocumentatie/ontwerp/requirements.md) die afkomstig zijn uit de [brondocumenten](../achtergronddocumentatie/ontwerp/brondocumenten.md)
 - [cases](../achtergronddocumentatie/ontwerp/ontwerpcases.md) die rond verwerkingenlogging zijn uitgeschreven 
 - [ontwerpbesluiten](../achtergronddocumentatie/ontwerp/ontwerpbesluiten.md) en [aanbevelingen](../achtergronddocumentatie/ontwerp/aanbevelingen.md) ten aanzien van implementatie
 - [openstaande vraagstukken](../achtergronddocumentatie/ontwerp/vraagstukken.md) waarover nog geen ontwerpbesluit is genomen 
