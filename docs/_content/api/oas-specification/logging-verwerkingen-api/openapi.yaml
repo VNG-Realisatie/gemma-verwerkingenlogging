@@ -29,7 +29,7 @@ paths:
             enum:
               - Persoon
           example: Persoon
-        - name: soortObjectID
+        - name: soortObjectId
           in: query
           description: Soort identificator waarmee het object geïdentificeerd wordt.
           required: true
@@ -38,7 +38,7 @@ paths:
             format: naam
             maxLength: 80
             example: BSN
-        - name: objectID
+        - name: objectId
           in: query
           description: Identificator van het object.
           required: true
@@ -1038,7 +1038,7 @@ components:
       type: object
       required:
         - url
-        - actieID
+        - actieId
         - vertrouwelijkheid
         - tijdstip
         - tijdstipRegistratie
@@ -1052,7 +1052,7 @@ components:
           minLength: 1
           readOnly: true
           example: "https://loggingapi.vng.cloud/api/v1/verwerkingsacties/7a22eb38-bca6-463f-9955-54ab040287cb"
-        actieID:
+        actieId:
           title: ID
           description: Identificator van de verwerkingsactie waar de persoon of het object bij betrokken is. Deze ID wordt automatisch aangemaakt door het log.
           type: string
@@ -1063,27 +1063,27 @@ components:
           title: Naam
           description: Naam van de verwerkingsactie.
           type: string
-          maxLength: 80
+          maxLength: 242
           example: Zoeken personen
         handelingNaam:
           title: Handeling naam
           description:  Naam van de handeling waar de verwerkingsactie onderdeel van is.
           type: string
-          maxLength: 80
+          maxLength: 242
           example: Intake
         verwerkingNaam:
           title: Verwerking naam
           description:  Naam van de verwerking waar de handeling een onderdeel van is.
           type: string
-          maxLength: 80
+          maxLength: 242
           example: Huwelijk
-        verwerkingID:
+        verwerkingId:
           title: Verwerking ID
           description: Identificator van de verwerking waar de handeling een onderdeel van is.
           type: string
           format: uuid
           example: "48086bf2-11b7-4603-9526-67d7c3bb6587"    
-        verwerkingsactiviteitURL:
+        verwerkingsactiviteitUrl:
           title: Verwerkingsactiviteit URL
           description: URL-referentie naar de verwerkingsactiviteit.
           type: string
@@ -1091,7 +1091,7 @@ components:
           maxLength: 1000
           minLength: 1
           example: "https://loggingapi.vng.cloud/api/v1/verwerkingsactiviteiten/5f0bef4c-f66f-4311-84a5-19e8bf359eaf"
-        verwerkingsactiviteitID:
+        verwerkingsactiviteitId:
           title: Verwerkingsactiviteit ID
           description: Identificator van de verwerkingsactiviteit die de verwerking rechtvaardigt.
           type: string
@@ -1117,38 +1117,55 @@ components:
           title: Uitvoerder
           description: Organisatie in OIN-formaat die de verwerking uitgevoerd heeft. Voor een beschrijving van het OIN-formaat Zie https://www.logius.nl/diensten/digikoppeling/documentatie in bijlage A van het document ‘Digikoppeling Identificatie en Authenticatie’.
           type: string
-          maxLength: 20
-          minLength: 20
+          pattern: '[0-9]{20}'
           example: "00000001821002193000"
         systeem:
           title: Systeem
           description: Het systeem dat de verwerkingsactie heeft uitgevoerd.
           type: string
-          maxLength: 80
+          maxLength: 242
           example: "FooBarApp v2.1"
         gebruiker:
           title: Gebruiker
           description: Identificator van de gebruiker die de verwerkingsactie heeft geïnitieerd.
           type: string
-          format: uuid
+          maxLength: 40
           example: "2ecf8e86-1a18-46ba-aa13-992c1dc231a5"
         gegevensbron:
           title: Gegevensbron
           description: Gegevensbron waarin de bij verwerkingsactie betrokken gegevens zijn opgeslagen.
           type: string
-          maxLength: 80
-          minLength: 1
+          maxLength: 242
           example: FooBar Database Publiekszaken
-        afnemer:
-          title: Afnemer
-          description: Bij levering van gegevens moet hier de identificator opgenomen worden van de organisatie die de gegevens ontvangt.
+        soortAfnemerId:
+          title: Soort afnemer ID
+          description: Soort identificator waarmee de afnemer geïdentificeerd wordt.
+          type: string
+          maxLength: 242
+          example: OIN
+        afnemerId:
+          title: Afnemer ID
+          description: Bij levering van gegevens moet hier de identificator opgenomen worden van de organisatie die de gegevens ontvangt. Het attribuut Soort afnemer ID) bepaalt wat voor soort identificator gebruikt wordt om de afnemer te identificeren. Op dit moment kan gekozen worden uit een OIN voor organisaties en een BSN voor natuurlijke personen.
           type: string
           format: OIN
-          maxLength: 20
-          minLength: 20
+          maxLength: 40
           example: "00000001821002193000"
-        verwerkingAfnemer:
-          title: Verwerking afnemer
+        verwerkingsactiviteitIdAfnemer:
+          title: Verwerkingsactiviteit ID Afnemer
+          description: Identificator van de verwerkingsactiviteit aan de kant van de afnemer. 
+          type: string
+          format: uuid
+          example: "c5b9f4e7-8c79-41b9-91e2-6268419cb167"
+        verwerkingsactiviteitUrlAfnemer:
+          title: Verwerkingsactiviteit URL
+          description: URL-referentie naar de verwerkingsactiviteit van de afnemer.
+          type: string
+          format: uri
+          maxLength: 1000
+          minLength: 1
+          example: "https://www.amsterdam.nl/var/api/v1/verwerkingsactiviteiten/5f0bef4c-f66f-4311-84a5-19e8bf359eaf"
+        verwerkingIdAfnemer:
+          title: Verwerking ID afnemer
           description: Identificator van de verwerking aan de kant van de afnemer.
           type: string
           format: uuid
@@ -1158,12 +1175,14 @@ components:
           description: Tijdstip waarop de verwerkingsactie is uitgevoerd.
           type: string
           format: date-time
+          example: '2024-04-05T14:35:42+01:00'
         tijdstipRegistratie:
           title: Tijdstip
           description: Tijdstip waarop de verwerkingsactie in het log is geregistreerd. Wordt bepaald door het log. Niet door het loggende systeem.
           type: string
           format: date-time
           readOnly: true
+          example: '2024-04-05T14:35:42+01:00'
         verwerkteObjecten:
           title: Verwerkte objecten
           type: array
@@ -1278,7 +1297,7 @@ components:
       type: object
       required: 
         - objecttype
-        - soortObjectID
+        - soortObjectId
         - objectID
       properties:
         objecttype: 
@@ -1287,24 +1306,24 @@ components:
           type: string
           enum:
             - Persoon
-        soortObjectID:
+        soortObjectId:
           title: Soort object ID
           description: Soort identificator waarmee het object geïdentificeerd wordt.
           type: string
-          maxLength: 80
+          maxLength: 242
           example: BSN
-        objectID:
+        objectId:
           title: Object ID
           description: Identificator van het object.
           type: string
           format: identificator
           maxLength: 40
-          example: "479580261"
+          example: "1234567"
         betrokkenheid:
           title: Betrokkenheid
           description: Geeft aan in welke hoedanigheid de persoon of het object betrokken was bij de verwerkingsactie.
           type: string
-          maxLength: 80
+          maxLength: 242
           example: Getuige
         verwerkteSoortenGegevens:
           title: Verwerkte soorten gegevens
@@ -1322,7 +1341,7 @@ components:
           title: Soort gegeven
           description: Soort gegeven dat verwerkt is.
           type: string
-          maxLength: 80
+          maxLength: 242
           example: "BSN"
     WijzigBewaartermijnVerwerking:
       title: Wijzig bewaartermijn van Verwerking
@@ -1331,7 +1350,7 @@ components:
         - verwerkingID
         - bewaartermijn
       properties:
-        verwerkingID:
+        verwerkingId:
           title: Verwerking ID
           description: Identificator van de verwerking waar de handeling een onderdeel van is.
           type: string
@@ -1351,7 +1370,7 @@ components:
         - verwerkingID
         - vertrouwelijkheid
       properties:
-        verwerkingID:
+        verwerkingId:
           title: Verwerking ID
           description: Identificator van de verwerking waar de handeling een onderdeel van is.
           type: string
