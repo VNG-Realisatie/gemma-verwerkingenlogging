@@ -1083,6 +1083,12 @@ components:
           type: string
           format: uuid
           example: "48086bf2-11b7-4603-9526-67d7c3bb6587"    
+        verwerkingsactiviteitId:
+          title: Verwerkingsactiviteit ID
+          description: Identificator van de verwerkingsactiviteit die de verwerking rechtvaardigt.
+          type: string
+          format: uuid
+          example: "5f0bef4c-f66f-4311-84a5-19e8bf359eaf"
         verwerkingsactiviteitUrl:
           title: Verwerkingsactiviteit URL
           description: URL-referentie naar de verwerkingsactiviteit.
@@ -1091,12 +1097,6 @@ components:
           maxLength: 1000
           minLength: 1
           example: "https://loggingapi.vng.cloud/api/v1/verwerkingsactiviteiten/5f0bef4c-f66f-4311-84a5-19e8bf359eaf"
-        verwerkingsactiviteitId:
-          title: Verwerkingsactiviteit ID
-          description: Identificator van de verwerkingsactiviteit die de verwerking rechtvaardigt.
-          type: string
-          format: uuid
-          example: "5f0bef4c-f66f-4311-84a5-19e8bf359eaf"
         vertrouwelijkheid:
           title: Vertrouwelijkheid
           description: Geeft de mate van vertrouwelijkheid van de verwerking aan.
