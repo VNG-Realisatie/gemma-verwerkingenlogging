@@ -3,6 +3,14 @@ title: "Voortgang ontwikkeling API-standaard voor logging van verwerkingen"
 name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ---
 
+## 16 november 2020
+OAS in overeenstemming gebracht met het informatiemodel en UGM. Onder andere:
+- Lengte van namen opgerekt van 80 naar 242.
+- Voor OIN een reguliere expressie toegevoegd conform gegevenswoordenboek
+- Her en der velden toegevoegd, aangepast of verwijderd om de API in overeenstemming te brengen met het informatiemodel
+- Her en der velden in andere volgorde gezet om API in overeenstemming te brengen met het informatiemodel
+- Her en der foutjes met camelCase opgelost.
+
 ## 11 november 2020
 Inhoudelijke aanpassingen:
 - [Verwerkingsactie](../gegevenswoordenboek/objecttypen/Verwerkingsactie.md).Afnemer was een OIN. Dit hebben we moeten omzetten naar een [Soort ID](../gegevenswoordenboek/attributen/Soort_afnemer_ID.md)/[ID](../gegevenswoordenboek/attributen/Afnemer_ID.md) constructie omdat de afnemer ook een natuurlijk persoon kan zijn (zie [case 2521](./ontwerp/artefacten/2521.md)). Dit raakt alle afbeeldingen van het gegevensmodel en de API waarin het attribuut afnemer voorkomt. Ook de tekst van besluit [B9330](./ontwerp/artefacten/9330.md) 'Opname van afnemer' is aangepast zodat deze weer aansluit bij de wijziging.
