@@ -31,10 +31,10 @@ Tekstuele aanpassingen:
 
 ## 1 november 2020
 - De resource `Actie` hernoemd naar `Verwerkingsactie`.
-- De attributen 'Actie.Id' en 'Actie.Naam' hernoemd naar 'Verwerkingsactie.ActieI'd en 'Verwerkingsactie.ActieNaam'.
-- Het attribuut 'Verwerkingsactie.VerwerkingsactiviteitUrl' toegevoegd.
-- Het attribuut 'Verwerkingsactie.VerwerkingsactiviteitIdAfnemer' en 'Verwerkingsactie.VerwerkingsactiviteitUrlAfnemer' toegevoegd.
-- De html header attributen uitgebreid met 'Verwerkingsactiviteit ID' en 'Verwerkingsactiviteit URL'.
+- De attributen `Actie.Id` en `Actie.Naam` hernoemd naar `Verwerkingsactie.ActieId` en `Verwerkingsactie.ActieNaam`.
+- Het attribuut `Verwerkingsactie.VerwerkingsactiviteitUrl` toegevoegd.
+- Het attribuut `Verwerkingsactie.VerwerkingsactiviteitIdAfnemer` en `Verwerkingsactie.VerwerkingsactiviteitUrlAfnemer` toegevoegd.
+- De html header attributen uitgebreid met `Verwerkingsactiviteit ID` en `Verwerkingsactiviteit URL`.
 
 ## 28 oktober 2020
 - Update van afbeeldingen van informatie- en gegevensmodel.
