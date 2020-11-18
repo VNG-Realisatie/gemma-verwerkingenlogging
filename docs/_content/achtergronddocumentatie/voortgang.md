@@ -3,6 +3,9 @@ title: "Voortgang ontwikkeling API-standaard voor logging van verwerkingen"
 name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ---
 
+## 18 november 2020
+- Verwerkingsactie.Vervallen verwijderd uit specificaties van opvragingsfuncties. Alle getourneerde verwerkignsacties zijn niet vervallen dus attribuut heeft geen meerwaarde. (OAS was al correct).
+
 ## 16 november 2020
 OAS in overeenstemming gebracht met het informatiemodel en UGM. Onder andere:
 - Lengte van namen opgerekt van 80 naar 242.
