@@ -59,7 +59,6 @@ In onderstaande cases is bijzondere aandacht besteed aan de bescherming van de p
 - [B2042: Pseudonimisering BSN](./ontwerp/artefacten/2042.md)
 - [B9207: Opname van Gebruiker](./ontwerp/artefacten/9207.md)
 - [B3908: Opname van Vertrouwelijkheid](./ontwerp/artefacten/3908.md)
-- [B8157: Opname van Verwerking ID en Verwerking afnemer](./ontwerp/artefacten/8157.md)
 - [B7972: Identificatie van personen bij privaatrechtelijke taken](./ontwerp/artefacten/7972.md)
 - [B7952: Verwerkingen loggen vanuit applicatie - Welke momenten en hoe vaak](./ontwerp/artefacten/7952.md)
 - [B9177: Meegeven van informatie t.b.v. verwerkingenlogging in API’s](./ontwerp/artefacten/9177.md)
