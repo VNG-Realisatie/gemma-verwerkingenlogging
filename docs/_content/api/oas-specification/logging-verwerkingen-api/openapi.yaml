@@ -20,6 +20,16 @@ paths:
       operationId: verwerkingsactie_list
       description: Door de juiste parameters mee te geven kun je zoeken naar de voor jouw relevante VERWERKINGSACTIEs.
       parameters:
+        - name: vertrouwelijkheid
+          in: query
+          description: Geeft de mate van vertrouwelijkheid van de verwerking aan.
+          schema:
+            type: string
+            enum:
+              - Normaal
+              - Vertrouwelijk
+              - Opgeheven
+          example: Normaal
         - name: objecttype
           in: query
           description: Soort object dat bij de verwerkingsactie betrokken is.
@@ -63,12 +73,12 @@ paths:
             type: string
             format: date-time
             example: "2020-11-24"
-        - name: beperkteSet
-          in: query
-          description: In geval van 'true' worden niet alle attributen teruggegeven. Bijvoorbeeld attributen zoals 'gebruiker', 'gegevensbron' en 'systeem'  zijn niet relevant voor burgers. In geval van 'false' worden alle velden teruggegeven in het resultaat.
-          schema:
-            type: boolean
-            default: true
+        # - name: beperkteSet
+        #   in: query
+        #   description: In geval van 'true' worden niet alle attributen teruggegeven. Bijvoorbeeld attributen zoals 'gebruiker', 'gegevensbron' en 'systeem'  zijn niet relevant voor burgers. In geval van 'false' worden alle velden teruggegeven in het resultaat.
+        #   schema:
+        #     type: boolean
+        #     default: true
       responses:
         '200':
           description: OK
@@ -222,7 +232,9 @@ paths:
                 $ref: '#/components/schemas/Fout'
       security: 
       - JWT-Claims:
-        - verwerkingsacties.lezen        
+        - read:restricted
+        - read:normal
+        - read:confidential
     post:
       tags:
         - REST calls
@@ -383,7 +395,8 @@ paths:
                 $ref: '#/components/schemas/Fout'
       security: 
       - JWT-Claims:
-        - verwerkingsacties.aanmaken 
+        - create:normal
+        - create:confidential
   /verwerkingsacties/{uuid}:
     put:
       tags:
@@ -552,7 +565,8 @@ paths:
                 $ref: '#/components/schemas/Fout'
       security: 
       - JWT-Claims:
-        - verwerkingsacties.bijwerken 
+        - update:normal
+        - update:confidential
     delete:
       tags:
         - REST calls
@@ -702,7 +716,8 @@ paths:
                 $ref: '#/components/schemas/Fout'
       security: 
       - JWT-Claims:
-        - verwerkingsacties.verwijderen 
+        - delete:normal 
+        - delete:confidential
     parameters:
     - name: uuid
       in: path
@@ -858,7 +873,8 @@ paths:
                 $ref: '#/components/schemas/Fout'
       security: 
       - JWT-Claims:
-        - verwerkingsacties.bijwerken 
+        - update:normal
+        - update:confidential
   /wijzigVertrouwelijkheidVerwerking:
     post:
       tags:
@@ -1005,7 +1021,8 @@ paths:
                 $ref: '#/components/schemas/Fout'
       security: 
       - JWT-Claims:
-        - verwerkingsacties.bijwerken 
+        - update:normal
+        - update:confidential
 components:
   requestBodies:
     Verwerkingsactie:
