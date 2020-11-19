@@ -54,7 +54,7 @@ In onderstaand tabel is de mapping van de verwerkingenlogging functies naar de A
 | [F0143: Opvragen Verwerkingsacties – Alle velden, vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/0143.md) | GET /verwerkingsacties?vertrouwelijkheid=Vertrouwelijk | `read:confidential` | REST |
 
 Opmerkingen:
-- De autorisatie-scopes zijn [hier](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/api/oas-specification/logging-verwerkingen-api/scopes.md) beschreven. Als de API call niet voldoet aan de scope dan zal een `HTTP 401 (Unauthorized)` worden teruggegeven.
+- De autorisatie-scopes zijn [hier](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/api/oas-specification/logging-verwerkingen-api/scopes.md) beschreven. Als de API call niet voldoet aan de scope dan zal een `HTTP 401 (Unauthorized)` foutmelding worden teruggegeven.
 - Vanwege het platslaan van het objecttype `Verwerking` in het objecttype `Verwerkingsactie` passen de verwerkingenlogging-functies F2969 en F4415 niet in het CRUD-model van REST en zijn deze functies als RPC-calls gespecificeerd.
 
 ## Gehanteerde standaarden
