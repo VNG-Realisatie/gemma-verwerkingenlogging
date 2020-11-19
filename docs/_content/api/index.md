@@ -47,7 +47,7 @@ In onderstaand tabel is de mapping van de verwerkingenlogging functies naar de A
 | [F8316: Wijzig Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/8316.md) | PUT /verwerkingsacties/{uuid} | REST | `update:normal` |
 | [F3835: Wijzig Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/3835.md) 	| PUT /verwerkingsacties/{uuid}| REST | `update:confidential` |
 | [F9906: Verwijder Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/9906.md) | DELETE /verwerkingsacties/{uuid} | REST | `delete:normal` |
-| [F2265: Verwijder Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/2265.md) | DELETE /verwerkingsacties/{uuid} | `delete:confidential` |
+| [F2265: Verwijder Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/2265.md) | DELETE /verwerkingsacties/{uuid} | REST | `delete:confidential` |
 | [F4086: Opvragen Verwerkingsacties – Beperkte set velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/4086.md) | GET /verwerkingsacties?vertrouwelijkheid=Normaal | REST | `read:restricted` |
 | [F2525: Opvragen Verwerkingsacties – Beperkte set velden, vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp//artefacten/2525.md) | GET /verwerkingsacties?vertrouwelijkheid=Opgeheven | REST | `read:confidential` |
 | [F9787: Opvragen Verwerkingsacties – Alle velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/9787.md)	| GET /verwerkingsacties| REST | `read:normal` |
