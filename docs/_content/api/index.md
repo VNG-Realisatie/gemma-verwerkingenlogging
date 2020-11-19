@@ -38,7 +38,7 @@ API specificatie (OAS3) in
 
 In onderstaand tabel is de mapping van de verwerkingenlogging functies naar de API-calls weergegeven.
 
-| Verwerkingenlogging functie | API call      | Stijl | Autorisatie-scope |
+| Verwerkingenlogging functie | API call  | Autorisatie-scope | Stijl |
 | :-----------      | :-----------  | :----------    | :---------- |
 | [F7446: Log Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/7446.md)    | POST /verwerkingsacties  | `create:normal`| REST |
 | [F6624: Log Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/6624.md)	| POST /verwerkingsacties| `create:confidential` | REST |
