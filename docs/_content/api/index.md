@@ -40,18 +40,18 @@ In onderstaand tabel is de mapping van de verwerkingenlogging functies naar de A
 
 | Verwerkingenlogging functie | API call      | Stijl | Autorisatie-scope |
 | :-----------      | :-----------  | :----------    | :---------- |
-| [F7446: Log Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/7446.md)    | POST /verwerkingsacties  | REST  | `create:normal`|
-| [F6624: Log Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/6624.md)	| POST /verwerkingsacties| REST | `create:confidential`|
-| [F2969: Wijzig vertrouwelijkheid van Verwerking](../achtergronddocumentatie/ontwerp//artefacten/2969.md) | POST /wijzigVertrouwelijkheidVerwerking | RPC | `update:confidential` |
-| [F4415: Wijzig bewaartermijn van Verwerking](../achtergronddocumentatie/ontwerp//artefacten/4415.md) | POST /wijzigBewaartermijnVerwerking | RPC | `update:normal` |
-| [F8316: Wijzig Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/8316.md) | PUT /verwerkingsacties/{uuid} | REST | `update:normal` |
-| [F3835: Wijzig Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/3835.md) 	| PUT /verwerkingsacties/{uuid}| REST | `update:confidential` |
-| [F9906: Verwijder Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/9906.md) | DELETE /verwerkingsacties/{uuid} | REST | `delete:normal` |
-| [F2265: Verwijder Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/2265.md) | DELETE /verwerkingsacties/{uuid} | REST | `delete:confidential` |
-| [F4086: Opvragen Verwerkingsacties – Beperkte set velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/4086.md) | GET /verwerkingsacties?vertrouwelijkheid=Normaal | REST | `read:restricted` |
-| [F2525: Opvragen Verwerkingsacties – Beperkte set velden, vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp//artefacten/2525.md) | GET /verwerkingsacties?vertrouwelijkheid=Opgeheven | REST | `read:confidential` |
-| [F9787: Opvragen Verwerkingsacties – Alle velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/9787.md)	| GET /verwerkingsacties| REST | `read:normal` |
-| [F0143: Opvragen Verwerkingsacties – Alle velden, vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/0143.md) | GET /verwerkingsacties?vertrouwelijkheid=Vertrouwelijk | REST | `read:confidential` |
+| [F7446: Log Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/7446.md)    | POST /verwerkingsacties  | `create:normal`| REST |
+| [F6624: Log Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/6624.md)	| POST /verwerkingsacties| `create:confidential` | REST |
+| [F2969: Wijzig vertrouwelijkheid van Verwerking](../achtergronddocumentatie/ontwerp//artefacten/2969.md) | POST /wijzigVertrouwelijkheidVerwerking | `update:confidential` | RPC |
+| [F4415: Wijzig bewaartermijn van Verwerking](../achtergronddocumentatie/ontwerp//artefacten/4415.md) | POST /wijzigBewaartermijnVerwerking | `update:normal` | RPC |
+| [F8316: Wijzig Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/8316.md) | PUT /verwerkingsacties/{uuid} | `update:normal` | REST |
+| [F3835: Wijzig Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/3835.md) 	| PUT /verwerkingsacties/{uuid}| `update:confidential` | REST |
+| [F9906: Verwijder Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/9906.md) | DELETE /verwerkingsacties/{uuid} | `delete:normal` | REST |
+| [F2265: Verwijder Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/2265.md) | DELETE /verwerkingsacties/{uuid} | `delete:confidential` | REST |
+| [F4086: Opvragen Verwerkingsacties – Beperkte set velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/4086.md) | GET /verwerkingsacties?vertrouwelijkheid=Normaal | `read:restricted` | REST |
+| [F2525: Opvragen Verwerkingsacties – Beperkte set velden, vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp//artefacten/2525.md) | GET /verwerkingsacties?vertrouwelijkheid=Opgeheven | `read:confidential` | REST |
+| [F9787: Opvragen Verwerkingsacties – Alle velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/9787.md)	| GET /verwerkingsacties| `read:normal` | REST |
+| [F0143: Opvragen Verwerkingsacties – Alle velden, vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/0143.md) | GET /verwerkingsacties?vertrouwelijkheid=Vertrouwelijk | `read:confidential` | REST |
 
 Opmerkingen:
 - Vanwege het platslaan van het objecttype `Verwerking` in het objecttype `Verwerkingsactie` passen de verwerkingenlogging-functies F2969 en F4415 niet in het CRUD-model van REST en zijn deze functies als RPC-calls gespecificeerd.
