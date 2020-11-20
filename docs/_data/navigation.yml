@@ -1,5 +1,5 @@
-- name: Index
-  link: /overige/siteindex
+- name: Productvisie
+  link: /quickstart/
   weight: 10
 - name: Productvisie
   link: /productvisie/
@@ -22,4 +22,7 @@
 - name: Contact
   link: /contact/
   weight: 80
+  - name: Index
+  link: /overige/siteindex
+  weight: 90
 
