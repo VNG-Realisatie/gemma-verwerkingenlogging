@@ -1,6 +1,6 @@
 ---
-title: "Quickstart Verwerkingenlogging API-standaard"
-name: Quickstart
+title: "Quick start gids"
+name: Quickstart gids
 ---
 
-## Quickstart
+## ...
