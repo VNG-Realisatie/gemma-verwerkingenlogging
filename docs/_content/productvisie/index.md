@@ -19,6 +19,8 @@ Door een API-standaard te ontwikkelen vanuit VNG Realisatie wordt voorkomen dat 
 ## Voor wie wordt de API-standaard ontwikkeld?
 De API-standaard wordt ontwikkeld voor partijen die informatiesystemen ontwikkelen die door gemeenten en gemeentelijke samenwerkingen worden gebruikt. Deze partijen kunnen de API-standaard implementeren in hun informatiesystemen om zodoende op een compliant manier verwerkingenlogging te kunnen vastleggen en ontsluiten. De API-standaard is zowel op bestaande als nieuwe informatiesystemen gericht. Initieel ligt de focus van de API-standaard op het faciliteren van de vastlegging en ontsluiting van verwerkingen van persoonsgegevens. Op een later moment wordt de standaard uitgebreidt naar voor vastlegging en ontsluiting van gegevens van andere objecten. 
 
+Hoewel deze API-standaard primair ontwikkeld is voor gebruik door gemeenten en hun softwareleveranciers is de standaard ook toepasbaar binnen andere delen van de overheid. De standaard bevat namelijk geen gemeente-specifieke elementen. 
+
 ## Wordt de API-standaard verplicht?
 De API-standaard is toepasbaar voor alle informatiesystemen die gegevens van objecten verwerken. Voor informatiesystemen die geen persoonsgegevens maar wel gegevens van andere soorten objecten verwerken is implementatie optioneel. Voor systemen die wel persoonsgegevens verwerken is de API-standaard aanbevolen.
 
