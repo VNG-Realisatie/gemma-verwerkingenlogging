@@ -1,9 +1,9 @@
-- name: Quickstart gids
-  link: /quickstart/
-  weight: 10
 - name: Productvisie
   link: /productvisie/
-  weight: 20
+  weight: 10
+- name: Quickstart gids
+  link: /quickstart/
+  weight: 20  
 - name: Architectuur
   link: /architectuur/
   weight: 30
