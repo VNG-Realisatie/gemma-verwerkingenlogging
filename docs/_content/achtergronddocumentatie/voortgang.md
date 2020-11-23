@@ -6,7 +6,7 @@ name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ## 23 november 2020
 Autorisaties (scopes) toegevoegd aan de Verwerkingsacties API zodat alle logging-functies gemapped kunnen worden op de API calls.
 - Beschrijvingen van de [scopes](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/api/oas-specification/logging-verwerkingen-api/scopes.md) toegevoegd.
-- Resources in de OAS-specificatie uitgebreid met de juiste scopes.
+- Resources in de [OAS-specificatie](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml#operation/verwerkingsactie_list) uitgebreid met de juiste scopes.
 - [Mapping-tabel](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/api/index.md#oas-specificaties) uitgebreid met een extra kolom voor de scopes zodat alle logging-functies gemapped kunnen worden.
 
 
