@@ -53,7 +53,7 @@ Een beknopt overzicht van de kenmerken van de twee varianten:
 
 <img src="./_assets/Tabel_Centraal_vs_Federatief.png" alt="Tabel centraal versus federatief verwerkingenlog" width="700"/>
 
-Zie voor meer informatie over de verschillende architecturen <verwijzing naar architectuur opnemen>.
+Zie de [architectuurdocumentatie]<../architectuur/index.md> voor meer informatie over de verschillende architecturen.
 
 Het wordt aanbevolen om:
 •	Een bewuste keuze te maken voor een centraal of federatief verwerkingenlog.
