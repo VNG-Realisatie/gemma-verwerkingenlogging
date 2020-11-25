@@ -56,11 +56,11 @@ Een beknopt overzicht van de kenmerken van de twee varianten:
 Zie de [architectuurdocumentatie](../architectuur/index.md) voor meer informatie over de verschillende architecturen.
 
 Het wordt aanbevolen om:
-•	Een bewuste keuze te maken voor een centraal of federatief verwerkingenlog.
-•	Een bewuste keuze te maken voor één of meerdere leveranciers. Merk op dat er ook bij een federatief verwerkingenlog sprake kan zijn van één leverancier.
-•	Een verwerkingenlog te kiezen/realiseren dat de Logging API volledig ondersteunt.
-•	Overleg te hebben met leveranciers hoe gemeente en leveranciers samen de transitie maken van de huidige situatie naar de gewenste. Zie in dit kader ook de gedachten rond <de Logging Maturity Levels>.
-•	In toekomstige aanbestedingen eisen en wensen op te nemen inzake logging van verwerkingen. <tzt linkje naar aanbevelingen>
+* Een bewuste keuze te maken voor een centraal of federatief verwerkingenlog.
+* Een bewuste keuze te maken voor één of meerdere leveranciers. Merk op dat er ook bij een federatief verwerkingenlog sprake kan zijn van één leverancier.
+* Een verwerkingenlog te kiezen/realiseren dat de Logging API volledig ondersteunt.
+* Overleg te hebben met leveranciers hoe gemeente en leveranciers samen de transitie maken van de huidige situatie naar de gewenste. Zie in dit kader ook de gedachten rond <de Logging Maturity Levels>.
+* In toekomstige aanbestedingen eisen en wensen op te nemen inzake logging van verwerkingen.
 
 Zonder een bewuste keuze en een transitieplan ontstaat er waarschijnlijk vanzelf een situatie waarin er binnen de gemeente meerdere verschillende soorten verwerkingenlogs aanwezig zullen zijn. Leveranciers die dat kunnen, gebruiken dan hun eigen verwerkingenlog om te zorgen dat hun applicaties kunnen functioneren. De gemeente heeft in dat geval mogelijk geen eisen kunnen stellen aan de manier waarop deze applicaties loggen en/of de werking en inrichting van het impliciet geleverde verwerkingslog.
 
