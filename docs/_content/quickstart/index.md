@@ -22,6 +22,8 @@ Deze Quick Start Guide is geschreven voor iedereen die te maken krijgt met loggi
 
 * [Minimale logging van verwerkingen](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Minimale-logging-van-verwerkingen)
 
+* [Volledige logging van verwerking](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Volledige-logging-van-verwerkingen).
+
 
 ## Gemeentelijke voorzieningen
 
@@ -215,7 +217,7 @@ Er zijn echter gevallen waarin we het log toch zullen moeten wijzigen:
 1.	Het wijzigen van de vertrouwelijkheid van een verwerking. Bijvoorbeeld omdat deze wordt opgeheven. Zie hiervoor de [functie F2969: Wijzig vertrouwelijkheid van verwerking](../achtergronddocumentatie/ontwerp/artefacten/2969.md).
 2.	Het wijzigen van de bewaartermijn van een verwerking. Bijvoorbeeld omdat deze pas op een later moment bepaald kan worden. Zie hiervoor de [functie F4415: Wijzig bewaartermijn van verwerking](../achtergronddocumentatie/ontwerp/artefacten/4415.md).
 
-Deze eisen lijken tegenstrijdig maar zijn dat gelukkig niet. Het immutable zijn gaat over de techniek; namelijk over de opslag van de loggegevens. De tweede eis gaat over de betekenis die de informatie in het log heeft. In [ontwerpbesluite B3891: Wijzigbaarheid en historie](../achtergronddocumentatie/ontwerp/artefacten/3891.md) staat beschreven hoe deze eisen samen kunnen komen.
+Deze eisen lijken tegenstrijdig maar zijn dat gelukkig niet. Het immutable zijn gaat over de techniek; namelijk over de opslag van de loggegevens. De tweede eis gaat over de betekenis die de informatie in het log heeft. In [ontwerpbesluit B3891: Wijzigbaarheid en historie](../achtergronddocumentatie/ontwerp/artefacten/3891.md) staat beschreven hoe deze eisen samen kunnen komen.
 
 De vertrouwelijkheid en de bewaartermijn worden beiden gezien als eigenschappen van de Verwerking en niet als eigenschappen van de Handeling of Actie. Bij een fraude onderzoek is dus het hele onderzoek (de verwerking) vertrouwelijk en niet alleen een stap in dat onderzoek (de handeling) of een specifieke technische operatie (de actie).
 
@@ -231,7 +233,7 @@ Tot slot voorziet de API nog in een generieke wijzigingsfunctie. Deze functie ka
 
 Om de aanpasbaarheid in een keten te visualiseren gebruiken we opnieuw het fraude onderzoek. We beginnen met het opvragen van gegevens bij een basisregistratie:
 
- 
+<img src="./_assets/Maximaal_1.png" alt="Voorbeeld vertrouwelijke verwerking in keten (1 van 3)" width="700"/>
 
 Zowel de afnemer als de aanbieder loggen. Om te zorgen dat we later de vertrouwelijkheid van de onderzoek kunnen laten vervallen zijn er twee dingen nodig.
 
@@ -239,68 +241,34 @@ Zowel de afnemer als de aanbieder loggen. Om te zorgen dat we later de vertrouwe
 
 Hieronder wordt opnieuw de html header getoond met daarin als extra veld het Verwerking ID.
 
-Html header velden	
-     OIN	Voert de gemeente het initiërende proces zelf uit, dan bevat dit veld het OIN van de gemeente. Heeft de gemeente de uitvoering belegd bij een derde dan bevat dit veld het OIN van de uitvoerder.
-Voorbeeld: 00000099123456780000
-     Verwerkingsactiviteit ID	UUID waarmee de verwerkingsactiviteit van de afnemer geïdentificeerd kan worden.
-Voorbeeld: 5f0bef4c-f66f-4311-84a5-19e8bf359eaf
-     Verwerkingsactiviteit Url	URI waarmee de verwerkingsactiviteit-resource van de afnemer benaderd kan worden.
-Voorbeeld: https://...
-*   Verwerking ID	Vertrouwelijkheid van de verwerking.
-Voorbeeld: 89aa7a9a-1f79-44de-b32e-8e38e07138f3
-     Vertrouwelijkheid	Vertrouwelijkheid van de verwerking.
-Voorbeeld: Vertrouwelijk
-     Bewaartermijn	Bewaartermijn van de informatie die gelogd wordt over de verwerking.
+<img src="./_assets/Maximaal_Html_Header.png" alt="Informatie mee te geven in html header" width="700"/>
 
-De aanbieder zou dit extra veld op moeten slaan in het attribuut Verwerking ID afnemer. In het voorbeeld tonen we naast het ID van de verwerkingsactiviteit van de aanbieder alleen de attributen waar de informatie uit de html header in terecht komt. Zo voor meer attributen het voorbeeld dat gegevens in bij <minimale logging>.
+De aanbieder zou dit extra veld op moeten slaan in het attribuut Verwerking ID afnemer. In het voorbeeld tonen we naast het ID van de verwerkingsactiviteit van de aanbieder alleen de attributen waar de informatie uit de html header in terecht komt. Zie voor meer attributen het voorbeeld dat gegevens in bij de [minimale logging van verwerkingen](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Minimale-logging-van-verwerkingen).
+<minimale logging>.
 
-Verwerkingsactie	
-     Verwerkingsactiviteit ID	UUID van de verwerkingsactiviteit uit het verwerkingsactiviteitenregister.
-Dit is de verwerkingsactiviteit van de aanbieder. Niet die van de afnemer. In het voorbeeld is dit dus bijvoorbeeld ‘Verstrekking van gegevens’ en niet ‘Fraude onderzoeken Sociale Zaken’.
-Voorbeeld: c63bc08f-071d-4dff-aaff-c40525ca4244
-     ...	…
-*   Vertrouwelijkheid	Vertrouwelijkheid van de verwerking.
-Voorbeeld: Normaal
-Overgenomen uit de html header die door de afnemer verstrekt is.
-*   Bewaartermijn	Bewaartermijn van de verwerkingsactie in jaren.
-Voorbeeld: 150
-Overgenomen uit de html header die door de afnemer verstrekt is.
-*   Soort afnemer ID	Soort identificator waarmee de afnemer geïdentificeerd wordt.
-Voorbeeld: OIN
-*   Afnemer ID	Bij levering van gegevens moet hier de identificator opgenomen worden van de organisatie die de gegevens ontvangt. Het attribuut Soort afnemer ID) bepaalt wat voor soort identificator gebruikt wordt om de afnemer te identificeren. Op dit moment kan gekozen worden uit een OIN voor organisaties en een BSN voor natuurlijke personen.
-Voorbeeld: 00000099123456780000
-Overgenomen uit de html header die door de afnemer verstrekt is.
-*   Verwerkingsactiviteit ID
-     afnemer	Identificator van de verwerkingsactiviteit aan de kant van de afnemer.
-Voorbeeld: 5f0bef4c-f66f-4311-84a5-19e8bf359eaf
-Overgenomen uit de html header die door de afnemer verstrekt is.
-*   Verwerkingsactiviteit URL
-     afnemer	Identificator van de verwerkingsactiviteit aan de kant van de afnemer.
-Voorbeeld: https://...
-Overgenomen uit de html header die door de afnemer verstrekt is.
-*   Verwerking ID afnemer	Identificator van de verwerking aan de kant van de afnemer.
-Voorbeeld: 89aa7a9a-1f79-44de-b32e-8e38e07138f3
-Overgenomen uit de html header die door de afnemer verstrekt is.
-          ...	
+<img src="./_assets/Maximaal_Provider.png" alt="Maximale logging door provider" width="700"/>
 
 2.	We moeten onthouden dat we gegevens bij de basisregistratie hebben opgevraagd.
 
 Hierbij zijn meerdere opties denkbaar:
-	Bij ieder fraude onderzoek wordt precies bijgehouden welke externe partijen benaderd zijn.
-	In de applicatie is geconfigureerd welke partijen normaal gesproken benaderd worden bij een dergelijk onderzoek.
+* Bij ieder fraude onderzoek wordt precies bijgehouden welke externe partijen benaderd zijn.
+* In de applicatie is geconfigureerd welke partijen normaal gesproken benaderd worden bij een dergelijk onderzoek.
 
 We vervolgen het onderzoek met het opvragen van contactgegevens van de betrokkene uit het gegevensmagazijn van de gemeente:
 
- 
+<img src="./_assets/Maximaal_2.png" alt="Voorbeeld vertrouwelijke verwerking in keten (2 van 3)" width="700"/>
 
 Ook nu geven we het Verwerking ID mee in de html header zodat dit ID opgeslagen kan worden door de aanbieder.
 
-
 Als we ons even beperken tot deze twee externe aanroepen ontstaat uiteindelijk het volgende beeld:
+
+<img src="./_assets/Maximaal_3.png" alt="Voorbeeld vertrouwelijke verwerking in keten (3 van 3)" width="700"/>
 
 In het verwerkingenlog van de gemeente treffen we de verwerkingen aan van Applicatie Sociale zaken (Nummer 1 en 3). Overigens zal deze applicatie ongetwijfeld nog meer verwerkingen gelogd hebben waarbij er alleen binnen de applicatie persoonsgegevens verwerkt werden. Daarnaast treffen we de verwerkingen aan van het gegevensmagazijn (4).
 De verwerking die uitgevoerd is door de basisregistratie is alleen te vinden in het verwerkingenlog van de basisregistratie (2).
+
 Als we de vertrouwelijkheid van de verwerking vervalt zullen we dit dus zowel kenbaar moeten maken bij het verwerkingenlog van de gemeente en bij de afnemer. Omdat we binnen de gemeente via deze specificatie afspraken hebben gemaakt over logging van verwerkingen ondersteunt het verwerkingenlog van iedere gemeente het wijzigen van de vertrouwelijkheid.
+
 Helaas geldt dit niet voor de basisregistratie. Daarvoor is een standaard nodig die binnen de hele overheid van toepassing is. Zolang deze er niet is weten we niet zeker of de basisregistratie de gegevens uit de html header opgeslagen heeft (waaronder de vertrouwelijkheid zelf!) en of we hieraan kunnen refereren op het moment dat we een (niet gestandaardiseerd) verzoek doen om de vertrouwelijkheid te laten vervallen.
 
 
