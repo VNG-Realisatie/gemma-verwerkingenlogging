@@ -1,7 +1,7 @@
 - name: Productvisie
   link: /productvisie/
   weight: 10
-- name: Quick Start Gids
+- name: Quick Start Guide
   link: /quickstart/
   weight: 20  
 - name: Architectuur
