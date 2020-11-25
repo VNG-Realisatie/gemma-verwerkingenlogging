@@ -212,22 +212,22 @@ Met al deze extra informatie komt een volledige verwerkingsactiviteit er bijvoor
 Over de inhoud van een verwerkingenlog mag geen twijfel bestaan. We willen daarom dat iets dat in het verwerkingenlog is opgeslagen niet gewijzigd kan worden (het verwerkingenlog is immutable). 
 
 Er zijn echter gevallen waarin we het log toch zullen moeten wijzigen:
-1.	Het wijzigen van de vertrouwelijkheid van een verwerking. Bijvoorbeeld omdat deze wordt opgeheven. Zie hiervoor <F2969 Wijzig vertrouwelijkheid van verwerking>.
-2.	Het wijzigen van de bewaartermijn van een verwerking. Bijvoorbeeld omdat deze pas op een later moment bepaald kan worden. Zie hiervoor <F4415 Wijzig bewaartermijn van verwerking>.
+1.	Het wijzigen van de vertrouwelijkheid van een verwerking. Bijvoorbeeld omdat deze wordt opgeheven. Zie hiervoor de [functie F2969: Wijzig vertrouwelijkheid van verwerking](../achtergronddocumentatie/ontwerp/artefacten/2969.md).
+2.	Het wijzigen van de bewaartermijn van een verwerking. Bijvoorbeeld omdat deze pas op een later moment bepaald kan worden. Zie hiervoor de [functie F4415: Wijzig bewaartermijn van verwerking](../achtergronddocumentatie/ontwerp/artefacten/4415.md).
 
-Deze eisen lijken tegenstrijdig maar zijn dat gelukkig niet. Het immutable zijn gaat over de techniek; namelijk over de opslag van de loggegevens. De tweede eis gaat over de betekenis die de informatie in het log heeft. In B3891 Wijzigbaarheid en historie staat beschreven hoe deze eisen samen kunnen komen.
+Deze eisen lijken tegenstrijdig maar zijn dat gelukkig niet. Het immutable zijn gaat over de techniek; namelijk over de opslag van de loggegevens. De tweede eis gaat over de betekenis die de informatie in het log heeft. In [ontwerpbesluite B3891: Wijzigbaarheid en historie](../achtergronddocumentatie/ontwerp/artefacten/3891.md) staat beschreven hoe deze eisen samen kunnen komen.
 
 De vertrouwelijkheid en de bewaartermijn worden beiden gezien als eigenschappen van de Verwerking en niet als eigenschappen van de Handeling of Actie. Bij een fraude onderzoek is dus het hele onderzoek (de verwerking) vertrouwelijk en niet alleen een stap in dat onderzoek (de handeling) of een specifieke technische operatie (de actie).
 
 N.B. Er zijn uitzonderingen te bedenken waarin alleen een bepaalde stap in de verwerking vertrouwelijk is. In dat geval moet ofwel de hele verwerking vertrouwelijk worden of moet een aparte verwerking uitgevoerd worden voor deze stap.
 
-Dit maakt het mogelijk om bij een verwerkingenlog met één enkele functie de vertrouwelijkheid of bewaartermijn van alle Verwerkingsacties die horen bij dezelfde Verwerking te wijzigen. Dit kan met de functies <F2969 Wijzig vertrouwelijkheid van verwerking> en <F4415 Wijzig bewaartermijn van verwerking>. Logischerwijze vragen deze functies dan ook een Verwerking ID en niet om een Actie ID. Uiteraard moeten de Verwerkingsacties dan wel bij het loggen van een Verwerking ID voorzien worden.
+Dit maakt het mogelijk om bij een verwerkingenlog met één enkele functie de vertrouwelijkheid of bewaartermijn van alle Verwerkingsacties die horen bij dezelfde Verwerking te wijzigen. Dit kan met de functies [F2969: Wijzig vertrouwelijkheid van verwerking](../achtergronddocumentatie/ontwerp/artefacten/2969.md) en [F4415: Wijzig bewaartermijn van verwerking](../achtergronddocumentatie/ontwerp/artefacten/4415.md). Logischerwijze vragen deze functies dan ook een Verwerking ID en niet om een Actie ID. Uiteraard moeten de Verwerkingsacties dan wel al bij het loggen van een Verwerking ID voorzien worden.
 
 Bij het fraudeonderzoek zou het Verwerking ID het ID van de onderzoekszaak kunnen zijn. Let wel op dat dit een UUID is. Als verzoeken of zaken (nog) niet met een UUID geïdentificeerd worden, zorg dan dat het Verwerking ID als apart attribuut bij de zaak opgeslagen wordt.
 
-Tot slot voorziet de API nog in een generieke wijzigingsfunctie. Deze functie kan ingezet worden op het moment dat er bijvoorbeeld foutief gelogd is als gevolg van een bug in een bepaalde applicatie. Deze functie werkt wel op niveau van de Actie en vraagt dus om een Actie ID. Zie hiervoor <F8316> en <F3835>.
+Tot slot voorziet de API nog in een generieke wijzigingsfunctie. Deze functie kan ingezet worden op het moment dat er bijvoorbeeld foutief gelogd is als gevolg van een bug in een bepaalde applicatie. Deze functie werkt wel op niveau van de Actie en vraagt dus om een Actie ID. Zie hiervoor [F8316: Wijzig Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/8316.md) en [F3835: Wijzig Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/3835.md).
 
-Aanpasbaarheid in een keten
+#### Aanpasbaarheid in een keten
 
 Om de aanpasbaarheid in een keten te visualiseren gebruiken we opnieuw het fraude onderzoek. We beginnen met het opvragen van gegevens bij een basisregistratie:
 
