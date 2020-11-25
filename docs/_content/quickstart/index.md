@@ -11,13 +11,12 @@ Deze Quick Start Guide is geschreven voor iedereen die te maken krijgt met loggi
 
 ## Inhoudsopgave
 
-[Gemeentelijke voorzieningen](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Gemeentelijke-voorzieningen)
-
-    [Voorbereiden Gemeentelijk Verwerkingsactiviteitenregister (VAR)](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Voorbereiden-Gemeentelijk-Verwerkingsactiviteitenregister-(VAR))
+Gemeentelijke voorzieningen
+[Voorbereiden Gemeentelijk Verwerkingsactiviteitenregister (VAR)](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Voorbereiden-Gemeentelijk-Verwerkingsactiviteitenregister-(VAR))
     
-    [Voorbereiden Gemeentelijk Verwerkingenlog]
+[Voorbereiden Gemeentelijk Verwerkingenlog]
     
-[Implementatie van de Logging API](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Implementatie-van-de-Logging-API)
+Implementatie van de Logging API
 
 ## Gemeentelijke voorzieningen
 
