@@ -83,7 +83,6 @@ Hieronder wordt beknopt beschreven wat geregeld moet worden om de Logging API te
 Bij de meest minimale manier van logging ontstaat een verwerkingenlog met bijzonder weinig informatie. De inhoud hiervan zal veel vragen oproepen bij burgers maar ook bij gemeentelijke medewerkers en ontwikkelaars. Het is dan ook de vraag of het verwerkingenlog in deze meest minimale vorm voldoet aan de geest van de AVG.
 
 De minimale manier van loggen is niet geschikt voor het loggen van vertrouwelijke verwerkingen of voor verwerkingen waarbij op voorhand de bewaartermijn niet vastgesteld kan worden. 
-
 Zie voor dit soort verwerkingen de meest volledige vorm en de toelichting daarbij.
 Vanuit het principe ‘beter iets dan niets loggen’ is besloten om de minimale vorm toch aan te bieden.
 
