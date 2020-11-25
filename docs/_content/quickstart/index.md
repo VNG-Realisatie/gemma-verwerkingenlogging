@@ -11,15 +11,21 @@ Deze Quick Start Guide is geschreven voor iedereen die te maken krijgt met loggi
 
 ## Inhoudsopgave
 
-[Gemeentelijke voorzieningen](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Gemeentelijke-voorzieningen)
+#### Gemeentelijke voorzieningen
 
-[Implementatie van de Logging API](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Implementatie-van-de-Logging-API)
+[Voorbereiden Gemeentelijk Verwerkingsactiviteitenregister](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Voorbereiden-Gemeentelijk-Verwerkingsactiviteitenregister)
+
+[Voorbereiden Gemeentelijk Verwerkingenlog](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Voorbereiden-Gemeentelijk-Verwerkingenlog)
+
+#### Implementatie van de Logging API
+
+
 
 ## Gemeentelijke voorzieningen
 
 Hieronder wordt beknopt beschreven welke zaken een gemeente minimaal moet regelen om in de informatievoorziening te kunnen starten met het loggen van verwerkingen op basis van de door VNG Realisatie gestandaardiseerde Verwerkingenlogging API.
 
-### Voorbereiden Gemeentelijk Verwerkingsactiviteitenregister (VAR)
+### Voorbereiden Gemeentelijk Verwerkingsactiviteitenregister
 
 Aanname is dat de gemeente beschikt over een verwerkingsactiviteitenregister (VAR). In dit register zullen alle verwerkingsactiviteiten voorzien moeten worden van een wereldwijd uniek nummer, een zogenaamde ‘Universal Unique Identifier’ afgekort UUID.
 
