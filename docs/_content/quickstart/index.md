@@ -11,7 +11,7 @@ Deze Quick Start Guide is geschreven voor iedereen die te maken krijgt met loggi
 
 ## Inhoudsopgave
 
-#### [Gemeentelijke voorzieningen](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Gemeentelijke-voorzieningen)
+[Gemeentelijke voorzieningen](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Gemeentelijke-voorzieningen)
 
 [Implementatie van de Logging API](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Implementatie-van-de-Logging-API)
 
@@ -68,17 +68,22 @@ Zonder een bewuste keuze en een transitieplan ontstaat er waarschijnlijk vanzelf
 ## Implementatie van de Logging API
 
 Hieronder wordt beknopt beschreven wat geregeld moet worden om de Logging API te implementeren. Eerst wordt de meest minimale vorm van logging beschreven, vervolgens de meest volledige vorm.
+
 Bij de meest minimale manier van logging ontstaat een verwerkingenlog met bijzonder weinig informatie. De inhoud hiervan zal veel vragen oproepen bij burgers maar ook bij gemeentelijke medewerkers en ontwikkelaars. Het is dan ook de vraag of het verwerkingenlog in deze meest minimale vorm voldoet aan de geest van de AVG.
-De minimale manier van loggen is niet geschikt voor het loggen van vertrouwelijke verwerkingen of voor verwerkingen waarbij op voorhand de bewaartermijn niet vastgesteld kan worden. Zie voor dit soort verwerkingen de meest volledige vorm en de toelichting daarbij.
+
+De minimale manier van loggen is niet geschikt voor het loggen van vertrouwelijke verwerkingen of voor verwerkingen waarbij op voorhand de bewaartermijn niet vastgesteld kan worden. 
+
+Zie voor dit soort verwerkingen de meest volledige vorm en de toelichting daarbij.
 Vanuit het principe ‘beter iets dan niets loggen’ is besloten om de minimale vorm toch aan te bieden.
 
-Minimale logging van verwerkingen
+### Minimale logging van verwerkingen
 
-Minimale logging vanuit een initiërend proces (bijv. een gebruikersapplicatie)
+#### Minimale logging vanuit een initiërend proces (bijv. een gebruikersapplicatie)
 
 Een initiërend proces is vaak een gebruikersapplicatie waarin een gebruiker een bepaalde verwerking initieert. Ook systemen kunnen verwerkingen initiëren; bijvoorbeeld op basis van vooraf ingestelde triggers.
 
-Het systeem logt de verwerking door met behulp van de Logging API een verwerkingsactie aan te maken. <OAS specificatie, kunnen we doorlinken naar de Post? >
+Het systeem logt de verwerking door met behulp van de [Logging API](../api/index.md) een verwerkingsactie aan te maken.
+
 Hierbij logt het systeem de volgende informatie:
 
 Verwerkingsactie	
