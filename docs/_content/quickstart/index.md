@@ -97,47 +97,21 @@ Het systeem logt de verwerking door met behulp van de [Logging API](../api/index
 
 Hierbij logt het systeem de volgende informatie:
 
-Verwerkingsactie	
-     Verwerkingsactiviteit ID	UUID van de verwerkingsactiviteit uit het verwerkingsactiviteitenregister.
-Voorbeeld: 5f0bef4c-f66f-4311-84a5-19e8bf359eaf
-     Vertrouwelijkheid	Vertrouwelijkheid van de verwerking.
-Voorbeeld: Normaal
-     Bewaartermijn	Bewaartermijn van de verwerkingsactie in jaren.
-Voorbeeld: 150
-     Uitvoerder	Overheidsidentificatienummer van de uitvoerder.
-Alleen in te vullen indien de gemeente niet zelf de uitvoerder is.
-Voorbeeld: 00000099123456780000
-     Systeem	Naam en versie van het systeem dat de verwerking uitvoert. Liefst conform de benaming in de Gemma Softwarecatalogus.
-Voorbeeld: FooBarApp v2.1
-     Gebruiker	Gebruiker die de verwerking uitvoert. I.v.m. de privacy van de gebruiker mag hier geen informatie opgegeven worden die eenvoudig te herleiden is naar de gebruiker. Iedere gemeente bepaalt zelf of opname van de gebruiker wel of niet gewenst is. Vul dit veld dus alleen in indien de gemeente dit vereist.
-Voorbeeld: 2ecf8e86-1a18-46ba-aa13-992c1dc231a5
-     Gegevensbron	Naam van de gegevensbron waarin de gegevens die betrokken zijn bij de verwerking worden opgeslagen. 
-Voorbeeld: FooBar Database Publiekszaken
-     Tijdstip	Tijdstip waarop het systeem/de applicatie de verwerking heeft uitgevoerd.
-Voorbeeld: 2024-04-05T14:35:42+01:00
-     Verwerkt object	In dit objecttype wordt een betrokken persoon vastgelegd.
-           Objecttype	Bij het vastleggen van verwerkingen over personen moet dit veld de waarde ‘Persoon’ hebben.
-Waarde: Persoon
-          Soort object ID	Bij het vastleggen van publiekrechtelijke verwerkingen over personen heeft dit veld de waarde ‘BSN’. Bij privaatrechtelijke verwerkingen moet de naam van een alternatieve identificator opgegeven worden.
-Voorbeeld: BSN
-          Object ID	Bevat de waarde van de identificator van de persoon. Als het ‘Soort object ID’ een ‘BSN’ is, wordt in dit veld het BSN ingevuld.
-Voorbeeld: 2308572 
-     Verwerkt object	Indien er meerdere personen bij de verwerking betrokken zijn volgt hier de identificatie van de volgende persoon.
-          ...	
+<img src="./_assets/Minimaal_Consumer.png" alt="Minimale logging door consumer" width="700"/>
 
 N.B. Er wordt nog uitgezocht hoe we de autorisatie voor de toegang tot de verschillende API functies het beste kunnen inrichten. Het kan zijn dat er aparte functies ontstaan voor normale en voor vertrouwelijke verwerkingen. In die situatie komt het attribuut Vertrouwelijk uit de hiervoor getoonde Verwerkingsactie te vervallen.
 
 Toelichting:
-	Systemen mogen er niet vanuit gaan dat een verwerkingsactiviteit voor alle gemeenten dezelfde UUID heeft. Het moet dus mogelijk zijn om het systeem zo te configureren dat, voor bijvoorbeeld de verwerkingsactiviteit Geboorteaangifte, bij gemeente A een ander UUID gelogd wordt dan bij gemeente B.
-	Bij minimale verwerkingslogging mag de verwerking niet vertrouwelijk zijn en moet de bewaartermijn bekend zijn. Is dit niet het geval zie dan de uitleg over <Volledige logging van verwerkingen>.
-	Technisch gezien zijn maar weinig velden in het bericht verplicht (zie <OAS specificatie>). De velden zijn optioneel gemaakt om te voorkomen dat er niet gelogd wordt op het moment dat bepaalde informatie echt niet voorhanden is. Operationeel gezien moet wel geprobeerd worden zoveel mogelijk informatie te verstrekken. De velden zijn namelijk direct afgeleid uit de vereisten die de AVG stelt en zijn daarmee functioneel gezien niet optioneel.
+* Systemen mogen er niet vanuit gaan dat een verwerkingsactiviteit voor alle gemeenten dezelfde UUID heeft. Het moet dus mogelijk zijn om het systeem zo te configureren dat, voor bijvoorbeeld de verwerkingsactiviteit Geboorteaangifte, bij gemeente A een ander UUID gelogd wordt dan bij gemeente B.
+* Bij minimale verwerkingslogging mag de verwerking niet vertrouwelijk zijn en moet de bewaartermijn bekend zijn. Is dit niet het geval zie dan de uitleg over [volledige logging van verwerkingen](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Volledige-logging-van-verwerkingen).
+* Technisch gezien zijn maar weinig velden in het bericht verplicht (zie [Logging API](../api/index.md)). De velden zijn optioneel gemaakt om te voorkomen dat er niet gelogd wordt op het moment dat bepaalde informatie echt niet voorhanden is. Operationeel gezien moet wel geprobeerd worden zoveel mogelijk informatie te verstrekken. De velden zijn namelijk direct afgeleid uit de vereisten die de AVG stelt en zijn daarmee functioneel gezien niet optioneel.
 
 Een Verwerkingsactie kent drie velden die door het verwerkingenlog bepaald worden:
-	Het veld Actie ID wordt gevuld met een nieuw UUID.
-	Het veld Tijdstip registratie wordt gevuld met de actuele datum en tijd.
-	Het veld Vervallen wordt gevuld met de waarde ‘Nee’.
+* Het veld Actie ID wordt gevuld met een nieuw UUID.
+* Het veld Tijdstip registratie wordt gevuld met de actuele datum en tijd.
+* Het veld Vervallen wordt gevuld met de waarde ‘Nee’.
 
-Aanroepen van een dienst vanuit een initiërend proces
+#### Aanroepen van een dienst vanuit een initiërend proces
 
 Als bijvoorbeeld een applicatie voor vergunningen (het initiërend proces) persoonsgegevens ophaalt bij een gegevensmagazijn, dan verwerken beide systemen persoonsgegevens en moeten beide systemen loggen. We noemen de applicatie voor de vergunningen de ‘afnemer’ en het gegevensmagazijn de ‘aanbieder’.
 
