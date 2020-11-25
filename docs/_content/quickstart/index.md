@@ -51,12 +51,7 @@ Op hoofdlijnen heeft de gemeenten twee keuzen bij de inrichting van het gemeente
 
 Een beknopt overzicht van de kenmerken van de twee varianten:
 
-	Centraal	Federatief
-  
-Toegankelijkheid	Er is één verwerkingenlog waar logging en inzage geregeld worden.	Iedere systeem logt naar het verwerkingenlog dat aan het systeem is toegewezen.
-Om inzage eenvoudig te houden is het aan te bevelen om een centrale punt te introduceren dat instaat is de gegevens uit de diverse verwerkingenlogs op te halen.
-Beschikbaarheid	Als het centrale verwerkingenlog uitvalt, moeten alle verwerkingen van de aangesloten systemen wachten tot de storing is opgelost.	Als een verwerkingenlog uitvalt, worden alleen de verwerkingen van de aangesloten systemen opgeschort. Andere systemen draaien gewoon door.
-Veiligheid	Een centraal verwerkingenlog vormt een z.g.n. privacy hotspot.	De federatieve verwerkingenlogs bevatten per stuk minder informatie en zijn dus minder snel een privacy hotspot.
+<img src="./_assets/Tabel_Centraal_vs_Federatief.png" alt="Tabel centraal versus federatief verwerkingenlog" width="700"/>
 
 Zie voor meer informatie over de verschillende architecturen <verwijzing naar architectuur opnemen>.
 
