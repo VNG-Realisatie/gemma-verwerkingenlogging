@@ -9,6 +9,7 @@ name: Quick Start Guide
 
 Deze Quick Start Guide is geschreven voor iedereen die te maken krijgt met logging van werkingen: functionarissen gegevensbescherming, privacy officers, informatiearchitecten, ontwikkelaars, beheerders et cetera.
 
+
 ## Inhoudsopgave
 
 **Gemeentelijke voorzieningen**
@@ -19,11 +20,13 @@ Deze Quick Start Guide is geschreven voor iedereen die te maken krijgt met loggi
 
 **Implementatie van de Logging API**
 
+* [Minimale logging van verwerkingen](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Minimale-logging-van-verwerkingen)
 
 
 ## Gemeentelijke voorzieningen
 
 Hieronder wordt beknopt beschreven welke zaken een gemeente minimaal moet regelen om in de informatievoorziening te kunnen starten met het loggen van verwerkingen op basis van de door VNG Realisatie gestandaardiseerde Verwerkingenlogging API.
+
 
 ### Voorbereiden Gemeentelijk Verwerkingsactiviteitenregister
 
@@ -43,6 +46,7 @@ N.B. De site gaf aan maximaal vijf nummers te kunnen genereren. Op het moment va
 #### Gemeentelijk VAR in de vorm van een informatiesysteem
 
 Is het gemeentelijk VAR een informatiesysteem dan zou het kunnen zijn dat de verwerkingsactiviteiten al te identificeren zijn via een UUID. Is dit nog niet het geval dan zal de ontwikkelaar van het systeem deze toe moeten voegen.
+
 
 ### Voorbereiden Gemeentelijk Verwerkingenlog
 
@@ -71,6 +75,7 @@ Het wordt aanbevolen om:
 
 Zonder een bewuste keuze en een transitieplan ontstaat er waarschijnlijk vanzelf een situatie waarin er binnen de gemeente meerdere verschillende soorten verwerkingenlogs aanwezig zullen zijn. Leveranciers die dat kunnen, gebruiken dan hun eigen verwerkingenlog om te zorgen dat hun applicaties kunnen functioneren. De gemeente heeft in dat geval mogelijk geen eisen kunnen stellen aan de manier waarop deze applicaties loggen en/of de werking en inrichting van het impliciet geleverde verwerkingslog.
 
+
 ## Implementatie van de Logging API
 
 Hieronder wordt beknopt beschreven wat geregeld moet worden om de Logging API te implementeren. Eerst wordt de meest minimale vorm van logging beschreven, vervolgens de meest volledige vorm.
@@ -81,6 +86,7 @@ De minimale manier van loggen is niet geschikt voor het loggen van vertrouwelijk
 
 Zie voor dit soort verwerkingen de meest volledige vorm en de toelichting daarbij.
 Vanuit het principe ‘beter iets dan niets loggen’ is besloten om de minimale vorm toch aan te bieden.
+
 
 ### Minimale logging van verwerkingen
 
