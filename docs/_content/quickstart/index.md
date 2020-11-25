@@ -160,116 +160,54 @@ Over de verschillende functies:
 
 Alle inzagefuncties kennen dezelfde zoekparameters:
 
-Zoekparameters	
-     Objecttype	Bij het zoeken van verwerkingsacties over personen moet dit veld de waarde ‘Persoon’ hebben.
-Waarde: Persoon
-     Soort object ID	Bij het zoeken van verwerkingsacties n.a.v. publiekrechtelijke verwerkingen over personen heeft dit veld de waarde ‘BSN’. Bij privaatrechtelijke verwerkingen moet de naam van een alternatieve identificator opgegeven worden.
-Voorbeeld: BSN
-     Object ID	Bevat de waarde van de identificator van de persoon. Als het ‘Soort object ID’ een ‘BSN’ is, wordt in dit veld het BSN ingevuld.
-Voorbeeld: 2308572
-     Begindatum	Er wordt gezocht naar verwerkingsacties waarvan het Tijdstip groter of gelijk is aan deze datum.
-     Einddatum	Er wordt gezocht naar verwerkingsacties waarvan het Tijdstip kleiner of gelijk is aan deze datum.
+<img src="./_assets/Zoekparameters.png" alt="Zoekparameters van inzage functies" width="700"/>
 
 Toelichting:
-	Alle parameters zijn verplicht. Verwerkingsacties kunnen dus alleen per persoon en per periode opgehaald worden.
+* Alle parameters zijn verplicht. Verwerkingsacties kunnen dus alleen per persoon en per periode opgehaald worden.
 
-Zijn er binnen de gemeente meerdere verwerkingslogs aanwezig, dan dienen deze via één centraal punt bevraagd te kunnen worden. Zie voor meer informatie hierover <verwijzing naar architectuur>.
+Zijn er binnen de gemeente meerdere verwerkingslogs aanwezig, dan dienen deze via één centraal punt bevraagd te kunnen worden. Zie voor meer informatie hierover de [architectuurdocumentatie](../architectuur/index.md).
 
-Volledige logging van verwerkingen
+### Volledige logging van verwerkingen
 
-Volledige logging van verwerkingen richt zich op twee aspecten: begrijpelijkheid en aanpasbaarheid.
+Volledige logging van verwerkingen richt zich op twee aspecten: Begrijpelijkheid en aanpasbaarheid.
 
-Begrijpelijkheid
+#### Begrijpelijkheid
 
 Bij minimale logging kunnen we het doel van de verwerking alleen afleiden uit de verwerkingsactiviteit. Geen van de overige velden geeft aanvullende informatie over het doel van de verwerking:
 
-Verwerkingsactie	
-     Verwerkingsactiviteit ID	UUID van de verwerkingsactiviteit uit het verwerkingsactiviteitenregister.
-Voorbeeld: 5f0bef4c-f66f-4311-84a5-19e8bf359eaf
+<img src="./_assets/Begrijpelijkheid_1.png" alt="Informatie over verwerkingsactiviteit in Verwerkingsactie" width="700"/>
 
 Gevolg is dat we afhankelijk zijn van de inrichting van het gemeentelijk VAR. Het VAR kan de verwerkingsactiviteiten gedetailleerd beschrijven (Huwelijk) of juist globaal (BRP Registratie). Een VAR met meer gedetailleerde verwerkingsactiviteiten zoals Huwelijk zal automatisch leiden tot een begrijpelijker verwerkingenlog. Toch is er voor een echt begrijpelijk verwerkingenlog meer nodig.
+
 Bij een verwerking zoals een huwelijk worden er over een langere periode allerlei handelingen verricht. Het voornemen wordt bekend gemaakt, getuigen worden geregistreerd, onderlinge verwantschap wordt gecontroleerd et cetera. Het verwerkingenlog zal een stuk duidelijker worden als we deze verschillende stappen zo duidelijk mogelijk registreren.
+
 Bij alle personen die betrokken zijn in deze stappen verschijnt het huwelijk in hun verwerkingenlog. Ook bij de getuigen en de verwanten! Omdat het bij deze betrokkenen niet over het eigen huwelijk gaat, kan dat bijzonder verwarrend zijn. Het is daarom verstandig om bij de personen op te nemen waarom ze betrokken zijn bij de verwerking: als partner, getuige, betrokken in verwantschapscontrole et cetera.
 
 Om te komen tot een begrijpelijk verwerkingenlog werken we met de volgende begrippen: Verwerking, Handeling en Actie. Om de begrippen duidelijk te maken bevat de onderstaande tabel enkele voorbeelden: 
 
-	Case 1	Case 2	Case 3	Case 4	Case 5
-Verwerkings-
-Activiteit	BRP Registratie	Geslachtswijziging	Registratie verhuizingen	Fraudeonderzoek sociale zekerheid	Verstrekken van informatie aan derden
-Verwerking	Huwelijk	Geslachtswijziging	Registratie verhuizing	Onderzoek	Bevraging door derde
-Handeling	- Intake
-- Ondertrouw
-- Opmaken akten
-- Voorbereiding ceremonie
-- Registratie huwelijk	- Wijziging geslacht
-- Wijziging voornaam
-- Aanpassen historie	Registratie verhuizing	- Verzamelen gegevens
-- Verificatie
-…	Bevraging door derde
-Actie	- Zoeken personen
-- Ophalen pers. gegevens
-- Opslaan pers. gegevens	- Ophalen pers. gegevens
-- Opslaan pers. gegevens	- Ophalen pers. gegevens
-- Opslaan pers. gegevens	…	Ophalen pers.gegevens
+<img src="./_assets/Begrijpelijkheid_2.png" alt="Voorbeelden van Verwerkingen, Handelingen en Acties" width="700"/>
 
-Toelichting:
-	Verwerking:
-Een verwerking is een concrete taak die een gemeente uitvoert. De taak vormt vanuit het perspectief van de burger of medewerker een logisch geheel.
+Toelichting op de begrippen:
+* Verwerking:
+    Een verwerking is een concrete taak die een gemeente uitvoert. De taak vormt vanuit het perspectief van de burger of medewerker een logisch geheel.
 Vaak correspondeert een verwerking met een verzoek of zaak. Hoort de verwerking bij een globale verwerkingsactiviteit, zoals ‘BRP registratie’, dan geeft de verwerking nadere informatie over het soort verwerking. 
-	Handeling:
-Een handeling is één stap in de uitvoering van een verwerking. Deze stap kan bij een zogenaamde ‘happy flow’ zonder onderbrekingen uitgevoerd worden.
+* Handeling:
+    Een handeling is één stap in de uitvoering van een verwerking. Deze stap kan bij een zogenaamde ‘happy flow’ zonder onderbrekingen uitgevoerd worden.
 Bestaat een verwerking maar uit één stap dan kan dit niveau weggelaten worden. De informatie is vooral van belang bij processen of zaken die uit meerdere stappen bestaan die verspreid over een bepaalde periode uitgevoerd worden.
-	Actie:
-Een actie is een operatie die wordt uitgevoerd door een geautomatiseerd systeem waarbij er (persoons)gegevens verwerkt worden. Een actie wordt uitgevoerd als onderdeel van (een handeling van) een verwerking.
+* Actie:
+    Een actie is een operatie die wordt uitgevoerd door een geautomatiseerd systeem waarbij er (persoons)gegevens verwerkt worden. Een actie wordt uitgevoerd als onderdeel van (een handeling van) een verwerking.
 In de praktijk zal het uitvoeren van een handeling al snel leiden tot meerdere verwerkingsactiviteiten in het verwerkingenlog die relatief snel achter elkaar uitgevoerd zijn. De actie kan helpen om te begrijpen waarom het log al deze verschillende verwerkingsactiviteiten bevat.
 
 Om duidelijk te maken waarom iemand betrokken is bij een verwerking wordt het begrip Betrokkenheid als nadere duiding toegevoegd aan de bij de verwerking betrokken personen.
 
+De [basisterminologie](../gegevensmodel/basisterminologie/readme.md) pagina geeft meer informatie over de verschillende begrippen.
+
 Met al deze extra informatie komt een volledige verwerkingsactiviteit er bijvoorbeeld als volgt uit te zien:
 
-Verwerkingsactie	
-     Actie Naam	Naam van de op het systeem uitgevoerde actie.
-Voorbeeld: Ophalen persoonsgegevens
-     Handeling Naam	Naam van de (administratieve) handeling die uitgevoerd wordt in het kader van de verwerking.
-Voorbeeld: Registratie getuigen
-     Verwerking Naam	Naam van de verwerking.
-Voorbeeld: Huwelijk
-     Verwerking ID	Uniek ID (UUID) van de verwerking.
-Voorbeeld: 89aa7a9a-1f79-44de-b32e-8e38e07138f3
-     Verwerkingsactiviteit ID	UUID van de verwerkingsactiviteit uit het verwerkingsactiviteitenregister die de verwerking rechtvaardigt.
-Voorbeeld: 5f0bef4c-f66f-4311-84a5-19e8bf359eaf
-Dit UUID verwijst dan bijvoorbeeld naar de Verwerkingsactiviteit ‘BRP Registratie’ in het gemeentelijk Verwerkingsactiviteitenregister. 
-     Verwerkingsactiviteit URL	URL die verwijst naar de verwerkingsactiviteit uit het verwerkingsactiviteitenregister.
-Voorbeeld: https://...
-     Vertrouwelijkheid	Vertrouwelijkheid van de verwerking.
-Voorbeeld: Normaal
-     Bewaartermijn	Bewaartermijn van de verwerkingsactie in jaren.
-Voorbeeld: 150
-     Uitvoerder	Overheidsidentificatienummer van de uitvoerder.
-Alleen in te vullen indien de gemeente niet zelf de uitvoerder is.
-Voorbeeld: 00000099123456780000
-     Systeem	Naam en versie van het systeem dat de verwerking uitvoert. Liefst conform de benaming in de Gemma Softwarecatalogus.
-Voorbeeld: FooBarApp v2.1
-     Gebruiker	Gebruiker die de verwerking uitvoert. I.v.m. de privacy van de gebruiker mag hier geen informatie opgegeven worden die eenvoudig te herleiden is naar de gebruiker. Iedere gemeente bepaalt zelf of opname van de gebruiker wel of niet gewenst is. Vul dit veld dus alleen in indien de gemeente dit vereist.
-Voorbeeld: 2ecf8e86-1a18-46ba-aa13-992c1dc231a5
-     Gegevensbron	Naam van de gegevensbron waarin de gegevens die betrokken zijn bij de verwerking worden opgeslagen. 
-Voorbeeld: FooBar Database Publiekszaken
-     Tijdstip	Tijdstip waarop het systeem/de applicatie de verwerking heeft uitgevoerd.
-Voorbeeld: 2024-04-05T14:35:42+01:00
-     Verwerkt object	In dit objecttype wordt een betrokken persoon vastgelegd.
-           Objecttype	Bij het vastleggen van verwerkingen over personen moet dit veld de waarde ‘Persoon’ hebben.
-Waarde: Persoon
-          Soort object ID	Bij het vastleggen van publiekrechtelijke verwerkingen over personen heeft dit veld de waarde ‘BSN’. Bij privaatrechtelijke verwerkingen moet de naam van een alternatieve identificator opgegeven worden.
-Voorbeeld: BSN
-          Object ID	Bevat de waarde van de identificator van de persoon. Als het ‘Soort object ID’ een ‘BSN’ is, wordt in dit veld het BSN ingevuld.
-Voorbeeld: 2308572 
-          Betrokkenheid	Geeft aan in welke hoedanigheid de persoon betrokken was bij de verwerkingsactie.
-Voorbeeld: Getuige
-     Verwerkt object	Indien er meerdere personen bij de verwerking betrokken zijn volgt hier de identificatie van de volgende persoon.
-          ...	
+<img src="./_assets/Maximaal_Consumer_1.png" alt="Maximale logging door consumer (1 van 2)" width="700"/>
+<img src="./_assets/Maximaal_Consumer_2.png" alt="Maximale logging door consumer (2 van 2)" width="700"/>
 
-
-Aanpasbaarheid
+#### Aanpasbaarheid
 
 Over de inhoud van een verwerkingenlog mag geen twijfel bestaan. We willen daarom dat iets dat in het verwerkingenlog is opgeslagen niet gewijzigd kan worden (het verwerkingenlog is immutable). 
 
