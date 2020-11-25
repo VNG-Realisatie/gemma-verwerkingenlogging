@@ -12,7 +12,8 @@ Deze Quick Start Guide is geschreven voor iedereen die te maken krijgt met loggi
 ## Inhoudsopgave
 
 [Gemeentelijke voorzieningen](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Gemeentelijke-voorzieningen)
-
+    Voorbereiden Gemeentelijk Verwerkingsactiviteitenregister (VAR)
+    Voorbereiden Gemeentelijk Verwerkingenlog
 
 ## Gemeentelijke voorzieningen
 
@@ -59,12 +60,12 @@ Het wordt aanbevolen om:
 * Een bewuste keuze te maken voor een centraal of federatief verwerkingenlog.
 * Een bewuste keuze te maken voor één of meerdere leveranciers. Merk op dat er ook bij een federatief verwerkingenlog sprake kan zijn van één leverancier.
 * Een verwerkingenlog te kiezen/realiseren dat de Logging API volledig ondersteunt.
-* Overleg te hebben met leveranciers hoe gemeente en leveranciers samen de transitie maken van de huidige situatie naar de gewenste. Zie in dit kader ook de gedachten rond <de Logging Maturity Levels>.
+* Overleg te hebben met leveranciers hoe gemeente en leveranciers samen de transitie maken van de huidige situatie naar de gewenste. Zie in dit kader ook de gedachten rond de [Logging Maturity Levels](../achtergronddocumentatie/logging_maturity_level.md).
 * In toekomstige aanbestedingen eisen en wensen op te nemen inzake logging van verwerkingen.
 
 Zonder een bewuste keuze en een transitieplan ontstaat er waarschijnlijk vanzelf een situatie waarin er binnen de gemeente meerdere verschillende soorten verwerkingenlogs aanwezig zullen zijn. Leveranciers die dat kunnen, gebruiken dan hun eigen verwerkingenlog om te zorgen dat hun applicaties kunnen functioneren. De gemeente heeft in dat geval mogelijk geen eisen kunnen stellen aan de manier waarop deze applicaties loggen en/of de werking en inrichting van het impliciet geleverde verwerkingslog.
 
-Implementatie van de Logging API
+## Implementatie van de Logging API
 
 Hieronder wordt beknopt beschreven wat geregeld moet worden om de Logging API te implementeren. Eerst wordt de meest minimale vorm van logging beschreven, vervolgens de meest volledige vorm.
 Bij de meest minimale manier van logging ontstaat een verwerkingenlog met bijzonder weinig informatie. De inhoud hiervan zal veel vragen oproepen bij burgers maar ook bij gemeentelijke medewerkers en ontwikkelaars. Het is dan ook de vraag of het verwerkingenlog in deze meest minimale vorm voldoet aan de geest van de AVG.
