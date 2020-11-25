@@ -115,95 +115,48 @@ Een Verwerkingsactie kent drie velden die door het verwerkingenlog bepaald worde
 
 Als bijvoorbeeld een applicatie voor vergunningen (het initiërend proces) persoonsgegevens ophaalt bij een gegevensmagazijn, dan verwerken beide systemen persoonsgegevens en moeten beide systemen loggen. We noemen de applicatie voor de vergunningen de ‘afnemer’ en het gegevensmagazijn de ‘aanbieder’.
 
-In bovenstaande voorbeeld is het goed denkbaar dat de vergunningen applicatie ‘weet’ waarom de verwerking wordt uitgevoerd. Bijvoorbeeld omdat de functie ‘Registratie goedkeuring bouwvergunning’ door de gebruiker uit een keuzemenu in de applicatie geselecteerd is. De afnemer kan (en moet) in een dergelijk geval dus nauwkeurig in het log aangegeven waarom de gegevens verwerkt zijn. Zie voor een voorbeeld van een uitgebreider omschreven Verwerkingsactie de passages over <Volledige logging van verwerking>.
+<img src="./_assets/Minimaal_1.png" alt="Vergunningenapplicatie vraagt gegevens op bij gegevensmagazijn" width="700"/>
+
+In bovenstaande voorbeeld is het goed denkbaar dat de vergunningen applicatie ‘weet’ waarom de verwerking wordt uitgevoerd. Bijvoorbeeld omdat de functie ‘Registratie goedkeuring bouwvergunning’ door de gebruiker uit een keuzemenu in de applicatie geselecteerd is. De afnemer kan (en moet) in een dergelijk geval dus nauwkeurig in het log aangegeven waarom de gegevens verwerkt zijn. Zie voor een voorbeeld van een uitgebreider omschreven Verwerkingsactie de passages over [volledige logging van verwerking](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Volledige-logging-van-verwerkingen).
 
 De aanbieder baseert zich bij het leveren van de informatie over het algemeen op een minder specifiek beschreven verwerkingsactiviteit in het VAR. Bijvoorbeeld ‘Verstrekking van gegevens i.v.m. vergunningen’ of nog minder specifiek ‘Verstrekking van gegevens’.
 
 Er is in het voorbeeld dus sprake van twee verwerkingen. Eén bij de afnemer en één bij de aanbieder. Beide verwerkingen baseren zich op een andere verwerkingsactiviteit in het VAR.
 
-
+<img src="./_assets/Minimaal_2.png" alt="Vergunningenapplicatie en gegevensmagazijn loggen beiden hun eigen verwerking" width="700"/>
 
 Om te zorgen dat de aanbieder toch voldoende informatie op kan nemen in het verwerkingenlog moet de afnemer in de html header van de aanroep de volgende informatie meegeven:
 
 N.B. We laten de inhoud van dit voorbeeld aansluiten bij het vorige voorbeeld.
 
-Html header velden	
-     OIN	Voert de gemeente het initiërende proces zelf uit, dan bevat dit veld het OIN van de gemeente. Heeft de gemeente de uitvoering belegd bij een derde dan bevat dit veld het OIN van de uitvoerder.
-In het voorbeeld is de uitvoerder een derde partij. Het OIN van die partij is daarom in dit veld opgenomen.
-Voorbeeld: 00000099123456780000
-     Verwerkingsactiviteit ID	UUID waarmee de verwerkingsactiviteit van de afnemer geïdentificeerd kan worden.
-Voorbeeld: 5f0bef4c-f66f-4311-84a5-19e8bf359eaf
-     Verwerkingsactiviteit Url	URI waarmee de verwerkingsactiviteit-resource van de afnemer benaderd kan worden.
-Voorbeeld: https://...
-     Vertrouwelijkheid	Vertrouwelijkheid van de verwerking.
-Voorbeeld: Normaal
-     Bewaartermijn	Bewaartermijn van de informatie die gelogd wordt over de verwerking.
-Voorbeeld: 150
+<img src="./_assets/Minimaal_Html_Header.png" alt="Informatie mee te geven in html header" width="700"/>
 
 Toelichting:
-	Er is besloten om deze informatie mee te geven in de html header van de berichten en niet in de zogenaamde payload. Daarmee wordt voorkomen dat alle berichtdefinities van alle systemen die persoonsgegevens verwerken aangepast moeten worden. Ook maakt het gefaseerde implementatie van verwerkingslogging mogelijk. Zo kan het voorkomen dat systeem A de informatie al wel meegeeft bij de aanroep van dienst B, maar dat dienst B deze nog niet kan verwerken.
-	Technisch gezien zijn de velden optioneel. Operationeel gezien moet geprobeerd worden zoveel mogelijk informatie te verstrekken.
-	In dit voorbeeld is sprake van mandatering <zie case C2672> daarbij blijft de gemeente verantwoordelijk. Zie voor delegatie case <C7883>.
+* Er is besloten om deze informatie mee te geven in de html header van de berichten en niet in de zogenaamde payload. Daarmee wordt voorkomen dat alle berichtdefinities van alle systemen die persoonsgegevens verwerken aangepast moeten worden. Ook maakt het gefaseerde implementatie van verwerkingslogging mogelijk. Zo kan het voorkomen dat systeem A de informatie al wel meegeeft bij de aanroep van dienst B, maar dat dienst B deze nog niet kan verwerken.
+* Technisch gezien zijn de velden optioneel. Operationeel gezien moet geprobeerd worden zoveel mogelijk informatie te verstrekken.
+* In dit voorbeeld is sprake van mandatering, zie [casus C2672](../achtergronddocumentatie/ontwerp/artefacten/2672.md) daarbij blijft de gemeente verantwoordelijk. Zie voor delegatie [casus C7883](../achtergronddocumentatie/ontwerp/artefacten/7883.md).
 
-Minimale logging vanuit een dienstaanbieder
+#### Minimale logging vanuit een dienstaanbieder
 
-De aanbieder van de dienst, in ons voorbeeld het gegevensmagazijn, neemt via de API de volgende verwerkingsactie op in het verwerkingslog. De verwerkingsactie bevat diverse velden waarin de informatie uit de html header in terecht is gekomen. Deze velden zijn met een * in de linker kantlijn gemarkeerd.
+De aanbieder van de dienst, in ons voorbeeld het gegevensmagazijn, neemt via de API de volgende Verwerkingsactie op in het verwerkingslog. De Verwerkingsactie bevat diverse velden waarin de informatie uit de html header in terecht is gekomen. Deze velden zijn met een * in de linker kantlijn gemarkeerd.
 
-Verwerkingsactie	
-     Verwerkingsactiviteit ID	UUID van de verwerkingsactiviteit uit het verwerkingsactiviteitenregister.
-Dit is de verwerkingsactiviteit van de aanbieder. Niet die van de afnemer. In het voorbeeld is dit dus ‘Verstrekking van gegevens’ en niet ‘Registratie toekenning bouwvergunning’.
-Voorbeeld: 4f6db294-830d-4d14-b9bd-3c6d17c40d65
-*   Vertrouwelijkheid	Vertrouwelijkheid van de verwerking.
-Voorbeeld: Normaal
-Overgenomen uit de html header die door de afnemer verstrekt is.
-*   Bewaartermijn	Bewaartermijn van de verwerkingsactie in jaren.
-Voorbeeld: 150
-Overgenomen uit de html header die door de afnemer verstrekt is.
-     Uitvoerder	Biedt de gemeente de dienst zelf aan, dan bevat dit veld het OIN van de gemeente. Heeft de gemeente de uitvoering belegd bij een derde dan bevat dit veld het OIN van de uitvoerder.
-We gaan er in het voorbeeld vanuit dat de gemeente het gegevensmagazijn in eigen beheer heeft en laten dit veld dus leeg.
-     Systeem	Naam en versie van het systeem dat de verwerking uitvoert. Liefst conform de benaming in de Gemma Softwarecatalogus.
-Voorbeeld: FooBarService v1.3
-     Gegevensbron	Naam van de gegevensbron waarin de gegevens die betrokken zijn bij de verwerking worden opgeslagen. 
-Voorbeeld: FooBar Gegevensmagazijn
-*   Soort afnemer ID	Soort identificator waarmee de afnemer geïdentificeerd wordt.
-Voorbeeld: OIN
-*   Afnemer ID	Bij levering van gegevens moet hier de identificator opgenomen worden van de organisatie die de gegevens ontvangt. Het attribuut Soort afnemer ID) bepaalt wat voor soort identificator gebruikt wordt om de afnemer te identificeren. Op dit moment kan gekozen worden uit een OIN voor organisaties en een BSN voor natuurlijke personen.
-Voorbeeld: 00000099123456780000
-Overgenomen uit de html header die door de afnemer verstrekt is.
-*   Verwerkingsactiviteit ID
-     afnemer	Identificator van de verwerkingsactiviteit aan de kant van de afnemer.
-Voorbeeld: 5f0bef4c-f66f-4311-84a5-19e8bf359eaf
-Overgenomen uit de html header die door de afnemer verstrekt is.
-*   Verwerkingsactiviteit URL
-     afnemer	Identificator van de verwerkingsactiviteit aan de kant van de afnemer.
-Voorbeeld: https://...
-Overgenomen uit de html header die door de afnemer verstrekt is.
-     Tijdstip	Tijdstip waarop het systeem/de applicatie de verwerking heeft uitgevoerd.
-Voorbeeld: 2024-04-05T14:35:43+01:00
-     Verwerkt object	In dit objecttype wordt de betrokken persoon vastgelegd.
-           Objecttype	Bij het vastleggen van verwerkingen over personen moet dit veld de waarde ‘Persoon’ hebben.
-Waarde: Persoon
-          Soort object ID	Bij het vastleggen van publiekrechtelijke verwerkingen over personen heeft dit veld de waarde ‘BSN’. Bij privaatrechtelijke verwerkingen moet de naam van een alternatieve identificator opgegeven worden.
-Voorbeeld: BSN
-          Object ID	Bevat de waarde van de identificator van de persoon. Als het ‘Soort object ID’ een ‘BSN’ is, wordt in dit veld het BSN ingevuld.
-Voorbeeld: 2308572
-     Verwerkt object	Indien er meerdere personen bij de verwerking betrokken zijn volgt hier de identificatie van de volgende persoon.
-          ...	
+<img src="./_assets/Minimaal_Provider_1.png" alt="Minimale logging door provider (1 van 2)" width="700"/>
+<img src="./_assets/Minimaal_Provider_2.png" alt="Minimale logging door provider (2 van 2)" width="700"/>
 
-Inzage
+### Inzage
 
 Voor inzage in het log kan gebruik gemaakt worden van de API-functie Opvragen Verwerkingsacties. Deze functie kent vier varianten:
-	Opvragen Verwerkingsacties – Beperkte set velden, niet vertrouwelijk
-	Opvragen Verwerkingsacties – Beperkte set velden, vertrouwelijkheid opgeheven
-	Opvragen Verwerkingsacties – Alle velden, niet vertrouwelijk
-	Opvragen Verwerkingsacties – Alle velden, vertrouwelijkheid opgeheven
+* Opvragen Verwerkingsacties – Beperkte set velden, niet vertrouwelijk
+* Opvragen Verwerkingsacties – Beperkte set velden, vertrouwelijkheid opgeheven
+* Opvragen Verwerkingsacties – Alle velden, niet vertrouwelijk
+* Opvragen Verwerkingsacties – Alle velden, vertrouwelijkheid opgeheven
 
 N.B. Er wordt nog uitgezocht hoe we de autorisatie voor de toegang tot de verschillende API functies het beste kunnen inrichten. Het kan zijn dat er aparte functies ontstaan (zoals hierboven getoond) voor normale en voor vertrouwelijke verwerkingen. 
 
 Over de verschillende functies:
-	Bij de eerste twee varianten worden niet alle velden geretourneerd. Zo wordt om privacy redenen de gebruiker niet geretourneerd en om wille van de veiligheid het systeem en de gegevensopslag niet.
-	De laatste twee functies retourneren deze informatie wel. Alleen een bevoegde functionaris zoals bijvoorbeeld een Privacy Officer zou hiervoor geautoriseerd mogen worden. 
-	De ‘niet vertrouwelijke’ functies retourneren alleen verwerkingsacties over verwerkingen die niet vertrouwelijk zijn en die dit ook nooit geweest zijn. De ‘vertrouwelijkheid opgeheven’ functies retourneren ook verwerkingsacties die ooit vertrouwelijk geweest zijn. Verwerkingsacties acties die ooit vertrouwelijk waren, moet ook na het opheffen van die vertrouwelijkheid vaak gezien worden als ‘bijzondere persoonsgegevens’. Denk aan een fraudeonderzoek. Zelfs als een dergelijk onderzoek uiteindelijk niets opgeleverd heeft, kan het aantreffen van verwerkingsacties over een onderzoek leiden tot een vooroordeel. Ook deze functies mogen dus alleen door bevoegde functionarissen zoals Privacy Officers gebruikt worden.
+* Bij de eerste twee varianten worden niet alle velden geretourneerd. Zo wordt om privacy redenen de gebruiker niet geretourneerd en om wille van de veiligheid het systeem en de gegevensopslag niet.
+* De laatste twee functies retourneren deze informatie wel. Alleen een bevoegde functionaris zoals bijvoorbeeld een Privacy Officer zou hiervoor geautoriseerd mogen worden. 
+* De ‘niet vertrouwelijke’ functies retourneren alleen verwerkingsacties over verwerkingen die niet vertrouwelijk zijn en die dit ook nooit geweest zijn. De ‘vertrouwelijkheid opgeheven’ functies retourneren ook verwerkingsacties die ooit vertrouwelijk geweest zijn. Verwerkingsacties acties die ooit vertrouwelijk waren, moet ook na het opheffen van die vertrouwelijkheid vaak gezien worden als ‘bijzondere persoonsgegevens’. Denk aan een fraudeonderzoek. Zelfs als een dergelijk onderzoek uiteindelijk niets opgeleverd heeft, kan het aantreffen van verwerkingsacties over een onderzoek leiden tot een vooroordeel. Ook deze functies mogen dus alleen door bevoegde functionarissen zoals Privacy Officers gebruikt worden.
 
 Alle inzagefuncties kennen dezelfde zoekparameters:
 
