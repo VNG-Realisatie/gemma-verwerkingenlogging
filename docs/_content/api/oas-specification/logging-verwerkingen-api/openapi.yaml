@@ -73,12 +73,12 @@ paths:
             type: string
             format: date-time
             example: "2020-11-24"
-        # - name: beperkteSet
-        #   in: query
-        #   description: In geval van 'true' worden niet alle attributen teruggegeven. Bijvoorbeeld attributen zoals 'gebruiker', 'gegevensbron' en 'systeem'  zijn niet relevant voor burgers. In geval van 'false' worden alle velden teruggegeven in het resultaat.
-        #   schema:
-        #     type: boolean
-        #     default: true
+        - name: beperkteSet
+          in: query
+          description: In geval van 'true' worden niet alle attributen teruggegeven. Bijvoorbeeld attributen zoals 'gebruiker', 'gegevensbron' en 'systeem'  zijn niet relevant voor burgers. In geval van 'false' worden alle velden teruggegeven in het resultaat.
+          schema:
+            type: boolean
+            default: true
       responses:
         '200':
           description: OK
