@@ -3,7 +3,7 @@ title: "Quick Start Guide"
 name: Quick Start Guide
 ---
 
-# Quick Start Guide - Logging van Verwerkingen
+# Logging van Verwerkingen
 
 Deze Quick Start Guide is geschreven voor iedereen die te maken krijgt met logging van werkingen: functionarissen gegevensbescherming, privacy officers, informatiearchitecten, ontwikkelaars, beheerders et cetera.
 
