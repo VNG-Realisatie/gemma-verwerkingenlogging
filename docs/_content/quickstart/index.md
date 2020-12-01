@@ -243,7 +243,6 @@ De aanbieder zou dit extra veld op moeten slaan in het attribuut Verwerking ID a
 
 <img src="./_assets/Maximaal_Provider.png" alt="Maximale logging door provider" width="700"/>
 
-<br>
 2.	We moeten onthouden dat we gegevens bij de basisregistratie hebben opgevraagd.
 
 Hierbij zijn meerdere opties denkbaar:
