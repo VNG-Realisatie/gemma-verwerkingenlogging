@@ -68,23 +68,22 @@ Zie de [architectuurdocumentatie](../architectuur/index.md) voor meer informatie
 
 Het wordt aanbevolen om:
 * Een bewuste keuze te maken voor een centraal of federatief verwerkingenlog.
-* Een bewuste keuze te maken voor één of meerdere leveranciers. Merk op dat er ook bij een federatief verwerkingenlog sprake kan zijn van één leverancier.
 * Een verwerkingenlog te kiezen/realiseren dat de Logging API volledig ondersteunt.
 * Overleg te hebben met leveranciers hoe gemeente en leveranciers samen de transitie maken van de huidige situatie naar de gewenste. Zie in dit kader ook de gedachten rond de [Logging Maturity Levels](../achtergronddocumentatie/logging_maturity_level.md).
 * In toekomstige aanbestedingen eisen en wensen op te nemen inzake logging van verwerkingen.
 
-Zonder een bewuste keuze en een transitieplan ontstaat er waarschijnlijk vanzelf een situatie waarin er binnen de gemeente meerdere verschillende soorten verwerkingenlogs aanwezig zullen zijn. Leveranciers die dat kunnen, gebruiken dan hun eigen verwerkingenlog om te zorgen dat hun applicaties kunnen functioneren. De gemeente heeft in dat geval mogelijk geen eisen kunnen stellen aan de manier waarop deze applicaties loggen en/of de werking en inrichting van het impliciet geleverde verwerkingslog.
+Zonder een bewuste keuze en een transitieplan ontstaat er waarschijnlijk vanzelf een federatief verwerkingenlog. Binnende gemeente zijn er dan meerdere verschillende verwerkingenlogs aanwezig. Leveranciers die dat kunnen, gebruiken dan hun eigen verwerkingenlog om te zorgen dat hun applicaties kunnen functioneren. De gemeente heeft in dat geval mogelijk geen eisen kunnen stellen aan de manier waarop deze applicaties loggen en/of de werking en inrichting van het impliciet geleverde verwerkingslog.
 
 
 ## Implementatie van de Logging API
 
 Hieronder wordt beknopt beschreven wat geregeld moet worden om de Logging API te implementeren. Eerst wordt de meest minimale vorm van logging beschreven, vervolgens de meest volledige vorm.
 
-Bij de meest minimale manier van logging ontstaat een verwerkingenlog met bijzonder weinig informatie. De inhoud hiervan zal veel vragen oproepen bij burgers maar ook bij gemeentelijke medewerkers en ontwikkelaars. Het is dan ook de vraag of het verwerkingenlog in deze meest minimale vorm voldoet aan de geest van de AVG.
+Bij de meest minimale manier van logging ontstaat een verwerkingenlog met bijzonder weinig informatie. De inhoud hiervan zal veel vragen oproepen bij burgers maar ook bij gemeentelijke medewerkers. Het is dan ook de vraag of het verwerkingenlog in deze meest minimale vorm voldoet aan de geest van de AVG.
 
 De minimale manier van loggen is niet geschikt voor het loggen van vertrouwelijke verwerkingen of voor verwerkingen waarbij op voorhand de bewaartermijn niet vastgesteld kan worden. 
 Zie voor dit soort verwerkingen de meest volledige vorm en de toelichting daarbij.
-Vanuit het principe ‘beter iets dan niets loggen’ is besloten om de minimale vorm toch aan te bieden.
+Vanuit het principe ‘beter iets dan niets loggen’ is besloten om de minimale vorm toch te beschrijven.
 
 
 ### Minimale logging van verwerkingen
@@ -99,10 +98,8 @@ Hierbij logt het systeem de volgende informatie:
 
 <img src="./_assets/Minimaal_Consumer.png" alt="Minimale logging door consumer" width="700"/>
 
-N.B. Er wordt nog uitgezocht hoe we de autorisatie voor de toegang tot de verschillende API functies het beste kunnen inrichten. Het kan zijn dat er aparte functies ontstaan voor normale en voor vertrouwelijke verwerkingen. In die situatie komt het attribuut Vertrouwelijk uit de hiervoor getoonde Verwerkingsactie te vervallen.
-
 Toelichting:
-* Systemen mogen er niet vanuit gaan dat een verwerkingsactiviteit voor alle gemeenten dezelfde UUID heeft. Het moet dus mogelijk zijn om het systeem zo te configureren dat, voor bijvoorbeeld de verwerkingsactiviteit Geboorteaangifte, bij gemeente A een ander UUID gelogd wordt dan bij gemeente B.
+* Systemen die de mogelijkheid bieden om administraties van meerdere gemeenten bij te houden mogen er niet vanuit gaan dat een verwerkingsactiviteit voor alle gemeenten dezelfde UUID heeft. Het moet dus mogelijk zijn om het systeem zo te configureren dat, voor bijvoorbeeld de verwerkingsactiviteit Geboorteaangifte, bij gemeente A een ander UUID gelogd wordt dan bij gemeente B.
 * Bij minimale verwerkingslogging mag de verwerking niet vertrouwelijk zijn en moet de bewaartermijn bekend zijn. Is dit niet het geval zie dan de uitleg over [volledige logging van verwerkingen](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Volledige-logging-van-verwerkingen).
 * Technisch gezien zijn maar weinig velden in het bericht verplicht (zie [Logging API](../api/index.md)). De velden zijn optioneel gemaakt om te voorkomen dat er niet gelogd wordt op het moment dat bepaalde informatie echt niet voorhanden is. Operationeel gezien moet wel geprobeerd worden zoveel mogelijk informatie te verstrekken. De velden zijn namelijk direct afgeleid uit de vereisten die de AVG stelt en zijn daarmee functioneel gezien niet optioneel.
 
@@ -165,7 +162,7 @@ Alle inzagefuncties kennen dezelfde zoekparameters:
 Toelichting:
 * Alle parameters zijn verplicht. Verwerkingsacties kunnen dus alleen per persoon en per periode opgehaald worden.
 
-Zijn er binnen de gemeente meerdere verwerkingslogs aanwezig, dan dienen deze via één centraal punt bevraagd te kunnen worden. Zie voor meer informatie hierover de [architectuurdocumentatie](../architectuur/index.md).
+Zijn er binnen de gemeente meerdere verwerkingslogs aanwezig, dan is het handig als deze via één centraal punt bevraagd kunnen worden. Zie voor meer informatie hierover de [architectuurdocumentatie](../architectuur/index.md).
 
 ### Volledige logging van verwerkingen
 
@@ -217,7 +214,7 @@ Er zijn echter gevallen waarin we het log toch zullen moeten wijzigen:
 
 Deze eisen lijken tegenstrijdig maar zijn dat gelukkig niet. Het immutable zijn gaat over de techniek; namelijk over de opslag van de loggegevens. De tweede eis gaat over de betekenis die de informatie in het log heeft. In [ontwerpbesluit B3891: Wijzigbaarheid en historie](../achtergronddocumentatie/ontwerp/artefacten/3891.md) staat beschreven hoe deze eisen samen kunnen komen.
 
-De vertrouwelijkheid en de bewaartermijn worden beiden gezien als eigenschappen van de Verwerking en niet als eigenschappen van de Handeling of Actie. Bij een fraude onderzoek is dus het hele onderzoek (de verwerking) vertrouwelijk en niet alleen een stap in dat onderzoek (de handeling) of een specifieke technische operatie (de actie).
+De vertrouwelijkheid en de bewaartermijn worden beiden gezien als eigenschappen van de Verwerking en niet als eigenschappen van de Handeling of Actie. Bij een fraude-onderzoek is dus het hele onderzoek (de verwerking) vertrouwelijk en niet alleen een stap in dat onderzoek (de handeling) of een specifieke technische operatie (de actie).
 
 N.B. Er zijn uitzonderingen te bedenken waarin alleen een bepaalde stap in de verwerking vertrouwelijk is. In dat geval moet ofwel de hele verwerking vertrouwelijk worden of moet een aparte verwerking uitgevoerd worden voor deze stap.
 
@@ -229,11 +226,11 @@ Tot slot voorziet de API nog in een generieke wijzigingsfunctie. Deze functie ka
 
 #### Aanpasbaarheid in een keten
 
-Om de aanpasbaarheid in een keten te visualiseren gebruiken we opnieuw het fraude onderzoek. We beginnen met het opvragen van gegevens bij een basisregistratie:
+Om de aanpasbaarheid in een keten te visualiseren gebruiken we opnieuw het fraude-onderzoek. We beginnen met het opvragen van gegevens bij een basisregistratie:
 
 <img src="./_assets/Maximaal_1.png" alt="Voorbeeld vertrouwelijke verwerking in keten (1 van 3)" width="700"/>
 
-Zowel de afnemer als de aanbieder loggen. Om te zorgen dat we later de vertrouwelijkheid van de onderzoek kunnen laten vervallen zijn er twee dingen nodig.
+Zowel de afnemer als de aanbieder loggen. Om te zorgen dat we later de vertrouwelijkheid van het onderzoek kunnen laten vervallen zijn er twee dingen nodig.
 
 1.	We geven het Verwerking ID mee aan de basisregistratie via de html header.
 
@@ -246,6 +243,7 @@ De aanbieder zou dit extra veld op moeten slaan in het attribuut Verwerking ID a
 
 <img src="./_assets/Maximaal_Provider.png" alt="Maximale logging door provider" width="700"/>
 
+<br>
 2.	We moeten onthouden dat we gegevens bij de basisregistratie hebben opgevraagd.
 
 Hierbij zijn meerdere opties denkbaar:
