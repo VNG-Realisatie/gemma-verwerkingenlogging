@@ -3,6 +3,10 @@ title: "APIs voor logging van verwerkingen"
 name: APIs voor logging van verwerkingen
 ---
 ## Over de implementatie van de API-standaard
+De [Quick Start Guide](../quickstart/index.md) laat aan de hand van een voorbeeld zien hoe logging werkt. De gids toont:
+* Minimale logging waarbij zowel een consumer als een provider betrokken is.
+* Volledige logging die nodig is voor vertrouwelijke verwerkingen, het later vastleggen van bewaartermijnen maar ook voor meer duidelijkheid over de aard van de verwerking richting burgers.
+
 Applicaties of services die de verwerkingenlogging API-standaard implementeren moeten op diverse punten worden aangepast. Uiteindelijk  moet voldaan worden aan alle onderstaande punten:
 
 - Bij alle acties die persoonsgegevens verwerken wordt er gelogd ([B7952](../achtergronddocumentatie/ontwerp/artefacten/7952.md)). Hierbij gelden de volgende regels:
