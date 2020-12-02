@@ -24,4 +24,5 @@ layout: default
 
 * Het attribuut ID wordt gevuld met een nieuw UUID.
 * Het attribuut Tijdstip Registratie wordt gevuld met de actuele datum/tijd.
-* Het attribuut Vervallen krijgt de waarde 'False'.
+* Het attribuut Vervallen krijgt de waarde False.
+* Alle overige attributen krijgen in houdelijk de waarden die aan de functie zijn meegegeven.
