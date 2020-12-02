@@ -83,11 +83,11 @@ Klik op de API-call in de onderstaande tabel om de aanvullende specificaties te 
 | Type | API-call |
 | :---- | :------- |
 | REST | [POST /verwerkingsacties](./aanvullendespecificatie-verwerkingsacties-post.md) |
-| REST | GET /verwerkingsacties |
-| REST | PUT /verwerkingsacties/{uuid} |
-| REST | DELETE /verwerkingsacties/{uuid} |
-| RPC | POST /wijzigVertrouwelijkheidVerwerking |
-| RPC | POST /wijzigBewaartermijnVerwerking |
+| REST | [GET /verwerkingsacties](./aanvullendespecificatie-verwerkingsacties-get.md) |
+| REST | [PUT /verwerkingsacties/{uuid}](./aanvullendespecificatie-verwerkingsacties-put.md) |
+| REST | [DELETE /verwerkingsacties/{uuid}](./aanvullendespecificatie-verwerkingsacties-delete.md) |
+| RPC | [POST /wijzigVertrouwelijkheidVerwerking](./aanvullendespecificatie-wijzigvertrouwelijkheidverwerking-post.md) |
+| RPC | [POST /wijzigBewaartermijnVerwerking](./aanvullendespecificatie-wijzigbewaartermijnverwerking-post.md) |
 
 ### Mapping van logische functies op API-calls
 
