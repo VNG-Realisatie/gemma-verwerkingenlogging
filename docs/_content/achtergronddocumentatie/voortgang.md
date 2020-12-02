@@ -3,6 +3,12 @@ title: "Voortgang ontwikkeling API-standaard voor logging van verwerkingen"
 name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ---
 
+## 2 december 2020
+De API pagina is aangepast op de volgende punten:
+* Verwijzing naar Quick Start Guide opgenomen.
+* Eerst worden functies opgesomd. Per functie is een beschrijving beschikbaar en een uitleg hoe de mapping is met de API en welke autorisatiescope gebruikt moet worden.
+* De API-calls worden daarna opgesomd. Per call is een aparte aanvullende specificatie opgenomen.
+
 ## 1 december 2020
 Quick Start Guide toegevoegd.
 
