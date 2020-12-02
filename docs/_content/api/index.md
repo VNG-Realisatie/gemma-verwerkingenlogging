@@ -67,13 +67,16 @@ Onderstaande tabel beschrijft de door de API geboden functies. Klik op de naam v
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F9906: Verwijder Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/9906.md) | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F2265: Verwijder Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/2265.md) | 
 
-## OAS specificaties
+## Specificaties
+
+### OAS
+
 API specificatie (OAS3) in
   [ReDoc](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml),
   [Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml) of
   [YAML](https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml).
 
-#### Aanvullende specificaties
+### Aanvullende specificaties
 
 Klik op de API-call in de onderstaande tabel om de aanvullende specificaties te zien.
 
@@ -86,7 +89,7 @@ Klik op de API-call in de onderstaande tabel om de aanvullende specificaties te 
 | RPC | POST /wijzigVertrouwelijkheidVerwerking |
 | RPC | POST /wijzigBewaartermijnVerwerking |
 
-#### Mapping van logische functies op API-calls
+### Mapping van logische functies op API-calls
 
 In onderstaand tabel is de mapping van de verwerkingenlogging functies naar de API-calls weergegeven.
 
@@ -105,7 +108,7 @@ In onderstaand tabel is de mapping van de verwerkingenlogging functies naar de A
 | [F9906: Verwijder Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/9906.md) | DELETE /verwerkingsacties/{uuid} | `delete:normal` | REST |
 | [F2265: Verwijder Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/2265.md) | DELETE /verwerkingsacties/{uuid} | `delete:confidential` | REST |
 
-#### Opmerkingen
+### Opmerkingen
 - De autorisatie-scopes zijn [hier](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/api/oas-specification/logging-verwerkingen-api/scopes.md) beschreven. Als de API call niet voldoet aan de scope dan zal een `HTTP 401 (Unauthorized)` foutmelding worden teruggegeven.
 - Vanwege het platslaan van het objecttype `Verwerking` in het objecttype `Verwerkingsactie` passen de verwerkingenlogging-functies F2969 en F4415 niet in het CRUD-model van REST en zijn deze functies als RPC-calls gespecificeerd.
 
