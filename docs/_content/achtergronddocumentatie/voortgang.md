@@ -3,6 +3,9 @@ title: "Voortgang ontwikkeling API-standaard voor logging van verwerkingen"
 name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ---
 
+## 1 december 2020
+Quick Start Guide toegevoegd.
+
 ## 23 november 2020
 Autorisaties (scopes) toegevoegd aan de Verwerkingsacties API zodat alle logging-functies gemapped kunnen worden op de API calls.
 - Beschrijvingen van de [scopes](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/api/oas-specification/logging-verwerkingen-api/scopes.md) toegevoegd.
