@@ -34,6 +34,6 @@ Bij een dergelijk log zou het volgende conceptuele algoritme toegepast moeten wo
 * Is het meest actuele voorkomen niet vervallen dan wordt een nieuwe logentry aangemaakt.
     * Het attribuut ID wordt gevuld met een nieuw UUID.
     * Het attribuut Tijdstip Registratie wordt gevuld met de actuele datum/tijd.
-    * Het attribuut Vervallen krijgt de waarde 'False'.
+    * Het attribuut Vervallen krijgt de waarde False.
     * Alle overige attributen krijgen in houdelijk de waarden die aan de functie zijn meegegeven.
 
