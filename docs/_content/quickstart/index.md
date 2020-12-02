@@ -1,14 +1,11 @@
 ---
-title: "Quick Start Guide"
+title: "Quick Start Guide Logging van Verwerkingen"
 name: Quick Start Guide
 ---
-
-# Logging van Verwerkingen
-
 Deze Quick Start Guide is geschreven voor iedereen die te maken krijgt met logging van werkingen: functionarissen gegevensbescherming, privacy officers, informatiearchitecten, ontwikkelaars, beheerders et cetera.
 
 
-## Inhoudsopgave
+# Inhoudsopgave
 
 **Gemeentelijke voorzieningen**
 
@@ -23,16 +20,16 @@ Deze Quick Start Guide is geschreven voor iedereen die te maken krijgt met loggi
 * [Volledige logging van verwerking](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Volledige-logging-van-verwerkingen).
 
 
-## Gemeentelijke voorzieningen
+# Gemeentelijke voorzieningen
 
 Hieronder wordt beknopt beschreven welke zaken een gemeente minimaal moet regelen om in de informatievoorziening te kunnen starten met het loggen van verwerkingen op basis van de door VNG Realisatie gestandaardiseerde Verwerkingenlogging API.
 
 
-### Voorbereiden Gemeentelijk Verwerkingsactiviteitenregister
+## Voorbereiden Gemeentelijk Verwerkingsactiviteitenregister
 
 Aanname is dat de gemeente beschikt over een verwerkingsactiviteitenregister (VAR). In dit register zullen alle verwerkingsactiviteiten voorzien moeten worden van een wereldwijd uniek nummer, een zogenaamde ‘Universal Unique Identifier’ afgekort UUID.
 
-#### Gemeentelijk VAR in de vorm van een document
+### Gemeentelijk VAR in de vorm van een document
 
 Indien het gemeentelijk VAR de vorm heeft van een document, zoals een spreadsheet, dan moet daarin een extra kolom opgenomen worden voor dit nummer.
 Hieronder is een voorbeeld opgenomen waarin een UUID is toegevoegd aan de verwerkingsactiviteiten in het vooringevulde verwerkingsactiviteitenregister van de IBD:
@@ -43,12 +40,12 @@ Er bestaan diverse websites die deze nummers kunnen genereren. Deze zijn te vind
 Een handige site is bijvoorbeeld [UUIDGenerator.net](https://www.uuidgenerator.net/). Deze site kan meerdere UUID’s genereren en opslaan in een bestand.
 N.B. De site gaf aan maximaal vijf nummers te kunnen genereren. Op het moment van schrijven was het echter ook mogelijk om een groter getal (50, 200) in te voeren.
 
-#### Gemeentelijk VAR in de vorm van een informatiesysteem
+### Gemeentelijk VAR in de vorm van een informatiesysteem
 
 Is het gemeentelijk VAR een informatiesysteem dan zou het kunnen zijn dat de verwerkingsactiviteiten al te identificeren zijn via een UUID. Is dit nog niet het geval dan zal de ontwikkelaar van het systeem deze toe moeten voegen.
 
 
-### Voorbereiden Gemeentelijk Verwerkingenlog
+## Voorbereiden Gemeentelijk Verwerkingenlog
 
 Op hoofdlijnen heeft de gemeenten twee keuzen bij de inrichting van het gemeentelijke verwerkingenlog:
 
@@ -75,7 +72,7 @@ Het wordt aanbevolen om:
 Zonder een bewuste keuze en een transitieplan ontstaat er waarschijnlijk vanzelf een federatief verwerkingenlog. Binnende gemeente zijn er dan meerdere verschillende verwerkingenlogs aanwezig. Leveranciers die dat kunnen, gebruiken dan hun eigen verwerkingenlog om te zorgen dat hun applicaties kunnen functioneren. De gemeente heeft in dat geval mogelijk geen eisen kunnen stellen aan de manier waarop deze applicaties loggen en/of de werking en inrichting van het impliciet geleverde verwerkingslog.
 
 
-## Implementatie van de Logging API
+# Implementatie van de Logging API
 
 Hieronder wordt beknopt beschreven wat geregeld moet worden om de Logging API te implementeren. Eerst wordt de meest minimale vorm van logging beschreven, vervolgens de meest volledige vorm.
 
@@ -86,9 +83,9 @@ Zie voor dit soort verwerkingen de meest volledige vorm en de toelichting daarbi
 Vanuit het principe ‘beter iets dan niets loggen’ is besloten om de minimale vorm toch te beschrijven.
 
 
-### Minimale logging van verwerkingen
+## Minimale logging van verwerkingen
 
-#### Minimale logging vanuit een initiërend proces (bijv. een gebruikersapplicatie)
+### Minimale logging vanuit een initiërend proces (bijv. een gebruikersapplicatie)
 
 Een initiërend proces is vaak een gebruikersapplicatie waarin een gebruiker een bepaalde verwerking initieert. Ook systemen kunnen verwerkingen initiëren; bijvoorbeeld op basis van vooraf ingestelde triggers.
 
@@ -108,7 +105,7 @@ Een Verwerkingsactie kent drie velden die door het verwerkingenlog bepaald worde
 * Het veld Tijdstip registratie wordt gevuld met de actuele datum en tijd.
 * Het veld Vervallen wordt gevuld met de waarde ‘Nee’.
 
-#### Aanroepen van een dienst vanuit een initiërend proces
+### Aanroepen van een dienst vanuit een initiërend proces
 
 Als bijvoorbeeld een applicatie voor vergunningen (het initiërend proces) persoonsgegevens ophaalt bij een gegevensmagazijn, dan verwerken beide systemen persoonsgegevens en moeten beide systemen loggen. We noemen de applicatie voor de vergunningen de ‘afnemer’ en het gegevensmagazijn de ‘aanbieder’.
 
@@ -133,14 +130,14 @@ Toelichting:
 * Technisch gezien zijn de velden optioneel. Operationeel gezien moet geprobeerd worden zoveel mogelijk informatie te verstrekken.
 * In dit voorbeeld is sprake van mandatering, zie [casus C2672](../achtergronddocumentatie/ontwerp/artefacten/2672.md) daarbij blijft de gemeente verantwoordelijk. Zie voor delegatie [casus C7883](../achtergronddocumentatie/ontwerp/artefacten/7883.md).
 
-#### Minimale logging vanuit een dienstaanbieder
+### Minimale logging vanuit een dienstaanbieder
 
 De aanbieder van de dienst, in ons voorbeeld het gegevensmagazijn, neemt via de API de volgende Verwerkingsactie op in het verwerkingslog. De Verwerkingsactie bevat diverse velden waarin de informatie uit de html header in terecht is gekomen. Deze velden zijn met een * in de linker kantlijn gemarkeerd.
 
 <img src="./_assets/Minimaal_Provider_1.png" alt="Minimale logging door provider (1 van 2)" width="700"/>
 <img src="./_assets/Minimaal_Provider_2.png" alt="Minimale logging door provider (2 van 2)" width="700"/>
 
-### Inzage
+## Inzage
 
 Voor inzage in het log kan gebruik gemaakt worden van de API-functie Opvragen Verwerkingsacties. Deze functie kent vier varianten:
 * Opvragen Verwerkingsacties – Beperkte set velden, niet vertrouwelijk
@@ -164,11 +161,11 @@ Toelichting:
 
 Zijn er binnen de gemeente meerdere verwerkingslogs aanwezig, dan is het handig als deze via één centraal punt bevraagd kunnen worden. Zie voor meer informatie hierover de [architectuurdocumentatie](../architectuur/index.md).
 
-### Volledige logging van verwerkingen
+## Volledige logging van verwerkingen
 
 Volledige logging van verwerkingen richt zich op twee aspecten: Begrijpelijkheid en aanpasbaarheid.
 
-#### Begrijpelijkheid
+### Begrijpelijkheid
 
 Bij minimale logging kunnen we het doel van de verwerking alleen afleiden uit de verwerkingsactiviteit. Geen van de overige velden geeft aanvullende informatie over het doel van de verwerking:
 
@@ -204,7 +201,7 @@ Met al deze extra informatie komt een volledige verwerkingsactiviteit er bijvoor
 <img src="./_assets/Maximaal_Consumer_1.png" alt="Maximale logging door consumer (1 van 2)" width="700"/>
 <img src="./_assets/Maximaal_Consumer_2.png" alt="Maximale logging door consumer (2 van 2)" width="700"/>
 
-#### Aanpasbaarheid
+### Aanpasbaarheid
 
 Over de inhoud van een verwerkingenlog mag geen twijfel bestaan. We willen daarom dat iets dat in het verwerkingenlog is opgeslagen niet gewijzigd kan worden (het verwerkingenlog is immutable). 
 
@@ -224,7 +221,7 @@ Bij het fraudeonderzoek zou het Verwerking ID het ID van de onderzoekszaak kunne
 
 Tot slot voorziet de API nog in een generieke wijzigingsfunctie. Deze functie kan ingezet worden op het moment dat er bijvoorbeeld foutief gelogd is als gevolg van een bug in een bepaalde applicatie. Deze functie werkt wel op niveau van de Actie en vraagt dus om een Actie ID. Zie hiervoor [F8316: Wijzig Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/8316.md) en [F3835: Wijzig Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/3835.md).
 
-#### Aanpasbaarheid in een keten
+### Aanpasbaarheid in een keten
 
 Om de aanpasbaarheid in een keten te visualiseren gebruiken we opnieuw het fraude-onderzoek. We beginnen met het opvragen van gegevens bij een basisregistratie:
 
