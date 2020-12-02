@@ -27,10 +27,10 @@ De opgegeven verwerkingsactie, geïdentificeerd met behulp van het Actie ID, wor
 In [B3891](../achtergronddocumentatie/ontwerp/artefacten/3891.md) is beschreven hoe een log dat in technische zin immutable is toch in logische zin kan worden aangepast.
 
 Bij een dergelijk log zou het volgende conceptuele algoritme toegepast moeten worden:
-*	De verwerkingsactie die hoort bij het opgegeven Actie ID wordt opgehaald.
-*	Zijn er van de actie meerdere voorkomens dan worden alle niet actuele voorkomens genegeerd.
-*	Is het meest actuele voorkomen vervallen dan retourneert de functie een foutmelding.
-*	Is het meest actuele voorkomen niet vervallen dan wordt een nieuwe logentry aangemaakt.
+* De verwerkingsactie die hoort bij het opgegeven Actie ID wordt opgehaald.
+* Zijn er van de actie meerdere voorkomens dan worden alle niet actuele voorkomens genegeerd.
+* Is het meest actuele voorkomen vervallen dan retourneert de functie een foutmelding.
+* Is het meest actuele voorkomen niet vervallen dan wordt een nieuwe logentry aangemaakt.
     * Het attribuut `ID` wordt gevuld met een nieuw UUID.
     * Het attribuut 'Tijdstip Registratie' wordt gevuld met de actuele datum/tijd.
     * Het attribuut 'Vervallen' krijgt de waarde True.
