@@ -4,28 +4,14 @@ name: architectuur
 ---
 
 ## Algemeen
-Als handreiking bij de API-standaard zijn een aantal architectuurschetsen ontwikkeld die te maken hebben met de plek van de API-standaard in de gemeentelijke informatievoorziening. Tevens zijn mogelijke implementatiescenarios geschetst en zijn best-practices benoemd.
+De Verwerkingenlogging API-standaard standaardiseerd de wijze waarop processystemen de verwerking van (persoons)gegevens kunnen vastleggen in verwerkingenlogs en deze verwerkingenlogs kunnen ontsluiten naar geautoriseerde afnemers. De Verwerkingenlogging API-standaard biedt functies voor:
 
-## Schets van de informatievoorziening rondom logging
-- Samenhang taakspecifieke applicaties, logregister en gemeentelijk VAR
-- Implementatie van de API-standaard door taakspecifieke applicaties
-- Implementatie van de API-standaard door logregister
-- Logging door providers en consumers
+* aanmaken van verwerkinglogrecords door processystemen;
+* bevraging van verwerkinglogrecords door afnemende systemen.
 
-## Vastleggen van een verwerking
-- Directe vastlegging binnen een transactie
-- Vastlegging via een persistent queueing mechanisme
-- Pseudonimisering van BSN's door logregisters
+Bij de implementatie van de Verwerkingenlogging API-standaard sprake van een provider (aanbieder) als een consumer (afnemer). De providerrol wordt ingevuld door het verwerkingenlog. Dit informatiesysteem is verantwoordelijk voor de implementatie van de API-functies voor het vastleggen en ontsluiten van verwerkingen van gegevens. Deze component si daarnaast verantwoordelijk voor de opslag van verwerkinglogrecords die door processystemen worden aangeleverd. De consumerrol wordt ingevuld door processystemen die verwerkinglogrecords aanleveren en systemen zoals een MijnGemeente-component die verwerkinglogrecords ontsluiten naar de burger of andere geautoriseerde afnemer. In onderstaande schets is weergegeven welke informatiesystemen in de informatiehuishouding bij de logging van verwerkingen een rol spelen. De positie van de Verwerkingenlogging API-standaard is hierbij in het rood omkaderd aangegeven.
 
-## 'Muteren' van een logrecord
-- Wijzigen van de vertrouwelijkheid
+<img src="./_assets/API_standaard_werkingsgebied.png" alt="API-standaard" width="700"/>
 
-## Binnengemeentelijke inrichting logregister
-- Centraal logregister
-- Gefedereerd logregister
 
-## Logging in ketens en netwerken
-- Logging door gemeente en derde partijen
 
-## Logging en zaakgericht werken
-- Schets van logging binnen een zaak
