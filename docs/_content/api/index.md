@@ -4,9 +4,9 @@ name: APIs voor logging van verwerkingen
 ---
 ## Over de implementatie van de API-standaard
 
-#### Lees s.v.p. eerst de Quick Start Guide!
+#### Quick Start Guide
 
-De [Quick Start Guide](../quickstart/index.md) schetst de interactie tussen applicaties, het verwerkingenlog en het verwerkingsactiviteitenregister.
+De [Quick Start Guide](../quickstart/index.md) beschrijft kort de interactie tussen applicaties, het verwerkingenlog en het verwerkingsactiviteitenregister.
 
 Daarna wordt met behulp van twee voorbeelden beschreven:
 * [Minimale logging](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Minimale-logging-van-verwerkingen) waarbij zowel een consumer als een provider betrokken is.
