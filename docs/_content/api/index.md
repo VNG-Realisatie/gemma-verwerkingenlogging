@@ -48,6 +48,13 @@ De provider logt deze informatie als volgt:
 
 Onderstaande tabel beschrijft de door de API geboden functies. Klik op de naam van de functie voor de specificatie.
 
+
+| Categorie \ Functie  |
+| :----------- |
+| Loggen |
+| &nbsp;&nbsp;&nbsp; [F7446: Log Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/7446.md) |
+|     [F6624: Log Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/6624.md) |
+
 | Categorie | Functie  |
 | :-----------      | :-----------  | 
 | Loggen | |
