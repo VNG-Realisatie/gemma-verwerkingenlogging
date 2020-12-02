@@ -1,5 +1,5 @@
 ---
-name: aanvullendespecificatie-wijzigvertrouwelijkheidverwerking-post.md
+name: aanvullendespecificatie-wijzigvertrouwelijkheidverwerking-post
 title: Aanvullende specificaties voor POST /wijzigVertrouwelijkheidVerwerking
 layout: default
 ---
