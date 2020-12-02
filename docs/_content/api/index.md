@@ -22,12 +22,13 @@ Uiteindelijk  moet voldaan worden aan alle onderstaande punten:
     - Alle verwerkingen hebben een eigen ID ([B8157](../achtergronddocumentatie/ontwerp/artefacten/8157.md)).
         - Als de verwerking overeenkomt met een proces uit de bedrijfsvoering (zoals een verzoek of zaak) en dit proces heeft een eigen UUID dan kan dit UUID gebruikt worden.
         - In alle andere gevallen moet een nieuw UUID toegewezen worden.
-    - Het ID van de verwerking wordt gelogd en kan later gebruikt worden om acties die over deze verwerking gelogd zijn terug te vinden in het verwerkingenlog, de vertrouwelijkheid te laten vervallen, een bewaartermijn op te geven of deze in bijzondere situaties aan te passen of logisch te verwijderen.
-    - Acties worden zodanig omschreven dat deze duidelijk zijn voor de burger. Hiertoe worden waar mogelijk en zinvol alle attributen van de actie ingezet ([A5924](../achtergronddocumentatie/ontwerp/artefacten/5924.md)).
+    - Het ID van de verwerking wordt gelogd en kan later gebruikt worden om acties die over deze verwerking gelogd zijn aan elkaar te relateren, eventuele vertrouwelijkheid te laten vervallen, een bewaartermijn op te geven of de acties in bijzondere situaties aan te passen of logisch te verwijderen.
+    - Verwerkingsacties worden zodanig omschreven dat deze duidelijk zijn voor de burger. Hiertoe worden waar mogelijk en zinvol alle attributen van de actie ingezet ([A5924](../achtergronddocumentatie/ontwerp/artefacten/5924.md)).
 
 - Roept de applicatie/service een API aan waarbij die API persoonsgegevens verwerkt? Dan moet bij deze aanroep in de header de volgende informatie meegegeven worden ([B7259](../achtergronddocumentatie/ontwerp/artefacten/7259.md), [B9177](../achtergronddocumentatie/ontwerp/artefacten/9177.md)): `OIN`, `Verwerkingsactiviteit ID`, `Verwerkingsactiviteit URL`, `Verwerking ID`, `Vertrouwelijkheid` en `Bewaartermijn`. Zie [Toevoeging aan de header van alle persoonsgegevens-verwerkende API’s’](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/api/index.md#toevoeging-aan-de-header-van-alle-persoonsgegevens-verwerkende-apis) voor meer informatie.
 
 -  Wordt een service geboden waarbij persoonsgegevens verwerkt worden? Dan moet bij de uitvoering daarvan gekeken worden of in de header van de aanroep de volgende gegevens aanwezig zijn: `OIN`, `Verwerkingsactiviteit ID`, `Verwerkingsactiviteit URL`,` Verwerking ID`, `Vertrouwelijkheid` en `Bewaartermijn`. Deze gegevens dienen overgenomen te worden bij het loggen van de verwerking. Zie ‘*Toevoeging aan de header van alle persoonsgegevens-verwerkende API’s*’ voor meer informatie.
+
 - De applicatie of service ondersteunt alle functies van de API.
 
 ## Toevoeging aan de header van alle persoonsgegevens-verwerkende APIs
