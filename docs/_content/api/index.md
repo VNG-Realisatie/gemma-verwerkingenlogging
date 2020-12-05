@@ -87,25 +87,6 @@ Klik op de API-call in de onderstaande tabel om de aanvullende specificaties te 
 | RPC | [POST /wijzigVertrouwelijkheidVerwerking](./aanvullendespecificatie-wijzigvertrouwelijkheidverwerking-post.md) |
 | RPC | [POST /wijzigBewaartermijnVerwerking](./aanvullendespecificatie-wijzigbewaartermijnverwerking-post.md) |
 
-### Mapping van logische functies op API-calls
-
-In onderstaand tabel is de mapping van de verwerkingenlogging functies naar de API-calls weergegeven.
-
-| Verwerkingenlogging functie | API call  | [Autorisatie-scope](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/api/oas-specification/logging-verwerkingen-api/scopes.md) | Stijl |
-| :-----------      | :-----------  | :----------    | :---------- |
-| [F7446: Log Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/7446.md)    | POST /verwerkingsacties  | `create:normal`| REST |
-| [F6624: Log Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/6624.md)	| POST /verwerkingsacties| `create:confidential` | REST |
-| [F4086: Opvragen Verwerkingsacties – Beperkte set velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/4086.md) | GET /verwerkingsacties?vertrouwelijkheid=Normaal | `read:restricted` | REST |
-| [F2525: Opvragen Verwerkingsacties – Beperkte set velden, vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp//artefacten/2525.md) | GET /verwerkingsacties?vertrouwelijkheid=Opgeheven | `read:restricted` | REST |
-| [F9787: Opvragen Verwerkingsacties – Alle velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/9787.md)	| GET /verwerkingsacties?vertrouwelijkheid=Normaal| `read:normal` | REST |
-| [F0143: Opvragen Verwerkingsacties – Alle velden, vertrouwelijk](../achtergronddocumentatie/ontwerp//artefacten/0143.md) | GET /verwerkingsacties?vertrouwelijkheid=Vertrouwelijk | `read:confidential` | REST |
-| [F2969: Wijzig vertrouwelijkheid van Verwerking](../achtergronddocumentatie/ontwerp//artefacten/2969.md) | POST /wijzigVertrouwelijkheidVerwerking | `update:confidential` | RPC |
-| [F4415: Wijzig bewaartermijn van Verwerking](../achtergronddocumentatie/ontwerp//artefacten/4415.md) | POST /wijzigBewaartermijnVerwerking | `update:normal` | RPC |
-| [F8316: Wijzig Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/8316.md) | PUT /verwerkingsacties/{uuid} | `update:normal` | REST |
-| [F3835: Wijzig Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/3835.md) 	| PUT /verwerkingsacties/{uuid}| `update:confidential` | REST |
-| [F9906: Verwijder Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/9906.md) | DELETE /verwerkingsacties/{uuid} | `delete:normal` | REST |
-| [F2265: Verwijder Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp//artefacten/2265.md) | DELETE /verwerkingsacties/{uuid} | `delete:confidential` | REST |
-
 ### Opmerkingen
 - De autorisatie-scopes zijn [hier](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/api/oas-specification/logging-verwerkingen-api/scopes.md) beschreven. Als de API call niet voldoet aan de scope dan zal een `HTTP 401 (Unauthorized)` foutmelding worden teruggegeven.
 - Vanwege het platslaan van het objecttype `Verwerking` in het objecttype `Verwerkingsactie` passen de verwerkingenlogging-functies F2969 en F4415 niet in het CRUD-model van REST en zijn deze functies als RPC-calls gespecificeerd.
