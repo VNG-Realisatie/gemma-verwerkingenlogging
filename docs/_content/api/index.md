@@ -16,7 +16,7 @@ Daarna wordt met behulp van twee voorbeelden beschreven:
 
 Uit de [Quick Start Guide](../quickstart/index.md) valt op te maken dat applicaties en services die de verwerkingenlogging API-standaard implementeren op diverse punten moeten worden aangepast.
 
-Uiteindelijk  moet voldaan worden aan alle onderstaande punten:
+Uiteindelijk moet voldaan worden aan alle onderstaande punten:
 
 - Bij alle acties die persoonsgegevens verwerken wordt er gelogd ([B7952](../achtergronddocumentatie/ontwerp/artefacten/7952.md)). Hierbij gelden de volgende regels:
     - Alle verwerkingen hebben een eigen ID ([B8157](../achtergronddocumentatie/ontwerp/artefacten/8157.md)).
