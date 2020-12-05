@@ -29,8 +29,6 @@ Uiteindelijk  moet voldaan worden aan alle onderstaande punten:
 
 -  Wordt een service geboden waarbij persoonsgegevens verwerkt worden? Dan moet bij de uitvoering daarvan gekeken worden of in de header van de aanroep de volgende gegevens aanwezig zijn: `OIN`, `Verwerkingsactiviteit ID`, `Verwerkingsactiviteit URL`,` Verwerking ID`, `Vertrouwelijkheid` en `Bewaartermijn`. Deze gegevens dienen overgenomen te worden bij het loggen van de verwerking. Zie ‘*Toevoeging aan de header van alle persoonsgegevens-verwerkende API’s*’ hieronder voor meer informatie.
 
-- De applicatie of service ondersteunt alle functies van de API.
-
 ## Toevoeging aan de header van alle persoonsgegevens-verwerkende APIs
 Als een consumer een API aanroept van een provider die persoonsgegevens verwerkt, moet bij deze aanroep in de header de volgende informatie meegegeven worden ([B9177](../achtergronddocumentatie/ontwerp/artefacten/9177.md)).
 
@@ -44,7 +42,7 @@ De provider logt deze informatie als volgt:
 
 <img src="./_assets/api_3.png" alt="" width="700"/>
 
-## Functies van de API
+## Functionele view
 
 Onderstaande tabel beschrijft de door de API geboden functies. Klik op de naam van de functie voor de specificatie.
 
@@ -67,7 +65,7 @@ Onderstaande tabel beschrijft de door de API geboden functies. Klik op de naam v
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F9906: Verwijder Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/9906.md) | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F2265: Verwijder Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/2265.md) | 
 
-## Specificaties
+## Technische view
 
 ### OAS
 
