@@ -16,8 +16,8 @@ layout: default
 
 | Regel | Foutcode |
 | :---- | :---- |
-| Bij autorisatiescope `read:restricted` moet de parameter beperkteSet 'False' zijn. | 401 |
-| Bij autorisatiescope `read:normal` moet de parameter vertrouwelijkheid 'Normal' zijn. | 401 |
+| Bij autorisatiescope `read:restricted` moet de parameter beperkteSet 'False' zijn. | 403 |
+| Bij autorisatiescope `read:normal` moet de parameter vertrouwelijkheid 'Normal' zijn. | 403 |
 
 
 ### Gedrag
