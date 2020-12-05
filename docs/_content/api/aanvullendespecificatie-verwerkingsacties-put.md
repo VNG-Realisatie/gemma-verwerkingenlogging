@@ -16,9 +16,9 @@ layout: default
 
 | Regel | Foutcode |
 | :---- | :---- |
-| Bij autorisatiescope `update:normal` moet de parameter Vertrouwlijkheid 'Normaal' zijn en moet ook de vertrouwelijkheid van de oorspronkelijke verwerkingsactie 'Normaal' zijn. | 401 |
-| Bij autorisatiescope `update:confidential` mag de parameter Vertrouwlijkheid 'Normaal' of 'Vertrouwelijk' zijn. | 401 |
-| De parameter Vertrouwlijkheid mag nooit de waarde 'Opgeheven' hebben. | 401 |
+| Bij autorisatiescope `update:normal` moet de parameter Vertrouwlijkheid 'Normaal' zijn en moet ook de vertrouwelijkheid van de oorspronkelijke verwerkingsactie 'Normaal' zijn. | 403 |
+| Bij autorisatiescope `update:confidential` mag de parameter Vertrouwlijkheid 'Normaal' of 'Vertrouwelijk' zijn. | 403 |
+| De parameter Vertrouwlijkheid mag nooit de waarde 'Opgeheven' hebben. | 403 |
 
 
 ### Gedrag
