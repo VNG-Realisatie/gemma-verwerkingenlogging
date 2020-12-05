@@ -16,7 +16,7 @@ layout: default
 
 | Regel | Foutcode |
 | :---- | :---- |
-| De functie mag alleen aangeroepen worden met autorisatiescope `update:confidential`. | 401 |
+| De functie mag alleen aangeroepen worden met autorisatiescope `update:confidential`. | 403 |
 
 
 ### Gedrag
