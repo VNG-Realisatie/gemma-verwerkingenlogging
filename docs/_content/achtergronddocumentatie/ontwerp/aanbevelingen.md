@@ -14,4 +14,5 @@ Deze aanbevelingen beschrijven best-practices ten aanzien van de implementatie v
 ## Gegevensmodel logging
 - [A7838: Standaardwaarden voor Actie](./artefacten/7838.md)
 
-
+## Wijzigen, tijd en historie
+- In de toelichting van besluit [B3891: Wijzigbaarheid en historie](./artefacten/3891.md) is een mogelijk opslagstructuur uitgewerkt voor een log dat in technische zin immutable is, terwijl het in functionele zin wijzigbaar is.
