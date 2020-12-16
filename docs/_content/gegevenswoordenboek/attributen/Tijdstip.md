@@ -1,11 +1,12 @@
 ---
 title: "Attribuut - Tijdstip"
 name: Attribuut - Tijdstip
-date: 28-09-2020
+date: 16-12-2020
 ---
 
 ## Beschrijving
 Tijdstip waarop de verwerkingsactie is uitgevoerd.
+N.B. Consumers en providers moeten de 'klok gelijkzetten' via een timeserver.
 
 ## Toelichting
 Zie [B2017](../../achtergronddocumentatie/ontwerp/artefacten/2017.md).
