@@ -14,7 +14,7 @@ De verwerkingsactiviteit geeft informatie over het doel en grondslag (de doelbin
 `https://...`
 
 ## Attribuuttype
-[URI](../attribuuttypen/URI.md)
+[Uniform Resource Identifier (URI)](../attribuuttypen/URI.md)
 
 ## Aanwezigheid
 [`Optioneel`](../../gegevenswoordenboek/readme.md#bijzondere-meta-attributen)
