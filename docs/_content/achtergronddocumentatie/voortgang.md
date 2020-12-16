@@ -3,6 +3,10 @@ title: "Voortgang ontwikkeling API-standaard voor logging van verwerkingen"
 name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ---
 
+## 16 december 2020
+* Datatype van Bewaartermijn is gewijzigd van `Aantal Jaar` in `Periode`. In de API moet dit nog vertaald worden naar `xs:duration`.
+* Gegevenswoordenboek aangevuld met `Verwerkingsactiviteit URL` en `Verwerkingactiviteit URL Afnemer`. Deze attributen waren al verwerking in de afbeeldingen en in de API maar ontbraken nog in gegevenswoordenboek.
+
 ## 2 december 2020
 De API pagina is aangepast op de volgende punten:
 * Verwijzing naar Quick Start Guide opgenomen.
