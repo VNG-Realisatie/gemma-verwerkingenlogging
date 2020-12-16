@@ -1,20 +1,20 @@
 ---
 title: "Attribuut - Bewaartermijn"
 name: Attribuut - Bewaartermijn
-date: 28-09-2020
+date: 16-12-2020
 ---
 
 ## Beschrijving
-Aantal jaar dat de verwerking bewaard moet blijven.
+Periode waarin de verwerking bewaard moet blijven.
 
 ## Toelichting
 Zie ook [B9559](../../achtergronddocumentatie/ontwerp/artefacten/9559.md).
 
 ## Voorbeeld
-`10`
+`P10Y`
 
 ## Attribuuttype
-[Aantal Jaar](../attribuuttypen/Aantal_jaar.md)
+[Periode](../attribuuttypen/Periode.md)
 
 ## Aanwezigheid
 [`Verplicht indien te bepalen`](../../gegevenswoordenboek/readme.md#bijzondere-meta-attributen)
