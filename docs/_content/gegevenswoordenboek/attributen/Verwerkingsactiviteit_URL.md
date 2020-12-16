@@ -8,7 +8,7 @@ date: 18-12-2020
 Url naar de resource van de verwerkingsactiviteit die de verwerking rechtvaardigt.
 
 ## Voorbeeld
-`http://...`
+`https://...`
 
 ## Attribuuttype
 [URI](../attribuuttypen/URI.md)
