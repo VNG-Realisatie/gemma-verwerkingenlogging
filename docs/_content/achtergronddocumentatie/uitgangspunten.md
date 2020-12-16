@@ -28,12 +28,12 @@ Onderstaande aanbevelingen, ontwerpbesluiten en openstaande vraagstukken zijn ge
 ### Ontwerpbesluiten
 -	[B6856: Hiërarchie: Verwerkingsactiviteit, Verwerking, Handeling en Actie](./ontwerp/artefacten/6856.md)
 - [B1598: Opname van Betrokkenheid](./ontwerp/artefacten/1598.md)
-- [B6247 - Opname van Verwerkt soort gegeven](./ontwerp/artefacten/6247.md)
+- [B6247: Opname van Verwerkt soort gegeven](./ontwerp/artefacten/6247.md)
 - [B7952: Loggen vanuit applicatie - Welke momenten en hoe vaak](./ontwerp/artefacten/7952.md)
 
 ### Openstaande vraagstukken
-- [V3934 - Loggen van afgeleide informatie](./ontwerp/artefacten/3934.md)
-- [V7168 - Logging van selecties](./ontwerp/artefacten/7168.md)
+- [V3934: Loggen van afgeleide informatie](./ontwerp/artefacten/3934.md)
+- [V7168: Logging van selecties](./ontwerp/artefacten/7168.md)
 
 ## Het doel is duiden, niet reconstrueren
 Het verwerkingenlog is primair bedoeld als ondersteunend middel voor het kunnen voldoen aan de verantwoordingsplicht uit de AVG. Het verwerkingenlog is dus bedoeld voor het kunnen aantonen dat een verwerking aan de belangrijkste beginselen van verwerking heeft voldaan, zoals rechtmatigheid, transparantie, doelbinding en juistheid. Het verwerkingenlog is niet bedoeld om reconstructies te maken van situaties en gegevens in systemen op een bepaald tijdstip in het verleden (audit-trail). Mocht de burger, of bijvoorbeeld gemeentelijke privacy officer, naar aanleiding van de gepresenteerde duiding van verwerkingen nadere vragen hebben dan kunnen eventuele 'forensische' onderzoeken worden uitgevoerd bij de applicaties die de gegevens daadwerkelijk hebben verwerkt.
