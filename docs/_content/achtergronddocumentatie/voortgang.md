@@ -6,7 +6,7 @@ name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ## 16 december 2020
 * Datatype van Bewaartermijn is gewijzigd van `Aantal Jaar` in `Periode`. In de API moet dit nog vertaald worden naar `xs:duration`.
 * Gegevenswoordenboek aangevuld met `Verwerkingsactiviteit URL` en `Verwerkingactiviteit URL Afnemer`. Deze attributen waren al verwerking in de afbeeldingen en in de API maar ontbraken nog in gegevenswoordenboek.
-* Besluit B7259 stelde nog dat de consumer aan de provider geen doelbinding mee geeft. Inmiddels is dat wel mogelijk via de html header. Essentie van het besluit is echter dat de provider de doelbinding van de consumer niet kan gebruiken om zelf te loggen. Het besluit is aangepast om aan te geven dat de doelbinding (in de vorm van een verwerkingsactiviteit) wel meegegeven kan worden via de html header maar dat de provider moet loggen op basis van een eigen doelbinding.
+* Besluit [B7259](./ontwerp/artefacten/7259.md) stelde nog dat de consumer aan de provider geen doelbinding mee geeft. Inmiddels is dat wel mogelijk via de html header. Essentie van het besluit is echter dat de provider de doelbinding van de consumer niet kan gebruiken om zelf te loggen. Het besluit is aangepast om aan te geven dat de doelbinding (in de vorm van een verwerkingsactiviteit) wel meegegeven kan worden via de html header maar dat de provider moet loggen op basis van een eigen doelbinding.
 
 ## 2 december 2020
 De API pagina is aangepast op de volgende punten:
