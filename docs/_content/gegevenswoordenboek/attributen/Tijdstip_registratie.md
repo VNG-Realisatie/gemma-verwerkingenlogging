@@ -6,6 +6,7 @@ date: 16-12-2020
 
 ## Beschrijving
 Tijdstip waarop de verwerkingsactie in het log is geregistreerd.
+
 N.B. Consumers en providers moeten de 'klok gelijkzetten' via een timeserver.
 
 ## Toelichting
