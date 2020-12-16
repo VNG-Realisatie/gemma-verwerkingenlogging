@@ -1,7 +1,7 @@
 ---
-title: "Attribuut - Verwerkingsactiviteit ID Afnemer"
-name: Attribuut - Verwerkingsactiviteit ID Afnemer
-date: 03-11-2020
+title: "Attribuut - Verwerkingsactiviteit URL Afnemer"
+name: Attribuut - Verwerkingsactiviteit URL Afnemer
+date: 16-12-2020
 ---
 
 ## Beschrijving
