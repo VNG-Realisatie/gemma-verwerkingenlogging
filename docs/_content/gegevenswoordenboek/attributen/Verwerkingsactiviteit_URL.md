@@ -11,7 +11,7 @@ Url naar de resource van de verwerkingsactiviteit die de verwerking rechtvaardig
 `https://...`
 
 ## Attribuuttype
-[URI](../attribuuttypen/URI.md)
+[Uniform Resource Identifier (URI)](../attribuuttypen/URI.md)
 
 ## Aanwezigheid
 [`Verplicht indien te bepalen`](../../gegevenswoordenboek/readme.md#bijzondere-meta-attributen)
