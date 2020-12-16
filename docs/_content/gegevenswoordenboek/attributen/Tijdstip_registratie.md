@@ -1,11 +1,12 @@
 ---
 title: "Attribuut - Tijdstip registratie"
 name: Attribuut - Tijdstip registratie
-date: 28-09-2020
+date: 16-12-2020
 ---
 
 ## Beschrijving
 Tijdstip waarop de verwerkingsactie in het log is geregistreerd.
+N.B. Consumers en providers moeten de 'klok gelijkzetten' via een timeserver.
 
 ## Toelichting
 Wordt bepaald door het log. Niet door het loggende systeem. 
