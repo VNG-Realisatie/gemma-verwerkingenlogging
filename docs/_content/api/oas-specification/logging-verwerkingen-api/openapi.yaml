@@ -20,6 +20,13 @@ paths:
       operationId: verwerkingsactie_list
       description: Door de juiste parameters mee te geven kun je zoeken naar de voor jouw relevante VERWERKINGSACTIEs.
       parameters:
+        - name: verwerkingsactiviteitId
+          in: query
+          description: Identificator van de verwerkingsactiviteit die de verwerking rechtvaardigt.
+          schema:
+            type: string
+            format: uuid
+          example: "5f0bef4c-f66f-4311-84a5-19e8bf359eaf"
         - name: vertrouwelijkheid
           in: query
           description: Geeft de mate van vertrouwelijkheid van de verwerking aan.
@@ -29,6 +36,7 @@ paths:
               - Normaal
               - Vertrouwelijk
               - Opgeheven
+            default: Normaal
           example: Normaal
         - name: objecttype
           in: query
@@ -67,7 +75,7 @@ paths:
             example: "2020-10-24"
         - name: eindDatum
           in: query
-          description: Tijdstip van de verwerkingsactie moet kleiner of gelijk zijn aan deze datum om teruggegeven te worden.
+          description: Tijdstip van de verwerkingsactie moet kleiner zijn dan deze datum om teruggegeven te worden.
           required: true
           schema:
             type: string
@@ -1122,14 +1130,14 @@ components:
             - Normaal
             - Vertrouwelijk
             - Opgeheven
+          default: Normaal
           example: Normaal
         bewaartermijn:
           title: Bewaartermijn
-          description: Aantal jaar dat de verwerking bewaard moet blijven.
-          type: integer
-          minimum: 0
-          maximum: 999
-          example: 10
+          description: Periode waarin de verwerking bewaard moet blijven.
+          type: string
+          format: duration
+          example: P10Y
         uitvoerder:
           title: Uitvoerder
           description: Organisatie in OIN-formaat die de verwerking uitgevoerd heeft. Voor een beschrijving van het OIN-formaat Zie https://www.logius.nl/diensten/digikoppeling/documentatie in bijlage A van het document ‘Digikoppeling Identificatie en Authenticatie’.
@@ -1375,11 +1383,10 @@ components:
           example: "48086bf2-11b7-4603-9526-67d7c3bb6587"
         bewaartermijn:
           title: Bewaartermijn
-          description: Aantal jaar dat de verwerking bewaard moet blijven.
-          type: integer
-          minimum: 0
-          maximum: 999
-          example: 5
+          description: Periode waarin de verwerking bewaard moet blijven.
+          type: string
+          format: duration
+          example: P10Y
     WijzigVertrouwelijkheidVerwerking:
       title: Wijzig vertrouwelijkheid van Verwerking
       type: object
