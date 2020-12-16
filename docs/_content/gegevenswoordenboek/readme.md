@@ -34,5 +34,6 @@ In het gegevenswoordenboek spreken we in dergelijke gevallen over *‘Verplicht 
 - [Naam](./attribuuttypen/Naam.md)
 - [Objecttype](./attribuuttypen/Objecttype.md)
 - [Organisatie Identificatie Nummer (OIN)](./attribuuttypen/OIN.md)
+- [Uniform Resource Identifier (URI)](./attribuuttypen/URI.md)
 - [Universal Unique IDentifier (UUID)](./attribuuttypen/UUID.md)
 
