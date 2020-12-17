@@ -23,7 +23,7 @@ layout: default
 ### Gedrag
 
 * Er worden alleen verwerkingsacties geretourneerd waarvan Tijdstip valt binnen de opgegeven periode. (Groter of gelijk aan begindatum, kleiner dan de einddatum).
-* Er worden alleen verwerkingsacties geretourneerd waarbij een Verwerkt object voorkomt waarvan Objecttype, Soort Object ID en Object ID matchen met de opgegeven waarden. Bij deze verwerkingsacties worden overige Verwerkte objecten die niet voldoen niet geretourneerd.
+* Er worden alleen verwerkingsacties geretourneerd waarbij een Verwerkt object voorkomt waarvan Objecttype, Soort Object ID en Object ID (bijvoorbeeld Persoon, BSN, 8273365) matchen met de opgegeven waarden. Bij deze verwerkingsacties worden overige Verwerkte objecten die niet voldoen niet geretourneerd. Ofwel: Als er bij een verwerkingsacties meerdere personen voorkomen, dan wordt alleen de persoon geretourneerd die is opgegeven in de zoekparameter.
 * Indien een verwerkingsactiviteitID is opgegeven worden er alleen verwerkingsacties geretourneerd waarvan de VerwerkingsactiviteitID gelijk is aan het opgegeven VerwerkingsactiviteitID.
 * Er worden alleen verwerkingsacties geretourneerd waarbij de waarde van het attribuut Vertrouwelijkheid overeenkomt met de waarde van de parameter vertrouwelijkheid.
 * Als de parameter beperkteSet = true dan worden de volgende attributen **niet** geretourneerd: Systeem, Gebruiker en Gegevensbron. Is de parameter false dan mogen deze attributen wel geretourneerd worden.
