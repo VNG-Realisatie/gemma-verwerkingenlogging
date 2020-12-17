@@ -38,7 +38,7 @@ De criteria die ten aanzien van de Verwerkingenlogging API-standaard worden geha
 | Het informatiemodel is gebaseerd op de beschikbare standaard voor het domein  |   |   |
 | Er is een vertaling van het informatiemodel naar de API (vice versa), bij voorkeur is deze vastgelegd in de vorm van een uitwisselingsgegevensmodel (UGM). Tenminste bevat deze een technische beschrijving van resources, attributen en eigenschappen  |  <img src="./_assets/greensmiley.png" alt="" width="30"/> | [<img src="./_assets/document.png" alt="" width="20"/>](../gegevensmodel/uitwisselingsgegevensmodel/readme.md) |
 | Informatiemodellen (CIM en UGM) zijn gemodelleerd conform de daarvoor geldende best practices  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |  |
-| Ontwerpbesluiten voor vertaling van CIM naar UGM zijn vastgelegd  | <img src="./_assets/greensmiley.png" alt="" width="30"/> | [<img src="./_assets/document.png" alt="" width="20"/>](../achtergronddocumentatie/ontwerp/ontwerpbesluiten.md)   |
+| Ontwerpbesluiten voor vertaling van CIM naar UGM zijn vastgelegd  | <img src="./_assets/greensmiley.png" alt="" width="30"/> | [<img src="./_assets/document.png" alt="" width="20"/>](../gegevensmodel/uitwisselingsgegevensmodel/readme.md)   |
 
 ## Functionele en Technische API-specificaties
 
@@ -73,11 +73,11 @@ De criteria die ten aanzien van de Verwerkingenlogging API-standaard worden geha
 
 |  Criterium | Status | Toelichting |
 |:--|:-:|---|
-| T.b.v. informatiemanagers (e.a.): globale functionele beschrijving staat op GEMMAonline | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
-| T.b.v. architecten: het architectuurmodel is gepubliceerd op GEMMAonline | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
-| T.b.v. ontwikkelaars: het informatiemodel is gepubliceerd op VNG-Realisatie Github | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
+| T.b.v. informatiemanagers (e.a.): globale functionele beschrijving staat op GEMMAonline | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](https://www.gemmaonline.nl/index.php/Thema_Logging_en_verwerkingsactiviteiten)  |
+| T.b.v. architecten: het architectuurmodel is gepubliceerd op GEMMAonline | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](https://www.gemmaonline.nl/index.php/Thema_Logging_en_verwerkingsactiviteiten)  |
+| T.b.v. ontwikkelaars: het informatiemodel is gepubliceerd op VNG-Realisatie Github | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](../gegevensmodel/semantisch_informatiemodel/readme.md)  |
 | T.b.v. ontwikkelaars: de technische beschrijving is gepubliceerd op VNG-Realisatie Github | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
-| T.b.v. ontwikkelaars: OAS specificatie (beschikbaar via Redoc en SwaggerUI) is gepubliceerd op VNG-Realisatie Github | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
+| T.b.v. ontwikkelaars: OAS specificatie (beschikbaar via Redoc en SwaggerUI) is gepubliceerd op VNG-Realisatie Github | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |  [<img src="./_assets/document.png" alt="" width="20"/>](../api/index.md#technische-view) |
 | T.b.v. ontwikkelaars: de uitleg en installatie-instructies van de referentieimplementaties inclusief testgevallen is gepubliceerd op VNG-Realisatie Github |   |   |
 | T.b.v. ontwikkelaars: Postman-scripts zijn gepubliceerd op api-test.nl zodat iedereen kan testen of de implementatie voldoet aan zijn specificatie |   |   |
 | De API-ontwikkelagenda is up-to-date | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
