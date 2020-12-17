@@ -3,6 +3,9 @@ title: "Voortgang ontwikkeling API-standaard voor logging van verwerkingen"
 name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ---
 
+## 17 december 2020
+* [Architectuurschetsen](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/architectuur/index.md) van inrichtingsscenario's toegevoegd. Deze schetsen geven inzicht in de verschillende mogelijkheden die gemeenten hebben bij de inrichting van de informatiesystemen die een rol spelen bij logging van verwerkingsactiviteiten en het ontsluiten van die gegevens naar burgers.
+
 ## 16 december 2020
 * Datatype van Bewaartermijn is gewijzigd van `Aantal Jaar` in `Periode`. In de API moet dit nog vertaald worden naar `xs:duration`.
 * Gegevenswoordenboek aangevuld met `Verwerkingsactiviteit URL` en `Verwerkingactiviteit URL Afnemer`. Deze attributen waren al verwerking in de afbeeldingen en in de API maar ontbraken nog in gegevenswoordenboek.
