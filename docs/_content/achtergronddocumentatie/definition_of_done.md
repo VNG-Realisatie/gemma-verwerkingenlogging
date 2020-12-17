@@ -18,7 +18,7 @@ De criteria die ten aanzien van de Verwerkingenlogging API-standaard worden geha
 
 ## API-standaard gepositioneerd in de Architectuur
 | Criterium | Status | Toelichting |
-|:--|:-:|---|
+|---|---|---|
 | De stakeholders van de API-standaard zijn beschreven  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/productvisie/index.md)  |
 | Interactiepatronen zijn gemodelleerd | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
 | Positie van de API-standaard in de GEMMA informatiearchitectuur is gemodelleerd |  <img src="./_assets/greensmiley.png" alt="" width="30"/> | [<img src="./_assets/document.png" alt="" width="20"/>](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/architectuur/index.md)   |
