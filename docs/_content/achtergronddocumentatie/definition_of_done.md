@@ -19,7 +19,7 @@ De criteria die ten aanzien van de Verwerkingenlogging API-standaard worden geha
 ## API-standaard gepositioneerd in de Architectuur
 
 | Criterium | Status | Toelichting |
-|---|---|---|
+|:--|:-:|---|
 | De stakeholders van de API-standaard zijn beschreven  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/productvisie/index.md)  |
 | Interactiepatronen zijn gemodelleerd | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
 | Positie van de API-standaard in de GEMMA informatiearchitectuur is gemodelleerd |  <img src="./_assets/greensmiley.png" alt="" width="30"/> | [<img src="./_assets/document.png" alt="" width="20"/>](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/architectuur/index.md)   |
@@ -41,6 +41,7 @@ De criteria die ten aanzien van de Verwerkingenlogging API-standaard worden geha
 | Ontwerpbesluiten voor vertaling van CIM naar UGM zijn vastgelegd  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/gegevensmodel/uitwisselingsgegevensmodel/readme.md)   |
 
 ## Functionele en Technische API-specificaties
+
 |  Criterium | Status | Toelichting |
 |:--|:-:|---|
 | Er is een globale functionele beschrijving | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |  [<img src="./_assets/document.png" alt="" width="20"/>](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md) |
@@ -52,12 +53,14 @@ De criteria die ten aanzien van de Verwerkingenlogging API-standaard worden geha
 | Technische specificaties opgesteld in Open API Specification 3.x | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
 
 ## Referentie-implementatie
+
 |  Criterium | Status | Toelichting |
 |:--|:-:|---|
 | API-standaard is geïmplementeerd in een referentieimplementatie van de provider in een gangbare programmeertaal |   |   |
 | Implementeert de gehele OAS-specificatie inclusief de eventueel gedefinieerde aanvullende specificatie |   |   |
 
 ## Testbaarheid via API testplatform
+
 |  Criterium | Status | Toelichting |
 |:--|:-:|---|
 | Testgevallen zijn beschreven voor elke service/operatie en aanvullende specificaties, zowel voor de happy als de unhappy flows |   |   |
@@ -67,6 +70,7 @@ De criteria die ten aanzien van de Verwerkingenlogging API-standaard worden geha
 | Testgevallen zijn geïmplementeerd als Postman-scripts zodat de API geautomatiseerd getest kan worden |   |   |
 
 ## Stakeholder documentatie
+
 |  Criterium | Status | Toelichting |
 |:--|:-:|---|
 | T.b.v. informatiemanagers (e.a.): globale functionele beschrijving staat op GEMMAonline | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
@@ -81,6 +85,7 @@ De criteria die ten aanzien van de Verwerkingenlogging API-standaard worden geha
 | T.b.v. bestuurders: de API-standaard is vermeld op de VNG-site |   |   |
 
 ## Overdracht- en beheerdocumentatie
+
 |  Criterium | Status | Toelichting |
 |:--|:-:|---|
 | Belangrijke ontwerp-overwegingen zijn beschreven en gemotiveerd | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
@@ -90,6 +95,7 @@ De criteria die ten aanzien van de Verwerkingenlogging API-standaard worden geha
 | Beheerafspraken zijn beschreven |   |   |
 
 ## Aanvullende specificaties voor beheer door VNG-R
+
 |  Criterium | Status | Toelichting |
 |:--|:-:|---|
 | Voor zaken die in VNG-R beheer worden genomen is het beheerkader getoetst |   |   |
