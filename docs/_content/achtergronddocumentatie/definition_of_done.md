@@ -88,7 +88,7 @@ De criteria die ten aanzien van de Verwerkingenlogging API-standaard worden geha
 
 |  Criterium | Status | Toelichting |
 |:--|:-:|---|
-| Belangrijke ontwerp-overwegingen zijn beschreven en gemotiveerd | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
+| Belangrijke ontwerp-overwegingen zijn beschreven en gemotiveerd | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |  [<img src="./_assets/document.png" alt="" width="20"/>](../achtergronddocumentatie/ontwerp.md) |
 | Er wordt voldaan aan de acceptatiecriteria van de beheerorganisatie die de standaard in beheer neemt |   |   |
 | Er is een backlog (lijst met fouten, gewenste verbeteringen, gewenste uitbreidingen etc) | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
 | De verantwoordelijke voor beheer is bekend |   |   |
