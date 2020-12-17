@@ -13,7 +13,7 @@ Deze Quick Start Guide is geschreven voor iedereen die te maken krijgt met loggi
 
 * [Voorbereiden Gemeentelijk Verwerkingenlog](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Voorbereiden-Gemeentelijk-Verwerkingenlog)
 
-**Implementatie van de Logging API**
+**Implementatie van de Verwerkingenlogging API**
 
 * [Minimale logging van verwerkingen](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Minimale-logging-van-verwerkingen)
 
