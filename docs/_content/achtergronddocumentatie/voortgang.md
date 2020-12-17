@@ -5,6 +5,8 @@ name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 
 ## 17 december 2020
 * [Architectuurschetsen](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/architectuur/index.md) van inrichtingsscenario's toegevoegd. Deze schetsen geven inzicht in de verschillende mogelijkheden die gemeenten hebben bij de inrichting van de informatiesystemen die een rol spelen bij logging van verwerkingsactiviteiten en het ontsluiten van die gegevens naar burgers.
+* Naar aanleiding van ingediend issue in de tekst van de aanvullende specificatie van de GET /verwerkingsacties duidelijker omschreven dat het filteren op Objecttype, Soort Object ID en Identificator feitelijk zorgt dat er op personen gefilterd wordt.
+* Naar aanleiding van ingediend issue in de specificatie van het attribuuttype Moment aangegeven dat de tijdzone verplicht is en dat de provider deze opslaat zoals aangereikt en dus niet omrekent.
 
 ## 16 december 2020
 * Datatype van Bewaartermijn is gewijzigd van `Aantal Jaar` in `Periode`. In de API moet dit nog vertaald worden naar `xs:duration`.
