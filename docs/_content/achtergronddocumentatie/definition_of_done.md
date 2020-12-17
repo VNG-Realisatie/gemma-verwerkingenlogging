@@ -17,6 +17,7 @@ In dit document wordt beschreven welke eisen aan de verschillende onderdelen van
 De criteria die ten aanzien van de Verwerkingenlogging API-standaard worden gehanteerd zijn overgenomen uit de generieke Definition of Done zoals die door VNG Realisatie wordt gehanteerd.
 
 ## API-standaard gepositioneerd in de Architectuur
+
 | Criterium | Status | Toelichting |
 |---|---|---|
 | De stakeholders van de API-standaard zijn beschreven  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/productvisie/index.md)  |
@@ -29,6 +30,7 @@ De criteria die ten aanzien van de Verwerkingenlogging API-standaard worden geha
 | Modellen zijn opgeslagen op GitLab / Github en ingericht voor samenwerking (main/develop branches) | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
 
 ## Informatiemodel behorend bij de API-standaard
+
 |  Criterium | Status | Toelichting |
 |:--|:-:|---|
 | Er is een semantisch informatiemodel of een verwijzing naar het gebruikte semantisch informatiemodel  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/gegevensmodel/semantisch_informatiemodel/readme.md) |
