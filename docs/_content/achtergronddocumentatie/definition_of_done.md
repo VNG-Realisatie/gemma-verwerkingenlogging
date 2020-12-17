@@ -19,9 +19,9 @@ De criteria die ten aanzien van de Verwerkingenlogging API-standaard worden geha
 ## API-standaard gepositioneerd in de Architectuur
 | Criterium | Status | Toelichting |
 |:--|:-:|---|
-| De stakeholders van de API-standaard zijn beschreven  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
+| De stakeholders van de API-standaard zijn beschreven  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [...](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/productvisie/index.md)  |
 | Interactiepatronen zijn gemodelleerd | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
-| Positie van de API-standaard in de GEMMA informatiearchitectuur is gemodelleerd |  <img src="./_assets/greensmiley.png" alt="" width="30"/> |   |
+| Positie van de API-standaard in de GEMMA informatiearchitectuur is gemodelleerd |  <img src="./_assets/greensmiley.png" alt="" width="30"/> | [...](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/architectuur/index.md)   |
 | Verwacht gedrag van een API is gemodelleerd als applicatieproces |   |   |
 | De referentiecomponenten die het koppelvlak moeten realiseren zijn beschreven | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
 | Per referentiecomponent is beschreven welke verplicht dan wel optioneel te leveren (provider) of te gebruiken (consumer) services en operaties geïmplementeerd moeten zijn om compliant aan de standaard te zijn. |   |   |
