@@ -37,8 +37,8 @@ De criteria die ten aanzien van de Verwerkingenlogging API-standaard worden geha
 | Dit conceptueel informatiemodel (CIM) is gemodelleerd conform de laatst vastgestelde versie Metamodel Informatiemodellen (MIM)  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
 | Het informatiemodel is gebaseerd op de beschikbare standaard voor het domein  |   |   |
 | Er is een vertaling van het informatiemodel naar de API (vice versa), bij voorkeur is deze vastgelegd in de vorm van een uitwisselingsgegevensmodel (UGM). Tenminste bevat deze een technische beschrijving van resources, attributen en eigenschappen  |  <img src="./_assets/greensmiley.png" alt="" width="30"/> | [<img src="./_assets/document.png" alt="" width="20"/>](../gegevensmodel/uitwisselingsgegevensmodel/readme.md) |
-| Informatiemodellen (CIM en UGM) zijn gemodelleerd conform de daarvoor geldende best practices  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](../achtergronddocumentatie/ontwerp/ontwerpbesluiten.md)   |
-| Ontwerpbesluiten voor vertaling van CIM naar UGM zijn vastgelegd  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](../gegevensmodel/uitwisselingsgegevensmodel/readme.md)   |
+| Informatiemodellen (CIM en UGM) zijn gemodelleerd conform de daarvoor geldende best practices  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [   |
+| Ontwerpbesluiten voor vertaling van CIM naar UGM zijn vastgelegd  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | <img src="./_assets/document.png" alt="" width="20"/>](../achtergronddocumentatie/ontwerp/ontwerpbesluiten.md)   |
 
 ## Functionele en Technische API-specificaties
 
