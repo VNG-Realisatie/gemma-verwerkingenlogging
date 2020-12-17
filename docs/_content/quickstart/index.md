@@ -72,7 +72,7 @@ Het wordt aanbevolen om:
 Zonder een bewuste keuze en een transitieplan ontstaat er waarschijnlijk vanzelf een federatief verwerkingenlog. Binnende gemeente zijn er dan meerdere verschillende verwerkingenlogs aanwezig. Leveranciers die dat kunnen, gebruiken dan hun eigen verwerkingenlog om te zorgen dat hun applicaties kunnen functioneren. De gemeente heeft in dat geval mogelijk geen eisen kunnen stellen aan de manier waarop deze applicaties loggen en/of de werking en inrichting van het impliciet geleverde verwerkingslog.
 
 
-# Implementatie van de Logging API
+# Implementatie van de Verwerkingenlogging API
 
 Hieronder wordt beknopt beschreven wat geregeld moet worden om de Logging API te implementeren. Eerst wordt de meest minimale vorm van logging beschreven, vervolgens de meest volledige vorm.
 
