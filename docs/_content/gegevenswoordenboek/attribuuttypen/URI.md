@@ -8,7 +8,7 @@ date: 16-12-2020
 Alfanumeriek
 
 ## Lengte
-242
+2042
 
 ## Nadere specificatie
 - [RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax](https://tools.ietf.org/html/rfc3986)
