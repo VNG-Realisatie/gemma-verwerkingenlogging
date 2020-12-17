@@ -21,7 +21,7 @@ De criteria die ten aanzien van de Verwerkingenlogging API-standaard worden geha
 | Criterium | Status | Toelichting |
 |:--|:-:|---|
 | De stakeholders van de API-standaard zijn beschreven  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](../productvisie/index.md)  |
-| Interactiepatronen zijn gemodelleerd | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
+| Interactiepatronen zijn gemodelleerd | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |  [<img src="./_assets/document.png" alt="" width="20"/>](../achtergronddocumentatie/ontwerp/ontwerpcases.md) |
 | Positie van de API-standaard in de GEMMA informatiearchitectuur is gemodelleerd | <img src="./_assets/greensmiley.png" alt="" width="30"/> | [<img src="./_assets/document.png" alt="" width="20"/>](../architectuur/index.md)   |
 | Verwacht gedrag van een API is gemodelleerd als applicatieproces |   |   |
 | De referentiecomponenten die het koppelvlak moeten realiseren zijn beschreven | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
@@ -35,7 +35,7 @@ De criteria die ten aanzien van de Verwerkingenlogging API-standaard worden geha
 |:--|:-:|---|
 | Er is een semantisch informatiemodel of een verwijzing naar het gebruikte semantisch informatiemodel  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](../gegevensmodel/semantisch_informatiemodel/readme.md) |
 | Dit conceptueel informatiemodel (CIM) is gemodelleerd conform de laatst vastgestelde versie Metamodel Informatiemodellen (MIM)  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
-| Het informatiemodel is gebaseerd op de beschikbare standaard voor het domein  |   |   |
+| Het informatiemodel is gebaseerd op de beschikbare standaard voor het domein  | NVT |   |
 | Er is een vertaling van het informatiemodel naar de API (vice versa), bij voorkeur is deze vastgelegd in de vorm van een uitwisselingsgegevensmodel (UGM). Tenminste bevat deze een technische beschrijving van resources, attributen en eigenschappen  |  <img src="./_assets/greensmiley.png" alt="" width="30"/> | [<img src="./_assets/document.png" alt="" width="20"/>](../gegevensmodel/uitwisselingsgegevensmodel/readme.md) |
 | Informatiemodellen (CIM en UGM) zijn gemodelleerd conform de daarvoor geldende best practices  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |  |
 | Ontwerpbesluiten voor vertaling van CIM naar UGM zijn vastgelegd  | <img src="./_assets/greensmiley.png" alt="" width="30"/> | [<img src="./_assets/document.png" alt="" width="20"/>](../gegevensmodel/uitwisselingsgegevensmodel/readme.md)   |
@@ -50,7 +50,7 @@ De criteria die ten aanzien van de Verwerkingenlogging API-standaard worden geha
 | Informatiebeveiliging en privacy best practices (IBD) zijn geborgd | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
 | De OAS3-specificatie is door een peer uit het standaardisatie team gereviewed |   |   |
 | De OAS3-specificatie is getest voor toepasbaarheid in de mainstream code-generatoren (Spring, SDK’s (met pumblingcode)) |   |   |
-| Technische specificaties opgesteld in Open API Specification 3.x | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
+| Technische specificaties opgesteld in Open API Specification 3.x | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |  [<img src="./_assets/document.png" alt="" width="20"/>](../api/index.md) |
 
 ## Referentie-implementatie
 
