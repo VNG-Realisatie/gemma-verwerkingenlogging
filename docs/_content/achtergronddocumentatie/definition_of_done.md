@@ -19,9 +19,9 @@ De criteria die ten aanzien van de Verwerkingenlogging API-standaard worden geha
 ## API-standaard gepositioneerd in de Architectuur
 | Criterium | Status | Toelichting |
 |:--|:-:|---|
-| De stakeholders van de API-standaard zijn beschreven  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [...](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/productvisie/index.md)  |
+| De stakeholders van de API-standaard zijn beschreven  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="30"/>](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/productvisie/index.md)  |
 | Interactiepatronen zijn gemodelleerd | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
-| Positie van de API-standaard in de GEMMA informatiearchitectuur is gemodelleerd |  <img src="./_assets/greensmiley.png" alt="" width="30"/> | [...](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/architectuur/index.md)   |
+| Positie van de API-standaard in de GEMMA informatiearchitectuur is gemodelleerd |  <img src="./_assets/greensmiley.png" alt="" width="30"/> | [<img src="./_assets/document.png" alt="" width="30"/>](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/architectuur/index.md)   |
 | Verwacht gedrag van een API is gemodelleerd als applicatieproces |   |   |
 | De referentiecomponenten die het koppelvlak moeten realiseren zijn beschreven | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
 | Per referentiecomponent is beschreven welke verplicht dan wel optioneel te leveren (provider) of te gebruiken (consumer) services en operaties geïmplementeerd moeten zijn om compliant aan de standaard te zijn. |   |   |
@@ -41,7 +41,7 @@ De criteria die ten aanzien van de Verwerkingenlogging API-standaard worden geha
 ## Functionele en Technische API-specificaties
 |  Criterium | Status | Toelichting |
 |:--|:-:|---|
-| Er is een globale functionele beschrijving | <img src="./_assets/greensmiley.png" alt="" width="30"/><img src="./_assets/greensmiley.png" alt="" width="30"/><img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
+| Er is een globale functionele beschrijving | <img src="./_assets/greensmiley.png" alt="" width="30"/><img src="./_assets/greensmiley.png" alt="" width="30"/><img src="./_assets/greensmiley.png" alt="" width="30"/>  |  [<img src="./_assets/document.png" alt="" width="30"/>](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md) |
 | Er zijn specificaties die het gedrag van de API beschrijven. Voor de consumer zijn deze opgenomen in de OAS, voor de provider zijn dit aanvullende specificaties |   |   |
 | Voldoet aan landelijke API strategie, in het bijzonder de core design rules, en de VNG-R best practices (op basis van verzamelde Design Decisions). Afwijkingen zijn gedocumenteerd |   |   |
 | Informatiebeveiliging en privacy best practices (IBD) zijn geborgd | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
