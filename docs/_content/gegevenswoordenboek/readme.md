@@ -26,14 +26,14 @@ In het gegevenswoordenboek spreken we in dergelijke gevallen over *‘Verplicht 
 - [Verwerkt soort gegeven](./objecttypen/Verwerkt_soort_gegeven.md)
 
 ## Attribuuttypen
-- [Aantal jaar](./attribuuttypen/Aantal_jaar.md)
 - [Identificator](./attribuuttypen/Identificator.md)
 - [Ja/Nee](./attribuuttypen/Ja_Nee.md)
-- [Vertrouwelijkheid](./attribuuttypen/Vertrouwelijkheid.md)
 - [Moment](./attribuuttypen/Moment.md)
 - [Naam](./attribuuttypen/Naam.md)
 - [Objecttype](./attribuuttypen/Objecttype.md)
 - [Organisatie Identificatie Nummer (OIN)](./attribuuttypen/OIN.md)
+- [Periode](./attribuuttypen/Periode.md)
 - [Uniform Resource Identifier (URI)](./attribuuttypen/URI.md)
 - [Universal Unique IDentifier (UUID)](./attribuuttypen/UUID.md)
+- [Vertrouwelijkheid](./attribuuttypen/Vertrouwelijkheid.md)
 
