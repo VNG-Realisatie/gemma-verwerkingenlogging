@@ -3,19 +3,19 @@ title: "Definition of Done"
 date: '10-10-2020'
 ---
 
-In dit document wordt beschreven welke eisen aan de verschillende onderdelen van een opgeleverde versie van de Verwerkingenlogging API-standaard worden gesteld. De onderdelen die hierbij een rol spelen zijn: 
+Op deze pagina wordt beschreven welke eisen aan de verschillende onderdelen van een opgeleverde versie van de Verwerkingenlogging API-standaard worden gesteld. De onderdelen die hierbij een rol spelen zijn: 
 
-- Stakeholder documentatie 
-- Informatiemodel behorend bij de API-standaard 
 - API-standaard gepositioneerd in de architectuur  
-- Functionele specificatie van de API-standaard 
-- API-specificaties  
-- Referentieimplementatie 
+- Informatiemodel behorend bij de API-standaard 
+- Functionele en technische API-specificaties  
 - Testbaarheid via compliancy- en testvoorziening 
+- Referentie-implementatie 
+- Stakeholder documentatie 
 - Overdracht- en beheerdocumentatie 
+- Aanvullende specificaties voor beheer door VNG-R 
  
-De criteria die ten aanzien van de Verwerkingenlogging API-standaard worden gehanteerd zijn overgenomen uit de generieke Definition of Done zoals die door VNG Realisatie wordt gehanteerd.
-
+In onderstaande paragrafen worden de criteria die binnen de verschillende onderdelen worden gehanteerd beschreven. Deze criteria zijn overgenomen uit de generieke Definition of Done voor API-standaarden van VNG Realisatie. Bij het opleveren van de Verwerkingenlogging API-standaard wordt aan de verschillende eisen invulling gegeven, of wordt uitgelegd waarom van de gestelde eis is afgeweken. 
+ 
 ## API-standaard gepositioneerd in de Architectuur
 
 | Criterium | Status | Toelichting |
