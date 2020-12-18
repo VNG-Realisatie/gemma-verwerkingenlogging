@@ -14,7 +14,7 @@ De onderstaande documentatie maakt deel uit van de verwerkingenlogging API-stand
 ## Definition of Done
 Bij de uitvoering van het project wordt een [Definition of Done (DoD)](../achtergronddocumentatie/definition_of_done.md) gehanteerd. Deze DoD is de checklist met activiteiten die bij de oplevering van iedere versie van de API-standaard moeten worden afgevinkt. 
 
-## Achtergrondinformatie
+## Achtergrondinformatie bij de API-standaard
 ### Ontwerp
 Bij het ontwerp van de API-standaard is gebruik gemaakt van een aantal [brondocumenten](../achtergronddocumentatie/ontwerp/brondocumenten.md). Deze brondocumenten zijn de basis van het ontwerp van de API-standaard.
 
