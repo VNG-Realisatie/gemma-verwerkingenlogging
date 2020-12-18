@@ -3,6 +3,9 @@ title: "Voortgang ontwikkeling API-standaard voor logging van verwerkingen"
 name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ---
 
+## 18 december 2020
+* Architectuurschets bij case [C0031 - Opvragen van gegevens bij een derde partij](./ontwerp/artefacten/0031.md) toegevoegd.
+
 ## 17 december 2020
 * [Architectuurschetsen](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/architectuur/index.md) van inrichtingsscenario's toegevoegd. Deze schetsen geven inzicht in de verschillende mogelijkheden die gemeenten hebben bij de inrichting van de informatiesystemen die een rol spelen bij logging van verwerkingsactiviteiten en het ontsluiten van die gegevens naar burgers.
 * Naar aanleiding van ingediend [issue](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/issues/4) in de tekst van de aanvullende specificatie van de GET /verwerkingsacties duidelijker omschreven dat het filteren op Objecttype, Soort Object ID en Identificator feitelijk zorgt dat er op personen gefilterd wordt.
