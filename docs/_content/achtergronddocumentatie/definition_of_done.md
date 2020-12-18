@@ -18,7 +18,7 @@ In onderstaande paragrafen worden de criteria die binnen de verschillende onderd
  
 ## API-standaard gepositioneerd in de Architectuur
 
-| Criterium | Status | Toelichting |
+| Criterium | Status | Toelichting/Link |
 |:--|:-:|---|
 | De stakeholders van de API-standaard zijn beschreven  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](../productvisie/index.md)  |
 | Interactiepatronen zijn gemodelleerd | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |  [<img src="./_assets/document.png" alt="" width="20"/>](../achtergronddocumentatie/ontwerp/ontwerpcases.md) |
@@ -31,7 +31,7 @@ In onderstaande paragrafen worden de criteria die binnen de verschillende onderd
 
 ## Informatiemodel behorend bij de API-standaard
 
-|  Criterium | Status | Toelichting |
+| Criterium | Status | Toelichting/Link |
 |:--|:-:|---|
 | Er is een semantisch informatiemodel of een verwijzing naar het gebruikte semantisch informatiemodel  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](../gegevensmodel/semantisch_informatiemodel/readme.md) |
 | Dit conceptueel informatiemodel (CIM) is gemodelleerd conform de laatst vastgestelde versie Metamodel Informatiemodellen (MIM)  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
@@ -42,7 +42,7 @@ In onderstaande paragrafen worden de criteria die binnen de verschillende onderd
 
 ## Functionele en Technische API-specificaties
 
-|  Criterium | Status | Toelichting |
+| Criterium | Status | Toelichting/Link |
 |:--|:-:|---|
 | Er is een globale functionele beschrijving | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |  [<img src="./_assets/document.png" alt="" width="20"/>](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md) |
 | Er zijn specificaties die het gedrag van de API beschrijven. Voor de consumer zijn deze opgenomen in de OAS, voor de provider zijn dit aanvullende specificaties |<img src="./_assets/greensmiley.png" alt="" width="30"/>  |  [<img src="./_assets/document.png" alt="" width="20"/>](../api/index.md) |
@@ -54,14 +54,14 @@ In onderstaande paragrafen worden de criteria die binnen de verschillende onderd
 
 ## Referentie-implementatie
 
-|  Criterium | Status | Toelichting |
+| Criterium | Status | Toelichting/Link |
 |:--|:-:|---|
 | API-standaard is geïmplementeerd in een referentieimplementatie van de provider in een gangbare programmeertaal |   | Q1 2021  |
 | Implementeert de gehele OAS-specificatie inclusief de eventueel gedefinieerde aanvullende specificatie |   | Q1 2021  |
 
 ## Testbaarheid via API testplatform
 
-|  Criterium | Status | Toelichting |
+| Criterium | Status | Toelichting/Link |
 |:--|:-:|---|
 | Testgevallen zijn beschreven voor elke service/operatie en aanvullende specificaties, zowel voor de happy als de unhappy flows |   |  Q1 2021 |
 | Elk testgeval beschrijft het logische testgeval, de teststap(pen) (wat wordt gedaan) en het verwachte resultaat |   | Q1 2021  |
@@ -71,7 +71,7 @@ In onderstaande paragrafen worden de criteria die binnen de verschillende onderd
 
 ## Stakeholder documentatie
 
-|  Criterium | Status | Toelichting |
+| Criterium | Status | Toelichting/Link |
 |:--|:-:|---|
 | T.b.v. informatiemanagers (e.a.): globale functionele beschrijving staat op GEMMAonline | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](https://www.gemmaonline.nl/index.php/Thema_Logging_en_verwerkingsactiviteiten)  |
 | T.b.v. architecten: het architectuurmodel is gepubliceerd op GEMMAonline | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](https://www.gemmaonline.nl/index.php/Thema_Logging_en_verwerkingsactiviteiten)  |
@@ -86,7 +86,7 @@ In onderstaande paragrafen worden de criteria die binnen de verschillende onderd
 
 ## Overdracht- en beheerdocumentatie
 
-|  Criterium | Status | Toelichting |
+| Criterium | Status | Toelichting/Link |
 |:--|:-:|---|
 | Belangrijke ontwerp-overwegingen zijn beschreven en gemotiveerd | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |  [<img src="./_assets/document.png" alt="" width="20"/>](../achtergronddocumentatie/ontwerp.md) |
 | Er wordt voldaan aan de acceptatiecriteria van de beheerorganisatie die de standaard in beheer neemt |   |   |
@@ -96,7 +96,7 @@ In onderstaande paragrafen worden de criteria die binnen de verschillende onderd
 
 ## Aanvullende specificaties voor beheer door VNG-R
 
-|  Criterium | Status | Toelichting |
+| Criterium | Status | Toelichting/Link |
 |:--|:-:|---|
 | Voor zaken die in VNG-R beheer worden genomen is het beheerkader getoetst |   |   |
 | Informatiemodellen (CIM en UGM) zijn vastgelegd in Enterprise Architect |  <img src="./_assets/greensmiley.png" alt="" width="30"/> |   |
