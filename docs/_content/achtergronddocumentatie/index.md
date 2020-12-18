@@ -18,9 +18,8 @@ Bij de uitvoering van het project wordt een [Definition of Done (DoD)](../achter
 
 
 ### Informatieanalyse uitwerking
-Bij het ontwerp van de API-standaard is gebruik gemaakt van een aantal [brondocumenten](../achtergronddocumentatie/ontwerp/brondocumenten.md). Deze brondocumenten zijn de basis van het ontwerp van de API-standaard.
+Bij het informatieanalyse is gebruik gemaakt van een aantal [brondocumenten](../achtergronddocumentatie/ontwerp/brondocumenten.md). De informatieanalyse is onderdeel van het [ontwerp](./ontwerp.md) van de API-standaard en is gericht op het helder krijgen van de functionele vereisten. De uitkomsten van de informatieanalyse zijn input voor het opstellen van een gegevens- en informatiemodel en de vertaling daarvan naar APIs. De volgende zaken zijn in de informatieanalyse uitgewerkt:
 
-Het [ontwerp](./ontwerp.md) van de API-standaard is gericht op het kunnen opstellen van een gegevensmodel en de benodigde API’s. Onderdeel van het ontwerp zijn: 
 - de gehanteerde [afkortingen en terminologie](../achtergronddocumentatie/ontwerp/terminologie.md)
 - [cases](../achtergronddocumentatie/ontwerp/ontwerpcases.md) die rond verwerkingenlogging zijn uitgeschreven 
 - [ontwerpbesluiten](../achtergronddocumentatie/ontwerp/ontwerpbesluiten.md) en [aanbevelingen](../achtergronddocumentatie/ontwerp/aanbevelingen.md) ten aanzien van implementatie
