@@ -9,6 +9,7 @@ De onderstaande documentatie maakt deel uit van de verwerkingenlogging API-stand
 
 - [Gegevens- en informatiemodel](../gegevensmodel/index.md)
 - [API-specificatie](../api/index.md)
+- [Quick Start Gids](../quickstart/index.md)
 
 ## Achtergrondinformatie
 ### Ontwerp
