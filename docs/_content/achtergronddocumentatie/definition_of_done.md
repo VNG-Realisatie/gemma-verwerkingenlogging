@@ -35,7 +35,7 @@ De criteria die ten aanzien van de Verwerkingenlogging API-standaard worden geha
 |:--|:-:|---|
 | Er is een semantisch informatiemodel of een verwijzing naar het gebruikte semantisch informatiemodel  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](../gegevensmodel/semantisch_informatiemodel/readme.md) |
 | Dit conceptueel informatiemodel (CIM) is gemodelleerd conform de laatst vastgestelde versie Metamodel Informatiemodellen (MIM)  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
-| Het informatiemodel is gebaseerd op de beschikbare standaard voor het domein  | NVT |   |
+| Het informatiemodel is gebaseerd op de beschikbare standaard voor het domein  | n.v.t. |   |
 | Er is een vertaling van het informatiemodel naar de API (vice versa), bij voorkeur is deze vastgelegd in de vorm van een uitwisselingsgegevensmodel (UGM). Tenminste bevat deze een technische beschrijving van resources, attributen en eigenschappen  |  <img src="./_assets/greensmiley.png" alt="" width="30"/> | [<img src="./_assets/document.png" alt="" width="20"/>](../gegevensmodel/uitwisselingsgegevensmodel/readme.md) |
 | Informatiemodellen (CIM en UGM) zijn gemodelleerd conform de daarvoor geldende best practices  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |  |
 | Ontwerpbesluiten voor vertaling van CIM naar UGM zijn vastgelegd  | <img src="./_assets/greensmiley.png" alt="" width="30"/> | [<img src="./_assets/document.png" alt="" width="20"/>](../gegevensmodel/uitwisselingsgegevensmodel/readme.md)   |
@@ -56,18 +56,18 @@ De criteria die ten aanzien van de Verwerkingenlogging API-standaard worden geha
 
 |  Criterium | Status | Toelichting |
 |:--|:-:|---|
-| API-standaard is geïmplementeerd in een referentieimplementatie van de provider in een gangbare programmeertaal |   |   |
-| Implementeert de gehele OAS-specificatie inclusief de eventueel gedefinieerde aanvullende specificatie |   |   |
+| API-standaard is geïmplementeerd in een referentieimplementatie van de provider in een gangbare programmeertaal |   | Q1 2021  |
+| Implementeert de gehele OAS-specificatie inclusief de eventueel gedefinieerde aanvullende specificatie |   | Q1 2021  |
 
 ## Testbaarheid via API testplatform
 
 |  Criterium | Status | Toelichting |
 |:--|:-:|---|
-| Testgevallen zijn beschreven voor elke service/operatie en aanvullende specificaties, zowel voor de happy als de unhappy flows |   |   |
-| Elk testgeval beschrijft het logische testgeval, de teststap(pen) (wat wordt gedaan) en het verwachte resultaat |   |   |
-| Er zijn compliancy tests beschikbaar voor elke referentie-component (consumers en providers) en alle betreffende services en operaties, zodat leveranciers kunnen testen en aantonen dat hun applicatie voldoet aan de standaard |   |   |
-| Is er sprake van een API die zich beperkt tot het lezen van gegevens dan dient er een testset beschreven te zijn voor de provider |   |   |
-| Testgevallen zijn geïmplementeerd als Postman-scripts zodat de API geautomatiseerd getest kan worden |   |   |
+| Testgevallen zijn beschreven voor elke service/operatie en aanvullende specificaties, zowel voor de happy als de unhappy flows |   |  Q1 2021 |
+| Elk testgeval beschrijft het logische testgeval, de teststap(pen) (wat wordt gedaan) en het verwachte resultaat |   | Q1 2021  |
+| Er zijn compliancy tests beschikbaar voor elke referentie-component (consumers en providers) en alle betreffende services en operaties, zodat leveranciers kunnen testen en aantonen dat hun applicatie voldoet aan de standaard |  Q1 2021 |   |
+| Is er sprake van een API die zich beperkt tot het lezen van gegevens dan dient er een testset beschreven te zijn voor de provider |   | Q1 2021  |
+| Testgevallen zijn geïmplementeerd als Postman-scripts zodat de API geautomatiseerd getest kan worden |   | Q1 2021  |
 
 ## Stakeholder documentatie
 
