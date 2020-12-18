@@ -76,10 +76,10 @@ In onderstaande paragrafen worden de criteria die binnen de verschillende onderd
 | T.b.v. informatiemanagers (e.a.): globale functionele beschrijving staat op GEMMAonline | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](https://www.gemmaonline.nl/index.php/Thema_Logging_en_verwerkingsactiviteiten)  |
 | T.b.v. architecten: het architectuurmodel is gepubliceerd op GEMMAonline | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](https://www.gemmaonline.nl/index.php/Thema_Logging_en_verwerkingsactiviteiten)  |
 | T.b.v. ontwikkelaars: het informatiemodel is gepubliceerd op VNG-Realisatie Github | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](../gegevensmodel/semantisch_informatiemodel/readme.md)  |
-| T.b.v. ontwikkelaars: de technische beschrijving is gepubliceerd op VNG-Realisatie Github | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
+| T.b.v. ontwikkelaars: de technische beschrijving is gepubliceerd op VNG-Realisatie Github | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](../api/index.md)  |
 | T.b.v. ontwikkelaars: OAS specificatie (beschikbaar via Redoc en SwaggerUI) is gepubliceerd op VNG-Realisatie Github | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |  [<img src="./_assets/document.png" alt="" width="20"/>](../api/index.md#technische-view) |
-| T.b.v. ontwikkelaars: de uitleg en installatie-instructies van de referentieimplementaties inclusief testgevallen is gepubliceerd op VNG-Realisatie Github |   |   |
-| T.b.v. ontwikkelaars: Postman-scripts zijn gepubliceerd op api-test.nl zodat iedereen kan testen of de implementatie voldoet aan zijn specificatie |   |   |
+| T.b.v. ontwikkelaars: de uitleg en installatie-instructies van de referentieimplementaties inclusief testgevallen is gepubliceerd op VNG-Realisatie Github |   | Q1 2021  |
+| T.b.v. ontwikkelaars: Postman-scripts zijn gepubliceerd op api-test.nl zodat iedereen kan testen of de implementatie voldoet aan zijn specificatie |   | Q1 2021  |
 | De API-ontwikkelagenda is up-to-date | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
 | De Componenten/software catalogus is up-to-date |   |   |
 | T.b.v. bestuurders: de API-standaard is vermeld op de VNG-site |   |   |
@@ -91,7 +91,7 @@ In onderstaande paragrafen worden de criteria die binnen de verschillende onderd
 | Belangrijke ontwerp-overwegingen zijn beschreven en gemotiveerd | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |  [<img src="./_assets/document.png" alt="" width="20"/>](../achtergronddocumentatie/ontwerp.md) |
 | Er wordt voldaan aan de acceptatiecriteria van de beheerorganisatie die de standaard in beheer neemt |   |   |
 | Er is een backlog (lijst met fouten, gewenste verbeteringen, gewenste uitbreidingen etc) | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
-| De verantwoordelijke voor beheer is bekend |   |   |
+| De verantwoordelijke voor beheer is bekend |  <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
 | Beheerafspraken zijn beschreven |   |   |
 
 ## Aanvullende specificaties voor beheer door VNG-R
