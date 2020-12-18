@@ -11,6 +11,9 @@ De onderstaande documentatie maakt deel uit van de verwerkingenlogging API-stand
 - [API-specificatie](../api/index.md)
 - [Quick Start Gids](../quickstart/index.md)
 
+## Definition of Done
+Bij de uitvoering van het project wordt een [Definition of Done (DoD)](../achtergronddocumentatie/definition_of_done.md) gehanteerd. Deze DoD is de checklist met activiteiten die bij de oplevering van iedere versie van de API-standaard moeten worden afgevinkt. 
+
 ## Achtergrondinformatie
 ### Ontwerp
 Bij het ontwerp van de API-standaard is gebruik gemaakt van een aantal [brondocumenten](../achtergronddocumentatie/ontwerp/brondocumenten.md). Deze brondocumenten zijn de basis van het ontwerp van de API-standaard.
@@ -28,6 +31,3 @@ Gemeenten, systemen, leveranciers en derden zullen de komende jaren allemaal in 
 
 ### Volledigheid van verwerkingenlogging 
 De API-standaard kan doordat de meeste attributen in het uitwisselgegevensmodel optioneel zijn eenvoudig worden geimplementeerd. Hoe meer veldden worden ingevuld hoe zinvoller de informatie die wordt vastgelegd is en hoe duidelijker de informatie voor de burger is. Het streven moet dus zijn zoveel mogelijk attributen vast te leggen. Op de pagina [volledigheid van verwerkingenlogging](./volledigheid_van_logging.md) worden de verschillen van volledigheid van invulling geillustreerd.
-
-### Project checklist (DoD)
-Bij de uitvoering van het project wordt een [Definition of Done (DoD)](../achtergronddocumentatie/definition_of_done.md) gehanteerd. Deze DoD is de checklist met activiteiten die bij de oplevering van iedere versie van de API-standaard moeten worden afgevinkt. 
