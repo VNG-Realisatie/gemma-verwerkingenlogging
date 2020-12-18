@@ -10,7 +10,7 @@
 - name: Informatiemodel
   link: /gegevensmodel/
   weight: 40
-- name: API's
+- name: API
   link: /api/
   weight: 50
 - name: Documentatie
