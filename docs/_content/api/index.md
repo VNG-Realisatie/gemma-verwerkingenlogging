@@ -1,6 +1,6 @@
 ---
-title: "APIs voor logging van verwerkingen"
-name: APIs voor logging van verwerkingen
+title: "Verwerkingenlogging API-standaard"
+name: erwerkingenlogging API-standaard
 ---
 ## Over de implementatie van de API-standaard
 
