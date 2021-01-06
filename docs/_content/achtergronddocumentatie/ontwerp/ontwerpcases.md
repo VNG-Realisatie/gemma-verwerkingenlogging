@@ -23,7 +23,8 @@ De cases zijn gegroepeerd op basis van de verschillende soorten patronen die voo
 - [Privaatrechtelijke verwerking](./cases/privaatrechtelijke_verwerkingen.md) - Hoe loggen we dit? Hoe gaan we om met situaties waarin expliciete toestemming nodig is?
 - [Bewaartermijnen](./cases/bewaartermijnen.md) - Verwerkingenlogs dienen geschoond te worden na afloop van de bewaartermijn. Welke termijnen zijn er en hoe gaan we daarmee om?
 - [Inzage in het log](./cases/inzage_in_log.md) - Op welke wijze kunnen burgers, medewerkers en derden inzage krijgen in het verwerkingenlog?
-- [Bijzondere rechten in de AVG](./cases/bijzondere_rechten.md)
+- [Bijzondere rechten in de AVG](./cases/bijzondere_rechten.md) - Cases over bijzondere rechten zoals het recht op rectificatie en gegevenswissing.
+- [Overige cases](./cases/overige_cases.md) - Overige cases die niet in de andere groeperingen onder te brengen zijn.
 
 ## Beschrijving van te loggen/gelogde acties in cases
 Onderstaande voorbeeld toont een actie zoals deze doorgegeven zou worden aan de verwerkingenlogging API:
