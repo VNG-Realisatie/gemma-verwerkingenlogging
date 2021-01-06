@@ -22,9 +22,9 @@ Het werkingsgebied voor deze standaard is: gemeenten en gemeentelijke samenwerki
 - [Productvisie](./_content/productvisie/index.md)
 - [Quickstart Guide](./_content/quickstart/index.md)
 - [Architectuur](./_content/architectuur/index.md)
-- [Informatie- en gegevensmodel](../content/gegevensmodel/index.md)
-- [API-specificaties](../content/api/index.md)
-- [Achtergronddocumentatie](../content/achtergronddocumentatie/index.md)
+- [Informatie- en gegevensmodel](../_content/gegevensmodel/index.md)
+- [API-specificaties](../_content/api/index.md)
+- [Achtergronddocumentatie](../_content/achtergronddocumentatie/index.md)
 
 ## Gerelateerde standaarden
 * [GEMMA Verwerkingsactiviteiten](https://github.com/VNG-Realisatie/gemma-verwerkingsactiviteiten)
