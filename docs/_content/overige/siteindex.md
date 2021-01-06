@@ -6,9 +6,9 @@ date: 28-10-2020
 
 [Overzicht voortgang/wijzigingen](../achtergronddocumentatie/voortgang.md)
 
-## [Quickstart gids](../quickstart/index.md)
-
 ## [Productvisie](../productvisie/index.md)
+
+## [Quickstart gids](../quickstart/index.md)
 
 ## [Architectuur](../architectuur/index.md)
 
