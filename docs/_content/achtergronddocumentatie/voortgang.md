@@ -3,6 +3,9 @@ title: "Voortgang ontwikkeling API-standaard voor logging van verwerkingen"
 name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ---
 
+## 6 januari 2020
+* Kleine verbeteringen aan navigatie binnen de site. Sitemap is weggehaald en voor zover relevant geintegreerd in de pagina over de achtergrond documentatie.
+
 ## 18 december 2020
 * Architectuurschets bij case [C0031 - Opvragen van gegevens bij een derde partij](./ontwerp/artefacten/0031.md) toegevoegd.
 
