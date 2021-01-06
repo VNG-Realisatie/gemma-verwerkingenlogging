@@ -21,7 +21,7 @@ Het werkingsgebied voor deze standaard is: gemeenten en gemeentelijke samenwerki
 ## Documentatie
 - [Productvisie](./_content/productvisie/index.md)
 - [Quickstart Guide](./_content/quickstart/index.md)
-- [Architectuur](./_content/architectuur/ontwerp.md)
+- [Architectuur](./_content/architectuur/index.md)
 - [Informatie- en gegevensmodel](../content/gegevensmodel/index.md)
 - [API-specificaties](../content/api/index.md)
 - [Achtergronddocumentatie](../content/achtergronddocumentatie/index.md)
