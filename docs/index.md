@@ -18,10 +18,13 @@ Het werkingsgebied voor deze standaard is: gemeenten en gemeentelijke samenwerki
 - Referentieimplementatie van een verwerkingenlogregister
 - Referentieimplementatie van een informatiesysteem wat verwerkingen logt
 
-## Achtergronddocumentatie
+## Documentatie
 - [Productvisie](./_content/productvisie/index.md)
-- [Ontwerpdocumentatie](./_content/achtergronddocumentatie/ontwerp.md)
-- [Gehanteerde kwaliteitseisen](./_content/achtergronddocumentatie/definition_of_done.md)
+- [Quickstart Guide](./_content/quickstart/index.md)
+- [Architectuur](./_content/architectuur/ontwerp.md)
+- [Informatie- en gegevensmodel](../content/gegevensmodel/index.md)
+- [API-specificaties](../content/api/index.md)
+- [Achtergronddocumentatie](../content/achtergronddocumentatie/index.md)
 
 ## Gerelateerde standaarden
 * [GEMMA Verwerkingsactiviteiten](https://github.com/VNG-Realisatie/gemma-verwerkingsactiviteiten)
