@@ -44,7 +44,7 @@ De provider logt deze informatie als volgt:
 
 ## Functionele view
 
-Onderstaande tabel beschrijft de door de API geboden functies. Klik op de naam van de functie voor de specificatie.
+Onderstaande tabel beschrijft de door de API geboden functies. Klik op de naam van de functie voor de beschrijving.
 
 | Categorie \ Functie  |
 | :----------- |
