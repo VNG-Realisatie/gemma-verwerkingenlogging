@@ -28,7 +28,6 @@ Als onderdeel van de API-standaard worden de volgende zaken opgeleverd:
 * open source referentie-implementatie van applicatie die verwerkingen logt.
 * Functionele en architectuurdocumentatie voor het gebruik van de API.
 
-
 #### Wat betekent dit voor leveranciers?
 
 Er komt een nieuwe API-standaard. Deze standaard dient door alle leveranciers die informatiesystemen aan gemeenten leveren waarin persoonsgegevens worden verwerkt moeten worden ingebouwd. De referentie implementaties bieden leveranciers een voorbeeld hoe deze standaard ingebouwd kan worden.
