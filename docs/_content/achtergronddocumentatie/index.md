@@ -45,7 +45,7 @@ Bij de uitvoering van het project wordt een [Definition of Done (DoD)](../achter
 * [Bijzondere rechten in de AVG](../achtergronddocumentatie/ontwerp/cases/bijzondere_rechten.md)
 
 #### Relatie tussen ontwerpbesluiten en cases
-* [Overzicht van de relatie tussen besluiten en cases](./ontwerp/artefacten/20201011_Artefacten_en_cases.xlsx)
+* [Overzicht van de relatie tussen besluiten en cases](./ontwerp/artefacten/Artefacten_en_cases.xlsx)
 
 ### Samenhang
 
@@ -57,7 +57,7 @@ Bij het informatieanalyse is gebruik gemaakt van een aantal [brondocumenten](../
 - [ontwerpbesluiten](../achtergronddocumentatie/ontwerp/ontwerpbesluiten.md) en [aanbevelingen](../achtergronddocumentatie/ontwerp/aanbevelingen.md) ten aanzien van implementatie
 - [openstaande vraagstukken](../achtergronddocumentatie/ontwerp/vraagstukken.md) waarover nog geen ontwerpbesluit is genomen 
 
-Een overzicht van de relatie tussen besluiten en cases is [hier](./ontwerp/artefacten/20201011_Artefacten_en_cases.xlsx) te vinden.
+Een overzicht van de relatie tussen besluiten en cases is [hier](./ontwerp/artefacten/Artefacten_en_cases.xlsx) te vinden.
 
 #### Verwerkingenlogging Maturity Levels
 Gemeenten, systemen, leveranciers en derden zullen de komende jaren allemaal in een verschillend stadium verkeren t.a.v. het implementeren van de vastlegging van verwerkingen in verwerkingenlogging. Het lijkt goed om in een dashboard bij te gaan houden hoe gemeenten en de gemeentelijke software ervoor staan. Hierbij zou gebruik gemaakt kunnen worden van volwassenheidniveaus ten aanzien van verwerkingenlogging. Hiertoe zijn een aantal [Verwerkingenlogging Maturity Levels](./logging_maturity_level.md) ontwikkeld die gebruikt kunnen worden door gemeenten.
