@@ -22,7 +22,5 @@
 - name: Contact
   link: /contact/
   weight: 80
-- name: Index
-  link: /overige/siteindex
-  weight: 90
+
 
