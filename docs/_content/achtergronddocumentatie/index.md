@@ -43,6 +43,7 @@ Bij de uitvoering van het project wordt een [Definition of Done (DoD)](../achter
 * [Bewaartermijnen](../achtergronddocumentatie/ontwerp/cases/bewaartermijnen.md)
 * [Inzage in het log](../achtergronddocumentatie/ontwerp/cases/inzage_in_log.md)
 * [Bijzondere rechten in de AVG](../achtergronddocumentatie/ontwerp/cases/bijzondere_rechten.md)
+* [Overige cases](../achtergronddocumentatie/ontwerp/cases/overige_cases.md)
 
 ### Relatie tussen ontwerpbesluiten en cases
 * [Overzicht van de relatie tussen besluiten en cases](./ontwerp/artefacten/Artefacten_en_Cases.xlsx)
