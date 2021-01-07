@@ -14,7 +14,6 @@ Het werkingsgebied voor deze standaard is: gemeenten en gemeentelijke samenwerki
 ## Inhoud van de API-standaard
 - [Informatie- en gegevensmodel](./_content/gegevensmodel/index.md)
 - [API-specificaties](./_content/api/index.md)
-- Beschrijving best-practices en architectuurmodellen
 - Referentieimplementatie van een verwerkingenlogregister
 - Referentieimplementatie van een informatiesysteem wat verwerkingen logt
 
