@@ -20,24 +20,6 @@ paths:
       operationId: verwerkingsactie_list
       description: Door de juiste parameters mee te geven kun je zoeken naar de voor jouw relevante VERWERKINGSACTIEs.
       parameters:
-        - name: verwerkingsactiviteitId
-          in: query
-          description: Identificator van de verwerkingsactiviteit die de verwerking rechtvaardigt.
-          schema:
-            type: string
-            format: uuid
-          example: "5f0bef4c-f66f-4311-84a5-19e8bf359eaf"
-        - name: vertrouwelijkheid
-          in: query
-          description: Geeft de mate van vertrouwelijkheid van de verwerking aan.
-          schema:
-            type: string
-            enum:
-              - Normaal
-              - Vertrouwelijk
-              - Opgeheven
-            default: Normaal
-          example: Normaal
         - name: objecttype
           in: query
           description: Soort object dat bij de verwerkingsactie betrokken is.
@@ -81,12 +63,36 @@ paths:
             type: string
             format: date-time
             example: "2020-11-24"
+        - name: vertrouwelijkheid
+          in: query
+          description: Geeft de mate van vertrouwelijkheid van de verwerking aan.
+          schema:
+            type: string
+            enum:
+              - Normaal
+              - Vertrouwelijk
+              - Opgeheven
+            default: Normaal
+          example: Normaal
+        - name: vertrouwelijkheid__in
+          in: query
+          description: Meerdere waarden van vertrouwelijkheid gescheiden door komma's.
+          schema:
+            type: string
+          example: Vertrouwelijk,Opgeheven
         - name: beperkteSet
           in: query
           description: In geval van 'true' worden niet alle attributen teruggegeven. Bijvoorbeeld attributen zoals 'gebruiker', 'gegevensbron' en 'systeem'  zijn niet relevant voor burgers. In geval van 'false' worden alle velden teruggegeven in het resultaat.
           schema:
             type: boolean
             default: true
+        - name: verwerkingsactiviteitId
+          in: query
+          description: Identificator van de verwerkingsactiviteit die de verwerking rechtvaardigt.
+          schema:
+            type: string
+            format: uuid
+          example: "5f0bef4c-f66f-4311-84a5-19e8bf359eaf"
       responses:
         '200':
           description: OK
@@ -1073,7 +1079,7 @@ components:
           description: URL-referentie naar deze resource. Deze link wordt automatisch aangemaakt door het log.
           type: string
           format: uri
-          maxLength: 1000
+          maxLength: 2042
           minLength: 1
           readOnly: true
           example: "https://loggingapi.vng.cloud/api/v1/verwerkingsacties/7a22eb38-bca6-463f-9955-54ab040287cb"
@@ -1119,7 +1125,7 @@ components:
           description: URL-referentie naar de verwerkingsactiviteit.
           type: string
           format: uri
-          maxLength: 1000
+          maxLength: 2042
           minLength: 1
           example: "https://loggingapi.vng.cloud/api/v1/verwerkingsactiviteiten/5f0bef4c-f66f-4311-84a5-19e8bf359eaf"
         vertrouwelijkheid:
@@ -1186,7 +1192,7 @@ components:
           description: URL-referentie naar de verwerkingsactiviteit van de afnemer.
           type: string
           format: uri
-          maxLength: 1000
+          maxLength: 2042
           minLength: 1
           example: "https://www.amsterdam.nl/var/api/v1/verwerkingsactiviteiten/5f0bef4c-f66f-4311-84a5-19e8bf359eaf"
         verwerkingIdAfnemer:
