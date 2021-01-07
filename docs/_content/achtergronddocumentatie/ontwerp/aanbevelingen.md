@@ -16,3 +16,6 @@ Deze aanbevelingen beschrijven best-practices ten aanzien van de implementatie v
 
 ## Wijzigen, tijd en historie
 - In de toelichting van besluit [B3891: Wijzigbaarheid en historie](./artefacten/3891.md) is een mogelijke opslagstructuur uitgewerkt voor een log dat in technische zin immutable is, terwijl het in functionele zin wijzigbaar is.
+
+## Autorisatie
+- [A9726 - Aanbevelingen inzake autorisatie](./artefacten/9726.md)
