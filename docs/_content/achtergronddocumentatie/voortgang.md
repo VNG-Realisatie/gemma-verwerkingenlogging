@@ -3,7 +3,10 @@ title: "Voortgang ontwikkeling API-standaard voor logging van verwerkingen"
 name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ---
 
-## 6 januari 2020
+## 7 januari 2021
+* Aanbeveling toegevoegd inzake [gebruik van de autorisatie API uit het ZGW project](./ontwerp/artefacten/9726.md).
+
+## 6 januari 2021
 * Kleine verbeteringen aan navigatie binnen de site. Sitemap is weggehaald en voor zover relevant geintegreerd in de pagina over de achtergrond documentatie.
 * Casus toegevoegd ivm [handmatige verwerking van gegevens](./ontwerp/artefacten/5672.md).
 
