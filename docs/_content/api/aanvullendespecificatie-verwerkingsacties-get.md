@@ -27,7 +27,8 @@ layout: default
   - `objecttype = "Persoon"`,
   - `soortObjectId = "BSN"`,
   - `objectId = "8273365"`.
-  Bij deze verwerkingsacties worden de overige verwerkte objecten die niet voldoen niet geretourneerd. Ofwel: Als er bij een verwerkingsactie meerdere personen voorkomen, dan wordt alleen de persoon geretourneerd die matched met de zoekparameters.
+
+Bij deze verwerkingsacties worden de overige verwerkte objecten die niet voldoen niet geretourneerd. Ofwel: Als er bij een verwerkingsactie meerdere personen voorkomen, dan wordt alleen de persoon geretourneerd die matched met de zoekparameters.
 * Indien de zoekparameter `verwerkingsactiviteitId` is opgegeven, dan worden alleen de verwerkingsacties die voldoen aan die waarde geretourneerd. 
 * Indien de zoekparameter `vertrouwelijkheid` is opgegeven, dan worden alleen de verwerkingsacties die voldoen aan die waarde geretourneerd.
 * De zoekparameter `vertrouwelijkheid__in` kan meerdere waarden van vertrouwelijkheid bevatten gescheiden door komma's. Als een verwerkingsactie niet voldoet aan één van deze waarden, dan mag de verwerkingsactie niet worden geretourneerd.
