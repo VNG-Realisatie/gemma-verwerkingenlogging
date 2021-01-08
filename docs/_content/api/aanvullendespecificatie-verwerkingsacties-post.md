@@ -26,4 +26,3 @@ layout: default
 * In de respons is het element `actieId` gevuld met een nieuwe UUID.
 * In de respons is het element `tijdstipRegistratie` gevuld met de actuele datum/tijd.
 * In de respons zijn alle overige elementen gevuld met dezelfde waarden die in de request zijn meegegeven.
-* _To do: wat doen we in de respons met elementen die niet zijn meegegeven in de request?_
