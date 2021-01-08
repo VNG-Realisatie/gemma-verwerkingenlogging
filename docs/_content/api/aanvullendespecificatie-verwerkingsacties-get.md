@@ -16,17 +16,23 @@ layout: default
 
 | Regel | Foutcode |
 | :---- | :---- |
-| Bij autorisatiescope `read:restricted` moet de parameter beperkteSet 'False' zijn. | 403 |
-| Bij autorisatiescope `read:normal` moet de parameter vertrouwelijkheid 'Normal' zijn. | 403 |
+| Bij autorisatiescope `read:restricted` moet de zoekparameter beperkteSet 'true' zijn. | 403 |
+| Bij autorisatiescope `read:normal` moet de zoekparameter vertrouwelijkheid 'Normal' zijn. | 403 |
 
 
 ### Gedrag
 
-* Er worden alleen verwerkingsacties geretourneerd waarvan Tijdstip valt binnen de opgegeven periode. (Groter of gelijk aan begindatum, kleiner dan de einddatum).
-* Er worden alleen verwerkingsacties geretourneerd waarbij een Verwerkt object voorkomt waarvan Objecttype, Soort Object ID en Object ID (bijvoorbeeld Persoon, BSN, 8273365) matchen met de opgegeven waarden. Bij deze verwerkingsacties worden overige Verwerkte objecten die niet voldoen niet geretourneerd. Ofwel: Als er bij een verwerkingsacties meerdere personen voorkomen, dan wordt alleen de persoon geretourneerd die is opgegeven in de zoekparameter.
-* Indien een verwerkingsactiviteitID is opgegeven worden er alleen verwerkingsacties geretourneerd waarvan de VerwerkingsactiviteitID gelijk is aan het opgegeven VerwerkingsactiviteitID.
-* Er worden alleen verwerkingsacties geretourneerd waarbij de waarde van het attribuut Vertrouwelijkheid overeenkomt met de waarde van de parameter vertrouwelijkheid.
-* Als de parameter beperkteSet = true dan worden de volgende attributen **niet** geretourneerd: Systeem, Gebruiker en Gegevensbron. Is de parameter false dan mogen deze attributen wel geretourneerd worden.
+* Er worden alleen verwerkingsacties geretourneerd waarvan het tijdstip valt binnen de opgegeven periode: groter of gelijk aan `beginDatum`, kleiner dan de `eindDatum`.
+* Er worden alleen verwerkingsacties geretourneerd waarbij het verwerkte object (bijvoorbeeld Persoon, BSN, 8273365) matched met de opgegeven waarden van de zoekparameters. In dit geval:
+  - `objecttype = "Persoon"`,
+  - `soortObjectId = "BSN"`,
+  - `objectId = "8273365"`.
+
+Bij deze verwerkingsacties worden de overige verwerkte objecten die niet voldoen niet geretourneerd. Ofwel: Als er bij een verwerkingsactie meerdere personen voorkomen, dan wordt alleen de persoon geretourneerd die matched met de zoekparameters.
+* Indien de zoekparameter `verwerkingsactiviteitId` is opgegeven, dan worden alleen de verwerkingsacties die voldoen aan die waarde geretourneerd. 
+* Indien de zoekparameter `vertrouwelijkheid` is opgegeven, dan worden alleen de verwerkingsacties die voldoen aan die waarde geretourneerd.
+* De zoekparameter `vertrouwelijkheid__in` kan meerdere waarden van vertrouwelijkheid bevatten gescheiden door komma's. Als een verwerkingsactie niet voldoet aan één van deze waarden, dan mag de verwerkingsactie niet worden geretourneerd.
+* Als de zoekparameter `beperkteSet=true` dan worden de volgende attributen **niet** geretourneerd: Systeem, Gebruiker en Gegevensbron. Is de parameter false dan mogen deze attributen wel geretourneerd worden.
 * Als het log meerdere versies van een verwerkingsactie bevat dan worden alleen actuele niet vervallen versies geretourneerd. Zie [B3891](../achtergronddocumentatie/ontwerp/artefacten/3891.md) voor meer informatie over versies van verwerkingsacties.
 
 
