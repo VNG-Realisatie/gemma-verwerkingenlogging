@@ -3,6 +3,9 @@ title: "Voortgang ontwikkeling API-standaard voor logging van verwerkingen"
 name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ---
 
+## 8 januari 2021
+* Architectuurschets bij case [C2866 - Detailvraag op basis van BSN – Door een derde partij](./ontwerp/artefacten/2866.md) toegevoegd.
+
 ## 7 januari 2021
 * Aanbeveling toegevoegd inzake [gebruik van de autorisatie API uit het ZGW project](./ontwerp/artefacten/9726.md).
 
