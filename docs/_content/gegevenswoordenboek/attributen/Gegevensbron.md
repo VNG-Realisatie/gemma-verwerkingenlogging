@@ -5,7 +5,7 @@ date: 28-09-2020
 ---
 
 ## Beschrijving
-Gegevensbron waarin de bij actie betrokken gegevens zijn opgeslagen.
+Gegevensbron waarin de bij de verwerkingsactie betrokken gegevens zijn opgeslagen.
 
 ## Toelichting
 Zie [B8585](../../achtergronddocumentatie/ontwerp/artefacten/8585.md).

@@ -5,7 +5,7 @@ date: '12-10-2020'
 ---
 
 ## Algemeen
-De onderstaande cases beschrijven hoe bij delegatie en mandatering van taken door gemeenten aan derde partijen met logging moet worden omgegaan. 
+De onderstaande cases beschrijven hoe bij delegatie en mandatering van taken door gemeenten aan derde partijen met verwerkingenlogging moet worden omgegaan. 
 
 ## Delegering en mandatering
 - [C7883: Delegatie](./../artefacten/7883.md)

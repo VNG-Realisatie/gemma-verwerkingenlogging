@@ -8,4 +8,4 @@ date: 28-09-2020
 Alfanumeriek
 
 ## Lengte
-80
+242

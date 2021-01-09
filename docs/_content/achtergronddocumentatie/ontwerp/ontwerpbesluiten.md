@@ -4,7 +4,7 @@ name: ontwerpbesluiten
 date: '16-09-2020'
 ---
 
-Vanuit de uitwerking van de [cases](./ontwerpcases.md) en de [requirements](./requirements.md) zijn een aantal ontwerpbesluiten genomen. Per besluit is herleidbaar gemaakt aan welk requirement of case het requirement gerelateerd is. Een overzicht van de relatie tussen besluiten, cases en requirements is [hier](./ontwerp/artefacten/20201011_Artefacten_en_cases.xlsx) te vinden.
+Vanuit de uitwerking van de [cases](./ontwerpcases.md) zijn een aantal ontwerpbesluiten genomen. Per besluit is herleidbaar gemaakt aan welke case het gerelateerd is. Een overzicht van de relatie tussen besluiten en cases is [hier](./ontwerp/artefacten/20201011_Artefacten_en_cases.xlsx) te vinden.
 
 Deze ontwerpbesluiten zijn gegroepeerd naar specifieke aspect van de API-standaard. Onderkende aspecten zijn:
 - [fundamentele besluiten](./ontwerpbesluiten.md#fundamenteel), 
@@ -35,7 +35,7 @@ Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbeve
 - [B0869: Koppeling tussen applicaties en VAR](./artefacten/0869.md)
 - [B8278: Beëindigen van de geldigheid van verwerkingsactiviteiten](./artefacten/8278.md)
 
-## Gegevensmodel logging
+## Gegevensmodel verwerkingenlog
 - [B9428: Terminologie: Gebruiker of Medewerker](./artefacten/9428.md)
 - [B0601: Terminologie: Handeling of Gebeurtenis](./artefacten/0601.md)
 - [B4047: Terminologie: Actie of Operatie](./artefacten/4047.md)

@@ -1,31 +1,16 @@
 ---
-title: "Architectuur"
-name: architectuur
+title: "Architectuurschetsen"
+name: architectuurschetsen
 ---
+## Positionering standaard in de informatiehuishouding  
+De Verwerkingenlogging API-standaard standaardiseerd de wijze waarop processystemen de verwerking van (persoons)gegevens kunnen vastleggen in verwerkingenlogs en deze verwerkingenlogs kunnen ontsluiten naar geautoriseerde afnemers. Deze standaard vult hiermee een deel van de functies in die in de gemeentelijke informatievoorziening nodig zijn om invulling te kunnen geven aan de [Verantwoordingsplicht uit de AVG](https://autoriteitpersoonsgegevens.nl/nl/onderwerpen/algemene-informatie-avg/verantwoordingsplicht).
 
-## Algemeen
-Als handreiking bij de API-standaard zijn een aantal architectuurschetsen ontwikkeld die te maken hebben met de plek van de API-standaard in de gemeentelijke informatievoorziening. Tevens zijn mogelijke implementatiescenarios geschetst en zijn best-practices benoemd.
+In onderstaande schets is weergegeven welke informatiesystemen een rol spelen bij de implementatie van de verschillende aspecten van de Verantwoordingsplicht. De onderdelen die door de Verwerkingenlogging API-standaard worden afgedekt zijn hierbij rood omkaderd aangegeven. 
 
-## Schets van de informatievoorziening rondom logging
-- Samenhang taakspecifieke applicaties, logregister en gemeentelijk VAR
-- Implementatie van de API-standaard door taakspecifieke applicaties
-- Implementatie van de API-standaard door logregister
-- Logging door providers en consumers
+<img src="./_assets/API_standaard_werkingsgebied.png" alt="API-standaard" width="700"/>
 
-## Vastleggen van een verwerking
-- Directe vastlegging binnen een transactie
-- Vastlegging via een persistent queueing mechanisme
-- Pseudonimisering van BSN's door logregisters
+Ten aanzien van de ontsluiting van het Gemeentelijk register van verwerkingsactiviteiten is een API-standaard in ontwikkeling. Deze standaard wordt naar verwachting in het eerste kwartaal van 2021 opgeleverd. Nadere informatie over deze standaard is [hier](https://github.com/VNG-Realisatie/gemma-verwerkingsactiviteiten) beschikbaar. Voor het vastleggen van toestemmingen van burgers is nog geen standaard in ontwikkeling. Op dit punt worden de landelijke ontwikkelingen op het gebied van vrijwillige machtigingen op de voet gevolgd. 
 
-## 'Muteren' van een logrecord
-- Wijzigen van de vertrouwelijkheid
+## Uitwerking van architectuurschetsen 
+Gemeenten hebben ten aanzien van de inrichting van de verschillende informatiesystemen die in bovenstaande schets zijn opgenomen een aantal keuzes te maken. Zo kan gekozen worden voor één centraal verwerkingenlog voor de gemeente of kan de keuze worden gemaakt binnengemeentelijk meerdere verwerkingslogs te hanteren. Op GEMMAonline zijn de verschillende architectuurscenario's uitgewerkt. Deze uitwerking is [hier](https://www.gemmaonline.nl/index.php/Thema_Logging_en_verwerkingsactiviteiten) te vinden. 
 
-## Binnengemeentelijke inrichting logregister
-- Centraal logregister
-- Gefedereerd logregister
-
-## Logging in ketens en netwerken
-- Logging door gemeente en derde partijen
-
-## Logging en zaakgericht werken
-- Schets van logging binnen een zaak

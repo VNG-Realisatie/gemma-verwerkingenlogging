@@ -4,24 +4,26 @@ name: API
 date: 07-10-2020
 ---
 
-Organisaties die persoonsgegevens verwerken zijn conform de [Algemene Verordening Gegevensbescherming (AVG)](https://autoriteitpersoonsgegevens.nl/nl/over-privacy/wetten/algemene-verordening-gegevensbescherming-avg) en de [Uitvoeringswet AVG](https://wetten.overheid.nl/BWBR0040940/2019-02-19) verplicht om aan te kunnen tonen dat een verwerking van persoonsgegevens aan de belangrijkste beginselen van verwerking voldoet, zoals rechtmatigheid, transparantie, doelbinding en juistheid. Om aan deze verantwoordingsplicht te kunnen voldoen is het van belang dat per verwerking de belangrijkste metagegevens van de verwerkingen worden vastgelegd. Standaardisatie van de vastlegging van verwerkingen is van belang om de eenduidigheid en toegankelijkheid van deze gegevens te borgen. Door VNG-Realisatie is de 'Verwerkingenlogging' API-standaard ontwikkeld als onderdeel van de GEMMA referentiearchitectuur. Deze API-standaard biedt leveranciers van informatiesystemen gestandaardiseerde API-specificaties voor het vastleggen en ontsluiten van de logging van verwerkingen.
+Organisaties die persoonsgegevens verwerken zijn conform de [Algemene Verordening Gegevensbescherming (AVG)](https://autoriteitpersoonsgegevens.nl/nl/over-privacy/wetten/algemene-verordening-gegevensbescherming-avg) en de [Uitvoeringswet AVG](https://wetten.overheid.nl/BWBR0040940/2019-02-19) verplicht om aan te kunnen tonen dat een verwerking van persoonsgegevens aan de belangrijkste beginselen van verwerking voldoet, zoals rechtmatigheid, transparantie, doelbinding en juistheid. Om aan deze verantwoordingsplicht te kunnen voldoen is het van belang dat per verwerking de belangrijkste metagegevens van de verwerkingen worden vastgelegd. Standaardisatie van de vastlegging van verwerkingen is van belang om de eenduidigheid en toegankelijkheid van deze gegevens te borgen. Door VNG-Realisatie is de Verwerkingenlogging API-standaard ontwikkeld als onderdeel van de GEMMA referentiearchitectuur. Deze API-standaard biedt leveranciers van informatiesystemen gestandaardiseerde API-specificaties voor het vastleggen en ontsluiten van de logging van verwerkingen.
 
->Deze API-standaard is in ontwikkeling. Geplande oplevering van de eerste met gemeenten en leveranciers afgestemde versie van de standaard is voorzien voor december 2020. Op de [voorgangspagina](./_content/achtergronddocumentatie/voortgang.md) wordt bijgehouden wat de actuele status van de uitwerking van de API-standaard is.
+>Deze API-standaard is in ontwikkeling. Geplande oplevering van de eerste met gemeenten en leveranciers afgestemde versie van de standaard is voorzien voor december 2020. Op de [voortgangspagina](./_content/achtergronddocumentatie/voortgang.md) wordt bijgehouden wat de actuele status van de uitwerking van de API-standaard is.
 
 ## Werkingsgebied 
 Het werkingsgebied voor deze standaard is: gemeenten en gemeentelijke samenwerkingsverbanden.
 
 ## Inhoud van de API-standaard
-- [Gegevens- en informatiemodel](./_content/gegevensmodel/index.md)
+- [Informatie- en gegevensmodel](./_content/gegevensmodel/index.md)
 - [API-specificaties](./_content/api/index.md)
-- Beschrijving best-practices en architectuurmodellen
 - Referentieimplementatie van een verwerkingenlogregister
 - Referentieimplementatie van een informatiesysteem wat verwerkingen logt
 
-## Achtergronddocumentatie
+## Documentatie
 - [Productvisie](./_content/productvisie/index.md)
-- [Ontwerpdocumentatie](./_content/achtergronddocumentatie/ontwerp.md)
-- [Gehanteerde kwaliteitseisen](./_content/achtergronddocumentatie/definition_of_done.md)
+- [Quickstart Guide](./_content/quickstart/index.md)
+- [Architectuur](./_content/architectuur/index.md)
+- [Informatie- en gegevensmodel](./_content/gegevensmodel/index.md)
+- [API-specificaties](./_content/api/index.md)
+- [Achtergronddocumentatie](./_content/achtergronddocumentatie/index.md)
 
 ## Gerelateerde standaarden
 * [GEMMA Verwerkingsactiviteiten](https://github.com/VNG-Realisatie/gemma-verwerkingsactiviteiten)

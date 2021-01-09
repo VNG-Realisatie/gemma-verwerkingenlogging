@@ -5,7 +5,7 @@ date: 28-09-2020
 ---
 
 ## Beschrijving
-Soort object dat bij de actie betrokken is.
+Soort object dat bij de verwerkingsactie betrokken is.
 
 ## Voorbeeld
 `Persoon`

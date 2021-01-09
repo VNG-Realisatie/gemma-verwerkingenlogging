@@ -5,7 +5,7 @@ date: '05-10-2020'
 ---
 
 ## Algemeen
-De onderstaande cases beschrijven verschillende patronen waarmee loggegevens worden opgehaald door de gemeente of door derden. Bij een opvraging ligt het initiatief bij de vragende partij. In iedere case is vastgelegd wat de bijzonderheden van de case zijn en welke vraagstukken er uit volgen. 
+De onderstaande cases beschrijven verschillende patronen waarmee verwerkingenloggegevens worden opgehaald door de gemeente of door derden. Bij een opvraging ligt het initiatief bij de vragende partij. In iedere case is vastgelegd wat de bijzonderheden van de case zijn en welke vraagstukken er uit volgen. 
 
 ## Opvragen van gegevens
 - [C9522: Detailvraag op basis van BSN – Vanuit zaakdossier](./../artefacten/9522.md)
