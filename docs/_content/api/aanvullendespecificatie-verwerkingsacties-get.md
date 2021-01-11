@@ -16,8 +16,8 @@ layout: default
 
 | Regel | Foutcode |
 | :---- | :---- |
-| Bij autorisatiescope `read:restricted` moet de query parameter `beperkteSet=true`. | 403 |
-| Bij autorisatiescope `read:normal` moet de query parameter `vertrouwelijkheid` gelijk zijn aan `Normal`. | 403 |
+| Bij autorisatiescope `read:restricted` moet de query parameter `beperkteSet` ingevuld zijn met de waarde `true`. | 403 |
+| Bij autorisatiescope `read:normal` moet de query parameter `vertrouwelijkheid` ingevuld zijn met de waarde `Normaal`. | 403 |
 
 
 ### Gedrag
