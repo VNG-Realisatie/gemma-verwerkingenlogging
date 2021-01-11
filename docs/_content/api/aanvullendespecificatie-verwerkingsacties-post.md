@@ -15,14 +15,13 @@ layout: default
 
 | Regel | Foutcode |
 | :---- | :---- |
-| Bij autorisatiescope `create:normal` moet het element `vertrouwelijkheid` gevuld zijn met de waarde "Normaal". | 403 |
-| Bij autorisatiescope `create:confidential` moet het element `vertrouwelijkheid` gevuld zijn met de waarde "Normaal" of de waarde "Vertrouwelijk". | 403 |
-| Het element `vertrouwelijkheid` mag nooit de waarde "Opgeheven" hebben. | 403 |
-
+| Bij autorisatiescope `create:normal` moet in de request het element `vertrouwelijkheid` gevuld zijn met de waarde `Normaal`. | 403 |
+| Bij autorisatiescope `create:confidential` moet in de request het element `vertrouwelijkheid` gevuld zijn met de waarde `Normaal` of `Vertrouwelijk`. | 403 |
+| Het element `vertrouwelijkheid` mag nooit de waarde `Opgeheven` hebben. | 403 | <!-- we kunnen dit ook afdwingen in de OAS, maar dat wordt het schema niet mooier van -->
 
 ### Gedrag
-
-* In de respons is het element `url` gevuld met een URL-referentie naar de aangemaakte verwerkingsactie.
-* In de respons is het element `actieId` gevuld met een nieuwe UUID.
-* In de respons is het element `tijdstipRegistratie` gevuld met de actuele datum/tijd.
-* In de respons zijn alle overige elementen gevuld met dezelfde waarden die in de request zijn meegegeven.
+Voor de respons gelden de volgende regels:
+* Het element `url` is gevuld met een URL-referentie naar de aangemaakte verwerkingsactie.
+* Het element `actieId` is gevuld met een nieuwe UUID.
+* Het element `tijdstipRegistratie` is gevuld met de actuele datum/tijd.
+* Alle overige elementen zijn gevuld met dezelfde waarden die in de request zijn meegegeven. Optionele elementen die niet zijn meegegeven in de request worden wel teruggegeven in de respons, maar dan met lege waarden.
