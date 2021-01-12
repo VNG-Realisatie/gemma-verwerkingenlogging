@@ -31,7 +31,7 @@ Bij een dergelijk log zou het volgende conceptuele algoritme toegepast moeten wo
 * Zijn er van een verwerkingsactie meerdere voorkomens dan worden alle niet actuele voorkomens genegeerd.
 * Zijn er vervallen voorkomens dan worden deze genegeerd.
 * Maak voor ieder van de overgebleven verwerkingsacties een nieuwe logentry:
-    * Het attribuut ID wordt gevuld met een nieuw UUID.
-    * Het attribuut Tijdstip Registratie wordt gevuld met de actuele datum/tijd.
-	* Het attribuut Bewaartermijn wordt gevuld met de opgegeven waarde.
+    * Het attribuut `Actie ID` wordt gevuld met een nieuw UUID.
+    * Het attribuut `Tijdstip Registratie` wordt gevuld met de actuele datum/tijd.
+	* Het attribuut `Bewaartermijn` wordt gevuld met de opgegeven waarde.
     * Alle overige attributen krijgen inhoudelijk de waarden van de meeste actuele voorkomen dat gevonden werd.
