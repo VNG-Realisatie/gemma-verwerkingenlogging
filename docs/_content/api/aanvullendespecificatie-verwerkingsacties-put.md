@@ -28,19 +28,11 @@ layout: default
 * De gegevens van de bestaande verwerkingsactie, geïdentificeerd met behulp van de path parameter `uuid`, worden overschreven met de gegevens in de body van de request.
 
 * Als de `uuid` niet gematched kan worden met een verwerkingsactie of de gevonden verwerkingsactie blijkt te zijn vervallen, dan wordt een HTTP 400 foutmelding teruggestuurd.
-<!--
-Moeten alle elementen verplicht meegegeven worden bij de PUT operatie? Zeggen de design rules hier iets over?
-In de OAS staat de parameter uuid, maar dit moet eigenlijk actieId, of nog beter verwerkingsactieId heten of alleen id?
-Of toch beter uuid maar dan actieId in response hernoemen naar uuid voor consistentie.
--->
+
 In [B3891](../achtergronddocumentatie/ontwerp/artefacten/3891.md) is beschreven hoe een log dat in technische zin immutable is toch in logische zin kan worden aangepast.
 
 Bij een dergelijk log zou het volgende conceptuele algoritme toegepast moeten worden:
 * De verwerkingsactie die hoort bij het opgegeven Actie ID wordt opgehaald.
-<!---
-Moet Actie Id niet Verwerkingsactie ID heten en ook in OAS verwerkingsactieId of zelfs liever id? 
-In de OAS moet de zoekparameter uuid hermoemd worden in verwerkingsactieId.
---->
 * Zijn er van de verwerkingsactie meerdere voorkomens dan worden alle niet actuele voorkomens genegeerd.
 * Is het meest actuele voorkomen vervallen, dan retourneert de functie een foutmelding (HTTP 400).
 * Is het meest actuele voorkomen niet vervallen, dan wordt een nieuwe logentry aangemaakt.
