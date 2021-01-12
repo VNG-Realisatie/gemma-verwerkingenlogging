@@ -32,5 +32,5 @@ Bij een dergelijk log zou het volgende conceptuele algoritme toegepast moeten wo
 * Er wordt een nieuw `Verwerkingsactie` record aangemaakt met attributen zoals beschreven in het SIM/UGM.
 * Het attribuut `Actie ID` krijgt een nieuwe UUID.
 * Het attribuut `Tijdstip Registratie` krijgt de actuele datum/tijd.
-* Het attribuut `Vervallen` krijgt de waarde `Ja`.
+* Het attribuut `Vervallen` krijgt de waarde `Nee`.
 * Alle overige attributen van het record krijgen de waarden van de corresponderende elementen die in het request bericht zijn meegegeven.
