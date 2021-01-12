@@ -27,7 +27,7 @@ De opgegeven verwerkingsactie, geïdentificeerd met behulp van de path parameter
 In [B3891](../achtergronddocumentatie/ontwerp/artefacten/3891.md) is beschreven hoe een log dat in technische zin immutable is toch in logische zin kan worden aangepast.
 
 Bij een dergelijk log zou het volgende conceptuele algoritme toegepast moeten worden:
-* De verwerkingsactie die hoort bij de opgegeven path parameter `uuid` in de URL van de DELETE operation wordt opgehaald door deze te matchen met het attribuut `Actie ID` van de `Verwerkingsactie` records in de database.
+* De verwerkingsactie die hoort bij de opgegeven path parameter `uuid` wordt opgehaald door deze te matchen op het attribuut `Actie ID` van de `Verwerkingsactie` records in de database.
 * Zijn er van de verwerkingsactie meerdere voorkomens, dan worden alle niet actuele voorkomens genegeerd.
 * Is het meest actuele voorkomen vervallen, dan retourneert de functie een foutmelding (HTTP 400).
 * Is het meest actuele voorkomen niet vervallen, dan wordt een nieuwe logentry, oftewel een nieuwe `Verwerkingsactie` record, aangemaakt.
