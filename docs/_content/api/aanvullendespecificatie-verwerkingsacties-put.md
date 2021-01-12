@@ -25,7 +25,7 @@ layout: default
 
 * Alle informatie over de verwerkingsactie moet opnieuw worden meegegeven, ook de informatie die niet wijzigt. Dat betekent dat alle elementen uit het schema van de request body verplicht zijn. Als dit niet het geval is, dan wordt er een HTTP 400 (Bad Request) foutmelding teruggegeven. 
 
-* De gegevens van de bestaande verwerkingsactie, geïdentificeerd met behulp van de query parameter `uuid`, worden overschreven met de gegevens in de body van de request.
+* De gegevens van de bestaande verwerkingsactie, geïdentificeerd met behulp van de path parameter `uuid`, worden overschreven met de gegevens in de body van de request.
 
 * Als de `uuid` niet gematched kan worden met een verwerkingsactie of de gevonden verwerkingsactie blijkt te zijn vervallen, dan wordt een HTTP 400 foutmelding teruggestuurd.
 <!--
