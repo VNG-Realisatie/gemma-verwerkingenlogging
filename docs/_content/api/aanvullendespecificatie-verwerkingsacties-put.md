@@ -23,7 +23,7 @@ layout: default
 
 ### Gedrag
 
-* Alle gegevens van de verwerkingsactie moeten opnieuw worden meegegeven, ook de gegevens die niet wijzigen. Dat betekent dat alle elementen van de verwerkingsactie verplicht in het requestbericht moeten worden opgenomen. Als dit niet het geval is, dan wordt er een HTTP 400 (Bad Request) foutmelding teruggegeven. Let op: de OAS dwingt dit zelf niet af, vandaar deze aanvullende specificatie. 
+* Alle gegevens van de verwerkingsactie moeten opnieuw worden meegegeven, ook de gegevens die niet wijzigen. Dat betekent dat alle elementen van de verwerkingsactie verplicht in het requestbericht moeten worden opgenomen. <sup>[1](#Voetnoot1)</sup> Als dit niet het geval is, dan wordt er een HTTP 400 (Bad Request) foutmelding teruggegeven. 
 
 * De gegevens van de bestaande verwerkingsactie, geïdentificeerd met behulp van de path parameter `uuid`, worden overschreven met de gegevens in de body van de request.
 
@@ -40,3 +40,7 @@ Bij een dergelijk log zou het volgende conceptuele algoritme toegepast moeten wo
     * Het attribuut `Tijdstip Registratie` wordt gevuld met de actuele datum/tijd.
     * Het attribuut `Vervallen` krijgt de waarde `False`.
     * Alle overige attributen krijgen inhoudelijk de waarden die in het request bericht zijn meegegeven.
+
+### Voetnoten
+<a name="1">Voetnoot 1</a>
+**Let op:** in de OAS wordt dit niet afgedwongen, vandaar deze aanvullende specificatie. Het verplicht zijn van deze velden is situatie-specifiek en dan zou je per situatie een schema moeten specificeren. In OAS is dat niet practisch omdat je dan niet hetzelfde schema kunt hergebruiken voor alle situaties.
