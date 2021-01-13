@@ -24,9 +24,7 @@ layout: default
 ### Gedrag
 
 * Alle gegevens van de verwerkingsactie moeten opnieuw worden meegegeven, ook de gegevens die niet wijzigen. Dat betekent dat alle elementen van de verwerkingsactie verplicht in het requestbericht moeten worden opgenomen.<sup>[1](#Voetnoot1)</sup> Als dit niet het geval is, dan wordt er een HTTP 400 (Bad Request) foutmelding teruggegeven. 
-
 * De gegevens van de bestaande verwerkingsactie, geïdentificeerd met behulp van de path parameter `uuid`, worden overschreven met de gegevens in de body van de request.
-
 * Als de `uuid` niet gematched kan worden met een verwerkingsactie of de gevonden verwerkingsactie blijkt te zijn vervallen, dan wordt een HTTP 400 foutmelding teruggestuurd.
 
 In [B3891](../achtergronddocumentatie/ontwerp/artefacten/3891.md) is beschreven hoe een log dat in technische zin immutable is toch in logische zin kan worden aangepast.
@@ -43,4 +41,4 @@ Bij een dergelijk log zou het volgende conceptuele algoritme toegepast moeten wo
 
 ### Voetnoten
 <a name="Voetnoot1"> 1</a>
-Let op: in de OAS wordt dit niet afgedwongen, vandaar deze aanvullende specificatie. Het verplicht zijn van deze velden is situatie-specifiek en dan zou je per situatie een schema moeten specificeren. In OAS is dat niet practisch omdat je dan niet hetzelfde schema kunt hergebruiken voor alle situaties.
+Let op: in de OAS wordt dit niet afgedwongen, vandaar deze aanvullende specificatie. Het verplicht zijn van deze velden is namelijk situatie-specifiek en dan zou je per situatie een schema moeten specificeren. In OAS is dat niet practisch omdat je daar niet hetzelfde schema kunt hergebruiken voor alle situatie, dit in tegenstelling tot XML Schema waar dat wel kan.
