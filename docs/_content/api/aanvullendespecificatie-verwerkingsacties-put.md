@@ -23,7 +23,7 @@ layout: default
 
 ### Gedrag
 
-* Alle informatie over de verwerkingsactie moet opnieuw worden meegegeven, ook de informatie die niet wijzigt. Dat betekent dat alle elementen uit het schema van de request body verplicht zijn. Als dit niet het geval is, dan wordt er een HTTP 400 (Bad Request) foutmelding teruggegeven. 
+* Alle gegevens van de verwerkingsactie moeten opnieuw worden meegegeven, ook de gegevens die niet wijzigen. Dat betekent dat alle elementen van de verwerkingsactie verplicht in het requestbericht moeten worden opgenomen. Als dit niet het geval is, dan wordt er een HTTP 400 (Bad Request) foutmelding teruggegeven. Let op: de OAS dwingt dit zelf niet af, vandaar deze aanvullende specificatie. 
 
 * De gegevens van de bestaande verwerkingsactie, geïdentificeerd met behulp van de path parameter `uuid`, worden overschreven met de gegevens in de body van de request.
 
