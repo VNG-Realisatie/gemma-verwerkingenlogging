@@ -17,7 +17,7 @@ layout: default
 | :---- | :---- |
 | Bij autorisatiescope `create:normal` moet in de request het element `vertrouwelijkheid` gevuld zijn met de waarde `Normaal`. | 403 |
 | Bij autorisatiescope `create:confidential` moet in de request het element `vertrouwelijkheid` gevuld zijn met de waarde `Normaal` of `Vertrouwelijk`. | 403 |
-| Het element `vertrouwelijkheid` mag nooit de waarde `Opgeheven` hebben. | 403 | <!-- we kunnen dit ook afdwingen in de OAS, maar dat wordt het schema niet mooier van -->
+| Het element `vertrouwelijkheid` mag nooit de waarde `Opgeheven` hebben. | 403 | <!-- We kunnen dit ook afdwingen in de OAS, maar daar wordt het schema niet mooier van. -->
 
 ### Gedrag
 Voor het responsbericht gelden de volgende regels:
