@@ -24,7 +24,7 @@ Voor het responsbericht gelden de volgende regels:
 * Het element `url` is gevuld met een URL-referentie naar de aangemaakte verwerkingsactie.
 * Het element `actieId` is gevuld met een nieuwe UUID.
 * Het element `tijdstipRegistratie` is gevuld met de actuele datum/tijd.
-* Alle overige elementen zijn gevuld met dezelfde waarden die in de request zijn meegegeven. Optionele elementen die niet zijn meegegeven in de request worden wel teruggegeven in de respons, maar dan met lege waarden.
+* Alle overige elementen zijn gevuld met dezelfde waarden die in de request zijn meegegeven. Elementen die niet zijn meegegeven in de request worden wel teruggegeven in de respons, maar dan met lege waarden.
 
 In [B3891](../achtergronddocumentatie/ontwerp/artefacten/3891.md) is beschreven hoe een log dat in technische zin immutable is toch in logische zin kan worden aangepast.
 
