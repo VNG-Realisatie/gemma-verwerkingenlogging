@@ -43,4 +43,4 @@ Bij een dergelijk log zou het volgende conceptuele algoritme toegepast moeten wo
 
 ### Voetnoten
 <a name="Voetnoot1"> 1</a>
-**Let op:** in de OAS wordt dit niet afgedwongen, vandaar deze aanvullende specificatie. Het verplicht zijn van deze velden is situatie-specifiek en dan zou je per situatie een schema moeten specificeren. In OAS is dat niet practisch omdat je dan niet hetzelfde schema kunt hergebruiken voor alle situaties.
+Let op: in de OAS wordt dit niet afgedwongen, vandaar deze aanvullende specificatie. Het verplicht zijn van deze velden is situatie-specifiek en dan zou je per situatie een schema moeten specificeren. In OAS is dat niet practisch omdat je dan niet hetzelfde schema kunt hergebruiken voor alle situaties.
