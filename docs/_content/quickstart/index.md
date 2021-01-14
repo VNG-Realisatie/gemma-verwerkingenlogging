@@ -119,20 +119,20 @@ Er is in het voorbeeld dus sprake van twee verwerkingen. Eén bij de afnemer en 
 
 <img src="./_assets/Minimaal_2.png" alt="Vergunningenapplicatie en gegevensmagazijn loggen beiden hun eigen verwerking" width="700"/>
 
-Om te zorgen dat de aanbieder toch voldoende informatie op kan nemen in het verwerkingenlog moet de afnemer in de html header van de aanroep de volgende informatie meegeven:
+Om te zorgen dat de aanbieder toch voldoende informatie op kan nemen in het verwerkingenlog moet de afnemer in de http header van de aanroep de volgende informatie meegeven:
 
 N.B. We laten de inhoud van dit voorbeeld aansluiten bij het vorige voorbeeld.
 
-<img src="./_assets/Minimaal_Html_Header.png" alt="Informatie mee te geven in html header" width="700"/>
+<img src="./_assets/Minimaal_Html_Header.png" alt="Informatie mee te geven in http header" width="700"/>
 
 Toelichting:
-* Er is besloten om deze informatie mee te geven in de html header van de berichten en niet in de zogenaamde payload. Daarmee wordt voorkomen dat alle berichtdefinities van alle systemen die persoonsgegevens verwerken aangepast moeten worden. Ook maakt het gefaseerde implementatie van verwerkingslogging mogelijk. Zo kan het voorkomen dat systeem A de informatie al wel meegeeft bij de aanroep van dienst B, maar dat dienst B deze nog niet kan verwerken.
+* Er is besloten om deze informatie mee te geven in de http header van de berichten en niet in de zogenaamde payload. Daarmee wordt voorkomen dat alle berichtdefinities van alle systemen die persoonsgegevens verwerken aangepast moeten worden. Ook maakt het gefaseerde implementatie van verwerkingslogging mogelijk. Zo kan het voorkomen dat systeem A de informatie al wel meegeeft bij de aanroep van dienst B, maar dat dienst B deze nog niet kan verwerken.
 * Technisch gezien zijn de velden optioneel. Operationeel gezien moet geprobeerd worden zoveel mogelijk informatie te verstrekken.
 * In dit voorbeeld is sprake van mandatering, zie [casus C2672](../achtergronddocumentatie/ontwerp/artefacten/2672.md) daarbij blijft de gemeente verantwoordelijk. Zie voor delegatie [casus C7883](../achtergronddocumentatie/ontwerp/artefacten/7883.md).
 
 ### Minimale logging vanuit een dienstaanbieder
 
-De aanbieder van de dienst, in ons voorbeeld het gegevensmagazijn, neemt via de API de volgende Verwerkingsactie op in het verwerkingslog. De Verwerkingsactie bevat diverse velden waarin de informatie uit de html header in terecht is gekomen. Deze velden zijn met een * in de linker kantlijn gemarkeerd.
+De aanbieder van de dienst, in ons voorbeeld het gegevensmagazijn, neemt via de API de volgende Verwerkingsactie op in het verwerkingslog. De Verwerkingsactie bevat diverse velden waarin de informatie uit de http header in terecht is gekomen. Deze velden zijn met een * in de linker kantlijn gemarkeerd.
 
 <img src="./_assets/Minimaal_Provider_1.png" alt="Minimale logging door provider (1 van 2)" width="700"/>
 <img src="./_assets/Minimaal_Provider_2.png" alt="Minimale logging door provider (2 van 2)" width="700"/>
@@ -229,13 +229,13 @@ Om de aanpasbaarheid in een keten te visualiseren gebruiken we opnieuw het fraud
 
 Zowel de afnemer als de aanbieder loggen. Om te zorgen dat we later de vertrouwelijkheid van het onderzoek kunnen laten vervallen zijn er twee dingen nodig.
 
-1.	We geven het Verwerking ID mee aan de basisregistratie via de html header.
+1.	We geven het Verwerking ID mee aan de basisregistratie via de http header.
 
-Hieronder wordt opnieuw de html header getoond met daarin als extra veld het Verwerking ID.
+Hieronder wordt opnieuw de http header getoond met daarin als extra veld het Verwerking ID.
 
-<img src="./_assets/Maximaal_Html_Header.png" alt="Informatie mee te geven in html header" width="700"/>
+<img src="./_assets/Maximaal_Html_Header.png" alt="Informatie mee te geven in http header" width="700"/>
 
-De aanbieder zou dit extra veld op moeten slaan in het attribuut Verwerking ID afnemer. In het voorbeeld tonen we naast het ID van de verwerkingsactiviteit van de aanbieder alleen de attributen waar de informatie uit de html header in terecht komt. Zie voor meer attributen het voorbeeld dat gegevens in bij de [minimale logging van verwerkingen](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Minimale-logging-van-verwerkingen).
+De aanbieder zou dit extra veld op moeten slaan in het attribuut Verwerking ID afnemer. In het voorbeeld tonen we naast het ID van de verwerkingsactiviteit van de aanbieder alleen de attributen waar de informatie uit de http header in terecht komt. Zie voor meer attributen het voorbeeld dat gegevens in bij de [minimale logging van verwerkingen](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Minimale-logging-van-verwerkingen).
 <minimale logging>.
 
 <img src="./_assets/Maximaal_Provider.png" alt="Maximale logging door provider" width="700"/>
@@ -250,7 +250,7 @@ We vervolgen het onderzoek met het opvragen van contactgegevens van de betrokken
 
 <img src="./_assets/Maximaal_2.png" alt="Voorbeeld vertrouwelijke verwerking in keten (2 van 3)" width="700"/>
 
-Ook nu geven we het Verwerking ID mee in de html header zodat dit ID opgeslagen kan worden door de aanbieder.
+Ook nu geven we het Verwerking ID mee in de http header zodat dit ID opgeslagen kan worden door de aanbieder.
 
 Als we ons even beperken tot deze twee externe aanroepen ontstaat uiteindelijk het volgende beeld:
 
@@ -261,6 +261,6 @@ De verwerking die uitgevoerd is door de basisregistratie is alleen te vinden in 
 
 Als we de vertrouwelijkheid van de verwerking vervalt zullen we dit dus zowel kenbaar moeten maken bij het verwerkingenlog van de gemeente en bij de afnemer. Omdat we binnen de gemeente via deze specificatie afspraken hebben gemaakt over logging van verwerkingen ondersteunt het verwerkingenlog van iedere gemeente het wijzigen van de vertrouwelijkheid.
 
-Helaas geldt dit niet voor de basisregistratie. Daarvoor is een standaard nodig die binnen de hele overheid van toepassing is. Zolang deze er niet is weten we niet zeker of de basisregistratie de gegevens uit de html header opgeslagen heeft (waaronder de vertrouwelijkheid zelf!) en of we hieraan kunnen refereren op het moment dat we een (niet gestandaardiseerd) verzoek doen om de vertrouwelijkheid te laten vervallen.
+Helaas geldt dit niet voor de basisregistratie. Daarvoor is een standaard nodig die binnen de hele overheid van toepassing is. Zolang deze er niet is weten we niet zeker of de basisregistratie de gegevens uit de http header opgeslagen heeft (waaronder de vertrouwelijkheid zelf!) en of we hieraan kunnen refereren op het moment dat we een (niet gestandaardiseerd) verzoek doen om de vertrouwelijkheid te laten vervallen.
 
 
