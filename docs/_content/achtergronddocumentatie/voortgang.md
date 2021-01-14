@@ -2,6 +2,8 @@
 title: "Voortgang ontwikkeling API-standaard voor logging van verwerkingen"
 name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ---
+## 14 januari 2021
+* Op diverse pagina's de tekst 'html header' gewijzigd naar 'http header'.
 
 ## 8 januari 2021
 * Architectuurschets bij case [C2866 - Detailvraag op basis van BSN – Door een derde partij](./ontwerp/artefacten/2866.md) toegevoegd.
@@ -59,11 +61,11 @@ Inhoudelijke aanpassingen:
 - [Attribuuttype Naam](../gegevenswoordenboek/attribuuttypen/Naam.md): Lengte van 80 naar 242.
 - [Attribuuttype OIN](../gegevenswoordenboek/attribuuttypen/OIN.md): Formeel patroon in de vorm van een regular expression toegevoegd.
 - [Attribuuttype UUID](../gegevenswoordenboek/attribuuttypen/UUID.md): Formeel patroon in de vorm van een regular expression toegevoegd.
-- Aanwezigheid van [html header attributen](../api/index.md) toegelicht.
+- Aanwezigheid van [http header attributen](../api/index.md) toegelicht.
 N.B. Bovenstaande aanpassingen moeten nog doorgevoerd worden in de API.
 
 Correcties:
-- De nieuwe html header attributen (verwerkingsactiviteit id en url) zijn toegevoegd aan [besluit 9177](./ontwerp/artefacten/9177.md).
+- De nieuwe http header attributen (verwerkingsactiviteit id en url) zijn toegevoegd aan [besluit 9177](./ontwerp/artefacten/9177.md).
 - De resourcenaam wijziging was nog niet doorgevoerd op de [toelichtingspagina over de API](../api/index.md).
 
 Tekstuele aanpassingen:
@@ -74,7 +76,7 @@ Tekstuele aanpassingen:
 - [Logging Maturity Level](./logging_maturity_level.md): Kleine verbetering aan leesbaarheid schema met de verschillende niveau's.
 
 ## 8 november 2020
-- Casing van html header attributen gecorrigeerd.
+- Casing van http header attributen gecorrigeerd.
 
 ## 6 november 2020
 - In de alle beschrijvingen 'het log' gewijzigd in 'het verwerkingenlog' om duidelijk te maken dat het enkel over de logging van verwerkingen gaat.
@@ -84,7 +86,7 @@ Tekstuele aanpassingen:
 - De attributen `Actie.Id` en `Actie.Naam` hernoemd naar `Verwerkingsactie.ActieId` en `Verwerkingsactie.ActieNaam`.
 - Het attribuut `Verwerkingsactie.VerwerkingsactiviteitUrl` toegevoegd.
 - Het attribuut `Verwerkingsactie.VerwerkingsactiviteitIdAfnemer` en `Verwerkingsactie.VerwerkingsactiviteitUrlAfnemer` toegevoegd.
-- De html header attributen uitgebreid met `Verwerkingsactiviteit ID` en `Verwerkingsactiviteit URL`.
+- De http header attributen uitgebreid met `Verwerkingsactiviteit ID` en `Verwerkingsactiviteit URL`.
 
 ## 28 oktober 2020
 - Update van afbeeldingen van informatie- en gegevensmodel.
