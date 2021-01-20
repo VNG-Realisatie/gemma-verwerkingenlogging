@@ -26,8 +26,6 @@ paths:
           required: true
           schema:
             type: string
-            enum:
-              - Persoon
           example: Persoon
         - name: soortObjectId
           in: query
@@ -68,10 +66,6 @@ paths:
           description: Geeft de mate van vertrouwelijkheid van de verwerking aan.
           schema:
             type: string
-            enum:
-              - Normaal
-              - Vertrouwelijk
-              - Opgeheven
             default: Normaal
           example: Normaal
         - name: vertrouwelijkheid__in
@@ -411,7 +405,7 @@ paths:
       - JWT-Claims:
         - create:normal
         - create:confidential
-  /verwerkingsacties/{uuid}:
+  /verwerkingsacties/{actieId}:
     put:
       tags:
         - REST calls
@@ -733,7 +727,7 @@ paths:
         - delete:normal 
         - delete:confidential
     parameters:
-    - name: uuid
+    - name: actieId
       in: path
       description: Unieke resource identifier (UUID4)
       required: true
@@ -1035,7 +1029,6 @@ paths:
                 $ref: '#/components/schemas/Fout'
       security: 
       - JWT-Claims:
-        - update:normal
         - update:confidential
 components:
   requestBodies:
@@ -1084,26 +1077,26 @@ components:
           readOnly: true
           example: "https://loggingapi.vng.cloud/api/v1/verwerkingsacties/7a22eb38-bca6-463f-9955-54ab040287cb"
         actieId:
-          title: ID
+          title: Actie ID
           description: Identificator van de verwerkingsactie waar de persoon of het object bij betrokken is. Deze ID wordt automatisch aangemaakt door het log.
           type: string
           format: uuid
           readOnly: true
           example: "7a22eb38-bca6-463f-9955-54ab040287cb"
         actieNaam:
-          title: Naam
+          title: Actie Naam
           description: Naam van de verwerkingsactie.
           type: string
           maxLength: 242
           example: Zoeken personen
         handelingNaam:
-          title: Handeling naam
+          title: Handeling Naam
           description:  Naam van de handeling waar de verwerkingsactie onderdeel van is.
           type: string
           maxLength: 242
           example: Intake
         verwerkingNaam:
-          title: Verwerking naam
+          title: Verwerking Naam
           description:  Naam van de verwerking waar de handeling een onderdeel van is.
           type: string
           maxLength: 242
@@ -1188,7 +1181,7 @@ components:
           format: uuid
           example: "c5b9f4e7-8c79-41b9-91e2-6268419cb167"
         verwerkingsactiviteitUrlAfnemer:
-          title: Verwerkingsactiviteit URL
+          title: Verwerkingsactiviteit URL Afnemer
           description: URL-referentie naar de verwerkingsactiviteit van de afnemer.
           type: string
           format: uri
@@ -1196,7 +1189,7 @@ components:
           minLength: 1
           example: "https://www.amsterdam.nl/var/api/v1/verwerkingsactiviteiten/5f0bef4c-f66f-4311-84a5-19e8bf359eaf"
         verwerkingIdAfnemer:
-          title: Verwerking ID afnemer
+          title: Verwerking ID Afnemer
           description: Identificator van de verwerking aan de kant van de afnemer.
           type: string
           format: uuid
@@ -1208,7 +1201,7 @@ components:
           format: date-time
           example: '2024-04-05T14:35:42+01:00'
         tijdstipRegistratie:
-          title: Tijdstip
+          title: Tijdstip Registratie
           description: Tijdstip waarop de verwerkingsactie in het log is geregistreerd. Wordt bepaald door het log. Niet door het loggende systeem.
           type: string
           format: date-time
@@ -1378,7 +1371,7 @@ components:
       title: Wijzig bewaartermijn van Verwerking
       type: object
       required:
-        - verwerkingID
+        - verwerkingId
         - bewaartermijn
       properties:
         verwerkingId:
@@ -1397,7 +1390,7 @@ components:
       title: Wijzig vertrouwelijkheid van Verwerking
       type: object
       required:
-        - verwerkingID
+        - verwerkingId
         - vertrouwelijkheid
       properties:
         verwerkingId:
