@@ -10,8 +10,8 @@ De onderstaande cases beschrijven verschillende patronen waarmee verwerkingenlog
 ## Opvragen van gegevens
 - [C9522: Detailvraag op basis van BSN – Vanuit zaakdossier](./../artefacten/9522.md)
 - [C9950: Detailvraag op basis van BSN – Zonder zaakdossier](./../artefacten/9950.md)
-**- [C2866: Detailvraag op basis van BSN – Door een derde partij](./../artefacten/2866.md)**
-**- [C0031: Opvragen van gegevens bij een derde partij](../artefacten/0031.md)**
+- **[C2866: Detailvraag op basis van BSN – Door een derde partij](./../artefacten/2866.md)**
+- **[C0031: Opvragen van gegevens bij een derde partij](../artefacten/0031.md)**
 - [C3209: Zoekvraag – Vooraf gedefinieerde zoekcriteria, vooraf gedefinieerde resultaatvelden](./../artefacten/3209.md)
 - [C5889: Zoekvraag – Onbekende zoekcriteria, vooraf gedefinieerde resultaatvelden](./../artefacten/5889.md)
 - [C7293: Zoekvraag – Onbekende zoekcriteria, onbekende resultaatvelden](./../artefacten/7293.md)
