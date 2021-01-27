@@ -163,7 +163,7 @@ Toelichting:
 
 Zijn er binnen de gemeente meerdere verwerkingslogs aanwezig, dan is het handig als deze via één centraal punt bevraagd kunnen worden. Zie voor meer informatie hierover de [architectuurdocumentatie](../architectuur/index.md).
 
-Het inzien van het verwerkinglog is zelf ook een verwerking van persoonsgegevens en moet dus gelogd worden. Zie hiervoor de toelichting in [C3677: Inzage door burger](./achtergronddocumentatie/ontwerp/artefacten/3677.md).
+Het inzien van het verwerkinglog is zelf ook een verwerking van persoonsgegevens en moet dus gelogd worden. Zie hiervoor de toelichting in [C3677: Inzage door burger](../achtergronddocumentatie/ontwerp/artefacten/3677.md).
 
 ## Volledige logging van verwerkingen
 
