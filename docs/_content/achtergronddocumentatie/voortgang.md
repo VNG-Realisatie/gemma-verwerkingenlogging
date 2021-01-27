@@ -4,8 +4,8 @@ name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ---
 
 ## 27 januari 2021
-* In [C3677: Inzage door burger](./ontwerp/artefacten/3677.md) is een expliciete passage toegevoegd over de noodzaak om ook de inzage van het verwerkingenlog te loggen. Ook in de quickstart guide is toegevoegd dat dit moet en wordt naar deze casus verwezen.
-* In de quickstart guide en op de pagina van de opvragingscases wordt nu expliciet verwezen naar [C2866 - Detailvraag op basis van BSN – Door een derde partij](./ontwerp/artefacten/2866.md) en naar [C0031 - Opvragen van gegevens bij een derde partij](./ontwerp/artefacten/0031.md) omdat deze cases voorzien zijn van een aanvullende toelichting die laat zien hoe de gegevens van de afnemer via de http-header in het log van de aanbieder terechtkomen:
+* In [C3677: Inzage door burger](./ontwerp/artefacten/3677.md) is een passage toegevoegd over de noodzaak om ook de inzage van het verwerkingenlog te loggen. Ook in de quickstart guide is toegevoegd dat dit moet en wordt naar deze casus verwezen.
+* In de quickstart guide en op de pagina van de opvragingscases wordt nu verwezen naar [C2866 - Detailvraag op basis van BSN – Door een derde partij](./ontwerp/artefacten/2866.md) en naar [C0031 - Opvragen van gegevens bij een derde partij](./ontwerp/artefacten/0031.md) omdat deze cases voorzien zijn van een aanvullende toelichting die laat zien hoe de gegevens van de afnemer via de http-header in het log van de aanbieder terechtkomen:
 
 ## 14 januari 2021
 * Op diverse pagina's de tekst 'html header' gewijzigd naar 'http header'.
