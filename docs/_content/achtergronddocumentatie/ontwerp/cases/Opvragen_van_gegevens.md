@@ -20,4 +20,4 @@ De onderstaande cases beschrijven verschillende patronen waarmee verwerkingenlog
 - [C5272: Selectie](./../artefacten/5272.md)
 - [C0086: Extractie ten behoeve van statistieken](./../artefacten/0086.md)
 
-De vetgedrukte cases zijn voorzien van een aanvullende toelichting die precies laat zien hoe de gegevens van de afnemer via de http-header in het log van de aanbieder terechtkomen.
+De vetgedrukte cases zijn voorzien van een aanvullende toelichting die laat zien hoe de gegevens van de afnemer via de http-header in het log van de aanbieder terechtkomen.
