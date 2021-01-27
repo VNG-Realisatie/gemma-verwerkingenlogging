@@ -137,7 +137,7 @@ De aanbieder van de dienst, in ons voorbeeld het gegevensmagazijn, neemt via de 
 <img src="./_assets/Minimaal_Provider_1.png" alt="Minimale logging door provider (1 van 2)" width="700"/>
 <img src="./_assets/Minimaal_Provider_2.png" alt="Minimale logging door provider (2 van 2)" width="700"/>
 
-Er zijn [diverse cases](../achtergronddocumentatie/ontwerp/cases/Opvragen_van_gegevens.md) over het opvragen van gegevens. Hiervan zijn de onderstaande cases voorzien van een aanvullende toelichting die precies laat zien hoe de gegevens van de afnemer via de http-header in het log van de aanbieder terechtkomen:
+Er zijn [diverse cases](../achtergronddocumentatie/ontwerp/cases/Opvragen_van_gegevens.md) over het opvragen van gegevens. Hiervan zijn de onderstaande cases voorzien van een aanvullende toelichting die laat zien hoe de gegevens van de afnemer via de http-header in het log van de aanbieder terechtkomen:
 - [C2866 - Detailvraag op basis van BSN – Door een derde partij](../achtergronddocumentatie/ontwerp/artefacten/2866.md)
 - [C0031 - Opvragen van gegevens bij een derde partij](../achtergronddocumentatie/ontwerp/artefacten/0031.md)
 
