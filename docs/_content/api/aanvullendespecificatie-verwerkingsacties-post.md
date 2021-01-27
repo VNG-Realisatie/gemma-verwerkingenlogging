@@ -16,8 +16,10 @@ layout: default
 | Regel | Foutcode |
 | :---- | :---- |
 | Bij autorisatiescope `create:normal` moet in de request het element `vertrouwelijkheid` gevuld zijn met de waarde `Normaal`. | 403 |
-| Bij autorisatiescope `create:confidential` moet in de request het element `vertrouwelijkheid` gevuld zijn met de waarde `Normaal` of `Vertrouwelijk`. | 403 |
-| Het element `vertrouwelijkheid` mag nooit de waarde `Opgeheven` hebben. | 403 | <!-- We kunnen dit ook afdwingen in de OAS, maar daar wordt het schema niet mooier van. -->
+| Als het element `vertrouwelijkheid` gevuld is met de waarde `Vertrouwelijk` dan moet de autorisatiescope `create:confidential` zijn. | 403 |
+| Het element `vertrouwelijkheid` mag nooit de waarde `Opgeheven` hebben. | 403 |
+
+Als het element `vertrouwelijkheid` gevuld is met de waarde `Normaal` dan wordt er niet gecontroleerd op de autorisatiescope voor performance redenen. Anders moet er bij het wegschrijven van elke logregel een round trip gemaakt worden naar de Autorisatie API en dat is niet wenselijk voor performance. Het is zo geconfigureerd dat elke client die geregistreerd is bij de Autorisatie API per default `create:normal` rechten heeft. De Verwerkingen Logging API checkt wel bij elke inkomende call of de client geregistreerd is. Hiervoor hoeven geen round trips gemaakt te worden omdat deze API reeds beschikt over een lijstje met client_id/secret attributen voor alle clients die via het jwt-token-tool geregistreerd zijn.
 
 ### Gedrag
 Voor het responsbericht gelden de volgende regels:
