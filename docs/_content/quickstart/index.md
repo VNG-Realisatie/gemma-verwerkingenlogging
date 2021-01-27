@@ -137,7 +137,7 @@ De aanbieder van de dienst, in ons voorbeeld het gegevensmagazijn, neemt via de 
 <img src="./_assets/Minimaal_Provider_1.png" alt="Minimale logging door provider (1 van 2)" width="700"/>
 <img src="./_assets/Minimaal_Provider_2.png" alt="Minimale logging door provider (2 van 2)" width="700"/>
 
-Er zijn [diverse cases]((../achtergronddocumentatie/ontwerp/cases/Opvragen_van_gegevens.md) over het opvragen van gegevens. Hiervan zijn de onderstaande cases voorzien van een aanvullende toelichting die precies laat zien hoe de gegevens van de afnemer via de http-header in het log van de aanbieder terechtkomen:
+Er zijn [diverse cases](../achtergronddocumentatie/ontwerp/cases/Opvragen_van_gegevens.md) over het opvragen van gegevens. Hiervan zijn de onderstaande cases voorzien van een aanvullende toelichting die precies laat zien hoe de gegevens van de afnemer via de http-header in het log van de aanbieder terechtkomen:
 - [C2866 - Detailvraag op basis van BSN – Door een derde partij](../achtergronddocumentatie/ontwerp/artefacten/2866.md)
 - [C0031 - Opvragen van gegevens bij een derde partij](../achtergronddocumentatie/ontwerp/artefacten/0031.md)
 
@@ -148,8 +148,6 @@ Voor inzage in het log kan gebruik gemaakt worden van de API-functie Opvragen Ve
 * Opvragen Verwerkingsacties – Beperkte set velden, vertrouwelijkheid opgeheven
 * Opvragen Verwerkingsacties – Alle velden, niet vertrouwelijk
 * Opvragen Verwerkingsacties – Alle velden, vertrouwelijkheid opgeheven
-
-N.B. Er wordt nog uitgezocht hoe we de autorisatie voor de toegang tot de verschillende API functies het beste kunnen inrichten. Het kan zijn dat er aparte functies ontstaan (zoals hierboven getoond) voor normale en voor vertrouwelijke verwerkingen. 
 
 Over de verschillende functies:
 * Bij de eerste twee varianten worden niet alle velden geretourneerd. Zo wordt om privacy redenen de gebruiker niet geretourneerd en om wille van de veiligheid het systeem en de gegevensopslag niet.
@@ -164,6 +162,8 @@ Toelichting:
 * Alle parameters zijn verplicht. Verwerkingsacties kunnen dus alleen per persoon en per periode opgehaald worden.
 
 Zijn er binnen de gemeente meerdere verwerkingslogs aanwezig, dan is het handig als deze via één centraal punt bevraagd kunnen worden. Zie voor meer informatie hierover de [architectuurdocumentatie](../architectuur/index.md).
+
+Het inzien van het verwerkinglog is zelf ook een verwerking van persoonsgegevens en moet dus gelogd worden. Zie hiervoor de toelichting in [C3677: Inzage door burger](./achtergronddocumentatie/ontwerp/artefacten/3677.md).
 
 ## Volledige logging van verwerkingen
 
