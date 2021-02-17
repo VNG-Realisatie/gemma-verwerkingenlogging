@@ -7,7 +7,7 @@ date: 28-09-2020
 Om tot een gegevensmodel voor de uitwisseling te komen kijken we vooral naar het praktische gebruik van het model. We hebben nog een lange weg te gaan voordat verwerkingenlogging in alle systemen optimaal geïntegreerd is.
 
 Voor snelle en succesvolle eerste implementaties van de API willen we eenvoud. Tegelijkertijd willen we leveranciers niet tegenhouden om verwerkingenlogging direct goed te implementeren. De standaard raakt alle gemeentelijke systemen. Ingrijpende wijzigingen van de standaard zijn daarom bijzonder ongewenst.
-We hopen dit te bereiken door de objecttypen Verwerking en Handeling ‘plat te slaan’ in het objecttype Actie. Daardoor ontstaat onderstaande eenvoudigere structuur.
+We hopen dit te bereiken door de objecttypen Verwerking en Handeling ‘plat te slaan’ in het objecttype Verwerkingsactie. Daardoor ontstaat onderstaande eenvoudigere structuur.
 
 <img src="./_assets/verwerkingsactie.png" alt="SIM" width="400"/>
 
