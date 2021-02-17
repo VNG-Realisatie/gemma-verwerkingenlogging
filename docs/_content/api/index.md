@@ -82,8 +82,8 @@ Klik op de API-call in de onderstaande tabel om de aanvullende specificaties te 
 | :---- | :------- |
 | REST | [POST /verwerkingsacties](./aanvullendespecificatie-verwerkingsacties-post.md) |
 | REST | [GET /verwerkingsacties](./aanvullendespecificatie-verwerkingsacties-get.md) |
-| REST | [PUT /verwerkingsacties/{uuid}](./aanvullendespecificatie-verwerkingsacties-put.md) |
-| REST | [DELETE /verwerkingsacties/{uuid}](./aanvullendespecificatie-verwerkingsacties-delete.md) |
+| REST | [PUT /verwerkingsacties/{actieId}](./aanvullendespecificatie-verwerkingsacties-put.md) |
+| REST | [DELETE /verwerkingsacties/{actieId}](./aanvullendespecificatie-verwerkingsacties-delete.md) |
 | RPC | [POST /wijzigVertrouwelijkheidVerwerking](./aanvullendespecificatie-wijzigvertrouwelijkheidverwerking-post.md) |
 | RPC | [POST /wijzigBewaartermijnVerwerking](./aanvullendespecificatie-wijzigbewaartermijnverwerking-post.md) |
 
