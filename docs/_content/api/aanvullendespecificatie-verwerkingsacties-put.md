@@ -24,13 +24,13 @@ layout: default
 ### Gedrag
 
 * Alle gegevens van de verwerkingsactie moeten opnieuw worden meegegeven, ook de gegevens die niet wijzigen. Dat betekent dat alle elementen van de verwerkingsactie verplicht in het requestbericht moeten worden opgenomen.<sup>[1](#Voetnoot1)</sup> Als dit niet het geval is, dan wordt er een HTTP 400 (Bad Request) foutmelding teruggegeven. 
-* De gegevens van de bestaande verwerkingsactie, geïdentificeerd met behulp van de path parameter `uuid`, worden overschreven met de gegevens in de body van de request.
-* Als de `uuid` niet gematched kan worden met een verwerkingsactie of de gevonden verwerkingsactie blijkt te zijn vervallen, dan wordt een HTTP 400 foutmelding teruggestuurd.
+* De gegevens van de bestaande verwerkingsactie, geïdentificeerd met behulp van de path parameter `actieId`, worden overschreven met de gegevens in de body van de request.
+* Als de `actieId` niet gematched kan worden met een verwerkingsactie of de gevonden verwerkingsactie blijkt te zijn vervallen, dan wordt een HTTP 400 foutmelding teruggestuurd.
 
 In [B3891](../achtergronddocumentatie/ontwerp/artefacten/3891.md) is beschreven hoe een log dat in technische zin immutable is toch in logische zin kan worden aangepast.
 
 Bij een dergelijk log zou het volgende conceptuele algoritme toegepast moeten worden:
-* De verwerkingsactie die hoort bij de opgegeven path parameter `uuid` wordt opgehaald.
+* De verwerkingsactie die hoort bij de opgegeven path parameter `actieId` wordt opgehaald.
 * Zijn er van de verwerkingsactie meerdere voorkomens dan worden alle niet actuele voorkomens genegeerd.
 * Is het meest actuele voorkomen vervallen, dan retourneert de functie een foutmelding (HTTP 400).
 * Is het meest actuele voorkomen niet vervallen, dan wordt een nieuwe logentry aangemaakt.

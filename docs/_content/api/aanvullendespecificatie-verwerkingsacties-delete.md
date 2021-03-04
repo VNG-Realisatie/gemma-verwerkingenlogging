@@ -22,12 +22,12 @@ layout: default
 
 ### Gedrag
 
-De opgegeven verwerkingsactie, geïdentificeerd met behulp van de path parameter `uuid`, wordt **niet fysiek** maar **logisch** verwijderd.
+De opgegeven verwerkingsactie, geïdentificeerd met behulp van de path parameter `actieId`, wordt **niet fysiek** maar **logisch** verwijderd.
 
 In [B3891](../achtergronddocumentatie/ontwerp/artefacten/3891.md) is beschreven hoe een log dat in technische zin immutable is toch in logische zin kan worden aangepast. 
 
 Bij een dergelijk log zou het volgende conceptuele algoritme toegepast moeten worden:
-* De verwerkingsactie die hoort bij de opgegeven path parameter `uuid` wordt opgehaald door deze te matchen op het attribuut `Actie ID` van de verwerkingsacties. Indien de verwerkingsactie niet wordt gevonden, dan wordt er een status 400 foutmelding teruggegeven (bad request).
+* De verwerkingsactie die hoort bij de opgegeven path parameter `actieId` wordt opgehaald door deze te matchen op het attribuut `Actie ID` van de verwerkingsacties. Indien de verwerkingsactie niet wordt gevonden, dan wordt er een status 400 foutmelding teruggegeven (bad request).
 * Zijn er van de verwerkingsactie meerdere voorkomens, dan worden alle niet actuele voorkomens genegeerd.
 * Is het meest actuele voorkomen vervallen, dan retourneert de delete operatie een status 400 foutmelding.
 * Is het meest actuele voorkomen niet vervallen, dan wordt er een nieuwe logentry aangemaakt.
