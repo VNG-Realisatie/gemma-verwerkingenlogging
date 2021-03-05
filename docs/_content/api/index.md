@@ -85,10 +85,6 @@ Klik op de API-call in de onderstaande tabel om de aanvullende specificaties te 
 | REST | [PUT /verwerkingsacties/{actieId}](./aanvullendespecificatie-verwerkingsacties-put.md) |
 | REST | [DELETE /verwerkingsacties/{actieId}](./aanvullendespecificatie-verwerkingsacties-delete.md) |
 | REST | [PATCH /verwerkingsacties](./aanvullendespecificatie-verwerkingsacties-patch.md) |
-<!-- 
-| RPC | [POST /wijzigVertrouwelijkheidVerwerking](./aanvullendespecificatie-wijzigvertrouwelijkheidverwerking-post.md) |
-| RPC | [POST /wijzigBewaartermijnVerwerking](./aanvullendespecificatie-wijzigbewaartermijnverwerking-post.md) | 
--->
 
 ### Opmerkingen
 - De autorisatie-scopes zijn [hier](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/api/oas-specification/logging-verwerkingen-api/scopes.md) beschreven. Als de API call niet voldoet aan de scope dan zal een `HTTP 403 (Forbidden)` foutmelding worden teruggegeven.
