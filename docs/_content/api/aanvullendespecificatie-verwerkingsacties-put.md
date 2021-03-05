@@ -16,14 +16,13 @@ layout: default
 
 | Regel | Foutcode |
 | :---- | :---- |
-| Bij autorisatiescope `update:normal` moet de parameter Vertrouwlijkheid 'Normaal' zijn en moet ook de vertrouwelijkheid van de oorspronkelijke verwerkingsactie 'Normaal' zijn. | 403 |
-| Bij autorisatiescope `update:confidential` mag de parameter Vertrouwlijkheid 'Normaal' of 'Vertrouwelijk' zijn. | 403 |
-| De parameter Vertrouwlijkheid mag nooit de waarde 'Opgeheven' hebben. | 403 |
+| Bij autorisatiescope `update:normal` moet de oorspronkelijke verwerkingsactie 'Normaal' zijn en mag deze waarde niet worden gewijzigd. | 403 |
+| Bij autorisatiescope `update:confidential` mag de vertrouwelijkheid worden gewijzigd in 'Normaal' of 'Vertrouwelijk' maar niet in `Opgeheven`. | 403 |
 
 
 ### Gedrag
 
-* Alle gegevens van de verwerkingsactie moeten opnieuw worden meegegeven, ook de gegevens die niet wijzigen. Dat betekent dat alle elementen van de verwerkingsactie verplicht in het requestbericht moeten worden opgenomen.<sup>[1](#Voetnoot1)</sup> Als dit niet het geval is, dan wordt er een HTTP 400 (Bad Request) foutmelding teruggegeven. 
+* Alle gegevens van de verwerkingsactie moeten opnieuw worden meegegeven, ook de gegevens die niet wijzigen. Dat betekent dat alle elementen van de verwerkingsactie verplicht in het request bericht moeten worden opgenomen.<sup>[1](#Voetnoot1)</sup> Als dit niet het geval is, dan wordt er een HTTP 400 (Bad Request) foutmelding teruggegeven. 
 * De gegevens van de bestaande verwerkingsactie, geïdentificeerd met behulp van de path parameter `actieId`, worden overschreven met de gegevens in de body van de request.
 * Als de `actieId` niet gematched kan worden met een verwerkingsactie of de gevonden verwerkingsactie blijkt te zijn vervallen, dan wordt een HTTP 400 foutmelding teruggestuurd.
 
