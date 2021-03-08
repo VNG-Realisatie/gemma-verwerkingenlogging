@@ -4,7 +4,7 @@ name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ---
 
 ## 6 maart 2021
-* De RPC calls voor het wijzigen van de Bewaartermijn en Vertrouwelijkheid van verwerkingsacties zijn omgezet naar REST-functies.
+* De RPC calls voor het wijzigen van de Bewaartermijn en Vertrouwelijkheid van verwerkingsacties zijn omgezet naar een PATCH operatie conform REST.
 
 ## 27 januari 2021
 * In [C3677: Inzage door burger](./ontwerp/artefacten/3677.md) is een passage toegevoegd over de noodzaak om ook de inzage van het verwerkingenlog te loggen. Ook in de quickstart guide is toegevoegd dat dit moet en wordt naar deze casus verwezen.
