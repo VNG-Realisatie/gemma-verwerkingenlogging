@@ -3,6 +3,9 @@ title: "Voortgang ontwikkeling API-standaard voor logging van verwerkingen"
 name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ---
 
+## 25 maart 2021
+* De FAQ is aangevuld naar aanleiding van de Bijeenkomst API-standaard voor logging van verwerkingen. 
+
 ## 6 maart 2021
 * De RPC calls voor het wijzigen van de Bewaartermijn en Vertrouwelijkheid van verwerkingsacties zijn omgezet naar een PATCH operatie conform REST.
 
