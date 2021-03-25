@@ -55,15 +55,15 @@ Wanneer in de release candidate geen gebreken gevonden zijn en deze daarmee vold
 #### Als een zoekopdracht wordt utgevoerd, wordt dit dan gezien als 'opvragen' en moet dit gelogd worden?
 
 Hiervoor is een aantal cases beschreven. Deze zijn terug te vinden op Github:
-[C3209 - Zoekvraag – Vooraf gedefinieerde zoekcriteria, vooraf gedefinieerde resultaatvelden](../achtergronddocumentatie/ontwerp/artefacten/3209)
-[C5889 - Zoekvraag – Onbekende zoekcriteria, vooraf gedefinieerde resultaatvelden](../achtergronddocumentatie/ontwerp/artefacten/5889)
-[C7293 - Zoekvraag – Onbekende zoekcriteria, onbekende resultaatvelden](../achtergronddocumentatie/ontwerp/artefacten/7293)
+[C3209 - Zoekvraag – Vooraf gedefinieerde zoekcriteria, vooraf gedefinieerde resultaatvelden](../achtergronddocumentatie/ontwerp/artefacten/3209.md)
+[C5889 - Zoekvraag – Onbekende zoekcriteria, vooraf gedefinieerde resultaatvelden](../achtergronddocumentatie/ontwerp/artefacten/5889.md)
+[C7293 - Zoekvraag – Onbekende zoekcriteria, onbekende resultaatvelden](../achtergronddocumentatie/ontwerp/artefacten/7293.md)
 
 #### Hoe moet worden omgegaan met het attribuut 'gebruiker' als een consumer applicatie vanuit een geautomatiseerd proces een verwerking in de verwerkingenlogging gaat vastleggen?
 
 Het attribuut moet de gebruiker identificeren binnen de context van het systeem. Het mag leeg gelaten worden indien de verwerking door het systeem wordt uitgevoerd. Mocht het systeem ook in dergelijke gevallen werken met ‘gebruikers’ dan mag de systeemgebruiker opgenomen worden.
 
-Ziek ook https://vng-realisatie.github.io/gemma-verwerkingenlogging/gegevenswoordenboek/attributen/Gebruiker
+Ziek ook [Attribuut - Gebruiker](../gegevenswoordenboek/attributen/Gebruiker.md)
 
 #### Is er ook een mogelijk om niet via HTTP de standaard toe te passen en een ander communicatieprotocol te gebruiken?
 
@@ -107,4 +107,5 @@ Er is gekeken naar kaders en richtlijnen zoals deze in de zorg worden toegepast.
 
 #### Is er een overzicht waar de wijzigingen ten opzichte van de vorige versie staan vermeld?
 
-Op Github is opgenomen wanneer welke veranderingen zijn doorgevoerd. Zie hiervoor https://vng-realisatie.github.io/gemma-verwerkingenlogging/achtergronddocumentatie/voortgang
+Op Github is opgenomen wanneer welke veranderingen zijn doorgevoerd. Zie hiervoor [Voortgang ontwikkeling API-standaard voor logging van verwerkingen](../achtergronddocumentatie/voortgang.md)
+
