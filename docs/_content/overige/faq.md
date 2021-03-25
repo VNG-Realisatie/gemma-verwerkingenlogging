@@ -55,7 +55,7 @@ Wanneer in de release candidate geen gebreken gevonden zijn en deze daarmee vold
 #### Als een zoekopdracht wordt utgevoerd, wordt dit dan gezien als 'opvragen' en moet dit gelogd worden?
 
 Hiervoor is een aantal cases beschreven. Deze zijn terug te vinden op Github:
-https://vng-realisatie.github.io/gemma-verwerkingenlogging/achtergronddocumentatie/ontwerp/artefacten/3209
+[C3209 - Zoekvraag – Vooraf gedefinieerde zoekcriteria, vooraf gedefinieerde resultaatvelden](./achtergronddocumentatie/ontwerp/artefacten/3209)
 https://vng-realisatie.github.io/gemma-verwerkingenlogging/achtergronddocumentatie/ontwerp/artefacten/5889
 https://vng-realisatie.github.io/gemma-verwerkingenlogging/achtergronddocumentatie/ontwerp/artefacten/7293
 
