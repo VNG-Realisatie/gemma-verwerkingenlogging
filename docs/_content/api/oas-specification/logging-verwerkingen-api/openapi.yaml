@@ -63,30 +63,30 @@ paths:
             type: string
             format: date-time
             example: "2020-11-24"
-        - name: vertrouwelijkheid
-          in: query
-          description: Geeft de mate van vertrouwelijkheid van de verwerking aan.
-          schema:
-            type: string
-            enum:
-              - normaal
-              - vertrouwelijk
-              - opgeheven
-            default: normaal
-          example: normaal
-        # - name: vertrouwelijkheid_array
+        # - name: vertrouwelijkheid
         #   in: query
         #   description: Geeft de mate van vertrouwelijkheid van de verwerking aan.
         #   schema:
-        #     type: array
-        #     items:
-        #       $ref: '#/components/schemas/VertrouwelijkheidEnum'
-        - name: vertrouwelijkheid__in
+        #     type: string
+        #     enum:
+        #       - normaal
+        #       - vertrouwelijk
+        #       - opgeheven
+        #     default: normaal
+        #   example: normaal
+        - name: vertrouwelijkheid
           in: query
-          description: Meerdere waarden van vertrouwelijkheid gescheiden door komma's.
+          description: Geeft de mate van vertrouwelijkheid van de verwerking aan. Je kunt meerdere waarden tegelijk opgeven.
           schema:
-            type: string
-          example: Vertrouwelijk,Opgeheven
+            type: array
+            items:
+              $ref: '#/components/schemas/VertrouwelijkheidEnum'
+        # - name: vertrouwelijkheid__in
+        #   in: query
+        #   description: Meerdere waarden van vertrouwelijkheid gescheiden door komma's.
+        #   schema:
+        #     type: string
+        #   example: Vertrouwelijk,Opgeheven
         - name: beperkteSet
           in: query
           description: In geval van 'true' worden niet alle attributen teruggegeven. Bijvoorbeeld attributen zoals 'gebruiker', 'gegevensbron' en 'systeem'  zijn niet relevant voor burgers. In geval van 'false' worden alle velden teruggegeven in het resultaat.
@@ -1289,7 +1289,3 @@ components:
             - normaal
             - vertrouwelijk
             - opgeheven
-servers:
-  # Added by API Auto Mocking Plugin
-  - description: SwaggerHub API Auto Mocking
-    url: https://virtserver.swaggerhub.com/KorverInformatica/logging-verwerkingen-api/0.1.0
