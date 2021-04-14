@@ -8,7 +8,7 @@ info:
   license:
     name: EUPL 1.2
     url: https://opensource.org/licenses/EUPL-1.2
-  version: 0.1.0
+  version: 0.9.0
 security: 
   - JWT-Claims: []
 paths:
