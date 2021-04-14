@@ -1,6 +1,7 @@
 ---
 title: "Verwerkingenlogging API-standaard"
-name: erwerkingenlogging API-standaard
+name: Verwerkingenlogging API-standaard
+date: 14-04-2021
 ---
 ## Over de implementatie van de API-standaard
 
