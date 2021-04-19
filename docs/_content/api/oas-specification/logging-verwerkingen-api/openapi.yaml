@@ -782,8 +782,9 @@ paths:
                 $ref: '#/components/schemas/Fout'
       security: 
       - JWT-Claims:
-        - update:normal
-        - update:confidential
+        - read:restricted
+        - read:normal
+        - read:confidential
     put:
       tags:
         - verwerkingsacties
