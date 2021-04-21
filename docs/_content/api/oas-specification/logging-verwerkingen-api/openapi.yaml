@@ -49,7 +49,7 @@ paths:
             example: "479580261"
         - name: beginDatum
           in: query
-          description: Tijdstip van de verwerkingsactie moet groter of gelijk zijn aan deze datum om teruggegeven te worden.
+          description: Datum van de verwerkingsactie moet groter of gelijk zijn aan deze datum om teruggegeven te worden.
           required: true
           schema:
             type: string
@@ -57,23 +57,12 @@ paths:
             example: "2020-10-24"
         - name: eindDatum
           in: query
-          description: Tijdstip van de verwerkingsactie moet kleiner zijn dan deze datum om teruggegeven te worden.
+          description: Datum van de verwerkingsactie moet kleiner zijn dan deze datum om teruggegeven te worden.
           required: true
           schema:
             type: string
-            format: date-time
+            format: date
             example: "2020-11-24"
-        # - name: vertrouwelijkheid
-        #   in: query
-        #   description: Geeft de mate van vertrouwelijkheid van de verwerking aan.
-        #   schema:
-        #     type: string
-        #     enum:
-        #       - normaal
-        #       - vertrouwelijk
-        #       - opgeheven
-        #     default: normaal
-        #   example: normaal
         - name: vertrouwelijkheid
           in: query
           description: Geeft de mate van vertrouwelijkheid van de verwerking aan. Je kunt meerdere waarden tegelijk opgeven.
@@ -81,12 +70,6 @@ paths:
             type: array
             items:
               $ref: '#/components/schemas/VertrouwelijkheidEnum'
-        # - name: vertrouwelijkheid__in
-        #   in: query
-        #   description: Meerdere waarden van vertrouwelijkheid gescheiden door komma's.
-        #   schema:
-        #     type: string
-        #   example: Vertrouwelijk,Opgeheven
         - name: beperkteSet
           in: query
           description: In geval van 'true' worden niet alle attributen teruggegeven. Bijvoorbeeld attributen zoals 'gebruiker', 'gegevensbron' en 'systeem'  zijn niet relevant voor burgers. In geval van 'false' worden alle velden teruggegeven in het resultaat.
@@ -1144,6 +1127,7 @@ components:
         - vertrouwelijkheid
         - tijdstip
         - tijdstipRegistratie
+        - verwerkteObjecten
       properties:
         url:
           title: URL
