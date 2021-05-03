@@ -26,5 +26,5 @@ Gemeenten en leveranciers worden aangemoedigd om bij te dragen aan het project. 
 Contact: standaarden.ondersteuning@vng.nl
 
 ## Licentie
-Copyright &copy; VNG Realisatie 2020
+Copyright &copy; VNG Realisatie 2021
 Licensed under the [EUPL](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/LICENSE.md)
