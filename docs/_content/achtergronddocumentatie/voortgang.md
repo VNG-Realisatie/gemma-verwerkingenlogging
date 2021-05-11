@@ -3,6 +3,9 @@ title: "Voortgang ontwikkeling API-standaard voor logging van verwerkingen"
 name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ---
 
+## 11 mei 2021
+* De referentieimplementatie van het providerdeel van de API-standaard is gerealiseerd. De referentieimplementatie is te downloaden van [Gitlab](https://gitlab.com/commonground/referentie-apis/verwerkingenlogging) en kan via een Docker installatie lokaal worden geinstalleerd. Instructies voor de installatie van de referentieimplementatie zijn te vinden op de [documentatie website.](https://commonground.gitlab.io/referentie-apis/verwerkingenlogging/index.html)  
+
 ## 14 april 2021
 * Naar aanleiding van terugkoppeling die het project heeft ontvangen van fouten in het yaml-bestand zijn aanpassingen aan deze definitie gemaakt. Deze wijzigingen leiden tot breaking changes ten aanzien van de versie in de 1.0.0 RC1 release. Om deze reden is besloten een nieuwe release candidate aan te maken (1.0.0 RC2). Wijzigingen die aangebracht zijn hebben onder andere te maken met foutieve lengtes van een aantal velden, wijziging van de manier van doorgeven van het `vertrouwelijkheid` attribuut, het ontbreken van de foutcode 400 (Bad Request) in de GET van `verwerkingacties` en incorrect gebruik van `minLength` bij het attribuut `verwerkingsactiviteitUrl`. Daarnaast is overbodig commentaar uit het yaml-bestand verwijderd.
 
