@@ -1833,14 +1833,14 @@ components:
           maxLength: 2042
           minLength: 1
           readOnly: true
-          example: "https://loggingapi.vng.cloud/api/v1/verwerkte-objecten/7a22eb38-bca6-463f-9955-54ab040287cb"
+          example: "https://loggingapi.vng.cloud/api/v1/verwerkte-objecten/5f089abb-7ed1-4714-92d4-1850453eda5d"
         verwerktObjectId:
           title: Verwerkt object ID
           description: Identificator van het verwerkte object. Deze ID wordt automatisch aangemaakt door het log.
           type: string
           format: uuid
           readOnly: true
-          example: "7a22eb38-bca6-463f-9955-54ab040287cb"
+          example: "5f089abb-7ed1-4714-92d4-1850453eda5d"
         objecttype: 
           title: Objecttype
           description: Soort object dat bij de verwerkingsactie betrokken is.
