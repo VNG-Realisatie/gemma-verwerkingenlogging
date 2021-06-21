@@ -12,17 +12,17 @@ info:
 security: 
   - JWT-Claims: []
 paths:
-  /verwerkingsacties:
+  /verwerkte-objecten:
     get:
       tags:
-        - verwerkingsacties
-      summary: VERWERKINGSACTIEs opvragen.
-      operationId: verwerkingsactie_list
-      description: Door de juiste parameters mee te geven kun je zoeken naar de voor jouw relevante VERWERKINGSACTIEs.
+        - verwerkte-objecten
+      summary: Verwerkte objecten opvragen.
+      operationId: verwerkte-objecten_list
+      description: Door de juiste parameters mee te geven kun je zoeken naar de voor jouw relevante verwerkte objecten.
       parameters:
         - name: objecttype
           in: query
-          description: Soort object dat bij de verwerkingsactie betrokken is.
+          description: Soort object dat verwerkt is.
           required: true
           schema:
             type: string
@@ -31,7 +31,7 @@ paths:
           example: persoon
         - name: soortObjectId
           in: query
-          description: Soort identificator waarmee het object geïdentificeerd wordt.
+          description: Soort identificator waarmee het verwerkte object geïdentificeerd wordt.
           required: true
           schema:
             type: string
@@ -40,7 +40,7 @@ paths:
             example: BSN
         - name: objectId
           in: query
-          description: Identificator van het object.
+          description: Identificator van het verwerkte object.
           required: true
           schema:
             type: string
@@ -65,14 +65,16 @@ paths:
             example: "2020-11-24"
         - name: vertrouwelijkheid
           in: query
-          description: Geeft de mate van vertrouwelijkheid van de verwerking aan. Je kunt meerdere waarden tegelijk opgeven.
+          description: Geeft de mate van vertrouwelijkheid van de verwerkingsactie aan. Je kunt meerdere waarden tegelijk opgeven.
           schema:
             type: array
             items:
               $ref: '#/components/schemas/VertrouwelijkheidEnum'
+          style: form
+          explode: false
         - name: beperkteSet
           in: query
-          description: In geval van 'true' worden niet alle attributen teruggegeven. Bijvoorbeeld attributen zoals 'gebruiker', 'gegevensbron' en 'systeem'  zijn niet relevant voor burgers. In geval van 'false' worden alle velden teruggegeven in het resultaat.
+          description: In geval van 'true' worden niet alle attributen van de verwerkingsactie teruggegeven. Bijvoorbeeld attributen zoals 'gebruiker', 'gegevensbron' en 'systeem'  zijn niet relevant voor burgers. In geval van 'false' worden alle velden teruggegeven in het resultaat.
           schema:
             type: boolean
             default: true
@@ -113,7 +115,7 @@ paths:
                   results:
                     type: array
                     items:
-                      $ref: '#/components/schemas/Verwerkingsactie'
+                      $ref: '#/components/schemas/VerwerktObject'
         '400':
           description: Bad request
           headers:
@@ -251,6 +253,437 @@ paths:
         - read:restricted
         - read:normal
         - read:confidential
+  /verwerkte-objecten/{verwerktObjectId}:
+    parameters:
+    - name: verwerktObjectId
+      in: path
+      description: Identificator die de verwerkingsactie uniek identificeert (UUID4).
+      required: true
+      schema:
+        type: string
+        format: uuid
+        example: "48086bf2-11b7-4603-9526-67d7c3bb6587"
+    get:
+      tags:
+        - verwerkte-objecten
+      operationId: verwerktobject_read
+      summary: Een specifiek verwerkt object opvragen.
+      description: Een specifiek verwerkt object opvragen.
+      responses:
+        '200':
+          description: OK
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerwerktObject'
+        '400':
+          description: Bad request
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/ValidatieFout'
+        '401':
+          description: Unauthorized
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '403':
+          description: Forbidden
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '404':
+          description: Not found
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '406':
+          description: Not acceptable
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '409':
+          description: Conflict
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '410':
+          description: Gone
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '412':
+          description: Precondition failed
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van een
+                specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '415':
+          description: Unsupported media type
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '429':
+          description: Too many requests
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '500':
+          description: Internal server error
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '501':
+          description: Not Implemented
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '503':
+          description: Service Unavailable
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+      security: 
+      - JWT-Claims:
+        - read:restricted
+        - read:normal
+        - read:confidential
+  /verwerkingsacties:
+    # get:
+    #   tags:
+    #     - verwerkingsacties
+    #   summary: VERWERKINGSACTIEs opvragen.
+    #   operationId: verwerkingsactie_list
+    #   description: Door de juiste parameters mee te geven kun je zoeken naar de voor jouw relevante VERWERKINGSACTIEs.
+    #   parameters:
+    #     - name: objecttype
+    #       in: query
+    #       description: Soort object dat bij de verwerkingsactie betrokken is.
+    #       required: true
+    #       schema:
+    #         type: string
+    #         enum:
+    #           - persoon
+    #       example: persoon
+    #     - name: soortObjectId
+    #       in: query
+    #       description: Soort identificator waarmee het object geïdentificeerd wordt.
+    #       required: true
+    #       schema:
+    #         type: string
+    #         format: naam
+    #         maxLength: 242
+    #         example: BSN
+    #     - name: objectId
+    #       in: query
+    #       description: Identificator van het object.
+    #       required: true
+    #       schema:
+    #         type: string
+    #         format: identificator
+    #         maxLength: 40
+    #         example: "479580261"
+    #     - name: beginDatum
+    #       in: query
+    #       description: Datum van de verwerkingsactie moet groter of gelijk zijn aan deze datum om teruggegeven te worden.
+    #       required: true
+    #       schema:
+    #         type: string
+    #         format: date
+    #         example: "2020-10-24"
+    #     - name: eindDatum
+    #       in: query
+    #       description: Datum van de verwerkingsactie moet kleiner zijn dan deze datum om teruggegeven te worden.
+    #       required: true
+    #       schema:
+    #         type: string
+    #         format: date
+    #         example: "2020-11-24"
+    #     - name: vertrouwelijkheid
+    #       in: query
+    #       description: Geeft de mate van vertrouwelijkheid van de verwerking aan. Je kunt meerdere waarden tegelijk opgeven.
+    #       schema:
+    #         type: array
+    #         items:
+    #           $ref: '#/components/schemas/VertrouwelijkheidEnum'
+    #       style: form
+    #       explode: false
+    #     - name: beperkteSet
+    #       in: query
+    #       description: In geval van 'true' worden niet alle attributen teruggegeven. Bijvoorbeeld attributen zoals 'gebruiker', 'gegevensbron' en 'systeem'  zijn niet relevant voor burgers. In geval van 'false' worden alle velden teruggegeven in het resultaat.
+    #       schema:
+    #         type: boolean
+    #         default: true
+    #     - name: verwerkingsactiviteitId
+    #       in: query
+    #       description: Identificator van de verwerkingsactiviteit die de verwerking rechtvaardigt.
+    #       schema:
+    #         type: string
+    #         format: uuid
+    #       example: "5f0bef4c-f66f-4311-84a5-19e8bf359eaf"
+    #   responses:
+    #     '200':
+    #       description: OK
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/json:
+    #           schema:
+    #             required:
+    #             - count
+    #             - results
+    #             type: object
+    #             properties:
+    #               count:
+    #                 type: integer
+    #               next:
+    #                 type: string
+    #                 format: uri
+    #                 nullable: true
+    #               previous:
+    #                 type: string
+    #                 format: uri
+    #                 nullable: true
+    #               results:
+    #                 type: array
+    #                 items:
+    #                   $ref: '#/components/schemas/Verwerkingsactie'
+    #     '400':
+    #       description: Bad request
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/ValidatieFout'
+    #     '401':
+    #       description: Unauthorized
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/Fout'
+    #     '403':
+    #       description: Forbidden
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/Fout'
+    #     '406':
+    #       description: Not acceptable
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/Fout'
+    #     '409':
+    #       description: Conflict
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/Fout'
+    #     '410':
+    #       description: Gone
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/Fout'
+    #     '415':
+    #       description: Unsupported media type
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/Fout'
+    #     '429':
+    #       description: Too many requests
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/Fout'
+    #     '500':
+    #       description: Internal server error
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/Fout'
+    #     '501':
+    #       description: Not Implemented
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/Fout'
+    #     '503':
+    #       description: Service Unavailable
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/Fout'
+    #   security: 
+    #   - JWT-Claims:
+    #     - read:restricted
+    #     - read:normal
+    #     - read:confidential
     post:
       tags:
         - verwerkingsacties
@@ -588,186 +1021,186 @@ paths:
         - update:normal
         - update:confidential
   /verwerkingsacties/{actieId}:
-    get:
-      tags:
-        - verwerkingsacties
-      operationId: verwerkingsactie_read
-      summary: Een specifieke VERWERKINGSACTIE opvragen.
-      description: Een specifieke VERWERKINGSACTIE opvragen.
-      responses:
-        '200':
-          description: OK
-          headers:
-            API-version:
-              schema:
-                type: string
-              description: 'Geeft een specifieke API-versie aan in de context van
-                een specifieke aanroep. Voorbeeld: 1.2.1.'
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Verwerkingsactie'
-        '400':
-          description: Bad request
-          headers:
-            API-version:
-              schema:
-                type: string
-              description: 'Geeft een specifieke API-versie aan in de context van
-                een specifieke aanroep. Voorbeeld: 1.2.1.'
-          content:
-            application/problem+json:
-              schema:
-                $ref: '#/components/schemas/ValidatieFout'
-        '401':
-          description: Unauthorized
-          headers:
-            API-version:
-              schema:
-                type: string
-              description: 'Geeft een specifieke API-versie aan in de context van
-                een specifieke aanroep. Voorbeeld: 1.2.1.'
-          content:
-            application/problem+json:
-              schema:
-                $ref: '#/components/schemas/Fout'
-        '403':
-          description: Forbidden
-          headers:
-            API-version:
-              schema:
-                type: string
-              description: 'Geeft een specifieke API-versie aan in de context van
-                een specifieke aanroep. Voorbeeld: 1.2.1.'
-          content:
-            application/problem+json:
-              schema:
-                $ref: '#/components/schemas/Fout'
-        '404':
-          description: Not found
-          headers:
-            API-version:
-              schema:
-                type: string
-              description: 'Geeft een specifieke API-versie aan in de context van
-                een specifieke aanroep. Voorbeeld: 1.2.1.'
-          content:
-            application/problem+json:
-              schema:
-                $ref: '#/components/schemas/Fout'
-        '406':
-          description: Not acceptable
-          headers:
-            API-version:
-              schema:
-                type: string
-              description: 'Geeft een specifieke API-versie aan in de context van
-                een specifieke aanroep. Voorbeeld: 1.2.1.'
-          content:
-            application/problem+json:
-              schema:
-                $ref: '#/components/schemas/Fout'
-        '409':
-          description: Conflict
-          headers:
-            API-version:
-              schema:
-                type: string
-              description: 'Geeft een specifieke API-versie aan in de context van
-                een specifieke aanroep. Voorbeeld: 1.2.1.'
-          content:
-            application/problem+json:
-              schema:
-                $ref: '#/components/schemas/Fout'
-        '410':
-          description: Gone
-          headers:
-            API-version:
-              schema:
-                type: string
-              description: 'Geeft een specifieke API-versie aan in de context van
-                een specifieke aanroep. Voorbeeld: 1.2.1.'
-          content:
-            application/problem+json:
-              schema:
-                $ref: '#/components/schemas/Fout'
-        '412':
-          description: Precondition failed
-          headers:
-            API-version:
-              schema:
-                type: string
-              description: 'Geeft een specifieke API-versie aan in de context van een
-                specifieke aanroep. Voorbeeld: 1.2.1.'
-          content:
-            application/problem+json:
-              schema:
-                $ref: '#/components/schemas/Fout'
-        '415':
-          description: Unsupported media type
-          headers:
-            API-version:
-              schema:
-                type: string
-              description: 'Geeft een specifieke API-versie aan in de context van
-                een specifieke aanroep. Voorbeeld: 1.2.1.'
-          content:
-            application/problem+json:
-              schema:
-                $ref: '#/components/schemas/Fout'
-        '429':
-          description: Too many requests
-          headers:
-            API-version:
-              schema:
-                type: string
-              description: 'Geeft een specifieke API-versie aan in de context van
-                een specifieke aanroep. Voorbeeld: 1.2.1.'
-          content:
-            application/problem+json:
-              schema:
-                $ref: '#/components/schemas/Fout'
-        '500':
-          description: Internal server error
-          headers:
-            API-version:
-              schema:
-                type: string
-              description: 'Geeft een specifieke API-versie aan in de context van
-                een specifieke aanroep. Voorbeeld: 1.2.1.'
-          content:
-            application/problem+json:
-              schema:
-                $ref: '#/components/schemas/Fout'
-        '501':
-          description: Not Implemented
-          headers:
-            API-version:
-              schema:
-                type: string
-              description: 'Geeft een specifieke API-versie aan in de context van
-                een specifieke aanroep. Voorbeeld: 1.2.1.'
-          content:
-            application/problem+json:
-              schema:
-                $ref: '#/components/schemas/Fout'
-        '503':
-          description: Service Unavailable
-          headers:
-            API-version:
-              schema:
-                type: string
-              description: 'Geeft een specifieke API-versie aan in de context van
-                een specifieke aanroep. Voorbeeld: 1.2.1.'
-          content:
-            application/problem+json:
-              schema:
-                $ref: '#/components/schemas/Fout'
-      security: 
-      - JWT-Claims:
-        - read:restricted
-        - read:normal
-        - read:confidential
+    # get:
+    #   tags:
+    #     - verwerkingsacties
+    #   operationId: verwerkingsactie_read
+    #   summary: Een specifieke VERWERKINGSACTIE opvragen.
+    #   description: Een specifieke VERWERKINGSACTIE opvragen.
+    #   responses:
+    #     '200':
+    #       description: OK
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/json:
+    #           schema:
+    #             $ref: '#/components/schemas/Verwerkingsactie'
+    #     '400':
+    #       description: Bad request
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/ValidatieFout'
+    #     '401':
+    #       description: Unauthorized
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/Fout'
+    #     '403':
+    #       description: Forbidden
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/Fout'
+    #     '404':
+    #       description: Not found
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/Fout'
+    #     '406':
+    #       description: Not acceptable
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/Fout'
+    #     '409':
+    #       description: Conflict
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/Fout'
+    #     '410':
+    #       description: Gone
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/Fout'
+    #     '412':
+    #       description: Precondition failed
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van een
+    #             specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/Fout'
+    #     '415':
+    #       description: Unsupported media type
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/Fout'
+    #     '429':
+    #       description: Too many requests
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/Fout'
+    #     '500':
+    #       description: Internal server error
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/Fout'
+    #     '501':
+    #       description: Not Implemented
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/Fout'
+    #     '503':
+    #       description: Service Unavailable
+    #       headers:
+    #         API-version:
+    #           schema:
+    #             type: string
+    #           description: 'Geeft een specifieke API-versie aan in de context van
+    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
+    #       content:
+    #         application/problem+json:
+    #           schema:
+    #             $ref: '#/components/schemas/Fout'
+    #   security: 
+    #   - JWT-Claims:
+    #     - read:restricted
+    #     - read:normal
+    #     - read:confidential
     put:
       tags:
         - verwerkingsacties
@@ -1268,11 +1701,11 @@ components:
           format: date-time
           readOnly: true
           example: '2024-04-05T14:35:42+01:00'
-        verwerkteObjecten:
-          title: Verwerkte objecten
-          type: array
-          items: 
-            $ref: '#/components/schemas/VerwerktObject'
+        # verwerkteObjecten:
+        #   title: Verwerkte objecten
+        #   type: array
+        #   items: 
+        #     $ref: '#/components/schemas/VerwerktObject'
     Fout:
       required:
       - code
@@ -1392,6 +1825,22 @@ components:
         - soortObjectId
         - objectID
       properties:
+        url:
+          title: URL
+          description: URL-referentie naar deze resource. Deze link wordt automatisch aangemaakt.
+          type: string
+          format: uri
+          maxLength: 2042
+          minLength: 1
+          readOnly: true
+          example: "https://loggingapi.vng.cloud/api/v1/verwerkte-objecten/7a22eb38-bca6-463f-9955-54ab040287cb"
+        verwerktObjectId:
+          title: Verwerkt object ID
+          description: Identificator van het verwerkte object. Deze ID wordt automatisch aangemaakt door het log.
+          type: string
+          format: uuid
+          readOnly: true
+          example: "7a22eb38-bca6-463f-9955-54ab040287cb"
         objecttype: 
           title: Objecttype
           description: Soort object dat bij de verwerkingsactie betrokken is.
@@ -1422,6 +1871,8 @@ components:
           type: array
           items: 
             $ref: '#/components/schemas/VerwerktSoortGegeven'
+        verwerkingsactie:
+            $ref: '#/components/schemas/Verwerkingsactie'
     VerwerktSoortGegeven:
       title: Verwerkt soort gegeven
       description: Een soort gegeven dat over een persoon of object betrokken bij een verwerkingsactie verwerkt is.
