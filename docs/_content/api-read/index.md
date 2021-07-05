@@ -4,7 +4,7 @@ name: Verwerkingenlogging ontsluiting API-standaard
 date: 05-07-2021
 ---
 
-# Deze pagina beschrijft de API-standaard voor het ontsluiten van verwerkingsacties op verwerkte objecten. De pagina is in ontwikkeling. De inhoud van deze pagina  en is nog niet geschikt voor systeemontwikkeling. 
+## Deze pagina beschrijft de API-standaard voor het ontsluiten van verwerkingsacties op verwerkte objecten. De pagina is in ontwikkeling. De inhoud van deze pagina  en is nog niet geschikt voor systeemontwikkeling. 
 
 ## Functionele view
 
