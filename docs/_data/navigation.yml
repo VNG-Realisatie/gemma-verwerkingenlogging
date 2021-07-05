@@ -19,8 +19,8 @@
 - name: Documentatie
   link: /achtergronddocumentatie/
   weight: 70  
-- name: Referentieimplementatie
-  link: /referentie-implementatie/
+- name: Referentie-implementatie
+  link: /referentieimplementatie/
   weight: 80    
 - name: FAQ
   link: /overige/faq
