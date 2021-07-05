@@ -1,7 +1,7 @@
 - name: Productvisie
   link: /productvisie/
   weight: 10
-- name: Quick Start Guide
+- name: Quick Start
   link: /quickstart/
   weight: 20  
 - name: Architectuur
@@ -10,20 +10,23 @@
 - name: Informatiemodel
   link: /gegevensmodel/
   weight: 40
-- name: API
+- name: API (muteren)
   link: /api/
   weight: 50
+- name: API (lezen)
+  link: /api-read/
+  weight: 60  
 - name: Documentatie
   link: /achtergronddocumentatie/
-  weight: 60  
+  weight: 70  
 - name: Referentieimplementatie
   link: /referentieimplementatie/
-  weight: 70    
+  weight: 80    
 - name: FAQ
   link: /overige/faq
-  weight: 80
+  weight: 90
 - name: Contact
   link: /contact/
-  weight: 90
+  weight: 100
 
 
