@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: API voor logging van verwerkingen
+  title: Inzage API voor logging van verwerkingen
   description: API-specificatie voor gemeenten ten behoeve van de registratie en ontsluiting van de metagegevens behorende bij de verwerkingen van (persoons)gegevens. 
   contact:
     url: https://vng-realisatie.github.io/gemma-verwerkingenlogging/api/index
