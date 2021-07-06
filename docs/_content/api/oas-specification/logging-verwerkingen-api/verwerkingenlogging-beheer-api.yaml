@@ -606,7 +606,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Verwerkingsactie'
+                $ref: '#/components/schemas/VerwerkingsactieUitgebreid'
         '400':
           description: Bad request
           headers:
@@ -1486,5 +1486,6 @@ components:
             - vertrouwelijk
             - opgeheven
 servers:
+  # Added by API Auto Mocking Plugin
   - url: https://localhost:8000/api/v1
   - url: https://verwerkingenlogging-beheer-api.vng.cloud/api/v1
