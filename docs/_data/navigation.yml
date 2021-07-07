@@ -10,10 +10,10 @@
 - name: Informatiemodel
   link: /gegevensmodel/
   weight: 40
-- name: API (muteren)
+- name: API (bewerken)
   link: /api/
   weight: 50
-- name: API (lezen)
+- name: API (inzage)
   link: /api-read/
   weight: 60  
 - name: Documentatie
