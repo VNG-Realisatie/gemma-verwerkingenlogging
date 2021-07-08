@@ -1,10 +1,10 @@
 ---
-title: "Verwerkingenlogging ontsluiting API-standaard"
-name: Verwerkingenlogging ontsluiting API-standaard
+title: "Verwerkingenlogging inzage API-standaard"
+name: Verwerkingenlogging inzage API-standaard
 date: 05-07-2021
 ---
 
-## Deze pagina beschrijft de API-standaard voor het ontsluiten van verwerkingsacties op verwerkte objecten. De pagina is in ontwikkeling. De inhoud van deze pagina  en is nog niet geschikt voor systeemontwikkeling. 
+## Deze pagina beschrijft de API-standaard voor inzage op bij verwerkingsacties betrokken verwerkte objecten. De pagina is in ontwikkeling. De inhoud van deze pagina  en is nog niet geschikt voor systeemontwikkeling. 
 
 ## Functionele view
 
@@ -13,15 +13,12 @@ Onderstaande tabel beschrijft de door de API geboden functies. Klik op de naam v
 | Categorie \ Functie  |
 | :----------- |
 | Opvragen | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F4086: Opvragen Verwerkingsacties – Beperkte set velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp/artefacten/4086.md) |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F2525: Opvragen Verwerkingsacties – Beperkte set velden, vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp/artefacten/2525.md) |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F9787: Opvragen Verwerkingsacties – Alle velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp/artefacten/9787.md)	| 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F0143: Opvragen Verwerkingsacties – Alle velden, vertrouwelijk](../achtergronddocumentatie/ontwerp/artefacten/0143.md) | 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F2008: Opvragen Verwerkingsacties – Beperkte set velden, niet vertrouwelijk of vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp/artefacten/2008.md) |
+
 
 ## Technische view
 
 ### OAS
-
 
 
 ### Aanvullende specificaties
