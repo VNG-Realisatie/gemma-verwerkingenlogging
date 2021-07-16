@@ -20,6 +20,14 @@ Onderstaande tabel beschrijft de door de API geboden functies. Klik op de naam v
 
 ### OAS
 
+API specificatie (OAS3) in
+  [ReDoc](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/develop/docs/_content/api-read/openapi.yaml),
+  [Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/develop/docs/_content/api-read/openapi.yaml) of
+  [YAML](https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/develop/docs/_content/api-read/openapi.yaml).
+
+<!--
+[Redoc](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/develop/docs/_content/api/oas-specification/logging-verwerkingen-api/verwerkingenlogging-inzage-api.yaml)
+-->
 
 ### Aanvullende specificaties
 
