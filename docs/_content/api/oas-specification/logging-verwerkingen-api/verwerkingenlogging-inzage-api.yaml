@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: Inzage API voor logging van verwerkingen
-  description: API-specificatie voor gemeenten ten behoeve van de ontsluiting van de metagegevens behorende bij de verwerkingen van (persoons)gegevens.
+  description: API-specificatie ten behoeve van de ontsluiting van de metagegevens behorende bij de verwerkingen van (persoons)gegevens. Deze API is bedoeld voor het bieden van inzage aan betrokkenen, bijvoorbeeld burgers.
   contact:
     url: https://vng-realisatie.github.io/gemma-verwerkingenlogging/api/index
     email: standaarden.ondersteuning@vng.nl
@@ -254,8 +254,6 @@ paths:
       security: 
       - JWT-Claims:
         - read:restricted
-        - read:normal
-        - read:confidential
   /verwerkte-objecten/{verwerktObjectId}:
     parameters:
     - name: verwerktObjectId
@@ -444,328 +442,6 @@ paths:
       security: 
       - JWT-Claims:
         - read:restricted
-        - read:normal
-        - read:confidential
-    # put:
-    #   tags:
-    #     - verwerkte-objecten
-    #   operationId: verwerktobject_update
-    #   summary: Wijzig verwerkt object.
-    #   description: Wijzigt een bestaande verwerkt object. Alle informatie over het verwerkte object moet opnieuw meegegeven worden, ook de informatie die niet wijzigt.
-    #   requestBody:
-    #     $ref: '#/components/requestBodies/VerwerktObject'
-    #   responses:
-    #     '200':
-    #       description: OK
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/json:
-    #           schema:
-    #             $ref: '#/components/schemas/VerwerktObject'
-    #     '400':
-    #       description: Bad request
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/problem+json:
-    #           schema:
-    #             $ref: '#/components/schemas/ValidatieFout'
-    #     '401':
-    #       description: Unauthorized
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/problem+json:
-    #           schema:
-    #             $ref: '#/components/schemas/Fout'
-    #     '403':
-    #       description: Forbidden
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/problem+json:
-    #           schema:
-    #             $ref: '#/components/schemas/Fout'
-    #     '404':
-    #       description: Not found
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/problem+json:
-    #           schema:
-    #             $ref: '#/components/schemas/Fout'
-    #     '406':
-    #       description: Not acceptable
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/problem+json:
-    #           schema:
-    #             $ref: '#/components/schemas/Fout'
-    #     '409':
-    #       description: Conflict
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/problem+json:
-    #           schema:
-    #             $ref: '#/components/schemas/Fout'
-    #     '410':
-    #       description: Gone
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/problem+json:
-    #           schema:
-    #             $ref: '#/components/schemas/Fout'
-    #     '415':
-    #       description: Unsupported media type
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/problem+json:
-    #           schema:
-    #             $ref: '#/components/schemas/Fout'
-    #     '429':
-    #       description: Too many requests
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/problem+json:
-    #           schema:
-    #             $ref: '#/components/schemas/Fout'
-    #     '500':
-    #       description: Internal server error
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/problem+json:
-    #           schema:
-    #             $ref: '#/components/schemas/Fout'
-    #     '501':
-    #       description: Not Implemented
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/problem+json:
-    #           schema:
-    #             $ref: '#/components/schemas/Fout'
-    #     '503':
-    #       description: Service Unavailable
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/problem+json:
-    #           schema:
-    #             $ref: '#/components/schemas/Fout'
-    #   security: 
-    #   - JWT-Claims:
-    #     - update:normal
-    #     - update:confidential
-    # delete:
-    #   tags:
-    #     - verwerkte-objecten
-    #   operationId: verwerkt-object_delete
-    #   summary: Verwijder een verwerkt object.
-    #   description: Het opgegeven verwerkt object wordt gemarkeerd als vervallen. Hierdoor zal deze niet meer geretourneerd worden door de inzage-functies van de logging API.
-    #   responses:
-    #     '204':
-    #       description: No content
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #     '401':
-    #       description: Unauthorized
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/problem+json:
-    #           schema:
-    #             $ref: '#/components/schemas/Fout'
-    #     '403':
-    #       description: Forbidden
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/problem+json:
-    #           schema:
-    #             $ref: '#/components/schemas/Fout'
-    #     '404':
-    #       description: Not found
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/problem+json:
-    #           schema:
-    #             $ref: '#/components/schemas/Fout'
-    #     '406':
-    #       description: Not acceptable
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/problem+json:
-    #           schema:
-    #             $ref: '#/components/schemas/Fout'
-    #     '409':
-    #       description: Conflict
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/problem+json:
-    #           schema:
-    #             $ref: '#/components/schemas/Fout'
-    #     '410':
-    #       description: Gone
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/problem+json:
-    #           schema:
-    #             $ref: '#/components/schemas/Fout'
-    #     '415':
-    #       description: Unsupported media type
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/problem+json:
-    #           schema:
-    #             $ref: '#/components/schemas/Fout'
-    #     '429':
-    #       description: Too many requests
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/problem+json:
-    #           schema:
-    #             $ref: '#/components/schemas/Fout'
-    #     '500':
-    #       description: Internal server error
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/problem+json:
-    #           schema:
-    #             $ref: '#/components/schemas/Fout'
-    #     '501':
-    #       description: Not Implemented
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/problem+json:
-    #           schema:
-    #             $ref: '#/components/schemas/Fout'
-    #     '503':
-    #       description: Service Unavailable
-    #       headers:
-    #         API-version:
-    #           schema:
-    #             type: string
-    #           description: 'Geeft een specifieke API-versie aan in de context van
-    #             een specifieke aanroep. Voorbeeld: 1.2.1.'
-    #       content:
-    #         application/problem+json:
-    #           schema:
-    #             $ref: '#/components/schemas/Fout'
-    #   security: 
-    #   - JWT-Claims:
-    #     - delete:normal 
-    #     - delete:confidential
 components:
   requestBodies:
     VerwerktObject:
@@ -774,24 +450,12 @@ components:
           schema:
             $ref: '#/components/schemas/VerwerktObject'
       required: true
-    # VerwerkingsactieUitgebreid:
-    #   content:
-    #     application/json:
-    #       schema:
-    #         $ref: '#/components/schemas/VerwerkingsactieUitgebreid'
-    #   required: true
     Verwerkingsactie:
       content:
         application/json:
           schema:
             $ref: '#/components/schemas/Verwerkingsactie'
       required: true
-    # PatchRequestBody:
-    #   content:
-    #     application/json:
-    #       schema:
-    #         $ref: '#/components/schemas/PatchRequestBody'
-    #   required: true
   securitySchemes:
     JWT-Claims:
       type: http
@@ -808,6 +472,7 @@ components:
         - vertrouwelijkheid
         - tijdstip
         - tijdstipRegistratie
+        - verwerkteObjecten
       properties:
         url:
           title: URL
@@ -817,7 +482,7 @@ components:
           maxLength: 2042
           minLength: 1
           readOnly: true
-          example: "https://logging-api.vng.cloud/api/v1/verwerkingsacties/7a22eb38-bca6-463f-9955-54ab040287cb"
+          example: "https://verwerkingenlogging-bewerking-api.vng.cloud/api/v1/verwerkingsacties/7a22eb38-bca6-463f-9955-54ab040287cb"
         actieId:
           title: Actie ID
           description: Identificator van de verwerkingsactie waar de persoon of het object bij betrokken is. Deze ID wordt automatisch aangemaakt door het log.
@@ -861,7 +526,7 @@ components:
           type: string
           format: uri
           maxLength: 2042
-          example: "https://logging-api.vng.cloud/api/v1/verwerkingsactiviteiten/5f0bef4c-f66f-4311-84a5-19e8bf359eaf"
+          example: "https://verwerkingsactiviteiten-api.vng.cloud/api/v1/verwerkingsactiviteiten/5f0bef4c-f66f-4311-84a5-19e8bf359eaf"
         vertrouwelijkheid:
           title: Vertrouwelijkheid
           description: Geeft de mate van vertrouwelijkheid van de verwerking aan.
@@ -948,19 +613,6 @@ components:
           format: date-time
           readOnly: true
           example: '2024-04-05T14:35:42+01:00'
-    # VerwerkingsactieUitgebreid:
-    #   title: Verwerkingsactie uitgebreid
-    #   allOf:
-    #     - $ref: '#/components/schemas/Verwerkingsactie'
-    #     - type: object
-    #       required:
-    #         - verwerkteObjecten
-    #       properties:
-    #         verwerkteObjecten:
-    #           title: Verwerkte objecten
-    #           type: array
-    #           items: 
-    #             $ref: '#/components/schemas/VerwerktObject'
     Fout:
       required:
       - code
@@ -1071,33 +723,15 @@ components:
         - normaal
         - vertrouwelijk
         - opgeheven
-    VerwerktObject:
-      title: Verwerkt object
+    VerwerktObjectBasis:
+      title: Verwerkt object basis
       description: Een persoon of object betrokken bij de verwerkingsactie.
       type: object
       required: 
-        - url
-        - verwerktObjectId
         - objecttype
         - soortObjectId
         - objectId
       properties:
-        url:
-          title: URL
-          description: URL-referentie naar deze resource. Deze link wordt automatisch aangemaakt.
-          type: string
-          format: uri
-          maxLength: 2042
-          minLength: 1
-          readOnly: true
-          example: "https://logging-api.vng.cloud/api/v1/verwerkte-objecten/5f089abb-7ed1-4714-92d4-1850453eda5d"
-        verwerktObjectId:
-          title: Verwerkt object ID
-          description: Identificator van het verwerkte object. Deze ID wordt automatisch aangemaakt door het log.
-          type: string
-          format: uuid
-          readOnly: true
-          example: "5f089abb-7ed1-4714-92d4-1850453eda5d"
         objecttype: 
           title: Objecttype
           description: Soort object dat bij de verwerkingsactie betrokken is.
@@ -1128,6 +762,31 @@ components:
           type: array
           items: 
             $ref: '#/components/schemas/VerwerktSoortGegeven'
+    VerwerktObject:
+      title: Verwerkt object
+      allOf:
+        - type: object
+          required: 
+            - url
+            - verwerktObjectId
+          properties:
+            url:
+              title: URL
+              description: URL-referentie naar deze resource. Deze link wordt automatisch aangemaakt.
+              type: string
+              format: uri
+              maxLength: 2042
+              minLength: 1
+              # readOnly: true
+              example: "https://verwerkingenlogging-bewerking-api.vng.cloud/api/v1/verwerkte-objecten/5f089abb-7ed1-4714-92d4-1850453eda5d"
+            verwerktObjectId:
+              title: Verwerkt object ID
+              description: Identificator van het verwerkte object. Deze ID wordt automatisch aangemaakt door het log.
+              type: string
+              format: uuid
+              # readOnly: true
+              example: "5f089abb-7ed1-4714-92d4-1850453eda5d"
+        - $ref: '#/components/schemas/VerwerktObjectBasis'
     VerwerktObjectUitgebreid:
       title: verwerktobject uitgebreid
       type: object
