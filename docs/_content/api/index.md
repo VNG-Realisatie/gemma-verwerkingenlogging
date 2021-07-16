@@ -1,8 +1,9 @@
 ---
-title: "Verwerkingenlogging API-standaard"
-name: erwerkingenlogging API-standaard
+title: "Verwerkingenlogging mutatie API-standaard"
+name: Verwerkingenlogging mutatieAPI-standaard
+date: 14-04-2021
 ---
-## Over de implementatie van de API-standaard
+## Over de implementatie van de mutatie API-standaard
 
 #### Quick Start Guide
 

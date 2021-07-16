@@ -11,6 +11,9 @@ Organisaties die persoonsgegevens verwerken zijn conform de [Algemene Verordenin
 ## Project documentatie
 De volledige documentatie van de API-standaard is via de standaard Github navigatie beschikbaar via [deze link](./docs/index.md) maar kan ook via een [gebruiksvriendelijke html interface (Github Pages)](https://vng-realisatie.github.io/gemma-verwerkingenlogging/) worden benaderd.
 
+## Status van de API-standaard
+Deze API-standaard is in ontwikkeling. Momenteel heeft de standaard een status van Release Candidate. Dit houdt in dat de 1.0 versie van de standaard in principe klaar is en geimplementeerd kan worden. Partijen die implementaties van de API-standaard ontwikkelen kunnen gedurende de Release Candidate fase hun bevindingen terugkoppelen naar het project. Deze bevindingen kunnen leiden tot een nieuwe Release Candidate, of worden meegenomen in de definitieve 1.0 versie van de standaard. De beoogde einddatum voor de Release Candidate versie is 1 juli 2021. Op de [voortgangspagina](/docs/_content/achtergronddocumentatie/voortgang.md) wordt bijgehouden welke wijzigingen in de API-standaard zijn aangebracht.
+
 ## Gerelateerde standaarden
 * [GEMMA Verwerkingsactiviteiten](https://github.com/VNG-Realisatie/gemma-verwerkingsactiviteiten)
 
@@ -23,5 +26,5 @@ Gemeenten en leveranciers worden aangemoedigd om bij te dragen aan het project. 
 Contact: standaarden.ondersteuning@vng.nl
 
 ## Licentie
-Copyright &copy; VNG Realisatie 2020
+Copyright &copy; VNG Realisatie 2021
 Licensed under the [EUPL](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/LICENSE.md)
