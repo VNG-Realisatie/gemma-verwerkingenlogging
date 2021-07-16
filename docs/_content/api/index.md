@@ -70,8 +70,8 @@ Onderstaande tabel beschrijft de door de API geboden functies. Klik op de naam v
 
 ### OAS
 De OAS is gesplitst in twee delen:
-- [verwerkingenlogging-bewerking-api](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/develop/docs/_content/api/oas-specification/logging-verwerkingen-api/verwerkingenlogging-bewerking-api.yaml)
-- [verwerkingenlogging-inzage-api](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/develop/docs/_content/api/oas-specification/logging-verwerkingen-api/verwerkingenlogging-inzage-api.yaml)
+- [verwerkingenlogging-bewerking-api](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/develop/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml)
+- [verwerkingenlogging-inzage-api](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/develop/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml)
 
 
 ### Aanvullende specificaties
