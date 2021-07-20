@@ -35,7 +35,7 @@ Klik op de API-call in de onderstaande tabel om de aanvullende specificaties te 
 | REST | [GET /verwerkte-objecten](./aanvullendespecificatie-verwerkteobjecten-get.md) |
 
 ### Opmerkingen
-- De autorisatie-scopes zijn [hier](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/api-read/oas-specification/logging-verwerkingen-api/scopes.md) beschreven. Als de API call niet voldoet aan de scope dan zal een `HTTP 403 (Forbidden)` foutmelding worden teruggegeven.
+- De autorisatie-scopes zijn [hier](./oas-specification/logging-verwerkingen-api/scopes.md) beschreven. Als de API call niet voldoet aan de scope dan zal een `HTTP 403 (Forbidden)` foutmelding worden teruggegeven.
 
 ## Gehanteerde standaarden
 Op de verwerkingenlogging API-standaard zijn de volgende standaarden van toepassing:
