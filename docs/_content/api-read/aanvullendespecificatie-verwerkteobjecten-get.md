@@ -10,12 +10,6 @@ layout: default
 | :---- | :---- |
 | `read:normal` | Laat toe om een beperkte set van attributen van verwerkingsacties te lezen die niet vertrouwelijk zijn of waar de vertrouwelijkheid van is opgeheven. 
 
-### Controles
-
-| Regel | Foutcode |
-| :---- | :---- |
-|  |  |
-
 ### Gedrag
 
 * Er worden alleen verwerkingsacties geretourneerd waarvan het tijdstip valt binnen de opgegeven periode: groter of gelijk aan `beginDatum`, kleiner dan de `eindDatum`.

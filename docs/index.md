@@ -14,7 +14,8 @@ Deze API-standaard is in ontwikkeling. Momenteel heeft de standaard een status v
 
 ## Inhoud van de API-standaard
 - [Informatie- en gegevensmodel](./_content/gegevensmodel/index.md)
-- [API-specificaties](./_content/api/index.md)
+- [API-specificaties (bewerking)](./_content/api-write/index.md)
+- [API-specificaties (inzage)](./_content/api-read/index.md)
 - Referentieimplementatie van een verwerkingenlogregister
 - Referentieimplementatie van een informatiesysteem wat verwerkingen logt
 
@@ -23,7 +24,8 @@ Deze API-standaard is in ontwikkeling. Momenteel heeft de standaard een status v
 - [Quickstart Guide](./_content/quickstart/index.md)
 - [Architectuur](./_content/architectuur/index.md)
 - [Informatie- en gegevensmodel](./_content/gegevensmodel/index.md)
-- [API-specificaties](./_content/api/index.md)
+- [API-specificaties (bewerking)](./_content/api-write/index.md)
+- [API-specificaties (inzage)](./_content/api-read/index.md)
 - [Achtergronddocumentatie](./_content/achtergronddocumentatie/index.md)
 
 ## Gerelateerde standaarden

@@ -3,6 +3,11 @@ title: "Voortgang ontwikkeling API-standaard voor logging van verwerkingen"
 name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ---
 
+## 21 juli 2021
+* De Verwerkingenlogging API-standaard is opgedeeld in twee verschillende APIs. Een API voor de bewerking van verwerkingen en een API voor de opvraging van verwerkte objecten. De API voor bewerkingen wordt gebruikt door procesapplicaties die verwerkingen van (persoons)gegevens vastleggen. De inzage API wordt gebruikt voor het opvraghen van verwerkingsacties voor specifieke verwerkte objecten. De inzage API is met name bedoeld voor informatiesystemen die inzage aan betrokkenen geven over verwerkingen van hun gegevens die plaats hebben gevonden. Een voorbeeld van een dergelijk systeem is een MijnGemeente systeem die na inlog van de burger met DigiD de verwerkingen weergeeft.
+* De API voor het bewerken van verwerkingen is [hier](../api-write/index.md) te vinden.
+* De API voor het inzien van verwerkingen is [hier](../api-read/index.md) te vinden.
+
 ## 11 mei 2021
 * De referentieimplementatie van het providerdeel van de API-standaard is gerealiseerd. De referentieimplementatie is te downloaden van [Gitlab](https://gitlab.com/commonground/referentie-apis/verwerkingenlogging) en kan via een Docker installatie lokaal worden geinstalleerd. Instructies voor de installatie van de referentieimplementatie zijn te vinden op de [documentatie website.](https://commonground.gitlab.io/referentie-apis/verwerkingenlogging/index.html)  
 
@@ -56,9 +61,9 @@ Quick Start Guide toegevoegd.
 
 ## 23 november 2020
 Autorisaties (scopes) toegevoegd aan de Verwerkingsacties API zodat alle logging-functies gemapped kunnen worden op de API calls.
-- Beschrijvingen van de [scopes](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/api/oas-specification/logging-verwerkingen-api/scopes.md) toegevoegd.
-- Resources in de [OAS-specificatie](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml#operation/verwerkingsactie_list) uitgebreid met de juiste scopes.
-- [Mapping-tabel](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/api/index.md#oas-specificaties) uitgebreid met een extra kolom voor de scopes zodat alle logging-functies gemapped kunnen worden.
+- Beschrijvingen van de [scopes](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/api-write/oas-specification/logging-verwerkingen-api/scopes.md) toegevoegd.
+- Resources in de [OAS-specificatie](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api-write/oas-specification/logging-verwerkingen-api/openapi.yaml#operation/verwerkingsactie_list) uitgebreid met de juiste scopes.
+- [Mapping-tabel](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/api-write/index.md#oas-specificaties) uitgebreid met een extra kolom voor de scopes zodat alle logging-functies gemapped kunnen worden.
 
 
 ## 18 november 2020
@@ -78,12 +83,12 @@ Inhoudelijke aanpassingen:
 - [Attribuuttype Naam](../gegevenswoordenboek/attribuuttypen/Naam.md): Lengte van 80 naar 242.
 - [Attribuuttype OIN](../gegevenswoordenboek/attribuuttypen/OIN.md): Formeel patroon in de vorm van een regular expression toegevoegd.
 - [Attribuuttype UUID](../gegevenswoordenboek/attribuuttypen/UUID.md): Formeel patroon in de vorm van een regular expression toegevoegd.
-- Aanwezigheid van [http header attributen](../api/index.md) toegelicht.
+- Aanwezigheid van [http header attributen](../api-write/index.md) toegelicht.
 N.B. Bovenstaande aanpassingen moeten nog doorgevoerd worden in de API.
 
 Correcties:
 - De nieuwe http header attributen (verwerkingsactiviteit id en url) zijn toegevoegd aan [besluit 9177](./ontwerp/artefacten/9177.md).
-- De resourcenaam wijziging was nog niet doorgevoerd op de [toelichtingspagina over de API](../api/index.md).
+- De resourcenaam wijziging was nog niet doorgevoerd op de [toelichtingspagina over de API](../api-write/index.md).
 
 Tekstuele aanpassingen:
 - [Case 2521](./ontwerp/artefacten/2521.md): 'Inzage van gegevens aan de balie' aangepast. Gaat niet langer alleen over derden, kan ook de burger zelf zijn. Gevolg is dat we het BSN van de burger als afnemer moeten kunnen vastleggen.
@@ -118,7 +123,7 @@ Tekstuele aanpassingen:
 -  Excel overzicht van de verschillende [ontwerpartefacten per case](./ontwerp/artefacten/20201011_Artefacten_en_cases.xlsx) toegevoegd.
 
 ## 12 oktober 2020
-- Beschrijvingen van de tot de standaard behorende [API functies](../api/index.md) toegevoegd.
+- Beschrijvingen van de tot de standaard behorende [API functies](../api-write/index.md) toegevoegd.
 - Case beschrijvingen toegevoegd voor:
     - [Leveren van gegevens](./ontwerp/cases/leveren_van_gegevens.md)
     - [Delegatie en mandatering](../ontwerp/cases/delegatie_en_mandatering.md)
