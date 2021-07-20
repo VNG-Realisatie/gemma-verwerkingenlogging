@@ -28,6 +28,6 @@ Als een consumer de GET /verwerkte-objecten aanroept moet deze bij deze aanroep 
 
 <img src="./_assets/api_1.png" alt="" width="700"/>
 
-De provider van de GET /verwerkte-objecten logt deze informatie als volgt:
+De provider van de GET /verwerkte-objecten dient de bevraging van het log te loggen. De provider neemt de informatie uit de header als volgt over:
 
 <img src="./_assets/api_2.png" alt="" width="700"/>
