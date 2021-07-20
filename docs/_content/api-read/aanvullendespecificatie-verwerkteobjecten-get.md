@@ -34,10 +34,6 @@ Als een consumer de GET /verwerkte-objecten aanroept moet deze bij deze aanroep 
 
 <img src="./_assets/api_1.png" alt="" width="700"/>
 
-Aanwezigheid van de header attributen is als volgt:
-
-<img src="./_assets/api_2.png" alt="" width="700"/>
-
 De provider van de GET /verwerkte-objecten logt deze informatie als volgt:
 
-<img src="./_assets/api_3.png" alt="" width="700"/>
+<img src="./_assets/api_2.png" alt="" width="700"/>
