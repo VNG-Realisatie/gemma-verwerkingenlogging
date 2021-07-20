@@ -16,7 +16,6 @@ layout: default
 | :---- | :---- |
 |  |  |
 
-
 ### Gedrag
 
 * Er worden alleen verwerkingsacties geretourneerd waarvan het tijdstip valt binnen de opgegeven periode: groter of gelijk aan `beginDatum`, kleiner dan de `eindDatum`.
@@ -29,3 +28,16 @@ Ten eerste worden alleen de verwerkingsacties geretourneerd waarbij het verwerkt
 * Indien de zoekparameter `verwerkingsactiviteitId` is opgegeven, dan worden alleen de verwerkingsacties die voldoen aan die waarde geretourneerd. 
 * De volgende elementen worden **niet** geretourneerd: `systeem`, `gebruiker` en `gegevensbron`. 
 * Als het log meerdere versies van een verwerkingsactie bevat dan worden alleen actuele niet vervallen versies geretourneerd. Zie [B3891](../achtergronddocumentatie/ontwerp/artefacten/3891.md) voor meer informatie over versies van verwerkingsacties.
+
+## Verplichting opname header 
+Als een consumer de GET /verwerkte-objecten aanroept moet deze bij deze aanroep in de header de volgende informatie meegegeven worden ([B9177](../achtergronddocumentatie/ontwerp/artefacten/9177.md)).
+
+<img src="./_assets/api_1.png" alt="" width="700"/>
+
+Aanwezigheid van de header attributen is als volgt:
+
+<img src="./_assets/api_2.png" alt="" width="700"/>
+
+De provider van de GET /verwerkte-objecten logt deze informatie als volgt:
+
+<img src="./_assets/api_3.png" alt="" width="700"/>
