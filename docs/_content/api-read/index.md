@@ -6,7 +6,7 @@ date: 05-07-2021
 
 ## Functionele view
 
-Onderstaande tabel beschrijft de door de API geboden functies. Klik op de naam van de functie voor de beschrijving.
+Onderstaande tabel beschrijft de door de inzage API geboden functies. Klik op de naam van de functie voor de beschrijving.
 
 | Categorie \ Functie  |
 | :----------- |
@@ -15,10 +15,6 @@ Onderstaande tabel beschrijft de door de API geboden functies. Klik op de naam v
 
 
 ## Technische view
-| Categorie \ Functie  |
-| :----------- |
-| Opvragen | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F2008: Opvragen Verwerkingsacties – Beperkte set velden, niet vertrouwelijk of  vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp/artefacten/2008.md) |
 
 ### OAS
 API specificatie (OAS3) in
