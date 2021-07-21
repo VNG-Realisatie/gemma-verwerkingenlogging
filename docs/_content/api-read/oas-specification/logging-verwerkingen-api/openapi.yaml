@@ -3,7 +3,7 @@ info:
   title: Inzage API voor logging van verwerkingen
   description: API-specificatie ten behoeve van de ontsluiting van de metagegevens behorende bij de verwerkingen van (persoons)gegevens. Deze API is bedoeld voor het bieden van inzage aan betrokkenen, bijvoorbeeld burgers.
   contact:
-    url: https://vng-realisatie.github.io/gemma-verwerkingenlogging/api/index
+    url: https://vng-realisatie.github.io/gemma-verwerkingenlogging/api-read/index
     email: standaarden.ondersteuning@vng.nl
   license:
     name: EUPL 1.2
@@ -21,7 +21,7 @@ paths:
         - verwerkte-objecten
       summary: Verwerkte objecten opvragen.
       operationId: verwerkte-objecten_list
-      description: Door de juiste parameters mee te geven kun je zoeken naar de voor jouw relevante verwerkte objecten.
+      description: Door de juiste parameters mee te geven kun je zoeken naar de voor jou relevante verwerkte objecten.
       parameters:
         - name: objecttype
           in: query
@@ -66,21 +66,21 @@ paths:
             type: string
             format: date
             example: "2020-11-24"
-        - name: vertrouwelijkheid
-          in: query
-          description: Geeft de mate van vertrouwelijkheid van de verwerkingsactie aan. Je kunt meerdere waarden tegelijk opgeven.
-          schema:
-            type: array
-            items:
-              $ref: '#/components/schemas/VertrouwelijkheidEnum'
-          style: form
-          explode: false
-        - name: beperkteSet
-          in: query
-          description: In geval van 'true' worden niet alle attributen van de verwerkingsactie teruggegeven. Bijvoorbeeld attributen zoals 'gebruiker', 'gegevensbron' en 'systeem'  zijn niet relevant voor burgers. In geval van 'false' worden alle velden teruggegeven in het resultaat.
-          schema:
-            type: boolean
-            default: true
+        # - name: vertrouwelijkheid
+        #   in: query
+        #   description: Geeft de mate van vertrouwelijkheid van de verwerkingsactie aan. Je kunt meerdere waarden tegelijk opgeven.
+        #   schema:
+        #     type: array
+        #     items:
+        #       $ref: '#/components/schemas/VertrouwelijkheidEnum'
+        #   style: form
+        #   explode: false
+        # - name: beperkteSet
+        #   in: query
+        #   description: In geval van 'true' worden niet alle attributen van de verwerkingsactie teruggegeven. Bijvoorbeeld attributen zoals 'gebruiker', 'gegevensbron' en 'systeem'  zijn niet relevant voor burgers. In geval van 'false' worden alle velden teruggegeven in het resultaat.
+        #   schema:
+        #     type: boolean
+        #     default: true
         - name: verwerkingsactiviteitId
           in: query
           description: Identificator van de verwerkingsactiviteit die de verwerking rechtvaardigt.
@@ -254,6 +254,8 @@ paths:
       security: 
       - JWT-Claims:
         - read:restricted
+        - read:normal
+        - read:confidential
   /verwerkte-objecten/{verwerktObjectId}:
     parameters:
     - name: verwerktObjectId
@@ -442,6 +444,8 @@ paths:
       security: 
       - JWT-Claims:
         - read:restricted
+        - read:normal
+        - read:confidential
 components:
   requestBodies:
     VerwerktObject:
@@ -454,7 +458,7 @@ components:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/Verwerkingsactie'
+            $ref: '#/components/schemas/VerwerkingsactieBeperkt'
       required: true
   securitySchemes:
     JWT-Claims:
@@ -462,9 +466,9 @@ components:
       scheme: bearer
       bearerFormat: JWT
   schemas:
-    Verwerkingsactie:
-      title: Verwerkingsactie
-      description: Een verwerkingsactie is een operatie die wordt uitgevoerd door een geautomatiseerd systeem waarbij er (persoons)gegevens verwerkt worden. Een verwerkingsactie wordt uitgevoerd als onderdeel van (een handeling van) een verwerking.
+    VerwerkingsactieBeperkt:
+      title: Verwerkingsactie beperkt
+      description: Een verwerkingsactie is een operatie die wordt uitgevoerd door een geautomatiseerd systeem waarbij er (persoons)gegevens verwerkt worden. Een verwerkingsactie wordt uitgevoerd als onderdeel van (een handeling van) een verwerking. De inzage van deze verwerkingsactie is beperkt in de zin dat gevoelige gegevens zoals systeem, gebruiker en gegevensbron zijn weggelaten.
       type: object
       required:
         - url
@@ -549,25 +553,25 @@ components:
           type: string
           pattern: '[0-9]{20}'
           example: "00000001821002193000"
-        systeem:
-          title: Systeem
-          description: Het systeem dat de verwerkingsactie heeft uitgevoerd.
-          type: string
-          maxLength: 242
-          example: "FooBarApp v2.1"
-        gebruiker:
-          title: Gebruiker
-          description: Identificator van de gebruiker die de verwerkingsactie heeft geïnitieerd.
-          type: string
-          format: identificator
-          maxLength: 40
-          example: "123456789"
-        gegevensbron:
-          title: Gegevensbron
-          description: Gegevensbron waarin de bij verwerkingsactie betrokken gegevens zijn opgeslagen.
-          type: string
-          maxLength: 242
-          example: FooBar Database Publiekszaken
+        # systeem:
+        #   title: Systeem
+        #   description: Het systeem dat de verwerkingsactie heeft uitgevoerd.
+        #   type: string
+        #   maxLength: 242
+        #   example: "FooBarApp v2.1"
+        # gebruiker:
+        #   title: Gebruiker
+        #   description: Identificator van de gebruiker die de verwerkingsactie heeft geïnitieerd.
+        #   type: string
+        #   format: identificator
+        #   maxLength: 40
+        #   example: "123456789"
+        # gegevensbron:
+        #   title: Gegevensbron
+        #   description: Gegevensbron waarin de bij verwerkingsactie betrokken gegevens zijn opgeslagen.
+        #   type: string
+        #   maxLength: 242
+        #   example: FooBar Database Publiekszaken
         soortAfnemerId:
           title: Soort afnemer ID
           description: Soort identificator waarmee de afnemer geïdentificeerd wordt.
@@ -716,13 +720,13 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/FieldValidationError'
-    VertrouwelijkheidEnum:
-      title: Enumeratie voor vertrouwelijkheid
-      type: string
-      enum:
-        - normaal
-        - vertrouwelijk
-        - opgeheven
+    # VertrouwelijkheidEnum:
+    #   title: Enumeratie voor vertrouwelijkheid
+    #   type: string
+    #   enum:
+    #     - normaal
+    #     - vertrouwelijk
+    #     - opgeheven
     VerwerktObjectBasis:
       title: Verwerkt object basis
       description: Een persoon of object betrokken bij de verwerkingsactie.
@@ -795,7 +799,7 @@ components:
         - type: object
           properties:
             verwerkingsactie:
-              $ref: '#/components/schemas/Verwerkingsactie'
+              $ref: '#/components/schemas/VerwerkingsactieBeperkt'
     VerwerktSoortGegeven:
       title: Verwerkt soort gegeven
       description: Een soort gegeven dat over een persoon of object betrokken bij een verwerkingsactie verwerkt is.

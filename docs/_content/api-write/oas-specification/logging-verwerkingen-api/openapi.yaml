@@ -3,7 +3,7 @@ info:
   title: Bewerking API voor logging van verwerkingen
   description: API-specificatie voor gemeenten ten behoeve van de registratie en ontsluiting van de metagegevens behorende bij de verwerkingen van (persoons)gegevens. Deze Bewerking API is bedoeld voor gebruik binnen de gemeente of samenwerkingsverband.
   contact:
-    url: https://vng-realisatie.github.io/gemma-verwerkingenlogging/api/index
+    url: https://vng-realisatie.github.io/gemma-verwerkingenlogging/api-write/index
     email: standaarden.ondersteuning@vng.nl
   license:
     name: EUPL 1.2
@@ -70,12 +70,12 @@ paths:
             type: array
             items:
               $ref: '#/components/schemas/VertrouwelijkheidEnum'
-        - name: beperkteSet
-          in: query
-          description: In geval van 'true' worden niet alle attributen teruggegeven. Bijvoorbeeld attributen zoals 'gebruiker', 'gegevensbron' en 'systeem'  zijn niet relevant voor burgers. In geval van 'false' worden alle velden teruggegeven in het resultaat.
-          schema:
-            type: boolean
-            default: true
+        # - name: beperkteSet
+        #   in: query
+        #   description: In geval van 'true' worden niet alle attributen teruggegeven. Bijvoorbeeld attributen zoals 'gebruiker', 'gegevensbron' en 'systeem'  zijn niet relevant voor burgers. In geval van 'false' worden alle velden teruggegeven in het resultaat.
+        #   schema:
+        #     type: boolean
+        #     default: true
         - name: verwerkingsactiviteitId
           in: query
           description: Identificator van de verwerkingsactiviteit die de verwerking rechtvaardigt.
