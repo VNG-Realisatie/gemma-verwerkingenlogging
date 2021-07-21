@@ -17,10 +17,16 @@ Onderstaande tabel beschrijft de door de inzage API geboden functies. Klik op de
 ## Technische view
 
 ### OAS
-API specificatie (OAS3) in
+
+- **Published** version of the API specificatie (OAS3) in
   [ReDoc](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api-read/oas-specification/logging-verwerkingen-api/openapi.yaml),
   [Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api-read/oas-specification/logging-verwerkingen-api/openapi.yaml) of
   [YAML](https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api-read/oas-specification/logging-verwerkingen-api/openapi.yaml).
+
+- **Development** version of the API specificatie (OAS3) in
+  [ReDoc](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/develop/docs/_content/api-read/oas-specification/logging-verwerkingen-api/openapi.yaml),
+  [Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/develop/docs/_content/api-read/oas-specification/logging-verwerkingen-api/openapi.yaml) of
+  [YAML](https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/develop/docs/_content/api-read/oas-specification/logging-verwerkingen-api/openapi.yaml).
 
 ### Aanvullende specificaties
 
