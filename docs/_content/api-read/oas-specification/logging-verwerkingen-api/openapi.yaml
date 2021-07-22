@@ -253,7 +253,6 @@ paths:
                 $ref: '#/components/schemas/Fout'
       security: 
       - JWT-Claims:
-        - read:restricted
         - read:normal
         - read:confidential
   /verwerkte-objecten/{verwerktObjectId}:
@@ -443,7 +442,6 @@ paths:
                 $ref: '#/components/schemas/Fout'
       security: 
       - JWT-Claims:
-        - read:restricted
         - read:normal
         - read:confidential
 components:
