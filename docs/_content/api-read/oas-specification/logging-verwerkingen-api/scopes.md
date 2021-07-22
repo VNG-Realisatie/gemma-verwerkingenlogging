@@ -1,4 +1,4 @@
-# Scopes Verwerkingsacties Inzage API
+# Scopes Inzage API Verwerkte Objecten
 
 | Scope          | Description  
 | :----          | :----    
