@@ -1,4 +1,4 @@
-# Scopes Verwerkingsacties API
+# Scopes Verwerkingsacties Bewerking API
 
 | Scope          | Description  
 | :----          | :----    

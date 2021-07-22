@@ -7,7 +7,7 @@ date: 22-07-2021
 
 #### Quick Start Guide
 
-De [Quick Start Guide](../quickstart/index.md) beschrijft beknopt de interactie tussen applicaties, het verwerkingenlog en het verwerkingsactiviteitenregister.
+De [Quick Start Guide](../quickstart/index.md) beschrijft beknopt de interactie tussen gemeentelijke applicaties, het verwerkingenlog en het verwerkingsactiviteitenregister.
 
 Daarna wordt met behulp van twee voorbeelden beschreven:
 * [Minimale logging](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Minimale-logging-van-verwerkingen) waarbij zowel een consumer als een provider betrokken is.
@@ -15,7 +15,7 @@ Daarna wordt met behulp van twee voorbeelden beschreven:
 
 #### Aanpassingen aan consumer applicaties
 
-Uit de [Quick Start Guide](../quickstart/index.md) valt op te maken dat applicaties en services die de verwerkingenlogging API-standaard implementeren op diverse punten moeten worden aangepast.
+Uit de [Quick Start Guide](../quickstart/index.md) valt op te maken dat gemeentelijke applicaties en services die de verwerkingenlogging API-standaard implementeren op diverse punten moeten worden aangepast.
 
 Uiteindelijk moet voldaan worden aan alle onderstaande punten:
 
@@ -53,9 +53,7 @@ Onderstaande tabel beschrijft de door de API geboden functies. Klik op de naam v
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F7446: Log Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/7446.md) |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F6624: Log Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/6624.md) |
 | Opvragen | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F4086: Opvragen Verwerkingsacties – Beperkte set velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp/artefacten/4086.md) |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F2525: Opvragen Verwerkingsacties – Alle velden, vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp/artefacten/2525.md) |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F9787: Opvragen Verwerkingsacties – Alle velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp/artefacten/9787.md)	| 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F9787: Opvragen Verwerkingsacties – Alle velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp/artefacten/9787.md)	| | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F2525: Opvragen Verwerkingsacties – Alle velden, vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp/artefacten/2525.md) |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F0143: Opvragen Verwerkingsacties – Alle velden, vertrouwelijk](../achtergronddocumentatie/ontwerp/artefacten/0143.md) | 
 | Wijzigen vertrouwelijkheid & bewaartermijn | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F2969: Wijzig vertrouwelijkheid van Verwerking](../achtergronddocumentatie/ontwerp/artefacten/2969.md) |
@@ -70,12 +68,12 @@ Onderstaande tabel beschrijft de door de API geboden functies. Klik op de naam v
 
 ### OAS
 
-- **Published** version of the API specificatie (OAS3) in
+- **Published** versie van de API specificatie (OAS3) in
   [ReDoc](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api-write/oas-specification/logging-verwerkingen-api/openapi.yaml),
   [Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api-write/oas-specification/logging-verwerkingen-api/openapi.yaml) of
   [YAML](https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api-write/oas-specification/logging-verwerkingen-api/openapi.yaml).
 
-- **Development** version of the API specificatie (OAS3) in
+- **Development** versie van de API specificatie (OAS3) in
   [ReDoc](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/develop/docs/_content/api-write/oas-specification/logging-verwerkingen-api/openapi.yaml),
   [Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/develop/docs/_content/api-write/oas-specification/logging-verwerkingen-api/openapi.yaml) of
   [YAML](https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/develop/docs/_content/api-write/oas-specification/logging-verwerkingen-api/openapi.yaml).
