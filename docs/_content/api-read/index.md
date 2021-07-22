@@ -4,7 +4,7 @@ name: Verwerkingenlogging inzage API-standaard
 date: 05-07-2021
 ---
 
-## Functionele view
+## Functionele view Inzage API
 
 Onderstaande tabel beschrijft de door de inzage API geboden functies. Klik op de naam van de functie voor de beschrijving.
 
@@ -14,7 +14,7 @@ Onderstaande tabel beschrijft de door de inzage API geboden functies. Klik op de
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F2008: Opvragen Verwerkingsacties – Beperkte set velden, niet vertrouwelijk of vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp/artefacten/2008.md) |
 
 
-## Technische view
+## Technische view Inzage API
 
 ### OAS
 
@@ -28,7 +28,7 @@ Onderstaande tabel beschrijft de door de inzage API geboden functies. Klik op de
   [Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/develop/docs/_content/api-read/oas-specification/logging-verwerkingen-api/openapi.yaml) of
   [YAML](https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/develop/docs/_content/api-read/oas-specification/logging-verwerkingen-api/openapi.yaml).
 
-### Aanvullende specificaties
+### Aanvullende specificaties Inzage API
 
 Klik op de API-call in de onderstaande tabel om de aanvullende specificaties te zien.
 

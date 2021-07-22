@@ -9,6 +9,5 @@ De onderstaande cases beschrijven de verschillende patronen ten aanzien van de i
 
 ## Inzage in verwerkingenlog
 - [C3677: Inzage door burger](./../artefacten/3677.md)
-- [C9713: Inzage door burger – Gegevens die niet langer vertrouwelijk zijn](./../artefacten/9713.md)
 - [C5953: Inzage door gemeentelijk medewerker](./../artefacten/5953.md)
 - [C2222: Inzage door een derde partij](./../artefacten/2222.md)

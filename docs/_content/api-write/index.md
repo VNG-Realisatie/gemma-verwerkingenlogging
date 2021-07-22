@@ -1,9 +1,9 @@
 ---
 title: "Verwerkingenlogging bewerking API-standaard"
 name: Verwerkingenlogging bewerking API-standaard
-date: 14-04-2021
+date: 22-07-2021
 ---
-## Over de implementatie van de bewerking API-standaard
+## Over de implementatie van de Bewerking API-standaard
 
 #### Quick Start Guide
 
@@ -43,7 +43,7 @@ De provider logt deze informatie als volgt:
 
 <img src="./_assets/api_3.png" alt="" width="700"/>
 
-## Functionele view
+## Functionele view Bewerking API
 
 Onderstaande tabel beschrijft de door de API geboden functies. Klik op de naam van de functie voor de beschrijving.
 
@@ -54,7 +54,7 @@ Onderstaande tabel beschrijft de door de API geboden functies. Klik op de naam v
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F6624: Log Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/6624.md) |
 | Opvragen | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F4086: Opvragen Verwerkingsacties – Beperkte set velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp/artefacten/4086.md) |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F2525: Opvragen Verwerkingsacties – Beperkte set velden, vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp/artefacten/2525.md) |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F2525: Opvragen Verwerkingsacties – Alle velden, vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp/artefacten/2525.md) |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F9787: Opvragen Verwerkingsacties – Alle velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp/artefacten/9787.md)	| 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F0143: Opvragen Verwerkingsacties – Alle velden, vertrouwelijk](../achtergronddocumentatie/ontwerp/artefacten/0143.md) | 
 | Wijzigen vertrouwelijkheid & bewaartermijn | 
@@ -66,7 +66,7 @@ Onderstaande tabel beschrijft de door de API geboden functies. Klik op de naam v
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F9906: Verwijder Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/9906.md) | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F2265: Verwijder Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/2265.md) | 
 
-## Technische view
+## Technische view Bewerking API
 
 ### OAS
 
@@ -81,7 +81,7 @@ Onderstaande tabel beschrijft de door de API geboden functies. Klik op de naam v
   [YAML](https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/develop/docs/_content/api-write/oas-specification/logging-verwerkingen-api/openapi.yaml).
 
 
-### Aanvullende specificaties
+### Aanvullende specificaties Bewerking API
 
 Klik op de API-call in de onderstaande tabel om de aanvullende specificaties te zien.
 
