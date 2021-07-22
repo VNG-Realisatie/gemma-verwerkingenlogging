@@ -53,8 +53,9 @@ Onderstaande tabel beschrijft de door de API geboden functies. Klik op de naam v
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F7446: Log Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/7446.md) |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F6624: Log Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/6624.md) |
 | Opvragen | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F9787: Opvragen Verwerkingsacties – Alle velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp/artefacten/9787.md)	| | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F2525: Opvragen Verwerkingsacties – Alle velden, vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp/artefacten/2525.md) |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F0143: Opvragen Verwerkingsacties – Alle velden, vertrouwelijk](../achtergronddocumentatie/ontwerp/artefacten/0143.md) | 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F9787: Opvragen Verwerkingsacties – Alle velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp/artefacten/9787.md)	| 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F2525: Opvragen Verwerkingsacties – Alle velden, vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp/artefacten/2525.md) |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F0143: Opvragen verwerkingsactie – Alle velden, vertrouwelijk](../achtergronddocumentatie/ontwerp/artefacten/0143.md) | 
 | Wijzigen vertrouwelijkheid & bewaartermijn | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F2969: Wijzig vertrouwelijkheid van Verwerking](../achtergronddocumentatie/ontwerp/artefacten/2969.md) |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F4415: Wijzig bewaartermijn van Verwerking](../achtergronddocumentatie/ontwerp/artefacten/4415.md) | 
