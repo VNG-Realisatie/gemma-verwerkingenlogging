@@ -4,33 +4,41 @@ name: Verwerkingenlogging inzage API-standaard
 date: 05-07-2021
 ---
 
-## Deze pagina beschrijft de API-standaard voor inzage op bij verwerkingsacties betrokken verwerkte objecten. De pagina is in ontwikkeling. De inhoud van deze pagina  en is nog niet geschikt voor systeemontwikkeling. 
+## Functionele view Inzage API
 
-## Functionele view
-
-Onderstaande tabel beschrijft de door de API geboden functies. Klik op de naam van de functie voor de beschrijving.
+Onderstaande tabel beschrijft de door de inzage API geboden functies. Klik op de naam van de functie voor de beschrijving.
 
 | Categorie \ Functie  |
 | :----------- |
 | Opvragen | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F2008: Opvragen Verwerkingsacties – Beperkte set velden, niet vertrouwelijk of vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp/artefacten/2008.md) |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F4086: Opvragen verwerkte objecten – Beperkte set velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp/artefacten/4086.md) |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F2008: Opvragen verwerkte objecten – Beperkte set velden, niet vertrouwelijk of vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp/artefacten/2008.md) |
 
 
-## Technische view
+## Technische view Inzage API
 
 ### OAS
 
+- **Published** versie van de API specificatie (OAS3) in
+  [ReDoc](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api-read/oas-specification/logging-verwerkingen-api/openapi.yaml),
+  [Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api-read/oas-specification/logging-verwerkingen-api/openapi.yaml) of
+  [YAML](https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api-read/oas-specification/logging-verwerkingen-api/openapi.yaml).
 
-### Aanvullende specificaties
+- **Development** versie van de API specificatie (OAS3) in
+  [ReDoc](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/develop/docs/_content/api-read/oas-specification/logging-verwerkingen-api/openapi.yaml),
+  [Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/develop/docs/_content/api-read/oas-specification/logging-verwerkingen-api/openapi.yaml) of
+  [YAML](https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/develop/docs/_content/api-read/oas-specification/logging-verwerkingen-api/openapi.yaml).
+
+### Aanvullende specificaties Inzage API
 
 Klik op de API-call in de onderstaande tabel om de aanvullende specificaties te zien.
 
 | Type | API-call |
 | :---- | :------- |
-| REST | [GET /verwerkteObjecten](./aanvullendespecificatie-verwerkteobjecten-get.md) |
+| REST | [GET /verwerkte-objecten](./aanvullendespecificatie-verwerkteobjecten-get.md) |
 
 ### Opmerkingen
-- De autorisatie-scopes zijn [hier](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/api/oas-specification/logging-verwerkingen-api/scopes.md) beschreven. Als de API call niet voldoet aan de scope dan zal een `HTTP 403 (Forbidden)` foutmelding worden teruggegeven.
+- De autorisatie-scopes zijn [hier](./oas-specification/logging-verwerkingen-api/scopes.md) beschreven. Als de API call niet voldoet aan de scope dan zal een `HTTP 403 (Forbidden)` foutmelding worden teruggegeven.
 
 ## Gehanteerde standaarden
 Op de verwerkingenlogging API-standaard zijn de volgende standaarden van toepassing:

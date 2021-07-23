@@ -1,13 +1,13 @@
 ---
-title: "Verwerkingenlogging mutatie API-standaard"
-name: Verwerkingenlogging mutatieAPI-standaard
-date: 14-04-2021
+title: "Verwerkingenlogging bewerking API-standaard"
+name: Verwerkingenlogging bewerking API-standaard
+date: 22-07-2021
 ---
-## Over de implementatie van de mutatie API-standaard
+## Over de implementatie van de Bewerking API-standaard
 
 #### Quick Start Guide
 
-De [Quick Start Guide](../quickstart/index.md) beschrijft beknopt de interactie tussen applicaties, het verwerkingenlog en het verwerkingsactiviteitenregister.
+De [Quick Start Guide](../quickstart/index.md) beschrijft beknopt de interactie tussen gemeentelijke applicaties, het verwerkingenlog en het verwerkingsactiviteitenregister.
 
 Daarna wordt met behulp van twee voorbeelden beschreven:
 * [Minimale logging](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Minimale-logging-van-verwerkingen) waarbij zowel een consumer als een provider betrokken is.
@@ -15,7 +15,7 @@ Daarna wordt met behulp van twee voorbeelden beschreven:
 
 #### Aanpassingen aan consumer applicaties
 
-Uit de [Quick Start Guide](../quickstart/index.md) valt op te maken dat applicaties en services die de verwerkingenlogging API-standaard implementeren op diverse punten moeten worden aangepast.
+Uit de [Quick Start Guide](../quickstart/index.md) valt op te maken dat gemeentelijke applicaties en services die de verwerkingenlogging API-standaard implementeren op diverse punten moeten worden aangepast.
 
 Uiteindelijk moet voldaan worden aan alle onderstaande punten:
 
@@ -43,7 +43,7 @@ De provider logt deze informatie als volgt:
 
 <img src="./_assets/api_3.png" alt="" width="700"/>
 
-## Functionele view
+## Functionele view Bewerking API
 
 Onderstaande tabel beschrijft de door de API geboden functies. Klik op de naam van de functie voor de beschrijving.
 
@@ -53,10 +53,9 @@ Onderstaande tabel beschrijft de door de API geboden functies. Klik op de naam v
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F7446: Log Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/7446.md) |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F6624: Log Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/6624.md) |
 | Opvragen | 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F4086: Opvragen Verwerkingsacties – Beperkte set velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp/artefacten/4086.md) |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F2525: Opvragen Verwerkingsacties – Beperkte set velden, vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp/artefacten/2525.md) |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F9787: Opvragen Verwerkingsacties – Alle velden, niet vertrouwelijk](../achtergronddocumentatie/ontwerp/artefacten/9787.md)	| 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F0143: Opvragen Verwerkingsacties – Alle velden, vertrouwelijk](../achtergronddocumentatie/ontwerp/artefacten/0143.md) | 
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F2525: Opvragen Verwerkingsacties – Alle velden, vertrouwelijkheid opgeheven](../achtergronddocumentatie/ontwerp/artefacten/2525.md) |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F0143: Opvragen verwerkingsactie – Alle velden, vertrouwelijk](../achtergronddocumentatie/ontwerp/artefacten/0143.md) | 
 | Wijzigen vertrouwelijkheid & bewaartermijn | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F2969: Wijzig vertrouwelijkheid van Verwerking](../achtergronddocumentatie/ontwerp/artefacten/2969.md) |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F4415: Wijzig bewaartermijn van Verwerking](../achtergronddocumentatie/ontwerp/artefacten/4415.md) | 
@@ -66,16 +65,22 @@ Onderstaande tabel beschrijft de door de API geboden functies. Klik op de naam v
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F9906: Verwijder Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/9906.md) | 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [F2265: Verwijder Vertrouwelijke Verwerkingsactie](../achtergronddocumentatie/ontwerp/artefacten/2265.md) | 
 
-## Technische view
+## Technische view Bewerking API
 
 ### OAS
 
-API specificatie (OAS3) in
-  [ReDoc](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml),
-  [Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml) of
-  [YAML](https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml).
+- **Published** versie van de API specificatie (OAS3) in
+  [ReDoc](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api-write/oas-specification/logging-verwerkingen-api/openapi.yaml),
+  [Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api-write/oas-specification/logging-verwerkingen-api/openapi.yaml) of
+  [YAML](https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api-write/oas-specification/logging-verwerkingen-api/openapi.yaml).
 
-### Aanvullende specificaties
+- **Development** versie van de API specificatie (OAS3) in
+  [ReDoc](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/develop/docs/_content/api-write/oas-specification/logging-verwerkingen-api/openapi.yaml),
+  [Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/develop/docs/_content/api-write/oas-specification/logging-verwerkingen-api/openapi.yaml) of
+  [YAML](https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/develop/docs/_content/api-write/oas-specification/logging-verwerkingen-api/openapi.yaml).
+
+
+### Aanvullende specificaties Bewerking API
 
 Klik op de API-call in de onderstaande tabel om de aanvullende specificaties te zien.
 
@@ -88,7 +93,7 @@ Klik op de API-call in de onderstaande tabel om de aanvullende specificaties te 
 | REST | [PATCH /verwerkingsacties](./aanvullendespecificatie-verwerkingsacties-patch.md) |
 
 ### Opmerkingen
-- De autorisatie-scopes zijn [hier](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/api/oas-specification/logging-verwerkingen-api/scopes.md) beschreven. Als de API call niet voldoet aan de scope dan zal een `HTTP 403 (Forbidden)` foutmelding worden teruggegeven.
+- De autorisatie-scopes zijn [hier](./oas-specification/logging-verwerkingen-api/scopes.md) beschreven. Als de API call niet voldoet aan de scope dan zal een `HTTP 403 (Forbidden)` foutmelding worden teruggegeven.
 
 ## Gehanteerde standaarden
 Op de verwerkingenlogging API-standaard zijn de volgende standaarden van toepassing:

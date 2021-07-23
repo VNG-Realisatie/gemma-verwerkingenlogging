@@ -3,6 +3,21 @@ title: "Voortgang ontwikkeling API-standaard voor logging van verwerkingen"
 name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 ---
 
+## 22 juli 2021
+Opgedane ervaringen met de implementatie van de referentieimplementatie hebben geleid tot een wijziging in de standaard. De Verwerkingenlogging API-standaard is opgedeeld in twee verschillende APIs. Een API voor de bewerking van verwerkingen en een API voor inzage in voorkomens van verwerkte objecten binnen een verwerkingsactie. De API voor bewerkingen wordt gebruikt door procesapplicaties die verwerkingen van (persoons)gegevens vastleggen. De inzage API wordt gebruikt voor het opvragen van voorkomens van verwerkte objecten in het log. De inzage API is bedoeld voor gebruik door informatiesystemen van derden en informatiesystemen die inzage aan betrokkenen geven over verwerkingen die ten aanzien van hun gegevens die plaats hebben gevonden. Een voorbeeld van een dergelijk systeem is een MijnGemeente systeem die na inlog van de burger met DigiD de verwerkingen weergeeft. De scheiding in twee verschillende API's heeft voordelen op het gebied van privacy-by-design. Het scheiden van de API functies in een deel voor binnengemeentelijk gebruik door procesapplicaties een een deel voor gebruik voor inzage door derden en betrokkenen geeft betere mogelijkheden voor autorisatie van systemen via autorisatie scopes. Hierdoor wordt geborgt dat betrokkenen en derden te allen tijde enkel die gegevens zien die ze mogen zien. 
+
+* De API voor bewerking van verwerkingen is [hier](../api-write/index.md) te vinden.
+* De API voor inzage van verwerkingen door betrokkenen en derden is [hier](../api-read/index.md) te vinden.
+
+Door de scheiding van de standaard in een Bewerking- en Inzage API zijn de volgende wijzigingen aangebracht:
+* Scheiding in Github van de twee API's in Github Pages navigatie en in de folderstuctuur (nu in api-read en api-write folder)
+* Autorisatiescope 'read:restricted' is vervallen. Deze scope is door de functionele scheiding in een bewerking- en inzage API overbodig.
+* De query parameter 'beperkteSet' op de GET is komen te vervallen. De Bewerking API levert altijd een volledige set en de Inzage API levert altijd een beperkte set.
+* In de ontwerpdocumentatie is de case 'Inzage door burger – Gegevens die niet langer vertrouwelijk zijn' komen te vervallen. De Inzage API GET levert altijd alle verwerkingsacties die niet vertrouwelijk zijn. Dat is de combinatie van verwerkingsacties die nooit vertrouwelijk zijn geweest en verwerkingsacties waarvan de vertrouwelijkheid is opgeheven.
+* Aan de Verwerkte Objecten is een url- en verwerktObjectId attribuut toegevoegd.
+* In de GET van de Bewerking API is de query parameter 'beperkteSet' verwijderd
+* In de GET van de Bewerking API zijn alle query-attributen optioneel gemaakt
+
 ## 11 mei 2021
 * De referentieimplementatie van het providerdeel van de API-standaard is gerealiseerd. De referentieimplementatie is te downloaden van [Gitlab](https://gitlab.com/commonground/referentie-apis/verwerkingenlogging) en kan via een Docker installatie lokaal worden geinstalleerd. Instructies voor de installatie van de referentieimplementatie zijn te vinden op de [documentatie website.](https://commonground.gitlab.io/referentie-apis/verwerkingenlogging/index.html)  
 
@@ -16,7 +31,7 @@ name: Voortgang ontwikkeling API-standaard voor logging van verwerkingen
 * De RPC calls voor het wijzigen van de Bewaartermijn en Vertrouwelijkheid van verwerkingsacties zijn omgezet naar een PATCH operatie conform REST.
 
 ## 27 januari 2021
-* In [C3677: Inzage door burger](./ontwerp/artefacten/3677.md) is een passage toegevoegd over de noodzaak om ook de inzage van het verwerkingenlog te loggen. Ook in de quickstart guide is toegevoegd dat dit moet en wordt naar deze casus verwezen.
+* In [C3677: Inzage door betrokkene](./ontwerp/artefacten/3677.md) is een passage toegevoegd over de noodzaak om ook de inzage van het verwerkingenlog te loggen. Ook in de quickstart guide is toegevoegd dat dit moet en wordt naar deze casus verwezen.
 * In de quickstart guide en op de pagina van de opvragingscases wordt nu verwezen naar [C2866 - Detailvraag op basis van BSN – Door een derde partij](./ontwerp/artefacten/2866.md) en naar [C0031 - Opvragen van gegevens bij een derde partij](./ontwerp/artefacten/0031.md) omdat deze cases voorzien zijn van een aanvullende toelichting die laat zien hoe de gegevens van de afnemer via de http-header in het log van de aanbieder terechtkomen:
 
 ## 14 januari 2021
@@ -56,9 +71,9 @@ Quick Start Guide toegevoegd.
 
 ## 23 november 2020
 Autorisaties (scopes) toegevoegd aan de Verwerkingsacties API zodat alle logging-functies gemapped kunnen worden op de API calls.
-- Beschrijvingen van de [scopes](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/api/oas-specification/logging-verwerkingen-api/scopes.md) toegevoegd.
-- Resources in de [OAS-specificatie](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api/oas-specification/logging-verwerkingen-api/openapi.yaml#operation/verwerkingsactie_list) uitgebreid met de juiste scopes.
-- [Mapping-tabel](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/api/index.md#oas-specificaties) uitgebreid met een extra kolom voor de scopes zodat alle logging-functies gemapped kunnen worden.
+- Beschrijvingen van de [scopes](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/api-write/oas-specification/logging-verwerkingen-api/scopes.md) toegevoegd.
+- Resources in de [OAS-specificatie](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/gemma-verwerkingenlogging/master/docs/_content/api-write/oas-specification/logging-verwerkingen-api/openapi.yaml#operation/verwerkingsactie_list) uitgebreid met de juiste scopes.
+- [Mapping-tabel](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/api-write/index.md#oas-specificaties) uitgebreid met een extra kolom voor de scopes zodat alle logging-functies gemapped kunnen worden.
 
 
 ## 18 november 2020
@@ -78,18 +93,17 @@ Inhoudelijke aanpassingen:
 - [Attribuuttype Naam](../gegevenswoordenboek/attribuuttypen/Naam.md): Lengte van 80 naar 242.
 - [Attribuuttype OIN](../gegevenswoordenboek/attribuuttypen/OIN.md): Formeel patroon in de vorm van een regular expression toegevoegd.
 - [Attribuuttype UUID](../gegevenswoordenboek/attribuuttypen/UUID.md): Formeel patroon in de vorm van een regular expression toegevoegd.
-- Aanwezigheid van [http header attributen](../api/index.md) toegelicht.
+- Aanwezigheid van [http header attributen](../api-write/index.md) toegelicht.
 N.B. Bovenstaande aanpassingen moeten nog doorgevoerd worden in de API.
 
 Correcties:
 - De nieuwe http header attributen (verwerkingsactiviteit id en url) zijn toegevoegd aan [besluit 9177](./ontwerp/artefacten/9177.md).
-- De resourcenaam wijziging was nog niet doorgevoerd op de [toelichtingspagina over de API](../api/index.md).
+- De resourcenaam wijziging was nog niet doorgevoerd op de [toelichtingspagina over de API](../api-write/index.md).
 
 Tekstuele aanpassingen:
 - [Case 2521](./ontwerp/artefacten/2521.md): 'Inzage van gegevens aan de balie' aangepast. Gaat niet langer alleen over derden, kan ook de burger zelf zijn. Gevolg is dat we het BSN van de burger als afnemer moeten kunnen vastleggen.
 - [Case 9041](../../../gegevenswoordenboek/attributen/Afnemer_ID.md)9041.md): 'Notificaties – Informatiearm'. Kleine tekstuele verduidelijkingen.
 - [Case 9299](./ontwerp/artefacten/9299.md): 'Synchronisatie naar BGL'. BGL = Binnengemeentelijke Levering.
-- [Case 9713](./ontwerp/artefacten/9713.md): 'Inzage door burger - Gegevens die niet langer vertrouwelijk zijn'. Kleine tekstuele correctie.
 - [Logging Maturity Level](./logging_maturity_level.md): Kleine verbetering aan leesbaarheid schema met de verschillende niveau's.
 
 ## 8 november 2020
@@ -118,7 +132,7 @@ Tekstuele aanpassingen:
 -  Excel overzicht van de verschillende [ontwerpartefacten per case](./ontwerp/artefacten/20201011_Artefacten_en_cases.xlsx) toegevoegd.
 
 ## 12 oktober 2020
-- Beschrijvingen van de tot de standaard behorende [API functies](../api/index.md) toegevoegd.
+- Beschrijvingen van de tot de standaard behorende [API functies](../api-write/index.md) toegevoegd.
 - Case beschrijvingen toegevoegd voor:
     - [Leveren van gegevens](./ontwerp/cases/leveren_van_gegevens.md)
     - [Delegatie en mandatering](../ontwerp/cases/delegatie_en_mandatering.md)

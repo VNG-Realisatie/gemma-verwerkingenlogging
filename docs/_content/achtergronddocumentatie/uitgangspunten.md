@@ -26,7 +26,7 @@ Onderstaande aanbevelingen, ontwerpbesluiten en openstaande vraagstukken zijn ge
 - [A5924: Mogelijkheden om duidelijke verwerkingenlogentries te maken](./ontwerp/artefacten/5924.md)
 
 ### Ontwerpbesluiten
--	[B6856: Hiërarchie: Verwerkingsactiviteit, Verwerking, Handeling en Actie](./ontwerp/artefacten/6856.md)
+- [B6856: Hiërarchie: Verwerkingsactiviteit, Verwerking, Handeling en Actie](./ontwerp/artefacten/6856.md)
 - [B1598: Opname van Betrokkenheid](./ontwerp/artefacten/1598.md)
 - [B6247: Opname van Verwerkt soort gegeven](./ontwerp/artefacten/6247.md)
 - [B7952: Loggen vanuit applicatie - Welke momenten en hoe vaak](./ontwerp/artefacten/7952.md)
@@ -49,8 +49,7 @@ Onderstaande cases, ontwerpbesluiten en functies zijn direct gericht op de besch
 In onderstaande cases is bijzondere aandacht besteed aan de bescherming van de privacy.
 - [C4081: Registratie Verhuizing – Zoeken op geboortedatum en naam](./ontwerp/artefacten/4081.md)
 - [C5889: Zoekvraag – Onbekende zoekcriteria, vooraf gedefinieerde resultaatvelden](./ontwerp/artefacten/5889.md)
-- [C3677: Inzage door burger](./ontwerp/artefacten/3677.md)
-- [C9713: Inzage door burger – Gegevens die niet langer vertrouwelijk zijn](./ontwerp/artefacten/9713.md)
+- [C3677: Inzage door betrokkene](./ontwerp/artefacten/3677.md)
 - [C5953: Inzage door gemeentelijk medewerker](./ontwerp/artefacten/5953.md)
 - [C9041: Notificaties – Informatiearm](./ontwerp/artefacten/9041.md)
 
@@ -64,10 +63,13 @@ In onderstaande cases is bijzondere aandacht besteed aan de bescherming van de p
 - [B9177: Meegeven van informatie t.b.v. verwerkingenlogging in API’s](./ontwerp/artefacten/9177.md)
 
 ### Functies
-- [F4086: Opvragen Acties – Beperkte set velden, niet vertrouwelijk](./ontwerp/artefacten/4086.md)
+- [F4086: Opvragen verwerkte objecten – Beperkte set velden, niet vertrouwelijk](./ontwerp/artefacten/4086.md)
+- [F2008: Opvragen verwerkte objecten – Beperkte set velden, niet vertrouwelijk of vertrouwelijkheid opgeheven](./ontwerp/artefacten/2008.md)
+- [F9787: Opvragen verwerkingsacties – Alle velden, niet vertrouwelijk](./9787.md)
+- [F2525: Opvragen Verwerkingsacties – Alle velden, vertrouwelijkheid opgeheven](./ontwerp/artefacten/2525.md)
+- [F0143: Opvragen verwerkingsacties – Alle velden, vertrouwelijk](./0143.md)
 - [F6624: Log Vertrouwelijke Actie](./ontwerp/artefacten/6624.md)
 - [F2969: Wijzig vertrouwelijkheid van Verwerking](./ontwerp/artefacten/2969.md)
-- [F2525: Opvragen Acties – Beperkte set velden, vertrouwelijkheid opgeheven](./ontwerp/artefacten/2525.md)
 
 ## We faciliteren laagdrempelige inbouw
 Een belangrijk uitgangspunt bij de totstandkoming van de API-standaard is dat deze voor leveranciers op relatief eenvoudige wijze, en tegen acceptabele inspanning ingebouwd kan worden. Met de wetenschap dat de bestaande informatiesystemen niet zijn ontworpen op het kunnen loggen conform de eisen van de AVG is vanuit de gedachte ‘beter iets dan niets loggen’ besloten dat de informatie die vastgelegd wordt in verwerkingenlogging moet kunnen varieeren van [basisinformatie tot zeer uitgebreide informatie](./volledigheid_van_logging.md). Een gevolg van deze keuze is dat zo min mogelijk attributen 'verplicht' moeten worden ingevuld. Er is in plaats daarvan gekozen voor een systeem waarbij gegevens technisch niet verplicht zijn in te vullen, maar functioneel verplicht kunnen zijn. Dit houdt in dat als een gegeven bekend is, of tegen beperkte inspanning bekend kan worden, het moet worden opgenomen in de verwerkingenlogging. Zie [deze](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/tree/master/docs/_content/gegevenswoordenboek#bijzondere-meta-attributen) pagina voor een nadere uitleg.

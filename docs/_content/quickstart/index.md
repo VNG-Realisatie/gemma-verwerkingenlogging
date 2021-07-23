@@ -2,7 +2,7 @@
 title: "Quick Start Guide Logging van Verwerkingen"
 name: Quick Start Guide
 ---
-Deze Quick Start Guide is geschreven voor iedereen die te maken krijgt met logging van werkingen: functionarissen gegevensbescherming, privacy officers, informatiearchitecten, ontwikkelaars, beheerders et cetera.
+Deze Quick Start Guide is geschreven voor iedereen die te maken krijgt met logging van verwerkingen: functionarissen gegevensbescherming, privacy officers, informatiearchitecten, ontwikkelaars, beheerders et cetera.
 
 
 # Inhoudsopgave
@@ -143,23 +143,22 @@ Er zijn [diverse cases](../achtergronddocumentatie/ontwerp/cases/Opvragen_van_ge
 
 ## Inzage
 
-Voor inzage in het log kan gebruik gemaakt worden van de API-functie Opvragen Verwerkingsacties. Deze functie kent vier varianten:
-* Opvragen Verwerkingsacties – Beperkte set velden, niet vertrouwelijk
-* Opvragen Verwerkingsacties – Beperkte set velden, vertrouwelijkheid opgeheven
+Voor inzage in het log kan binnengemeentelijk gebruik gemaakt worden van de Bewerking API-functie Opvragen Verwerkingsacties. Deze functie kent vier varianten:
 * Opvragen Verwerkingsacties – Alle velden, niet vertrouwelijk
+* Opvragen Verwerkingsacties – Alle velden, vertrouwelijkheid
 * Opvragen Verwerkingsacties – Alle velden, vertrouwelijkheid opgeheven
 
+Voor inzage in het log door betrokkene (de burger) kan  gebruik gemaakt worden van de Inzage API-functie Opvragen Verwerkingsacties. Deze functie kent één variant:
+* Opvragen Verwerkingsacties – Beperkte set velden, niet vertrouwelijk of vertrouwelijkheid opgeheven
+
 Over de verschillende functies:
-* Bij de eerste twee varianten worden niet alle velden geretourneerd. Zo wordt om privacy redenen de gebruiker niet geretourneerd en om wille van de veiligheid het systeem en de gegevensopslag niet.
-* De laatste twee functies retourneren deze informatie wel. Alleen een bevoegde functionaris zoals bijvoorbeeld een Privacy Officer zou hiervoor geautoriseerd mogen worden. 
-* De ‘niet vertrouwelijke’ functies retourneren alleen verwerkingsacties over verwerkingen die niet vertrouwelijk zijn en die dit ook nooit geweest zijn. De ‘vertrouwelijkheid opgeheven’ functies retourneren ook verwerkingsacties die ooit vertrouwelijk geweest zijn. Verwerkingsacties acties die ooit vertrouwelijk waren, moet ook na het opheffen van die vertrouwelijkheid vaak gezien worden als ‘bijzondere persoonsgegevens’. Denk aan een fraudeonderzoek. Zelfs als een dergelijk onderzoek uiteindelijk niets opgeleverd heeft, kan het aantreffen van verwerkingsacties over een onderzoek leiden tot een vooroordeel. Ook deze functies mogen dus alleen door bevoegde functionarissen zoals Privacy Officers gebruikt worden.
+* Bij de inzage functie door de burger worden niet alle velden geretourneerd. Zo wordt om privacy redenen de gebruiker niet geretourneerd en om wille van de veiligheid het systeem en de gegevensopslag niet. 
+* De laatste binnengemeentelijke functies retourneren alle attributen wel. 
+* De ‘niet vertrouwelijke’ functies retourneren alleen verwerkingsacties over verwerkingen die niet vertrouwelijk zijn en die dit ook nooit geweest zijn. De ‘vertrouwelijkheid opgeheven’ functies retourneren ook verwerkingsacties die ooit vertrouwelijk geweest zijn. Verwerkingsacties acties die ooit vertrouwelijk waren, moet ook na het opheffen van die vertrouwelijkheid vaak gezien worden als ‘bijzondere persoonsgegevens’. Denk aan een fraudeonderzoek. Zelfs als een dergelijk onderzoek uiteindelijk niets opgeleverd heeft, kan het aantreffen van verwerkingsacties over een onderzoek leiden tot een vooroordeel. Deze functies mogen dus alleen door bevoegde functionarissen zoals Privacy Officers gebruikt worden.
 
 Alle inzagefuncties kennen dezelfde zoekparameters:
 
 <img src="./_assets/Zoekparameters.png" alt="Zoekparameters van inzage functies" width="700"/>
-
-Toelichting:
-* Alle parameters zijn verplicht. Verwerkingsacties kunnen dus alleen per persoon en per periode opgehaald worden.
 
 Zijn er binnen de gemeente meerdere verwerkingslogs aanwezig, dan is het handig als deze via één centraal punt bevraagd kunnen worden. Zie voor meer informatie hierover de [architectuurdocumentatie](../architectuur/index.md).
 

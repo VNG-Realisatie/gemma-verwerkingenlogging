@@ -1,0 +1,813 @@
+openapi: 3.0.0
+info:
+  title: Inzage API voor logging van verwerkingen
+  description: API-specificatie ten behoeve van de ontsluiting van de metagegevens behorende bij de verwerkingen van (persoons)gegevens. Deze API is bedoeld voor het bieden van inzage aan betrokkenen, bijvoorbeeld burgers.
+  contact:
+    url: https://vng-realisatie.github.io/gemma-verwerkingenlogging/api-read/index
+    email: standaarden.ondersteuning@vng.nl
+  license:
+    name: EUPL 1.2
+    url: https://opensource.org/licenses/EUPL-1.2
+  version: 0.9.0
+servers:
+  - url: https://localhost:8000/api/v1
+  - url: https://logging-inzage-api.vng.cloud/api/v1
+security: 
+  - JWT-Claims: []
+paths:
+  /verwerkte-objecten:
+    get:
+      tags:
+        - verwerkte-objecten
+      summary: Verwerkte objecten opvragen.
+      operationId: verwerkte-objecten_list
+      description: Door de juiste parameters mee te geven kun je zoeken naar de voor jou relevante verwerkte objecten.
+      parameters:
+        - name: objecttype
+          in: query
+          description: Soort object dat verwerkt is.
+          required: true
+          schema:
+            type: string
+            enum:
+              - persoon
+          example: persoon
+        - name: soortObjectId
+          in: query
+          description: Soort identificator waarmee het verwerkte object geïdentificeerd wordt.
+          required: true
+          schema:
+            type: string
+            format: naam
+            maxLength: 242
+            example: BSN
+        - name: objectId
+          in: query
+          description: Identificator van het verwerkte object.
+          required: true
+          schema:
+            type: string
+            format: identificator
+            maxLength: 40
+            example: "479580261"
+        - name: beginDatum
+          in: query
+          description: Datum van de verwerkingsactie moet groter of gelijk zijn aan deze datum om teruggegeven te worden.
+          required: true
+          schema:
+            type: string
+            format: date
+            example: "2020-10-24"
+        - name: eindDatum
+          in: query
+          description: Datum van de verwerkingsactie moet kleiner zijn dan deze datum om teruggegeven te worden.
+          required: true
+          schema:
+            type: string
+            format: date
+            example: "2020-11-24"
+        # - name: vertrouwelijkheid
+        #   in: query
+        #   description: Geeft de mate van vertrouwelijkheid van de verwerkingsactie aan. Je kunt meerdere waarden tegelijk opgeven.
+        #   schema:
+        #     type: array
+        #     items:
+        #       $ref: '#/components/schemas/VertrouwelijkheidEnum'
+        #   style: form
+        #   explode: false
+        # - name: beperkteSet
+        #   in: query
+        #   description: In geval van 'true' worden niet alle attributen van de verwerkingsactie teruggegeven. Bijvoorbeeld attributen zoals 'gebruiker', 'gegevensbron' en 'systeem'  zijn niet relevant voor burgers. In geval van 'false' worden alle velden teruggegeven in het resultaat.
+        #   schema:
+        #     type: boolean
+        #     default: true
+        - name: verwerkingsactiviteitId
+          in: query
+          description: Identificator van de verwerkingsactiviteit die de verwerking rechtvaardigt.
+          schema:
+            type: string
+            format: uuid
+          example: "5f0bef4c-f66f-4311-84a5-19e8bf359eaf"
+      responses:
+        '200':
+          description: OK
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/json:
+              schema:
+                required:
+                - count
+                - results
+                type: object
+                properties:
+                  count:
+                    type: integer
+                  next:
+                    type: string
+                    format: uri
+                    nullable: true
+                  previous:
+                    type: string
+                    format: uri
+                    nullable: true
+                  results:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/VerwerktObjectUitgebreid'
+        '400':
+          description: Bad request
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/ValidatieFout'
+        '401':
+          description: Unauthorized
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '403':
+          description: Forbidden
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '406':
+          description: Not acceptable
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '409':
+          description: Conflict
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '410':
+          description: Gone
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '415':
+          description: Unsupported media type
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '429':
+          description: Too many requests
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '500':
+          description: Internal server error
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '501':
+          description: Not Implemented
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '503':
+          description: Service Unavailable
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+      security: 
+      - JWT-Claims:
+        - read:normal
+        - read:confidential
+  /verwerkte-objecten/{verwerktObjectId}:
+    parameters:
+    - name: verwerktObjectId
+      in: path
+      description: Identificator die de verwerkingsactie uniek identificeert (UUID4).
+      required: true
+      schema:
+        type: string
+        format: uuid
+        example: "5f089abb-7ed1-4714-92d4-1850453eda5d"
+    get:
+      tags:
+        - verwerkte-objecten
+      operationId: verwerktobject_read
+      summary: Een specifiek verwerkt object opvragen.
+      description: Een specifiek verwerkt object opvragen.
+      responses:
+        '200':
+          description: OK
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerwerktObjectUitgebreid'
+        '400':
+          description: Bad request
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/ValidatieFout'
+        '401':
+          description: Unauthorized
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '403':
+          description: Forbidden
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '404':
+          description: Not found
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '406':
+          description: Not acceptable
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '409':
+          description: Conflict
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '410':
+          description: Gone
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '412':
+          description: Precondition failed
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van een
+                specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '415':
+          description: Unsupported media type
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '429':
+          description: Too many requests
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '500':
+          description: Internal server error
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '501':
+          description: Not Implemented
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+        '503':
+          description: Service Unavailable
+          headers:
+            API-version:
+              schema:
+                type: string
+              description: 'Geeft een specifieke API-versie aan in de context van
+                een specifieke aanroep. Voorbeeld: 1.2.1.'
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Fout'
+      security: 
+      - JWT-Claims:
+        - read:normal
+        - read:confidential
+components:
+  requestBodies:
+    VerwerktObject:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/VerwerktObject'
+      required: true
+    Verwerkingsactie:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/VerwerkingsactieBeperkt'
+      required: true
+  securitySchemes:
+    JWT-Claims:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    VerwerkingsactieBeperkt:
+      title: Verwerkingsactie beperkt
+      description: Een verwerkingsactie is een operatie die wordt uitgevoerd door een geautomatiseerd systeem waarbij er (persoons)gegevens verwerkt worden. Een verwerkingsactie wordt uitgevoerd als onderdeel van (een handeling van) een verwerking. De inzage van deze verwerkingsactie is beperkt in de zin dat gevoelige gegevens zoals systeem, gebruiker en gegevensbron zijn weggelaten.
+      type: object
+      required:
+        - url
+        - actieId
+        - vertrouwelijkheid
+        - tijdstip
+        - tijdstipRegistratie
+        - verwerkteObjecten
+      properties:
+        url:
+          title: URL
+          description: URL-referentie naar deze resource. Deze link wordt automatisch aangemaakt.
+          type: string
+          format: uri
+          maxLength: 2042
+          minLength: 1
+          readOnly: true
+          example: "https://verwerkingenlogging-bewerking-api.vng.cloud/api/v1/verwerkingsacties/7a22eb38-bca6-463f-9955-54ab040287cb"
+        actieId:
+          title: Actie ID
+          description: Identificator van de verwerkingsactie waar de persoon of het object bij betrokken is. Deze ID wordt automatisch aangemaakt door het log.
+          type: string
+          format: uuid
+          readOnly: true
+          example: "7a22eb38-bca6-463f-9955-54ab040287cb"
+        actieNaam:
+          title: Actie Naam
+          description: Naam van de verwerkingsactie.
+          type: string
+          maxLength: 242
+          example: Zoeken personen
+        handelingNaam:
+          title: Handeling Naam
+          description:  Naam van de handeling waar de verwerkingsactie onderdeel van is.
+          type: string
+          maxLength: 242
+          example: Intake
+        verwerkingNaam:
+          title: Verwerking Naam
+          description:  Naam van de verwerking waar de handeling een onderdeel van is.
+          type: string
+          maxLength: 242
+          example: Huwelijk
+        verwerkingId:
+          title: Verwerking ID
+          description: Identificator van de verwerking waar de handeling een onderdeel van is.
+          type: string
+          format: uuid
+          example: "48086bf2-11b7-4603-9526-67d7c3bb6587"    
+        verwerkingsactiviteitId:
+          title: Verwerkingsactiviteit ID
+          description: Identificator van de verwerkingsactiviteit die de verwerking rechtvaardigt.
+          type: string
+          format: uuid
+          example: "5f0bef4c-f66f-4311-84a5-19e8bf359eaf"
+        verwerkingsactiviteitUrl:
+          title: Verwerkingsactiviteit URL
+          description: URL-referentie naar de verwerkingsactiviteit.
+          type: string
+          format: uri
+          maxLength: 2042
+          example: "https://verwerkingsactiviteiten-api.vng.cloud/api/v1/verwerkingsactiviteiten/5f0bef4c-f66f-4311-84a5-19e8bf359eaf"
+        vertrouwelijkheid:
+          title: Vertrouwelijkheid
+          description: Geeft de mate van vertrouwelijkheid van de verwerking aan.
+          type: string
+          enum:
+            - normaal
+            - vertrouwelijk
+            - opgeheven
+          default: normaal
+          example: normaal
+        bewaartermijn:
+          title: Bewaartermijn
+          description: Periode waarin de verwerking bewaard moet blijven.
+          type: string
+          format: duration
+          example: P10Y
+        uitvoerder:
+          title: Uitvoerder
+          description: Organisatie in OIN-formaat die de verwerking uitgevoerd heeft. Voor een beschrijving van het OIN-formaat Zie https://www.logius.nl/diensten/digikoppeling/documentatie in bijlage A van het document ‘Digikoppeling Identificatie en Authenticatie’.
+          type: string
+          pattern: '[0-9]{20}'
+          example: "00000001821002193000"
+        # systeem:
+        #   title: Systeem
+        #   description: Het systeem dat de verwerkingsactie heeft uitgevoerd.
+        #   type: string
+        #   maxLength: 242
+        #   example: "FooBarApp v2.1"
+        # gebruiker:
+        #   title: Gebruiker
+        #   description: Identificator van de gebruiker die de verwerkingsactie heeft geïnitieerd.
+        #   type: string
+        #   format: identificator
+        #   maxLength: 40
+        #   example: "123456789"
+        # gegevensbron:
+        #   title: Gegevensbron
+        #   description: Gegevensbron waarin de bij verwerkingsactie betrokken gegevens zijn opgeslagen.
+        #   type: string
+        #   maxLength: 242
+        #   example: FooBar Database Publiekszaken
+        soortAfnemerId:
+          title: Soort afnemer ID
+          description: Soort identificator waarmee de afnemer geïdentificeerd wordt.
+          type: string
+          maxLength: 242
+          example: OIN
+        afnemerId:
+          title: Afnemer ID
+          description: Bij levering van gegevens moet hier de identificator opgenomen worden van de organisatie die de gegevens ontvangt. Het attribuut Soort afnemer ID) bepaalt wat voor soort identificator gebruikt wordt om de afnemer te identificeren. Op dit moment kan gekozen worden uit een OIN voor organisaties en een BSN voor natuurlijke personen.
+          type: string
+          format: OIN
+          maxLength: 40
+          example: "00000001821002193000"
+        verwerkingsactiviteitIdAfnemer:
+          title: Verwerkingsactiviteit ID Afnemer
+          description: Identificator van de verwerkingsactiviteit aan de kant van de afnemer. 
+          type: string
+          format: uuid
+          example: "c5b9f4e7-8c79-41b9-91e2-6268419cb167"
+        verwerkingsactiviteitUrlAfnemer:
+          title: Verwerkingsactiviteit URL Afnemer
+          description: URL-referentie naar de verwerkingsactiviteit van de afnemer.
+          type: string
+          format: uri
+          maxLength: 2042
+          example: "https://www.amsterdam.nl/var/api/v1/verwerkingsactiviteiten/5f0bef4c-f66f-4311-84a5-19e8bf359eaf"
+        verwerkingIdAfnemer:
+          title: Verwerking ID Afnemer
+          description: Identificator van de verwerking aan de kant van de afnemer.
+          type: string
+          format: uuid
+          example: "4b698de3-ffba-45e7-8697-a283ec863db2"
+        tijdstip:
+          title: Tijdstip
+          description: Tijdstip waarop de verwerkingsactie is uitgevoerd.
+          type: string
+          format: date-time
+          example: '2024-04-05T14:35:42+01:00'
+        tijdstipRegistratie:
+          title: Tijdstip Registratie
+          description: Tijdstip waarop de verwerkingsactie in het log is geregistreerd. Wordt bepaald door het log. Niet door het loggende systeem.
+          type: string
+          format: date-time
+          readOnly: true
+          example: '2024-04-05T14:35:42+01:00'
+    Fout:
+      required:
+      - code
+      - title
+      - status
+      - detail
+      - instance
+      type: object
+      properties:
+        type:
+          title: Type
+          description: URI referentie naar het type fout, bedoeld voor developers
+          type: string
+        code:
+          title: Code
+          description: Systeemcode die het type fout aangeeft
+          type: string
+          minLength: 1
+        title:
+          title: Title
+          description: Generieke titel voor het type fout
+          type: string
+          minLength: 1
+        status:
+          title: Status
+          description: De HTTP status code
+          type: integer
+        detail:
+          title: Detail
+          description: Extra informatie bij de fout, indien beschikbaar
+          type: string
+          minLength: 1
+        instance:
+          title: Instance
+          description: URI met referentie naar dit specifiek voorkomen van de fout.
+            Deze kan gebruikt worden in combinatie met server logs, bijvoorbeeld.
+          type: string
+          minLength: 1
+    FieldValidationError:
+      required:
+      - name
+      - code
+      - reason
+      type: object
+      properties:
+        name:
+          title: Name
+          description: Naam van het veld met ongeldige gegevens
+          type: string
+          minLength: 1
+        code:
+          title: Code
+          description: Systeemcode die het type fout aangeeft
+          type: string
+          minLength: 1
+        reason:
+          title: Reason
+          description: Uitleg wat er precies fout is met de gegevens
+          type: string
+          minLength: 1
+    ValidatieFout:
+      required:
+      - code
+      - title
+      - status
+      - detail
+      - instance
+      - invalidParams
+      type: object
+      properties:
+        type:
+          title: Type
+          description: URI referentie naar het type fout, bedoeld voor developers
+          type: string
+        code:
+          title: Code
+          description: Systeemcode die het type fout aangeeft
+          type: string
+          minLength: 1
+        title:
+          title: Title
+          description: Generieke titel voor het type fout
+          type: string
+          minLength: 1
+        status:
+          title: Status
+          description: De HTTP status code
+          type: integer
+        detail:
+          title: Detail
+          description: Extra informatie bij de fout, indien beschikbaar
+          type: string
+          minLength: 1
+        instance:
+          title: Instance
+          description: URI met referentie naar dit specifiek voorkomen van de fout.
+            Deze kan gebruikt worden in combinatie met server logs, bijvoorbeeld.
+          type: string
+          minLength: 1
+        invalidParams:
+          type: array
+          items:
+            $ref: '#/components/schemas/FieldValidationError'
+    # VertrouwelijkheidEnum:
+    #   title: Enumeratie voor vertrouwelijkheid
+    #   type: string
+    #   enum:
+    #     - normaal
+    #     - vertrouwelijk
+    #     - opgeheven
+    VerwerktObjectBasis:
+      title: Verwerkt object basis
+      description: Een persoon of object betrokken bij de verwerkingsactie.
+      type: object
+      required: 
+        - objecttype
+        - soortObjectId
+        - objectId
+      properties:
+        objecttype: 
+          title: Objecttype
+          description: Soort object dat bij de verwerkingsactie betrokken is.
+          type: string
+          enum:
+            - persoon
+        soortObjectId:
+          title: Soort object ID
+          description: Soort identificator waarmee het object geïdentificeerd wordt.
+          type: string
+          maxLength: 242
+          example: BSN
+        objectId:
+          title: Object ID
+          description: Identificator van het object.
+          type: string
+          format: identificator
+          maxLength: 40
+          example: "1234567"
+        betrokkenheid:
+          title: Betrokkenheid
+          description: Geeft aan in welke hoedanigheid de persoon of het object betrokken was bij de verwerkingsactie.
+          type: string
+          maxLength: 242
+          example: Getuige
+        verwerkteSoortenGegevens:
+          title: Verwerkte soorten gegevens
+          type: array
+          items: 
+            $ref: '#/components/schemas/VerwerktSoortGegeven'
+    VerwerktObject:
+      title: Verwerkt object
+      allOf:
+        - type: object
+          required: 
+            - url
+            - verwerktObjectId
+          properties:
+            url:
+              title: URL
+              description: URL-referentie naar deze resource. Deze link wordt automatisch aangemaakt.
+              type: string
+              format: uri
+              maxLength: 2042
+              minLength: 1
+              # readOnly: true
+              example: "https://verwerkingenlogging-bewerking-api.vng.cloud/api/v1/verwerkte-objecten/5f089abb-7ed1-4714-92d4-1850453eda5d"
+            verwerktObjectId:
+              title: Verwerkt object ID
+              description: Identificator van het verwerkte object. Deze ID wordt automatisch aangemaakt door het log.
+              type: string
+              format: uuid
+              # readOnly: true
+              example: "5f089abb-7ed1-4714-92d4-1850453eda5d"
+        - $ref: '#/components/schemas/VerwerktObjectBasis'
+    VerwerktObjectUitgebreid:
+      title: verwerktobject uitgebreid
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/VerwerktObject'
+        - type: object
+          properties:
+            verwerkingsactie:
+              $ref: '#/components/schemas/VerwerkingsactieBeperkt'
+    VerwerktSoortGegeven:
+      title: Verwerkt soort gegeven
+      description: Een soort gegeven dat over een persoon of object betrokken bij een verwerkingsactie verwerkt is.
+      type: object
+      required: 
+        - soortGegeven
+      properties:
+        soortGegeven:
+          title: Soort gegeven
+          description: Soort gegeven dat verwerkt is.
+          type: string
+          maxLength: 242
+          example: "BSN"

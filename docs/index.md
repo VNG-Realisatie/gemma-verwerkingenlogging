@@ -10,7 +10,7 @@ Organisaties die persoonsgegevens verwerken zijn conform de [Algemene Verordenin
 Het werkingsgebied voor deze standaard is: gemeenten en gemeentelijke samenwerkingsverbanden.
 
 ## Status van de API-standaard 
-Deze API-standaard is in ontwikkeling. Momenteel heeft de standaard een status van Release Candidate. Dit houdt in dat de 1.0 versie van de standaard in principe klaar is en geimplementeerd kan worden. Partijen die implementaties van de API-standaard ontwikkelen kunnen gedurende de Release Candidate fase hun bevindingen terugkoppelen naar het project. Deze bevindingen kunnen leiden tot een nieuwe Release Candidate, of worden meegenomen in de definitieve 1.0 versie van de standaard. De beoogde einddatum voor de Release Candidate versie is 1 juli 2021. Op de [voortgangspagina](./_content/achtergronddocumentatie/voortgang.md) wordt bijgehouden welke wijzigingen in de API-standaard zijn aangebracht.
+Deze API-standaard is in ontwikkeling. Momenteel heeft de standaard een status van Release Candidate. Dit houdt in dat de 1.0 versie van de standaard in principe klaar is en geimplementeerd kan worden. Partijen die implementaties van de API-standaard ontwikkelen kunnen gedurende de Release Candidate fase hun bevindingen terugkoppelen naar het project. Deze bevindingen kunnen leiden tot een nieuwe Release Candidate, of worden meegenomen in de definitieve 1.0 versie van de standaard. De beoogde einddatum voor de Release Candidate versie is 1 september 2021. Op de [voortgangspagina](./_content/achtergronddocumentatie/voortgang.md) wordt bijgehouden welke wijzigingen in de API-standaard zijn aangebracht.
 
 ## Inhoud van de API-standaard
 - [Informatie- en gegevensmodel](./_content/gegevensmodel/index.md)
@@ -24,7 +24,8 @@ Deze API-standaard is in ontwikkeling. Momenteel heeft de standaard een status v
 - [Quickstart Guide](./_content/quickstart/index.md)
 - [Architectuur](./_content/architectuur/index.md)
 - [Informatie- en gegevensmodel](./_content/gegevensmodel/index.md)
-- [API-specificaties](./_content/api/index.md)
+- [API-specificaties (bewerking)](./_content/api-write/index.md)
+- [API-specificaties (inzage)](./_content/api-read/index.md)
 - [Achtergronddocumentatie](./_content/achtergronddocumentatie/index.md)
 
 ## Gerelateerde standaarden
