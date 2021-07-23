@@ -11,7 +11,7 @@
   link: /gegevensmodel/
   weight: 40
 - name: Bewerking API
-  link: /api/
+  link: /api-write/
   weight: 50
 - name: Inzage API
   link: /api-read/
