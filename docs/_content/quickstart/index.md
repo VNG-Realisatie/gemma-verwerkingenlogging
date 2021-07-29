@@ -89,7 +89,7 @@ Vanuit het principe ‘beter iets dan niets loggen’ is besloten om de minimale
 
 Een initiërend proces is vaak een gebruikersapplicatie waarin een gebruiker een bepaalde verwerking initieert. Ook systemen kunnen verwerkingen initiëren; bijvoorbeeld op basis van vooraf ingestelde triggers.
 
-Het systeem logt de verwerking door met behulp van de [Logging API](../api/index.md) een verwerkingsactie aan te maken.
+Het systeem logt de verwerking door met behulp van de [Logging API](../api-write/index.md) een verwerkingsactie aan te maken.
 
 Hierbij logt het systeem de volgende informatie:
 
