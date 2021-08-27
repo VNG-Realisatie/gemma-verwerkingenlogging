@@ -143,7 +143,7 @@ Er zijn [diverse cases](../achtergronddocumentatie/ontwerp/cases/Opvragen_van_ge
 
 ## Inzage
 
-Voor inzage in het log kan binnengemeentelijk gebruik gemaakt worden van de Bewerking API-functie Opvragen Verwerkingsacties. Deze functie kent vier varianten:
+Voor inzage in het log kan binnengemeentelijk gebruik gemaakt worden van de Bewerking API-functie Opvragen Verwerkingsacties. Deze functie kent drie varianten:
 * Opvragen Verwerkingsacties – Alle velden, niet vertrouwelijk
 * Opvragen Verwerkingsacties – Alle velden, vertrouwelijkheid
 * Opvragen Verwerkingsacties – Alle velden, vertrouwelijkheid opgeheven
@@ -152,7 +152,7 @@ Voor inzage in het log door betrokkene (de burger) kan  gebruik gemaakt worden v
 * Opvragen Verwerkingsacties – Beperkte set velden, niet vertrouwelijk of vertrouwelijkheid opgeheven
 
 Over de verschillende functies:
-* Bij de inzage functie door de burger worden niet alle velden geretourneerd. Zo wordt om privacy redenen de gebruiker niet geretourneerd en om wille van de veiligheid het systeem en de gegevensopslag niet. 
+* Bij de inzage functie door de burger worden niet alle velden geretourneerd. Zo wordt om privacy redenen de gebruiker niet geretourneerd en omwille van de veiligheid het systeem en de gegevensopslag niet. 
 * De laatste binnengemeentelijke functies retourneren alle attributen wel. 
 * De ‘niet vertrouwelijke’ functies retourneren alleen verwerkingsacties over verwerkingen die niet vertrouwelijk zijn en die dit ook nooit geweest zijn. De ‘vertrouwelijkheid opgeheven’ functies retourneren ook verwerkingsacties die ooit vertrouwelijk geweest zijn. Verwerkingsacties acties die ooit vertrouwelijk waren, moet ook na het opheffen van die vertrouwelijkheid vaak gezien worden als ‘bijzondere persoonsgegevens’. Denk aan een fraudeonderzoek. Zelfs als een dergelijk onderzoek uiteindelijk niets opgeleverd heeft, kan het aantreffen van verwerkingsacties over een onderzoek leiden tot een vooroordeel. Deze functies mogen dus alleen door bevoegde functionarissen zoals Privacy Officers gebruikt worden.
 
