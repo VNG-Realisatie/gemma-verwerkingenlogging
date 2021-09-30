@@ -4,7 +4,7 @@ name: ontwerpbesluiten
 date: '16-09-2020'
 ---
 
-Vanuit de uitwerking van de [cases](./ontwerpcases.md) zijn een aantal ontwerpbesluiten genomen. Per besluit is herleidbaar gemaakt aan welke case het gerelateerd is. Een overzicht van de relatie tussen besluiten en cases is [hier](./ontwerp/artefacten/20201011_Artefacten_en_cases.xlsx) te vinden.
+Vanuit de uitwerking van de [cases](./ontwerpcases.md) zijn een aantal ontwerpbesluiten genomen. Per besluit is herleidbaar gemaakt aan welke case het gerelateerd is. Een overzicht van de relatie tussen besluiten en cases is [hier](./artefacten/Artefacten_en_Cases.xlsx) te vinden.
 
 Deze ontwerpbesluiten zijn gegroepeerd naar specifieke aspect van de API-standaard. Onderkende aspecten zijn:
 - [fundamentele besluiten](./ontwerpbesluiten.md#fundamenteel), 
