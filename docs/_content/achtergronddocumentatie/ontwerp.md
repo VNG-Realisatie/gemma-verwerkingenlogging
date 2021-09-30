@@ -1,6 +1,7 @@
 ---
+Name: Ontwerp
 title: "Ontwerp"
-date: 01-10-2020
+layout: default
 ---
 
 ## Ontwerp
@@ -11,7 +12,7 @@ Het ontwerp van de API-standaard is gericht op het kunnen opstellen van een gege
 
 Daarnaast zijn er een aantal nog [openstaande vraagstukken](../achtergronddocumentatie/ontwerp/vraagstukken.md) waar nog een standpunt op moet worden ingenomen.
 
-Een Excel overzicht van de verschillende ontwerpartefacten per case is [hier](./ontwerp/artefacten/20201011_Artefacten_en_cases.xlsx) te downloaden.
+Een Excel overzicht van de verschillende ontwerpartefacten per case is [hier](./ontwerp/artefacten/Artefacten_en_Cases.xlsx) te downloaden.
 
 ### Scope en diepgang van het ontwerp
 De diepgang van het ontwerp is gericht op het kunnen opstellen van een gegevensmodel en de benodigde API’s. Het ontwerp kan daarmee wel als startpunt dienen voor de realisatie van een verwerkingenlog maar zal daarvoor niet voldoende zijn. Het grootste gedeelte van het ontwerp gaat over het conceptueel en logisch niveau van verwerkingenlogging. Waar nodig worden korte uitstapjes naar de techniek gemaakt. Bijvoorbeeld om van een bepaald onderdeel te toetsen of het ook implementeerbaar is.
