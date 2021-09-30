@@ -16,7 +16,7 @@ Deze API-standaard is in ontwikkeling. Momenteel heeft de standaard een status v
 - [Informatie- en gegevensmodel](./_content/gegevensmodel/index.md)
 - [API-specificaties (bewerking)](./_content/api-write/index.md)
 - [API-specificaties (inzage)](./_content/api-read/index.md)
-- [Referentieimplementatie van een verwerkingenlogregister]((./_content/referentieimplementatie/index.md))
+- [Referentieimplementatie van een verwerkingenlogregister](./_content/referentieimplementatie/index.md)
 
 
 ## Documentatie
