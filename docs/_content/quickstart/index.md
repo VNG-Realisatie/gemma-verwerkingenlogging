@@ -89,7 +89,7 @@ Vanuit het principe ‘beter iets dan niets loggen’ is besloten om de minimale
 
 Een initiërend proces is vaak een gebruikersapplicatie waarin een gebruiker een bepaalde verwerking initieert. Ook systemen kunnen verwerkingen initiëren; bijvoorbeeld op basis van vooraf ingestelde triggers.
 
-Het systeem logt de verwerking door met behulp van de [Logging API](../api/index.md) een verwerkingsactie aan te maken.
+Het systeem logt de verwerking door met behulp van de [Logging API](../api-write/index.md) een verwerkingsactie aan te maken.
 
 Hierbij logt het systeem de volgende informatie:
 
@@ -98,7 +98,7 @@ Hierbij logt het systeem de volgende informatie:
 Toelichting:
 * Systemen die de mogelijkheid bieden om administraties van meerdere gemeenten bij te houden mogen er niet vanuit gaan dat een verwerkingsactiviteit voor alle gemeenten dezelfde UUID heeft. Het moet dus mogelijk zijn om het systeem zo te configureren dat, voor bijvoorbeeld de verwerkingsactiviteit Geboorteaangifte, bij gemeente A een ander UUID gelogd wordt dan bij gemeente B.
 * Bij minimale verwerkingslogging mag de verwerking niet vertrouwelijk zijn en moet de bewaartermijn bekend zijn. Is dit niet het geval zie dan de uitleg over [volledige logging van verwerkingen](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Volledige-logging-van-verwerkingen).
-* Technisch gezien zijn maar weinig velden in het bericht verplicht (zie [Logging API](../api/index.md)). De velden zijn optioneel gemaakt om te voorkomen dat er niet gelogd wordt op het moment dat bepaalde informatie echt niet voorhanden is. Operationeel gezien moet wel geprobeerd worden zoveel mogelijk informatie te verstrekken. De velden zijn namelijk direct afgeleid uit de vereisten die de AVG stelt en zijn daarmee functioneel gezien niet optioneel.
+* Technisch gezien zijn maar weinig velden in het bericht verplicht (zie [Logging API](../api-write/index.md)). De velden zijn optioneel gemaakt om te voorkomen dat er niet gelogd wordt op het moment dat bepaalde informatie echt niet voorhanden is. Operationeel gezien moet wel geprobeerd worden zoveel mogelijk informatie te verstrekken. De velden zijn namelijk direct afgeleid uit de vereisten die de AVG stelt en zijn daarmee functioneel gezien niet optioneel.
 
 Een Verwerkingsactie kent drie velden die door het verwerkingenlog bepaald worden:
 * Het veld Actie ID wordt gevuld met een nieuw UUID.
