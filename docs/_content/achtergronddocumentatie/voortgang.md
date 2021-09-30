@@ -102,7 +102,7 @@ Correcties:
 
 Tekstuele aanpassingen:
 - [Case 2521](./ontwerp/artefacten/2521.md): 'Inzage van gegevens aan de balie' aangepast. Gaat niet langer alleen over derden, kan ook de burger zelf zijn. Gevolg is dat we het BSN van de burger als afnemer moeten kunnen vastleggen.
-- [Case 9041](../../../gegevenswoordenboek/attributen/Afnemer_ID.md)9041.md): 'Notificaties – Informatiearm'. Kleine tekstuele verduidelijkingen.
+- [Case 9041](./ontwerp/artefacten/9041.md): 'Notificaties – Informatiearm'. Kleine tekstuele verduidelijkingen.
 - [Case 9299](./ontwerp/artefacten/9299.md): 'Synchronisatie naar BGL'. BGL = Binnengemeentelijke Levering.
 - [Logging Maturity Level](./logging_maturity_level.md): Kleine verbetering aan leesbaarheid schema met de verschillende niveau's.
 
@@ -129,14 +129,14 @@ Tekstuele aanpassingen:
 
 ## 15 oktober 2020
 - [Uitgangspunten](./uitgangspunten.md) die gehanteerd zijn bij de totstandkoming van de API-standaard beschreven en gerelateerd aan ontwerp artefacten.
--  Excel overzicht van de verschillende [ontwerpartefacten per case](./ontwerp/artefacten/20201011_Artefacten_en_cases.xlsx) toegevoegd.
+-  Excel overzicht van de verschillende [ontwerpartefacten per case](./ontwerp/artefacten/Artefacten_en_Cases.xlsx) toegevoegd.
 
 ## 12 oktober 2020
 - Beschrijvingen van de tot de standaard behorende [API functies](../api-write/index.md) toegevoegd.
 - Case beschrijvingen toegevoegd voor:
     - [Leveren van gegevens](./ontwerp/cases/leveren_van_gegevens.md)
-    - [Delegatie en mandatering](../ontwerp/cases/delegatie_en_mandatering.md)
-    - [Vertrouwelijke verwerkingen](../ontwerp/cases/vertrouwelijke_verwerkingen.md)
+    - [Delegatie en mandatering](./ontwerp/cases/delegatie_en_mandatering.md)
+    - [Vertrouwelijke verwerkingen](./ontwerp/cases/vertrouwelijke_verwerkingen.md)
     - [Privaatrechtelijke verwerking](./ontwerp/cases/privaatrechtelijke_verwerkingen.md)
     - [Bewaartermijnen](./ontwerp/cases/bewaartermijnen.md)
     - [Inzage in het log](./ontwerp/cases/inzage_in_log.md)
