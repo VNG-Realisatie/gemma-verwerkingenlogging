@@ -23,11 +23,11 @@ In onderstaande paragrafen worden de criteria die binnen de verschillende onderd
 | De stakeholders van de API-standaard zijn beschreven  | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](../productvisie/index.md)  |
 | Interactiepatronen zijn gemodelleerd | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |  [<img src="./_assets/document.png" alt="" width="20"/>](../achtergronddocumentatie/ontwerp/ontwerpcases.md) |
 | Positie van de API-standaard in de GEMMA informatiearchitectuur is gemodelleerd | <img src="./_assets/greensmiley.png" alt="" width="30"/> | [<img src="./_assets/document.png" alt="" width="20"/>](../architectuur/index.md)   |
-| Verwacht gedrag van een API is gemodelleerd als applicatieproces |   |   |
-| De referentiecomponenten die het koppelvlak moeten realiseren zijn beschreven | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
-| Per referentiecomponent is beschreven welke verplicht dan wel optioneel te leveren (provider) of te gebruiken (consumer) services en operaties geïmplementeerd moeten zijn om compliant aan de standaard te zijn. |   |   |
-| Modellen zijn gemodelleerd in Archi (Archimate 3.x) conform conventies GEMMA | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
-| Modellen zijn opgeslagen op GitLab / Github en ingericht voor samenwerking (main/develop branches) | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
+| Verwacht gedrag van een API is gemodelleerd als applicatieproces | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |  [<img src="./_assets/document.png" alt="" width="20"/>](https://www.gemmaonline.nl/index.php/Interactiepatronen_Verwerkingenlogging) |
+| De referentiecomponenten die het koppelvlak moeten realiseren zijn beschreven | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |  [<img src="./_assets/document.png" alt="" width="20"/>](https://www.gemmaonline.nl/index.php/Interactiepatronen_Verwerkingenlogging) |
+| Per referentiecomponent is beschreven welke verplicht dan wel optioneel te leveren (provider) of te gebruiken (consumer) services en operaties geïmplementeerd moeten zijn om compliant aan de standaard te zijn. | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |  [<img src="./_assets/document.png" alt="" width="20"/>](https://www.gemmaonline.nl/index.php/Interactiepatronen_Verwerkingenlogging) |
+| Modellen zijn gemodelleerd in Archi (Archimate 3.x) conform conventies GEMMA | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |  [<img src="./_assets/document.png" alt="" width="20"/>](https://www.gemmaonline.nl/index.php/Interactiepatronen_Verwerkingenlogging) |
+| Modellen zijn opgeslagen op GitLab / Github en ingericht voor samenwerking (main/develop branches) | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging) |
 
 ## Informatiemodel behorend bij de API-standaard
 
@@ -48,7 +48,7 @@ In onderstaande paragrafen worden de criteria die binnen de verschillende onderd
 | Er zijn specificaties die het gedrag van de API beschrijven. Voor de consumer zijn deze opgenomen in de OAS, voor de provider zijn dit aanvullende specificaties |<img src="./_assets/greensmiley.png" alt="" width="30"/>  |  [<img src="./_assets/document.png" alt="" width="20"/>](../api-write/index.md) [<img src="./_assets/document.png" alt="" width="20"/>](../api-read/index.md)|
 | Voldoet aan landelijke API strategie, in het bijzonder de core design rules, en de VNG-R best practices (op basis van verzamelde Design Decisions). Afwijkingen zijn gedocumenteerd | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
 | Informatiebeveiliging en privacy best practices (IBD) zijn geborgd | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
-| De OAS3-specificatie is door een peer uit het standaardisatie team gereviewed |   |   |
+| De OAS3-specificatie is door een peer uit het standaardisatie team gereviewed | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
 | De OAS3-specificatie is getest voor toepasbaarheid in de mainstream code-generatoren (Spring, SDK’s (met pumblingcode)) |   |   |
 | Technische specificaties opgesteld in Open API Specification 3.x | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |  [<img src="./_assets/document.png" alt="" width="20"/>](../api-write/index.md) [<img src="./_assets/document.png" alt="" width="20"/>](../api-read/index.md) |
 
@@ -56,18 +56,18 @@ In onderstaande paragrafen worden de criteria die binnen de verschillende onderd
 
 | Criterium | Status | Toelichting/Link |
 |:--|:-:|---|
-| API-standaard is geïmplementeerd in een referentieimplementatie van de provider in een gangbare programmeertaal |   | Q1 2021  |
-| Implementeert de gehele OAS-specificatie inclusief de eventueel gedefinieerde aanvullende specificatie |   | Q1 2021  |
+| API-standaard is geïmplementeerd in een referentieimplementatie van de provider in een gangbare programmeertaal | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](https://gitlab.com/commonground/referentie-apis/verwerkingenlogging)  |
+| Implementeert de gehele OAS-specificatie inclusief de eventueel gedefinieerde aanvullende specificatie | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](https://gitlab.com/commonground/referentie-apis/verwerkingenlogging) |
 
 ## Testbaarheid via API testplatform
 
 | Criterium | Status | Toelichting/Link |
 |:--|:-:|---|
-| Testgevallen zijn beschreven voor elke service/operatie en aanvullende specificaties, zowel voor de happy als de unhappy flows |   |  Q1 2021 |
-| Elk testgeval beschrijft het logische testgeval, de teststap(pen) (wat wordt gedaan) en het verwachte resultaat |   | Q1 2021  |
+| Testgevallen zijn beschreven voor elke service/operatie en aanvullende specificaties, zowel voor de happy als de unhappy flows |   |  Q4 2021 |
+| Elk testgeval beschrijft het logische testgeval, de teststap(pen) (wat wordt gedaan) en het verwachte resultaat |   | Q4 2021  |
 | Er zijn compliancy tests beschikbaar voor elke referentie-component (consumers en providers) en alle betreffende services en operaties, zodat leveranciers kunnen testen en aantonen dat hun applicatie voldoet aan de standaard |   | Q1 2021 |
-| Is er sprake van een API die zich beperkt tot het lezen van gegevens dan dient er een testset beschreven te zijn voor de provider |   | Q1 2021  |
-| Testgevallen zijn geïmplementeerd als Postman-scripts zodat de API geautomatiseerd getest kan worden |   | Q1 2021  |
+| Is er sprake van een API die zich beperkt tot het lezen van gegevens dan dient er een testset beschreven te zijn voor de provider |   | Q4 2021  |
+| Testgevallen zijn geïmplementeerd als Postman-scripts zodat de API geautomatiseerd getest kan worden |   | Q4 2021  |
 
 ## Stakeholder documentatie
 
@@ -78,29 +78,29 @@ In onderstaande paragrafen worden de criteria die binnen de verschillende onderd
 | T.b.v. ontwikkelaars: het informatiemodel is gepubliceerd op VNG-Realisatie Github | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](../gegevensmodel/semantisch_informatiemodel/readme.md)  |
 | T.b.v. ontwikkelaars: de technische beschrijving is gepubliceerd op VNG-Realisatie Github | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](../api-write/index.md) [<img src="./_assets/document.png" alt="" width="20"/>](../api-read/index.md)  |
 | T.b.v. ontwikkelaars: OAS specificatie (beschikbaar via Redoc en SwaggerUI) is gepubliceerd op VNG-Realisatie Github | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |  [<img src="./_assets/document.png" alt="" width="20"/>](../api-write/index.md) [<img src="./_assets/document.png" alt="" width="20"/>](../api-read/index.md) |
-| T.b.v. ontwikkelaars: de uitleg en installatie-instructies van de referentieimplementaties inclusief testgevallen is gepubliceerd op VNG-Realisatie Github |   | Q1 2021  |
-| T.b.v. ontwikkelaars: Postman-scripts zijn gepubliceerd op api-test.nl zodat iedereen kan testen of de implementatie voldoet aan zijn specificatie |   | Q1 2021  |
+| T.b.v. ontwikkelaars: de uitleg en installatie-instructies van de referentieimplementaties inclusief testgevallen is gepubliceerd op VNG-Realisatie Github | <img src="./_assets/greensmiley.png" alt="" width="30"/>  | [<img src="./_assets/document.png" alt="" width="20"/>](https://gitlab.com/commonground/referentie-apis/verwerkingenlogging) |
+| T.b.v. ontwikkelaars: Postman-scripts zijn gepubliceerd op api-test.nl zodat iedereen kan testen of de implementatie voldoet aan zijn specificatie |   | Q4 2021  |
 | De API-ontwikkelagenda is up-to-date | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
-| De Componenten/software catalogus is up-to-date |   |   |
-| T.b.v. bestuurders: de API-standaard is vermeld op de VNG-site |   |   |
+| De Componenten/software catalogus is up-to-date | <img src="./_assets/greensmiley.png" alt="" width="30"/>   |   |
+| T.b.v. bestuurders: de API-standaard is vermeld op de VNG-site | <img src="./_assets/greensmiley.png" alt="" width="30"/>   |   |
 
 ## Overdracht- en beheerdocumentatie
 
 | Criterium | Status | Toelichting/Link |
 |:--|:-:|---|
 | Belangrijke ontwerp-overwegingen zijn beschreven en gemotiveerd | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |  [<img src="./_assets/document.png" alt="" width="20"/>](../achtergronddocumentatie/ontwerp.md) |
-| Er wordt voldaan aan de acceptatiecriteria van de beheerorganisatie die de standaard in beheer neemt |   |   |
+| Er wordt voldaan aan de acceptatiecriteria van de beheerorganisatie die de standaard in beheer neemt | <img src="./_assets/greensmiley.png" alt="" width="30"/>   |   |
 | Er is een backlog (lijst met fouten, gewenste verbeteringen, gewenste uitbreidingen etc) | <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
 | De verantwoordelijke voor beheer is bekend |  <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
-| Beheerafspraken zijn beschreven |   |   |
+| Beheerafspraken zijn beschreven | <img src="./_assets/greensmiley.png" alt="" width="30"/>   |   |
 
 ## Aanvullende specificaties voor beheer door VNG-R
 
 | Criterium | Status | Toelichting/Link |
 |:--|:-:|---|
-| Voor zaken die in VNG-R beheer worden genomen is het beheerkader getoetst |   |   |
+| Voor zaken die in VNG-R beheer worden genomen is het beheerkader getoetst |  <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
 | Informatiemodellen (CIM en UGM) zijn vastgelegd in Enterprise Architect |  <img src="./_assets/greensmiley.png" alt="" width="30"/> |   |
 | Informatiemodel is opgeslagen in SVN |  <img src="./_assets/greensmiley.png" alt="" width="30"/> |   |
-| Er is voldaan aan de overige beheerkaders |   |   |
-| Releasebeleid is beschreven |   |   |
-| De referentie-implementatie blijft beschikbaar als sandbox |   |   |
+| Er is voldaan aan de overige beheerkaders |  <img src="./_assets/greensmiley.png" alt="" width="30"/>  |   |
+| Releasebeleid is beschreven | <img src="./_assets/greensmiley.png" alt="" width="30"/>   |   |
+| De referentie-implementatie blijft beschikbaar als sandbox | <img src="./_assets/greensmiley.png" alt="" width="30"/>   |   |
