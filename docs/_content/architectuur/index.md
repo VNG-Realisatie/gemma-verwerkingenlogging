@@ -3,7 +3,7 @@ title: "Architectuurschetsen"
 name: architectuurschetsen
 ---
 ## Positionering standaard in de informatiehuishouding  
-De Verwerkingenlogging API-standaard standaardiseerd de wijze waarop processystemen de verwerking van (persoons)gegevens kunnen vastleggen in verwerkingenlogs en deze verwerkingenlogs kunnen ontsluiten naar geautoriseerde afnemers. Deze standaard vult hiermee een deel van de functies in die in de gemeentelijke informatievoorziening nodig zijn om invulling te kunnen geven aan de [Verantwoordingsplicht uit de AVG](https://autoriteitpersoonsgegevens.nl/nl/onderwerpen/algemene-informatie-avg/verantwoordingsplicht).
+De Verwerkingenlogging API-standaard standaardiseert de wijze waarop processystemen de verwerking van (persoons)gegevens kunnen vastleggen in verwerkingenlogs en deze verwerkingenlogs kunnen ontsluiten naar geautoriseerde afnemers. Deze standaard vult hiermee een deel van de functies in die in de gemeentelijke informatievoorziening nodig zijn om invulling te kunnen geven aan de [Verantwoordingsplicht uit de AVG](https://autoriteitpersoonsgegevens.nl/nl/onderwerpen/algemene-informatie-avg/verantwoordingsplicht).
 
 In onderstaande schets is weergegeven welke informatiesystemen een rol spelen bij de implementatie van de verschillende aspecten van de Verantwoordingsplicht. De onderdelen die door de Verwerkingenlogging API-standaard worden afgedekt zijn hierbij rood omkaderd aangegeven. 
 

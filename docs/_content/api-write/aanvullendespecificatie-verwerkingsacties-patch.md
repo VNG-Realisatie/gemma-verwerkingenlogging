@@ -23,7 +23,7 @@ layout: default
 ### Gedrag
 
 * Alle verwerkingsacties met de opgegeven query parameter `verwerkingId` worden met de opgegeven `bezwaartermijn` of/en `vertrouwelijkheid` aangepast.
-* Als de `verwerkingId` niet gematched kan worden met een verwerkingsactie of de gevonden verwerkingsactie blijkt te zijn vervallen, dan wordt een `HTTP 400` foutmelding teruggestuurd.
+* Als de `verwerkingId` niet gematcht kan worden met een verwerkingsactie of de gevonden verwerkingsactie blijkt te zijn vervallen, dan wordt een `HTTP 400` foutmelding teruggestuurd.
 
 In [B3891](../achtergronddocumentatie/ontwerp/artefacten/3891.md) is beschreven hoe een log dat in technische zin immutable is toch in logische zin kan worden aangepast.
 
