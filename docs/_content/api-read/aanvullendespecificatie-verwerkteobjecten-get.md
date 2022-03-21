@@ -8,8 +8,8 @@ layout: default
 
 | Scope | Autorisatie | 
 | :---- | :---- |
-| `read:normal` | Laat toe om een beperkte set van attributen van verwerkingsacties die betrekking hebben op een specifiek verwerkt object te lezen die niet vertrouwelijk zijn. 
-| `read:confidential` | Laat toe om een beperkte set van attributen van verwerkingsacties die betrekking hebben op een specifiek verwerkt object te lezen die niet vertrouwelijk zijn of waarvan de vertrouwelijkheid van is opgeheven. 
+| `read:normal` | Laat toe om een beperkte set van attributen van te lezen van verwerkte objecten waarvan de verwerkingsactie niet vertrouwelijk is. 
+| `read:confidential` | Laat toe om een beperkte set van attributen van te lezen van verwerkte objecten waarvan de verwerkingsactie niet vertrouwelijk is of waarvan de vertrouwelijkheid van is opgeheven. 
 
 ### Gedrag
 
