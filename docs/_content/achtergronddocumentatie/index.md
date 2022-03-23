@@ -10,7 +10,8 @@ De onderstaande documentatie maakt deel uit van de verwerkingenlogging API-stand
 
 - [Quick Start Gids](../quickstart/index.md)
 - [Gegevens- en informatiemodel](../gegevensmodel/index.md)
-- [API-specificatie](../api/index.md)
+- [API-specificatie (bewerking)](../api-write/index.md)
+- [API-specificatie (inzage)](../api-read/index.md)
 
 # Definition of Done
 Bij de uitvoering van het project wordt een [Definition of Done (DoD)](../achtergronddocumentatie/definition_of_done.md) gehanteerd. Deze DoD is de checklist met criteria waar de API-standaard bij oplevering aan moet voldoen. 

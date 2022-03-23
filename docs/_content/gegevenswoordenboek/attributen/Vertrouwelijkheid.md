@@ -16,8 +16,6 @@ Mogelijke waarden:
 
 Merk op dat verwerkingen waarvan de vertrouwelijkheid is opgeheven nog wel gevoelige informatie kunnen bevatten. Er valt uit dit soort logentries bijvoorbeeld op te maken dat er een fraudeonderzoek is uitgevoerd.
 
-Zie ook [B3909](../../achtergronddocumentatie/ontwerp/artefacten/3909.md).
-
 ## Voorbeeld
 `Vertrouwelijk`
 

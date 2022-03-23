@@ -65,9 +65,9 @@ In onderstaande cases is bijzondere aandacht besteed aan de bescherming van de p
 ### Functies
 - [F4086: Opvragen verwerkte objecten – Beperkte set velden, niet vertrouwelijk](./ontwerp/artefacten/4086.md)
 - [F2008: Opvragen verwerkte objecten – Beperkte set velden, niet vertrouwelijk of vertrouwelijkheid opgeheven](./ontwerp/artefacten/2008.md)
-- [F9787: Opvragen verwerkingsacties – Alle velden, niet vertrouwelijk](./9787.md)
+- [F9787: Opvragen verwerkingsacties – Alle velden, niet vertrouwelijk](./ontwerp/artefacten/9787.md)
 - [F2525: Opvragen Verwerkingsacties – Alle velden, vertrouwelijkheid opgeheven](./ontwerp/artefacten/2525.md)
-- [F0143: Opvragen verwerkingsacties – Alle velden, vertrouwelijk](./0143.md)
+- [F0143: Opvragen verwerkingsacties – Alle velden, vertrouwelijk](./ontwerp/artefacten/0143.md)
 - [F6624: Log Vertrouwelijke Actie](./ontwerp/artefacten/6624.md)
 - [F2969: Wijzig vertrouwelijkheid van Verwerking](./ontwerp/artefacten/2969.md)
 

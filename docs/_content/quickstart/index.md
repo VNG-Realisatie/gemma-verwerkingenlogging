@@ -98,7 +98,7 @@ Hierbij logt het systeem de volgende informatie:
 Toelichting:
 * Systemen die de mogelijkheid bieden om administraties van meerdere gemeenten bij te houden mogen er niet vanuit gaan dat een verwerkingsactiviteit voor alle gemeenten dezelfde UUID heeft. Het moet dus mogelijk zijn om het systeem zo te configureren dat, voor bijvoorbeeld de verwerkingsactiviteit Geboorteaangifte, bij gemeente A een ander UUID gelogd wordt dan bij gemeente B.
 * Bij minimale verwerkingslogging mag de verwerking niet vertrouwelijk zijn en moet de bewaartermijn bekend zijn. Is dit niet het geval zie dan de uitleg over [volledige logging van verwerkingen](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/docs/_content/quickstart/index.md#Volledige-logging-van-verwerkingen).
-* Technisch gezien zijn maar weinig velden in het bericht verplicht (zie [Logging API](../api/index.md)). De velden zijn optioneel gemaakt om te voorkomen dat er niet gelogd wordt op het moment dat bepaalde informatie echt niet voorhanden is. Operationeel gezien moet wel geprobeerd worden zoveel mogelijk informatie te verstrekken. De velden zijn namelijk direct afgeleid uit de vereisten die de AVG stelt en zijn daarmee functioneel gezien niet optioneel.
+* Technisch gezien zijn maar weinig velden in het bericht verplicht (zie [Logging API](../api-write/index.md)). De velden zijn optioneel gemaakt om te voorkomen dat er niet gelogd wordt op het moment dat bepaalde informatie echt niet voorhanden is. Operationeel gezien moet wel geprobeerd worden zoveel mogelijk informatie te verstrekken. De velden zijn namelijk direct afgeleid uit de vereisten die de AVG stelt en zijn daarmee functioneel gezien niet optioneel.
 
 Een Verwerkingsactie kent drie velden die door het verwerkingenlog bepaald worden:
 * Het veld Actie ID wordt gevuld met een nieuw UUID.
@@ -143,7 +143,7 @@ Er zijn [diverse cases](../achtergronddocumentatie/ontwerp/cases/Opvragen_van_ge
 
 ## Inzage
 
-Voor inzage in het log kan binnengemeentelijk gebruik gemaakt worden van de Bewerking API-functie Opvragen Verwerkingsacties. Deze functie kent vier varianten:
+Voor inzage in het log kan binnengemeentelijk gebruik gemaakt worden van de Bewerking API-functie Opvragen Verwerkingsacties. Deze functie kent drie varianten:
 * Opvragen Verwerkingsacties – Alle velden, niet vertrouwelijk
 * Opvragen Verwerkingsacties – Alle velden, vertrouwelijkheid
 * Opvragen Verwerkingsacties – Alle velden, vertrouwelijkheid opgeheven
@@ -152,7 +152,7 @@ Voor inzage in het log door betrokkene (de burger) kan  gebruik gemaakt worden v
 * Opvragen Verwerkingsacties – Beperkte set velden, niet vertrouwelijk of vertrouwelijkheid opgeheven
 
 Over de verschillende functies:
-* Bij de inzage functie door de burger worden niet alle velden geretourneerd. Zo wordt om privacy redenen de gebruiker niet geretourneerd en om wille van de veiligheid het systeem en de gegevensopslag niet. 
+* Bij de inzage functie door de burger worden niet alle velden geretourneerd. Zo wordt om privacy redenen de gebruiker niet geretourneerd en omwille van de veiligheid het systeem en de gegevensopslag niet. 
 * De laatste binnengemeentelijke functies retourneren alle attributen wel. 
 * De ‘niet vertrouwelijke’ functies retourneren alleen verwerkingsacties over verwerkingen die niet vertrouwelijk zijn en die dit ook nooit geweest zijn. De ‘vertrouwelijkheid opgeheven’ functies retourneren ook verwerkingsacties die ooit vertrouwelijk geweest zijn. Verwerkingsacties acties die ooit vertrouwelijk waren, moet ook na het opheffen van die vertrouwelijkheid vaak gezien worden als ‘bijzondere persoonsgegevens’. Denk aan een fraudeonderzoek. Zelfs als een dergelijk onderzoek uiteindelijk niets opgeleverd heeft, kan het aantreffen van verwerkingsacties over een onderzoek leiden tot een vooroordeel. Deze functies mogen dus alleen door bevoegde functionarissen zoals Privacy Officers gebruikt worden.
 

@@ -4,7 +4,7 @@ name: ontwerpbesluiten
 date: '16-09-2020'
 ---
 
-Vanuit de uitwerking van de [cases](./ontwerpcases.md) zijn een aantal ontwerpbesluiten genomen. Per besluit is herleidbaar gemaakt aan welke case het gerelateerd is. Een overzicht van de relatie tussen besluiten en cases is [hier](./ontwerp/artefacten/20201011_Artefacten_en_cases.xlsx) te vinden.
+Vanuit de uitwerking van de [cases](./ontwerpcases.md) zijn een aantal ontwerpbesluiten genomen. Per besluit is herleidbaar gemaakt aan welke case het gerelateerd is. Een overzicht van de relatie tussen besluiten en cases is [hier](./artefacten/Artefacten_en_Cases.xlsx) te vinden.
 
 Deze ontwerpbesluiten zijn gegroepeerd naar specifieke aspect van de API-standaard. Onderkende aspecten zijn:
 - [fundamentele besluiten](./ontwerpbesluiten.md#fundamenteel), 
@@ -47,9 +47,9 @@ Per aspect kunnen ook aanbevelingen gelden. De aanbevelingen zijn op de [aanbeve
 - [B7571: Meerdere personen/objecten per verwerking](./artefacten/7571.md)
 - [B4555: Modellering van Verwerkt soort gegeven](./artefacten/4555.md)
 - [B7726: Geen opname van Resultaat verwerking](./artefacten/7726.md)
-- [B3133: Geen opname van Rol van de gebruiker](./artefacten/9330.md)
+- [B3133: Geen opname van Rol van de gebruiker](./artefacten/3133.md)
 - [B0233: Geen opname zoekcriteria op in het log](./artefacten/0233.md)
-- [B9330: Opname van Afnemer](./artefacten/3133.md)
+- [B9330: Opname van Afnemer](./artefacten/9330.md)
 - [B1598: Opname van Betrokkenheid](./artefacten/1598.md)
 - [B9559: Opname van Bewaartermijn](./artefacten/9559.md)
 - [B9207: Opname van Gebruiker](./artefacten/9207.md)

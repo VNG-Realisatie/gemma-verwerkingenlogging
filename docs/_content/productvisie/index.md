@@ -29,14 +29,13 @@ De API-standaard is toepasbaar voor alle informatiesystemen die gegevens van obj
 Gezien het belang van de API-standaard voor de regie van burgers op hun eigen gegevens is het het streven om de verwerkingenlogging API-standaard op termijn verplicht te maken voor alle gemeentelijke systemen die persoonsgegevens verwerken. Hiertoe zal na oplevering van de eerste productie-versie van de API-standaard een traject worden opgestart richting het College van Dienstverleningszaken van de VNG.
 
 ## Toegevoegde waarde voor gemeenten
-- Gemeenten kunnen op een eenvoudige, en gestandaardiseerde wijze de verwerkingenlogging ontsluiten van informatiesystemen die de API-standaard hebben geimplementeerd;
-- Gemeenten kunnen informatiesystemen die de API-standaard hebben geimplementeerd eenvoudig koppelen aan een gemeentelijk verwerkingenloggingregister;
+- Gemeenten kunnen op een eenvoudige, en gestandaardiseerde wijze de verwerkingenlogging ontsluiten van informatiesystemen die de API-standaard hebben geïmplementeerd;
+- Gemeenten kunnen informatiesystemen die de API-standaard hebben geïmplementeerd eenvoudig koppelen aan een gemeentelijk verwerkingenloggingregister;
 - Gemeenten kunnen op een gestandaardiseerde wijze burger faciliteren in hun recht op inzage van verwerkingen van hun gegevens;
 
 ## Toegevoegde waarde voor leveranciers
 - Geen eigen ontwerp van een koppelvlak nodig en daardoor lagere kosten;
 - Naadloze integratie met verwerkingenloggingregisters van andere partijen.
-
 
 
 

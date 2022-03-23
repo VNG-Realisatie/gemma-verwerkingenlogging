@@ -15,8 +15,10 @@ Bij het uitwerken van de Verwerkingenlogging API-standaard is gebruik gemaakt va
 - [NEN 7513 - Medische informatica – Logging – Vastleggen van acties op elektronische patiëntdossiers](https://)
 
 ## Architectuur
+- [GEMMA Thema Logging en verwerkingsactiviteiten](https://www.gemmaonline.nl/index.php/Thema_Logging_en_verwerkingsactiviteiten)
 - [GEMMA Gegevenslandschap - Register van verwerkingsactiviteiten v1 1](https://www.gemmaonline.nl/images/gemmaonline/e/e5/Gemeentelijk_gegevenslandschap_-_Register_van_verwerkingsactiviteiten.pdf)
 - [GEMMA Gegevenslandschap - Logging van verwerking van gegevens v1 1](https://www.gemmaonline.nl/images/gemmaonline/b/b7/Gegevenslandschap_-_Logging_van_verwerking_van_gegevens.pdf)
+- [GEMMA Gegevenslandschap - Interactiepatronen Verwerkingenlogging](https://www.gemmaonline.nl/index.php/Interactiepatronen_Verwerkingenlogging)
 
 ## Informatiebeveiliging
 - [Vooringevulde verwerkingsregister](https://www.informatiebeveiligingsdienst.nl/nieuws/vooringevuld-verwerkingsregister-gemeenten/)
