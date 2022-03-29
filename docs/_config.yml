@@ -43,8 +43,12 @@ nav:
         path: /achtergronddocumentatie/uitgangspunten    
       - title: Ontwerp
         path: /achtergronddocumentatie/ontwerp
-      - title: Inrichtingsscenarios  
-        path: /uitwerking/inrichtingsscenarios    
+      - title: Cases  
+        path: /achtergronddocumentatie/ontwerpcases    
+      - title: Besluiten  
+        path: /achtergronddocumentatie/ontwerpbesluiten
+      - title: Aanbevelingen  
+        path: /achtergronddocumentatie/aanbevelingen  
   - title: Vraag en antwoord 
     subnav:        
       - title: FAQ
