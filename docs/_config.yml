@@ -44,11 +44,11 @@ nav:
       - title: Ontwerp
         path: /achtergronddocumentatie/ontwerp
       - title: Cases  
-        path: /achtergronddocumentatie/ontwerpcases    
+        path: /achtergronddocumentatie/ontwerp/ontwerpcases    
       - title: Besluiten  
-        path: /achtergronddocumentatie/ontwerpbesluiten
+        path: /achtergronddocumentatie/ontwerp/ontwerpbesluiten
       - title: Aanbevelingen  
-        path: /achtergronddocumentatie/aanbevelingen  
+        path: /achtergronddocumentatie/ontwerp/aanbevelingen  
   - title: Vraag en antwoord 
     subnav:        
       - title: FAQ
