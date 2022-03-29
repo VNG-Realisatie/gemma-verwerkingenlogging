@@ -1,0 +1,24 @@
+---
+layout: page-with-side-nav
+title: Attribuut - Vervallen 
+date: 28-03-2022
+---
+
+# Attribuut - Vervallen 
+
+## Beschrijving
+Geeft aan of een verwerkingsactie als vervallen beschouwd dient te worden.
+
+## Toelichting
+Vervallen items dienen voor normale gebruikers van het log niet zichtbaar te zijn. Ze zijn ‘logisch’ verwijderd.
+
+Zie ook [B3891](../../achtergronddocumentatie/ontwerp/artefacten/3891.md) en [B8641](../../achtergronddocumentatie/ontwerp/artefacten/8641.md).
+
+## Voorbeeld
+`Ja`
+
+## Attribuuttype
+[Ja/Nee](../attribuuttypen/Ja_Nee.md)
+
+## Aanwezigheid
+[`Verplicht`](../../gegevenswoordenboek/readme.md#bijzondere-meta-attributen)
