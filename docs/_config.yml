@@ -44,11 +44,7 @@ nav:
       - title: Ontwerp
         path: /achtergronddocumentatie/ontwerp
       - title: Inrichtingsscenarios  
-        path: /uitwerking/inrichtingsscenarios  
-      - title: Best practices
-        path: /uitwerking/practices   
-      - title: Terminologie  
-        path: /uitwerking/terminologie      
+        path: /uitwerking/inrichtingsscenarios    
   - title: Vraag en antwoord 
     subnav:        
       - title: FAQ
