@@ -1,5 +1,5 @@
 baseurl: "/gemma-verwerkingenlogging"
-apiname: "GEMMA Verwerkingenlogging"
+apiname: "GEMMA Verwerkingenlogging "
 url: "http://localhost:4000"
 # nav is t.b.v. generatie side-navigation menu.
 # Een 'title' zonder path of url genereert slechts een kopje.
@@ -21,9 +21,9 @@ nav:
     subnav:
       - title: Basisterminologie
         path: /gegevensmodel/basisterminologie
-      - title: Semantisch informatiemodel (SIM)  
+      - title: Semantisch model (SIM)  
         path: /gegevensmodel/semantisch_informatiemodel
-      - title: Uitwisselingsgegevensmodel (UGM)  
+      - title: Uitwisselingsmodel (UGM)  
         path: /gegevensmodel/uitwisselingsgegevensmodel
       - title: Gegevenswoordenboek  
         path: /gegevenswoordenboek       

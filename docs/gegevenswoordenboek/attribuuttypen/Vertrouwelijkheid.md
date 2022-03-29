@@ -1,8 +1,10 @@
 ---
-title: "Attribuuttype - Vertrouwelijkheid"
-name: Attribuuttype - Vertrouwelijkheid
-date: 29-09-2020
+layout: page-with-side-nav
+title: Attribuuttype - Vertrouwelijkheid
+date: 28-03-2022
 ---
+
+# Attribuuttype - Vertrouwelijkheid
 
 ## Logisch datatype
 Enumeratie

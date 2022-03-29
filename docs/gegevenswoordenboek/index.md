@@ -1,8 +1,11 @@
 ---
-title: "Gegevenswoordenboek logging van verwerkingen"
-name: Gegevenswoordenboek
-date: 28-09-2020
+layout: page-with-side-nav
+title: Gegevenswoordenboek logging van verwerkingen
+date: 28-03-2022
 ---
+
+# Gegevenswoordenboek logging van verwerkingen
+
 ## Terminologie en volgorde
 Dit gegevenswoordenboek beschrijft het [uitwisselingsgegevensmodel (UGM)](../gegevensmodel/uitwisselingsgegevensmodel/readme.md). Daarbij wordt de volgende terminologie gehanteerd:
 

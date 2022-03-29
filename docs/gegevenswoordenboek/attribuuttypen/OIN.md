@@ -1,8 +1,10 @@
 ---
-title: "Attribuuttype - Organisatie Identificatie Nummer (OIN)"
-name: Attribuuttype - Organisatie Identificatie Nummer (OIN)
-date: 29-09-2020
+layout: page-with-side-nav
+title: Attribuuttype - Organisatie Identificatie Nummer (OIN)
+date: 28-03-2022
 ---
+
+# Attribuuttype - Organisatie Identificatie Nummer (OIN)
 
 ## Logisch datatype
 Numeriek

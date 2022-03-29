@@ -1,8 +1,11 @@
 ---
-title: "Objecttype - Verwerkt object"
-name: Objecttype - Verwerkt object
-date: 28-09-2020
+layout: page-with-side-nav
+title: Objecttype - Verwerkt object
+date: 28-03-2022
 ---
+
+# Objecttype - Verwerkt object
+
 ## Beschrijving
 Een persoon of object betrokken bij de verwerkingsactie.
 

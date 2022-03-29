@@ -1,8 +1,10 @@
 ---
-title: "Objecttype - Verwerkingsactie"
-name: Objecttype - Verwerkingsactie
-date: 28-09-2020
+layout: page-with-side-nav
+title: Objecttype - Verwerkingsactie
+date: 28-03-2022
 ---
+
+# Objecttype - Verwerkingsactie
 
 ## Beschrijving
 Een verwerkingsactie is een operatie die wordt uitgevoerd door een geautomatiseerd systeem waarbij er (persoons)gegevens verwerkt worden.

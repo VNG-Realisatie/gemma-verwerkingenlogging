@@ -1,8 +1,10 @@
 ---
-title: "Attribuuttype - Naam"
-name: Attribuuttype - Naam
-date: 28-09-2020
+layout: page-with-side-nav
+title: Attribuuttype - Naam
+date: 28-03-2022
 ---
+
+# Attribuuttype - Naam
 
 ## Logisch datatype
 Alfanumeriek

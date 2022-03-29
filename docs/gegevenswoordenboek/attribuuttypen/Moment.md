@@ -1,8 +1,10 @@
 ---
-title: "Attribuuttype - Moment"
-name: Attribuuttype - Moment
-date: 29-09-2020
+layout: page-with-side-nav
+title: Attribuuttype - Moment
+date: 28-03-2022
 ---
+
+# Attribuuttype - Moment
 
 ## Logisch datatype
 Datum & tijd

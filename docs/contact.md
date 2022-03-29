@@ -3,6 +3,7 @@ layout: page-with-side-nav
 title: Contact
 date: 28-03-2022
 ---
+
 # Contact
 Gemeenten en VNG Realisatie werken samen aan de (door)ontwikkeling van de API's voor de logging van verwerkingsactiviteiten werken. Het beheer vindt plaats onder regie van VNG Realisatie.
 

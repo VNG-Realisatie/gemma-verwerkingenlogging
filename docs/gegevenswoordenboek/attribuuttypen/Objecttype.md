@@ -1,8 +1,10 @@
 ---
-title: "Attribuuttype - Objecttype"
-name: Attribuuttype - Objecttype
-date: 29-09-2020
+layout: page-with-side-nav
+title: Attribuuttype - Objecttype
+date: 28-03-2022
 ---
+
+# Attribuuttype - Objecttype
 
 ## Logisch datatype
 Enumeratie

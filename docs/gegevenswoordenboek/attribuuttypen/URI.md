@@ -1,8 +1,10 @@
 ---
-title: "Attribuuttype - Uniform Resource Identifier (URI)"
-name: Attribuuttype - Uniform Resource Identifier (URI)
-date: 16-12-2020
+layout: page-with-side-nav
+title: Attribuuttype - Uniform Resource Identifier (URI)
+date: 28-03-2022
 ---
+
+# Attribuuttype - Uniform Resource Identifier (URI)
 
 ## Logisch datatype
 Alfanumeriek

@@ -1,8 +1,10 @@
 ---
-title: "Attribuuttype - Universal Unique IDentifier (UUID)"
-name: Attribuuttype - Universal Unique IDentifier (UUID)
-date: 28-09-2020
+layout: page-with-side-nav
+title: Attribuuttype - Universal Unique IDentifier (UUID)
+date: 28-03-2022
 ---
+
+# Attribuuttype - Universal Unique IDentifier (UUID)
 
 ## Logisch datatype
 Alfanumeriek

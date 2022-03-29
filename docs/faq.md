@@ -1,8 +1,9 @@
 ---
-title: "Veelgestelde vragen"
-date: '10-10-2020'
-weight: 40
+layout: page-with-side-nav
+title: Veelgestelde vragen
+date: 28-03-2022
 ---
+
 # Veel gestelde vragen
 
 ## Algemeen
