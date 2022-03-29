@@ -245,6 +245,7 @@ Als we ons even beperken tot deze twee externe aanroepen ontstaat uiteindelijk h
 
 <img src="./assets/Maximaal_3.png" alt="Voorbeeld vertrouwelijke verwerking in keten (3 van 3)" width="700"/>
 
+
 In het verwerkingenlog van de gemeente treffen we de verwerkingen aan van Applicatie Sociale zaken (Nummer 1 en 3). Overigens zal deze applicatie ongetwijfeld nog meer verwerkingen gelogd hebben waarbij er alleen binnen de applicatie persoonsgegevens verwerkt werden. Daarnaast treffen we de verwerkingen aan van het gegevensmagazijn (4).
 De verwerking die uitgevoerd is door de basisregistratie is alleen te vinden in het verwerkingenlog van de basisregistratie (2).
 
