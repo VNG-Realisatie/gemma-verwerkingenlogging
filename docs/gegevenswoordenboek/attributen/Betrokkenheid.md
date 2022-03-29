@@ -1,8 +1,10 @@
 ---
-title: "Attribuut - Betrokkenheid"
-name: Attribuut - Betrokkenheid
-date: 28-09-2020
+layout: page-with-side-nav
+title: Attribuut - Betrokkenheid
+date: 28-03-2022
 ---
+
+# Attribuut - Betrokkenheid
 
 ## Beschrijving
 Geeft aan in welke hoedanigheid de persoon of het object betrokken was bij de verwerkingsactie.

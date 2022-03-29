@@ -1,8 +1,10 @@
 ---
-title: "Attribuut - Soort object ID"
-name: Attribuut - Soort object ID
-date: 28-09-2020
+layout: page-with-side-nav
+title: Attribuut - Soort object ID
+date: 28-03-2022
 ---
+
+# Attribuut - Soort object ID
 
 ## Beschrijving
 Soort identificator waarmee het object geïdentificeerd wordt.

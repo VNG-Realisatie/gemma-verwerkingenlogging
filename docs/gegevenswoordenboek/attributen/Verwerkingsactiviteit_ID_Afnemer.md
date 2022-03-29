@@ -1,8 +1,10 @@
 ---
-title: "Attribuut - Verwerkingsactiviteit ID Afnemer"
-name: Attribuut - Verwerkingsactiviteit ID Afnemer
-date: 03-11-2020
+layout: page-with-side-nav
+title: Attribuut - Verwerkingsactiviteit ID Afnemer  
+date: 28-03-2022
 ---
+
+# Attribuut - Verwerkingsactiviteit ID Afnemer
 
 ## Beschrijving
 Identificator van de verwerkingsactiviteit aan de kant van de afnemer.

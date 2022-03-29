@@ -1,8 +1,10 @@
 ---
-title: "Attribuut - Verwerkt object"
-name: Attribuut - Verwerkt object
-date: 28-09-2020
+layout: page-with-side-nav
+title: Attribuut - Verwerkt object
+date: 28-03-2022
 ---
+
+# Attribuut - Verwerkt object
 
 ## Beschrijving
 Verwerkt object waar het soort gegeven bij hoort.

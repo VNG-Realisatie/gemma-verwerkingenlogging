@@ -1,8 +1,10 @@
 ---
-title: "Attribuut - Verwerking ID"
-name: Attribuut - Verwerking ID
-date: 28-09-2020
+layout: page-with-side-nav
+title: Attribuut - Verwerking ID  
+date: 28-03-2022
 ---
+
+# Attribuut - Verwerking ID  
 
 ## Beschrijving
 Identificator van de verwerking waar de handeling een onderdeel van is.

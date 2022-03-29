@@ -1,8 +1,10 @@
 ---
-title: "Attribuut - Verwerkingsactiviteit URL"
-name: Attribuut - Verwerkingsactiviteit URL
-date: 18-12-2020
+layout: page-with-side-nav
+title: Attribuut - Verwerkingsactiviteit URL 
+date: 28-03-2022
 ---
+
+# Attribuut - Verwerkingsactiviteit URL 
 
 ## Beschrijving
 Url naar de resource van de verwerkingsactiviteit die de verwerking rechtvaardigt.

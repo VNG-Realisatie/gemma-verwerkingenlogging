@@ -1,8 +1,10 @@
 ---
-title: "Attribuut - Vervallen"
-name: Attribuut - Vervallen
-date: 28-09-2020
+layout: page-with-side-nav
+title: Attribuut - Vervallen 
+date: 28-03-2022
 ---
+
+# Attribuut - Vervallen 
 
 ## Beschrijving
 Geeft aan of een verwerkingsactie als vervallen beschouwd dient te worden.

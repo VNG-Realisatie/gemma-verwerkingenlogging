@@ -1,8 +1,10 @@
 ---
-title: "Attribuut - Verwerking ID Afnemer"
-name: Attribuut - Verwerking ID Afnemer
-date: 28-09-2020
+layout: page-with-side-nav
+title: Attribuut - Verwerking ID Afnemer 
+date: 28-03-2022
 ---
+
+# Attribuut - Verwerking ID Afnemer 
 
 ## Beschrijving
 Identificator van de verwerking aan de kant van de afnemer.

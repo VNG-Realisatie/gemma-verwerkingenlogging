@@ -1,8 +1,10 @@
 ---
-title: "Attribuut - Uitvoerder"
-name: Attribuut - Uitvoerder
-date: 28-09-2020
+layout: page-with-side-nav
+title: Attribuut - Uitvoerder 
+date: 28-03-2022
 ---
+
+# Attribuut - Uitvoerder 
 
 ## Beschrijving
 Organisatie die de verwerking uitgevoerd heeft.

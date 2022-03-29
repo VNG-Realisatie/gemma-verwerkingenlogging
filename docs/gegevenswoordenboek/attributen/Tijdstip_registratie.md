@@ -1,8 +1,10 @@
 ---
-title: "Attribuut - Tijdstip registratie"
-name: Attribuut - Tijdstip registratie
-date: 16-12-2020
+layout: page-with-side-nav
+title: Attribuut - Tijdstip registratie
+date: 28-03-2022
 ---
+
+# Attribuut - Tijdstip registratie
 
 ## Beschrijving
 Tijdstip waarop de verwerkingsactie in het log is geregistreerd.

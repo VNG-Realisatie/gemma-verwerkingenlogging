@@ -1,8 +1,10 @@
 ---
-title: "Attribuut - Vertrouwelijkheid"
-name: Attribuut - Vertrouwelijkheid
-date: 28-09-2020
+layout: page-with-side-nav
+title: Attribuut - Vertrouwelijkheid 
+date: 28-03-2022
 ---
+
+# Attribuut - Vertrouwelijkheid 
 
 ## Beschrijving
 Geeft de mate van vertrouwelijkheid van de verwerking aan.

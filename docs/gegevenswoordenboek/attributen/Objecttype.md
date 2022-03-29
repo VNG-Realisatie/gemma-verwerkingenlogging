@@ -1,8 +1,10 @@
 ---
-title: "Attribuut - Objecttype"
-name: Attribuut - Objecttype
-date: 28-09-2020
+layout: page-with-side-nav
+title: Attribuut - Objecttype
+date: 28-03-2022
 ---
+
+# Attribuut - Objecttype
 
 ## Beschrijving
 Soort object dat bij de verwerkingsactie betrokken is.

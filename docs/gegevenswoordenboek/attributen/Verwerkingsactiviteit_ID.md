@@ -1,8 +1,10 @@
 ---
-title: "Attribuut - Verwerkingsactiviteit ID"
-name: Attribuut - Verwerkingsactiviteit ID
-date: 28-09-2020
+layout: page-with-side-nav
+title: Attribuut - Verwerkingsactiviteit ID
+date: 28-03-2022
 ---
+
+# Attribuut - Verwerkingsactiviteit ID
 
 ## Beschrijving
 Identificator van de verwerkingsactiviteit die de verwerking rechtvaardigt.

@@ -1,8 +1,10 @@
 ---
-title: "Attribuut - Soort gegeven"
-name: Attribuut - Soort gegeven
-date: 28-09-2020
+layout: page-with-side-nav
+title: Attribuut - Soort gegeven
+date: 28-03-2022
 ---
+
+# Attribuut - Soort gegeven
 
 ## Beschrijving
 Soort gegeven dat verwerkt is.

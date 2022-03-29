@@ -1,8 +1,10 @@
 ---
-title: "Attribuut - Tijdstip"
-name: Attribuut - Tijdstip
-date: 16-12-2020
+layout: page-with-side-nav
+title: Attribuut - Tijdstip 
+date: 28-03-2022
 ---
+
+# Attribuut - Tijdstip 
 
 ## Beschrijving
 Tijdstip waarop de verwerkingsactie is uitgevoerd.

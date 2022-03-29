@@ -1,8 +1,10 @@
 ---
-title: "Attribuut - Actie ID"
-name: Attribuut - Actie ID
-date: 28-09-2020
+layout: page-with-side-nav
+title: Attribuut - Actie ID
+date: 28-03-2022
 ---
+
+# Attribuut - Actie ID
 
 ## Beschrijving
 Identificator die de verwerkingsactie uniek identificeert.

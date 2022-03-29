@@ -1,8 +1,10 @@
 ---
-title: "Attribuut - Bewaartermijn"
-name: Attribuut - Bewaartermijn
-date: 16-12-2020
+layout: page-with-side-nav
+title: Attribuut - Bewaartermijn
+date: 28-03-2022
 ---
+
+# Attribuut - Bewaartermijn
 
 ## Beschrijving
 Periode waarin de verwerking bewaard moet blijven.

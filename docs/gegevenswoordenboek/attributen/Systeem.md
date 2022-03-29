@@ -1,8 +1,10 @@
 ---
-title: "Attribuut - Systeem"
-name: Attribuut - Systeem
-date: 28-09-2020
+layout: page-with-side-nav
+title: Attribuut - Systeem
+date: 28-03-2022
 ---
+
+# Attribuut - Systeem
 
 ## Beschrijving
 Het systeem dat de verwerkingsactie heeft uitgevoerd.

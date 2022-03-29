@@ -1,8 +1,10 @@
 ---
-title: "Attribuut - Afnemer ID"
-name: Attribuut - Afnemer ID
-date: 28-09-2020
+layout: page-with-side-nav
+title: Attribuut - Afnemer ID
+date: 28-03-2022
 ---
+
+# Attribuut - Afnemer ID
 
 ## Beschrijving
 Bij levering van gegevens moet hier de identificator opgenomen worden van de organisatie die de gegevens ontvangt. Het attribuut [Soort afnemer ID](./Soort_afnemer_ID.md)) bepaalt wat voor soort identificator gebruikt wordt om de afnemer te identificeren. Op dit moment kan gekozen worden uit een OIN voor organisaties en een BSN voor natuurlijke personen.

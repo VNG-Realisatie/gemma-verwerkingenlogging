@@ -1,8 +1,10 @@
 ---
-title: "Attribuut - Gegevensbron"
-name: Attribuut - Gegevensbron
-date: 28-09-2020
+layout: page-with-side-nav
+title: Attribuut - Gegevensbron
+date: 28-03-2022
 ---
+
+# Attribuut - Gegevensbron
 
 ## Beschrijving
 Gegevensbron waarin de bij de verwerkingsactie betrokken gegevens zijn opgeslagen.

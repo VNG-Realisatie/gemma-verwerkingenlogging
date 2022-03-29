@@ -1,8 +1,10 @@
 ---
-title: "Attribuut - Handeling Naam"
-name: Attribuut - Handeling Naam
-date: 28-09-2020
+layout: page-with-side-nav
+title: Attribuut - Handeling Naam
+date: 28-03-2022
 ---
+
+# Attribuut - Handeling Naam
 
 ## Beschrijving
 Naam van de handeling waar de verwerkingsactie onderdeel van is.

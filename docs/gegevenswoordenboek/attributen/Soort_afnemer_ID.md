@@ -1,8 +1,10 @@
 ---
-title: "Attribuut - Soort afnemer ID"
-name: Attribuut - Soort afnemer ID
-date: 11-11-2020
+layout: page-with-side-nav
+title: Attribuut - Soort afnemer ID
+date: 28-03-2022
 ---
+
+# Attribuut - Soort afnemer ID
 
 ## Beschrijving
 Soort identificator waarmee de afnemer geïdentificeerd wordt.

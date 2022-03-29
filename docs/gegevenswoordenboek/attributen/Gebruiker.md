@@ -1,8 +1,10 @@
 ---
-title: "Attribuut - Gebruiker"
-name: Attribuut - Gebruiker
-date: 28-09-2020
+layout: page-with-side-nav
+title: Attribuut - Gebruiker
+date: 28-03-2022
 ---
+
+# Attribuut - Gebruiker
 
 ## Beschrijving
 Identificator van de gebruiker die de verwerkingsactie heeft geïnitieerd.
