@@ -1,52 +1,72 @@
+baseurl: "/IAM"
+apiname: "Referentiearchitectuur voor het werken met APIs"
+url: "http://localhost:4000"
+# nav is t.b.v. generatie side-navigation menu.
+# Een 'title' zonder path of url genereert slechts een kopje.
+# 'path' vormt tezamen met de baseurl de url waarmee de 'href' wordt gevuld. 
+# Indien een 'url' voorradig dan wordt daarmee de 'href' gevuld en dient het path slechts om te bepalen welke link active is.
+# 'target: blank' zorgt er voor dat de link in een nieuw tabblad wordt geöpend.
+nav:
+  - title: GEMMA Verwerkingenlogging
+    subnav:
+      - title: Project
+        path: /
+      - title: Productvisie
+        path: /productvisie    
+      - title: Quick-start
+        path: /quickstart       
+      - title: Architectuur
+        path: /architectuur
+  - title: Informatiemodel
+    subnav:
+      - title: Basisterminologie
+        path: /gegevensmodel/basisterminologie
+      - title: Semantisch informatiemodel (SIM)  
+        path: /gegevensmodel/semantisch_informatiemodel
+      - title: Uitwisselingsgegevensmodel (UGM)  
+        path: /gegevensmodel/uitwisselingsgegevensmodel
+      - title: Gegevenswoordenboek  
+        path: /gegevenswoordenboek       
+  - title: API-standaard 
+    subnav:
+      - title: Bewerking API
+        path: /api-write
+      - title: Inzage API  
+        path: /api-read
+      - title: Referentieimplementatie  
+        path: /referentieimplementatie
+  - title: Achtergronddocumentatie 
+    subnav:
+      - title: Algemeen
+        path: /achtergronddocumentatie  
+      - title: Uitgangspunten
+        path: /achtergronddocumentatie/uitgangspunten    
+      - title: Ontwerp
+        path: /achtergronddocumentatie/ontwerp
+      - title: Inrichtingsscenarios  
+        path: /uitwerking/inrichtingsscenarios  
+      - title: Best practices
+        path: /uitwerking/practices   
+      - title: Terminologie  
+        path: /uitwerking/terminologie      
+  - title: Vraag en antwoord 
+    subnav:        
+      - title: FAQ
+        path: /faq
+      - title: Contact
+        path: /contact
+
 plugins:
   - jekyll-redirect-from
   - jekyll-remote-theme
-  - jekyll-relative-links
-
-relative_links:
-  enabled:     true
-  collections: true
-  
-include:
-  - CONTRIBUTING.md
-  - README.md
-  - LICENSE.md
-  - COPYING.md
-  - CODE_OF_CONDUCT.md
-  - CONTRIBUTING.md
-  - ISSUE_TEMPLATE.md
-  - PULL_REQUEST_TEMPLATE.md
-  
-collections:
-  content:
-    output: true
-    permalink: /:path
-  assets:
-    output: true
-    permalink: /:path
-
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: default
-  - scope:
-      path: ""
-      type: "content"
-    values:
-      layout: default
-
-markdown: kramdown
-
-exclude:
-  - archief
-
-remote_theme: VNG-Realisatie/jekyll-theme-vng
-#remote_theme: maykinmedia/jekyll-theme-vng 
 
 github: VNG-Realisatie/gemma-verwerkingenlogging
 
-theme: jekyll-theme-time-machine
+theme: jekyll-theme-cayman
 
-project_name: gemma-verwerkingenlogging
+remote_theme: VNG-Realisatie/jekyll-theme-vng-realisatie
+
+project_name: /gemma-verwerkingenlogging
+
+standard_family: nvt
+
