@@ -4,7 +4,7 @@ title: Aanvullende specificaties voor POST /verwerkingsacties
 date: 28-03-2022
 ---
 
-# Aanvullende specificaties voor PSOT /verwerkingsacties
+# Aanvullende specificaties voor POST /verwerkingsacties
 
 ## Autorisatie
 
