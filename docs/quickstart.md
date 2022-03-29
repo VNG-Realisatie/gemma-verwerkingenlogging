@@ -8,21 +8,6 @@ date: 28-03-2022
 
 Deze Quick Start Guide is geschreven voor iedereen die te maken krijgt met logging van verwerkingen: functionarissen gegevensbescherming, privacy officers, informatiearchitecten, ontwikkelaars, beheerders et cetera.
 
-## Inhoudsopgave
-
-**Gemeentelijke voorzieningen**
-
-* [Voorbereiden Gemeentelijk Verwerkingsactiviteitenregister](./quickstart.md#Voorbereiden-Gemeentelijk-Verwerkingsactiviteitenregister)
-
-* [Voorbereiden Gemeentelijk Verwerkingenlog](./quickstart.md#Voorbereiden-Gemeentelijk-Verwerkingenlog)
-
-**Implementatie van de Verwerkingenlogging API**
-
-* [Minimale logging van verwerkingen](./quickstart.md#Minimale-logging-van-verwerkingen)
-
-* [Volledige logging van verwerking](./quickstart.md#Volledige-logging-van-verwerkingen).
-
-
 ## Gemeentelijke voorzieningen
 
 Hieronder wordt beknopt beschreven welke zaken een gemeente minimaal moet regelen om in de informatievoorziening te kunnen starten met het loggen van verwerkingen op basis van de door VNG Realisatie gestandaardiseerde Verwerkingenlogging API.
