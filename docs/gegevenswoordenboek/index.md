@@ -7,7 +7,7 @@ date: 28-03-2022
 # Gegevenswoordenboek logging van verwerkingen
 
 ## Terminologie en volgorde
-Dit gegevenswoordenboek beschrijft het [uitwisselingsgegevensmodel (UGM)](../gegevensmodel/uitwisselingsgegevensmodel/readme.md). Daarbij wordt de volgende terminologie gehanteerd:
+Dit gegevenswoordenboek beschrijft het [uitwisselingsgegevensmodel (UGM)](../gegevensmodel/uitwisselingsgegevensmodel.md). Daarbij wordt de volgende terminologie gehanteerd:
 
 |Term|Beschrijving|Voorbeeld|
 |--|--|--|
