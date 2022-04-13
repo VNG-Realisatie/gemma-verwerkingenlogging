@@ -64,7 +64,7 @@ Zouden we ook handmatige gegevensverwerkingen loggen dan zou ook het bekijken va
 ## Voorbeelden
 Onderstaande tabel toont voor vijf verschillende cases voorbeelden bij de begrippen:
 
-<img src="/assets/cases.png" alt="SIM" width="600"/>
+<img src="./assets/cases.png" alt="SIM" width="600"/>
 
 Opmerkingen bij de cases:
 -	Bij cases 1 en 5 is de verwerkingsactiviteit duidelijk een categorie van bij elkaar horende verwerkingen. Anders gezegd: Een burger kan deze verwerkingen niet één op één terugvinden op de website van de gemeente.
