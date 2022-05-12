@@ -23,7 +23,7 @@ paths:
         - name: objecttype
           in: query
           description: Soort object dat bij de verwerkingsactie betrokken is.
-          # required: true
+          required: true
           schema:
             type: string
             enum:
@@ -32,7 +32,7 @@ paths:
         - name: soortObjectId
           in: query
           description: Soort identificator waarmee het object geïdentificeerd wordt.
-          # required: true
+          required: true
           schema:
             type: string
             format: naam
@@ -41,7 +41,7 @@ paths:
         - name: objectId
           in: query
           description: Identificator van het object.
-          # required: true
+          required: true
           schema:
             type: string
             format: identificator
