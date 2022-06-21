@@ -26,9 +26,9 @@ De API-standaard wordt ontwikkeld voor partijen die informatiesystemen ontwikkel
 Hoewel deze API-standaard primair ontwikkeld is voor gebruik door gemeenten en hun softwareleveranciers is de standaard ook toepasbaar binnen andere delen van de overheid. De standaard bevat namelijk geen gemeente-specifieke elementen. 
 
 ## Wordt de API-standaard verplicht?
-De API-standaard is toepasbaar voor alle informatiesystemen die gegevens van objecten verwerken. Voor informatiesystemen die geen persoonsgegevens maar wel gegevens van andere soorten objecten verwerken is implementatie optioneel. Voor systemen die wel persoonsgegevens verwerken is de API-standaard aanbevolen.
+De API-standaard is toepasbaar voor alle informatiesystemen die gegevens van objecten verwerken. De standaard bestaat uit twee delen. Het eerste deel, de bewerkingen-API, is een API voor het toevoegen en bewerken van verwerkingen. Het tweede deel is een API voor het ontsluiten van vastgelegde verwerkingen naar de burger: de inzage-API. 
 
-Gezien het belang van de API-standaard voor de regie van burgers op hun eigen gegevens is het het streven om de verwerkingenlogging API-standaard op termijn verplicht te maken voor alle gemeentelijke systemen die persoonsgegevens verwerken. Hiertoe zal na oplevering van de eerste productie-versie van de API-standaard een traject worden opgestart richting het College van Dienstverleningszaken van de VNG.
+Gezien het belang van regie van burgers op hun eigen gegevens is het het streven om de twee delen van de verwerkingenlogging API-standaard op termijn een bepaalde mate van verplichtendheid mee te geven vanuit de VNG. Het idee daarbij is nu om voor informatiesystemen die geen persoonsgegevens maar wel gegevens van andere soorten objecten verwerken implementatie van de bewerkingen-API optioneel te maken. Voor systemen die wel persoonsgegevens verwerken is implementatie van de bewerkingen-API aanbevolen (vomply-or-explain). Ten aanzien van de inzage-API is deze verplicht te implementeren voor systemen die verwerkingen vastleggen.
 
 ## Toegevoegde waarde voor gemeenten
 - Gemeenten kunnen op een eenvoudige, en gestandaardiseerde wijze de verwerkingenlogging ontsluiten van informatiesystemen die de API-standaard hebben geïmplementeerd;
