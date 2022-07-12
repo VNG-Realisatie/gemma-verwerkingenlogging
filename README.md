@@ -1,6 +1,6 @@
 # Verwerkingenlogging
 
-De Verwerkingenlogging is de uitwerking van een informatiemodel en bijbehorende API specificaties ten behoeve van de vastlegging van de verwerking van gegevens in het kader van de AVG .
+De Verwerkingenlogging is de gemeentelijke uitwerking van een informatiemodel en bijbehorende API specificaties ten behoeve van de vastlegging van de verwerking van gegevens in het kader van de AVG. Zowel de standaard als het informatiemodel maken deel uit van de Gemeentelijke Model Architectuur (GEMMA).
 
 ## Werkingsgebied 
 Het werkingsgebied voor de ontwikkelde standaard is: gemeenten en gemeentelijke samenwerkingsverbanden.
