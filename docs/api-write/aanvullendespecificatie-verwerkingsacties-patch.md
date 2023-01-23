@@ -17,12 +17,12 @@ date: 28-03-2022
 
 | Regel | Foutcode |
 | :---- | :---- |
-| Bij autorisatiescope `update:normal` moet de vertrouwelijkheid van de oorspronkelijke verwerkingsactie 'Normaal' zijn en mag alleen het element `bezwaartermijn` gewijzigd worden. | 403 |
-| Bij autorisatiescope `update:confidential` mogen zowel het element `bezwaartermijn` als `vertrouwelijk` gewijzigd worden. | 403 |
+| Bij autorisatiescope `update:normal` moet de vertrouwelijkheid van de oorspronkelijke verwerkingsactie 'Normaal' zijn en mag alleen het element `bewaartermijn` gewijzigd worden. | 403 |
+| Bij autorisatiescope `update:confidential` mogen zowel het element `bewaartermijn` als `vertrouwelijk` gewijzigd worden. | 403 |
 
 ## Gedrag
 
-* Alle verwerkingsacties met de opgegeven query parameter `verwerkingId` worden met de opgegeven `bezwaartermijn` of/en `vertrouwelijkheid` aangepast.
+* Alle verwerkingsacties met de opgegeven query parameter `verwerkingId` worden met de opgegeven `bewaartermijn` of/en `vertrouwelijkheid` aangepast.
 * Als de `verwerkingId` niet gematcht kan worden met een verwerkingsactie of de gevonden verwerkingsactie blijkt te zijn vervallen, dan wordt een `HTTP 400` foutmelding teruggestuurd.
 
 In [B3891](../achtergronddocumentatie/ontwerp/artefacten/3891.md) is beschreven hoe een log dat in technische zin immutable is toch in logische zin kan worden aangepast.
