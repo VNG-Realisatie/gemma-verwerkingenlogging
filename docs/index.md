@@ -37,7 +37,7 @@ Gemeenten en leveranciers worden aangemoedigd om bij te dragen aan het project. 
 - [Omgangsvormen](https://github.com/VNG-Realisatie/Tutorial/blob/master/CODE_OF_CONDUCT.md)
 
 ## Beheer en ondersteuning
-Contact: standaarden.ondersteuning@vng.nl
+Contact: [standaarden.ondersteuning@vng.nl](mailto:standaarden.ondersteuning@vng.nl)
 
 ## Licentie
 Copyright &copy; VNG Realisatie 2022
