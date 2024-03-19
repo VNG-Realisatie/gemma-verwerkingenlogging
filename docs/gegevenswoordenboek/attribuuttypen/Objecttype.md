@@ -13,7 +13,7 @@ Enumeratie
 
 | Waarde | Betekenis |
 |-|-|
-| Persoon | Natuurlijk persoon |
+| persoon | Natuurlijk persoon |
 
 ## Bijzonderheden
 In een later stadium kunnen andere soorten objecten waarvoor logging gewenst is, toegevoegd worden aan deze enumeratie.
