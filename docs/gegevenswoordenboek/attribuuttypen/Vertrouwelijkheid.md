@@ -13,6 +13,6 @@ Enumeratie
 
 | Waarde | Betekenis |
 |-|-|
-| Normaal | Niet vertrouwelijk |
-| Vertrouwelijk | Vertrouwelijk |
-| Opgeheven | Vertrouwelijkheid opgeheven |
+| normaal | Niet vertrouwelijk |
+| vertrouwelijk | Vertrouwelijk |
+| opgeheven | Vertrouwelijkheid opgeheven |
