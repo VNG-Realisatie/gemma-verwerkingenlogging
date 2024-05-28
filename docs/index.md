@@ -9,7 +9,7 @@ Organisaties die persoonsgegevens verwerken zijn conform de [Algemene Verordenin
 ## Werkingsgebied 
 Het primaire werkingsgebied voor deze API-standaard is: gemeenten en gemeentelijke samenwerkingsverbanden. Ook andere organisaties kunnen deze API-standaard hanteren aangezien er geen gemeente-specifieke zaken in de API-standaard zijn opgenomen.
 
-## Status van de API-standaard
+## Status van de API-standaard (28 mei 2024)
 Deze API-standaard is in 2023 opgeleverd als 1.0 versie. Daarnaast is er een opschalinganalyse uitgevoerd waarin zowel gemeenten als marktpartijen zijn geconsulteerd over functionele- en implementatieaspecten van de standaard. Naast het uitvoeren van een opschalinganalyse is er begin 2023 een juridische toetsing uitgevoerd met een aanvullende juridische toets eind 2023. 
 
 De juridische toetsing van de standaard heeft uitgewezen dat de verwerkingen van persoonsgegevens in de voorgenomen opzet van het verwerkingenregister niet kunnen worden gebaseerd op een van de 6 limitatieve grondslagen van de AVG (art. 6 AVG) en dat deze (ook) niet noodzakelijk en/of gerechtvaardigd zijn om te voldoen aan verplichtingen onder de AVG met betrekking tot het inzagerecht (art. 15 AVG), de beveiligingsplicht (art. 32 AVG) en de verantwoordingsplicht (art. 5(2) AVG).
