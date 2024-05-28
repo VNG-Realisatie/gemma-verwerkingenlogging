@@ -9,8 +9,16 @@ Organisaties die persoonsgegevens verwerken zijn conform de [Algemene Verordenin
 ## Werkingsgebied 
 Het primaire werkingsgebied voor deze API-standaard is: gemeenten en gemeentelijke samenwerkingsverbanden. Ook andere organisaties kunnen deze API-standaard hanteren aangezien er geen gemeente-specifieke zaken in de API-standaard zijn opgenomen.
 
-## Status van de API-standaard 
-Deze API-standaard is in begin 2023 opgeleverd als 1.0 versie. Daarnaast is er een opschalinganalyse uitgevoerd waarin zowel gemeenten als marktpartijen zijn geconsulteerd over functionele- en implementatieaspecten van de standaard. Naast het uitvoeren van een opschalinganalyse is er ook een juridische toetsing uitgevoerd en hieruit heeft zich een vraagstuk voorgedaan dat betrekking heeft op het gebruik van de standaard. VNG onderzoekt wat dit juridische vraagstuk betekent voor de standaard. De verwachting is dat de standaard in de zomer van 2023 als 1.0 versie vastgesteld wordt. Op dat moment zal ook het opschalinganalyserapport en de jurische toetsing worden gepubliceerd. Mocht u in de tussentijd de standaard willen implementeren vragen, vragen wij hiervoor contact op te nemen met de [product owner](mailto:tandaarden.ondersteuning@vng.nl) van deze standaard.
+## Status van de API-standaard
+Deze API-standaard is in 2023 opgeleverd als 1.0 versie. Daarnaast is er een opschalinganalyse uitgevoerd waarin zowel gemeenten als marktpartijen zijn geconsulteerd over functionele- en implementatieaspecten van de standaard. Naast het uitvoeren van een opschalinganalyse is er begin 2023 een juridische toetsing uitgevoerd met een aanvullende juridische toets eind 2023. 
+
+De juridische toetsing van de standaard heeft uitgewezen dat de verwerkingen van persoonsgegevens in de voorgenomen opzet van het verwerkingenregister niet kunnen worden gebaseerd op een van de 6 limitatieve grondslagen van de AVG (art. 6 AVG) en dat deze (ook) niet noodzakelijk en/of gerechtvaardigd zijn om te voldoen aan verplichtingen onder de AVG met betrekking tot het inzagerecht (art. 15 AVG), de beveiligingsplicht (art. 32 AVG) en de verantwoordingsplicht (art. 5(2) AVG).
+ 
+Er zijn wellicht enkele andere benaderingen mogelijk die wel in lijn zijn met wetgeving, breder dan de AVG, en met onze wens om transparantie van de overheid te vergroten en de informatiepositie van de burger te verbeteren. Die zijn we nu aan het onderzoeken in samenwerking met het Ministerie van Binnenlandse Zaken. Uitgangspunt is om deze wettelijk kaders zoals verantwoordingsverplichtingen, als vertrekpunt te nemen en op basis daarvan de standaard vorm te geven. Daarbij zal indien nodig ook de standaard worden aangepast.
+Tot die tijd adviseren we dat deze conceptstandaard niet in een productieomgeving en/of met echte persoonsgegevens wordt geïmplementeerd.
+
+Mocht u in de tussentijd vragen hebben over de standaard vragen wij u hiervoor contact op te nemen met de [product owner](mailto:standaarden.ondersteuning@vng.nl) van deze standaard.
+
 
 ## Inhoud van de API-standaard
 - [Informatie- en gegevensmodel](./gegevensmodel/index.md)
