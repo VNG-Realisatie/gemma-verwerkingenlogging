@@ -1,27 +1,15 @@
 # Verwerkingenlogging
-
 De Verwerkingenlogging is de gemeentelijke uitwerking van een informatiemodel en bijbehorende API specificaties ten behoeve van de vastlegging van de verwerking van gegevens in het kader van de AVG. Zowel de standaard als het informatiemodel maken deel uit van de Gemeentelijke Model Architectuur (GEMMA).
 
-## Werkingsgebied 
-Het werkingsgebied voor de ontwikkelde standaard is: gemeenten en gemeentelijke samenwerkingsverbanden.
-
-## Context 
-Organisaties die persoonsgegevens verwerken zijn conform de [Algemene Verordening Gegevensbescherming (AVG)](https://autoriteitpersoonsgegevens.nl/nl/over-privacy/wetten/algemene-verordening-gegevensbescherming-avg) en de [Uitvoeringswet AVG](https://wetten.overheid.nl/BWBR0040940/2019-02-19) verplicht om aan te kunnen tonen dat een verwerking van persoonsgegevens aan de belangrijkste beginselen van verwerking voldoet, zoals rechtmatigheid, transparantie, doelbinding en juistheid. Om aan deze verantwoordingsplicht te kunnen voldoen is het van belang dat per verwerking de belangrijkste metagegevens van de verwerkingen worden vastgelegd. Standaardisatie van de vastlegging van verwerkingen is van belang om de eenduidigheid en toegankelijkheid van deze gegevens te borgen. Door VNG-Realisatie is de 'Verwerkingenlogging' API-standaard ontwikkeld als onderdeel van de GEMMA referentiearchitectuur. Deze API-standaard biedt leveranciers van informatiesystemen gestandaardiseerde API-specificaties voor het vastleggen en ontsluiten van de logging van verwerkingen.
-
-## Project documentatie
-De volledige documentatie van de API-standaard is via de standaard Github navigatie beschikbaar via [deze link](./docs/index.md) maar kan ook via een [gebruiksvriendelijke html interface (Github Pages)](https://vng-realisatie.github.io/gemma-verwerkingenlogging/) worden benaderd.
-
-## Gerelateerde standaarden
-* [GEMMA Verwerkingsactiviteiten](https://github.com/VNG-Realisatie/gemma-verwerkingsactiviteiten)
-
-## Bijdragen aan het project
-Gemeenten en leveranciers worden aangemoedigd om bij te dragen aan het project. Onderstaande links geven informatie over hoe u uw bijdrage kan leveren.
-* Hoe u kunt [bijdragen](https://github.com/VNG-Realisatie/Tutorial/blob/master/CONTRIBUTING.md)
-* [Omgangsvormen](https://github.com/VNG-Realisatie/Tutorial/blob/master/CODE_OF_CONDUCT.md)
+## Status van de API-standaard (1 juli 2025)
+Deze API-standaard is in 2023 opgeleverd als 1.0 versie. Gedurende het daaropvolgende standaardisatieproces heeft VNG een juridische toets laten uitvoeren op de uitwerking van de standaard. In deze toetsing is zowel gekeken naar de metagegevens die via de API-standaard kunnen worden vastgelegd als naar de wijze waarop de API-standaard in de informatievoorziening ingepast wordt.  Kern van het juridisch oordeel was dat voor de logging van individuele verwerkingen in een centraal register geen grondslag aanwezig is met betrekking tot het inzagerecht (art. 15 AVG), de beveiligingsplicht (art. 32 AVG) en de verantwoordingsplicht (art. 5(2) AVG).
+Het inrichten van een centraal register waarin identificerende persoonsgegevens en acties die in verschillende informatiesystemen binnen gemeenten hebben plaatsgevonden worden vastgelegd gaat volgens het juridisch oordeel verder dan de logging die voor gemeenten noodzakelijk is om aan eerdergenoemde verplichtingen te voldoen. Een dergelijke inrichting voldoet in die zin niet aan de vereisten van proportionaliteit en subsidiariteit bij het treffen van passende beveiligingsmaatregelen.
+ 
+Dit juridisch oordeel heeft ertoe geleid dat de VNG de standaard niet verder kan brengen in het standaardisatieproces. Naar aanleiding van dit juridisch oordeel heeft de VNG contact opgenomen met BZK om te bespreken op welke manier we tot een juridisch geborgde standaard kunnen komen. BZK heeft vervolgens de VNG standaard als basis gebruikt voor een nieuwe standaard die geborgd is in een juridisch beleidskader: het [Logboek Dataverwerkingen](https://logius-standaarden.github.io/logboek-dataverwerkingen-juridisch-beleidskader/). Deze standaard vervangt daarmee de VNG standaard. De VNG standaard wordt niet verder beheerd of doorontwikkeld. Indien u gebruik maakt van deze standaard beveelt de VNG u aan om te migreren naar de Logboek Dataverwerkingen standaard.
 
 ## Beheer en ondersteuning
-Contact: standaarden.ondersteuning@vng.nl
+Deze standaard wordt niet meer beheerd of doorontwikkeld
 
 ## Licentie
-Copyright &copy; VNG Realisatie 2021
+Copyright &copy; VNG Realisatie 2025
 Licensed under the [EUPL](https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/blob/master/LICENSE.md)
